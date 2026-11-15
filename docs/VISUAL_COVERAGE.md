@@ -22,6 +22,10 @@ Tests: `src/tests/molecules.test.ts` (formula ↔ atoms, connectivity, bond leng
 | g9-s18 | iron rusting (anode/cathode/Fe(OH)₂/Fe(OH)₃) | step animation | equations tested |
 | g9-s22 | Solvay process flow incl. NH₃ regeneration | step animation | equations tested |
 | g9-s36 | blast furnace zones top → bottom | step animation | equations tested |
+| g9-s16, s17 | Cu fcc and α-Fe bcc unit cells (nearest-neighbour sticks, metallic-bond caveat) | 3D | tested (2.556 / 2.482 Å) |
+| g9-s25 | Al₂O₃ in molten cryolite electrolysis | 2D SVG animation | equations tested |
+| g9-s27 | Al(OH)₃ amphoterism (virtual test-tube sequence) | step animation | equations tested |
+| g9-s32 | Cr(III)/chromate/dichromate colours and Cr(VI) → Cr(III) | step animation | equations tested |
 | others | tables + equations only (figure audit pending) | — | pending |
 
 All models are labelled “sxematik model”; text facts (lengths/angles) are always visible as the fallback.

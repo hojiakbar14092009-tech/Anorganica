@@ -55,3 +55,24 @@ export const BLAST_FURNACE: ProcessSpec = {
   ],
   explanation: 'Umumiy tenglama: Fe₂O₃ + 3CO → 2Fe + 3CO₂. Qattiq shixta pastga tushadi, CO yuqoriga ko‘tariladi — qarshi oqim issiqlik va qaytaruvchidan to‘liq foydalanishga imkon beradi. Suyuq cho‘yan va shlak pech tubidan alohida chiqariladi.',
 };
+
+export const AMPHOTERIC_AL: ProcessSpec = {
+  title: 'Aluminiy gidroksidning amfoterligi (virtual tajriba)',
+  steps: [
+    { place: 'Probirka: AlCl₃ eritmasi', name: 'Ishqor tomchilatiladi — cho‘kma', equation: 'Al^3+ + 3OH^- → Al(OH)3↓', note: 'Oq, quyqasimon Al(OH)₃ cho‘kmasi hosil bo‘ladi.' },
+    { place: 'Cho‘kmaning bir qismi + kislota', name: 'Asos sifatida: kislotada eriydi', equation: 'Al(OH)3 + 3HCl → AlCl3 + 3H2O', note: 'Cho‘kma eriydi — Al(OH)₃ kislotani neytrallaydi.' },
+    { place: 'Cho‘kmaning bir qismi + mo‘l ishqor', name: 'Kislota sifatida: ishqorda eriydi', equation: 'Al(OH)3 + NaOH → Na[Al(OH)4]', note: 'Cho‘kma yana eriydi — gidroksokompleks (tetragidroksoaluminat) hosil bo‘ladi.' },
+    { place: 'Xulosa', name: 'Amfoter gidroksid', note: 'Bitta modda ham kislotalar, ham ishqorlar bilan tuz hosil qiladi. Shuning uchun AlCl₃ ga ishqorni ehtiyotkorlik bilan, ortiqcha qo‘shmasdan quyiladi.' },
+  ],
+  explanation: 'Al(OH)₃ ham H⁺ ni, ham OH⁻ ni bog‘lay oladi. Bu xossa Zn(OH)₂, Cr(OH)₃ uchun ham xos (§30, §32). Laboratoriyada ishqorlar ko‘zni va terini kuydiradi — bu yerda faqat virtual namoyish.',
+};
+
+export const CHROMIUM_COLOURS: ProcessSpec = {
+  title: 'Xrom birikmalari: oksidlanish darajasi va rang',
+  steps: [
+    { place: 'Cr(+3) tuzi eritmasi', name: 'Ishqor bilan kul-yashil cho‘kma', equation: 'Cr^3+ + 3OH^- → Cr(OH)3↓', note: 'Cr(OH)₃ — amfoter: kislotada ham, mo‘l ishqorda ham (yashil eritma) eriydi.' },
+    { place: 'Xromat (+6), sariq', name: 'Kislota qo‘shilsa — dixromat, zarg‘aldoq', equation: '2CrO4^2- + 2H^+ ⇄ Cr2O7^2- + H2O', note: 'Oksidlanish darajasi o‘zgarmaydi (+6); muvozanat kislotada o‘ngga (zarg‘aldoq), ishqorda chapga (sariq) siljiydi.' },
+    { place: 'Dixromat + qaytaruvchi (kislotali muhit)', name: 'Cr(+6) → Cr(+3): zarg‘aldoqdan yashilga', equation: 'Cr2O7^2- + 14H^+ + 6e^- → 2Cr^3+ + 7H2O', note: 'K₂Cr₂O₇ kuchli oksidlovchi: masalan, FeSO₄ ni Fe(III) gacha oksidlaydi va o‘zi yashil Cr³⁺ ga qaytariladi.' },
+  ],
+  explanation: 'Rang oksidlanish darajasi va zarrachaning tuzilishiga bog‘liq: Cr³⁺ birikmalari — yashil/kulrang-yashil, CrO₄²⁻ — sariq, Cr₂O₇²⁻ — zarg‘aldoq. Cr(VI) birikmalari zaharli va kanserogen — faqat virtual namoyish.',
+};

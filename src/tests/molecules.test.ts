@@ -11,7 +11,7 @@ const angle = (m: Molecule, c: number, a: number, b: number) => {
 
 describe('molecule models', () => {
   it.each(Object.values(MOLECULES).map((m) => [m.id, m] as const))('%s: formula, connectivity, sane bond lengths', (_, m) => {
-    if (!m.id.match(/diamond|graphite/)) {
+    if (!m.id.match(/diamond|graphite|_fcc|_bcc/)) {
       const counts: Record<string, number> = {};
       for (const a of m.atoms) counts[a.el] = (counts[a.el] ?? 0) + 1;
       expect(counts).toEqual(parseFormula(m.formula));
@@ -35,5 +35,9 @@ describe('molecule models', () => {
     for (const b of MOLECULES.p4!.bonds) expect(distance(MOLECULES.p4!, b)).toBeCloseTo(2.21, 2);
     expect(MOLECULES.diamond!.bonds.length).toBeGreaterThan(10);
     for (const b of MOLECULES.graphite!.bonds) expect(distance(MOLECULES.graphite!, b)).toBeCloseTo(1.42, 2);
+    expect(MOLECULES.cu_fcc!.atoms).toHaveLength(14); // 8 corners + 6 faces
+    expect(MOLECULES.fe_bcc!.atoms).toHaveLength(9); // 8 corners + centre
+    for (const b of MOLECULES.fe_bcc!.bonds) expect(distance(MOLECULES.fe_bcc!, b)).toBeCloseTo(2.482, 2);
+    for (const b of MOLECULES.cu_fcc!.bonds) expect(distance(MOLECULES.cu_fcc!, b)).toBeCloseTo(2.556, 2);
   });
 });

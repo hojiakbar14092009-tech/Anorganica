@@ -129,10 +129,19 @@ function lattice(id: string, name: string, el: string, raw: Vec[], bond: number,
   const keep = atoms.map((_, i) => i).filter((i) => used.has(i));
   const idx = new Map(keep.map((old, i) => [old, i]));
   return {
-    id, name, formula: `C${keep.length}`, shape: 'panjara bo‘lagi',
+    id, name, formula: `${el}${keep.length}`, shape: 'panjara bo‘lagi',
     atoms: keep.map((i) => atoms[i]!), bonds: bonds.map((b) => ({ ...b, a: idx.get(b.a)!, b: idx.get(b.b)! })),
     facts: [...facts, 'Ko‘rsatilgan — cheksiz kristallning kichik bo‘lagi'],
   };
+}
+
+/** Metal unit cell; sticks join nearest neighbours only — metallic bonding is delocalised, not localised pair bonds. */
+function metalCell(id: string, name: string, el: string, a: number, kind: 'fcc' | 'bcc', facts: string[]): Molecule {
+  const corners: Vec[] = [];
+  for (const x of [0, 1]) for (const y of [0, 1]) for (const z of [0, 1]) corners.push([x, y, z]);
+  const extra: Vec[] = kind === 'bcc' ? [[0.5, 0.5, 0.5]] : [[0.5, 0.5, 0], [0.5, 0.5, 1], [0.5, 0, 0.5], [0.5, 1, 0.5], [0, 0.5, 0.5], [1, 0.5, 0.5]];
+  const nn = kind === 'bcc' ? (a * Math.sqrt(3)) / 2 : a / Math.SQRT2;
+  return lattice(id, name, el, [...corners, ...extra].map((v) => scale(v, a)), nn, [...facts, 'Chiziqlar — eng yaqin qo‘shni atomlar; metall bog‘ delokallashgan elektronlar hisobiga, juft kovalent bog‘ emas']);
 }
 
 export const MOLECULES: Record<string, Molecule> = Object.fromEntries([
@@ -154,14 +163,16 @@ export const MOLECULES: Record<string, Molecule> = Object.fromEntries([
   tetrahedral('nh4', 'Ammoniy ioni', 'NH4^+', 'N', 'H', 1.03),
   tetrahedral('ch4', 'Metan', 'CH4', 'C', 'H', 1.09),
   sulfuricAcid(), nitricAcid(), p4(), diamond(), graphite(),
+  metalCell('cu_fcc', 'Mis: yoqlari markazlashgan kub panjara', 'Cu', 3.615, 'fcc', ['a = 3,615 Å', 'Eng yaqin qo‘shnilar orasi 2,56 Å, har bir atomning 12 qo‘shnisi bor', 'Qatlamlar oson siljiydi — mis yumshoq va cho‘ziluvchan']),
+  metalCell('fe_bcc', 'Temir (α-Fe): hajmi markazlashgan kub panjara', 'Fe', 2.866, 'bcc', ['a = 2,866 Å', 'Eng yaqin qo‘shnilar orasi 2,48 Å, 8 qo‘shni', 'Uglerod atomlari panjara bo‘shliqlariga kirib, po‘lat va cho‘yan xossalarini o‘zgartiradi']),
 ].map((m) => [m.id, m]));
 
 // Jmol/CPK colours (sRGB hex).
 export const ELEMENT_COLOR: Record<string, string> = {
-  H: '#f2f2f2', C: '#505050', N: '#3050f8', O: '#ff0d0d', F: '#90e050', P: '#ff8000', S: '#e0c000', Cl: '#1ff01f', Br: '#a62929', I: '#940094',
+  H: '#f2f2f2', C: '#505050', Cu: '#c88033', Fe: '#e06633', N: '#3050f8', O: '#ff0d0d', F: '#90e050', P: '#ff8000', S: '#e0c000', Cl: '#1ff01f', Br: '#a62929', I: '#940094',
 };
 // Covalent radii (Å) — used only to size spheres proportionally.
-export const COVALENT_RADIUS: Record<string, number> = { H: 0.31, C: 0.76, N: 0.71, O: 0.66, F: 0.57, P: 1.07, S: 1.05, Cl: 1.02, Br: 1.2, I: 1.39 };
+export const COVALENT_RADIUS: Record<string, number> = { H: 0.31, C: 0.76, Cu: 1.32, Fe: 1.32, N: 0.71, O: 0.66, F: 0.57, P: 1.07, S: 1.05, Cl: 1.02, Br: 1.2, I: 1.39 };
 
 export const distance = (m: Molecule, b: Bond) => {
   const [p, q] = [m.atoms[b.a]!.p, m.atoms[b.b]!.p];

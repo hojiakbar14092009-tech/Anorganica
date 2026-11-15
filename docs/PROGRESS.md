@@ -14,7 +14,8 @@ PHASE: 2–3 App + 53 lessons — DONE (expert review pending, KNOWN_ISSUES)
 PHASE: 4 Graphics — MOSTLY DONE
 DONE: reusable 3D MoleculeScene (Three.js/R3F/Drei, lazy, demand frameloop, toggle-to-rotate, WebGL fallback), 22 tested models on 18 lessons;
   2D electrolysis; ProcessFlow (contact process, HNO₃, rusting, Solvay, blast furnace); rate + equilibrium explorers (logic unit-tested)
-NEXT: Al electrolysis (g9-s25), metallic lattice/alloys (g9-s16/17), amphoteric Al(OH)₃ (g9-s27), Cr/Mn colour series (g9-s32/33)
+  + Al₂O₃ electrolysis, Cu/Fe unit cells, Al(OH)₃ amphoterism, Cr colour series → 31/53 lessons with a visual
+NEXT: figure audit for remaining 22 lessons (Mn redox g9-s33, Fe(II)/Fe(III) tests g9-s35, fertilizers g8-s42/43 as tables)
 ```
 
 ```
