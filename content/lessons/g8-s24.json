@@ -1,0 +1,71 @@
+{
+  "id": "g8-s24",
+  "status": "seed-verified",
+  "pages": [100, 101, 102],
+  "summary": "Vodorod xlorid {HCl} (Mr = 36,5) — qutbli kovalent molekula; rangsiz, o‘tkir hidli gaz, havodan biroz og‘ir. Suvda juda yaxshi eriydi (1 hajm suvda ≈500 hajm), eritmasi — xlorid kislota.",
+  "keyConcepts": [
+    "H–Cl bog‘i qutbli: umumiy elektron jufti elektromanfiyroq xlorga siljigan.",
+    "Suvda erishi bilan ionlanadi: {HCl} → {H^+} + {Cl^-}; shuning uchun eritma kislota xossasini namoyon qiladi.",
+    "Quruq {HCl} gazi oddiy sharoitda metallar va metall oksidlari bilan reaksiyaga kirishmaydi — kislota xossalari faqat eritmada.",
+    "Asosiy ishlatilishi — xlorid kislota ishlab chiqarish."
+  ],
+  "tables": [
+    {
+      "id": "props",
+      "title": "Vodorod xlorid: asosiy ma’lumotlar",
+      "columns": [
+        { "key": "k", "label": "Ko‘rsatkich" },
+        { "key": "v", "label": "Qiymat / xossa" }
+      ],
+      "rows": [
+        { "id": "f", "cells": { "k": "Formula, Mr", "v": "{HCl}, 36,5" } },
+        { "id": "bond", "cells": { "k": "Bog‘", "v": "H–Cl, qutbli kovalent" } },
+        { "id": "phys", "cells": { "k": "Fizik xossalari", "v": "rangsiz, o‘tkir hidli, bo‘g‘uvchi gaz" } },
+        { "id": "d", "cells": { "k": "Havoga nisbatan zichligi", "v": "D = 36,5 / 29 ≈ 1,26" },
+          "detail": { "concept": "Havodan og‘irroq, shuning uchun idishga «og‘zi yuqoriga» qaratib yig‘iladi.", "pages": [101] } },
+        { "id": "sol", "cells": { "k": "Suvda eruvchanligi", "v": "1 hajm suvda ≈500 hajm HCl" },
+          "detail": { "concept": "Juda yaxshi eruvchanlik «favvora» tajribasida ko‘rinadi: gaz to‘ldirilgan kolbaga oz suv kirsa, HCl erib bosim keskin tushadi va suv kolbaga favvora bo‘lib otiladi (19-rasm).", "observation": "Indikatorli suv kolbada rangini o‘zgartiradi (kislotali muhit)", "pages": [101] } }
+      ]
+    },
+    {
+      "id": "obtain",
+      "title": "Olinishi",
+      "columns": [
+        { "key": "where", "label": "Usul" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Muhim" }
+      ],
+      "rows": [
+        { "id": "lab1", "cells": { "where": "Laboratoriya: quruq NaCl + konts. {H2SO4}", "eq": "lab1", "note": "sovuqda — nordon tuz {NaHSO4}" } },
+        { "id": "lab2", "cells": { "where": "Laboratoriya, qizdirib", "eq": "lab2", "note": "qizdirilsa — o‘rta tuz {Na2SO4}" },
+          "detail": { "concept": "Bir xil moddalardan sharoitga qarab turli tuz hosil bo‘ladi; masalada qaysi tenglama olinishini sharoit belgilaydi.", "reactionIds": ["lab1", "lab2"], "pages": [100, 101] } },
+        { "id": "ind", "cells": { "where": "Sanoat: vodorodni xlorda yondirish", "eq": "ind", "note": "xlor elektrolizdan olinadi" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "lab1": { "equation": "NaCl + H2SO4 → NaHSO4 + HCl↑", "conditions": "konts. H₂SO₄, sovuq yoki kuchsiz qizdirish" },
+    "lab2": { "equation": "2NaCl + H2SO4 → Na2SO4 + 2HCl↑", "conditions": "kuchli qizdirish" },
+    "ind": { "equation": "H2 + Cl2 → 2HCl", "conditions": "yondirish" },
+    "ion": { "equation": "HCl → H^+ + Cl^-", "conditions": "suvda" }
+  },
+  "questions": [
+    { "id": "g8-s24-q1", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "5,85 g osh tuziga mo‘l konsentrlangan sulfat kislota ta’sir ettirib, kuchli qizdirilganda necha litr (n.sh.) vodorod xlorid olinadi?",
+      "answer": 2.24, "tolerance": 0.01, "unit": "l",
+      "solution": "2NaCl + H₂SO₄ → Na₂SO₄ + 2HCl. n(NaCl) = 5,85 / 58,5 = 0,1 mol = n(HCl); V = 0,1 · 22,4 = 2,24 l.",
+      "mistakes": "Qizdirilganda ham sovuqdagi kabi NaCl : HCl = 1 : 1 — tenglamaga qaramay javob o‘zgarmaydi, lekin H₂SO₄ sarfi ikki marta kam." },
+    { "id": "g8-s24-q2", "type": "Y1", "skill": "bog‘ turi", "difficulty": 1,
+      "stem": "Vodorod xlorid molekulasidagi kimyoviy bog‘ turi qaysi?",
+      "choices": ["ionli", "qutbsiz kovalent", "qutbli kovalent", "metall bog‘"], "answer": 2,
+      "solution": "H va Cl — turli metallmaslar, elektromanfiyliklari farq qiladi; umumiy juft xlor tomonga siljigan." },
+    { "id": "g8-s24-q3", "type": "Y1", "skill": "olinish sharoiti", "difficulty": 2,
+      "stem": "Quruq natriy xloridga konsentrlangan sulfat kislota qizdirmasdan ta’sir ettirilganda HCl dan tashqari qaysi tuz hosil bo‘ladi?",
+      "choices": ["{Na2SO4}", "{NaHSO4}", "{Na2SO3}", "{NaCl}"], "answer": 1,
+      "solution": "Sovuqda nordon tuz NaHSO₄ hosil bo‘ladi; kuchli qizdirilganda reaksiya Na₂SO₄ gacha boradi." },
+    { "id": "g8-s24-q4", "type": "O1", "skill": "gaz zichligi", "difficulty": 1,
+      "stem": "Vodorod xloridning vodorodga nisbatan zichligini hisoblang.",
+      "answer": 18.25, "tolerance": 0.01,
+      "solution": "D(H₂) = M(HCl) / M(H₂) = 36,5 / 2 = 18,25." }
+  ]
+}

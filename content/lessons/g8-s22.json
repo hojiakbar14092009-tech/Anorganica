@@ -1,0 +1,81 @@
+{
+  "id": "g8-s22",
+  "status": "seed-verified",
+  "pages": [92, 93, 94, 95, 96],
+  "summary": "Galogenlar (F, Cl, Br, I, At) — VII A guruh metallmaslari; tashqi qavatda 7 ē, shuning uchun 1 ē qabul qilib −1 oksidlanish darajasini oladi. F₂ → I₂ qatorda atom radiusi ortadi, oksidlovchilik kamayadi, rang quyuqlashadi, qaynash harorati va zichlik ortadi.",
+  "keyConcepts": [
+    "«Galogen» — «tuz hosil qiluvchi» (I. Shveyger, 1811).",
+    "Ftor barcha birikmalarida faqat −1; Cl, Br, I kislorodli birikmalarda +1 dan +7 gacha oksidlanish darajalarini namoyon qiladi.",
+    "Faolroq galogen kamroq faolini tuzidan siqib chiqaradi: {Cl2} bromid va yodiddan, {Br2} yodiddan.",
+    "Yod qizdirilganda sublimatlanadi — binafsha bug‘ hosil qiladi."
+  ],
+  "tables": [
+    {
+      "id": "halogens",
+      "title": "Galogenlar: tuzilishi va fizik xossalari",
+      "columns": [
+        { "key": "el", "label": "Element" },
+        { "key": "e", "label": "Tashqi qavat" },
+        { "key": "state", "label": "Holati, rangi (n.sh.)" },
+        { "key": "t", "label": "Tsuyuq. / Tqayn., °C" },
+        { "key": "en", "label": "EM" },
+        { "key": "nat", "label": "Tabiiy birikmalari" }
+      ],
+      "rows": [
+        { "id": "f", "cells": { "el": "Ftor {F2}", "e": "{2s2 2p5}", "state": "och-sariq gaz", "t": "−220 / −188", "en": "4,0", "nat": "flyuorit {CaF2}, apatit" } },
+        { "id": "cl", "cells": { "el": "Xlor {Cl2}", "e": "{3s2 3p5}", "state": "sarg‘ish-yashil gaz", "t": "−101 / −34", "en": "3,16", "nat": "{NaCl}, {KCl}" } },
+        { "id": "br", "cells": { "el": "Brom {Br2}", "e": "{4s2 4p5}", "state": "qoramtir-qo‘ng‘ir suyuqlik", "t": "−7 / +58", "en": "2,96", "nat": "NaBr, KBr, {MgBr2}" },
+          "detail": { "concept": "Brom — n.sh.da suyuq bo‘lgan yagona metallmas; oson bug‘lanadi, bug‘i zaharli.", "pages": [95] } },
+        { "id": "i", "cells": { "el": "Yod {I2}", "e": "{5s2 5p5}", "state": "qoramtir-kulrang kristall", "t": "+114 / +186", "en": "2,66", "nat": "NaI, KI (dengiz suvi, suv o‘tlari)" },
+          "detail": { "concept": "Qizdirilganda yod oson sublimatlanadi: qattiq holatdan binafsha rangli bug‘ga o‘tadi va sovuq sirtda yana kristallanadi.", "observation": "Binafsha bug‘, sovuq shisha sirtida kristallar", "pages": [95] } }
+      ]
+    },
+    {
+      "id": "obtain",
+      "title": "Olinishi: galogenid-ionni oksidlash",
+      "columns": [
+        { "key": "what", "label": "Galogen" },
+        { "key": "eq", "label": "Usul", "reaction": true }
+      ],
+      "rows": [
+        { "id": "f2", "cells": { "what": "Ftor — faqat elektroliz", "eq": "fElectro" },
+          "detail": { "concept": "F⁻ ni hech qanday kimyoviy oksidlovchi oksidlay olmaydi, chunki ftor eng kuchli oksidlovchi. Suvli eritmada ham olib bo‘lmaydi — ftor suvni oksidlaydi; shuning uchun suvsiz KF·HF suyuqlanmasi elektroliz qilinadi.", "reactionIds": ["fElectro", "fWater"], "pages": [94, 96] } },
+        { "id": "cl2", "cells": { "what": "Xlor", "eq": "clKMnO4" } },
+        { "id": "br2", "cells": { "what": "Brom", "eq": "brCl" } },
+        { "id": "i2a", "cells": { "what": "Yod (xlor bilan)", "eq": "iCl" } },
+        { "id": "i2b", "cells": { "what": "Yod (brom bilan)", "eq": "iBr" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "fElectro": { "equation": "2HF → H2↑ + F2↑", "conditions": "KF·HF suyuqlanmasi, elektroliz" },
+    "fWater": { "equation": "2F2 + 2H2O → 4HF + O2", "observation": "Suv ftor atmosferasida yonadi" },
+    "clKMnO4": { "equation": "2KMnO4 + 10NaCl + 8H2SO4 → K2SO4 + 5Na2SO4 + 2MnSO4 + 5Cl2↑ + 8H2O" },
+    "brCl": { "equation": "2KBr + Cl2 → 2KCl + Br2" },
+    "iCl": { "equation": "2KI + Cl2 → 2KCl + I2" },
+    "iBr": { "equation": "2KI + Br2 → 2KBr + I2" }
+  },
+  "clarifications": [
+    { "text": "Darslikda ftor kashfiyoti 1866-yil deb ko‘rsatilgan; A. Muassan ftorni 1886-yilda ajratib olgan va 1906-yilda Nobel mukofotini olgan.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g8-s22-q1", "type": "Y1", "skill": "galogenlar faolligi", "difficulty": 1,
+      "stem": "Qaysi reaksiya amalda bormaydi?",
+      "choices": ["2KBr + {Cl2} →", "2KI + {Br2} →", "2KCl + {I2} →", "2KI + {Cl2} →"], "answer": 2,
+      "solution": "Yod xlordan kuchsiz oksidlovchi, shuning uchun xloridni oksidlab xlorni siqib chiqara olmaydi." },
+    { "id": "g8-s22-q2", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "5,95 g kaliy bromiddagi bromni to‘liq siqib chiqarish uchun necha litr (n.sh.) xlor kerak?",
+      "answer": 0.56, "tolerance": 0.005, "unit": "l",
+      "solution": "2KBr + Cl₂ → 2KCl + Br₂. M(KBr) = 119 g/mol; n = 5,95 / 119 = 0,05 mol; n(Cl₂) = 0,025 mol; V = 0,025 · 22,4 = 0,56 l." },
+    { "id": "g8-s22-q3", "type": "Y1", "skill": "atom tuzilishi", "difficulty": 1,
+      "stem": "Nima uchun ftor birikmalarida musbat oksidlanish darajasini namoyon qilmaydi?",
+      "choices": ["atom radiusi eng katta", "eng elektromanfiy element", "tashqi qavatida 5 ta elektron bor", "metall xossasiga ega"], "answer": 1,
+      "solution": "Ftor eng elektromanfiy element: boshqa hech bir atom undan elektron tortib ololmaydi, shuning uchun u faqat −1 holatda bo‘ladi." },
+    { "id": "g8-s22-q4", "type": "Y2", "skill": "fizik xossalar", "difficulty": 1,
+      "stem": "Galogenni uning n.sh.dagi holati va rangi bilan moslashtiring.",
+      "left": ["{F2}", "{Cl2}", "{Br2}", "{I2}"],
+      "right": ["qoramtir-qo‘ng‘ir suyuqlik", "qoramtir-kulrang kristall", "och-sariq gaz", "sarg‘ish-yashil gaz"],
+      "answer": [2, 3, 0, 1],
+      "solution": "Molyar massa ortishi bilan rang quyuqlashadi va holat gaz → suyuq → qattiq tomon o‘zgaradi." }
+  ]
+}

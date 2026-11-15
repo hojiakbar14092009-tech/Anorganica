@@ -1,0 +1,83 @@
+{
+  "id": "g8-s28",
+  "status": "seed-verified",
+  "pages": [121, 122, 123, 124, 125],
+  "summary": "Ftor — eng faol metallmas (shisha va suv ham uning atmosferasida yonadi); brom va yod sustroq, organik erituvchilarda yaxshi eriydi. Galogenidlarni kumush nitrat bilan cho‘kma rangi orqali farqlash mumkin: AgCl — oq, AgBr — sarg‘ish, AgI — sariq.",
+  "keyConcepts": [
+    "Tabiatda: ftor — flyuorit {CaF2}, kriolit {Na3[AlF6]}, ftorapatit; brom — dengiz va yer osti suvlarida; yod — dengiz o‘tlarida (laminariya), yodatlar ({NaIO3}) holida.",
+    "Molekula kattalashgani sari dispersion tortishish kuchayadi: {F2}, {Cl2} — gaz, {Br2} — suyuq, {I2} — qattiq.",
+    "{H2} + {I2} ⇄ 2HI reaksiyasi qaytar — yuqori haroratda HI parchalanadi.",
+    "Ishlatilishi: ftor — teflon, freonlar; brom — dori vositalari, AgBr (fotomateriallar); yod — 5 % li spirtli eritma (antiseptik), yodlangan tuz."
+  ],
+  "tables": [
+    {
+      "id": "reactivity",
+      "title": "Kimyoviy faollik",
+      "columns": [
+        { "key": "what", "label": "Jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Muhim" }
+      ],
+      "rows": [
+        { "id": "glass", "cells": { "what": "Ftor + shisha", "eq": "glass", "note": "shisha ftor atmosferasida yonadi" } },
+        { "id": "water", "cells": { "what": "Ftor + suv", "eq": "water", "note": "suvdan kislorodni siqib chiqaradi" } },
+        { "id": "xe", "cells": { "what": "Ftor + ksenon", "eq": "xe", "note": "qizdirilganda; inert gaz birikmasi" } },
+        { "id": "hi", "cells": { "what": "Yod + vodorod", "eq": "hi", "note": "kuchli qizdirish, qaytar" } },
+        { "id": "displace", "cells": { "what": "Brom yodidni oksidlaydi", "eq": "brI", "note": "F₂ > Cl₂ > Br₂ > I₂ oksidlovchilik" },
+          "detail": { "concept": "Yengilroq galogen og‘irroq galogenid-ionni oksidlaydi: F₂ + 2Cl⁻, Cl₂ + 2Br⁻, Br₂ + 2I⁻. Teskari jarayonlar bormaydi.", "reactionIds": ["clBr", "brI"], "pages": [122] } }
+      ]
+    },
+    {
+      "id": "tests",
+      "title": "Galogenid-ionlarga sifat reaksiyalari",
+      "columns": [
+        { "key": "ion", "label": "Ion" },
+        { "key": "eq", "label": "AgNO₃ bilan", "reaction": true },
+        { "key": "ag", "label": "Ag-cho‘kma rangi" },
+        { "key": "pb", "label": "Pb²⁺ bilan" }
+      ],
+      "rows": [
+        { "id": "cl", "cells": { "ion": "{Cl^-}", "eq": "agCl", "ag": "oq, ivir-ivir", "pb": "{PbCl2} — oq" } },
+        { "id": "br", "cells": { "ion": "{Br^-}", "eq": "agBr", "ag": "och sarg‘ish", "pb": "{PbBr2} — oq" } },
+        { "id": "i", "cells": { "ion": "{I^-}", "eq": "agI", "ag": "sariq", "pb": "{PbI2} — sariq" },
+          "detail": { "concept": "Bir xil reaktiv (AgNO₃) uchala ionni ham cho‘ktiradi; ularni cho‘kma rangi farqlaydi. Ftorid-ion AgNO₃ bilan cho‘kma bermaydi (AgF suvda eriydi).", "observation": "Sariq cho‘kma", "reactionIds": ["agI"], "pages": [122] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "glass": { "equation": "SiO2 + 2F2 → SiF4 + O2" },
+    "water": { "equation": "2H2O + 2F2 → 4HF + O2" },
+    "xe": { "equation": "Xe + F2 → XeF2", "conditions": "qizdirish" },
+    "hi": { "equation": "H2 + I2 ⇄ 2HI", "conditions": "kuchli qizdirish" },
+    "clBr": { "equation": "Cl2 + 2Br^- → 2Cl^- + Br2" },
+    "brI": { "equation": "Br2 + 2I^- → 2Br^- + I2" },
+    "agCl": { "equation": "AgNO3 + NaCl → AgCl↓ + NaNO3" },
+    "agBr": { "equation": "AgNO3 + NaBr → AgBr↓ + NaNO3" },
+    "agI": { "equation": "AgNO3 + NaI → AgI↓ + NaNO3" },
+    "cacl2": { "equation": "Ca(OH)2 + 2HCl → CaCl2 + 2H2O" }
+  },
+  "clarifications": [
+    { "text": "Darslikning 124-betidagi «Ca(OH)₂ + 2HCl = 2CaCl₂ + 2H₂O» tenglamasida bosma xato bor; to‘g‘risi: Ca(OH)₂ + 2HCl → CaCl₂ + 2H₂O.", "source": "additionalVerifiedSource" },
+    { "text": "Bromning inson uchun zaruriy mikroelement ekanligi ilmiy jihatdan hali to‘liq isbotlanmagan; ilovada bu da’vo keltirilmadi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g8-s28-q1", "type": "Y2", "skill": "sifat reaksiyalari", "difficulty": 2,
+      "stem": "Eritmani unga {AgNO3} qo‘shilganda kuzatiladigan hodisa bilan moslashtiring.",
+      "left": ["NaCl", "NaBr", "NaI", "NaF"],
+      "right": ["sariq cho‘kma", "cho‘kma tushmaydi", "oq ivir-ivir cho‘kma", "och sarg‘ish cho‘kma"],
+      "answer": [2, 3, 0, 1],
+      "solution": "AgCl — oq, AgBr — och sarg‘ish, AgI — sariq; AgF suvda eriydi, shuning uchun cho‘kma yo‘q." },
+    { "id": "g8-s28-q2", "type": "Y1", "skill": "galogenlar faolligi", "difficulty": 1,
+      "stem": "Qaysi galogen boshqa uchtasining galogenidlaridan ularni siqib chiqara oladi?",
+      "choices": ["yod", "brom", "xlor", "ftor"], "answer": 3,
+      "solution": "Ftor eng kuchli oksidlovchi: F₂ > Cl₂ > Br₂ > I₂." },
+    { "id": "g8-s28-q3", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "4 g brom olish uchun kaliy bromid eritmasiga n.sh.da necha litr xlor o‘tkazish kerak?",
+      "answer": 0.56, "tolerance": 0.005, "unit": "l",
+      "solution": "2KBr + Cl₂ → 2KCl + Br₂. n(Br₂) = 4 / 160 = 0,025 mol = n(Cl₂); V = 0,025 · 22,4 = 0,56 l." },
+    { "id": "g8-s28-q4", "type": "Y1", "skill": "fizik xossalar", "difficulty": 1,
+      "stem": "Nima uchun yod n.sh.da qattiq, ftor esa gaz?",
+      "choices": ["yod molekulasi ionli", "yodda molekulalararo dispersion tortishish kuchliroq", "ftor molekulasi bir atomli", "yodda vodorod bog‘lar bor"], "answer": 1,
+      "solution": "I₂ molekulasi katta va oson qutblanadi, shuning uchun molekulalar orasidagi dispersion kuchlar kuchli — modda qattiq." }
+  ]
+}

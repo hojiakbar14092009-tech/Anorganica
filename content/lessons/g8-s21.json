@@ -1,0 +1,73 @@
+{
+  "id": "g8-s21",
+  "status": "seed-verified",
+  "pages": [89, 90, 91],
+  "summary": "Metallmaslar davrlarning oxirida, bosh guruhchalarda joylashgan; vodorod va geliydan tashqari barchasi p-elementlar. Reaksiyalarda odatda elektron qabul qilib oksidlovchi bo‘ladi; metallmaslik davrda chapdan o‘ngga kuchayadi, guruhda yuqoridan pastga susayadi.",
+  "keyConcepts": [
+    "Elektron biriktirib olish qobiliyati taxminan quyidagi tartibda kamayadi: F > O > Cl > N > S > C ≈ H ≈ P > Si. Ftor — eng elektromanfiy element.",
+    "Yer qobig‘ida eng ko‘p tarqalgan elementlar — kislorod (≈47 %) va kremniy (≈27,6 %); koinotda — vodorod va geliy.",
+    "Metall bilan — ionli birikma ({NaCl}, {MgO}, {Na2S}); metallmas bilan — kovalent birikma ({H2O}, {NH3}, {CO2}).",
+    "Inert gazlarning tashqi qavati to‘lgan (He da 2, qolganlarida 8 ē); 1962-yildan ksenon birikmalari (masalan, {XeF4}) ma’lum."
+  ],
+  "tables": [
+    {
+      "id": "groups",
+      "title": "Metallmaslarning guruhlar bo‘yicha umumiy formulalari",
+      "columns": [
+        { "key": "g", "label": "Guruh" },
+        { "key": "el", "label": "Metallmaslar" },
+        { "key": "ox", "label": "Yuqori oksidi" },
+        { "key": "h", "label": "Vodorodli birikmasi" }
+      ],
+      "rows": [
+        { "id": "g3", "cells": { "g": "III A", "el": "B", "ox": "{R2O3}", "h": "—" } },
+        { "id": "g4", "cells": { "g": "IV A", "el": "C, Si", "ox": "{RO2}", "h": "{RH4} ({CH4}, {SiH4})" } },
+        { "id": "g5", "cells": { "g": "V A", "el": "N, P, As", "ox": "{R2O5}", "h": "{RH3} ({NH3}, {PH3})" } },
+        { "id": "g6", "cells": { "g": "VI A", "el": "O, S, Se, Te", "ox": "{RO3}", "h": "{H2R} ({H2O}, {H2S})" } },
+        { "id": "g7", "cells": { "g": "VII A", "el": "F, Cl, Br, I, At", "ox": "{R2O7}", "h": "HR (HF, HCl)" },
+          "detail": { "concept": "Ftor kislorodli birikmada musbat oksidlanish darajasini namoyon qilmaydi, shuning uchun {R2O7} ftorga taalluqli emas.", "pages": [89] } },
+        { "id": "g8", "cells": { "g": "VIII A", "el": "He, Ne, Ar, Kr, Xe, Rn", "ox": "{RO4} (faqat Xe uchun)", "h": "—" } }
+      ]
+    },
+    {
+      "id": "state",
+      "title": "Oddiy moddalarning agregat holati (n.sh.)",
+      "columns": [
+        { "key": "s", "label": "Holat" },
+        { "key": "ex", "label": "Misollar" }
+      ],
+      "rows": [
+        { "id": "gas", "cells": { "s": "Gaz", "ex": "{H2}, {N2}, {O2}, {F2}, {Cl2}, inert gazlar" } },
+        { "id": "liq", "cells": { "s": "Suyuq", "ex": "{Br2}" } },
+        { "id": "sol", "cells": { "s": "Qattiq", "ex": "S, C, {I2}, P, Si, B" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "nacl": { "equation": "2Na + Cl2 → 2NaCl" },
+    "nh3": { "equation": "N2 + 3H2 ⇄ 2NH3", "conditions": "t°, p, katalizator" }
+  },
+  "clarifications": [
+    { "text": "Darslikdagi qatorda P vodoroddan oldin keltirilgan; Poling shkalasida ularning elektromanfiyligi deyarli teng (P 2,19; H 2,20), shuning uchun «C ≈ H ≈ P» deb yozildi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g8-s21-q1", "type": "Y1", "skill": "davriy qonuniyat", "difficulty": 1,
+      "stem": "Qaysi qatorda metallmaslik xossalari kuchayib boradi?",
+      "choices": ["F → Cl → Br → I", "Si → P → S → Cl", "O → S → Se → Te", "Cl → S → P → Si"], "answer": 1,
+      "solution": "Davr bo‘ylab (3-davr) tartib raqami ortishi bilan metallmaslik kuchayadi: Si < P < S < Cl. Guruhda pastga tushganda esa susayadi." },
+    { "id": "g8-s21-q2", "type": "Y2", "skill": "umumiy formulalar", "difficulty": 2,
+      "stem": "Elementni uning yuqori oksidi formulasi bilan moslashtiring.",
+      "left": ["S", "P", "Cl", "C"],
+      "right": ["{R2O7}", "{RO2}", "{RO3}", "{R2O5}"],
+      "answer": [2, 3, 0, 1],
+      "solution": "Yuqori oksidlanish darajasi = guruh raqami: S (VI) → SO₃; P (V) → P₂O₅; Cl (VII) → Cl₂O₇; C (IV) → CO₂." },
+    { "id": "g8-s21-q3", "type": "Y1", "skill": "bog‘ turi", "difficulty": 1,
+      "stem": "Quyidagilardan qaysi biri ionli bog‘li birikma?",
+      "choices": ["{H2O}", "{NH3}", "{Na2S}", "{CO2}"], "answer": 2,
+      "solution": "Na₂S tipik metall va metallmasdan hosil bo‘lgan — ionli. Qolganlari metallmaslar orasidagi kovalent bog‘li." },
+    { "id": "g8-s21-q4", "type": "O1", "skill": "massa ulushi", "difficulty": 2,
+      "stem": "Yer qobig‘ining 1 tonnasida taxminan necha kilogramm kremniy bor (massa ulushi 27,6 %)?",
+      "answer": 276, "tolerance": 0.5, "unit": "kg",
+      "solution": "1000 kg · 0,276 = 276 kg." }
+  ]
+}

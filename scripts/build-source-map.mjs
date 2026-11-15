@@ -75,10 +75,11 @@ for (const grade of [8, 9]) {
   }
 }
 
-// End page = next section's start − 1 within the same grade (last section ends before lab pages; recorded as null).
+// End page = the page where the next § heading appears (headings usually start mid-page, so that page is shared).
+// The last § of a grade is recorded as null (followed by practical/lab pages).
 for (const s of sections) {
   const next = sections.find((x) => x.grade === s.grade && x.section === s.section + 1);
-  s.endPage = next ? Math.max(s.pdfPage, next.pdfPage - (next.pdfPage > s.pdfPage ? 1 : 0)) : null;
+  s.endPage = next ? next.pdfPage : null;
 }
 
 const ids = new Set(sections.map((s) => s.id));

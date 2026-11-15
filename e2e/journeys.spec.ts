@@ -20,6 +20,7 @@ test('home → chapter → § → expand row → next §', async ({ page }) => {
   await page.getByRole('link', { name: /§24/ }).click();
   await expect(page.getByRole('heading', { level: 1, name: 'Vodorod xlorid' })).toBeVisible();
   // Honest pending state for sections without verified content yet
+  await page.goto('/dars/g9-s41');
   await expect(page.getByText(/hali tayyorlanmoqda/)).toBeVisible();
 });
 

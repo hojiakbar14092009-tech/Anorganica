@@ -1,0 +1,53 @@
+{
+  "id": "g8-s26",
+  "status": "seed-verified",
+  "pages": [111, 112, 113],
+  "summary": "Elementning ekvivalenti — 1 g (1 mol atom) vodorod bilan qoldiqsiz birikadigan yoki uning o‘rnini oladigan miqdori. Ekvivalentlar qonuni: moddalar o‘z ekvivalentlariga proporsional massalarda reaksiyaga kirishadi — m(A) / m(B) = E(A) / E(B).",
+  "keyConcepts": [
+    "Element ekvivalent massasi = A / valentlik: E(O) = 16 / 2 = 8 g/mol, E(Ca) = 40 / 2 = 20 g/mol.",
+    "Bir element turli birikmalarda turli ekvivalentga ega bo‘lishi mumkin: CO da E(C) = 6, {CO2} da E(C) = 3 g/mol (nisbat 2 : 1).",
+    "Gazlar uchun ekvivalent hajm (n.sh.): {H2} — 11,2 l, {O2} — 5,6 l.",
+    "Murakkab moddaning ekvivalenti aniq reaksiyaga bog‘liq; quyidagi formulalar to‘liq almashinish (neytrallanish) uchun."
+  ],
+  "tables": [
+    {
+      "id": "formulas",
+      "title": "Ekvivalent massani hisoblash",
+      "columns": [
+        { "key": "cls", "label": "Modda sinfi" },
+        { "key": "f", "label": "Formula" },
+        { "key": "ex", "label": "Misol" }
+      ],
+      "rows": [
+        { "id": "el", "cells": { "cls": "Element", "f": "E = A / valentlik", "ex": "Al: 27 / 3 = 9 g/mol" } },
+        { "id": "ox", "cells": { "cls": "Oksid", "f": "E = M / (valentlik · element atomlari soni)", "ex": "{Al2O3}: 102 / (3 · 2) = 17 g/mol" } },
+        { "id": "base", "cells": { "cls": "Asos", "f": "E = M / n(OH)", "ex": "{Ca(OH)2}: 74 / 2 = 37 g/mol" } },
+        { "id": "acid", "cells": { "cls": "Kislota", "f": "E = M / n(H) (almashinadigan H)", "ex": "{H2SO4}: 98 / 2 = 49 g/mol" },
+          "detail": { "concept": "Faqat metallga almashinadigan vodorodlar hisoblanadi. Agar {H2SO4} nordon tuz hosil qilsa ({NaHSO4}), shu reaksiyada uning ekvivalenti 98 g/mol bo‘ladi.", "examTip": "Ekvivalent — moddaning doimiy xossasi emas, reaksiyaga bog‘liq.", "pages": [113] } },
+        { "id": "salt", "cells": { "cls": "Tuz", "f": "E = M / (metall valentligi · metall atomlari soni)", "ex": "{Al2(SO4)3}: 342 / 6 = 57 g/mol" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "zn": { "equation": "Zn + 2HCl → ZnCl2 + H2↑", "note": "32,5 g Zn (1 ekvivalent) 1 g vodorodni siqib chiqaradi." }
+  },
+  "questions": [
+    { "id": "g8-s26-q1", "type": "O1", "skill": "ekvivalent massa", "difficulty": 1,
+      "stem": "Fosfor(V) oksid {P2O5} dagi fosforning ekvivalent massasini (g/mol) hisoblang.",
+      "answer": 6.2, "tolerance": 0.01, "unit": "g/mol",
+      "solution": "E(P) = A / valentlik = 31 / 5 = 6,2 g/mol." },
+    { "id": "g8-s26-q2", "type": "O1", "skill": "ekvivalentlar qonuni", "difficulty": 2,
+      "stem": "Metallning 2,4 g miqdori kislotadan n.sh.da 2,24 l vodorod siqib chiqardi. Metallning ekvivalent massasini toping.",
+      "answer": 12, "tolerance": 0.01, "unit": "g/mol",
+      "solution": "2,24 l H₂ = 0,2 g vodorod = 0,2 ekvivalent (yoki: 1 ekvivalent H₂ = 11,2 l). E(Me) = 2,4 / 0,2 = 12 g/mol (bu magniy: 24 / 2).",
+      "mistakes": "Vodorod hajmini 22,4 ga bo‘lish (mol) va ekvivalentni mol bilan aralashtirish: ekvivalent hajm 11,2 l." },
+    { "id": "g8-s26-q3", "type": "Y1", "skill": "ekvivalent massa", "difficulty": 1,
+      "stem": "Kalsiy gidroksid {Ca(OH)2} ning ekvivalent massasi necha g/mol?",
+      "choices": ["74", "37", "24,7", "18,5"], "answer": 1,
+      "solution": "E = M / n(OH) = 74 / 2 = 37 g/mol." },
+    { "id": "g8-s26-q4", "type": "O1", "skill": "ekvivalentlar qonuni", "difficulty": 2,
+      "stem": "Metall oksidida kislorodning massa ulushi 40 %. Metallning ekvivalent massasini toping.",
+      "answer": 12, "tolerance": 0.01, "unit": "g/mol",
+      "solution": "100 g oksidda 60 g metall va 40 g kislorod. m(Me) / m(O) = E(Me) / E(O) ⇒ E(Me) = 60 · 8 / 40 = 12 g/mol (MgO)." }
+  ]
+}
