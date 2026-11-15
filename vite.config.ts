@@ -7,7 +7,6 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'prompt', // never reload under a student mid-lesson; UpdateBanner asks first
-      useCredentials: true, // manifest is behind the access gate; browsers fetch it without cookies otherwise
       includeAssets: ['icon.svg', 'apple-touch-icon.png'],
       manifest: {
         name: 'Anorganica',

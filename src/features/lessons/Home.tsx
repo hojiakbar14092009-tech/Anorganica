@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { sectionById } from '../../lib/content';
+import { sectionById, sections } from '../../lib/content';
 import { useAppState } from '../../lib/storage';
 import { ChapterNav } from './ChapterNav';
 
@@ -30,7 +30,7 @@ export function Home() {
 
       <div className="seg" role="tablist" aria-label="Sinf">
         {([8, 9] as const).map((g) => (
-          <button key={g} role="tab" aria-selected={grade === g} onClick={() => setGrade(g)}>{g}-sinf</button>
+          <button key={g} role="tab" aria-selected={grade === g} onClick={() => setGrade(g)}>{g}-sinf <span className="count">({sections.filter((x) => x.grade === g).length} mavzu)</span></button>
         ))}
       </div>
       <ChapterNav grade={grade} current={last?.id} />

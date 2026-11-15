@@ -2,31 +2,13 @@
 
 Sources (local only, never deployed): `reference/kimyo-8-2019.pdf` — I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019, 208 PDF pages, sha256 `a37b19b2e01d3716…`; `reference/kimyo-9-2019.pdf` — I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019, 208 PDF pages, sha256 `283f7c45abaf91ea…`.
 
+Scope: exactly 53 lessons (grade 8 §21–44, grade 9 §8–36) from src/content/allowed-lessons.json.
+
 Printed page = PDF page index for both books (checked: every body page whose header/footer number is extractable matches its index; chapter-opener pages have no printed number, marked *).
 ⚠ = the book's own table of contents disagrees with the page where the § heading actually starts (Grade 8 §§6–13). The heading page is used.
 
 | Grade | § | Title | Printed page | PDF page | TOC page | Method | Status |
 |---|---|---|---|---|---|---|---|
-| 8 | §1 | Dastlabki kimyoviy tushuncha va qonunlar | 5* | 5 | 5 | heading | auto-verified |
-| 8 | §2 | Noorganik birikmalarning asosiy sinflari | 10 | 10 | 10 | heading | auto-verified |
-| 8 | §3 | Kimyoviy elementlarning dastlabki toifalanishi | 17* | 17 | 17 | heading | auto-verified |
-| 8 | §4 | Kimyoviy elementlarning tabiiy oilalari | 21 | 21 | 21 | heading | auto-verified |
-| 8 | §5 | Kimyoviy elementlarning davriy qonuni | 25 | 25 | 25 | heading | auto-verified |
-| 8 | §6 | Kimyoviy elementlar davriy sistemasi | 31 | 31 | 30 ⚠ | heading | auto-verified |
-| 8 | §7 | Atom yadrosi tarkibi | 34 | 34 | 32 ⚠ | heading | auto-verified |
-| 8 | §8 | Izotoplar. Izobarlar | 37 | 37 | 36 ⚠ | heading | auto-verified |
-| 8 | §9 | Atom elektron qavatlarining tuzilishi | 41 | 41 | 39 ⚠ | heading | auto-verified |
-| 8 | §10 | Energetik pog‘onachalar | 44 | 44 | 42 ⚠ | heading | auto-verified |
-| 8 | §11 | Kichik davr elementlarining atom tuzilishi | 48 | 48 | 46 ⚠ | heading | auto-verified |
-| 8 | §12 | Katta davr elementlarining atom tuzilishi | 51 | 51 | 49 ⚠ | heading | auto-verified |
-| 8 | §13 | Elementlarning davriy sistemadagi o‘rni va atom tuzilishiga qarab tavsiflash. Davriy qonunning ahamiyati | 53 | 53 | 51 ⚠ | heading | auto-verified |
-| 8 | §14 | Kimyoviy elementlarning nisbiy elektromanfiyligi | 64 | 64 | 64 | heading | auto-verified |
-| 8 | §15 | Kimyoviy bog‘lanish turlari. Qutbli va qutbsiz kovalent bog‘lanish | 66 | 66 | 66 | heading | auto-verified |
-| 8 | §16 | Ionli bog‘lanish | 71 | 71 | 71 | heading | auto-verified |
-| 8 | §17 | Kristall panjaralar | 74 | 74 | 74 | heading | auto-verified |
-| 8 | §18 | Elementlarning oksidlanish darajasi | 76 | 76 | 76 | heading | auto-verified |
-| 8 | §19 | Oksidlanish-qaytarilish reaksiyalari | 80 | 80 | 80 | heading | auto-verified |
-| 8 | §20 | Oksidlanish-qaytarilish reaksiyalari tenglamalarini tuzish | 83 | 83 | 83 | heading | auto-verified |
 | 8 | §21 | Metallmaslarning umumiy xossalari | 89* | 89 | 89 | heading | auto-verified |
 | 8 | §22 | Galogenlarning davriy sistemadagi o‘rni. Atom tuzilishi | 92 | 92 | 92 | heading | auto-verified |
 | 8 | §23 | Xlor | 96 | 96 | 96 | heading | auto-verified |
@@ -51,13 +33,6 @@ Printed page = PDF page index for both books (checked: every body page whose hea
 | 8 | §42 | Mineral o‘g‘itlar | 185 | 185 | 185 | heading | auto-verified |
 | 8 | §43 | Eng muhim asosiy mineral o‘g‘itlar | 189 | 189 | 189 | heading | auto-verified |
 | 8 | §44 | Biogen elementlar va ularning tirik organizmlardagi ahamiyati | 193 | 193 | 193 | heading | auto-verified |
-| 9 | §1 | Elementlar davriy sistemasi va davriy qonuni | 5 | 5 | 5 | heading | auto-verified |
-| 9 | §2 | Kimyoviy bog‘lanishning turlari: kovalent (qutbsiz va qutbli), ionli, metall bog‘lanishlar | 16 | 16 | 16 | heading | auto-verified |
-| 9 | §3 | Elektrolitlar va noelektrolitlar | 20 | 20 | 20 | heading | auto-verified |
-| 9 | §4 | Kislota, ishqor va tuzlarning dissotsiatsiyalanishi | 24 | 24 | 24 | heading | auto-verified |
-| 9 | §5 | Kuchli va kuchsiz elektrolitlar. Dissotsiatsiyalanish darajasi | 26 | 26 | 26 | heading | auto-verified |
-| 9 | §6 | Ion almashinish reaksiyalari | 29 | 29 | 29 | heading | auto-verified |
-| 9 | §7 | Tuzlarning gidrolizi | 32 | 32 | 32 | heading | auto-verified |
 | 9 | §8 | Uglerod guruhidagi elementlarning umumiy tavsifi | 42 | 42 | 42 | heading | auto-verified |
 | 9 | §9 | Uglerodning fizik va kimyoviy xossalari | 47 | 47 | 47 | heading | auto-verified |
 | 9 | §10 | Uglerodning eng muhim birikmalari | 50 | 50 | 50 | heading | auto-verified |
@@ -87,8 +62,3 @@ Printed page = PDF page index for both books (checked: every body page whose hea
 | 9 | §34 | Temir | 158 | 158 | 158 | heading | auto-verified |
 | 9 | §35 | Temirning eng muhim birikmalari. Ishlatilishi | 162 | 162 | 162 | heading | auto-verified |
 | 9 | §36 | O‘zbekistonda metallurgiya. Cho‘yan ishlab chiqarish | 165 | 165 | 165 | heading | auto-verified |
-| 9 | §37 | Po‘lat ishlab chiqarish | 168 | 168 | 168 | heading | auto-verified |
-| 9 | §38 | Kimyoviy ishlab chiqarish istiqbollari | 177 | 177 | 177 | heading | auto-verified |
-| 9 | §39 | Atmosfera va gidrosferani muhofaza qilish | 180 | 180 | 180 | heading | auto-verified |
-| 9 | §40 | Davriy qonun va elementlar davriy sistemasining ahamiyati | 185 | 185 | 185 | heading | auto-verified |
-| 9 | §41 | Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati | 189 | 189 | 189 | heading | auto-verified |

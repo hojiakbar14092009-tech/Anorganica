@@ -9,7 +9,8 @@ it('normalizes apostrophes and subscripts', () => {
 it('finds by section number, title, formula and equation text', async () => {
   expect((await search('§23')).map((h) => h.section.id)).toEqual(['g8-s23', 'g9-s23']);
   expect((await search('8-sinf §23')).map((h) => h.section.id)).toEqual(['g8-s23']);
-  expect((await search('pog`onachalar'))[0]?.section.id).toBe('g8-s10');
+  expect((await search('o`g`itlar'))[0]?.section.id).toBe('g8-s42');
+  expect(await search('§5')).toEqual([]); // excluded sections never appear
   expect((await search('KClO₃')).map((h) => h.section.id)).toContain('g8-s23');
   expect(await search('   ')).toEqual([]);
 });

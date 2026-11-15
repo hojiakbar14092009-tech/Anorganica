@@ -1,0 +1,157 @@
+{
+ "scope": "EXACTLY 53 lessons: grade 8 §21–44, grade 9 §8–36. Single source of truth; validated in src/tests/content.test.ts.",
+ "chapters": [
+  {
+   "id": "g8-c4",
+   "grade": 8,
+   "roman": "IV",
+   "title": "Metallmaslar",
+   "sections": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+   ]
+  },
+  {
+   "id": "g8-c5",
+   "grade": 8,
+   "roman": "V",
+   "title": "Oltinchi guruh bosh guruhchasi elementlari",
+   "sections": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ]
+  },
+  {
+   "id": "g8-c6",
+   "grade": 8,
+   "roman": "VI",
+   "title": "Azot guruhchasi",
+   "sections": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+   ]
+  },
+  {
+   "id": "g9-c3",
+   "grade": 9,
+   "roman": "III",
+   "title": "Metallmaslar. Uglerod guruhi",
+   "sections": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ]
+  },
+  {
+   "id": "g9-c4",
+   "grade": 9,
+   "roman": "IV",
+   "title": "Metallar",
+   "sections": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+   ]
+  }
+ ],
+ "titles": {
+  "8": {
+   "21": "Metallmaslarning umumiy xossalari",
+   "22": "Galogenlarning davriy sistemadagi o‘rni. Atom tuzilishi",
+   "23": "Xlor",
+   "24": "Vodorod xlorid",
+   "25": "Avogadro qonuni. Molyar hajm",
+   "26": "Ekvivalent qonuni",
+   "27": "Xlorid kislota",
+   "28": "Ftor, brom, yod",
+   "29": "Kislorod guruhchasi elementlari",
+   "30": "Oltingugurtning vodorodli birikmalari",
+   "31": "Oltingugurtning kislorodli birikmalari",
+   "32": "Sulfat kislota",
+   "33": "Kimyoviy reaksiyalarning tezligi",
+   "34": "Kimyoviy muvozanat",
+   "35": "Sanoatda sulfat kislota ishlab chiqarish",
+   "36": "Azot",
+   "37": "Azotning vodorodli birikmalari",
+   "38": "Azotning kislorodli birikmalari",
+   "39": "Nitrat kislota",
+   "40": "Fosfor",
+   "41": "Fosforning kislorodli birikmalari",
+   "42": "Mineral o‘g‘itlar",
+   "43": "Eng muhim asosiy mineral o‘g‘itlar",
+   "44": "Biogen elementlar va ularning tirik organizmlardagi ahamiyati"
+  },
+  "9": {
+   "8": "Uglerod guruhidagi elementlarning umumiy tavsifi",
+   "9": "Uglerodning fizik va kimyoviy xossalari",
+   "10": "Uglerodning eng muhim birikmalari",
+   "11": "Karbonat kislota va karbonatlarning xossalari",
+   "12": "Kremniy. Kremniyning davriy sistemadagi o‘rni va atom tuzilishi",
+   "13": "Kremniyning xossalari. Muhim birikmalari",
+   "14": "Silikat sanoati",
+   "15": "Metallarning tabiatda tarqalishi, olinishi va ishlatilishi",
+   "16": "Qotishmalar",
+   "17": "Metallarning fizik va kimyoviy xossalari",
+   "18": "Metallar korroziyasi",
+   "19": "Elektroliz va uning amaliy ahamiyati",
+   "20": "Ishqoriy metallar",
+   "21": "Natriy va kaliyning xossalari va eng muhim birikmalari",
+   "22": "Soda ishlab chiqarish",
+   "23": "Kalsiy va magniy",
+   "24": "Suvning qattiqligi va uni yumshatish usullari",
+   "25": "Aluminiy",
+   "26": "Aluminiy xossalari",
+   "27": "Aluminiy birikmalari. Ishlatilishi",
+   "28": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+   "29": "Kumush va oltin. Xossalari. Ishlatilishi",
+   "30": "II guruh yonaki guruhcha elementlarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari",
+   "31": "Xrom. Davriy jadvaldagi o‘rni. Atom tuzilishi va ayrim xossalari",
+   "32": "Xromning II, III, VI valentli birikmalari va xossalari",
+   "33": "Marganes. Davriy jadvaldagi o‘rni. Atom tuzilishi. Ayrim xossalari",
+   "34": "Temir",
+   "35": "Temirning eng muhim birikmalari. Ishlatilishi",
+   "36": "O‘zbekistonda metallurgiya. Cho‘yan ishlab chiqarish"
+  }
+ }
+}

@@ -1,6 +1,7 @@
 // Release gate: inventory completeness, source mapping, lesson schema and chemistry conservation.
 import { describe, expect, it } from 'vitest';
 import manifest from '../../content/manifest.json';
+import allowed from '../content/allowed-lessons.json';
 import { LessonSchema, type Lesson } from '../lib/schema';
 import { checkBalance } from '../lib/chem';
 
@@ -11,26 +12,30 @@ const lessons: Lesson[] = Object.entries(raw).map(([path, mod]) => {
   return r.data;
 });
 
-describe('inventory', () => {
+describe('scope: exactly 53 lessons', () => {
   const s = manifest.sections;
-  it('has exactly 44 + 41 unique sections', () => {
-    expect(s.filter((x) => x.grade === 8)).toHaveLength(44);
-    expect(s.filter((x) => x.grade === 9)).toHaveLength(41);
-    expect(new Set(s.map((x) => x.id)).size).toBe(85);
+  const G8 = Array.from({ length: 24 }, (_, i) => 21 + i);
+  const G9 = Array.from({ length: 29 }, (_, i) => 8 + i);
+  it('has exactly grade 8 §21–44 and grade 9 §8–36', () => {
+    expect(s.filter((x) => x.grade === 8).map((x) => x.section)).toEqual(G8);
+    expect(s.filter((x) => x.grade === 9).map((x) => x.section)).toEqual(G9);
+    expect(new Set(s.map((x) => x.id)).size).toBe(53);
   });
-  it('numbers sections contiguously with ascending source pages', () => {
-    for (const g of [8, 9]) {
-      const gs = s.filter((x) => x.grade === g);
-      gs.forEach((x, i) => {
-        expect(x.section).toBe(i + 1);
-        if (i) expect(x.pdfPage).toBeGreaterThanOrEqual(gs[i - 1]!.pdfPage);
-      });
-    }
+  it('allowlist titles and chapters match the manifest', () => {
+    for (const x of s) expect(x.title).toBe((allowed.titles as Record<string, Record<string, string>>)[x.grade]![x.section]);
+    expect(allowed.chapters.flatMap((c) => c.sections.map((n) => `g${c.grade}-s${n}`))).toEqual(s.map((x) => x.id));
   });
-  it('every section is source-verified and cited', () => {
+  it('every allowed section has a lesson and no lesson exists outside the allowlist', () => {
+    expect(lessons.map((l) => l.id).sort()).toEqual(s.map((x) => x.id).sort());
+  });
+  it('every section is source-verified with ascending pages', () => {
     for (const x of s) {
       expect(x.verification, x.id).toBe('auto-verified');
       expect(x.source.citation).toMatch(/Kimyo [89]/);
+    }
+    for (const g of [8, 9]) {
+      const gs = s.filter((x) => x.grade === g);
+      gs.forEach((x, i) => i && expect(x.pdfPage).toBeGreaterThanOrEqual(gs[i - 1]!.pdfPage));
     }
   });
 });

@@ -31,7 +31,8 @@ export function PracticePage() {
 
   const shown = items?.filter(({ q, lessonId }) =>
     (!grade || lessonId.startsWith(`g${grade}`)) && (type === 'all' || q.type === type) && (!onlyWrong || answers[q.id]?.correct === false));
-  const attempted = Object.values(answers);
+  // Only count answers to questions that still exist (older versions had out-of-scope lessons).
+  const attempted = (items ?? []).flatMap(({ q }) => (answers[q.id] ? [answers[q.id]!] : []));
 
   const startDrill = () => {
     // Fisher–Yates on objective questions only; O2 needs self-assessment, not a timer.
@@ -62,10 +63,10 @@ export function PracticePage() {
 
   return (
     <main className="page practice-page">
-      <h1>8–9-sinf mavzulari bo‘yicha sertifikat mashqlari</h1>
+      <h1>Tanlangan 53 mavzu bo‘yicha sertifikat uslubidagi mashq</h1>
       <p className="notice" role="note">
-        Bu rasmiy Milliy sertifikat testi emas. Darsliklar organik kimyo va kimyoviy tahlilning barcha mavzularini qamrab olmaydi, shuning uchun
-        to‘liq 43 topshiriqli simulyatsiya berilmaydi. Natijalar — xom mashq ballari.
+        Mustaqil tuzilgan mashqlar; rasmiy imtihon savollari emas. Faqat 8-sinf §21–44 va 9-sinf §8–36 mavzulari qamrab olingan —
+        rasmiy sertifikatdagi organik kimyo, umumiy kimyoning boshqa bo‘limlari va kimyoviy tahlil bu yerda yo‘q. Natijalar — xom mashq ballari.
       </p>
       <p className="muted">Yechilgan: {attempted.length} · to‘g‘ri: {attempted.filter((a) => a.correct).length}</p>
 
