@@ -69,6 +69,7 @@
     "na2o": { "equation": "Na2O2 + 2Na → 2Na2O", "conditions": "qizdirish" }
   },
   "clarifications": [
+    {"text":"99-betda inson organizmida (70 kg) natriy ≈ 70 g, kaliy ≈ 250 g deb berilgan. Fiziologik ma’lumotnomalarda 70 kg li kattada taxminan 100 g {Na} va 140 g {K} keltiriladi; jadvaldagi qiymatlar darslikdan olingan, aniq sonni yodlash shart emas.","source":"additionalVerifiedSource"},
     { "text": "98-betda fransiy «tabiatda uchramaydigan sun’iy element» deb yozilgan. Aslida u uran rudalarida radioaktiv parchalanish mahsuloti sifatida juda kam miqdorda hosil bo‘ladi (Yer qobig‘ida bir vaqtning o‘zida bir necha o‘n gramm atrofida); amalda esa asosan sun’iy olinadi. «Eng faol» deb seziy aytilishining sababi — fransiy yaxshi o‘rganilmagan.", "source": "additionalVerifiedSource" },
     { "text": "98-betdagi litiyning nisbiy atom massasi 6,939 eskirgan; hozirgi qiymat ≈ 6,94 (maktab masalalarida 7).", "source": "additionalVerifiedSource" }
   ],

@@ -53,6 +53,7 @@
     "zn": { "equation": "Zn + 2HCl → ZnCl2 + H2↑", "observation": "Qotishmadagi rux eriydi, mis erimay qoladi" }
   },
   "clarifications": [
+    {"text":"76-betdagi 10-jadvalda duraluminiy tarkibida {Cu} 1,4 % deb berilgan. Hozirgi ma’lumotnomalarda klassik duraluminiy (D1, D16 turlari) tarkibi: {Al} ≈ 93–95 %, {Cu} ≈ 3,8–4,9 %, {Mg} ≈ 0,4–1,8 %, {Mn} ≈ 0,3–1 %; jadvaldagi mis miqdori kam ko‘rsatilgan, jadval darslik ma’lumoti sifatida saqlandi.","source":"additionalVerifiedSource"},
     { "text": "Darslik qotishmalarni gomogen / geterogen / intermetall deb tasniflaydi. Umumiy qabul qilingan atamalar: qattiq eritma, mexanik aralashma (eutektika) va intermetall birikma — mazmunan mos keladi.", "source": "additionalVerifiedSource" },
     { "text": "75-betda {Na}–{K} gomogen qotishma misoli sifatida berilgan; bu juftlikni namuna sifatida ishlatmadik, chunki natriy–kaliy tizimida intermetall birikma ({Na2K}) mavjudligi ma’lum va misol mos emas.", "source": "additionalVerifiedSource" }
   ],
