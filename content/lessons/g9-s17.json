@@ -1,0 +1,106 @@
+{
+  "id": "g9-s17",
+  "status": "seed-verified",
+  "pages": [77, 78, 79, 80],
+  "summary": "Metallarning umumiy fizik xossalari (yaltiroqlik, elektr va issiqlik o‘tkazuvchanlik, plastiklik) metall bog‘ bilan izohlanadi. Kimyoviy jihatdan metall atomlari valent elektronlarini beradigan qaytaruvchilardir; ularning faolligi elektrokimyoviy kuchlanishlar qatorida ifodalanadi.",
+  "keyConcepts": [
+    "Metall bog‘ — kristall panjara tugunlaridagi musbat ionlar (va atomlar) hamda ular orasida harakatlanuvchi umumiy erkin elektronlar orasidagi bog‘.",
+    "Erkin elektronlar tufayli metallar elektr tokini va issiqlikni yaxshi o‘tkazadi; eng yaxshi o‘tkazgichlar — {Ag} va {Cu}.",
+    "Metall reaksiyalarda faqat qaytaruvchi: M − n e^- → M^n+.",
+    "Kuchlanishlar qatorida har bir metall o‘zidan keyingi metallni tuzi eritmasidan siqib chiqaradi; vodoroddan chapdagi metallar (kislota anioni oksidlovchi bo‘lmagan kislotalardan) vodorodni siqib chiqaradi.",
+    "Eng yuqori suyuqlanish haroratiga {W} (3410 °C), eng pastiga {Hg} (−38,87 °C) ega; eng yumshoq metallar — {Na}, {K}, {In}; eng bolg‘alanuvchan — {Au}."
+  ],
+  "tables": [
+    {
+      "id": "physical",
+      "title": "Fizik xossalar va ularning sababi",
+      "columns": [
+        { "key": "prop", "label": "Xossa" },
+        { "key": "why", "label": "Sababi" },
+        { "key": "ex", "label": "Misol" }
+      ],
+      "rows": [
+        { "id": "luster", "cells": { "prop": "Metall yaltiroqligi", "why": "erkin elektronlar nurni qaytaradi", "ex": "{Ag}, {In} — reflektor va projektorlarda" } },
+        { "id": "cond", "cells": { "prop": "Elektr va issiqlik o‘tkazuvchanligi", "why": "erkin elektronlar butun kristall bo‘ylab harakatlanadi", "ex": "{Ag} > {Cu} — simlar" },
+          "detail": { "concept": "Haroratning ko‘tarilishi bilan metallarning elektr o‘tkazuvchanligi pasayadi: ionlarning tebranishi elektronlar harakatiga to‘sqinlik qiladi.", "pages": [78] } },
+        { "id": "plast", "cells": { "prop": "Bolg‘alanuvchanlik va plastiklik", "why": "ion qatlamlari siljiganda ham elektron «bulut» bog‘ni saqlab qoladi", "ex": "{Au} — yupqa folga va ingichka ip" } },
+        { "id": "extreme", "cells": { "prop": "Suyuqlanish harorati va qattiqlik", "why": "yadro zaryadi, massa va metall bog‘ mustahkamligiga bog‘liq", "ex": "{Hg} −38,87 °C; {W} 3410 °C; eng qattiq {Cr}, {W}; eng yumshoq {Na}, {K}, {In}" },
+          "detail": { "concept": "Simob va fransiydan tashqari barcha metallar odatdagi sharoitda qattiq. Simob — yagona suyuq metall; undan termometrlarda foydalanilgan.", "pages": [77, 78] } }
+      ]
+    },
+    {
+      "id": "chem",
+      "title": "Metallarning kimyoviy reaksiyalari",
+      "columns": [
+        { "key": "with", "label": "Nima bilan" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "o2", "cells": { "with": "Kislorod", "eq": "mgo", "note": "metall oksidlanadi, kislorod qaytariladi" },
+          "detail": { "concept": "Umumiy sxema: M → M^n+ + n e^- (oksidlanish); {O2} + 4e^- → 2{O^2-} (qaytarilish). Eng faollari ({Na}, {K}) peroksid ham hosil qiladi.", "examTip": "Metall reaksiyada elektron beradi — u qaytaruvchi, ya’ni o‘zi oksidlanadi.", "pages": [78, 79] } },
+        { "id": "hal", "cells": { "with": "Galogenlar", "eq": "nacl", "note": "ion bog‘li tuz hosil bo‘ladi" } },
+        { "id": "s", "cells": { "with": "Oltingugurt", "eq": "fes", "note": "qizdirilganda sulfid" } },
+        { "id": "acid", "cells": { "with": "Kislota (suyultirilgan)", "eq": "znacid", "note": "faqat vodoroddan chapdagi metall" },
+          "detail": { "concept": "Vodorodni kislotadan faqat kuchlanishlar qatorida {H2} dan chapdagi metallar siqib chiqaradi. Bu qoida {HNO3} va konsentrlangan {H2SO4} ga tegishli emas — ular boshqa mahsulotlar beradi.", "reactionIds": ["znacid"], "pages": [79, 80] } },
+        { "id": "water", "cells": { "with": "Suv (faol metall)", "eq": "nawater", "note": "ishqor va vodorod" } },
+        { "id": "salt1", "cells": { "with": "Tuz eritmasi (faolroq metall)", "eq": "znpb", "note": "kuchliroq qaytaruvchi kuchsizrog‘ini siqib chiqaradi" },
+          "detail": { "concept": "Rux qo‘rg‘oshinni siqib chiqaradi, aksincha emas: {Zn} {Pb} dan chapda. Xuddi shuningdek mis kumushni siqib chiqaradi.", "reactionIds": ["znpb", "cuag"], "observation": "Mis simda kumush «daraxtsimon» kristallar ko‘rinishida o‘tiradi", "pages": [79] } }
+      ]
+    },
+    {
+      "id": "series",
+      "title": "Elektrokimyoviy kuchlanishlar qatori (standart potensiallar, V)",
+      "columns": [
+        { "key": "zone", "label": "Qator qismi" },
+        { "key": "ms", "label": "Metallar (E°, V)" },
+        { "key": "rule", "label": "Qoidasi" }
+      ],
+      "rows": [
+        { "id": "left", "cells": { "zone": "Li … Mg", "ms": "{Li} −3,04; {K} −2,92; {Ca} −2,87; {Na} −2,71; {Mg} −2,37", "rule": "eng kuchli qaytaruvchilar; faollari suv bilan odatdagi sharoitda reaksiyaga kirishadi" } },
+        { "id": "mid", "cells": { "zone": "Al … Pb", "ms": "{Al} −1,66; {Zn} −0,76; {Fe} −0,44; {Ni} −0,25; {Sn} −0,14; {Pb} −0,13", "rule": "kislotalardan vodorodni siqib chiqaradi" } },
+        { "id": "h", "cells": { "zone": "{H2}", "ms": "0,00", "rule": "taqqoslash nuqtasi" } },
+        { "id": "right", "cells": { "zone": "Cu … Au", "ms": "{Cu} +0,34; {Ag} +0,80; {Hg} +0,85; {Au} +1,50", "rule": "kislotadan vodorodni siqib chiqara olmaydi; eng kuchsiz qaytaruvchilar" },
+          "detail": { "concept": "Chapdan o‘ngga metallarning qaytaruvchanligi kamayadi, ionlarning oksidlovchanligi ortadi. Metall o‘zidan o‘ngda turgan metallni tuz eritmasidan siqib chiqaradi.", "pages": [79, 80] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "mgo": { "equation": "2Mg + O2 → 2MgO", "observation": "Ko‘zni qamashtiruvchi oq alanga, oq kukun" },
+    "nacl": { "equation": "2Na + Cl2 → 2NaCl", "safety": "Xlor zaharli gaz — faqat virtual namoyish." },
+    "fes": { "equation": "Fe + S → FeS", "conditions": "qizdirish" },
+    "znacid": { "equation": "Zn + H2SO4 → ZnSO4 + H2↑", "conditions": "suyultirilgan kislota", "observation": "Gaz pufakchalari ajraladi" },
+    "nawater": { "equation": "2Na + 2H2O → 2NaOH + H2↑", "observation": "Natriy suv ustida sirpanib yuguradi, eriydi; fenolftalein malina rangga kiradi", "safety": "Natriy suv bilan shiddatli reaksiyaga kirishadi, vodorod alangalanishi mumkin — faqat virtual namoyish." },
+    "znpb": { "equation": "Zn + Pb(NO3)2 → Pb↓ + Zn(NO3)2" },
+    "cuag": { "equation": "Cu + 2AgNO3 → Cu(NO3)2 + 2Ag↓", "observation": "Eritma asta-sekin ko‘kara boradi, mis sirtida kumush o‘tiradi" }
+  },
+  "clarifications": [
+    { "text": "80-betdagi «litiy va magniy oralig‘idagi metallar vodorodni suvdan odatdagi haroratda siqib chiqaradi» qoidasi aniqlashtirildi: odatdagi sharoitda suv bilan ishqoriy va ishqoriy-yer metallar (Li … Ca) reaksiyaga kirishadi; magniy faqat qizdirilganda, aluminiy esa oksid pardasi olib tashlansa.", "source": "additionalVerifiedSource" },
+    { "text": "«Vodoroddan chapdagi metall kislotadan vodorodni siqib chiqaradi» qoidasi oksidlovchi bo‘lmagan kislotalar ({HCl}, suyultirilgan {H2SO4}) uchun to‘g‘ri; {HNO3} va konsentrlangan {H2SO4} da vodorod ajralmaydi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s17-q1", "type": "Y1", "skill": "kuchlanishlar qatori", "difficulty": 1,
+      "stem": "Quyidagi metallardan qaysi biri suyultirilgan xlorid kislotadan vodorodni siqib chiqara olmaydi?",
+      "choices": ["{Zn}", "{Fe}", "{Mg}", "{Cu}"], "answer": 3,
+      "solution": "Mis kuchlanishlar qatorida vodoroddan keyin (E° = +0,34 V) turadi, shuning uchun suyultirilgan {HCl} dan {H2} ni siqib chiqara olmaydi. {Zn}, {Fe}, {Mg} vodoroddan chapda." },
+    { "id": "g9-s17-q2", "type": "O1", "skill": "metall + kislota hisobi", "difficulty": 2,
+      "stem": "13 g rux suyultirilgan sulfat kislota bilan to‘liq reaksiyaga kirishsa, necha litr (n.sh.) vodorod ajraladi?",
+      "answer": 4.48, "tolerance": 0.02, "unit": "l",
+      "solution": "{Zn} + {H2SO4} → {ZnSO4} + {H2}. n({Zn}) = 13 / 65 = 0,2 mol; n({H2}) = 0,2 mol; V = 0,2 · 22,4 = 4,48 l." },
+    { "id": "g9-s17-q3", "type": "O1", "skill": "metall + tuz hisobi", "difficulty": 2,
+      "stem": "6,4 g mis kumush nitrat eritmasiga tushirildi. Reaksiya to‘liq borsa, necha gramm kumush ajraladi?",
+      "answer": 21.6, "tolerance": 0.1, "unit": "g",
+      "solution": "{Cu} + 2{AgNO3} → {Cu(NO3)2} + 2{Ag}. n({Cu}) = 6,4 / 64 = 0,1 mol; n({Ag}) = 2 · 0,1 = 0,2 mol; m = 0,2 · 108 = 21,6 g.",
+      "mistakes": "Ag oldidagi koeffitsientni (2) hisobga olmaslik — natijada 10,8 g chiqib qoladi." },
+    { "id": "g9-s17-q4", "type": "Y2", "skill": "metallarning fizik xossalari", "difficulty": 1,
+      "stem": "Xossani unga mos metall bilan moslashtiring.",
+      "left": ["odatdagi sharoitda suyuq", "eng yuqori suyuqlanish harorati", "eng bolg‘alanuvchan", "pichoq bilan kesish mumkin"],
+      "right": ["{Au}", "{Na}", "{Hg}", "{W}"],
+      "answer": [2, 3, 0, 1],
+      "solution": "Simob (−38,87 °C da muzlaydi) — yagona suyuq metall; volfram 3410 °C da suyuqlanadi; oltindan eng ingichka ip va folga tayyorlanadi; natriy shunchalik yumshoqki, uni pichoq bilan kesish mumkin." },
+    { "id": "g9-s17-q5", "type": "Y1", "skill": "metall bog‘", "difficulty": 1,
+      "stem": "Metallarning elektr tokini yaxshi o‘tkazishiga nima sabab bo‘ladi?",
+      "choices": ["kristall panjara tugunlarida anionlar borligi", "ion bog‘ning mustahkamligi", "butun kristall bo‘ylab harakatlanuvchi erkin elektronlar", "kovalent qutbli bog‘lar"], "answer": 2,
+      "solution": "Metall bog‘da musbat ionlar orasida erkin (umumlashgan) elektronlar harakatlanadi; elektr maydonida ular tartibli siljib tok hosil qiladi." }
+  ]
+}

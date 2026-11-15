@@ -1,0 +1,110 @@
+{
+  "id": "g9-s24",
+  "status": "seed-verified",
+  "pages": [117, 118, 119, 120],
+  "summary": "Qattiq suv tarkibida {Ca^2+} va {Mg^2+} ionlari ko‘p. Vaqtinchalik (karbonat) qattiqlik gidrokarbonatlar bilan bog‘liq va qaynatish bilan yo‘qoladi; doimiy qattiqlik sulfat va xloridlar bilan bog‘liq va soda yoki fosfat qo‘shib, ion almashinuvchi smolalar yordamida yo‘qotiladi.",
+  "keyConcepts": [
+    "Vaqtinchalik qattiqlik: {Ca(HCO3)2}, {Mg(HCO3)2}; doimiy qattiqlik: {CaSO4}, {CaCl2}, {MgSO4}, {MgCl2}; umumiy qattiqlik = kalsiy + magniy qattiqligi.",
+    "Qaynatish: {Ca(HCO3)2} → {CaCO3}↓ + {H2O} + {CO2}↑ (qozonda quyqa — nakip hosil bo‘ladi).",
+    "Doimiy qattiqlikni qaynatish yo‘qotmaydi: soda ({Na2CO3}) yoki natriy fosfat ({Na3PO4}) ionlarni cho‘ktiradi.",
+    "Ion almashinuv (kationit): {Na2R} + {Ca^2+} → {CaR} + 2{Na^+} — sanoatda keng ishlatiladi.",
+    "Qattiq suvda sovun ko‘pirmaydi: {Ca^2+} va {Mg^2+} sovun anioni bilan erimaydigan tuz hosil qiladi."
+  ],
+  "tables": [
+    {
+      "id": "types",
+      "title": "Qattiqlik turlari",
+      "columns": [
+        { "key": "kind", "label": "Qattiqlik turi" },
+        { "key": "cause", "label": "Sababchi tuzlar" },
+        { "key": "boil", "label": "Qaynatganda" },
+        { "key": "fix", "label": "Yumshatish usullari" }
+      ],
+      "rows": [
+        { "id": "temp", "cells": { "kind": "Vaqtinchalik (karbonat)", "cause": "{Ca(HCO3)2}, {Mg(HCO3)2}", "boil": "yo‘qoladi", "fix": "qaynatish, ohakli suv, ishqor, soda" },
+          "detail": { "concept": "Gidrokarbonatlar qizdirilganda parchalanib erimaydigan karbonat hosil qiladi va {CO2} ajraladi. Choynak tubidagi qattiq qatlam — {CaCO3} va {MgCO3} (nakip).", "reactionIds": ["boilca", "boilmg"], "observation": "Idish tubi va devorlarida oq-kulrang toshsimon qatlam", "pages": [117, 118] } },
+        { "id": "perm", "cells": { "kind": "Doimiy", "cause": "{CaSO4}, {CaCl2}, {MgSO4}, {MgCl2}", "boil": "yo‘qolmaydi", "fix": "soda yoki natriy fosfat, ion almashinuvi" },
+          "detail": { "concept": "Sulfat va xloridlar qizdirilganda parchalanmaydi, shuning uchun ionlarni kimyoviy cho‘ktirish yoki kationit bilan almashtirish kerak.", "reactionIds": ["so4soda", "mgphos"], "pages": [118] } },
+        { "id": "total", "cells": { "kind": "Umumiy", "cause": "vaqtinchalik + doimiy", "boil": "qisman yo‘qoladi", "fix": "distillash, ion almashinuvi" } }
+      ]
+    },
+    {
+      "id": "methods",
+      "title": "Suvni yumshatish usullari",
+      "columns": [
+        { "key": "way", "label": "Usul" },
+        { "key": "for", "label": "Qaysi qattiqlikka" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "boil", "cells": { "way": "Qaynatish", "for": "vaqtinchalik", "eq": "boilca" } },
+        { "id": "lime", "cells": { "way": "Ohakli suv qo‘shish", "for": "vaqtinchalik", "eq": "limeca" },
+          "detail": { "concept": "Ohak ikkala gidrokarbonatni cho‘ktiradi. Magniy uchun ikki mol ohak kerak: {Mg(HCO3)2} + 2{Ca(OH)2} → {Mg(OH)2}↓ + 2{CaCO3}↓ + 2{H2O}.", "reactionIds": ["limeca", "limemg"], "pages": [118] } },
+        { "id": "naoh", "cells": { "way": "Ishqor ({NaOH}) qo‘shish", "for": "vaqtinchalik", "eq": "naohca" } },
+        { "id": "soda", "cells": { "way": "Soda qo‘shish", "for": "vaqtinchalik va doimiy", "eq": "so4soda" },
+          "detail": { "concept": "Ionli ko‘rinishi hamma holda bitta: {Ca^2+} + {CO3^2-} → {CaCO3}↓. Soda doimiy qattiqlikni ham yo‘qotadi.", "reactionIds": ["so4soda", "caion", "sodabicarb"], "examTip": "Doimiy qattiqlik uchun: soda yoki {Na3PO4}.", "pages": [118] } },
+        { "id": "phos", "cells": { "way": "Natriy fosfat qo‘shish", "for": "doimiy", "eq": "mgphos" } },
+        { "id": "ion", "cells": { "way": "Ion almashinuvi (kationit)", "for": "barcha turlari", "eq": "cationite" },
+          "detail": { "concept": "Kationit — suvda erimaydigan, harakatchan {Na^+} tutuvchi qattiq modda ({Na2R}); kolonkadan o‘tganda {Ca^2+} va {Mg^2+} ionlari kationitda qoladi, suvga {Na^+} o‘tadi. Anionit esa anionlarni almashtiradi.", "reactionIds": ["cationite"], "pages": [118, 119] } }
+      ]
+    },
+    {
+      "id": "harm",
+      "title": "Qattiq suv zararlari",
+      "columns": [
+        { "key": "area", "label": "Soha" },
+        { "key": "effect", "label": "Oqibat" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "boiler", "cells": { "area": "Bug‘ qozonlari, isitish tizimi", "effect": "nakip issiqlik o‘tkazuvchanlikni kamaytiradi, yoqilg‘i ko‘p sarflanadi, quvur ishdan chiqadi", "eq": "" } },
+        { "id": "soap", "cells": { "area": "Kir yuvish", "effect": "sovun ko‘pirmaydi: erimaydigan kalsiy stearat cho‘kadi", "eq": "soap" },
+          "detail": { "concept": "Sovun — yog‘ kislota anioni ({C17H35COO^-}) tuzi. Qattiq suvda u {Ca^2+} bilan erimaydigan tuz hosil qiladi va yuvuvchanlik pasayadi.", "reactionIds": ["soap"], "pages": [117] } },
+        { "id": "food", "cells": { "area": "Ovqat tayyorlash", "effect": "go‘sht va sabzavotlar yaxshi pishmaydi, choy sifatsiz bo‘ladi", "eq": "" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "boilca": { "equation": "Ca(HCO3)2 → CaCO3↓ + H2O + CO2↑", "conditions": "qaynatish", "observation": "Cho‘kma (nakip) hosil bo‘ladi" },
+    "boilmg": { "equation": "Mg(HCO3)2 → MgCO3↓ + H2O + CO2↑", "conditions": "qaynatish", "note": "Issiq suvda MgCO3 qisman gidrolizlanib, {Mg(OH)2} ham hosil bo‘ladi." },
+    "limeca": { "equation": "Ca(HCO3)2 + Ca(OH)2 → 2CaCO3↓ + 2H2O" },
+    "limemg": { "equation": "Mg(HCO3)2 + 2Ca(OH)2 → Mg(OH)2↓ + 2CaCO3↓ + 2H2O" },
+    "naohca": { "equation": "Ca(HCO3)2 + 2NaOH → CaCO3↓ + Na2CO3 + 2H2O" },
+    "so4soda": { "equation": "CaSO4 + Na2CO3 → CaCO3↓ + Na2SO4", "observation": "Oq cho‘kma hosil bo‘ladi" },
+    "caion": { "equation": "Ca^2+ + CO3^2- → CaCO3↓" },
+    "sodabicarb": { "equation": "Ca(HCO3)2 + Na2CO3 → CaCO3↓ + 2NaHCO3" },
+    "mgphos": { "equation": "3MgSO4 + 2Na3PO4 → Mg3(PO4)2↓ + 3Na2SO4" },
+    "cationite": { "equation": "Na2R + Ca^2+ → CaR + 2Na^+", "conditions": "kationitli kolonka", "note": "R — kationitning murakkab organik radikali." },
+    "soap": { "equation": "Ca^2+ + 2C17H35COO^- → (C17H35COO)2Ca↓", "observation": "Ko‘pik o‘rniga oq cho‘kma (sovun «yoriqlari»)" }
+  },
+  "clarifications": [
+    { "text": "118-betda magniy gidrokarbonatni ohakli suv bilan yumshatish «Mg(HCO₃)₂ + Ca(OH)₂ → CaCO₃·MgCO₃↓ + 2H₂O» deb berilgan. Atomlar bo‘yicha tenglama tenglashgan, lekin amalda ortiqcha ohak bilan kam eriydigan {Mg(OH)2} cho‘kadi: Mg(HCO₃)₂ + 2Ca(OH)₂ → Mg(OH)₂↓ + 2CaCO₃↓ + 2H₂O.", "source": "additionalVerifiedSource" },
+    { "text": "118-betda qaynatganda magniy gidrokarbonatdan {MgCO3} cho‘kadi deyilgan; issiq suvda {MgCO3} gidrolizlanib, asosan {Mg(OH)2} ga aylanadi. Darslikdagi yozuv birinchi bosqich sifatida saqlandi.", "source": "additionalVerifiedSource" },
+    { "text": "120-betdagi 2-misolda «0,8·100 / 0,13 = 165 g» yozuvi bosma xato: 0,8·100 / 0,13 ≈ 615 g (javobda ham 615 g berilgan). 3-misolda «14 kg {Ca3(PO4)2} dagi kalsiy» deyilgan joyda 2,8 kg nazarda tutilgan.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s24-q1", "type": "Y1", "skill": "qattiqlik turlari", "difficulty": 1,
+      "stem": "Quyidagi tuzlardan qaysi biri suvning doimiy qattiqligini keltirib chiqaradi?",
+      "choices": ["{Ca(HCO3)2}", "{Mg(HCO3)2}", "{CaSO4}", "{NaCl}"], "answer": 2,
+      "solution": "Doimiy qattiqlikni kalsiy va magniyning sulfat va xloridlari beradi: {CaSO4}, {CaCl2}, {MgSO4}, {MgCl2}. Gidrokarbonatlar — vaqtinchalik qattiqlik; {NaCl} qattiqlik bermaydi." },
+    { "id": "g9-s24-q2", "type": "O1", "skill": "qaynatish hisobi", "difficulty": 2,
+      "stem": "Suvning 1 litrida 1,62 g kalsiy gidrokarbonat bor. 10 l shunday suv qaynatilganda necha gramm {CaCO3} cho‘kadi?",
+      "answer": 10, "tolerance": 0.05, "unit": "g",
+      "solution": "10 l suvda 16,2 g {Ca(HCO3)2}. M({Ca(HCO3)2}) = 40 + 2·(1 + 12 + 48) = 162 g/mol; n = 16,2 / 162 = 0,1 mol. {Ca(HCO3)2} → {CaCO3} + {H2O} + {CO2}: n({CaCO3}) = 0,1 mol, m = 0,1 · 100 = 10 g.",
+      "mistakes": "Suvning litrini unutib, 1 l uchun hisoblash (1 g chiqadi)." },
+    { "id": "g9-s24-q3", "type": "O1", "skill": "ohak bilan yumshatish", "difficulty": 3,
+      "stem": "Tarkibida 16,2 g {Ca(HCO3)2} bo‘lgan suvni yumshatish uchun necha gramm so‘ndirilgan ohak {Ca(OH)2} kerak?",
+      "answer": 7.4, "tolerance": 0.05, "unit": "g",
+      "solution": "{Ca(HCO3)2} + {Ca(OH)2} → 2{CaCO3} + 2{H2O}. n({Ca(HCO3)2}) = 16,2 / 162 = 0,1 mol; n({Ca(OH)2}) = 0,1 mol; M = 40 + 34 = 74 g/mol; m = 7,4 g." },
+    { "id": "g9-s24-q4", "type": "Y2", "skill": "yumshatish reaksiyalari", "difficulty": 2,
+      "stem": "Yumshatish sharti yoki reagentni hosil bo‘ladigan cho‘kma yoki mahsulot bilan moslashtiring.",
+      "left": ["{Ca(HCO3)2} ni qaynatish", "{Ca(HCO3)2} + {Ca(OH)2}", "{CaSO4} + {Na2CO3}", "kationit {Na2R} + {Ca^2+}"],
+      "right": ["{CaCO3} + {Na2SO4}", "{CaCO3} + {H2O} + {CO2}", "{CaR} + {Na^+}", "{CaCO3} + {H2O}"],
+      "answer": [1, 3, 0, 2],
+      "solution": "{Ca(HCO3)2} → {CaCO3} + {H2O} + {CO2}; {Ca(HCO3)2} + {Ca(OH)2} → 2{CaCO3} + 2{H2O}; {CaSO4} + {Na2CO3} → {CaCO3} + {Na2SO4}; {Na2R} + {Ca^2+} → {CaR} + 2{Na^+}." },
+    { "id": "g9-s24-q5", "type": "Y1", "skill": "yumshatish usullari", "difficulty": 2,
+      "stem": "Suvning doimiy qattiqligini qaysi usul bilan yo‘qotib bo‘lmaydi?",
+      "choices": ["{Na2CO3} qo‘shish", "{Na3PO4} qo‘shish", "oddiy qaynatish", "kationit orqali o‘tkazish"], "answer": 2,
+      "solution": "Sulfat va xloridlar qizdirilganda parchalanmaydi, shuning uchun oddiy qaynatish doimiy qattiqlikni yo‘qotmaydi. Soda, fosfat va kationit {Ca^2+}, {Mg^2+} ionlarini cho‘ktiradi yoki almashtiradi." }
+  ]
+}

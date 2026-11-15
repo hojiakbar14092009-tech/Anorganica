@@ -1,0 +1,116 @@
+{
+  "id": "g9-s18",
+  "status": "seed-verified",
+  "pages": [80, 81, 82, 83, 84],
+  "summary": "Korroziya — metallarning atrof-muhit ta’sirida oksidlanib yemirilishi. Kimyoviy korroziyada elektronlar metalldan to‘g‘ridan-to‘g‘ri oksidlovchiga o‘tadi; elektrokimyoviy korroziyada elektrolit (nam) ishtirokida galvanik juft hosil bo‘ladi va faolroq metall yemiriladi. Himoya: qoplamalar, ingibitorlar, protektor va katod himoya.",
+  "keyConcepts": [
+    "Kimyoviy korroziya — metallning quruq gaz yoki elektr o‘tkazmaydigan suyuqlik ({Cl2}, {H2S}, {SO2}, {O2}, neft) bilan to‘g‘ridan-to‘g‘ri ta’siri; elektrokimyoviy korroziya — elektrolit (nam, eritma) ishtirokida galvanik juft hosil bo‘lishi.",
+    "Temir zanglashi: anodda {Fe} → {Fe^2+} + 2e^-; katodda {O2} + 2{H2O} + 4e^- → 4{OH^-}; so‘ng {Fe(OH)2} → {Fe(OH)3} (zang).",
+    "Faolroq metall kuchsizrog‘i bilan kontaktda bo‘lsa, faolroq metall yemiriladi (anod), kuchsizrog‘i himoyalanadi (katod).",
+    "Aluminiy faol bo‘lsa-da, sirtidagi zich {Al2O3} pardasi uni korroziyadan saqlaydi.",
+    "Himoya usullari: qoplamalar (bo‘yoq, oksid, fosfat, metall), ingibitorlar, protektor himoya, tashqi tok bilan katod himoya, korroziyaga chidamli qotishmalar."
+  ],
+  "tables": [
+    {
+      "id": "kinds",
+      "title": "Korroziya turlari",
+      "columns": [
+        { "key": "kind", "label": "Tur" },
+        { "key": "idea", "label": "Mohiyati" },
+        { "key": "ex", "label": "Misol" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "chem", "cells": { "kind": "Kimyoviy", "idea": "elektronlar metalldan bevosita oksidlovchi molekulalarga o‘tadi (elektrolitsiz)", "ex": "kalsiy va natriyning havoda oksidlanishi; metallning issiq gazlarda yemirilishi", "eq": "ca" },
+          "detail": { "concept": "Quruq gaz yoki noelektrolit suyuqlik (neft, benzin) muhitida bo‘ladi: metall atomlari to‘g‘ridan-to‘g‘ri oksidlovchiga elektron beradi.", "reactionIds": ["ca", "feS"], "pages": [81] } },
+        { "id": "electro", "cells": { "kind": "Elektrokimyoviy", "idea": "nam (elektrolit) ishtirokida galvanik juft: faol metall anod, kuchsizrog‘i yoki qo‘shimcha katod", "ex": "nam havoda temirning zanglashi, tuproq va dengiz suvidagi quvurlar", "eq": "fe2" },
+          "detail": { "concept": "Havodagi suv pardasida atmosfera gazlari erib elektrolit hosil qiladi. Metall bo‘laklari yoki qo‘shimchalar mikrogalvanik juftlar hosil qiladi: anodda metall eriydi, katodda kislorod qaytariladi.", "reactionIds": ["fe2", "cathO2"], "examTip": "Temir zanglashi — elektrokimyoviy korroziya (nam kerak).", "pages": [81, 82] } },
+        { "id": "acid", "cells": { "kind": "Kislotali muhitda (vodorod depolyarizatsiyasi)", "idea": "katodda vodorod ionlari qaytariladi", "ex": "po‘lat quvurning kislota ta’sirida yemirilishi", "eq": "hcath" } }
+      ]
+    },
+    {
+      "id": "rust",
+      "title": "Temir zanglashining bosqichlari (nam havo)",
+      "columns": [
+        { "key": "step", "label": "Bosqich" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "what", "label": "Nima sodir bo‘ladi" }
+      ],
+      "rows": [
+        { "id": "anode", "cells": { "step": "1. Anod (oksidlanish)", "eq": "fe2", "what": "temir eriydi, elektronlar ajraladi" } },
+        { "id": "cathode", "cells": { "step": "2. Katod (qaytarilish)", "eq": "cathO2", "what": "erigan kislorod qaytariladi, {OH^-} hosil bo‘ladi" } },
+        { "id": "feoh2", "cells": { "step": "3. Umumiy (1-bosqich mahsuloti)", "eq": "feoh2", "what": "oq-yashil {Fe(OH)2} cho‘kmasi" },
+          "detail": { "concept": "Ionli tenglamalarni qo‘shsak: 2{Fe} + {O2} + 2{H2O} → 2{Fe(OH)2}. Darslikdagi «2Fe²⁺ + 2H₂O + O₂ → 2Fe(OH)₂» yozuvida zaryad saqlanmaydi (chap tomonda +4, o‘ngda 0).", "reactionIds": ["feoh2"], "pages": [81] } },
+        { "id": "feoh3", "cells": { "step": "4. Keyingi oksidlanish", "eq": "feoh3", "what": "{Fe(OH)2} havo kislorodida {Fe(OH)3} ga aylanadi — qo‘ng‘ir zang" } },
+        { "id": "total", "cells": { "step": "Umumiy yig‘indi", "eq": "total", "what": "zang tarkibi odatda {Fe2O3·nH2O}" },
+          "detail": { "concept": "Zang aniq formulaga ega emas: {Fe2O3·nH2O} yoki {Fe(OH)3} aralashmasi. U g‘ovak, shuning uchun metallni himoya qilmaydi va korroziya chuqurlashadi.", "reactionIds": ["total"], "observation": "Qizil-qo‘ng‘ir g‘ovak qatlam", "pages": [81] } }
+      ]
+    },
+    {
+      "id": "protect",
+      "title": "Korroziyadan himoya usullari",
+      "columns": [
+        { "key": "way", "label": "Usul" },
+        { "key": "idea", "label": "Mohiyati" },
+        { "key": "ex", "label": "Misol" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "paint", "cells": { "way": "Metall bo‘lmagan qoplama", "idea": "metall sirti muhitdan ajratiladi", "ex": "lok-bo‘yoq, emal, smola, plastmassa", "eq": "" } },
+        { "id": "phos", "cells": { "way": "Fosfatlash", "idea": "sirtda suvda erimaydigan fosfat qatlami hosil qilinadi", "ex": "po‘lat sirti, bo‘yashdan oldin", "eq": "phos" },
+          "detail": { "concept": "Fosfat qatlami elektr o‘tkazmaydi va bo‘yoqning yaxshi yopishishini ta’minlaydi. Darslikda jarayon bosqichma-bosqich berilgan; umumiy natija: {Fe} → {Fe3(PO4)2}.", "reactionIds": ["phos"], "pages": [83] } },
+        { "id": "anodcoat", "cells": { "way": "Anod qoplama (faolroq metall)", "idea": "qoplama temirdan faolroq; buzilganda ham qoplama yemiriladi, temir saqlanadi", "ex": "temir ustiga {Zn} (galvanizatsiya)", "eq": "znox" },
+          "detail": { "concept": "{Zn} (−0,76 V) temirdan ({Fe}, −0,44 V) faolroq: galvanik juftda rux anod bo‘lib eriydi, temir katod bo‘lib himoyalanadi — qoplama chizilgan bo‘lsa ham.", "reactionIds": ["znox"], "pages": [83, 84] } },
+        { "id": "catcoat", "cells": { "way": "Katod qoplama (kuchsizroq metall)", "idea": "qoplama temirdan kam faol; buzilsa temir tez zanglaydi", "ex": "temir ustiga {Sn} (tunuka), {Cu}, {Ni}", "eq": "fe2" },
+          "detail": { "concept": "Qalay ({Sn}, −0,14 V) temirdan kam faol. Qoplama butun bo‘lguncha himoya qiladi, ammo chizilsa temir anod bo‘lib tezroq yemiriladi.", "reactionIds": ["fe2"], "pages": [83, 84] } },
+        { "id": "inhib", "cells": { "way": "Ingibitorlar", "idea": "korroziya muhitiga oz miqdorda qo‘shilib, metall sirtiga adsorbsiyalanadi va jarayonni sekinlashtiradi", "ex": "sovitish suyuqliklari, kislota eritmalari", "eq": "" } },
+        { "id": "protector", "cells": { "way": "Protektor himoya", "idea": "himoya qilinadigan konstruksiyaga faolroq metall plastinka biriktiriladi", "ex": "kema korpusi, yer osti quvuri ({Mg}, {Zn} protektor)", "eq": "mgox" },
+          "detail": { "concept": "Protektor galvanik juftda anod: u asta-sekin eriydi, konstruksiya (katod) deyarli yemirilmaydi. Protektor vaqti-vaqti bilan almashtiriladi.", "reactionIds": ["mgox"], "pages": [84] } },
+        { "id": "cathodic", "cells": { "way": "Katod himoya (tashqi tok)", "idea": "inshoot doimiy tok manbaining katodiga ulanadi, anod sifatida metall lom ishlatiladi", "ex": "gaz va neft quvurlari", "eq": "" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "ca": { "equation": "2Ca + O2 → 2CaO", "observation": "Kalsiy sirti oq oksid pardasi bilan qoplanadi" },
+    "feS": { "equation": "Fe + H2S → FeS + H2↑", "conditions": "qizdirish, vodorod sulfidli gaz muhiti", "note": "Kimyoviy korroziya misoli: quruq gazda metall bevosita yemiriladi.", "safety": "{H2S} zaharli gaz — faqat virtual namoyish." },
+    "fe2": { "equation": "Fe → Fe^2+ + 2e^-", "conditions": "anodda" },
+    "cathO2": { "equation": "O2 + 2H2O + 4e^- → 4OH^-", "conditions": "katodda, neytral/ishqoriy muhit" },
+    "hcath": { "equation": "2H^+ + 2e^- → H2↑", "conditions": "kislotali muhitda katodda" },
+    "feoh2": { "equation": "2Fe + O2 + 2H2O → 2Fe(OH)2" },
+    "feoh3": { "equation": "4Fe(OH)2 + O2 + 2H2O → 4Fe(OH)3" },
+    "total": { "equation": "4Fe + 3O2 + 6H2O → 4Fe(OH)3", "observation": "Qo‘ng‘ir zang hosil bo‘ladi" },
+    "phos": { "equation": "3Fe + 2H3PO4 → Fe3(PO4)2 + 3H2↑", "conditions": "fosfatlovchi eritma" },
+    "znox": { "equation": "Zn → Zn^2+ + 2e^-", "conditions": "anod qoplama (galvanik juftda)" },
+    "mgox": { "equation": "Mg → Mg^2+ + 2e^-", "conditions": "protektor eriydi" }
+  },
+  "clarifications": [
+    { "text": "81-betda «temirni nam havoda zanglashi» kimyoviy korroziya misollari qatorida keltirilgan. Aslida u elektrokimyoviy korroziya (nam — elektrolit — kerak); shu betdagi o‘zi yozgan anod/katod jarayonlari ham buni tasdiqlaydi.", "source": "additionalVerifiedSource" },
+    { "text": "81-betdagi «2Fe²⁺ + 2H₂O + O₂ → 2Fe(OH)₂» tenglamasida zaryad saqlanmaydi (chapda +4, o‘ngda 0). To‘g‘ri umumiy yozuv: 2Fe + O₂ + 2H₂O → 2Fe(OH)₂ (yoki ionli: 2Fe²⁺ + 4OH⁻ → 2Fe(OH)₂).", "source": "additionalVerifiedSource" },
+    { "text": "82-betdagi «toza metallar elektrokimyoviy korroziyaga uchramaydi» fikri mutlaq emas: aralashmasiz metall ham elektrolitda yemiriladi, faqat mikrogalvanik juftlar bo‘lmagani uchun ancha sekin.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s18-q1", "type": "Y1", "skill": "elektrokimyoviy himoya", "difficulty": 2,
+      "stem": "Po‘lat quvurni yer ostida korroziyadan himoya qilish uchun unga qaysi metall plastinkani biriktirish (protektor) maqsadga muvofiq?",
+      "choices": ["{Cu}", "{Zn}", "{Ag}", "{Sn}"], "answer": 1,
+      "solution": "Protektor himoya qilinayotgan metalldan faolroq bo‘lishi kerak. Temirdan ({Fe}, −0,44 V) faqat rux (−0,76 V) faolroq; {Cu}, {Ag}, {Sn} kam faol, ular bilan temir anodga aylanib tezroq yemiriladi." },
+    { "id": "g9-s18-q2", "type": "Y2", "skill": "himoya usullari", "difficulty": 2,
+      "stem": "Himoya usulini uning mohiyati bilan moslashtiring.",
+      "left": ["temir ustiga rux qoplash", "temir ustiga qalay qoplash (tunuka)", "kema korpusiga magniy plastinkalar biriktirish", "lok-bo‘yoq surtish"],
+      "right": ["protektor himoya", "katod qoplama: buzilsa temir tezroq yemiriladi", "metall bo‘lmagan izolyatsion qoplama", "anod qoplama: buzilganda ham temir himoyalanadi"],
+      "answer": [3, 1, 0, 2],
+      "solution": "Rux temirdan faolroq — anod qoplama. Qalay kam faol — katod qoplama (chizilsa temir yemiriladi). Magniy plastinka — protektor. Lok-bo‘yoq metallni muhitdan mexanik ajratadi." },
+    { "id": "g9-s18-q3", "type": "O1", "skill": "zanglash hisoblari", "difficulty": 3,
+      "stem": "5,6 g temir to‘liq zanglanib {Fe(OH)3} ga aylanishi uchun necha litr (n.sh.) kislorod sarflanadi? Tenglama: 4{Fe} + 3{O2} + 6{H2O} → 4{Fe(OH)3}.",
+      "answer": 1.68, "tolerance": 0.02, "unit": "l",
+      "solution": "n({Fe}) = 5,6 / 56 = 0,1 mol. Tenglamadan n({O2}) = 0,1 · 3 / 4 = 0,075 mol; V = 0,075 · 22,4 = 1,68 l.",
+      "mistakes": "{Fe} va {O2} ni 1 : 1 deb olish. Koeffitsientlar nisbati 4 : 3." },
+    { "id": "g9-s18-q4", "type": "Y1", "skill": "korroziya turlari", "difficulty": 1,
+      "stem": "Quyidagi holatlardan qaysi biri elektrokimyoviy korroziyaga misol bo‘ladi?",
+      "choices": ["quruq havoda kalsiyning oksid parda bilan qoplanishi", "nam tuproqdagi po‘lat quvurning zanglashi", "qizdirilgan misning quruq xlorda yemirilishi", "natriyning kislorodda yonishi"], "answer": 1,
+      "solution": "Elektrokimyoviy korroziya elektrolit (nam tuproq) ishtirokida galvanik juft hosil bo‘lishi bilan boradi. Qolgan uchta holatda elektrolit yo‘q — bu kimyoviy korroziya." },
+    { "id": "g9-s18-q5", "type": "Y1", "skill": "aluminiy pardasi", "difficulty": 2,
+      "stem": "Aluminiy temirdan faolroq bo‘lsa-da, havoda yaxshi chidaydi. Buning sababi nima?",
+      "choices": ["aluminiy kislorod bilan umuman reaksiyaga kirishmaydi", "sirtidagi zich {Al2O3} pardasi uni himoya qiladi", "aluminiy vodoroddan keyin turadi", "aluminiy doim qalay bilan qoplangan"], "answer": 1,
+      "solution": "Aluminiy sirti havoda darhol yupqa va zich {Al2O3} bilan qoplanadi; bu parda metallni muhitdan ajratadi. Parda yo‘qotilsa, aluminiy tez korroziyalana boshlaydi." }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": "g9-s23",
+  "status": "seed-verified",
+  "pages": [109, 110, 111, 112, 113, 114, 115, 116],
+  "summary": "Magniy va kalsiy — II A guruh s-elementlari: tashqi qavatda ikkita elektron, barcha birikmalarida +2. Kalsiy, stronsiy, bariy ishqoriy-yer metallar deyiladi. Ikkalasi ham kuchli qaytaruvchi (kalsiy faolroq), tabiatda faqat birikmalar holida uchraydi va tuz suyuqlanmasi elektrolizi bilan olinadi.",
+  "keyConcepts": [
+    "{Mg} ([Ne]3s²) va {Ca} ([Ar]4s²) reaksiyalarda 2 ta elektron berib {M^2+} ga aylanadi; ishqoriy metallarga qaraganda kuchsizroq qaytaruvchi, chunki yadro zaryadi katta va ikkita elektron ajratilishi kerak.",
+    "Kalsiy suv bilan odatdagi sharoitda, magniy esa qizdirilganda reaksiyaga kirishadi; ikkalasi kislotalardan vodorodni siqib chiqaradi.",
+    "Muhim birikmalar: {CaCO3} (ohaktosh, marmar, bo‘r), {CaO} (so‘ndirilmagan ohak), {Ca(OH)2} (so‘ndirilgan ohak), {CaSO4·2H2O} (gips), {CaOCl2} (xlorli ohak).",
+    "Ohakli suvdan {CO2} o‘tkazilsa, avval loyqalanadi ({CaCO3}), ortiqcha {CO2} da yana tiniqlashadi ({Ca(HCO3)2}) — {CO2} ga sifat reaksiyasi.",
+    "Magniy xlorofill markazida; kalsiy suyak va tishlarning asosiy qismi ({Ca3(PO4)2})."
+  ],
+  "tables": [
+    {
+      "id": "props",
+      "title": "Magniy va kalsiy",
+      "columns": [
+        { "key": "prop", "label": "Xossa" },
+        { "key": "mg", "label": "Magniy {Mg}" },
+        { "key": "ca", "label": "Kalsiy {Ca}" }
+      ],
+      "rows": [
+        { "id": "conf", "cells": { "prop": "Elektron konfiguratsiya", "mg": "[Ne]3s²", "ca": "[Ar]4s²" } },
+        { "id": "phys", "cells": { "prop": "t suyuq.; zichlik", "mg": "650 °C; 1,74 g/cm³", "ca": "≈ 842 °C; 1,55 g/cm³" } },
+        { "id": "e0", "cells": { "prop": "Standart potensial E°", "mg": "−2,37 V", "ca": "−2,87 V" },
+          "detail": { "concept": "Kalsiy magniydan faolroq (E° manfiyroq). Darslikning 110-betidagi kalsiy uchun −2,82 V qiymati 79-betdagi −2,87 V ga mos emas.", "pages": [79, 110] } },
+        { "id": "minerals", "cells": { "prop": "Tabiiy birikmalar", "mg": "magnezit {MgCO3}, taxir tuz {MgSO4·7H2O}, karnallit, dolomit", "ca": "ohaktosh/bo‘r/marmar {CaCO3}, gips {CaSO4·2H2O}, apatit, fosforit {Ca3(PO4)2}" } },
+        { "id": "store", "cells": { "prop": "Saqlanishi", "mg": "havoda oksid parda bilan qoplanib, ichki qismi himoyalanadi", "ca": "faolroq — kerosin ostida saqlanadi" } }
+      ]
+    },
+    {
+      "id": "chem",
+      "title": "Magniy va kalsiyning kimyoviy xossalari",
+      "columns": [
+        { "key": "with", "label": "Nima bilan" },
+        { "key": "mg", "label": "Magniy", "reaction": true },
+        { "key": "ca", "label": "Kalsiy", "reaction": true }
+      ],
+      "rows": [
+        { "id": "o2", "cells": { "with": "Kislorod", "mg": "mgo2", "ca": "cao2" },
+          "detail": { "concept": "Magniy ko‘zni qamashtiruvchi oq alanga bilan yonadi (fotografiyada, signal raketalarida ishlatilgan).", "reactionIds": ["mgo2", "cao2"], "observation": "Mg: yorqin oq alanga, oq {MgO} kukuni", "pages": [111, 112] } },
+        { "id": "cl2", "cells": { "with": "Xlor", "mg": "mgcl2", "ca": "cacl2" } },
+        { "id": "n2", "cells": { "with": "Azot (qizdirilganda)", "mg": "mg3n2", "ca": "ca3n2" } },
+        { "id": "co2", "cells": { "with": "Karbonat angidrid", "mg": "mgco2", "ca": "" },
+          "detail": { "concept": "Yonayotgan magniy {CO2} da ham o‘chmaydi — kislorodni oksiddan tortib oladi. Shuning uchun magniy yong‘inini {CO2} bilan o‘chirib bo‘lmaydi.", "reactionIds": ["mgco2"], "examTip": "Mg + CO₂ → MgO + C: qora kuyindi ko‘rinadi.", "pages": [111, 112] } },
+        { "id": "water", "cells": { "with": "Suv", "mg": "mgwater", "ca": "cawater" },
+          "detail": { "concept": "Kalsiy sovuq suv bilan shiddatli, magniy faqat issiq suvda reaksiyaga kirishadi (suv bug‘i bilan {MgO} hosil qiladi). Darslik magniy uchun {MgO} + {H2} yozgan — bug‘li sharoit uchun to‘g‘ri.", "reactionIds": ["mgwater", "cawater"], "pages": [112] } },
+        { "id": "acid", "cells": { "with": "Xlorid kislota", "mg": "mghcl", "ca": "cahcl" } }
+      ]
+    },
+    {
+      "id": "compounds",
+      "title": "Kalsiy birikmalari",
+      "columns": [
+        { "key": "name", "label": "Modda" },
+        { "key": "feat", "label": "Xossa va ishlatilishi" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "cao", "cells": { "name": "{CaO} — so‘ndirilmagan ohak", "feat": "ohaktoshni kuydirib olinadi; suv bilan issiqlik ajratib reaksiyaga kirishadi", "eq": "caco3" },
+          "detail": { "concept": "Kuydirish: {CaCO3} → {CaO} + {CO2}. Ochiq havoda {CaO} {CO2} va suv bug‘ini yutib, xossasini yo‘qotadi: {CaO} + {CO2} → {CaCO3}.", "reactionIds": ["caco3", "caoco2"], "pages": [114] } },
+        { "id": "caoh2", "cells": { "name": "{Ca(OH)2} — so‘ndirilgan ohak", "feat": "suvda kam eriydi; qurilish qorishmalari, qand lavlagi sharbatini tozalash, tuproq kislotaliligini kamaytirish", "eq": "slake" },
+          "detail": { "concept": "Ohak suti — {Ca(OH)2} ning suvdagi loyqa aralashmasi; ohakli suv — uning filtrlangan to‘yingan tiniq eritmasi. Ohakli suv {CO2} ga reaktiv.", "reactionIds": ["slake", "limewater", "bicarb"], "observation": "Ohakli suv avval loyqalanadi, ortiqcha {CO2} da yana tiniqlashadi", "pages": [113, 115] } },
+        { "id": "bleach", "cells": { "name": "{CaOCl2} — xlorli ohak", "feat": "oksidlovchi; oqartirish va zararsizlantirish", "eq": "bleach" },
+          "detail": { "concept": "Xlorli ohak aralash tuz {Ca(OCl)Cl} sifatida qaraladi: bitta kationga ikki xil anion — {OCl^-} va {Cl^-}.", "reactionIds": ["bleach"], "pages": [115] } },
+        { "id": "gypsum", "cells": { "name": "{CaSO4·2H2O} — gips; alebastr {(CaSO4)2·H2O}", "feat": "gipsni 150–170 °C da qizdirib alebastr olinadi; suv bilan qorishtirilsa qotadi", "eq": "alebastr" },
+          "detail": { "concept": "Alebastrni suv bilan qorishtirganda u yana gipsga aylanib qotadi — tibbiy bog‘lamlar va qurilishda shu xususiyatdan foydalaniladi.", "reactionIds": ["alebastr", "setting"], "pages": [115, 116] } },
+        { "id": "phosphate", "cells": { "name": "{Ca3(PO4)2}", "feat": "fosforit va apatit; suyak va tishlar tarkibida", "eq": "" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "mgo2": { "equation": "2Mg + O2 → 2MgO", "observation": "Ko‘zni qamashtiruvchi oq alanga" },
+    "cao2": { "equation": "2Ca + O2 → 2CaO" },
+    "mgcl2": { "equation": "Mg + Cl2 → MgCl2", "safety": "Xlor zaharli — faqat virtual namoyish." },
+    "cacl2": { "equation": "Ca + Cl2 → CaCl2", "safety": "Xlor zaharli — faqat virtual namoyish." },
+    "mg3n2": { "equation": "3Mg + N2 → Mg3N2", "conditions": "qizdirish" },
+    "ca3n2": { "equation": "3Ca + N2 → Ca3N2", "conditions": "qizdirish" },
+    "mgco2": { "equation": "2Mg + CO2 → 2MgO + C", "conditions": "yonayotgan magniy" },
+    "mgwater": { "equation": "Mg + H2O → MgO + H2↑", "conditions": "suv bug‘i, qizdirish" },
+    "cawater": { "equation": "Ca + 2H2O → Ca(OH)2 + H2↑", "observation": "Gaz ajraladi, eritma loyqalanadi", "safety": "Reaksiya shiddatli, vodorod yonishi mumkin — faqat virtual namoyish." },
+    "mghcl": { "equation": "Mg + 2HCl → MgCl2 + H2↑", "observation": "Shiddatli gaz ajralishi" },
+    "cahcl": { "equation": "Ca + 2HCl → CaCl2 + H2↑", "safety": "Juda shiddatli — faqat virtual namoyish." },
+    "caco3": { "equation": "CaCO3 → CaO + CO2↑", "conditions": "kuydirish, yuqori harorat" },
+    "caoco2": { "equation": "CaO + CO2 → CaCO3" },
+    "slake": { "equation": "CaO + H2O → Ca(OH)2", "observation": "Issiqlik ajraladi, kukun «so‘nadi»" },
+    "limewater": { "equation": "Ca(OH)2 + CO2 → CaCO3↓ + H2O", "observation": "Ohakli suv loyqalanadi" },
+    "bicarb": { "equation": "CaCO3 + CO2 + H2O ⇄ Ca(HCO3)2", "observation": "Ortiqcha {CO2} da cho‘kma erib, eritma tiniqlashadi" },
+    "bleach": { "equation": "Ca(OH)2 + Cl2 → CaOCl2 + H2O", "safety": "Xlor zaharli — faqat virtual namoyish." },
+    "alebastr": { "equation": "2CaSO4·2H2O → (CaSO4)2·H2O + 3H2O", "conditions": "150–170 °C" },
+    "setting": { "equation": "(CaSO4)2·H2O + 3H2O → 2CaSO4·2H2O", "observation": "Qorishma tez qotadi" }
+  },
+  "clarifications": [
+    { "text": "110-betdagi kalsiyning E° = −2,82 V qiymati xato; kuchlanishlar qatorida (79-bet) va standart jadvallarda −2,87 V.", "source": "additionalVerifiedSource" },
+    { "text": "111-betda «olevin — MgSiO₃» deb yozilgan. Olivin aslida (Mg,Fe)₂SiO₄ (forsterit {Mg2SiO4}); {MgSiO3} — enstatit (piroksen).", "source": "additionalVerifiedSource" },
+    { "text": "111-betda Ca va Mg ning ishqoriy metallarga qaraganda kuchsizroq qaytaruvchi ekanligi «tashqi qavatda bitta ortiq elektron bor» deb izohlangan. To‘g‘ri sabab: yadro zaryadi katta, atom radiusi kichik va ikkita elektron ajratish uchun ko‘proq energiya (ionlanish energiyasi) kerak.", "source": "additionalVerifiedSource" },
+    { "text": "Kalsiyning suyuqlanish harorati darslikda 850 °C (109, 110-betlar), tekshirilgan ma’lumotlarda ≈ 842 °C.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s23-q1", "type": "Y1", "skill": "kalsiy birikmalari", "difficulty": 1,
+      "stem": "Ohakli suv orqali karbonat angidrid o‘tkazilganda dastlab nima kuzatiladi?",
+      "choices": ["eritma qizil rangga kiradi", "oq cho‘kma hosil bo‘lib, eritma loyqalanadi", "gaz ajralib chiqadi", "hech narsa o‘zgarmaydi"], "answer": 1,
+      "solution": "{Ca(OH)2} + {CO2} → {CaCO3}↓ + {H2O}: erimaydigan kalsiy karbonat hosil bo‘ladi. Ortiqcha {CO2} da cho‘kma eriydi: {CaCO3} + {CO2} + {H2O} → {Ca(HCO3)2}." },
+    { "id": "g9-s23-q2", "type": "O1", "skill": "ohakli suv hisobi", "difficulty": 2,
+      "stem": "Ohakli suvdan 2,24 l (n.sh.) karbonat angidrid o‘tkazildi ({Ca(OH)2} ortiqcha). Necha gramm cho‘kma hosil bo‘ladi?",
+      "answer": 10, "tolerance": 0.05, "unit": "g",
+      "solution": "{Ca(OH)2} + {CO2} → {CaCO3}↓ + {H2O}. n({CO2}) = 2,24 / 22,4 = 0,1 mol; n({CaCO3}) = 0,1 mol; M({CaCO3}) = 100 g/mol; m = 10 g." },
+    { "id": "g9-s23-q3", "type": "Y2", "skill": "tabiiy birikmalar", "difficulty": 1,
+      "stem": "Mineralni uning formulasi bilan moslashtiring.",
+      "left": ["magnezit", "gips", "dolomit", "taxir tuz"],
+      "right": ["{CaSO4·2H2O}", "{MgSO4·7H2O}", "{CaCO3·MgCO3}", "{MgCO3}"],
+      "answer": [3, 0, 2, 1],
+      "solution": "Magnezit — {MgCO3}; gips — {CaSO4·2H2O}; dolomit — {CaCO3·MgCO3}; taxir tuz (epsom tuzi) — {MgSO4·7H2O}." },
+    { "id": "g9-s23-q4", "type": "O1", "skill": "ohaktosh kuydirish hisobi", "difficulty": 2,
+      "stem": "50 g sof ohaktosh ({CaCO3}) to‘liq kuydirilganda necha gramm so‘ndirilmagan ohak ({CaO}) hosil bo‘ladi?",
+      "answer": 28, "tolerance": 0.1, "unit": "g",
+      "solution": "{CaCO3} → {CaO} + {CO2}. n({CaCO3}) = 50 / 100 = 0,5 mol; n({CaO}) = 0,5 mol; M({CaO}) = 56 g/mol; m = 28 g." },
+    { "id": "g9-s23-q5", "type": "Y1", "skill": "magniy xossalari", "difficulty": 2,
+      "stem": "Yonayotgan magniyni karbonat angidrid bilan o‘chirib bo‘lmaydi. Sababi qaysi?",
+      "choices": ["{CO2} magniy bilan reaksiyaga kirishib, {MgO} va {C} hosil qiladi", "{CO2} havoni siqib chiqarmaydi", "{CO2} suvdan og‘ir", "magniy {CO2} da erib ketadi"], "answer": 0,
+      "solution": "Magniy kuchli qaytaruvchi: 2{Mg} + {CO2} → 2{MgO} + {C}. U karbonat angidriddan ham kislorodni tortib oladi va yonishni davom ettiradi." }
+  ]
+}

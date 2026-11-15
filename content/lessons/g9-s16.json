@@ -1,0 +1,81 @@
+{
+  "id": "g9-s16",
+  "status": "seed-verified",
+  "pages": [74, 75, 76],
+  "summary": "Qotishma — suyuqlantirilgan metallarning bir-birida (yoki metallmaslar bilan) erishidan hosil bo‘lgan kristall material. Qotishma xossalari tarkibiga va kristall tuzilishiga bog‘liq va ko‘pincha sof metallnikidan keskin farq qiladi: qattiqroq, pishiqroq yoki pastroq haroratda suyuqlanadi.",
+  "keyConcepts": [
+    "Qotishmalar issiqlik va elektr tokini yaxshi o‘tkazadi, kristall tuzilishga ega; xossalari tarkibiy qismlarning xossalari va kristall panjara tuzilishiga bog‘liq.",
+    "Darslikdagi tasnif: gomogen (atom radiuslari yaqin — atomlar panjara tugunlarida almashib joylashadi), geterogen (radiuslari keskin farq qiladi), intermetall (elektrmanfiyliklari keskin farq qiladi — kimyoviy birikma, masalan {CuZn}, {Cu3Al}).",
+    "Qotishma tarkibini mol nisbatidan topish: n = m / M, so‘ng eng kichik butun sonlar nisbati (60 % {Cu} + 40 % {Zn} → {Cu3Zn2}).",
+    "Amaliyotda eng keng tarqalgan qotishmalar — temir (cho‘yan, po‘lat) va aluminiy (duraluminiy) asosidagi qotishmalar."
+  ],
+  "tables": [
+    {
+      "id": "types",
+      "title": "Qotishma turlari (darslik tasnifi)",
+      "columns": [
+        { "key": "kind", "label": "Tur" },
+        { "key": "cond", "label": "Hosil bo‘lish sharti" },
+        { "key": "ex", "label": "Misollar" },
+        { "key": "feat", "label": "Xususiyati" }
+      ],
+      "rows": [
+        { "id": "homo", "cells": { "kind": "Gomogen (qattiq eritma)", "cond": "atom radiuslari yaqin metallar", "ex": "{Cu}–{Au}, {Ag}–{Au}, {Bi}–{Sb}", "feat": "atomlar panjara tugunlarida almashib joylasha oladi" },
+          "detail": { "concept": "Bunday qotishmada komponentlar bir-biri bilan kimyoviy birikma hosil qilmaydi; atomlar bir xil panjarada tasodifiy joylashadi.", "pages": [75] } },
+        { "id": "hetero", "cells": { "kind": "Geterogen", "cond": "atom radiuslari keskin farq qiladigan metallar", "ex": "{Sn}–{Al}, {Zn}–{Al}", "feat": "atomlar bir-birining o‘rnini ola olmaydi, kristallar aralashmasi hosil bo‘ladi" } },
+        { "id": "inter", "cells": { "kind": "Intermetall birikma", "cond": "elektrmanfiyliklari keskin farq qiladigan metallar", "ex": "{CuZn}, {Cu3Al}, {Cu5Zn8}", "feat": "kimyoviy birikma; tarkib oddiy butun sonli nisbatda" },
+          "detail": { "concept": "Intermetall qotishmada metallar aniq mol nisbatlarida birikadi, shuning uchun uning formulasini topish mumkin. Masalan, 60 % mis va 40 % ruxdan: {Cu}:{Zn} = 0,94 : 0,62 ≈ 3 : 2 → {Cu3Zn2}.", "examTip": "Formula topish: massa → mol → eng kichik butun nisbat.", "pages": [75] } }
+      ]
+    },
+    {
+      "id": "alloys",
+      "title": "Muhim qotishmalar va ishlatilishi",
+      "columns": [
+        { "key": "name", "label": "Qotishma" },
+        { "key": "comp", "label": "Tarkibi (massa ulushi, %)" },
+        { "key": "use", "label": "Ishlatilishi" }
+      ],
+      "rows": [
+        { "id": "dural", "cells": { "name": "Duraluminiy", "comp": "{Al} 95–97; {Cu} 1,4; {Mg} 0,4–2,8; {Mn} 0,2–1", "use": "samolyotsozlik" },
+          "detail": { "concept": "Yengil va pishiq, shuning uchun aviatsiyada qo‘llanadi.", "pages": [76] } },
+        { "id": "nikelin", "cells": { "name": "Nikelin", "comp": "{Cu} 67; {Ni} 32; {Mn} 1", "use": "isitish asboblari" } },
+        { "id": "pexral", "cells": { "name": "Pexral", "comp": "{Fe} 73; {Cr} 18; {Ni} 9", "use": "zanglamaydigan po‘lat" },
+          "detail": { "concept": "Xrom va nikel temir sirtida zich oksid parda hosil qilib, zanglashga qarshi chidamlilik beradi.", "pages": [76] } },
+        { "id": "wsteel", "cells": { "name": "Volframli po‘lat", "comp": "{Fe} 70–85; {W} 12–23; {Cr} 2–6; {C} 0,5–0,6", "use": "tez kesar asboblar" } },
+        { "id": "babbit", "cells": { "name": "Babbit (qalayli)", "comp": "{Sn} 82–84; {Sb} 10–12; {Cu} 6", "use": "podshipniklar, mashinasozlik" } },
+        { "id": "print", "cells": { "name": "Bosmaxona qotishmasi", "comp": "{Pb} 55–75; {Sb} 15–25; {Sn} 10–20", "use": "bosmaxona harflari" } },
+        { "id": "brass", "cells": { "name": "Latun (sariq mis)", "comp": "{Cu} + {Zn}", "use": "armatura, mashina detallari" },
+          "detail": { "concept": "Latundagi rux kislotada eriydi, mis esa vodoroddan keyin turgani uchun erimaydi: {Zn} + 2{HCl} → {ZnCl2} + {H2}. Shu orqali qotishma tarkibi aniqlanadi.", "reactionIds": ["zn"], "observation": "Vodorod pufakchalari ajraladi, mis qipig‘i qoladi", "pages": [75] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "zn": { "equation": "Zn + 2HCl → ZnCl2 + H2↑", "observation": "Qotishmadagi rux eriydi, mis erimay qoladi" }
+  },
+  "clarifications": [
+    { "text": "Darslik qotishmalarni gomogen / geterogen / intermetall deb tasniflaydi. Umumiy qabul qilingan atamalar: qattiq eritma, mexanik aralashma (eutektika) va intermetall birikma — mazmunan mos keladi.", "source": "additionalVerifiedSource" },
+    { "text": "75-betda {Na}–{K} gomogen qotishma misoli sifatida berilgan; bu juftlikni namuna sifatida ishlatmadik, chunki natriy–kaliy tizimida intermetall birikma ({Na2K}) mavjudligi ma’lum va misol mos emas.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s16-q1", "type": "Y1", "skill": "qotishma xossalari", "difficulty": 1,
+      "stem": "Qotishmalar haqida qaysi fikr to‘g‘ri?",
+      "choices": ["Qotishmaning xossalari doim komponentlarning o‘rtacha qiymatiga teng", "Qotishmalar kristall tuzilishga ega va xossalari tarkibiga bog‘liq", "Qotishma faqat bir xil metalldan iborat", "Qotishmalar elektr tokini o‘tkazmaydi"], "answer": 1,
+      "solution": "Qotishma — kristall tuzilishli, issiqlik va elektr tokini yaxshi o‘tkazuvchi material; xossalari tarkibiga va panjara tuzilishiga bog‘liq va ko‘pincha sof metallardan keskin farq qiladi (masalan, vismut, qo‘rg‘oshin, qalay va kadmiydan iborat qotishma 65,5 °C da suyuqlanadi, tarkibidagi hech bir metall bunchalik past haroratda erimaydi)." },
+    { "id": "g9-s16-q2", "type": "Y2", "skill": "qotishmalar va ishlatilishi", "difficulty": 1,
+      "stem": "Qotishmani uning asosiy ishlatilish sohasi bilan moslashtiring.",
+      "left": ["Duraluminiy", "Pexral", "Bosmaxona qotishmasi", "Nikelin"],
+      "right": ["zanglamaydigan po‘lat", "isitish asboblari", "samolyotsozlik", "bosmaxona harflari"],
+      "answer": [2, 0, 3, 1],
+      "solution": "Duraluminiy ({Al}, yengil va pishiq) — samolyotsozlikda; Pexral ({Fe}–{Cr}–{Ni}) — zanglamaydigan po‘lat; bosmaxona qotishmasi ({Pb}–{Sb}–{Sn}) — harflar; nikelin ({Cu}–{Ni}–{Mn}) — isitish asboblari." },
+    { "id": "g9-s16-q3", "type": "Y1", "skill": "qotishma formulasi", "difficulty": 3,
+      "stem": "Massa ulushlari 60 % mis va 40 % rux bo‘lgan intermetall qotishmaning formulasi qaysi?",
+      "choices": ["{CuZn}", "{Cu3Zn2}", "{Cu2Zn3}", "{Cu5Zn8}"], "answer": 1,
+      "solution": "100 g qotishmada: n({Cu}) = 60 / 64 ≈ 0,94 mol; n({Zn}) = 40 / 65 ≈ 0,62 mol. Nisbat 0,94 : 0,62 ≈ 1,5 : 1 = 3 : 2, ya’ni {Cu3Zn2}.",
+      "mistakes": "Massa nisbatini (60 : 40) to‘g‘ridan-to‘g‘ri indekslar deb olish. Avval mollarga o‘tish kerak." },
+    { "id": "g9-s16-q4", "type": "O1", "skill": "qotishma tarkibini aniqlash", "difficulty": 2,
+      "stem": "Mis va ruxdan iborat 20 g latun xlorid kislota bilan ishlanganda 2,24 l (n.sh.) vodorod ajraldi. Latundagi misning massa ulushi necha foiz?",
+      "answer": 67.5, "tolerance": 0.2, "unit": "%",
+      "solution": "Faqat rux reaksiyaga kirishadi: {Zn} + 2{HCl} → {ZnCl2} + {H2}. n({H2}) = 2,24 / 22,4 = 0,1 mol → n({Zn}) = 0,1 mol, m({Zn}) = 0,1 · 65 = 6,5 g. m({Cu}) = 20 − 6,5 = 13,5 g; ω({Cu}) = 13,5 / 20 · 100 % = 67,5 %.",
+      "mistakes": "Mis ham kislota bilan reaksiyaga kirishadi deb o‘ylash: {Cu} kuchlanishlar qatorida vodoroddan keyin turadi." }
+  ]
+}

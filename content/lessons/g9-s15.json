@@ -1,0 +1,109 @@
+{
+  "id": "g9-s15",
+  "status": "seed-verified",
+  "pages": [71, 72, 73, 74],
+  "summary": "Metallar davriy sistemadagi 118 elementning 90 dan ortig‘ini tashkil qiladi. Tabiatda uchrash shakli metallning faolligiga bog‘liq: faol metallar tuz, o‘rtacha faollari oksid va sulfid, kam faollari erkin holda uchraydi. Sanoatda metallar piro-, gidro- va elektrometallurgiya usullarida birikmalaridan qaytarib olinadi.",
+  "keyConcepts": [
+    "Faol metallar ({Na}, {K}, {Ca}) tuz holida, o‘rtacha faollari ({Fe}, {Zn}, {Pb}) oksid va sulfid holida, kam faollari ({Cu}, {Ag}, {Au}, {Pt}, {Hg}) erkin holda uchraydi.",
+    "Metall olishning barcha usullari oksidlanish-qaytarilishga asoslangan: {M^n+} + n e^- → M.",
+    "Pirometallurgiya — yuqori haroratda {C}, {CO}, {Al}, {H2} bilan qaytarish (po‘lat, cho‘yan); gidrometallurgiya — eritmadan boshqa metall yoki elektroliz bilan; elektrometallurgiya — suyuqlanma elektrolizi ({Na}, {Ca}, {Al}).",
+    "Metallar qora (temir va uning qotishmalari) va rangli metallarga, yengil (zichlik 5 g/cm³ dan kichik) va og‘ir metallarga, nodir va noyob metallarga tasniflanadi."
+  ],
+  "tables": [
+    {
+      "id": "occurrence",
+      "title": "Metallarning tabiatda uchrashi",
+      "columns": [
+        { "key": "grp", "label": "Faollik" },
+        { "key": "form", "label": "Qanday holatda uchraydi" },
+        { "key": "ex", "label": "Misollar" },
+        { "key": "way", "label": "Olinish usuli" }
+      ],
+      "rows": [
+        { "id": "active", "cells": { "grp": "Faol (Li … Al)", "form": "tuzlar: xlorid, karbonat, sulfat, fosfat, nitrat", "ex": "{NaCl}, {KCl}, {CaCO3}, {CaSO4}, {BaSO4}, {Ca3(PO4)2}, {NaNO3}", "way": "suyuqlanma elektrolizi" },
+          "detail": { "concept": "Faol metallar kislorod va suv bilan oson reaksiyaga kirishgani uchun erkin holda saqlanib qola olmaydi — ular faqat birikmalar (asosan tuzlar) shaklida uchraydi.", "pages": [71] } },
+        { "id": "middle", "cells": { "grp": "O‘rtacha faol (Mn … Pb)", "form": "oksidlar, sulfidlar, ba’zan sulfatlar", "ex": "{Fe2O3}, {Fe3O4}, {PbS}, {ZnS}, {FeS2}, {FeSO4·7H2O}", "way": "C, CO, Al, H₂ bilan qaytarish" },
+          "detail": { "concept": "Rudalar odatda oksid yoki sulfid. Sulfidli ruda avval kuydirilib oksidga aylantiriladi, so‘ng uglerod yoki {CO} bilan qaytariladi.", "pages": [71, 72] } },
+        { "id": "noble", "cells": { "grp": "Kam faol (H dan keyin)", "form": "erkin holda (sof metall yoki qotishma)", "ex": "{Au}, {Pt}, {Ag}, {Cu}, {Hg}", "way": "boyitish, qizdirib parchalash, eritmadan siqib chiqarish" },
+          "detail": { "concept": "Kam faol metallar kislorodga chidamli bo‘lgani uchun erkin holda uchraydi. Qadimda inson bilgan yetti metall: oltin, kumush, mis, temir, qalay, qo‘rg‘oshin, simob.", "pages": [71] } }
+      ]
+    },
+    {
+      "id": "methods",
+      "title": "Metall olish usullari (metallurgiya)",
+      "columns": [
+        { "key": "method", "label": "Usul" },
+        { "key": "idea", "label": "Mohiyati" },
+        { "key": "eq", "label": "Misol", "reaction": true },
+        { "key": "prod", "label": "Nima olinadi" }
+      ],
+      "rows": [
+        { "id": "pyro-co", "cells": { "method": "Pirometallurgiya", "idea": "oksidni yuqori haroratda {CO} bilan qaytarish", "eq": "fe3o4", "prod": "cho‘yan, po‘lat ({Fe})" },
+          "detail": { "concept": "Qaytaruvchi sifatida {C}, {CO}, {H2}, {Al}, {Si} ishlatiladi. Qaytaruvchi qancha faol bo‘lsa, shuncha qiyin qaytariladigan oksidni ham qaytara oladi.", "reactionIds": ["fe3o4", "cr2o3", "wo3", "zno"], "examTip": "Alyuminiy bilan qaytarish — aluminotermiya: {Cr2O3} + 2{Al} → {Al2O3} + 2{Cr}.", "pages": [72] } },
+        { "id": "pyro-th", "cells": { "method": "Pirometallurgiya (termik)", "idea": "kam faol metall oksidini qizdirib parchalash", "eq": "hgo", "prod": "simob, kumush" },
+          "detail": { "concept": "Passiv metallarning oksidlari mustahkam emas: qizdirilganda metall va kislorodga ajraladi.", "reactionIds": ["hgo"], "pages": [72] } },
+        { "id": "hydro", "cells": { "method": "Gidrometallurgiya", "idea": "rudani eritmaga o‘tkazib, faolroq metall bilan siqib chiqarish", "eq": "cuso4fe", "prod": "mis, oltin, kumush, rux, uran" },
+          "detail": { "concept": "Birinchi bosqich — rudani kislotada eritish: {CuO} + {H2SO4} → {CuSO4} + {H2O}. Ikkinchi bosqich — temir bilan misni siqib chiqarish. Yuqori harorat kerak emas.", "reactionIds": ["cuoacid", "cuso4fe"], "observation": "Temir buyum sirtida qizil mis qatlami hosil bo‘ladi", "pages": [72, 73] } },
+        { "id": "electro", "cells": { "method": "Elektrometallurgiya", "idea": "tuz yoki oksid suyuqlanmasini elektroliz qilish", "eq": "nacl", "prod": "ishqoriy va ishqoriy-yer metallar, aluminiy" },
+          "detail": { "concept": "Katodda metall ioni qaytariladi: {Na^+} + e^- → {Na}, {Ca^2+} + 2e^- → {Ca}, {Al^3+} + 3e^- → {Al}. Eritmada emas, aynan suyuqlanmada o‘tkaziladi — aks holda suv qaytariladi.", "reactionIds": ["nacl", "al2o3", "naion"], "pages": [73] } }
+      ]
+    },
+    {
+      "id": "classes",
+      "title": "Metallar tasnifi",
+      "columns": [
+        { "key": "sign", "label": "Belgi" },
+        { "key": "kinds", "label": "Guruhlar" },
+        { "key": "ex", "label": "Misollar" }
+      ],
+      "rows": [
+        { "id": "use", "cells": { "sign": "Ishlatilishi bo‘yicha", "kinds": "qora (temir va uning qotishmalari) / rangli (qolganlari)", "ex": "cho‘yan, po‘lat / mis, aluminiy, rux" } },
+        { "id": "density", "cells": { "sign": "Zichligi bo‘yicha", "kinds": "yengil (ρ < 5 g/cm³) / og‘ir (ρ > 5 g/cm³)", "ex": "{Li}, {Na}, {Mg}, {Al}, {Ti} / {Zn}, {Fe}, {Cu}, {Hg}, {Pb}; eng yengil {Li} (0,53 g/cm³), eng og‘ir {Os} (22,6 g/cm³)" },
+          "detail": { "concept": "Chegara 5 g/cm³ = 5000 kg/m³. Darslikning 73-betida chegara «500 kg/m³» deb yozilgan — bu bosma xato (78-betda to‘g‘ri: 5000 kg/m³).", "pages": [73, 78] } },
+        { "id": "noble", "cells": { "sign": "Chidamliligi va zargarlikda ishlatilishi", "kinds": "nodir metallar", "ex": "{Ag}, {Au}, {Pt}, {Pd}" } },
+        { "id": "rare", "cells": { "sign": "Tabiatda kam tarqalganligi va noyob xossalari", "kinds": "noyob metallar", "ex": "lantanoidlar, aktinoidlar, {Mo}, {W}, {V}, {Nb}, {Ta}, {Ra}, {Th}" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "fe3o4": { "equation": "Fe3O4 + 4CO → 3Fe + 4CO2↑", "conditions": "yuqori harorat", "safety": "{CO} — zaharli gaz; faqat virtual namoyish." },
+    "cr2o3": { "equation": "Cr2O3 + 2Al → Al2O3 + 2Cr", "conditions": "yuqori harorat (aluminotermiya)" },
+    "wo3": { "equation": "WO3 + 3H2 → W + 3H2O", "conditions": "yuqori harorat" },
+    "zno": { "equation": "ZnO + C → Zn + CO↑", "conditions": "yuqori harorat" },
+    "hgo": { "equation": "2HgO → 2Hg + O2↑", "conditions": "qizdirish", "safety": "Simob bug‘lari zaharli — faqat virtual namoyish." },
+    "cuoacid": { "equation": "CuO + H2SO4 → CuSO4 + H2O" },
+    "cuso4fe": { "equation": "CuSO4 + Fe → FeSO4 + Cu↓", "observation": "Ko‘k eritma och yashil tusga kiradi, temirda qizil mis o‘tiradi" },
+    "nacl": { "equation": "2NaCl → 2Na + Cl2↑", "conditions": "suyuqlanma, elektroliz" },
+    "al2o3": { "equation": "2Al2O3 → 4Al + 3O2↑", "conditions": "kriolitdagi suyuqlanma, elektroliz" },
+    "naion": { "equation": "Na^+ + e^- → Na", "conditions": "katodda" }
+  },
+  "clarifications": [
+    { "text": "73-betda yengil va og‘ir metallarni ajratuvchi zichlik «500 kg/m³» deb berilgan; to‘g‘risi — 5000 kg/m³ (5 g/cm³), 78-betdagi ta’rifga mos. Aks holda litiy (534 kg/m³) ham «og‘ir» bo‘lib qolardi.", "source": "additionalVerifiedSource" },
+    { "text": "Pirometallurgik usullarni sulfidli rudalar uchun to‘ldirish: sulfid avval havoda kuydirilib oksidga aylantiriladi (masalan, 2ZnS + 3O₂ → 2ZnO + 2SO₂), keyin yuqoridagi usullarda qaytariladi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s15-q1", "type": "Y1", "skill": "metallarning tabiatda uchrashi", "difficulty": 1,
+      "stem": "Quyidagi metallardan qaysi biri tabiatda asosan erkin (sof) holda uchraydi?",
+      "choices": ["{Na}", "{Ca}", "{Au}", "{Al}"], "answer": 2,
+      "solution": "Oltin kam faol (passiv) metall: kislorod va suv bilan reaksiyaga kirishmaydi, shuning uchun erkin holda uchraydi. {Na}, {Ca} faol, {Al} esa oksid va alumosilikatlar shaklida uchraydi." },
+    { "id": "g9-s15-q2", "type": "Y1", "skill": "elektrometallurgiya", "difficulty": 1,
+      "stem": "Aluminiy sanoatda qanday usulda olinadi?",
+      "choices": ["{Al2O3} ni ko‘mir bilan qaytarish", "{Al2O3} suyuqlanmasini elektroliz qilish", "{AlCl3} eritmasiga temir ta’sir ettirish", "{Al2O3} ni qizdirib parchalash"], "answer": 1,
+      "solution": "Aluminiy faol metall: uni ko‘mir bilan qaytarib bo‘lmaydi, eritmada esa katodda suv qaytariladi. Shuning uchun {Al2O3} kriolitdagi suyuqlanmasi elektroliz qilinadi: 2{Al2O3} → 4{Al} + 3{O2}." },
+    { "id": "g9-s15-q3", "type": "Y2", "skill": "metall olish usullari", "difficulty": 2,
+      "stem": "Xomashyoni metall olishning mos usuli bilan moslashtiring.",
+      "left": ["{Fe3O4}", "{CuSO4} eritmasi", "{HgO}", "{NaCl} suyuqlanmasi"],
+      "right": ["qizdirib parchalash", "elektroliz", "{CO} bilan qaytarish", "temir bilan siqib chiqarish"],
+      "answer": [2, 3, 0, 1],
+      "solution": "{Fe3O4} + 4{CO} → 3{Fe} + 4{CO2} (piro); {CuSO4} + {Fe} → {FeSO4} + {Cu} (gidro); 2{HgO} → 2{Hg} + {O2} (termik parchalanish); 2{NaCl} → 2{Na} + {Cl2} (elektroliz)." },
+    { "id": "g9-s15-q4", "type": "O1", "skill": "metallurgiya hisoblari", "difficulty": 2,
+      "stem": "46,4 g magnetit {Fe3O4} ni uglerod(II)-oksid bilan to‘liq qaytarganda necha gramm temir olinadi?",
+      "answer": 33.6, "tolerance": 0.1, "unit": "g",
+      "solution": "{Fe3O4} + 4{CO} → 3{Fe} + 4{CO2}. M({Fe3O4}) = 3·56 + 4·16 = 232 g/mol; n = 46,4 / 232 = 0,2 mol. n({Fe}) = 3 · 0,2 = 0,6 mol; m = 0,6 · 56 = 33,6 g.",
+      "mistakes": "{Fe3O4} dan 1 mol emas, 3 mol temir hosil bo‘lishini unutish (formulada uchta Fe atomi bor)." },
+    { "id": "g9-s15-q5", "type": "O1", "skill": "gidrometallurgiya hisoblari", "difficulty": 2,
+      "stem": "{CuSO4} ning 16 g miqdori eritmada temir qipiqlari bilan to‘liq reaksiyaga kirishdi. Necha gramm mis ajraladi?",
+      "answer": 6.4, "tolerance": 0.05, "unit": "g",
+      "solution": "{CuSO4} + {Fe} → {FeSO4} + {Cu}. M({CuSO4}) = 64 + 32 + 64 = 160 g/mol; n = 16 / 160 = 0,1 mol. n({Cu}) = 0,1 mol, m = 0,1 · 64 = 6,4 g." }
+  ]
+}

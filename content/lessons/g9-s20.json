@@ -1,0 +1,96 @@
+{
+  "id": "g9-s20",
+  "status": "seed-verified",
+  "pages": [97, 98, 99],
+  "summary": "Ishqoriy metallar ({Li}, {Na}, {K}, {Rb}, {Cs}, {Fr}) I A guruhni tashkil qiladi. Tashqi qavatda bitta s-elektron bor: ular +1 ion hosil qilib, eng kuchli qaytaruvchilar bo‘lib namoyon bo‘ladi. Guruhda yuqoridan pastga atom radiusi ortadi, ionlanish energiyasi kamayadi, metallik va faollik kuchayadi.",
+  "keyConcepts": [
+    "Tashqi qavat konfiguratsiyasi {ns^1}; barcha birikmalarida oksidlanish darajasi +1.",
+    "Li → Cs yo‘nalishida: atom radiusi ↑, ionlanish energiyasi ↓, qaytaruvchilik va faollik ↑, suyuqlanish harorati ↓, zichlik umuman ↑ (K bundan mustasno: Na dan yengil).",
+    "Ishqoriy metall nomi gidroksidlarining o‘yuvchi (ishqoriy) xossasidan kelib chiqqan.",
+    "Kislorod bilan reaksiya: {Li} → oksid {Li2O}, {Na} → peroksid {Na2O2}, {K} → superoksid {KO2}.",
+    "Natriy va kaliy tirik organizm uchun muhim (kaliy-natriy nasosi, qon bosimi, yurak ishi); kaliy o‘simlik oziqlanishida zarur."
+  ],
+  "tables": [
+    {
+      "id": "props",
+      "title": "Ishqoriy metallar xossalari",
+      "columns": [
+        { "key": "el", "label": "Element" },
+        { "key": "conf", "label": "Elektron konfiguratsiya" },
+        { "key": "mp", "label": "t suyuq., °C" },
+        { "key": "rho", "label": "Zichlik, g/cm³" },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "li", "cells": { "el": "{Li}", "conf": "[He]2s¹", "mp": "180,5", "rho": "0,534", "note": "eng yengil metall; eng yuqori t suyuq. guruhda" } },
+        { "id": "na", "cells": { "el": "{Na}", "conf": "[Ne]3s¹", "mp": "97,8", "rho": "0,971", "note": "osh tuzi tarkibida; hayot uchun zarur" } },
+        { "id": "k", "cells": { "el": "{K}", "conf": "[Ar]4s¹", "mp": "63,6", "rho": "0,862", "note": "o‘simlik uchun muhim o‘g‘it elementi" } },
+        { "id": "rb", "cells": { "el": "{Rb}", "conf": "[Kr]5s¹", "mp": "39,0", "rho": "1,532", "note": "kam zaharli" } },
+        { "id": "cs", "cells": { "el": "{Cs}", "conf": "[Xe]6s¹", "mp": "28,4", "rho": "1,873", "note": "barqaror metallar ichida eng faol; xona haroratiga yaqin eriydi" },
+          "detail": { "concept": "Atom radiusi ortgani sari tashqi elektron yadrodan uzoqlashadi va osonroq ajraladi, shuning uchun faollik {Li} dan {Cs} ga ortadi. Fransiy (t suyuq. ≈ 27 °C) juda beqaror radioaktiv element.", "examTip": "Guruhda pastga: radius ↑ → ionlanish energiyasi ↓ → qaytaruvchilik ↑.", "pages": [98] } },
+        { "id": "fr", "cells": { "el": "{Fr}", "conf": "[Rn]7s¹", "mp": "≈ 27", "rho": "≈ 2,5", "note": "radioaktiv, juda kam; asosan sun’iy olinadi" } }
+      ]
+    },
+    {
+      "id": "oxygen",
+      "title": "Ishqoriy metallar va kislorod",
+      "columns": [
+        { "key": "m", "label": "Metall" },
+        { "key": "prod", "label": "Asosiy mahsulot" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "li", "cells": { "m": "{Li}", "prod": "oksid {Li2O}", "eq": "li" },
+          "detail": { "concept": "Litiy — kislorodda oksid hosil qiluvchi yagona ishqoriy metall (asosiy mahsulot sifatida).", "reactionIds": ["li"], "pages": [102, 103] } },
+        { "id": "na", "cells": { "m": "{Na}", "prod": "peroksid {Na2O2}", "eq": "na" } },
+        { "id": "k", "cells": { "m": "{K}", "prod": "superoksid {KO2}", "eq": "k" },
+          "detail": { "concept": "Peroksidda kislorod −1, superoksidda −1/2 oksidlanish darajasida. Sof oksidlar ({Na2O}, {K2O}) peroksidga metall qo‘shib qizdirib olinadi: {Na2O2} + 2{Na} → 2{Na2O}.", "reactionIds": ["k", "na2o"], "pages": [102, 103] } }
+      ]
+    },
+    {
+      "id": "bio",
+      "title": "Ishqoriy metallarning biologik ahamiyati (darslik ma’lumotlari)",
+      "columns": [
+        { "key": "el", "label": "Element" },
+        { "key": "body", "label": "Inson organizmida (70 kg)" },
+        { "key": "role", "label": "Ahamiyati" }
+      ],
+      "rows": [
+        { "id": "li", "cells": { "el": "{Li}", "body": "≈ 0,67 mg", "role": "antidepressant xususiyatli; zaharli dozasi 92–200 mg" } },
+        { "id": "na", "cells": { "el": "{Na}", "body": "≈ 70 g", "role": "kaliy-natriy nasosi; fiziologik eritma ({NaCl}); zaharli emas" } },
+        { "id": "k", "cells": { "el": "{K}", "body": "≈ 250 g", "role": "yurak muskuli va qon bosimi; o‘simlik o‘g‘iti ({KCl}, {KNO3}, {K2SO4})" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "li": { "equation": "4Li + O2 → 2Li2O", "conditions": "yonish" },
+    "na": { "equation": "2Na + O2 → Na2O2", "conditions": "yonish", "observation": "Yorqin sariq alanga, och sariq kukun" },
+    "k": { "equation": "K + O2 → KO2", "conditions": "yonish", "observation": "Binafsha rangli alanga" },
+    "na2o": { "equation": "Na2O2 + 2Na → 2Na2O", "conditions": "qizdirish" }
+  },
+  "clarifications": [
+    { "text": "98-betda fransiy «tabiatda uchramaydigan sun’iy element» deb yozilgan. Aslida u uran rudalarida radioaktiv parchalanish mahsuloti sifatida juda kam miqdorda hosil bo‘ladi (Yer qobig‘ida bir vaqtning o‘zida bir necha o‘n gramm atrofida); amalda esa asosan sun’iy olinadi. «Eng faol» deb seziy aytilishining sababi — fransiy yaxshi o‘rganilmagan.", "source": "additionalVerifiedSource" },
+    { "text": "98-betdagi litiyning nisbiy atom massasi 6,939 eskirgan; hozirgi qiymat ≈ 6,94 (maktab masalalarida 7).", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s20-q1", "type": "Y1", "skill": "guruh qonuniyatlari", "difficulty": 1,
+      "stem": "Ishqoriy metallar qatorida {Li} dan {Cs} ga o‘tganda qaysi kattalik kamayadi?",
+      "choices": ["atom radiusi", "qaytaruvchilik xossasi", "ionlanish energiyasi", "metallik xossasi"], "answer": 2,
+      "solution": "Radius ortishi bilan tashqi elektron yadroga kuchsizroq tortiladi: ionlanish energiyasi kamayadi, qaytaruvchilik va metallik esa kuchayadi." },
+    { "id": "g9-s20-q2", "type": "Y2", "skill": "kislorod bilan mahsulotlar", "difficulty": 2,
+      "stem": "Metallni kislorodda yonganda hosil bo‘ladigan asosiy mahsulot bilan moslashtiring.",
+      "left": ["{Li}", "{Na}", "{K}"],
+      "right": ["{Na2O2}", "{KO2}", "{Li2O}"],
+      "answer": [2, 0, 1],
+      "solution": "{Li} → {Li2O}; {Na} → {Na2O2} (peroksid); {K} → {KO2} (superoksid)." },
+    { "id": "g9-s20-q3", "type": "O1", "skill": "ishqoriy metall + suv hisobi", "difficulty": 2,
+      "stem": "3,9 g kaliy suv bilan reaksiyaga kirishsa, necha litr (n.sh.) vodorod ajraladi?",
+      "answer": 1.12, "tolerance": 0.01, "unit": "l",
+      "solution": "2{K} + 2{H2O} → 2{KOH} + {H2}. n({K}) = 3,9 / 39 = 0,1 mol; n({H2}) = 0,05 mol; V = 0,05 · 22,4 = 1,12 l.",
+      "mistakes": "Vodorod mol sonini kaliy mol soniga teng deb olish: 2 mol {K} dan 1 mol {H2} hosil bo‘ladi." },
+    { "id": "g9-s20-q4", "type": "Y1", "skill": "ishqoriy metall xossalari", "difficulty": 1,
+      "stem": "Quyidagi ishqoriy metallardan qaysi birining suyuqlanish harorati eng past?",
+      "choices": ["{Li}", "{Na}", "{K}", "{Cs}"], "answer": 3,
+      "solution": "Guruhda pastga tushganda metall bog‘ kuchsizlashadi, suyuqlanish harorati kamayadi: {Li} 180,5; {Na} 97,8; {K} 63,6; {Cs} 28,4 °C." }
+  ]
+}

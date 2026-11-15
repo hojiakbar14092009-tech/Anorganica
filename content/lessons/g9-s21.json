@@ -1,0 +1,118 @@
+{
+  "id": "g9-s21",
+  "status": "seed-verified",
+  "pages": [100, 101, 102, 103, 104],
+  "summary": "Natriy va kaliy — yumshoq, kumushrang, kuchli qaytaruvchi metallar; tabiatda faqat birikmalar ko‘rinishida uchraydi va tuz suyuqlanmasi elektrolizi bilan olinadi. Eng muhim birikmalari: {NaCl}, {NaOH}, {KOH}, {Na2O2}, {Na2CO3}, {KCl}, {KNO3}.",
+  "keyConcepts": [
+    "Na va K kerosin ostida saqlanadi: havoda tez oksidlanadi, suv bilan shiddatli reaksiyaga kirishadi.",
+    "Olinishi — suyuqlanma elektrolizi: katodda {Na^+} + e^- → {Na}; anodda 2{Cl^-} → {Cl2} + 2e^-.",
+    "Alanga rangi: natriy — sariq, kaliy — och binafsha (birikmalarni aniqlash usuli).",
+    "{NaOH} (kaustik soda) sanoatda {NaCl} eritmasi elektrolizi bilan olinadi: 2{NaCl} + 2{H2O} → 2{NaOH} + {H2} + {Cl2}.",
+    "{Na2O2} {CO2} ni yutib, kislorod ajratadi — suvosti kemalari va nafas apparatlarida ishlatiladi."
+  ],
+  "tables": [
+    {
+      "id": "compare",
+      "title": "Natriy va kaliy",
+      "columns": [
+        { "key": "prop", "label": "Xossa" },
+        { "key": "na", "label": "Natriy {Na}" },
+        { "key": "k", "label": "Kaliy {K}" }
+      ],
+      "rows": [
+        { "id": "conf", "cells": { "prop": "Elektron tuzilish", "na": "1s²2s²2p⁶3s¹", "k": "1s²2s²2p⁶3s²3p⁶4s¹" } },
+        { "id": "phys", "cells": { "prop": "t suyuq.; zichlik", "na": "97,8 °C; 0,971 g/cm³", "k": "63,6 °C; 0,862 g/cm³" } },
+        { "id": "e0", "cells": { "prop": "Standart potensial E°", "na": "−2,71 V", "k": "−2,92 V" },
+          "detail": { "concept": "Kaliyning potensiali natriynikidan manfiyroq — kaliy kuchliroq qaytaruvchi. Darslikning 101-betidagi kaliy uchun «−2,71 V» qiymati noto‘g‘ri (u natriyniki); 79-betdagi jadvalda kaliy uchun −2,92 V berilgan.", "pages": [79, 100, 101] } },
+        { "id": "flame", "cells": { "prop": "Alanga rangi", "na": "sariq", "k": "och binafsha" } },
+        { "id": "ores", "cells": { "prop": "Tabiiy birikmalari", "na": "{NaCl} (toshtuz, dengiz suvi), {Na2SO4·10H2O} (Glauber tuzi), {NaNO3} (Chili selitrasi)", "k": "silvinit {KCl·NaCl}, karnallit {KCl·MgCl2·6H2O}, kainit, hind selitrasi {KNO3}, dala shpati" } },
+        { "id": "disc", "cells": { "prop": "Kashf etilgan", "na": "G. Devi, 1807", "k": "G. Devi, 1807" } }
+      ]
+    },
+    {
+      "id": "chem",
+      "title": "Natriy va kaliyning kimyoviy xossalari",
+      "columns": [
+        { "key": "with", "label": "Nima bilan" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "o2", "cells": { "with": "Kislorod", "eq": "na2o2", "note": "natriy peroksid hosil qiladi; kaliy — {KO2}" },
+          "detail": { "concept": "Yonganda {Na} peroksid beradi, ozgina {Na2O} ham hosil bo‘ladi. Sof oksid: {Na2O2} + 2{Na} → 2{Na2O}.", "reactionIds": ["na2o2", "na2o"], "pages": [102, 103] } },
+        { "id": "cl2", "cells": { "with": "Xlor", "eq": "nacl", "note": "ion bog‘li tuz" } },
+        { "id": "h2", "cells": { "with": "Vodorod", "eq": "kh", "note": "gidrid: ion bog‘li, {H^-} tutadi" } },
+        { "id": "s", "cells": { "with": "Oltingugurt", "eq": "na2s", "note": "sulfid" } },
+        { "id": "water", "cells": { "with": "Suv", "eq": "nawater", "note": "shiddatli; kaliy alangalanadi" },
+          "detail": { "concept": "Reaksiya kuchli ekzotermik; ajralgan vodorod alangalanishi, kaliyda esa portlash bilan borishi mumkin. Eritma fenolftaleinni malina rangga bo‘yaydi.", "reactionIds": ["nawater", "kwater"], "observation": "Metall sharsimon erib, suv ustida yuguradi, gaz ajraladi", "pages": [103] } },
+        { "id": "acid", "cells": { "with": "Kislota", "eq": "khcl", "note": "juda shiddatli (amalda portlash)" } }
+      ]
+    },
+    {
+      "id": "compounds",
+      "title": "Muhim birikmalar va ularning reaksiyalari",
+      "columns": [
+        { "key": "name", "label": "Modda" },
+        { "key": "use", "label": "Ishlatilishi" },
+        { "key": "eq", "label": "Asosiy reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "naoh", "cells": { "name": "{NaOH} (kaustik soda, o‘yuvchi natriy)", "use": "sovun, qog‘oz, sun’iy tola, neft tozalash", "eq": "elnacl" },
+          "detail": { "concept": "Sanoatda {NaCl} eritmasi elektrolizi: katodda {H2} va {OH^-}, anodda {Cl2}. {NaOH} suvda yaxshi eriydi, lakmusni ko‘k, fenolftaleinni malina rangga bo‘yaydi.", "reactionIds": ["elnacl", "co2naoh", "cuoh2", "zncinc"], "pages": [103, 104] } },
+        { "id": "koh", "cells": { "name": "{KOH}", "use": "suyuq sovun, ishqoriy akkumulyator, kaliyli tuzlar", "eq": "kohso4" } },
+        { "id": "na2o2", "cells": { "name": "{Na2O2} (natriy peroksid)", "use": "{CO2} ni bog‘lash, kislorod olish; {H2O2} olish", "eq": "peroxco2" },
+          "detail": { "concept": "Suvosti kemalarida chiqarilgan {CO2} peroksid bilan bog‘lanadi va kislorod ajraladi. Sovuq sulfat kislotadan vodorod peroksid olinadi: {Na2O2} + {H2SO4} → {Na2SO4} + {H2O2}.", "reactionIds": ["peroxco2", "peroxacid"], "pages": [104] } },
+        { "id": "nacl", "cells": { "name": "{NaCl} (osh tuzi)", "use": "oziq-ovqat, fiziologik eritma, {NaOH}, {Cl2}, soda xomashyosi", "eq": "" } },
+        { "id": "k", "cells": { "name": "{KCl}, {KNO3}, {K2SO4}", "use": "mineral o‘g‘itlar; {KNO3} — qora porox, gugurt", "eq": "" } },
+        { "id": "glauber", "cells": { "name": "{Na2SO4·10H2O} (Glauber tuzi)", "use": "surgi vositasi, shisha va kimyo sanoati", "eq": "" } },
+        { "id": "chili", "cells": { "name": "{NaNO3} (Chili selitrasi)", "use": "azotli o‘g‘it", "eq": "" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "na2o2": { "equation": "2Na + O2 → Na2O2", "conditions": "yonish" },
+    "na2o": { "equation": "Na2O2 + 2Na → 2Na2O", "conditions": "qizdirish" },
+    "nacl": { "equation": "2Na + Cl2 → 2NaCl", "safety": "Xlor zaharli — faqat virtual namoyish." },
+    "kh": { "equation": "2K + H2 → 2KH", "conditions": "qizdirish" },
+    "na2s": { "equation": "2Na + S → Na2S", "conditions": "qizdirish yoki ishqalash" },
+    "nawater": { "equation": "2Na + 2H2O → 2NaOH + H2↑", "safety": "Natriy suv bilan shiddatli reaksiyaga kirishadi, vodorod yonishi mumkin — faqat virtual namoyish." },
+    "kwater": { "equation": "2K + 2H2O → 2KOH + H2↑", "safety": "Kaliy suvda alangalanadi va portlashi mumkin — faqat virtual namoyish." },
+    "khcl": { "equation": "2K + 2HCl → 2KCl + H2↑", "safety": "Kaliy kislota bilan portlash bilan reaksiyaga kirishadi — faqat virtual namoyish." },
+    "elnacl": { "equation": "2NaCl + 2H2O → 2NaOH + H2↑ + Cl2↑", "conditions": "eritma elektrolizi" },
+    "co2naoh": { "equation": "CO2 + 2NaOH → Na2CO3 + H2O" },
+    "cuoh2": { "equation": "CuCl2 + 2NaOH → Cu(OH)2↓ + 2NaCl", "observation": "Ko‘k cho‘kma hosil bo‘ladi" },
+    "zncinc": { "equation": "Zn + 2NaOH + 2H2O → Na2[Zn(OH)4] + H2↑", "conditions": "ishqor eritmasi, qizdirish", "note": "Rux amfoter metall: ishqorda erib tetragidroksosinkat (sinkat) hosil qiladi." },
+    "kohso4": { "equation": "2KOH + H2SO4 → K2SO4 + 2H2O" },
+    "peroxco2": { "equation": "2Na2O2 + 2CO2 → 2Na2CO3 + O2↑" },
+    "peroxacid": { "equation": "Na2O2 + H2SO4 → Na2SO4 + H2O2", "conditions": "sovuq, suyultirilgan kislota" }
+  },
+  "clarifications": [
+    { "text": "101-betdagi kaliy uchun «E° = −2,71 V» yozuvi xato (natriy qiymati takrorlangan). To‘g‘risi −2,92 V; 79-betdagi kuchlanishlar qatori jadvalida ham shunday.", "source": "additionalVerifiedSource" },
+    { "text": "101-betda dala shpatining formulasi «K₂O·Al₂O₃·6SiO.» deb bosilgan: to‘g‘risi K₂O·Al₂O₃·6SiO₂.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s21-q1", "type": "O1", "skill": "eritma konsentratsiyasi", "difficulty": 3,
+      "stem": "4,6 g natriy 95,6 g suvda eritildi. Hosil bo‘lgan eritmadagi {NaOH} ning massa ulushi necha foiz?",
+      "answer": 8, "tolerance": 0.05, "unit": "%",
+      "solution": "2{Na} + 2{H2O} → 2{NaOH} + {H2}. n({Na}) = 4,6 / 23 = 0,2 mol; n({NaOH}) = 0,2 mol, m = 0,2 · 40 = 8 g; n({H2}) = 0,1 mol, m = 0,2 g. m(eritma) = 95,6 + 4,6 − 0,2 = 100 g; ω = 8 / 100 = 8 %.",
+      "mistakes": "Eritma massasini hisoblashda ajralgan vodorod massasini ayirishni unutish." },
+    { "id": "g9-s21-q2", "type": "Y1", "skill": "natriy xossalari", "difficulty": 1,
+      "stem": "Natriy metali nima uchun kerosin ostida saqlanadi?",
+      "choices": ["kerosin natriyni qaytaradi", "havo kislorodi va nam bilan tez reaksiyaga kirishadi", "natriy kerosinda eriydi", "natriy yorug‘likda parchalanadi"], "answer": 1,
+      "solution": "Natriy juda faol: havoda tez oksidlanadi, namlik bilan reaksiyaga kirishadi. Zichligi kerosindan katta, kerosin esa u bilan reaksiyaga kirishmaydi, shu sababli kerosin ostida saqlanadi." },
+    { "id": "g9-s21-q3", "type": "Y2", "skill": "natriy va kaliy birikmalari", "difficulty": 1,
+      "stem": "Birikmani uning tarixiy yoki amaliy nomi bilan moslashtiring.",
+      "left": ["{NaOH}", "{Na2SO4·10H2O}", "{NaNO3}", "{KCl·NaCl}"],
+      "right": ["Chili selitrasi", "silvinit", "kaustik soda", "Glauber tuzi"],
+      "answer": [2, 3, 0, 1],
+      "solution": "{NaOH} — kaustik soda (o‘yuvchi natriy); {Na2SO4·10H2O} — Glauber tuzi; {NaNO3} — Chili selitrasi; {KCl·NaCl} — silvinit." },
+    { "id": "g9-s21-q4", "type": "O1", "skill": "peroksid hisobi", "difficulty": 2,
+      "stem": "15,6 g natriy peroksid karbonat angidrid bilan reaksiyaga kirishsa, necha litr (n.sh.) kislorod ajraladi? Tenglama: 2{Na2O2} + 2{CO2} → 2{Na2CO3} + {O2}.",
+      "answer": 2.24, "tolerance": 0.02, "unit": "l",
+      "solution": "M({Na2O2}) = 2·23 + 2·16 = 78 g/mol; n = 15,6 / 78 = 0,2 mol. 2 mol peroksiddan 1 mol {O2} hosil bo‘ladi: n({O2}) = 0,1 mol; V = 0,1 · 22,4 = 2,24 l." },
+    { "id": "g9-s21-q5", "type": "Y1", "skill": "sifat reaksiyalari", "difficulty": 1,
+      "stem": "Kaliy tuzlari alangani qanday rangga bo‘yaydi?",
+      "choices": ["sariq", "och binafsha", "yashil", "g‘isht qizil"], "answer": 1,
+      "solution": "Kaliy ionlari alangani och binafsha rangga, natriy ionlari esa sariq rangga bo‘yaydi; bu birikmalarni aniqlashda ishlatiladi." }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "g9-s22",
+  "status": "seed-verified",
+  "pages": [105, 106, 107, 108],
+  "summary": "Soda ({Na2CO3}) shisha, sovun, qog‘oz, to‘qimachilik va kimyo sanoatida ishlatiladi; tabiatda kam uchraydi, shuning uchun sintez qilinadi. Qadimgi Leblan (sulfat) usuli qimmat bo‘lgani uchun Solve (ammiakli) usuli bilan almashtirilgan: {NaCl}, {NH3}, {CO2} va suvdan kam eriydigan {NaHCO3} cho‘ktiriladi, uni qizdirib soda olinadi.",
+  "keyConcepts": [
+    "Solve usuli: to‘yingan {NaCl} eritmasi ammiak bilan to‘yintiriladi, so‘ng {CO2} yuboriladi; sovuq eritmada yomon eriydigan {NaHCO3} cho‘kadi.",
+    "Umumiy yig‘indi: 2{NaCl} + {CaCO3} → {Na2CO3} + {CaCl2}. Ammiak aylanma ishlatiladi: {NH4Cl} ni ohak bilan ishlab qayta {NH3} olinadi.",
+    "Leblan usuli: {NaCl} → {Na2SO4} → {Na2S} → {Na2CO3}; qimmat va ko‘p chiqindi beradi.",
+    "Soda turlari: suvsiz (kalsinatsiyalangan) {Na2CO3}, kristall (kir) soda {Na2CO3·10H2O}, ichimlik soda {NaHCO3}, kaustik soda {NaOH} — bular turli moddalar."
+  ],
+  "tables": [
+    {
+      "id": "solvay",
+      "title": "Solve (ammiakli) usuli bosqichlari",
+      "columns": [
+        { "key": "step", "label": "Bosqich" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "cond", "label": "Sharoit / izoh" }
+      ],
+      "rows": [
+        { "id": "limestone", "cells": { "step": "1. {CO2} va ohak olish", "eq": "caco3", "cond": "ohaktoshni kuydirish; hosil bo‘lgan {CaO} suv bilan so‘ndiriladi" },
+          "detail": { "concept": "Ohaktoshni kuydirish ikki xomashyo beradi: {CO2} (soda uchun) va {CaO} (ammiak qayta tiklash uchun). {CaO} + {H2O} → {Ca(OH)2}.", "reactionIds": ["caco3", "slake"], "pages": [106, 107] } },
+        { "id": "nh3", "cells": { "step": "2. Ammiakni qayta tiklash", "eq": "nh4cl", "cond": "{NH4Cl} ni {Ca(OH)2} bilan qizdirish" } },
+        { "id": "nh4hco3", "cells": { "step": "3. Ammiakli sho‘r suv + {CO2}", "eq": "nh4hco3", "cond": "{NaCl} ning konsentrlangan eritmasi {NH3} bilan to‘yintiriladi, bosim ostida {CO2} yuboriladi" } },
+        { "id": "ppt", "cells": { "step": "4. {NaHCO3} cho‘kishi", "eq": "nahco3", "cond": "sovutish; {NaHCO3} sovuq eritmada yomon eriydi" },
+          "detail": { "concept": "Almashinuv reaksiyasi {NaCl} + {NH4HCO3} ⇄ {NaHCO3}↓ + {NH4Cl}: cho‘kma ajralgani uchun muvozanat o‘ngga siljiydi. Yig‘ma yozuv: {NaCl} + {NH3} + {CO2} + {H2O} → {NaHCO3} + {NH4Cl}.", "reactionIds": ["nahco3", "sum1"], "examTip": "Cho‘kadigan modda — soda emas, {NaHCO3}; soda uni qizdirib olinadi.", "observation": "Oq kristall {NaHCO3} cho‘kmasi", "pages": [106, 107] } },
+        { "id": "calc", "cells": { "step": "5. Kalsinatsiya", "eq": "decomp", "cond": "{NaHCO3} ni filtrlab, qizdirish; ajralgan {CO2} 3-bosqichga qaytariladi" } },
+        { "id": "total", "cells": { "step": "Umumiy", "eq": "total", "cond": "ammiak va {CO2} aylanma, chiqindi — {CaCl2}" } }
+      ]
+    },
+    {
+      "id": "leblan",
+      "title": "Leblan (sulfat) usuli",
+      "columns": [
+        { "key": "step", "label": "Bosqich" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "l1", "cells": { "step": "1. Sulfat hosil qilish", "eq": "l1", "note": "{NaCl} + {H2SO4}; qo‘shimcha {HCl} gazi ajraladi" } },
+        { "id": "l2", "cells": { "step": "2. Ko‘mir bilan qaytarish", "eq": "l2", "note": "{Na2SO4} sulfidga aylanadi" } },
+        { "id": "l3", "cells": { "step": "3. Ohaktosh bilan qizdirish", "eq": "l3", "note": "soda va suvda yomon eriydigan {CaS} aralashmasi; soda suvda eritib ajratiladi" },
+          "detail": { "concept": "Usul XVIII asrda fransuz shifokori L. Leblan tomonidan taklif etilgan. Ko‘p energiya va sulfat kislota sarflanishi hamda zararli chiqindilar tufayli Solve usuli bilan almashtirilgan.", "pages": [106] } }
+      ]
+    },
+    {
+      "id": "kinds",
+      "title": "Soda turlari",
+      "columns": [
+        { "key": "name", "label": "Nomi" },
+        { "key": "f", "label": "Formula" },
+        { "key": "eq", "label": "Xossa / reaksiya", "reaction": true },
+        { "key": "use", "label": "Ishlatilishi" }
+      ],
+      "rows": [
+        { "id": "anhydrous", "cells": { "name": "Suvsiz (kalsinatsiyalangan) soda", "f": "{Na2CO3}", "eq": "na2co3hcl", "use": "shisha, sovun, qog‘oz, kimyo sanoati" } },
+        { "id": "crystal", "cells": { "name": "Kristall (kir) soda", "f": "{Na2CO3·10H2O}", "eq": "crystal", "use": "kir yuvish, qattiq suvni yumshatish" } },
+        { "id": "baking", "cells": { "name": "Ichimlik soda", "f": "{NaHCO3}", "eq": "nahco3hcl", "use": "oziq-ovqat, tibbiyot, kundalik turmush" },
+          "detail": { "concept": "{NaHCO3} kislotalar bilan {Na2CO3} ga qaraganda yumshoqroq reaksiyaga kiradi, shuning uchun ovqat va tibbiyotda ishlatiladi; ikkala tuz ham kislotadan {CO2} ajratadi.", "reactionIds": ["nahco3hcl", "na2co3hcl"], "observation": "Gaz pufakchalari ({CO2}) ajraladi", "pages": [107] } },
+        { "id": "caustic", "cells": { "name": "Kaustik soda (soda emas, ishqor!)", "f": "{NaOH}", "eq": "causticize", "use": "sovun, qog‘oz; sodadan ohak bilan olish mumkin" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "caco3": { "equation": "CaCO3 → CaO + CO2↑", "conditions": "kuydirish, yuqori harorat" },
+    "slake": { "equation": "CaO + H2O → Ca(OH)2", "observation": "Issiqlik ajraladi" },
+    "nh4cl": { "equation": "2NH4Cl + Ca(OH)2 → 2NH3↑ + CaCl2 + 2H2O", "conditions": "qizdirish" },
+    "nh4hco3": { "equation": "NH3 + CO2 + H2O → NH4HCO3", "conditions": "bosim ostida, sovutish" },
+    "nahco3": { "equation": "NH4HCO3 + NaCl → NaHCO3↓ + NH4Cl", "conditions": "sovuq eritma" },
+    "sum1": { "equation": "NaCl + NH3 + CO2 + H2O → NaHCO3↓ + NH4Cl", "conditions": "sovuq, to‘yingan eritma" },
+    "decomp": { "equation": "2NaHCO3 → Na2CO3 + CO2↑ + H2O", "conditions": "qizdirish (kalsinatsiya)" },
+    "total": { "equation": "2NaCl + CaCO3 → Na2CO3 + CaCl2", "conditions": "Solve usulining yig‘indisi" },
+    "l1": { "equation": "2NaCl + H2SO4 → Na2SO4 + 2HCl↑", "conditions": "qizdirish", "safety": "{HCl} gazi o‘tkir va zaharli — faqat virtual namoyish." },
+    "l2": { "equation": "Na2SO4 + 2C → Na2S + 2CO2↑", "conditions": "yuqori harorat" },
+    "l3": { "equation": "Na2S + CaCO3 → Na2CO3 + CaS", "conditions": "yuqori harorat" },
+    "na2co3hcl": { "equation": "Na2CO3 + 2HCl → 2NaCl + H2O + CO2↑", "observation": "Shiddatli gaz ajralishi" },
+    "nahco3hcl": { "equation": "NaHCO3 + HCl → NaCl + H2O + CO2↑", "observation": "Gaz pufakchalari ajraladi" },
+    "crystal": { "equation": "Na2CO3·10H2O → Na2CO3 + 10H2O", "conditions": "qizdirish (suvsizlantirish)" },
+    "causticize": { "equation": "Na2CO3 + Ca(OH)2 → CaCO3↓ + 2NaOH", "conditions": "kaustiklash" }
+  },
+  "clarifications": [
+    { "text": "107-betdagi «ammiakli usul» bosqichlari to‘g‘ri, lekin tartibi chalkash: ammiak ko‘p bosqichli aylanma jarayonda qayta tiklanadi ({NH4Cl} + {Ca(OH)2}), {CO2} esa ohaktoshni kuydirishdan keladi. Darslikda bu aniq aytilmagan, shuning uchun jadvalga 1-bosqich qo‘shildi.", "source": "additionalVerifiedSource" },
+    { "text": "Soda bilan bog‘liq nomlar chalkash: kaustik soda — {NaOH}, ichimlik soda — {NaHCO3}, kir soda — {Na2CO3·10H2O}, suvsiz soda — {Na2CO3}. Ular bir-biriga o‘tadi, lekin bir xil modda emas.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s22-q1", "type": "Y1", "skill": "Solve usuli", "difficulty": 2,
+      "stem": "Solve usulida eritmadan cho‘kmaga tushadigan modda qaysi?",
+      "choices": ["{Na2CO3}", "{NaHCO3}", "{NH4Cl}", "{CaCl2}"], "answer": 1,
+      "solution": "{NaHCO3} sovuq to‘yingan eritmada yomon eriydi va cho‘kadi; {NH4Cl} esa eritmada qoladi. Soda keyin {NaHCO3} ni qizdirib olinadi." },
+    { "id": "g9-s22-q2", "type": "O1", "skill": "soda hisoblari", "difficulty": 2,
+      "stem": "53 g soda ({Na2CO3}) olish uchun Solve usulida necha gramm ichimlik soda ({NaHCO3}) qizdirilishi kerak? Tenglama: 2{NaHCO3} → {Na2CO3} + {CO2} + {H2O}.",
+      "answer": 84, "tolerance": 0.5, "unit": "g",
+      "solution": "M({Na2CO3}) = 106 g/mol; n = 53 / 106 = 0,5 mol. n({NaHCO3}) = 2 · 0,5 = 1 mol; M({NaHCO3}) = 23 + 1 + 12 + 48 = 84 g/mol; m = 84 g.",
+      "mistakes": "2 koeffitsientini hisobga olmaslik — 42 g chiqib qoladi." },
+    { "id": "g9-s22-q3", "type": "Y2", "skill": "soda ishlab chiqarish reaksiyalari", "difficulty": 2,
+      "stem": "Reaksiya sharti yoki reagentni hosil bo‘ladigan mahsulotlar bilan moslashtiring.",
+      "left": ["{NaHCO3} ni qizdirish", "{NH4Cl} + {Ca(OH)2}", "{NaCl} + {H2SO4} (Leblan)", "{Na2S} + {CaCO3}"],
+      "right": ["{Na2CO3} + {CaS}", "{Na2CO3} + {CO2} + {H2O}", "{NH3} + {CaCl2} + {H2O}", "{Na2SO4} + {HCl}"],
+      "answer": [1, 2, 3, 0],
+      "solution": "2{NaHCO3} → {Na2CO3} + {CO2} + {H2O}; 2{NH4Cl} + {Ca(OH)2} → 2{NH3} + {CaCl2} + 2{H2O}; 2{NaCl} + {H2SO4} → {Na2SO4} + 2{HCl}; {Na2S} + {CaCO3} → {Na2CO3} + {CaS}." },
+    { "id": "g9-s22-q4", "type": "O1", "skill": "xomashyo sarfi", "difficulty": 3,
+      "stem": "Solve usulining yig‘indi tenglamasi 2{NaCl} + {CaCO3} → {Na2CO3} + {CaCl2}. 10,6 kg soda olish uchun nazariy jihatdan necha kilogramm {NaCl} kerak?",
+      "answer": 11.7, "tolerance": 0.05, "unit": "kg",
+      "solution": "n({Na2CO3}) = 10 600 g / 106 = 100 mol. n({NaCl}) = 2 · 100 = 200 mol; M({NaCl}) = 58,5 g/mol; m = 200 · 58,5 = 11 700 g = 11,7 kg." },
+    { "id": "g9-s22-q5", "type": "Y1", "skill": "soda turlari", "difficulty": 1,
+      "stem": "Kir (kristall) soda formulasi qaysi?",
+      "choices": ["{NaHCO3}", "{NaOH}", "{Na2CO3·10H2O}", "{Na2SO4·10H2O}"], "answer": 2,
+      "solution": "Kristall (kir) soda — {Na2CO3·10H2O}. {NaHCO3} — ichimlik soda, {NaOH} — kaustik soda, {Na2SO4·10H2O} — Glauber tuzi." }
+  ]
+}
