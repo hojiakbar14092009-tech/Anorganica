@@ -12,6 +12,7 @@
     "test": "vitest run",
     "validate:content": "vitest run src/tests/content.test.ts",
     "source-map": "node scripts/build-source-map.mjs",
+    "exam-alignment": "node scripts/exam-alignment.mjs",
     "test:e2e": "npm run build && playwright test"
   },
   "dependencies": {

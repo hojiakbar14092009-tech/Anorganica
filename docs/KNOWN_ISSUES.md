@@ -1,8 +1,8 @@
 # Known issues and limitations (facts only)
 
-- Content: 53/53 lessons (schema + chemistry validators pass, author-checked against PDF pages). G8 §40–44 and all G9 lessons except §19 were drafted by sub-agents under the same rules; no subject-teacher or native-speaker review yet.
-- Questions: 255 original (Y1 100, Y2 42, O1 110, O2 3). O1 answers are hand-derived, not recomputed by code. O2 is self-assessed with a rubric, never auto-graded. Only 3 O2 tasks exist, exactly the 43-task session minimum.
-- Visuals: 35 of 53 lessons have a verified visual (3D models incl. Cu/Fe cells, CO₃²⁻, SiO₄⁴⁻; 10 process flows; rate/equilibrium explorers; 3 electrolysis cells). The other 18 use tables only; a per-figure textbook audit for them is pending.
+- Content: 53/53 lessons. Agent-written lessons (G8 §40–44, G9 §8–36 except §19) received an independent sub-agent review on 2026-11-15: all O1/Y1/Y2 keys recomputed, no numeric errors; 8 factual fixes/clarifications applied. No subject-teacher or native-speaker review yet.
+- Questions: 260 original (O2 8). O1 answers hand-derived and independently re-checked by review, not recomputed by code. O2 is self-assessed (rubric = 25 points, test-enforced), never auto-graded.
+- Visuals: 38 of 53 lessons have a verified visual (3D incl. P₄O₁₀, Cu/Fe cells, CO₃²⁻, SiO₄⁴⁻; 12 process flows; rate/equilibrium explorers; 3 electrolysis cells). 15 lessons use tables only; per-figure textbook audit for them is pending.
 - The 3D engine (≈250 KB gz) is cached on first use only; offline without prior use, lessons show the text facts instead of the model.
 - Stacked phone tables use `display:block`; VoiceOver may announce them as plain text rather than a table (visual labels are present).
 - No physical iPhone 11 test: mobile results come from Playwright WebKit (iPhone 11 emulation) on Windows. iOS storage eviction and Home Screen install flow are untested on device.

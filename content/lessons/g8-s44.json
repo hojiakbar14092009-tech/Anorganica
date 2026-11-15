@@ -10,9 +10,9 @@
   "summary": "Biogen elementlar — tirik organizmlar tarkibiga kiruvchi va hayot uchun zarur elementlar. Makrobiogen elementlar (H, O, C, N, Ca va boshqalar) ko‘p miqdorda, mikrobiogen elementlar (Fe, Mn, Co, Cu, Mo, Zn, F, Br, I, B) 0,01 % dan kam miqdorda uchraydi, lekin fermentlar, vitaminlar va oqsillar hosil bo‘lishida muhim rol o‘ynaydi.",
   "keyConcepts": [
     "Yer po‘stlog‘ining ≈98 % i sakkiz element (O, Si, Al, Fe, Ca, Na, K, Mg) dan iborat; hayotning asosi esa uglerod.",
-    "Inson tanasining ≈99,4 % i H, O, C, N, Ca (va boshqa makroelementlar) dan iborat; ular makrobiogen elementlar.",
+    "Inson tanasining ≈99 % i makroelementlar — H, O, C, N, Ca, P va boshqalar dan iborat; ular makrobiogen elementlar.",
     "Mikrobiogen elementlar (mikroelementlar) tirik organizmda 0,01 % dan kam: Fe, Mn, Co, Cu, Mo, Zn, F, Br, I, B.",
-    "Organizmdagi kalsiyning ≈99 % i suyakda, ≈1 % i qon va limfada; suyak {Ca5(PO4)3OH}, tish emali {Ca5(PO4)3F}.",
+    "Organizmdagi kalsiyning ≈99 % i suyakda, ≈1 % i qon va limfada; suyak va tish emali asosan gidroksiapatit {Ca5(PO4)3OH} dan iborat; ftor ta’sirida qisman ftorapatit {Ca5(PO4)3F} hosil bo‘ladi.",
     "Mikroelement yetishmasligi o‘simlikda hosildorlikni, hayvon va odamda kasalliklarni keltirib chiqaradi."
   ],
   "tables": [
@@ -38,7 +38,7 @@
           "id": "macro",
           "cells": {
             "group": "Makrobiogen elementlar",
-            "content": "ko‘p (odam tanasining ≈99,4 % i)",
+            "content": "ko‘p (H, O, C, N, Ca, P va boshqalar birgalikda ≈99 %)",
             "els": "H, O, C, N, Ca"
           },
           "detail": {
@@ -111,7 +111,7 @@
           "id": "f",
           "cells": {
             "el": "Ftor (F)",
-            "role": "suyak va tish to‘qimasining hosil bo‘lishi va o‘sishi; tish emali {Ca5(PO4)3F}",
+            "role": "suyak va tish to‘qimasining hosil bo‘lishi va o‘sishi; emalda ftorapatit {Ca5(PO4)3F} hosil bo‘ladi",
             "eq": "fluor"
           },
           "detail": {
@@ -137,7 +137,7 @@
           "id": "co",
           "cells": {
             "el": "Kobalt (Co)",
-            "role": "qon hosil bo‘lishi, DNK va aminokislotalar almashinuvi; o‘simliklarda, masalan, uzumda qand ko‘payishiga yordam beradi",
+            "role": "B₁₂ vitamini (kobalamin) tarkibida — qon hosil bo‘lishi uchun zarur",
             "eq": ""
           }
         },
@@ -169,7 +169,7 @@
           "id": "mn",
           "cells": {
             "el": "Marganes (Mn)",
-            "role": "oksidlanish-qaytarilish jarayonlari, C vitamini hosil bo‘lishi; bug‘doy va qandlavlagi hosildorligini oshiradi",
+            "role": "ko‘plab fermentlar tarkibida, oksidlanish-qaytarilish jarayonlari; o‘simlikda fotosintez uchun zarur",
             "eq": ""
           }
         },
@@ -192,7 +192,15 @@
   },
   "clarifications": [
     {
+      "text": "Darslikda tish emali {Ca5(PO4)3F} deb berilgan; amalda emal asosan gidroksiapatit {Ca5(PO4)3OH} dan iborat, ftorapatit esa ftor ta’sirida {OH^-} ning qisman almashinishidan hosil bo‘ladi (karies uchun chidamliroq). Shuningdek, 99,4 % ga faqat H, O, C, N, Ca emas, boshqa makroelementlar (P, K, S va b.) ham hissa qo‘shadi: bu besh element birgalikda taxminan 98 % ni tashkil qiladi.",
+      "source": "additionalVerifiedSource"
+    },
+    {
       "text": "193-betda Yer po‘stlog‘ining 98 % ini tashkil etuvchi sakkizta element ro‘yxatida «Mn» (marganes) yozilgan. To‘g‘risi — magniy (Mg): O, Si, Al, Fe, Ca, Na, K, Mg. Marganesning po‘stloqdagi ulushi ≈0,1 % ga yaqin.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslikdagi ayrim biologik da’volar (masalan, marganesning C vitamini hosil bo‘lishidagi roli, kobaltning uzumda qand miqdoriga ta’siri) ishonchli manbalarda tasdiqlanmagani uchun ilovada keltirilmadi; o‘rniga umume’tirof etilgan rollar berildi (Co — B₁₂ vitamini tarkibida).",
       "source": "additionalVerifiedSource"
     }
   ],
@@ -237,7 +245,7 @@
         "{Cu}"
       ],
       "right": [
-        "tish emali {Ca5(PO4)3F} tarkibiga kiradi",
+        "emalda ftorapatit {Ca5(PO4)3F} hosil bo‘lishida ishtirok etadi",
         "suyak va tishning asosiy mineral komponenti",
         "o‘simlikda azotning o‘zlashtirilishida ishtirok etadi",
         "teri pigmentatsiyasi va temirning o‘zlashtirilishi"

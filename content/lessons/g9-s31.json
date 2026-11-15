@@ -55,6 +55,7 @@
     "h2so4": { "equation": "2Cr + 3H2SO4 → Cr2(SO4)3 + 3H2↑", "conditions": "suyultirilgan, qizdirish" }
   },
   "clarifications": [
+    { "text": "Suyultirilgan {H2SO4} bilan ham havosiz sharoitda avval {CrSO4} (ko‘k) hosil bo‘ladi; jadvaldagi {Cr2(SO4)3} li tenglama havo kislorodi ishtirokidagi yakuniy natijani ifodalaydi.", "source": "additionalVerifiedSource" },
     { "text": "145–146-betlarda «Cr + 2HCl → CrCl2 + H2» yozilgan va ortiqcha kislotada {CrCl3} hosil bo‘ladi deyilgan; aslida avval {CrCl2} (ko‘k) hosil bo‘ladi, u havo kislorodida tezda {Cr^3+} ga o‘tadi.", "source": "additionalVerifiedSource" }
   ],
   "questions": [

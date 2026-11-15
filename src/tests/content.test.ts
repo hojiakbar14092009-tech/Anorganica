@@ -2,6 +2,7 @@
 import { describe, expect, it } from 'vitest';
 import manifest from '../../content/manifest.json';
 import allowed from '../content/allowed-lessons.json';
+import alignment from '../content/exam-alignment.json';
 import { LessonSchema, type Lesson } from '../lib/schema';
 import { checkBalance } from '../lib/chem';
 
@@ -69,6 +70,10 @@ describe('lessons', () => {
         for (const a of q.answer) expect(a).toBeLessThan(q.right.length);
       }
     }
+  });
+  it('exam-alignment.json is in sync with the lessons (npm run exam-alignment)', () => {
+    const mapped = Object.entries(alignment.lessons).flatMap(([, v]) => v.questionIds).sort();
+    expect(mapped).toEqual(lessons.flatMap((l) => l.questions.map((q) => q.id)).sort());
   });
   it('has globally unique question ids and stems', () => {
     const qs = lessons.flatMap((l) => l.questions);

@@ -14,13 +14,13 @@ PHASE: 2–3 App + 53 lessons — DONE (expert review pending, KNOWN_ISSUES)
 PHASE: 4 Graphics — MOSTLY DONE
 DONE: reusable 3D MoleculeScene (Three.js/R3F/Drei, lazy, demand frameloop, toggle-to-rotate, WebGL fallback), 22 tested models on 18 lessons;
   2D electrolysis; ProcessFlow (contact process, HNO₃, rusting, Solvay, blast furnace); rate + equilibrium explorers (logic unit-tested)
-  + Al₂O₃ electrolysis, Cu/Fe cells, Al(OH)₃, Cr, Mn, Fe tests, softening, CO₃²⁻, SiO₄⁴⁻ → 35/53 lessons with a visual
-NEXT: run docs/QA_IPHONE.md on a real iPhone 11; teacher review of agent-written lessons; per-figure audit for the 18 table-only lessons
+  + Al₂O₃ electrolysis, Cu/Fe cells, Al(OH)₃, Cr, Mn, Fe tests, softening, CO₃²⁻, SiO₄⁴⁻ → 38/53 lessons with a visual (+ P₄O₁₀, glass/cement, metal-extraction methods)
+NEXT: run docs/QA_IPHONE.md on a real iPhone 11; teacher review of agent-written lessons; per-figure audit for the 15 table-only lessons
 ```
 
 ```
 PHASE: 5 Practice — DONE
-DONE: 255 questions; filters, error review, 8-question quick drill, 43-task session (32/3/5/3, 180 min, scope-labelled), O2 rubric; exam-alignment.json + docs/EXAM_ALIGNMENT.md
+DONE: 260 questions (O2 8, rubric = 25 pts enforced); independent review of agent-written lessons; filters, error review, 8-question quick drill, 43-task session (32/3/5/3, 180 min, scope-labelled), O2 rubric; exam-alignment.json + docs/EXAM_ALIGNMENT.md
 ```
 
 ```

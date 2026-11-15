@@ -32,6 +32,9 @@ Tests: `src/tests/molecules.test.ts` (formula ↔ atoms, connectivity, bond leng
 | g9-s24 | water softening methods | step animation | equations tested |
 | g9-s33 | KMnO₄ reduction by medium (Mn²⁺ / MnO₂ / MnO₄²⁻) | step animation | equations tested |
 | g9-s35 | Fe²⁺ / Fe³⁺ qualitative tests | step animation | equations tested |
-| others (18) | tables + equations only — judged sufficient (laws, fertilizers, biogenic elements, metals overview) | — | figure audit pending |
+| g8-s41 | P₄O₁₀ cage (P–O 1.60, P=O 1.43 Å, P–O–P 124°) | 3D | tested |
+| g9-s14 | glass and cement reactions | step animation | equations tested |
+| g9-s15 | metal extraction methods by activity | step animation | equations tested |
+| others (15) | tables + equations only — judged sufficient (laws, fertilizers, biogenic elements, metals overview) | — | figure audit pending |
 
 All models are labelled “sxematik model”; text facts (lengths/angles) are always visible as the fallback.

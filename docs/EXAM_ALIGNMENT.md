@@ -5,7 +5,7 @@
   Task counts per type (Y1 32, Y2 3, O1 5, O2 3 = 43) are taken from the user's spec; re-verify on the next edition.
 - Portals: https://uzbmb.uz/page/milliytest, https://www.uzbmb.uz/page/namuna_m (not used as a question source).
 - **Boundary:** the app covers only the 53 allowed lessons. Organic chemistry, chemical analysis and general-chemistry topics outside these lessons are **not** covered. The 43-task session is labelled “Tanlangan 53 mavzu bo‘yicha sertifikat uslubidagi mashq”; no official score is computed.
-- Bank: 255 original questions (Y1 100, Y2 42, O1 110, O2 3); machine-readable mapping in `src/content/exam-alignment.json`. Validated by `src/tests/content.test.ts` (schema, answer keys, unique stems, balanced equations).
+- Bank: 260 original questions (Y1 100, Y2 42, O1 110, O2 8); machine-readable mapping in `src/content/exam-alignment.json`. Validated by `src/tests/content.test.ts` (schema, answer keys, unique stems, balanced equations).
 
 | Lesson | Skills | Questions |
 |---|---|---|

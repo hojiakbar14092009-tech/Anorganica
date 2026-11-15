@@ -24,7 +24,7 @@
           "detail": { "concept": "Oq fosfor havoda o‘z-o‘zidan yonib ketishi mumkin, shuning uchun suv ostida saqlanadi. Yorug‘lik yoki qizdirish ta’sirida sekin qizil fosforga aylanadi.", "reactionIds": ["wr"], "examTip": "Oq fosforning faolligi va zaharliligi molekulali ({P4}) tuzilishi bilan bog‘liq.", "pages": [175, 176] } },
         { "id": "red", "cells": { "form": "Qizil fosfor", "struct": "polimer (atomli) tuzilish, {Pn}", "prop": "to‘q qizil kukun, hidsiz, ρ ≈ 2 g/sm³, suvda va {CS2} da erimaydi, suyuqlanmasdan bug‘lanadi", "tox": "zaharsiz" },
           "detail": { "concept": "Qizil fosforni havosiz joyda qizdirib bug‘latsak va bug‘ni sovitsak, oq fosfor hosil bo‘ladi. Gugurt ishlab chiqarishda asosiy xomashyo.", "pages": [176] } },
-        { "id": "black", "cells": { "form": "Qora fosfor", "struct": "qatlamli polimer tuzilish", "prop": "eng barqaror shakl; yuqori bosim ostida oq fosfordan olinadi (P. Bridjmen, 1934)", "tox": "kam faol" } }
+        { "id": "black", "cells": { "form": "Qora fosfor", "struct": "qatlamli polimer tuzilish", "prop": "eng barqaror shakl; yuqori bosim ostida oq fosfordan olinadi (P. Bridjmen, 1914)", "tox": "kam faol" } }
       ]
     },
     {
@@ -59,6 +59,7 @@
     "match": { "equation": "6P + 5KClO3 → 5KCl + 3P2O5", "conditions": "ishqalanish" }
   },
   "clarifications": [
+    { "text": "Darslikda (176-bet) qora fosfor P. Bridjmen tomonidan 1934-yilda olingan deyilgan; aslida Bridjmen uni yuqori bosim ostida 1914-yilda olgan.", "source": "additionalVerifiedSource" },
     { "text": "Darslikda (176-bet) fosfin oddiy moddalardan «2P + 3H2 = 2PH3» reaksiya bilan olinadi deyilgan. Aslida fosfor vodorod bilan bevosita deyarli birikmaydi; fosfin metall fosfidlarni suv yoki kislota bilan gidrolizlab olinadi: {Ca3P2} + 6{H2O} → 3{Ca(OH)2} + 2{PH3}↑. Shuning uchun jadvalda aynan shu reaksiya keltirilgan.", "source": "additionalVerifiedSource" },
     { "text": "Darslikdagi rasmda qora fosfor «P4» deb belgilangan. Qora fosfor molekulali emas, qatlamli polimer tuzilishga ega; {P4} molekulalaridan faqat oq fosfor (va uning bug‘i) iborat. Qizil fosforni «atomli panjara» deyish ham soddalashtirish: u ham polimer ({Pn}) tuzilishli.", "source": "additionalVerifiedSource" }
   ],
