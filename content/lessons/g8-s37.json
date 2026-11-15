@@ -1,0 +1,95 @@
+{
+  "id": "g8-s37",
+  "status": "seed-verified",
+  "pages": [159, 160, 161, 162, 163],
+  "summary": "Ammiak {NH3} — qutbli molekula, rangsiz, o‘tkir hidli, havodan ≈1,7 marta yengil gaz; suvda juda yaxshi eriydi (1 hajm suvda ≈700 hajm). Azotdagi bo‘linmagan elektron jufti hisobiga proton biriktirib ammoniy ioni {NH4^+} hosil qiladi — eritmasi ishqoriy.",
+  "keyConcepts": [
+    "Ammoniy ionida azot to‘rtta kovalent bog‘ hosil qiladi (biri donor-akseptor mexanizmida), oksidlanish darajasi esa −3 ligicha qoladi.",
+    "Sanoatda: N₂ + 3H₂ ⇄ 2NH₃ + Q — temir katalizatori (Al₂O₃, K₂O qo‘shimchali), yuqori bosim, murosaviy harorat.",
+    "Ammiak qaytaruvchi: kislorodda yonib {N2} beradi, platina katalizatorida esa NO hosil qiladi (nitrat kislota ishlab chiqarish asosi).",
+    "Ammoniy-ionga sifat reaksiyasi: ishqor bilan qizdirilganda o‘tkir hidli {NH3} ajraladi (ho‘l lakmus ko‘karadi)."
+  ],
+  "tables": [
+    {
+      "id": "obtain",
+      "title": "Olinishi",
+      "columns": [
+        { "key": "where", "label": "Usul" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "lab1", "cells": { "where": "Laboratoriya: ammoniy tuzi + ishqor", "eq": "lab1" } },
+        { "id": "lab2", "cells": { "where": "Laboratoriya: NH₄Cl + so‘ndirilgan ohak, qizdirish", "eq": "lab2" } },
+        { "id": "ind", "cells": { "where": "Sanoat (Gaber usuli)", "eq": "ind" },
+          "detail": { "concept": "Reaksiya qaytar va ekzotermik, gaz hajmi kamayadi (4 → 2). Bosim oshirish muvozanatni NH₃ tomonga siljitadi. Past harorat unumni oshiradi, lekin tezlikni keskin kamaytiradi — shuning uchun murosaviy harorat va katalizator qo‘llanadi.", "reactionIds": ["ind"], "examTip": "Katalizator unumni emas, muvozanatga erishish tezligini oshiradi.", "pages": [160] } }
+      ]
+    },
+    {
+      "id": "props",
+      "title": "Kimyoviy xossalari",
+      "columns": [
+        { "key": "with", "label": "Nima bilan" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Muhim" }
+      ],
+      "rows": [
+        { "id": "water", "cells": { "with": "Suv", "eq": "water", "note": "kuchsiz asos; fenolftalein — pushti" },
+          "detail": { "concept": "Ammiak suvdan proton tortib oladi: NH₃ + H₂O ⇄ NH₄⁺ + OH⁻. Eritmada OH⁻ paydo bo‘lgani uchun muhit ishqoriy.", "reactionIds": ["water", "waterIon"], "observation": "«Favvora» tajribasida fenolftaleinli suv pushti rangga kiradi", "pages": [160, 161] } },
+        { "id": "hcl", "cells": { "with": "Xlorid kislota", "eq": "hcl", "note": "«tutunsiz olov»: oq tutun (NH₄Cl)" } },
+        { "id": "h2so4", "cells": { "with": "Sulfat kislota (mo‘l NH₃)", "eq": "h2so4", "note": "o‘g‘it — ammoniy sulfat" } },
+        { "id": "burn", "cells": { "with": "Kislorod (katalizatorsiz)", "eq": "burn", "note": "N⁻³ → N⁰" } },
+        { "id": "cat", "cells": { "with": "Kislorod (Pt katalizator)", "eq": "cat", "note": "N⁻³ → N⁺²" } },
+        { "id": "decomp", "cells": { "with": "Qizdirish", "eq": "decomp", "note": "yuqori haroratda parchalanadi" } }
+      ]
+    },
+    {
+      "id": "salts",
+      "title": "Ammoniy tuzlari",
+      "columns": [
+        { "key": "prop", "label": "Xossa" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "heat", "cells": { "prop": "Qizdirilganda parchalanadi", "eq": "carbonate" } },
+        { "id": "alkali", "cells": { "prop": "Ishqor bilan NH₃ ajraladi (sifat reaksiyasi)", "eq": "sulfate" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "lab1": { "equation": "NH4Cl + NaOH → NaCl + H2O + NH3↑", "conditions": "t°" },
+    "lab2": { "equation": "2NH4Cl + Ca(OH)2 → CaCl2 + 2H2O + 2NH3↑", "conditions": "t°" },
+    "ind": { "equation": "N2 + 3H2 ⇄ 2NH3", "conditions": "Fe katalizator, p, t°, +Q" },
+    "water": { "equation": "NH3 + H2O ⇄ NH3·H2O" },
+    "waterIon": { "equation": "NH3 + H2O ⇄ NH4^+ + OH^-" },
+    "hcl": { "equation": "NH3 + HCl → NH4Cl" },
+    "h2so4": { "equation": "2NH3 + H2SO4 → (NH4)2SO4" },
+    "burn": { "equation": "4NH3 + 3O2 → 2N2 + 6H2O" },
+    "cat": { "equation": "4NH3 + 5O2 → 4NO + 6H2O", "conditions": "Pt katalizator" },
+    "decomp": { "equation": "2NH3 → N2 + 3H2", "conditions": "yuqori t°" },
+    "carbonate": { "equation": "(NH4)2CO3 → 2NH3↑ + H2O + CO2↑", "conditions": "t°" },
+    "sulfate": { "equation": "(NH4)2SO4 + 2NaOH → Na2SO4 + 2NH3↑ + 2H2O", "observation": "O‘tkir hid; ho‘l qizil lakmus ko‘karadi" }
+  },
+  "clarifications": [
+    { "text": "Darslikda «past haroratda ammiak hosil bo‘lish unumi pasayadi» deyilgan. Aniqrog‘i: past harorat muvozanatdagi unumni oshiradi, ammo reaksiya tezligini kamaytiradi; shuning uchun murosaviy harorat (≈450–500 °C) tanlanadi.", "source": "additionalVerifiedSource" },
+    { "text": "Ammiakning suvli eritmasi darslikda NH₄OH deb yozilgan; eritmada alohida NH₄OH molekulalari aniqlanmagan, aniqroq yozuv — NH₃·H₂O.", "source": "additionalVerifiedSource" },
+    { "text": "Darslikda sanoat vodorodi suv elektrolizidan olinadi deyilgan; hozirgi kunda vodorodning asosiy qismi tabiiy gazni bug‘ bilan konversiyalash orqali olinadi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g8-s37-q1", "type": "O1", "skill": "gaz hajmlari", "difficulty": 2,
+      "stem": "5,6 l (n.sh.) ammiak platina katalizatori ishtirokida to‘liq oksidlanishi uchun necha litr kislorod kerak?",
+      "answer": 7, "tolerance": 0.01, "unit": "l",
+      "solution": "4NH₃ + 5O₂ → 4NO + 6H₂O. V(O₂) = 5,6 · 5/4 = 7 l (gazlar hajmlari koeffitsiyentlar nisbatida)." },
+    { "id": "g8-s37-q2", "type": "Y1", "skill": "sifat reaksiyasi", "difficulty": 1,
+      "stem": "Ammoniy tuzini boshqa tuzlardan qanday aniqlash mumkin?",
+      "choices": ["{AgNO3} qo‘shib", "{BaCl2} qo‘shib", "ishqor bilan qizdirib, ajralgan gazni ho‘l lakmus bilan sinab", "suvda eritib"], "answer": 2,
+      "solution": "NH₄⁺ + OH⁻ → NH₃↑ + H₂O; ajralgan ammiak ho‘l qizil lakmusni ko‘k rangga bo‘yaydi." },
+    { "id": "g8-s37-q3", "type": "Y1", "skill": "oksidlanish darajasi", "difficulty": 1,
+      "stem": "Ammoniy ionidagi {NH4^+} azotning oksidlanish darajasi nechaga teng?",
+      "choices": ["+3", "−3", "−4", "+4"], "answer": 1,
+      "solution": "x + 4·(+1) = +1 ⇒ x = −3. Azot 4 ta bog‘ hosil qilsa ham oksidlanish darajasi −3." },
+    { "id": "g8-s37-q4", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "10,7 g ammoniy xlorid mo‘l so‘ndirilgan ohak bilan qizdirilganda necha litr (n.sh.) ammiak ajraladi?",
+      "answer": 4.48, "tolerance": 0.01, "unit": "l",
+      "solution": "2NH₄Cl + Ca(OH)₂ → CaCl₂ + 2H₂O + 2NH₃. n(NH₄Cl) = 10,7 / 53,5 = 0,2 mol = n(NH₃); V = 4,48 l." }
+  ]
+}

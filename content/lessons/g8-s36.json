@@ -1,0 +1,74 @@
+{
+  "id": "g8-s36",
+  "status": "seed-verified",
+  "pages": [156, 157, 158, 159],
+  "summary": "Azot {N2} — havoning asosiy qismi (hajm bo‘yicha 78 %); molekulada uchlamchi bog‘ (N≡N) bo‘lgani uchun oddiy sharoitda kimyoviy jihatdan nofaol. Faqat yuqori harorat, bosim, katalizator yoki elektr razryadi ta’sirida reaksiyaga kirishadi.",
+  "keyConcepts": [
+    "V A guruh: N, P, As, Sb, Bi; tashqi qavat {ns2 np3}. Azotning oksidlanish darajalari −3 dan +5 gacha.",
+    "Tabiatda: erkin holda havoda; birikmalar — Chili selitrasi {NaNO3}, tuproqdagi nitratlar, oqsillar.",
+    "Sanoatda havoni suyultirib, fraksion bug‘latish orqali olinadi: azot (Tqayn −196 °C) kisloroddan (−183 °C) oldin bug‘lanadi.",
+    "Metallar bilan nitridlar hosil qiladi: litiy oddiy sharoitda, magniy qizdirilganda."
+  ],
+  "tables": [
+    {
+      "id": "group",
+      "title": "Azot guruhchasi elementlari",
+      "columns": [
+        { "key": "el", "label": "Element" },
+        { "key": "ar", "label": "Ar" },
+        { "key": "e", "label": "Tashqi qavat" },
+        { "key": "ox", "label": "Oksidlanish darajalari" }
+      ],
+      "rows": [
+        { "id": "n", "cells": { "el": "Azot N (7)", "ar": "14", "e": "{2s2 2p3}", "ox": "−3 … +5" } },
+        { "id": "p", "cells": { "el": "Fosfor P (15)", "ar": "31", "e": "{3s2 3p3}", "ox": "−3, 0, +3, +5" } },
+        { "id": "as", "cells": { "el": "Mishyak As (33)", "ar": "75", "e": "{4s2 4p3}", "ox": "−3, 0, +3, +5" } },
+        { "id": "sb", "cells": { "el": "Surma Sb (51)", "ar": "122", "e": "{5s2 5p3}", "ox": "−3, 0, +3, +5" } },
+        { "id": "bi", "cells": { "el": "Vismut Bi (83)", "ar": "209", "e": "{6s2 6p3}", "ox": "−3, 0, +3, +5" } }
+      ]
+    },
+    {
+      "id": "n2",
+      "title": "Azot: olinishi va xossalari",
+      "columns": [
+        { "key": "what", "label": "Jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "cond", "label": "Sharoit" }
+      ],
+      "rows": [
+        { "id": "lab", "cells": { "what": "Laboratoriyada olish", "eq": "lab", "cond": "ammiak qizdirilgan CuO ustidan o‘tkaziladi" } },
+        { "id": "air", "cells": { "what": "Sanoatda olish", "eq": "", "cond": "suyuq havoni fraksion bug‘latish (fizik jarayon)" } },
+        { "id": "o2", "cells": { "what": "Kislorod bilan", "eq": "o2", "cond": "≈2000 °C, elektr yoyi, chaqmoq; endotermik" },
+          "detail": { "concept": "Momaqaldiroqda havodagi azot oksidlanadi — tabiatda azotning bog‘lanish yo‘llaridan biri.", "reactionIds": ["o2"], "pages": [158] } },
+        { "id": "h2", "cells": { "what": "Vodorod bilan", "eq": "h2", "cond": "katalizator, yuqori bosim va harorat" } },
+        { "id": "li", "cells": { "what": "Litiy bilan", "eq": "li", "cond": "oddiy sharoitda" } },
+        { "id": "mg", "cells": { "what": "Magniy bilan", "eq": "mg", "cond": "qizdirish" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "lab": { "equation": "3CuO + 2NH3 → 3Cu + 3H2O + N2", "conditions": "t°", "observation": "Qora CuO qizil misga aylanadi" },
+    "o2": { "equation": "N2 + O2 ⇄ 2NO", "conditions": "≈2000 °C, −Q" },
+    "h2": { "equation": "N2 + 3H2 ⇄ 2NH3", "conditions": "katalizator, p, t°, +Q" },
+    "li": { "equation": "6Li + N2 → 2Li3N" },
+    "mg": { "equation": "3Mg + N2 → Mg3N2", "conditions": "t°" }
+  },
+  "questions": [
+    { "id": "g8-s36-q1", "type": "Y1", "skill": "molekula tuzilishi", "difficulty": 1,
+      "stem": "Nima uchun azot oddiy sharoitda kimyoviy jihatdan nofaol?",
+      "choices": ["azot metall", "{N2} molekulasida mustahkam uchlamchi bog‘ bor", "azot suvda yaxshi eriydi", "azot atomida tashqi qavat to‘lgan"], "answer": 1,
+      "solution": "N≡N bog‘ini uzish uchun juda katta energiya kerak, shuning uchun azot faqat qattiq sharoitlarda reaksiyaga kirishadi." },
+    { "id": "g8-s36-q2", "type": "O1", "skill": "gaz zichligi", "difficulty": 1,
+      "stem": "Normal sharoitda azotning zichligini (g/l) hisoblang (0,01 aniqlikda).",
+      "answer": 1.25, "tolerance": 0.005, "unit": "g/l",
+      "solution": "ρ = M / Vm = 28 / 22,4 = 1,25 g/l." },
+    { "id": "g8-s36-q3", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "3,6 g magniy azotda to‘liq yonganda necha gramm magniy nitrid hosil bo‘ladi?",
+      "answer": 5, "tolerance": 0.01, "unit": "g",
+      "solution": "3Mg + N₂ → Mg₃N₂. n(Mg) = 3,6 / 24 = 0,15 mol; n(Mg₃N₂) = 0,05 mol; M = 100 g/mol; m = 5 g." },
+    { "id": "g8-s36-q4", "type": "Y1", "skill": "olinish usullari", "difficulty": 1,
+      "stem": "Sanoatda azot qaysi usulda olinadi?",
+      "choices": ["ammiakni parchalab", "suyuq havoni fraksion bug‘latib", "nitratlarni qizdirib", "suvni elektroliz qilib"], "answer": 1,
+      "solution": "Azotning qaynash harorati (−196 °C) kisloroddan (−183 °C) past, shuning uchun suyuq havodan avval azot bug‘lanadi." }
+  ]
+}

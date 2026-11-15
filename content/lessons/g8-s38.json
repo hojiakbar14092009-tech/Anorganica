@@ -1,0 +1,61 @@
+{
+  "id": "g8-s38",
+  "status": "seed-verified",
+  "pages": [164, 165],
+  "summary": "Azot kislorod bilan oksidlanish darajasi +1 dan +5 gacha bo‘lgan oksidlar hosil qiladi: {N2O}, NO, {N2O3}, {NO2} ({N2O4}), {N2O5}. NO — rangsiz, tuz hosil qilmaydigan oksid; {NO2} — qizg‘ish-qo‘ng‘ir, zaharli, kislotali oksid.",
+  "keyConcepts": [
+    "NO havoda oddiy sharoitda darhol {NO2} ga oksidlanadi — rangsiz gaz qo‘ng‘ir tusga kiradi.",
+    "Laboratoriyada: mis + suyultirilgan {HNO3} → NO; mis + konsentrlangan {HNO3} → {NO2}.",
+    "{NO2} suv bilan ikki kislota hosil qiladi (disproporsiyalanish): N⁺⁴ → N⁺⁵ ({HNO3}) va N⁺³ ({HNO2}).",
+    "Tabiatda NO chaqmoq paytida hosil bo‘ladi; shuning uchun yomg‘ir suvida oz miqdorda azot birikmalari bor."
+  ],
+  "tables": [
+    {
+      "id": "oxides",
+      "title": "Azot oksidlari",
+      "columns": [
+        { "key": "f", "label": "Oksid" },
+        { "key": "ox", "label": "N ning o.d." },
+        { "key": "type", "label": "Turi" },
+        { "key": "prop", "label": "Asosiy xossa" }
+      ],
+      "rows": [
+        { "id": "n2o", "cells": { "f": "{N2O}", "ox": "+1", "type": "tuz hosil qilmaydigan", "prop": "{NH4NO3} parchalanishidan olinadi" } },
+        { "id": "no", "cells": { "f": "NO", "ox": "+2", "type": "tuz hosil qilmaydigan", "prop": "rangsiz gaz, suvda kam eriydi, havoda {NO2} ga o‘tadi" },
+          "detail": { "concept": "Sanoatda NO ammiakni katalitik oksidlab olinadi — nitrat kislota ishlab chiqarishning birinchi bosqichi.", "reactionIds": ["noLab", "noAir", "lightning"], "pages": [164] } },
+        { "id": "n2o3", "cells": { "f": "{N2O3}", "ox": "+3", "type": "kislotali", "prop": "nitrit kislota {HNO2} ning angidridi" } },
+        { "id": "no2", "cells": { "f": "{NO2}", "ox": "+4", "type": "kislotali (aralash angidrid)", "prop": "qizg‘ish-qo‘ng‘ir, o‘tkir hidli, zaharli; Tqayn 21 °C" },
+          "detail": { "concept": "Suv bilan bir vaqtda nitrat va nitrit kislotalar hosil bo‘ladi; kislorod ishtirokida esa faqat nitrat kislota.", "reactionIds": ["no2Lab", "no2Water", "no2WaterO2"], "pages": [164, 165] } },
+        { "id": "n2o5", "cells": { "f": "{N2O5}", "ox": "+5", "type": "kislotali", "prop": "nitrat kislota angidridi" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "lightning": { "equation": "N2 + O2 ⇄ 2NO", "conditions": "≈2000 °C, elektr razryad" },
+    "noLab": { "equation": "3Cu + 8HNO3 → 3Cu(NO3)2 + 2NO↑ + 4H2O", "conditions": "suyultirilgan HNO₃" },
+    "noAir": { "equation": "2NO + O2 → 2NO2", "observation": "Rangsiz gaz qo‘ng‘ir tusga kiradi" },
+    "no2Lab": { "equation": "Cu + 4HNO3 → Cu(NO3)2 + 2NO2↑ + 2H2O", "conditions": "konsentrlangan HNO₃", "safety": "NO₂ juda zaharli — faqat virtual namoyish." },
+    "no2Water": { "equation": "2NO2 + H2O → HNO3 + HNO2" },
+    "no2WaterO2": { "equation": "4NO2 + 2H2O + O2 → 4HNO3" }
+  },
+  "questions": [
+    { "id": "g8-s38-q1", "type": "Y1", "skill": "oksidlar sinflanishi", "difficulty": 1,
+      "stem": "Qaysi azot oksidi tuz hosil qilmaydigan (befarq) oksid?",
+      "choices": ["{N2O5}", "{NO2}", "NO", "{N2O3}"], "answer": 2,
+      "solution": "NO va N₂O ishqorlar ham, kislotalar bilan ham tuz hosil qilmaydi." },
+    { "id": "g8-s38-q2", "type": "O1", "skill": "nisbiy zichlik", "difficulty": 1,
+      "stem": "Azot(IV) oksidning vodorodga nisbatan zichligini hisoblang.",
+      "answer": 23, "tolerance": 0,
+      "solution": "D(H₂) = M(NO₂) / 2 = 46 / 2 = 23." },
+    { "id": "g8-s38-q3", "type": "Y2", "skill": "oksidlanish darajasi", "difficulty": 1,
+      "stem": "Oksidni undagi azotning oksidlanish darajasi bilan moslashtiring.",
+      "left": ["{N2O}", "{N2O3}", "{NO2}", "{N2O5}"],
+      "right": ["+4", "+5", "+1", "+3"],
+      "answer": [2, 3, 0, 1],
+      "solution": "Kislorod −2: N₂O → +1; N₂O₃ → +3; NO₂ → +4; N₂O₅ → +5." },
+    { "id": "g8-s38-q4", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "9,6 g mis suyultirilgan nitrat kislotada to‘liq eriganda necha litr (n.sh.) NO ajraladi?",
+      "answer": 2.24, "tolerance": 0.01, "unit": "l",
+      "solution": "3Cu + 8HNO₃ → 3Cu(NO₃)₂ + 2NO + 4H₂O. n(Cu) = 9,6 / 64 = 0,15 mol; n(NO) = 0,15 · 2/3 = 0,1 mol; V = 2,24 l." }
+  ]
+}
