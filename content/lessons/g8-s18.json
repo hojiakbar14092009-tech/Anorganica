@@ -1,0 +1,346 @@
+{
+  "id": "g8-s18",
+  "status": "seed-verified",
+  "pages": [
+    76,
+    77,
+    78,
+    79
+  ],
+  "summary": "Oksidlanish darajasi (OD) — birikmada atom zaryadining shartli qiymati (bog‘lovchi elektronlar EM kattaroq atomga to‘liq o‘tgan deb faraz qilinganda). Birikmada OD lar yig‘indisi nolga (ionda — ion zaryadiga) teng; oddiy moddalarda OD = 0; ftor −1, kislorod odatda −2, vodorod odatda +1.",
+  "keyConcepts": [
+    "Oddiy moddalarda ({H2}, {O2}, {Fe}) OD = 0.",
+    "Ftor har doim −1; kislorod odatda −2 ({H2O2} da −1, {OF2} da +2); vodorod odatda +1 (metall gidridlarida −1).",
+    "Neytral molekulada OD lar yig‘indisi 0; murakkab ionda — ion zaryadiga teng.",
+    "Yuqori OD (bosh guruhcha) = guruh raqami; quyi OD (metallmaslar) = guruh raqami − 8."
+  ],
+  "tables": [
+    {
+      "id": "rules",
+      "title": "OD aniqlash qoidalari",
+      "columns": [
+        {
+          "key": "r",
+          "label": "Element"
+        },
+        {
+          "key": "od",
+          "label": "OD"
+        },
+        {
+          "key": "exc",
+          "label": "Istisnolar"
+        }
+      ],
+      "rows": [
+        {
+          "id": "simple",
+          "cells": {
+            "r": "Oddiy moddalar",
+            "od": "0",
+            "exc": "—"
+          }
+        },
+        {
+          "id": "f",
+          "cells": {
+            "r": "F",
+            "od": "−1",
+            "exc": "istisno yo‘q"
+          }
+        },
+        {
+          "id": "o",
+          "cells": {
+            "r": "O",
+            "od": "−2",
+            "exc": "{H2O2}, {Na2O2}: −1; {OF2}: +2"
+          },
+          "detail": {
+            "concept": "{H2O2} (H–O–O–H) da O–O bog‘i qutbsiz, shuning uchun har bir O −1 OD da. {OF2} da ftor kislorodga qaraganda elektromanfiyroq, shuning uchun O +2.",
+            "pages": [
+              78,
+              79
+            ]
+          }
+        },
+        {
+          "id": "h",
+          "cells": {
+            "r": "H",
+            "od": "+1",
+            "exc": "metall gidridlari ({NaH}, {CaH2}): −1"
+          }
+        },
+        {
+          "id": "metal",
+          "cells": {
+            "r": "Metallar",
+            "od": "faqat musbat",
+            "exc": "I A: +1; II A: +2; Al: +3"
+          }
+        },
+        {
+          "id": "sum",
+          "cells": {
+            "r": "Yig‘indi",
+            "od": "molekulada 0; ionda = zaryad",
+            "exc": "{SO4^2-}: x + 4(−2) = −2 → x = +6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "calc",
+      "title": "OD hisoblash",
+      "columns": [
+        {
+          "key": "f",
+          "label": "Formula"
+        },
+        {
+          "key": "eq",
+          "label": "Tenglama"
+        },
+        {
+          "key": "res",
+          "label": "Natija"
+        }
+      ],
+      "rows": [
+        {
+          "id": "al2s3",
+          "cells": {
+            "f": "{Al2S3}",
+            "eq": "2·(+3) + 3·(−2) = 0",
+            "res": "Al +3, S −2"
+          }
+        },
+        {
+          "id": "h3po4",
+          "cells": {
+            "f": "{H3PO4}",
+            "eq": "3·(+1) + x + 4·(−2) = 0",
+            "res": "P +5"
+          }
+        },
+        {
+          "id": "kmno4",
+          "cells": {
+            "f": "{KMnO4}",
+            "eq": "(+1) + x + 4·(−2) = 0",
+            "res": "Mn +7"
+          }
+        },
+        {
+          "id": "k2cr2o7",
+          "cells": {
+            "f": "{K2Cr2O7}",
+            "eq": "2·(+1) + 2x + 7·(−2) = 0",
+            "res": "Cr +6"
+          }
+        },
+        {
+          "id": "h2o2",
+          "cells": {
+            "f": "{H2O2}",
+            "eq": "2·(+1) + 2x = 0",
+            "res": "O −1"
+          }
+        },
+        {
+          "id": "nah",
+          "cells": {
+            "f": "{NaH}",
+            "eq": "(+1) + x = 0",
+            "res": "H −1"
+          }
+        },
+        {
+          "id": "fes2",
+          "cells": {
+            "f": "{FeS2} (pirit)",
+            "eq": "Fe +2, ikki S atomi: 2x = −2",
+            "res": "S −1"
+          },
+          "detail": {
+            "concept": "Piritda temir +2, oltingugurt −1 ({S2^2-} anioni; S–S bog‘ bor). Shuning uchun {FeS2} yonganda ikkala element oksidlanadi.",
+            "pages": [
+              79
+            ]
+          }
+        },
+        {
+          "id": "nh4",
+          "cells": {
+            "f": "{NH4^+}",
+            "eq": "x + 4·(+1) = +1",
+            "res": "N −3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "task",
+      "title": "Darslikdagi mashq (79-bet) javoblari",
+      "columns": [
+        {
+          "key": "f",
+          "label": "Birikma"
+        },
+        {
+          "key": "res",
+          "label": "Oksidlanish darajalari"
+        }
+      ],
+      "rows": [
+        {
+          "id": "becl2",
+          "cells": {
+            "f": "{BeCl2}",
+            "res": "Be +2, Cl −1"
+          }
+        },
+        {
+          "id": "sio2",
+          "cells": {
+            "f": "{SiO2}",
+            "res": "Si +4, O −2"
+          }
+        },
+        {
+          "id": "xeo4",
+          "cells": {
+            "f": "{XeO4}",
+            "res": "Xe +8, O −2"
+          }
+        },
+        {
+          "id": "clf3",
+          "cells": {
+            "f": "{ClF3}",
+            "res": "Cl +3, F −1"
+          }
+        },
+        {
+          "id": "hmno4",
+          "cells": {
+            "f": "{HMnO4}",
+            "res": "Mn +7"
+          }
+        },
+        {
+          "id": "k2cr2o7b",
+          "cells": {
+            "f": "{K2Cr2O7}",
+            "res": "Cr +6"
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {},
+  "clarifications": [
+    {
+      "text": "Darslik (77-bet) «atomlarning bergan yoki olgan elektronlar soni shu atomning oksidlanish darajasi» deydi. Kovalent birikmalarda elektronlar to‘liq o‘tmaydi — OD shartli (formal) qiymat va haqiqiy zaryad emas; ion zaryadi esa yozuvda «3+» ko‘rinishida, OD «+3» ko‘rinishida belgilanadi.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslik (79-bet) bosh guruhcha elementlarining yuqori OD i guruh raqamiga teng deydi; istisnolar: kislorod (faqat {OF2} da +2) va ftor (faqat −1).",
+      "source": "additionalVerifiedSource"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g8-s18-q1",
+      "type": "O1",
+      "skill": "OD hisoblash",
+      "difficulty": 2,
+      "stem": "{K2Cr2O7} da xromning oksidlanish darajasi qanday?",
+      "answer": 6,
+      "tolerance": 0,
+      "solution": "2·(+1) + 2x + 7·(−2) = 0 → 2x = 12 → x = +6."
+    },
+    {
+      "id": "g8-s18-q2",
+      "type": "O1",
+      "skill": "OD hisoblash",
+      "difficulty": 2,
+      "stem": "{KClO3} da xlorning oksidlanish darajasini toping.",
+      "answer": 5,
+      "tolerance": 0,
+      "solution": "(+1) + x + 3·(−2) = 0 → x = +5."
+    },
+    {
+      "id": "g8-s18-q3",
+      "type": "Y1",
+      "skill": "OD istisno",
+      "difficulty": 1,
+      "stem": "{H2O2} da kislorodning oksidlanish darajasi nechaga teng?",
+      "choices": [
+        "−1",
+        "−2",
+        "0",
+        "+1"
+      ],
+      "answer": 0,
+      "solution": "Peroksidlarda kislorod −1 OD da: 2·(+1) + 2x = 0, x = −1."
+    },
+    {
+      "id": "g8-s18-q4",
+      "type": "Y1",
+      "skill": "ion",
+      "difficulty": 2,
+      "stem": "{NH4NO3} tarkibidagi azot atomlarining oksidlanish darajalari qaysi javobda to‘g‘ri?",
+      "choices": [
+        "−3 va +5",
+        "+3 va +5",
+        "−3 va +3",
+        "+1 va +5"
+      ],
+      "answer": 0,
+      "solution": "{NH4^+} da N: x + 4 = +1 → −3; {NO3^-} da N: x − 6 = −1 → +5."
+    },
+    {
+      "id": "g8-s18-q5",
+      "type": "Y2",
+      "skill": "OD",
+      "difficulty": 2,
+      "stem": "Birikmadagi elementning oksidlanish darajasini moslashtiring: {H2SO3} da S, {NH3} da N, {HClO4} da Cl, {K2MnO4} da Mn.",
+      "left": [
+        "{H2SO3} (S)",
+        "{NH3} (N)",
+        "{HClO4} (Cl)",
+        "{K2MnO4} (Mn)"
+      ],
+      "right": [
+        "+7",
+        "−3",
+        "+6",
+        "+4"
+      ],
+      "answer": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "solution": "{H2SO3}: 2 + x − 6 = 0 → +4; {NH3}: x + 3 = 0 → −3; {HClO4}: 1 + x − 8 = 0 → +7; {K2MnO4}: 2 + x − 8 = 0 → +6."
+    },
+    {
+      "id": "g8-s18-q6",
+      "type": "Y1",
+      "skill": "pirit",
+      "difficulty": 3,
+      "stem": "{FeS2} (pirit) da oltingugurtning oksidlanish darajasi qanday?",
+      "choices": [
+        "−1",
+        "−2",
+        "+2",
+        "0"
+      ],
+      "answer": 0,
+      "solution": "Fe +2; 2x + 2 = 0 → x = −1 (anion {S2^2-})."
+    }
+  ]
+}

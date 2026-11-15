@@ -1,0 +1,324 @@
+{
+  "id": "g8-s15",
+  "status": "seed-verified",
+  "pages": [
+    66,
+    67,
+    68,
+    69,
+    70
+  ],
+  "summary": "Kimyoviy bog‘ valent elektronlar hisobiga hosil bo‘ladi. Elektromanfiyligi bir xil atomlar orasida qutbsiz kovalent, biroz farq qiladigan atomlar orasida qutbli kovalent bog‘ hosil bo‘ladi; donor–akseptor mexanizmida bir atom elektron juft beradi, ikkinchisi bo‘sh orbital beradi.",
+  "keyConcepts": [
+    "Kovalent bog‘ — atomlarning umumiy elektron juftlari orqali bog‘lanishi; har bir juft — bitta bog‘ (—).",
+    "Qutbsiz: ΔEM = 0 ({H2}, {O2}, {N2}); qutbli: umumiy juft EM kattaroq atom tomon siljiydi ({HCl}, {H2O}).",
+    "Donor–akseptor: umumiy juft faqat bir atomdan (donor) keladi, ikkinchisi (akseptor) bo‘sh orbital beradi — {NH4^+}, {H3O^+}.",
+    "Hosil bo‘lgach donor–akseptor bog‘ oddiy kovalent bog‘dan farq qilmaydi ({NH4^+} dagi 4 ta N–H bog‘i teng)."
+  ],
+  "tables": [
+    {
+      "id": "types",
+      "title": "Kovalent bog‘ turlari",
+      "columns": [
+        {
+          "key": "t",
+          "label": "Bog‘ turi"
+        },
+        {
+          "key": "who",
+          "label": "Qanday atomlar"
+        },
+        {
+          "key": "how",
+          "label": "Elektron juft"
+        },
+        {
+          "key": "ex",
+          "label": "Misol"
+        },
+        {
+          "key": "prop",
+          "label": "Molekula"
+        }
+      ],
+      "rows": [
+        {
+          "id": "np",
+          "cells": {
+            "t": "Qutbsiz kovalent",
+            "who": "bir xil EM li atomlar (oddiy modda)",
+            "how": "simmetrik joylashgan",
+            "ex": "{H2}, {O2}, {N2}, {Cl2}",
+            "prop": "qutbsiz"
+          }
+        },
+        {
+          "id": "pol",
+          "cells": {
+            "t": "Qutbli kovalent",
+            "who": "EM biroz farq qiluvchi metallmaslar",
+            "how": "EM kattaroq atom tomon siljigan; δ⁺ va δ⁻",
+            "ex": "{HCl}, {H2O}, {NH3}, {H2S}",
+            "prop": "ko‘pincha qutbli"
+          },
+          "detail": {
+            "concept": "{HCl} da {Cl} qisman manfiy (δ⁻), {H} qisman musbat (δ⁺). Molekula qutbliligi geometriyaga ham bog‘liq (masalan, {CO2} molekulasi qutbsiz).",
+            "examTip": "Qutbli bog‘ ≠ har doim qutbli molekula.",
+            "pages": [
+              68,
+              69
+            ]
+          }
+        },
+        {
+          "id": "da",
+          "cells": {
+            "t": "Donor–akseptor",
+            "who": "bir atom: erkin juft; ikkinchisi: bo‘sh orbital",
+            "how": "juft faqat donordan",
+            "ex": "{NH4^+}, {H3O^+}",
+            "prop": "ion"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mol",
+      "title": "Molekulalar: umumiy juftlar va erkin juftlar",
+      "columns": [
+        {
+          "key": "m",
+          "label": "Molekula"
+        },
+        {
+          "key": "sh",
+          "label": "Umumiy juftlar"
+        },
+        {
+          "key": "str",
+          "label": "Tuzilish formulasi"
+        },
+        {
+          "key": "lone",
+          "label": "Erkin juftlar (asosiy atomda)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "cl2",
+          "cells": {
+            "m": "{Cl2}",
+            "sh": "1",
+            "str": "Cl–Cl",
+            "lone": "har bir Cl da 3"
+          }
+        },
+        {
+          "id": "o2",
+          "cells": {
+            "m": "{O2}",
+            "sh": "2",
+            "str": "O=O",
+            "lone": "har bir O da 2"
+          }
+        },
+        {
+          "id": "n2",
+          "cells": {
+            "m": "{N2}",
+            "sh": "3",
+            "str": "N≡N",
+            "lone": "har bir N da 1"
+          }
+        },
+        {
+          "id": "hcl",
+          "cells": {
+            "m": "{HCl}",
+            "sh": "1",
+            "str": "H–Cl",
+            "lone": "Cl da 3"
+          }
+        },
+        {
+          "id": "h2o",
+          "cells": {
+            "m": "{H2O}",
+            "sh": "2",
+            "str": "H–O–H",
+            "lone": "O da 2"
+          }
+        },
+        {
+          "id": "nh3",
+          "cells": {
+            "m": "{NH3}",
+            "sh": "3",
+            "str": "NH₃ (3 ta N–H)",
+            "lone": "N da 1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da",
+      "title": "Donor–akseptor bog‘ hosil bo‘lishi",
+      "columns": [
+        {
+          "key": "d",
+          "label": "Donor"
+        },
+        {
+          "key": "a",
+          "label": "Akseptor"
+        },
+        {
+          "key": "eq",
+          "label": "Jarayon",
+          "reaction": true
+        },
+        {
+          "key": "res",
+          "label": "Hosil bo‘lgan zarracha"
+        }
+      ],
+      "rows": [
+        {
+          "id": "nh4",
+          "cells": {
+            "d": "{NH3} dagi azot (1 erkin juft)",
+            "a": "{H^+} (bo‘sh 1s orbital)",
+            "eq": "nh4",
+            "res": "ammoniy ioni"
+          },
+          "detail": {
+            "concept": "Azotning erkin jufti vodorod ioni bo‘sh orbitaliga o‘tib, N–H bog‘ hosil qiladi. Bog‘ hosil bo‘lgach {NH4^+} dagi barcha 4 ta bog‘ bir xil.",
+            "reactionIds": [
+              "nh4"
+            ],
+            "pages": [
+              70,
+              71
+            ]
+          }
+        },
+        {
+          "id": "h3o",
+          "cells": {
+            "d": "{H2O} dagi kislorod (2 erkin juft)",
+            "a": "{H^+}",
+            "eq": "h3o",
+            "res": "gidroksoniy ioni"
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {
+    "nh4": {
+      "equation": "NH3 + H^+ → NH4^+"
+    },
+    "h3o": {
+      "equation": "H2O + H^+ → H3O^+"
+    }
+  },
+  "clarifications": [
+    {
+      "text": "Darslikdagi {O2} uchun «O=O» tuzilish formulasi soddalashtirilgan Lyuis tasviri: haqiqiy {O2} molekulasida ikkita juftlashmagan elektron bor (paramagnit), bu oddiy valent bog‘ usulida ko‘rinmaydi.",
+      "source": "additionalVerifiedSource"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g8-s15-q1",
+      "type": "O1",
+      "skill": "umumiy juftlar",
+      "difficulty": 1,
+      "stem": "Azot molekulasida {N2} atomlar orasida nechta umumiy elektron jufti bor?",
+      "answer": 3,
+      "tolerance": 0,
+      "solution": "N≡N — uchlik bog‘, ya’ni 3 ta umumiy juft (har bir N da 3 ta toq elektron)."
+    },
+    {
+      "id": "g8-s15-q2",
+      "type": "O1",
+      "skill": "erkin juftlar",
+      "difficulty": 2,
+      "stem": "Vodorod xlorid {HCl} molekulasida xlor atomida nechta taqsimlanmagan (erkin) elektron jufti bor?",
+      "answer": 3,
+      "tolerance": 0,
+      "solution": "Cl tashqi qavatida 7 ē: bittasi H bilan umumiy juft hosil qiladi, qolgan 6 ē — 3 ta erkin juft."
+    },
+    {
+      "id": "g8-s15-q3",
+      "type": "Y2",
+      "skill": "bog‘ turi",
+      "difficulty": 2,
+      "stem": "Zarrachani bog‘lanish turi bilan moslashtiring.",
+      "left": [
+        "{N2}",
+        "{HF}",
+        "{NH4^+}",
+        "{NaCl}"
+      ],
+      "right": [
+        "ionli bog‘lanish",
+        "qutbli kovalent bog‘lanish",
+        "qutbsiz kovalent bog‘lanish",
+        "bog‘laridan biri donor–akseptor mexanizmida hosil bo‘lgan"
+      ],
+      "answer": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "solution": "{N2} — bir xil atomlar; {HF} — ΔEM katta, ammo kovalent qutbli; {NH4^+} da bitta bog‘ donor–akseptor; {NaCl} — ionli."
+    },
+    {
+      "id": "g8-s15-q4",
+      "type": "Y1",
+      "skill": "donor",
+      "difficulty": 1,
+      "stem": "{NH3} + {H^+} → {NH4^+} jarayonida donor qaysi atom?",
+      "choices": [
+        "azot",
+        "vodorod ioni",
+        "har uchala vodorod",
+        "ammiakdagi N–H bog‘i"
+      ],
+      "answer": 0,
+      "solution": "Elektron juftni azot beradi (donor), {H^+} bo‘sh orbital beradi (akseptor)."
+    },
+    {
+      "id": "g8-s15-q5",
+      "type": "Y1",
+      "skill": "qutbsiz molekula",
+      "difficulty": 1,
+      "stem": "Qaysi molekula faqat qutbsiz kovalent bog‘ga ega?",
+      "choices": [
+        "{Cl2}",
+        "{HCl}",
+        "{H2O}",
+        "{NH3}"
+      ],
+      "answer": 0,
+      "solution": "{Cl2} da ikkala atom bir xil, ΔEM = 0."
+    },
+    {
+      "id": "g8-s15-q6",
+      "type": "Y1",
+      "skill": "inert gaz",
+      "difficulty": 2,
+      "stem": "Inert gazlar nima uchun bir atomli molekulalar hosil qiladi?",
+      "choices": [
+        "tashqi qavati to‘lgan, atom bog‘lanishga muhtoj emas",
+        "elektronlari yo‘q",
+        "atom radiusi juda kichik",
+        "ular faqat ionli bog‘ hosil qiladi"
+      ],
+      "answer": 0,
+      "solution": "He da 2 ē, boshqalarida 8 ē — barqaror to‘lgan tashqi qavat."
+    }
+  ]
+}

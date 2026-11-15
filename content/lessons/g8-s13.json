@@ -1,0 +1,300 @@
+{
+  "id": "g8-s13",
+  "status": "seed-verified",
+  "pages": [
+    53,
+    54,
+    55
+  ],
+  "summary": "Elementning davriy sistemadagi o‘rni (davr, guruh, tartib raqami) uning atom tuzilishi va xossalarini bashorat qilishga imkon beradi: yadro tarkibi, elektron konfiguratsiya, metallik/metallmaslik, yuqori oksid va gidroksid, vodorodli birikma. Mendeleyev bashoratlari (Ga, Sc, Ge) davriy qonunning kuchini isbotladi.",
+  "keyConcepts": [
+    "Davr raqami = elektron qavatlar soni; bosh guruhchada guruh raqami = tashqi qavatdagi elektronlar = yuqori valentlik.",
+    "Davrda chapdan o‘ngga: radius kamayadi, metallik kamayadi, elektromanfiylik ortadi; guruhda yuqoridan pastga — aksincha.",
+    "Vodorodli birikma (IV–VII guruh) valentligi = 8 − guruh raqami.",
+    "Yuqori oksid xarakteri: metall — asosli/amfoter, metallmas — kislotali."
+  ],
+  "tables": [
+    {
+      "id": "algo",
+      "title": "Elementni o‘rniga qarab tavsiflash tartibi",
+      "columns": [
+        {
+          "key": "step",
+          "label": "Qadam"
+        },
+        {
+          "key": "what",
+          "label": "Nimani aniqlaymiz"
+        },
+        {
+          "key": "how",
+          "label": "Qanday"
+        }
+      ],
+      "rows": [
+        {
+          "id": "s1",
+          "cells": {
+            "step": "1",
+            "what": "O‘rni",
+            "how": "davr, guruh, bosh/qo‘shimcha guruhcha, tartib raqami Z"
+          }
+        },
+        {
+          "id": "s2",
+          "cells": {
+            "step": "2",
+            "what": "Atom tarkibi",
+            "how": "p⁺ = e⁻ = Z; n⁰ = A − Z; qavatlar soni = davr raqami"
+          }
+        },
+        {
+          "id": "s3",
+          "cells": {
+            "step": "3",
+            "what": "Elektron konfiguratsiya",
+            "how": "to‘lish tartibi bo‘yicha; tashqi elektronlar soni"
+          }
+        },
+        {
+          "id": "s4",
+          "cells": {
+            "step": "4",
+            "what": "Xarakter",
+            "how": "tashqi elektron ≤ 3 → odatda metall; ≥ 4 → metallmas"
+          }
+        },
+        {
+          "id": "s5",
+          "cells": {
+            "step": "5",
+            "what": "Birikmalar",
+            "how": "yuqori oksid, gidroksid; vodorodli birikma valentligi 8 − N"
+          },
+          "detail": {
+            "concept": "Sr misoli: Z = 38, 5-davr, II A; ³⁸Sr: p⁺ = 38, n⁰ = 88 − 38 = 50; {[Kr] 5s2}; metall; oksid {SrO}, gidroksid {Sr(OH)2} — ishqor.",
+            "examTip": "Metallik Sr da Ca ga qaraganda kuchliroq, Rb dan kuchsizroq.",
+            "pages": [
+              53,
+              54,
+              55
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "examples",
+      "title": "Misollar",
+      "columns": [
+        {
+          "key": "el",
+          "label": "Element"
+        },
+        {
+          "key": "pos",
+          "label": "O‘rni"
+        },
+        {
+          "key": "ox",
+          "label": "Yuqori oksid"
+        },
+        {
+          "key": "hyd",
+          "label": "Gidroksid / kislota"
+        },
+        {
+          "key": "h",
+          "label": "Vodorodli birikma"
+        }
+      ],
+      "rows": [
+        {
+          "id": "sr",
+          "cells": {
+            "el": "Sr (38)",
+            "pos": "5-davr, II A",
+            "ox": "{SrO} (asosli)",
+            "hyd": "{Sr(OH)2} — ishqor",
+            "h": "uchuvchan birikma yo‘q"
+          }
+        },
+        {
+          "id": "al",
+          "cells": {
+            "el": "Al (13)",
+            "pos": "3-davr, III A",
+            "ox": "{Al2O3} (amfoter)",
+            "hyd": "{Al(OH)3} (amfoter)",
+            "h": "—"
+          }
+        },
+        {
+          "id": "s",
+          "cells": {
+            "el": "S (16)",
+            "pos": "3-davr, VI A",
+            "ox": "{SO3} (kislotali)",
+            "hyd": "{H2SO4}",
+            "h": "{H2S}"
+          }
+        },
+        {
+          "id": "cl",
+          "cells": {
+            "el": "Cl (17)",
+            "pos": "3-davr, VII A",
+            "ox": "{Cl2O7} (kislotali)",
+            "hyd": "{HClO4}",
+            "h": "{HCl}"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pred",
+      "title": "Mendeleyev bashoratlari",
+      "columns": [
+        {
+          "key": "eka",
+          "label": "Bashorat qilingan"
+        },
+        {
+          "key": "real",
+          "label": "Keyin kashf etilgan"
+        },
+        {
+          "key": "year",
+          "label": "Yil"
+        },
+        {
+          "key": "note",
+          "label": "Izoh"
+        }
+      ],
+      "rows": [
+        {
+          "id": "ekaAl",
+          "cells": {
+            "eka": "eka-aluminiy",
+            "real": "galliy Ga",
+            "year": "1875",
+            "note": "bashorat: Ar ≈ 68; topilgan ≈ 69,7"
+          }
+        },
+        {
+          "id": "ekaB",
+          "cells": {
+            "eka": "eka-bor",
+            "real": "skandiy Sc",
+            "year": "1879",
+            "note": "oksid {Sc2O3}"
+          }
+        },
+        {
+          "id": "ekaSi",
+          "cells": {
+            "eka": "eka-kremniy",
+            "real": "germaniy Ge",
+            "year": "1886",
+            "note": "bashorat: Ar ≈ 72; topilgan ≈ 72,6"
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {},
+  "questions": [
+    {
+      "id": "g8-s13-q1",
+      "type": "O1",
+      "skill": "yadro tarkibi",
+      "difficulty": 1,
+      "stem": "Stronsiy-88 atomi yadrosida (Z = 38) nechta neytron bor?",
+      "answer": 50,
+      "tolerance": 0,
+      "solution": "N = 88 − 38 = 50."
+    },
+    {
+      "id": "g8-s13-q2",
+      "type": "O1",
+      "skill": "nisbiy molekular massa",
+      "difficulty": 2,
+      "stem": "Xlorning yuqori oksidi {Cl2O7} ning nisbiy molekular massasini toping.",
+      "answer": 183,
+      "tolerance": 0.01,
+      "solution": "Mr = 2·35,5 + 7·16 = 71 + 112 = 183."
+    },
+    {
+      "id": "g8-s13-q3",
+      "type": "Y1",
+      "skill": "vodorodli birikma",
+      "difficulty": 1,
+      "stem": "Oltingugurtning ({S}, VI guruh) vodorodli birikmasi formulasi qaysi?",
+      "choices": [
+        "{H2S}",
+        "{SH6}",
+        "{HS}",
+        "{H3S}"
+      ],
+      "answer": 0,
+      "solution": "Valentlik = 8 − 6 = 2, formulasi {H2S}."
+    },
+    {
+      "id": "g8-s13-q4",
+      "type": "Y1",
+      "skill": "Mendeleyev bashorati",
+      "difficulty": 1,
+      "stem": "Mendeleyev «eka-kremniy» deb bashorat qilgan element qaysi?",
+      "choices": [
+        "germaniy",
+        "galliy",
+        "skandiy",
+        "stronsiy"
+      ],
+      "answer": 0,
+      "solution": "Eka-kremniy — 1886-yilda topilgan germaniy (Ge)."
+    },
+    {
+      "id": "g8-s13-q5",
+      "type": "Y2",
+      "skill": "yuqori oksid",
+      "difficulty": 2,
+      "stem": "Elementni yuqori oksidi bilan moslashtiring.",
+      "left": [
+        "Sr",
+        "Al",
+        "S",
+        "Cl"
+      ],
+      "right": [
+        "{Cl2O7}",
+        "{SrO}",
+        "{SO3}",
+        "{Al2O3}"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "solution": "Sr — II guruh: {SrO}; Al — III: {Al2O3}; S — VI: {SO3}; Cl — VII: {Cl2O7}."
+    },
+    {
+      "id": "g8-s13-q6",
+      "type": "Y1",
+      "skill": "guruhda o‘zgarish",
+      "difficulty": 1,
+      "stem": "I guruh bosh guruhchasida yuqoridan pastga metallik xossasi qanday o‘zgaradi?",
+      "choices": [
+        "kuchayadi",
+        "susayadi",
+        "o‘zgarmaydi",
+        "avval kuchayib, keyin susayadi"
+      ],
+      "answer": 0,
+      "solution": "Radius ortadi, tashqi elektron yadroga kuchsizroq tortiladi — metallik kuchayadi."
+    }
+  ]
+}

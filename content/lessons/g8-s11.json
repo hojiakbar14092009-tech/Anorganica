@@ -1,0 +1,382 @@
+{
+  "id": "g8-s11",
+  "status": "seed-verified",
+  "pages": [
+    48,
+    49,
+    50
+  ],
+  "summary": "1–3 davr elementlarida elektronlar 1s, 2s, 2p, 3s, 3p qavatchalarni ketma-ket to‘ldiradi. Tashqi qavatda 8 tadan (1-davrda 2 ta) ortiq elektron bo‘lmaydi; davr oxirida inert gaz konfiguratsiyasi hosil bo‘ladi.",
+  "keyConcepts": [
+    "Davr raqami = elektron qavatlar soni; bosh guruhchada guruh raqami = tashqi qavatdagi elektronlar soni.",
+    "1–3 davrlarda to‘lish tartibi: 1s → 2s → 2p → 3s → 3p.",
+    "Xund qoidasi: bir qavatchada orbitallar avval bittadan elektron bilan to‘ladi.",
+    "Davr boshidagi element (s¹) — faol metall, oxiridagi (ns² np⁶) — inert gaz."
+  ],
+  "tables": [
+    {
+      "id": "cfg",
+      "title": "Dastlabki 18 element: elektron konfiguratsiyalari",
+      "columns": [
+        {
+          "key": "el",
+          "label": "Element"
+        },
+        {
+          "key": "z",
+          "label": "Z"
+        },
+        {
+          "key": "sh",
+          "label": "Qavatlarda ē"
+        },
+        {
+          "key": "cfg",
+          "label": "Elektron konfiguratsiyasi"
+        }
+      ],
+      "rows": [
+        {
+          "id": "h",
+          "cells": {
+            "el": "H",
+            "z": "1",
+            "sh": "1",
+            "cfg": "{1s1}"
+          }
+        },
+        {
+          "id": "he",
+          "cells": {
+            "el": "He",
+            "z": "2",
+            "sh": "2",
+            "cfg": "{1s2}"
+          },
+          "detail": {
+            "concept": "Geliyda faqat 1s qavatcha bor (1p yo‘q), 1-qavat 2 elektron bilan to‘ladi — shuning uchun {He} 1-davrni tugatadi.",
+            "pages": [
+              48
+            ]
+          }
+        },
+        {
+          "id": "li",
+          "cells": {
+            "el": "Li",
+            "z": "3",
+            "sh": "2, 1",
+            "cfg": "{1s2 2s1}"
+          }
+        },
+        {
+          "id": "be",
+          "cells": {
+            "el": "Be",
+            "z": "4",
+            "sh": "2, 2",
+            "cfg": "{1s2 2s2}"
+          }
+        },
+        {
+          "id": "b",
+          "cells": {
+            "el": "B",
+            "z": "5",
+            "sh": "2, 3",
+            "cfg": "{1s2 2s2 2p1}"
+          }
+        },
+        {
+          "id": "c",
+          "cells": {
+            "el": "C",
+            "z": "6",
+            "sh": "2, 4",
+            "cfg": "{1s2 2s2 2p2}"
+          }
+        },
+        {
+          "id": "n",
+          "cells": {
+            "el": "N",
+            "z": "7",
+            "sh": "2, 5",
+            "cfg": "{1s2 2s2 2p3}"
+          },
+          "detail": {
+            "concept": "Xund qoidasi: bir qavatchaning orbitallari avval bittadan elektron bilan, spinlari bir xil to‘ladi. {N} da 2p³: uch orbitalning har birida bittadan elektron — 3 ta juftlashmagan elektron.",
+            "examTip": "Juftlashmagan elektronlar soni valentlikni belgilaydi.",
+            "pages": [
+              49
+            ]
+          }
+        },
+        {
+          "id": "o",
+          "cells": {
+            "el": "O",
+            "z": "8",
+            "sh": "2, 6",
+            "cfg": "{1s2 2s2 2p4}"
+          }
+        },
+        {
+          "id": "f",
+          "cells": {
+            "el": "F",
+            "z": "9",
+            "sh": "2, 7",
+            "cfg": "{1s2 2s2 2p5}"
+          }
+        },
+        {
+          "id": "ne",
+          "cells": {
+            "el": "Ne",
+            "z": "10",
+            "sh": "2, 8",
+            "cfg": "{1s2 2s2 2p6}"
+          },
+          "detail": {
+            "concept": "Neon: 2-qavat 8 elektron bilan to‘lgan — barqaror konfiguratsiya, kimyoviy inert.",
+            "pages": [
+              49
+            ]
+          }
+        },
+        {
+          "id": "na",
+          "cells": {
+            "el": "Na",
+            "z": "11",
+            "sh": "2, 8, 1",
+            "cfg": "{1s2 2s2 2p6 3s1}"
+          }
+        },
+        {
+          "id": "mg",
+          "cells": {
+            "el": "Mg",
+            "z": "12",
+            "sh": "2, 8, 2",
+            "cfg": "{1s2 2s2 2p6 3s2}"
+          }
+        },
+        {
+          "id": "al",
+          "cells": {
+            "el": "Al",
+            "z": "13",
+            "sh": "2, 8, 3",
+            "cfg": "{1s2 2s2 2p6 3s2 3p1}"
+          }
+        },
+        {
+          "id": "si",
+          "cells": {
+            "el": "Si",
+            "z": "14",
+            "sh": "2, 8, 4",
+            "cfg": "{1s2 2s2 2p6 3s2 3p2}"
+          }
+        },
+        {
+          "id": "p",
+          "cells": {
+            "el": "P",
+            "z": "15",
+            "sh": "2, 8, 5",
+            "cfg": "{1s2 2s2 2p6 3s2 3p3}"
+          }
+        },
+        {
+          "id": "s",
+          "cells": {
+            "el": "S",
+            "z": "16",
+            "sh": "2, 8, 6",
+            "cfg": "{1s2 2s2 2p6 3s2 3p4}"
+          }
+        },
+        {
+          "id": "cl",
+          "cells": {
+            "el": "Cl",
+            "z": "17",
+            "sh": "2, 8, 7",
+            "cfg": "{1s2 2s2 2p6 3s2 3p5}"
+          }
+        },
+        {
+          "id": "ar",
+          "cells": {
+            "el": "Ar",
+            "z": "18",
+            "sh": "2, 8, 8",
+            "cfg": "{1s2 2s2 2p6 3s2 3p6}"
+          },
+          "detail": {
+            "concept": "Argonda 3s va 3p to‘lgan, 3d bo‘sh. Keyingi elektron 3d ga emas, energiyasi pastroq 4s ga tushadi ({K}).",
+            "pages": [
+              50
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "unp",
+      "title": "Juftlashmagan elektronlar (asosiy holat)",
+      "columns": [
+        {
+          "key": "el",
+          "label": "Element"
+        },
+        {
+          "key": "o",
+          "label": "Tashqi qavatcha"
+        },
+        {
+          "key": "u",
+          "label": "Toq elektronlar soni"
+        }
+      ],
+      "rows": [
+        {
+          "id": "u-n",
+          "cells": {
+            "el": "N",
+            "o": "{2s2 2p3}",
+            "u": "3"
+          }
+        },
+        {
+          "id": "u-o",
+          "cells": {
+            "el": "O",
+            "o": "{2s2 2p4}",
+            "u": "2"
+          }
+        },
+        {
+          "id": "u-f",
+          "cells": {
+            "el": "F",
+            "o": "{2s2 2p5}",
+            "u": "1"
+          }
+        },
+        {
+          "id": "u-si",
+          "cells": {
+            "el": "Si",
+            "o": "{3s2 3p2}",
+            "u": "2"
+          }
+        },
+        {
+          "id": "u-p",
+          "cells": {
+            "el": "P",
+            "o": "{3s2 3p3}",
+            "u": "3"
+          }
+        },
+        {
+          "id": "u-ne",
+          "cells": {
+            "el": "Ne",
+            "o": "{2s2 2p6}",
+            "u": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {},
+  "clarifications": [
+    {
+      "text": "Darslik (49-bet) 3-davrda «3d qavatcha elektron qabul qilmaydi» deydi. Aslida 3d orbitallar mavjud, ammo ularning energiyasi 4s dan yuqori, shuning uchun 3-davrda to‘lmaydi (to‘lish {Sc} dan boshlanadi); tashqi qavatda esa 8 tadan ortiq elektron bo‘lmaydi.",
+      "source": "additionalVerifiedSource"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g8-s11-q1",
+      "type": "Y1",
+      "skill": "konfiguratsiya",
+      "difficulty": 1,
+      "stem": "Xlor atomining (Z = 17) elektron konfiguratsiyasi qaysi javobda to‘g‘ri?",
+      "choices": [
+        "{1s2 2s2 2p6 3s2 3p5}",
+        "{1s2 2s2 2p6 3s2 3p6}",
+        "{1s2 2s2 2p6 3s1}",
+        "{1s2 2s2 2p5}"
+      ],
+      "answer": 0,
+      "solution": "Z = 17: 2 + 2 + 6 + 2 + 5 = 17 elektron; tashqi qavatda 7 ta."
+    },
+    {
+      "id": "g8-s11-q2",
+      "type": "O1",
+      "skill": "toq elektronlar",
+      "difficulty": 2,
+      "stem": "Fosfor atomida ({3s2 3p3}) nechta juftlashmagan elektron bor?",
+      "answer": 3,
+      "tolerance": 0,
+      "solution": "Xund qoidasi: 3p da uch orbitalda bittadan elektron — 3 ta toq elektron."
+    },
+    {
+      "id": "g8-s11-q3",
+      "type": "Y1",
+      "skill": "elementni topish",
+      "difficulty": 2,
+      "stem": "Tashqi qavati {2s2 2p4} bo‘lgan element qaysi?",
+      "choices": [
+        "kislorod",
+        "uglerod",
+        "ftor",
+        "oltingugurt"
+      ],
+      "answer": 0,
+      "solution": "1s² 2s² 2p⁴: jami 8 elektron, Z = 8 — kislorod."
+    },
+    {
+      "id": "g8-s11-q4",
+      "type": "Y2",
+      "skill": "konfiguratsiya",
+      "difficulty": 2,
+      "stem": "Elementni tashqi qavatcha konfiguratsiyasi bilan moslashtiring.",
+      "left": [
+        "{N}",
+        "{S}",
+        "{Mg}",
+        "{Cl}"
+      ],
+      "right": [
+        "{3s2 3p4}",
+        "{3s2}",
+        "{3p5}",
+        "{2s2 2p3}"
+      ],
+      "answer": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "solution": "N — {2s2 2p3}; S — {3s2 3p4}; Mg — {3s2}; Cl — {3s2 3p5}."
+    },
+    {
+      "id": "g8-s11-q5",
+      "type": "O1",
+      "skill": "qavatda ē",
+      "difficulty": 2,
+      "stem": "Oltingugurt atomida (Z = 16) uchinchi qavatda nechta elektron bor?",
+      "answer": 6,
+      "tolerance": 0,
+      "solution": "16 − 2 − 8 = 6 ({3s2 3p4})."
+    }
+  ]
+}

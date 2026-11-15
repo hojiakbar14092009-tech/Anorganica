@@ -1,0 +1,270 @@
+{
+  "id": "g8-s1",
+  "status": "seed-verified",
+  "pages": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "summary": "Atom — kimyoviy hodisalarda bo‘linmaydigan zarracha; kimyoviy element — yadro zaryadi bir xil atomlar turi. Modda miqdori (mol), molyar massa va molyar hajm hamda to‘rtta asosiy qonun (massaning saqlanishi, tarkibning doimiyligi, Avogadro, hajmiy nisbatlar) 8-sinf hisoblarining asosi.",
+  "keyConcepts": [
+    "Nisbiy atom massa {Ar} — atom massasining {12C} atomi massasi 1/12 qismiga nisbati; 1 m.a.b. = 1,66·10⁻²⁴ g.",
+    "Molyar massa {M} (g/mol) son jihatdan {Mr} ga teng.",
+    "1 mol modda = 6,02·10²³ zarracha; n.sh.da 1 mol gaz = 22,4 l.",
+    "Reaksiyada moddalar massasi saqlanadi: reaktivlar massasi yig‘indisi mahsulotlar massasi yig‘indisiga teng."
+  ],
+  "tables": [
+    {
+      "id": "quantities",
+      "title": "Asosiy kattaliklar va formulalar",
+      "columns": [
+        {
+          "key": "q",
+          "label": "Kattalik"
+        },
+        {
+          "key": "s",
+          "label": "Belgi, birlik"
+        },
+        {
+          "key": "f",
+          "label": "Formula"
+        },
+        {
+          "key": "ex",
+          "label": "Misol"
+        }
+      ],
+      "rows": [
+        {
+          "id": "ar",
+          "cells": {
+            "q": "Nisbiy atom massa",
+            "s": "Ar, birliksiz",
+            "f": "Ar = m(atom) / (1/12 · m(¹²C))",
+            "ex": "m(O) = 2,657·10⁻²³ g → Ar = 16"
+          },
+          "detail": {
+            "concept": "1 m.a.b. = m(¹²C)/12 = 1,66·10⁻²⁴ g. Ar — nisbiy kattalik, shuning uchun o‘lchov birligi yo‘q.",
+            "pages": [
+              6
+            ]
+          }
+        },
+        {
+          "id": "mr",
+          "cells": {
+            "q": "Nisbiy molekular massa",
+            "s": "Mr",
+            "f": "atomlar Ar larining indeksga ko‘paytirilgan yig‘indisi",
+            "ex": "Mr(H2SO4) = 2·1 + 32 + 4·16 = 98"
+          }
+        },
+        {
+          "id": "m",
+          "cells": {
+            "q": "Molyar massa",
+            "s": "M, g/mol",
+            "f": "M = Mr (son jihatdan)",
+            "ex": "M(H2SO4) = 98 g/mol"
+          }
+        },
+        {
+          "id": "n",
+          "cells": {
+            "q": "Modda miqdori",
+            "s": "n, mol",
+            "f": "n = m / M",
+            "ex": "49 g {H2SO4}: n = 49/98 = 0,5 mol"
+          },
+          "detail": {
+            "concept": "Formulani uch tomonlama ishlating: n = m/M, m = n·M, M = m/n.",
+            "examTip": "Birliklarni yozing: g / (g/mol) = mol.",
+            "pages": [
+              9
+            ]
+          }
+        },
+        {
+          "id": "na",
+          "cells": {
+            "q": "Zarrachalar soni",
+            "s": "N, dona",
+            "f": "N = n · NA, NA = 6,02·10²³ mol⁻¹",
+            "ex": "0,5 mol → 3,01·10²³ molekula"
+          }
+        },
+        {
+          "id": "vm",
+          "cells": {
+            "q": "Gazning hajmi (n.sh.)",
+            "s": "V, l",
+            "f": "V = n · Vm, Vm = 22,4 l/mol",
+            "ex": "0,5 mol gaz → 11,2 l"
+          }
+        }
+      ]
+    },
+    {
+      "id": "laws",
+      "title": "Kimyoning asosiy qonunlari",
+      "columns": [
+        {
+          "key": "law",
+          "label": "Qonun"
+        },
+        {
+          "key": "c",
+          "label": "Mazmuni"
+        },
+        {
+          "key": "who",
+          "label": "Kim / qachon"
+        },
+        {
+          "key": "use",
+          "label": "Qo‘llanishi"
+        }
+      ],
+      "rows": [
+        {
+          "id": "mass",
+          "cells": {
+            "law": "Massaning saqlanishi",
+            "c": "Reaksiyaga kirishgan moddalar massasi mahsulotlar massasiga teng",
+            "who": "M.V. Lomonosov (1748), A. Lavuazye",
+            "use": "tenglamani tenglash, massa bo‘yicha hisob"
+          }
+        },
+        {
+          "id": "const",
+          "cells": {
+            "law": "Tarkibning doimiyligi",
+            "c": "Toza molekular modda tarkibi olinish usuliga bog‘liq emas",
+            "who": "J. Prust (1808)",
+            "use": "masalan, suvda doim H : O massa nisbati 1 : 8"
+          },
+          "detail": {
+            "concept": "Qonun molekulyar tuzilishli moddalar uchun aniq bajariladi; ba’zi qattiq (nostexiometrik) birikmalarda tarkib biroz o‘zgarishi mumkin.",
+            "pages": [
+              5,
+              6
+            ]
+          }
+        },
+        {
+          "id": "avo",
+          "cells": {
+            "law": "Avogadro qonuni",
+            "c": "Bir xil T va p da teng hajmli gazlarda molekulalar soni teng",
+            "who": "A. Avogadro (1811)",
+            "use": "1 mol gaz n.sh.da 22,4 l; gazlarning nisbiy zichligi"
+          }
+        },
+        {
+          "id": "gay",
+          "cells": {
+            "law": "Hajmiy nisbatlar",
+            "c": "Reaksiyaga kirishuvchi gazlar hajmlari oddiy butun sonlar nisbatida",
+            "who": "J. Gey-Lyussak (1808)",
+            "use": "2{H2} + {O2}: hajmlar 2 : 1"
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {},
+  "questions": [
+    {
+      "id": "g8-s1-q1",
+      "type": "O1",
+      "skill": "modda miqdori",
+      "difficulty": 1,
+      "stem": "12,6 g nitrat kislota {HNO3} necha mol bo‘ladi?",
+      "answer": 0.2,
+      "tolerance": 0.001,
+      "unit": "mol",
+      "solution": "M({HNO3}) = 1 + 14 + 48 = 63 g/mol; n = 12,6 / 63 = 0,2 mol."
+    },
+    {
+      "id": "g8-s1-q2",
+      "type": "O1",
+      "skill": "massa",
+      "difficulty": 1,
+      "stem": "2,5 mol {SiO2} necha gramm bo‘ladi?",
+      "answer": 150,
+      "tolerance": 0.5,
+      "unit": "g",
+      "solution": "M({SiO2}) = 28 + 32 = 60 g/mol; m = 2,5 · 60 = 150 g."
+    },
+    {
+      "id": "g8-s1-q3",
+      "type": "Y1",
+      "skill": "zarrachalar soni",
+      "difficulty": 2,
+      "stem": "Normal sharoitda 11,2 l kislorodda nechta {O2} molekulasi bor?",
+      "choices": [
+        "3,01·10²³",
+        "6,02·10²³",
+        "1,505·10²³",
+        "12,04·10²³"
+      ],
+      "answer": 0,
+      "solution": "n = 11,2 / 22,4 = 0,5 mol; N = 0,5 · 6,02·10²³ = 3,01·10²³.",
+      "mistakes": "Hajmni 22,4 ga bo‘lishni unutib, to‘g‘ridan-to‘g‘ri NA ga ko‘paytirish."
+    },
+    {
+      "id": "g8-s1-q4",
+      "type": "Y2",
+      "skill": "qonunlar",
+      "difficulty": 1,
+      "stem": "Qonunni uning mazmuni bilan moslashtiring.",
+      "left": [
+        "Massaning saqlanishi",
+        "Tarkibning doimiyligi",
+        "Avogadro qonuni",
+        "Hajmiy nisbatlar qonuni"
+      ],
+      "right": [
+        "teng hajmli gazlarda molekulalar soni teng",
+        "gazlar hajmlari oddiy butun sonlar nisbatida",
+        "mahsulotlar massasi reaktivlar massasiga teng",
+        "toza modda tarkibi olinish usuliga bog‘liq emas"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "solution": "Saqlanish — massa; doimiylik — tarkib; Avogadro — teng hajm, teng molekula; Gey-Lyussak — hajmlar nisbati."
+    },
+    {
+      "id": "g8-s1-q5",
+      "type": "O1",
+      "skill": "nisbiy atom massa",
+      "difficulty": 2,
+      "stem": "Elementning bitta atomi massasi 2,657·10⁻²³ g. Uning nisbiy atom massasini toping (1 m.a.b. = 1,66·10⁻²⁴ g).",
+      "answer": 16,
+      "tolerance": 0.1,
+      "solution": "Ar = 2,657·10⁻²³ / 1,66·10⁻²⁴ = 16 — bu kislorod."
+    },
+    {
+      "id": "g8-s1-q6",
+      "type": "Y1",
+      "skill": "hajmiy nisbat",
+      "difficulty": 1,
+      "stem": "10 l vodorod to‘liq yonishi uchun (bir xil sharoitda) necha litr kislorod kerak?",
+      "choices": [
+        "5 l",
+        "10 l",
+        "20 l",
+        "2,5 l"
+      ],
+      "answer": 0,
+      "solution": "2{H2} + {O2} → 2{H2O}: hajmlar 2 : 1, demak 10 l {H2} ga 5 l {O2}."
+    }
+  ]
+}

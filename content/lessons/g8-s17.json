@@ -1,0 +1,251 @@
+{
+  "id": "g8-s17",
+  "status": "seed-verified",
+  "pages": [
+    74,
+    75
+  ],
+  "summary": "Qattiq moddalar kristall panjara tugunlaridagi zarrachalar turiga qarab to‘rt guruhga bo‘linadi: ionli (ionlar), atomli (atomlar, kovalent bog‘), molekular (molekulalar, molekulalararo kuchlar), metall (kationlar va erkin elektronlar). Panjara turi suyuqlanish harorati, qattiqlik va o‘tkazuvchanlikni belgilaydi.",
+  "keyConcepts": [
+    "Panjara turi tugundagi zarrachaga va ular orasidagi bog‘ turiga bog‘liq.",
+    "Ionli va atomli panjaralar — qattiq, qiyin suyuqlanadi; molekular panjara — yumshoq, oson suyuqlanadi va uchuvchan.",
+    "Metall panjara elektr va issiqlikni o‘tkazadi, bolg‘alanuvchan.",
+    "NaCl da har bir ion qarama-qarshi zaryadli 6 ta ion bilan o‘ralgan."
+  ],
+  "tables": [
+    {
+      "id": "lat",
+      "title": "Kristall panjara turlari",
+      "columns": [
+        {
+          "key": "t",
+          "label": "Panjara"
+        },
+        {
+          "key": "part",
+          "label": "Tugunlardagi zarracha"
+        },
+        {
+          "key": "b",
+          "label": "Bog‘"
+        },
+        {
+          "key": "ex",
+          "label": "Misol"
+        },
+        {
+          "key": "prop",
+          "label": "Xossalari"
+        }
+      ],
+      "rows": [
+        {
+          "id": "ion",
+          "cells": {
+            "t": "Ionli",
+            "part": "ionlar ({Na^+}, {Cl^-})",
+            "b": "ionli",
+            "ex": "{NaCl}, {KBr}, {CaF2}",
+            "prop": "qattiq, mo‘rt, yuqori t suyuq., uchuvchan emas; suyuqlanmasi va eritmasi tok o‘tkazadi"
+          },
+          "detail": {
+            "concept": "NaCl kristallida har bir {Na^+} 6 ta {Cl^-} bilan, har bir {Cl^-} 6 ta {Na^+} bilan o‘ralgan; bir xil ishorali ionlar itarishadi. Qattiq tuz tok o‘tkazmaydi: ionlar qo‘zg‘almas.",
+            "examTip": "Ionli birikma: qattiq holda dielektrik, eritma/suyuqlanmada o‘tkazgich.",
+            "pages": [
+              75
+            ]
+          }
+        },
+        {
+          "id": "atom",
+          "cells": {
+            "t": "Atomli",
+            "part": "atomlar",
+            "b": "kovalent (kuchli)",
+            "ex": "olmos, {SiO2} (kvars), kremniy",
+            "prop": "juda qattiq, juda yuqori t suyuq., uchuvchan emas"
+          },
+          "detail": {
+            "concept": "Olmosda har bir C atomi 4 ta qo‘shni bilan tetraedrik kovalent bog‘langan — butun kristall bitta «ulkan molekula».",
+            "pages": [
+              76
+            ]
+          }
+        },
+        {
+          "id": "mol",
+          "cells": {
+            "t": "Molekular",
+            "part": "molekulalar",
+            "b": "molekulalararo kuchlar (kuchsiz)",
+            "ex": "{I2}, {CO2} (quruq muz), muz, shakar, {P4}, {S8}",
+            "prop": "yumshoq, past t suyuq., uchuvchan; tok o‘tkazmaydi"
+          }
+        },
+        {
+          "id": "met",
+          "cells": {
+            "t": "Metall",
+            "part": "kationlar va erkin elektronlar",
+            "b": "metall",
+            "ex": "Na, Cu, Al, Au",
+            "prop": "yaltiroq, elektr va issiqlik o‘tkazadi, bolg‘alanuvchan"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cmp",
+      "title": "Taqqoslash",
+      "columns": [
+        {
+          "key": "m",
+          "label": "Modda"
+        },
+        {
+          "key": "lat",
+          "label": "Panjara"
+        },
+        {
+          "key": "t",
+          "label": "t suyuq. (taxminan)"
+        },
+        {
+          "key": "note",
+          "label": "Izoh"
+        }
+      ],
+      "rows": [
+        {
+          "id": "nacl",
+          "cells": {
+            "m": "{NaCl}",
+            "lat": "ionli",
+            "t": "801 °C",
+            "note": "qiyin suyuqlanadi"
+          }
+        },
+        {
+          "id": "sio2",
+          "cells": {
+            "m": "{SiO2}",
+            "lat": "atomli",
+            "t": "≈ 1710 °C",
+            "note": "qattiq, qiyin suyuqlanadi"
+          }
+        },
+        {
+          "id": "i2",
+          "cells": {
+            "m": "{I2}",
+            "lat": "molekular",
+            "t": "114 °C",
+            "note": "oson sublimatlanadi"
+          }
+        },
+        {
+          "id": "co2",
+          "cells": {
+            "m": "{CO2}",
+            "lat": "molekular",
+            "t": "sublimatlanadi −78 °C",
+            "note": "«quruq muz»"
+          }
+        },
+        {
+          "id": "cu",
+          "cells": {
+            "m": "Cu",
+            "lat": "metall",
+            "t": "1085 °C",
+            "note": "elektr o‘tkazadi"
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {},
+  "questions": [
+    {
+      "id": "g8-s17-q1",
+      "type": "O1",
+      "skill": "koordinatsiya",
+      "difficulty": 2,
+      "stem": "NaCl kristallida bitta {Na^+} ioni nechta {Cl^-} ioni bilan o‘ralgan?",
+      "answer": 6,
+      "tolerance": 0,
+      "solution": "Natriy xlorid kub panjarasida har bir ion qarama-qarshi zaryadli 6 ta ion bilan o‘ralgan."
+    },
+    {
+      "id": "g8-s17-q2",
+      "type": "Y1",
+      "skill": "panjara turi",
+      "difficulty": 1,
+      "stem": "Yod ({I2}) kristalli qanday panjaraga ega?",
+      "choices": [
+        "molekular",
+        "ionli",
+        "atomli",
+        "metall"
+      ],
+      "answer": 0,
+      "solution": "{I2} molekulalari kuchsiz molekulalararo kuchlar bilan ushlanadi, shuning uchun yod oson sublimatlanadi."
+    },
+    {
+      "id": "g8-s17-q3",
+      "type": "Y2",
+      "skill": "panjara",
+      "difficulty": 1,
+      "stem": "Modda va uning kristall panjarasini moslashtiring.",
+      "left": [
+        "{NaCl}",
+        "olmos",
+        "{I2}",
+        "Cu"
+      ],
+      "right": [
+        "metall",
+        "molekular",
+        "ionli",
+        "atomli"
+      ],
+      "answer": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "solution": "{NaCl} — ionli; olmos — atomli; {I2} — molekular; Cu — metall panjara."
+    },
+    {
+      "id": "g8-s17-q4",
+      "type": "Y1",
+      "skill": "xossalar",
+      "difficulty": 2,
+      "stem": "Qattiq holda tok o‘tkazmaydi, lekin suyuqlanmasi tok o‘tkazadigan moddaning panjarasi qanday?",
+      "choices": [
+        "ionli",
+        "atomli",
+        "molekular",
+        "metall"
+      ],
+      "answer": 0,
+      "solution": "Ionli kristallda ionlar qattiq holda qo‘zg‘almas, suyuqlanganda esa harakatchan bo‘ladi."
+    },
+    {
+      "id": "g8-s17-q5",
+      "type": "Y1",
+      "skill": "xossalar",
+      "difficulty": 1,
+      "stem": "Qaysi moddaning t suyuq. eng past va u oson uchadi?",
+      "choices": [
+        "quruq muz ({CO2})",
+        "{NaCl}",
+        "olmos",
+        "mis"
+      ],
+      "answer": 0,
+      "solution": "Molekular panjarali moddalar kuchsiz kuchlar tufayli oson suyuqlanadi/sublimatlanadi."
+    }
+  ]
+}

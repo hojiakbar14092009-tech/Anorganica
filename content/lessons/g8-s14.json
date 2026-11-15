@@ -1,0 +1,341 @@
+{
+  "id": "g8-s14",
+  "status": "seed-verified",
+  "pages": [
+    64,
+    65
+  ],
+  "summary": "Elektromanfiylik (EM) — atomning birikmada umumiy elektron juftini o‘ziga tortish qobiliyati. Pauling shkalasida F — 3,98 (≈4,0), Cs — 0,79. Davrda chapdan o‘ngga EM ortadi, guruhda yuqoridan pastga kamayadi; metallarda kichik, metallmaslarda katta.",
+  "keyConcepts": [
+    "EM ortishi: davrda → (chapdan o‘ngga), guruhda ↑ (pastdan yuqoriga).",
+    "Eng elektromanfiy element — ftor (3,98), eng kichiklaridan biri — seziy (0,79).",
+    "EM farqi ΔEM bog‘ turini taxminan belgilaydi: ~0 — qutbsiz; kichik/o‘rtacha — qutbli kovalent; juda katta — ionli.",
+    "Elektronlar EM kichik atomdan EM katta atom tomon siljiydi yoki butunlay o‘tadi."
+  ],
+  "tables": [
+    {
+      "id": "en",
+      "title": "Nisbiy elektromanfiylik (Pauling)",
+      "columns": [
+        {
+          "key": "el",
+          "label": "Element"
+        },
+        {
+          "key": "en",
+          "label": "EM"
+        },
+        {
+          "key": "note",
+          "label": "Izoh"
+        }
+      ],
+      "rows": [
+        {
+          "id": "cs",
+          "cells": {
+            "el": "Cs",
+            "en": "0,79",
+            "note": "eng kichiklardan"
+          }
+        },
+        {
+          "id": "k",
+          "cells": {
+            "el": "K",
+            "en": "0,82",
+            "note": ""
+          }
+        },
+        {
+          "id": "na",
+          "cells": {
+            "el": "Na",
+            "en": "0,93",
+            "note": ""
+          }
+        },
+        {
+          "id": "li",
+          "cells": {
+            "el": "Li",
+            "en": "0,98",
+            "note": "darslikda 1,0"
+          }
+        },
+        {
+          "id": "mg",
+          "cells": {
+            "el": "Mg",
+            "en": "1,31",
+            "note": ""
+          }
+        },
+        {
+          "id": "al",
+          "cells": {
+            "el": "Al",
+            "en": "1,61",
+            "note": ""
+          }
+        },
+        {
+          "id": "si",
+          "cells": {
+            "el": "Si",
+            "en": "1,90",
+            "note": ""
+          }
+        },
+        {
+          "id": "p",
+          "cells": {
+            "el": "P",
+            "en": "2,19",
+            "note": ""
+          }
+        },
+        {
+          "id": "h",
+          "cells": {
+            "el": "H",
+            "en": "2,20",
+            "note": "vodorod"
+          }
+        },
+        {
+          "id": "c",
+          "cells": {
+            "el": "C",
+            "en": "2,55",
+            "note": ""
+          }
+        },
+        {
+          "id": "s",
+          "cells": {
+            "el": "S",
+            "en": "2,58",
+            "note": ""
+          }
+        },
+        {
+          "id": "br",
+          "cells": {
+            "el": "Br",
+            "en": "2,96",
+            "note": ""
+          }
+        },
+        {
+          "id": "n",
+          "cells": {
+            "el": "N",
+            "en": "3,04",
+            "note": ""
+          }
+        },
+        {
+          "id": "cl",
+          "cells": {
+            "el": "Cl",
+            "en": "3,16",
+            "note": ""
+          }
+        },
+        {
+          "id": "o",
+          "cells": {
+            "el": "O",
+            "en": "3,44",
+            "note": "ftordan keyin"
+          }
+        },
+        {
+          "id": "f",
+          "cells": {
+            "el": "F",
+            "en": "3,98",
+            "note": "eng yuqori (≈ 4,0)"
+          },
+          "detail": {
+            "concept": "Ftor eng elektromanfiy element, shuning uchun birikmalarida faqat −1 OD ga ega. Davrda yadro zaryadi ortib radius kamayadi, guruhda esa radius ortib EM kamayadi.",
+            "examTip": "EM qatori: Cs < K < Na < … < N < Cl < O < F.",
+            "pages": [
+              64,
+              65,
+              66
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dEN",
+      "title": "ΔEM va bog‘ turi (taxminiy mezon)",
+      "columns": [
+        {
+          "key": "c",
+          "label": "Birikma"
+        },
+        {
+          "key": "d",
+          "label": "ΔEM"
+        },
+        {
+          "key": "type",
+          "label": "Bog‘lanish"
+        }
+      ],
+      "rows": [
+        {
+          "id": "cl2",
+          "cells": {
+            "c": "{Cl2}",
+            "d": "0",
+            "type": "qutbsiz kovalent"
+          }
+        },
+        {
+          "id": "ch4",
+          "cells": {
+            "c": "{CH4}",
+            "d": "2,55 − 2,20 = 0,35",
+            "type": "deyarli qutbsiz kovalent"
+          }
+        },
+        {
+          "id": "hcl",
+          "cells": {
+            "c": "{HCl}",
+            "d": "3,16 − 2,20 = 0,96",
+            "type": "qutbli kovalent"
+          }
+        },
+        {
+          "id": "h2o",
+          "cells": {
+            "c": "{H2O}",
+            "d": "3,44 − 2,20 = 1,24",
+            "type": "qutbli kovalent"
+          }
+        },
+        {
+          "id": "hf",
+          "cells": {
+            "c": "{HF}",
+            "d": "3,98 − 2,20 = 1,78",
+            "type": "qutbli kovalent (ΔEM katta bo‘lsa-da molekula)"
+          },
+          "detail": {
+            "concept": "ΔEM mezonlari qat’iy emas: {HF} da ΔEM ≈ 1,8, lekin bu molekular, qutbli kovalent birikma. Ionli birikmalarga odatda metall + galogen/kislorod misol bo‘ladi.",
+            "pages": [
+              66
+            ]
+          }
+        },
+        {
+          "id": "nacl",
+          "cells": {
+            "c": "{NaCl}",
+            "d": "3,16 − 0,93 = 2,23",
+            "type": "ionli"
+          }
+        },
+        {
+          "id": "mgo",
+          "cells": {
+            "c": "{MgO}",
+            "d": "3,44 − 1,31 = 2,13",
+            "type": "ionli"
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {},
+  "clarifications": [
+    {
+      "text": "Darslik (65-bet, 13-jadval) palladiyga ({Pd}, EM 2,20) «Pb» yozilgan va Pb ikki marta uchraydi. 2,20 — palladiy; qo‘rg‘oshin ({Pb}) uchun EM ≈ 2,33 (Pb⁴⁺ uchun).",
+      "source": "additionalVerifiedSource"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g8-s14-q1",
+      "type": "O1",
+      "skill": "ΔEM",
+      "difficulty": 1,
+      "stem": "{HCl} molekulasida ΔEM ni toping (EM: {Cl} 3,16; {H} 2,20).",
+      "answer": 0.96,
+      "tolerance": 0.005,
+      "solution": "ΔEM = 3,16 − 2,20 = 0,96 — qutbli kovalent bog‘."
+    },
+    {
+      "id": "g8-s14-q2",
+      "type": "O1",
+      "skill": "ΔEM",
+      "difficulty": 2,
+      "stem": "{NaCl} da elektromanfiylik farqini toping (EM: {Cl} 3,16; {Na} 0,93).",
+      "answer": 2.23,
+      "tolerance": 0.005,
+      "solution": "ΔEM = 3,16 − 0,93 = 2,23 — bu ionli birikma."
+    },
+    {
+      "id": "g8-s14-q3",
+      "type": "Y1",
+      "skill": "eng EM",
+      "difficulty": 1,
+      "stem": "Quyidagi elementlardan qaysi birining elektromanfiyligi eng katta?",
+      "choices": [
+        "F",
+        "O",
+        "Cl",
+        "N"
+      ],
+      "answer": 0,
+      "solution": "F 3,98 > O 3,44 > Cl 3,16 > N 3,04."
+    },
+    {
+      "id": "g8-s14-q4",
+      "type": "Y1",
+      "skill": "tartib",
+      "difficulty": 2,
+      "stem": "EM ortib borish tartibida joylashtirilgan qatorni toping.",
+      "choices": [
+        "Na < Si < N < O",
+        "O < N < Si < Na",
+        "Si < Na < O < N",
+        "N < O < Na < Si"
+      ],
+      "answer": 0,
+      "solution": "Na 0,93 < Si 1,90 < N 3,04 < O 3,44."
+    },
+    {
+      "id": "g8-s14-q5",
+      "type": "Y2",
+      "skill": "EM qiymati",
+      "difficulty": 1,
+      "stem": "Elementni EM qiymati bilan moslashtiring.",
+      "left": [
+        "F",
+        "O",
+        "Cl",
+        "Na"
+      ],
+      "right": [
+        "3,16",
+        "0,93",
+        "3,98",
+        "3,44"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "solution": "F 3,98; O 3,44; Cl 3,16; Na 0,93."
+    }
+  ]
+}

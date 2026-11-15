@@ -1,0 +1,314 @@
+{
+  "id": "g8-s4",
+  "status": "seed-verified",
+  "pages": [
+    21,
+    22,
+    23,
+    24
+  ],
+  "summary": "Xossalari o‘xshash elementlar tabiiy oilalar hosil qiladi: ishqoriy metallar (Li–Cs), galogenlar (F–I), inert gazlar; shuningdek Mg–Ca, Al–B, C–Si, N–P juftlari. Atom massa ortishi bilan xossalar qonuniy o‘zgaradi — davriy qonunga yo‘l ochgan kuzatish.",
+  "keyConcepts": [
+    "Ishqoriy metallar: yumshoq, suvdan faol {H2} siqib chiqaradi, birikmalarida +1.",
+    "Galogenlar: {HHal} vodorodli birikmalari suvda kislota; metallar bilan {NaHal} tuzlar.",
+    "Inert (nodir) gazlar bir atomli, odatda reaksiyaga kirishmaydi.",
+    "Atom massa ortishi bilan oila ichida suyuqlanish harorati, faollik va boshqa xossalar qonuniy o‘zgaradi."
+  ],
+  "tables": [
+    {
+      "id": "alk",
+      "title": "Ishqoriy metallar",
+      "columns": [
+        {
+          "key": "p",
+          "label": "Xossa"
+        },
+        {
+          "key": "li",
+          "label": "Li"
+        },
+        {
+          "key": "na",
+          "label": "Na"
+        },
+        {
+          "key": "k",
+          "label": "K"
+        },
+        {
+          "key": "rb",
+          "label": "Rb"
+        },
+        {
+          "key": "cs",
+          "label": "Cs"
+        }
+      ],
+      "rows": [
+        {
+          "id": "ar",
+          "cells": {
+            "p": "Ar",
+            "li": "6,9",
+            "na": "23",
+            "k": "39,1",
+            "rb": "85,5",
+            "cs": "132,9"
+          }
+        },
+        {
+          "id": "mp",
+          "cells": {
+            "p": "t suyuq., °C",
+            "li": "181",
+            "na": "98",
+            "k": "64",
+            "rb": "39",
+            "cs": "28,5"
+          }
+        },
+        {
+          "id": "rho",
+          "cells": {
+            "p": "ρ, g/cm³",
+            "li": "0,53",
+            "na": "0,97",
+            "k": "0,86",
+            "rb": "1,53",
+            "cs": "1,93"
+          }
+        },
+        {
+          "id": "act",
+          "cells": {
+            "p": "Faollik",
+            "li": "kuchsizroq",
+            "na": "↑",
+            "k": "↑",
+            "rb": "↑↑",
+            "cs": "eng faol"
+          },
+          "detail": {
+            "concept": "Atom radiusi ortishi bilan tashqi elektron yadroga kuchsizroq tortiladi, shuning uchun faollik Li → Cs ortadi.",
+            "pages": [
+              22
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fam",
+      "title": "Oilalarning umumiy reaksiyalari",
+      "columns": [
+        {
+          "key": "f",
+          "label": "Oila"
+        },
+        {
+          "key": "c",
+          "label": "Umumiy xossa"
+        },
+        {
+          "key": "eq",
+          "label": "Misol",
+          "reaction": true
+        }
+      ],
+      "rows": [
+        {
+          "id": "alk-w",
+          "cells": {
+            "f": "Ishqoriy metallar",
+            "c": "suv bilan ishqor va {H2} beradi",
+            "eq": "naW"
+          }
+        },
+        {
+          "id": "alk-w2",
+          "cells": {
+            "f": "Ishqoriy metallar",
+            "c": "{K} suvda ham shunday",
+            "eq": "kW"
+          }
+        },
+        {
+          "id": "alk-o",
+          "cells": {
+            "f": "Ishqoriy metallar",
+            "c": "{Na} kislorodda yonib peroksid hosil qiladi",
+            "eq": "naO"
+          },
+          "detail": {
+            "concept": "Kislorodda yonishda Li → {Li2O}, Na → {Na2O2}, K, Rb, Cs → superoksidlar ({KO2}). Shuning uchun K uchun «{K2O2}» noto‘g‘ri.",
+            "reactionIds": [
+              "naO",
+              "kO"
+            ],
+            "pages": [
+              21
+            ]
+          }
+        },
+        {
+          "id": "hal-h",
+          "cells": {
+            "f": "Galogenlar",
+            "c": "vodorod bilan {HHal} (uchuvchan, suvda kislota)",
+            "eq": "hcl"
+          }
+        },
+        {
+          "id": "hal-na",
+          "cells": {
+            "f": "Galogenlar",
+            "c": "metallar bilan tuz",
+            "eq": "nacl"
+          }
+        },
+        {
+          "id": "hal-al",
+          "cells": {
+            "f": "Galogenlar",
+            "c": "aluminiy bilan",
+            "eq": "alCl"
+          }
+        },
+        {
+          "id": "ng",
+          "cells": {
+            "f": "Inert gazlar",
+            "c": "bir atomli; {H2} va metallar bilan birikma bermaydi",
+            "eq": ""
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {
+    "naW": {
+      "equation": "2Na + 2H2O → 2NaOH + H2↑",
+      "observation": "metall sharchaga aylanib suvda yuguradi, gaz ajraladi"
+    },
+    "kW": {
+      "equation": "2K + 2H2O → 2KOH + H2↑",
+      "observation": "vodorod yonib, binafsha alanga"
+    },
+    "naO": {
+      "equation": "2Na + O2 → Na2O2",
+      "conditions": "yonish"
+    },
+    "kO": {
+      "equation": "K + O2 → KO2",
+      "conditions": "yonish"
+    },
+    "hcl": {
+      "equation": "H2 + Cl2 → 2HCl",
+      "conditions": "yorug‘lik yoki yondirish"
+    },
+    "nacl": {
+      "equation": "2Na + Cl2 → 2NaCl"
+    },
+    "alCl": {
+      "equation": "2Al + 3Cl2 → 2AlCl3"
+    }
+  },
+  "clarifications": [
+    {
+      "text": "Darslik (21-bet) «2K + O2 = K2O2» yozadi. Kaliy kislorodda yonganda asosan superoksid {KO2} hosil qiladi: K + {O2} → {KO2}. Natriy esa peroksid {Na2O2} beradi.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslik (22-bet, 3-jadval) zichliklarni Na 0,92, K 0,85, Cs 1,87 g/cm³ deb beradi; aniqlangan qiymatlar: Na 0,97, K 0,86, Cs 1,93 g/cm³; suyuqlanish harorati Li 181 °C, Cs 28,5 °C.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslik (22-bet, 4-jadval) galogenlarning yuqori oksidlari qatorida {Br2O7} va {I2O7} ni beradi. {I2O7} ma’lum emas (yodning barqaror oksidi {I2O5}), {Br2O7} esa nihoyatda beqaror; ftor musbat OD li oksid hosil qilmaydi.",
+      "source": "additionalVerifiedSource"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g8-s4-q1",
+      "type": "O1",
+      "skill": "stexiometriya",
+      "difficulty": 2,
+      "stem": "2,3 g natriy suv bilan to‘liq reaksiyaga kirishganda n.sh.da necha litr vodorod ajraladi?",
+      "answer": 1.12,
+      "tolerance": 0.01,
+      "unit": "l",
+      "solution": "2{Na} + 2{H2O} → 2{NaOH} + {H2}: n(Na) = 2,3/23 = 0,1 mol; n({H2}) = 0,05 mol; V = 0,05 · 22,4 = 1,12 l."
+    },
+    {
+      "id": "g8-s4-q2",
+      "type": "Y1",
+      "skill": "oila xossasi",
+      "difficulty": 1,
+      "stem": "Inert gazlarning umumiy xossasi qaysi javobda to‘g‘ri berilgan?",
+      "choices": [
+        "molekulalari bir atomli",
+        "molekulalari ikki atomli",
+        "suv bilan {H2} ajratadi",
+        "metallar bilan oson tuz hosil qiladi"
+      ],
+      "answer": 0,
+      "solution": "He, Ne, Ar, Kr, Xe — bir atomli gazlar, odatdagi sharoitda reaksiyaga kirishmaydi."
+    },
+    {
+      "id": "g8-s4-q3",
+      "type": "Y2",
+      "skill": "oilalar",
+      "difficulty": 1,
+      "stem": "Elementni oilasi bilan moslashtiring.",
+      "left": [
+        "Li",
+        "Br",
+        "Ar",
+        "Mg"
+      ],
+      "right": [
+        "inert gazlar",
+        "ishqoriy-yer metallari",
+        "ishqoriy metallar",
+        "galogenlar"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "solution": "Li — ishqoriy metall, Br — galogen, Ar — inert gaz, Mg — II guruh bosh guruhcha (ishqoriy-yer) metalli."
+    },
+    {
+      "id": "g8-s4-q4",
+      "type": "Y1",
+      "skill": "tendensiya",
+      "difficulty": 2,
+      "stem": "Li dan Cs gacha atom massa ortishi bilan suyuqlanish harorati qanday o‘zgaradi?",
+      "choices": [
+        "kamayadi",
+        "ortadi",
+        "o‘zgarmaydi",
+        "avval ortib, keyin kamayadi"
+      ],
+      "answer": 0,
+      "solution": "181 → 98 → 64 → 39 → 28,5 °C: kamayadi."
+    },
+    {
+      "id": "g8-s4-q5",
+      "type": "Y1",
+      "skill": "galogenlar",
+      "difficulty": 1,
+      "stem": "Galogenlarning vodorodli birikmalari suvdagi eritmada qanday xossa namoyon qiladi?",
+      "choices": [
+        "kislota",
+        "ishqor",
+        "betaraf",
+        "amfoter"
+      ],
+      "answer": 0,
+      "solution": "{HF}, {HCl}, {HBr}, {HI} suvda kislotalar hosil qiladi."
+    }
+  ]
+}

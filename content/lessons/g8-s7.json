@@ -1,0 +1,245 @@
+{
+  "id": "g8-s7",
+  "status": "seed-verified",
+  "pages": [
+    34,
+    35,
+    36
+  ],
+  "summary": "Atom musbat zaryadli yadro (protonlar va neytronlar) hamda yadro atrofidagi elektronlardan iborat. Z (tartib raqami) = protonlar soni = elektronlar soni (neytral atomda); massa soni A = Z + N. Protiy yadrosida neytron yo‘q.",
+  "keyConcepts": [
+    "Proton: zaryad +1, massa ≈ 1 m.a.b.; neytron: zaryad 0, massa ≈ 1 m.a.b.; elektron: zaryad −1, massa ≈ 1/1836 m.a.b.",
+    "Z = p⁺ = e⁻ (neytral atomda); yadro zaryadi +Z.",
+    "Massa soni A = Z + N, N = A − Z.",
+    "Atom massasining deyarli hammasi yadroda; yadro atomdan ≈10⁵ marta kichik (Rezerford, 1911)."
+  ],
+  "tables": [
+    {
+      "id": "particles",
+      "title": "Atom zarrachalari",
+      "columns": [
+        {
+          "key": "p",
+          "label": "Zarracha"
+        },
+        {
+          "key": "sym",
+          "label": "Belgi"
+        },
+        {
+          "key": "q",
+          "label": "Zaryad"
+        },
+        {
+          "key": "m",
+          "label": "Massa (m.a.b.)"
+        },
+        {
+          "key": "where",
+          "label": "Joylashuvi"
+        }
+      ],
+      "rows": [
+        {
+          "id": "p",
+          "cells": {
+            "p": "Proton",
+            "sym": "p⁺",
+            "q": "+1",
+            "m": "≈ 1",
+            "where": "yadro"
+          }
+        },
+        {
+          "id": "n",
+          "cells": {
+            "p": "Neytron",
+            "sym": "n⁰",
+            "q": "0",
+            "m": "≈ 1",
+            "where": "yadro (protiy ¹H dan tashqari)"
+          },
+          "detail": {
+            "concept": "Oddiy vodorod (¹H, protiy) yadrosi faqat bitta protondan iborat — neytron yo‘q.",
+            "examTip": "Savol: «neytronsiz yadro» → protiy.",
+            "pages": [
+              34,
+              36
+            ]
+          }
+        },
+        {
+          "id": "e",
+          "cells": {
+            "p": "Elektron",
+            "sym": "e⁻",
+            "q": "−1",
+            "m": "≈ 1/1836 ≈ 0,00055",
+            "where": "yadro atrofida"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nuclei",
+      "title": "Yadro tarkibini hisoblash",
+      "columns": [
+        {
+          "key": "el",
+          "label": "Element"
+        },
+        {
+          "key": "z",
+          "label": "Z"
+        },
+        {
+          "key": "a",
+          "label": "A"
+        },
+        {
+          "key": "p",
+          "label": "p⁺"
+        },
+        {
+          "key": "n",
+          "label": "n⁰ = A − Z"
+        },
+        {
+          "key": "e",
+          "label": "ē"
+        }
+      ],
+      "rows": [
+        {
+          "id": "na",
+          "cells": {
+            "el": "natriy-23",
+            "z": "11",
+            "a": "23",
+            "p": "11",
+            "n": "12",
+            "e": "11"
+          }
+        },
+        {
+          "id": "al",
+          "cells": {
+            "el": "aluminiy-27",
+            "z": "13",
+            "a": "27",
+            "p": "13",
+            "n": "14",
+            "e": "13"
+          }
+        },
+        {
+          "id": "p",
+          "cells": {
+            "el": "fosfor-31",
+            "z": "15",
+            "a": "31",
+            "p": "15",
+            "n": "16",
+            "e": "15"
+          }
+        },
+        {
+          "id": "ar",
+          "cells": {
+            "el": "argon-40",
+            "z": "18",
+            "a": "40",
+            "p": "18",
+            "n": "22",
+            "e": "18"
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {},
+  "clarifications": [
+    {
+      "text": "Darslik (36-bet) «Ar = N + Z» deb yozadi. Bu massa soni A (butun son) formulasi: A = N + Z; nisbiy atom massa Ar esa izotoplar aralashmasi bo‘yicha o‘rtacha va kasr son.",
+      "source": "additionalVerifiedSource"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g8-s7-q1",
+      "type": "O1",
+      "skill": "neytronlar",
+      "difficulty": 1,
+      "stem": "Aluminiy-27 atomi yadrosida nechta neytron bor? (Z = 13)",
+      "answer": 14,
+      "tolerance": 0,
+      "solution": "N = A − Z = 27 − 13 = 14."
+    },
+    {
+      "id": "g8-s7-q2",
+      "type": "O1",
+      "skill": "neytronlar",
+      "difficulty": 1,
+      "stem": "Fosfor-31 yadrosidagi neytronlar sonini toping (Z = 15).",
+      "answer": 16,
+      "tolerance": 0,
+      "solution": "N = 31 − 15 = 16."
+    },
+    {
+      "id": "g8-s7-q3",
+      "type": "Y1",
+      "skill": "yadro",
+      "difficulty": 1,
+      "stem": "Qaysi atom yadrosida neytron yo‘q?",
+      "choices": [
+        "protiy ¹H",
+        "deyteriy ²H",
+        "geliy-4",
+        "litiy-7"
+      ],
+      "answer": 0,
+      "solution": "Protiy yadrosi bitta protondan iborat; boshqalarida neytronlar bor."
+    },
+    {
+      "id": "g8-s7-q4",
+      "type": "Y2",
+      "skill": "zarrachalar",
+      "difficulty": 1,
+      "stem": "Zarrachani tavsifi bilan moslashtiring.",
+      "left": [
+        "proton",
+        "neytron",
+        "elektron",
+        "yadro"
+      ],
+      "right": [
+        "zaryadi −1, massasi ≈ 1/1836 m.a.b.",
+        "zaryadsiz, massasi ≈ 1 m.a.b.",
+        "atom massasining deyarli hammasi unda, zaryadi +Z",
+        "zaryadi +1, massasi ≈ 1 m.a.b."
+      ],
+      "answer": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "solution": "Proton +1; neytron 0; elektron −1 va juda yengil; yadro atom massasining ≈99,9 % ini tashkil qiladi."
+    },
+    {
+      "id": "g8-s7-q5",
+      "type": "Y1",
+      "skill": "Z",
+      "difficulty": 1,
+      "stem": "Neytral atomda 17 ta elektron bor. Yadro zaryadi qancha?",
+      "choices": [
+        "+17",
+        "−17",
+        "+34",
+        "0"
+      ],
+      "answer": 0,
+      "solution": "Neytral atomda p⁺ soni e⁻ soniga teng, demak yadro zaryadi +17 (xlor)."
+    }
+  ]
+}

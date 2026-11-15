@@ -1,0 +1,409 @@
+{
+  "id": "g8-s5",
+  "status": "seed-verified",
+  "pages": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "summary": "D.I. Mendeleyev (1869) davriy qonunni atom massa asosida bayon etdi; keyinroq Ar–K, Co–Ni, Te–I juftliklari xossalarni atom massa emas, yadro zaryadi (tartib raqami) belgilashini ko‘rsatdi. Zamonaviy ta’rif: xossalar yadro zaryadiga davriy bog‘liq.",
+  "keyConcepts": [
+    "Mendeleyev (1869): xossalar atom massaga davriy bog‘liq.",
+    "Zamonaviy qonun: element va birikmalar xossalari atom yadrosi zaryadiga davriy bog‘liq.",
+    "Davrda chapdan o‘ngga: metallik kamayadi, metallmaslik ortadi, yuqori oksidning kislotali xossasi kuchayadi.",
+    "Atom massa tartibi buzilgan juftliklar (Ar–K, Co–Ni, Te–I) yadro zaryadi asosiy ekanini isbotlaydi."
+  ],
+  "tables": [
+    {
+      "id": "hist",
+      "title": "Davriy qonungacha va undan keyin",
+      "columns": [
+        {
+          "key": "who",
+          "label": "Olim"
+        },
+        {
+          "key": "y",
+          "label": "Yil"
+        },
+        {
+          "key": "what",
+          "label": "Hissasi"
+        }
+      ],
+      "rows": [
+        {
+          "id": "berz",
+          "cells": {
+            "who": "Y. Berselius",
+            "y": "1814",
+            "what": "46 element atom massalari jadvali"
+          }
+        },
+        {
+          "id": "deb",
+          "cells": {
+            "who": "I. Debereyner",
+            "y": "1817–1829",
+            "what": "triadalar (o‘xshash uchta element, o‘rtadagi atom massa ≈ chetkilar o‘rtachasi)"
+          }
+        },
+        {
+          "id": "meyer",
+          "cells": {
+            "who": "Yu. Meyer",
+            "y": "1864",
+            "what": "valentlik bo‘yicha jadval"
+          }
+        },
+        {
+          "id": "mend",
+          "cells": {
+            "who": "D.I. Mendeleyev",
+            "y": "1869",
+            "what": "davriy qonun va jadval; yangi elementlarni (Ga, Sc, Ge) oldindan aytdi"
+          },
+          "detail": {
+            "concept": "Mendeleyev bo‘sh kataklar qoldirib, noma’lum elementlarning xossalarini bashorat qildi; keyinchalik topilgan Ga, Sc, Ge bashoratlarga mos keldi.",
+            "examTip": "Zamonaviy ta’rifda «yadro zaryadi» so‘zlari bo‘lishi shart.",
+            "pages": [
+              26,
+              27
+            ]
+          }
+        },
+        {
+          "id": "mos",
+          "cells": {
+            "who": "G. Mozli",
+            "y": "1913",
+            "what": "tartib raqami = yadro zaryadi ekani aniqlandi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "3-davr: xossalarning davriy o‘zgarishi",
+      "columns": [
+        {
+          "key": "el",
+          "label": "Element"
+        },
+        {
+          "key": "ar",
+          "label": "Ar"
+        },
+        {
+          "key": "ox",
+          "label": "Yuqori oksid"
+        },
+        {
+          "key": "val",
+          "label": "Valentlik / OD"
+        },
+        {
+          "key": "hyd",
+          "label": "Vodorodli birikma"
+        },
+        {
+          "key": "nat",
+          "label": "Oksid va gidroksid xarakteri"
+        }
+      ],
+      "rows": [
+        {
+          "id": "na",
+          "cells": {
+            "el": "Na",
+            "ar": "23",
+            "ox": "{Na2O}",
+            "val": "I / +1",
+            "hyd": "—",
+            "nat": "asosli; {NaOH} — kuchli asos"
+          }
+        },
+        {
+          "id": "mg",
+          "cells": {
+            "el": "Mg",
+            "ar": "24",
+            "ox": "{MgO}",
+            "val": "II / +2",
+            "hyd": "—",
+            "nat": "asosli; {Mg(OH)2}"
+          }
+        },
+        {
+          "id": "al",
+          "cells": {
+            "el": "Al",
+            "ar": "27",
+            "ox": "{Al2O3}",
+            "val": "III / +3",
+            "hyd": "—",
+            "nat": "amfoter; {Al(OH)3}"
+          }
+        },
+        {
+          "id": "si",
+          "cells": {
+            "el": "Si",
+            "ar": "28",
+            "ox": "{SiO2}",
+            "val": "IV / +4",
+            "hyd": "{SiH4}",
+            "nat": "kuchsiz kislotali; {H2SiO3}"
+          }
+        },
+        {
+          "id": "p",
+          "cells": {
+            "el": "P",
+            "ar": "31",
+            "ox": "{P2O5}",
+            "val": "V / +5",
+            "hyd": "{PH3}",
+            "nat": "kislotali; {H3PO4}"
+          }
+        },
+        {
+          "id": "s",
+          "cells": {
+            "el": "S",
+            "ar": "32",
+            "ox": "{SO3}",
+            "val": "VI / +6",
+            "hyd": "{H2S}",
+            "nat": "kislotali; {H2SO4}"
+          }
+        },
+        {
+          "id": "cl",
+          "cells": {
+            "el": "Cl",
+            "ar": "35,5",
+            "ox": "{Cl2O7}",
+            "val": "VII / +7",
+            "hyd": "{HCl}",
+            "nat": "kuchli kislotali; {HClO4}"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rx",
+      "title": "Yuqori oksidlarning suv bilan reaksiyasi",
+      "columns": [
+        {
+          "key": "ox",
+          "label": "Oksid"
+        },
+        {
+          "key": "eq",
+          "label": "Reaksiya",
+          "reaction": true
+        },
+        {
+          "key": "res",
+          "label": "Natija"
+        }
+      ],
+      "rows": [
+        {
+          "id": "o-na",
+          "cells": {
+            "ox": "{Na2O}",
+            "eq": "na2o",
+            "res": "asos"
+          }
+        },
+        {
+          "id": "o-al",
+          "cells": {
+            "ox": "{Al2O3}",
+            "eq": "",
+            "res": "suvda erimaydi, amfoter"
+          }
+        },
+        {
+          "id": "o-p",
+          "cells": {
+            "ox": "{P2O5}",
+            "eq": "p2o5",
+            "res": "kislota"
+          }
+        },
+        {
+          "id": "o-cl",
+          "cells": {
+            "ox": "{Cl2O7}",
+            "eq": "cl2o7",
+            "res": "kuchli kislota"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inv",
+      "title": "Atom massa tartibini buzgan juftliklar",
+      "columns": [
+        {
+          "key": "pair",
+          "label": "Juftlik"
+        },
+        {
+          "key": "ar",
+          "label": "Ar qiymatlari"
+        },
+        {
+          "key": "z",
+          "label": "Z"
+        },
+        {
+          "key": "why",
+          "label": "Tartib sababi"
+        }
+      ],
+      "rows": [
+        {
+          "id": "ark",
+          "cells": {
+            "pair": "Ar – K",
+            "ar": "39,95 > 39,10",
+            "z": "18 va 19",
+            "why": "Ar inert gaz, K ishqoriy metall — xossa bo‘yicha o‘rni aniq"
+          },
+          "detail": {
+            "concept": "Xossalarga ko‘ra Ar inert gazlar, K ishqoriy metallar ostiga tushishi shart. Buni faqat yadro zaryadi (18 va 19) izohlaydi.",
+            "pages": [
+              29,
+              30
+            ]
+          }
+        },
+        {
+          "id": "coni",
+          "cells": {
+            "pair": "Co – Ni",
+            "ar": "58,93 > 58,69",
+            "z": "27 va 28",
+            "why": "yadro zaryadi tartibni belgilaydi"
+          }
+        },
+        {
+          "id": "tei",
+          "cells": {
+            "pair": "Te – I",
+            "ar": "127,6 > 126,9",
+            "z": "52 va 53",
+            "why": "galogen I VII guruhda bo‘lishi kerak"
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {
+    "na2o": {
+      "equation": "Na2O + H2O → 2NaOH"
+    },
+    "p2o5": {
+      "equation": "P2O5 + 3H2O → 2H3PO4"
+    },
+    "cl2o7": {
+      "equation": "Cl2O7 + H2O → 2HClO4"
+    }
+  },
+  "clarifications": [
+    {
+      "text": "Darslik (30-bet) elementning tartib raqamini davriylik asosi deb Mendeleyev «hisobladi» deydi. Yadro zaryadi tushunchasi va uning tartib raqamga tengligi Mendeleyev davrida ma’lum emas edi — buni G. Mozli (1913, rentgen spektrlari) isbotladi.",
+      "source": "additionalVerifiedSource"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g8-s5-q1",
+      "type": "Y1",
+      "skill": "zamonaviy qonun",
+      "difficulty": 1,
+      "stem": "Davriy qonunning zamonaviy ta’rifida xossalar nimaga davriy bog‘liq?",
+      "choices": [
+        "atom yadrosining zaryadiga",
+        "nisbiy atom massaga",
+        "zichlikka",
+        "kashf etilgan yiliga"
+      ],
+      "answer": 0,
+      "solution": "Zamonaviy ta’rifga ko‘ra elementlar va ularning birikmalari xossalari atom yadrosi zaryadiga davriy bog‘liq."
+    },
+    {
+      "id": "g8-s5-q2",
+      "type": "Y1",
+      "skill": "inversiya",
+      "difficulty": 2,
+      "stem": "Qaysi juftlikda atom massasi kattaroq element jadvalda oldinda turadi?",
+      "choices": [
+        "Ar va K",
+        "Na va Mg",
+        "C va N",
+        "Cl va Br"
+      ],
+      "answer": 0,
+      "solution": "Ar (39,95) K (39,10) dan og‘ir, lekin xossalariga ko‘ra 18-o‘rinda, K 19-o‘rinda turadi."
+    },
+    {
+      "id": "g8-s5-q3",
+      "type": "Y2",
+      "skill": "3-davr",
+      "difficulty": 2,
+      "stem": "Yuqori oksidni xarakteri bilan moslashtiring.",
+      "left": [
+        "{Na2O}",
+        "{Al2O3}",
+        "{Cl2O7}",
+        "{SiO2}"
+      ],
+      "right": [
+        "amfoter oksid",
+        "kuchli kislota hosil qiladi ({HClO4})",
+        "kuchsiz kislotali oksid",
+        "kuchli asosli oksid"
+      ],
+      "answer": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "solution": "{Na2O} → {NaOH}; {Al2O3} amfoter; {Cl2O7} → {HClO4}; {SiO2} — kuchsiz kislotali."
+    },
+    {
+      "id": "g8-s5-q4",
+      "type": "O1",
+      "skill": "valentlik",
+      "difficulty": 1,
+      "stem": "Fosforning yuqori oksididagi valentligi nechaga teng?",
+      "answer": 5,
+      "tolerance": 0,
+      "solution": "{P2O5}: fosfor V guruhda, yuqori valentlik guruh raqamiga teng — 5."
+    },
+    {
+      "id": "g8-s5-q5",
+      "type": "Y1",
+      "skill": "davrda o‘zgarish",
+      "difficulty": 1,
+      "stem": "3-davrda Na dan Cl ga o‘tganda metallmaslik xossalari qanday o‘zgaradi?",
+      "choices": [
+        "ortadi",
+        "kamayadi",
+        "o‘zgarmaydi",
+        "avval kamayib, so‘ng ortadi"
+      ],
+      "answer": 0,
+      "solution": "Yadro zaryadi ortib, atom radiusi kamayadi — elektronni tortish kuchayadi, metallmaslik ortadi."
+    }
+  ]
+}
