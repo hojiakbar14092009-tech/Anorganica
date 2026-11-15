@@ -76,3 +76,35 @@ export const CHROMIUM_COLOURS: ProcessSpec = {
   ],
   explanation: 'Rang oksidlanish darajasi va zarrachaning tuzilishiga bog‘liq: Cr³⁺ birikmalari — yashil/kulrang-yashil, CrO₄²⁻ — sariq, Cr₂O₇²⁻ — zarg‘aldoq. Cr(VI) birikmalari zaharli va kanserogen — faqat virtual namoyish.',
 };
+
+export const PERMANGANATE_MEDIA: ProcessSpec = {
+  title: 'KMnO₄ ning qaytarilishi muhitga bog‘liq (K₂SO₃ bilan, virtual tajriba)',
+  steps: [
+    { place: 'Kislotali muhit (H₂SO₄)', name: 'Binafsha rang yo‘qoladi', equation: 'MnO4^- + 8H^+ + 5e^- → Mn^2+ + 4H2O', note: 'Mn(+7) → Mn(+2): deyarli rangsiz eritma. Eng kuchli oksidlovchi xossa shu muhitda.' },
+    { place: 'Neytral muhit', name: 'Qo‘ng‘ir cho‘kma tushadi', equation: 'MnO4^- + 2H2O + 3e^- → MnO2↓ + 4OH^-', note: 'Mn(+7) → Mn(+4): qo‘ng‘ir MnO₂ cho‘kmasi.' },
+    { place: 'Ishqoriy muhit (KOH)', name: 'Eritma yashil tusga kiradi', equation: 'MnO4^- + e^- → MnO4^2-', note: 'Mn(+7) → Mn(+6): yashil manganat-ion.' },
+  ],
+  explanation: 'Bir xil oksidlovchi (MnO₄⁻) muhitga qarab turli miqdorda elektron qabul qiladi: kislotada 5, neytral muhitda 3, ishqorda 1. Shuning uchun redoks tenglamalarida muhitni albatta hisobga olish kerak.',
+};
+
+export const IRON_TESTS: ProcessSpec = {
+  title: 'Fe²⁺ va Fe³⁺ ionlarini aniqlash (virtual tajriba)',
+  steps: [
+    { place: 'Fe²⁺ + ishqor', name: 'Oq cho‘kma, havoda yashillanib qo‘ng‘irlashadi', equation: 'Fe^2+ + 2OH^- → Fe(OH)2↓', note: 'Fe(OH)₂ havoda tez oksidlanadi: 4Fe(OH)₂ + O₂ + 2H₂O → 4Fe(OH)₃.' },
+    { place: 'Fe³⁺ + ishqor', name: 'Qizil-qo‘ng‘ir cho‘kma', equation: 'Fe^3+ + 3OH^- → Fe(OH)3↓', note: 'Rangi darhol qizil-qo‘ng‘ir — Fe(II) dan farqi shu.' },
+    { place: 'Fe²⁺ + qizil qon tuzi K₃[Fe(CN)₆]', name: 'To‘q ko‘k cho‘kma', equation: 'FeCl2 + K3[Fe(CN)6] → KFe[Fe(CN)6]↓ + 2KCl', note: 'Fe²⁺ ga xos reaksiya.' },
+    { place: 'Fe³⁺ + tiotsianat KSCN', name: 'Qon-qizil eritma', equation: 'FeCl3 + 3KSCN → Fe(SCN)3 + 3KCl', note: 'Fe³⁺ ga xos, juda sezgir reaksiya.' },
+  ],
+  explanation: 'Ishqor bilan cho‘kma rangi (oq → yashil → qo‘ng‘ir yoki darhol qizil-qo‘ng‘ir) temirning oksidlanish darajasini ko‘rsatadi; aniq tasdiqlash uchun K₃[Fe(CN)₆] (Fe²⁺) va KSCN (Fe³⁺) ishlatiladi. Turnbul ko‘ki va berlin lazuri aslida bir xil modda — KFe[Fe(CN)₆].',
+};
+
+export const WATER_SOFTENING: ProcessSpec = {
+  title: 'Suvning qattiqligini yo‘qotish usullari',
+  steps: [
+    { place: 'Vaqtinchalik qattiqlik', name: 'Qaynatish', equation: 'Ca(HCO3)2 → CaCO3↓ + H2O + CO2↑', conditions: 'qaynatish', note: 'Gidrokarbonatlar parchalanib, CaCO₃ cho‘kadi — choynakdagi quyqa shu.' },
+    { place: 'Vaqtinchalik qattiqlik', name: 'So‘ndirilgan ohak qo‘shish', equation: 'Ca(HCO3)2 + Ca(OH)2 → 2CaCO3↓ + 2H2O', note: 'Ohak gidrokarbonatni karbonatga aylantiradi. Ortiqcha ohak suvni yana qattiq qiladi — miqdori hisoblanadi.' },
+    { place: 'Doimiy qattiqlik', name: 'Soda qo‘shish', equation: 'CaSO4 + Na2CO3 → CaCO3↓ + Na2SO4', note: 'Sulfat va xloridlar qaynatishda yo‘qolmaydi; Ca²⁺ ni karbonat bilan cho‘ktirish kerak.' },
+    { place: 'Har ikkala qattiqlik', name: 'Kationitli kolonka', equation: 'Na2R + Ca^2+ → CaR + 2Na^+', conditions: 'R — ionit qoldig‘i', note: 'Ionit Ca²⁺/Mg²⁺ ni ushlab, o‘rniga Na⁺ beradi; NaCl eritmasi bilan qayta tiklanadi.' },
+  ],
+  explanation: 'Qattiqlikni Ca²⁺ va Mg²⁺ ionlari beradi. Vaqtinchalik (gidrokarbonatli) qattiqlik qaynatishda yo‘qoladi; doimiy (sulfat, xloridli) qattiqlik uchun ionlarni cho‘ktirish yoki ion almashinish kerak.',
+};

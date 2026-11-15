@@ -26,6 +26,12 @@ Tests: `src/tests/molecules.test.ts` (formula ↔ atoms, connectivity, bond leng
 | g9-s25 | Al₂O₃ in molten cryolite electrolysis | 2D SVG animation | equations tested |
 | g9-s27 | Al(OH)₃ amphoterism (virtual test-tube sequence) | step animation | equations tested |
 | g9-s32 | Cr(III)/chromate/dichromate colours and Cr(VI) → Cr(III) | step animation | equations tested |
-| others | tables + equations only (figure audit pending) | — | pending |
+| g8-s27 | HCl (acid = HCl solution) | 3D | tested |
+| g9-s11 | CO₃²⁻ planar ion (C–O 1.29 Å, delocalised), CO₂ | 3D | tested |
+| g9-s13 | SiO₄⁴⁻ tetrahedron (Si–O 1.62 Å) | 3D | tested |
+| g9-s24 | water softening methods | step animation | equations tested |
+| g9-s33 | KMnO₄ reduction by medium (Mn²⁺ / MnO₂ / MnO₄²⁻) | step animation | equations tested |
+| g9-s35 | Fe²⁺ / Fe³⁺ qualitative tests | step animation | equations tested |
+| others (18) | tables + equations only — judged sufficient (laws, fertilizers, biogenic elements, metals overview) | — | figure audit pending |
 
 All models are labelled “sxematik model”; text facts (lengths/angles) are always visible as the fallback.

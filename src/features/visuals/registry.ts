@@ -1,7 +1,7 @@
 // Visual registry: lessonId → verified schematic scenes. Every equation here is balance-checked in tests/visuals.test.ts.
 import type { ElectrolysisSpec } from './ElectrolysisCell';
 import type { ProcessSpec } from './ProcessFlow';
-import { AMPHOTERIC_AL, BLAST_FURNACE, CHROMIUM_COLOURS, CONTACT_PROCESS, NITRIC_ACID, RUSTING, SOLVAY } from './processes';
+import { AMPHOTERIC_AL, BLAST_FURNACE, CHROMIUM_COLOURS, CONTACT_PROCESS, IRON_TESTS, NITRIC_ACID, PERMANGANATE_MEDIA, RUSTING, SOLVAY, WATER_SOFTENING } from './processes';
 
 export type Visual =
   | { kind: 'electrolysis'; purpose: string; spec: ElectrolysisSpec }
@@ -18,6 +18,7 @@ export const visuals: Record<string, Visual[]> = {
   'g8-s22': [mol('Galogen molekulalari: F₂ → I₂ bog‘ uzunligi ortadi', 'f2', 'cl2', 'br2', 'i2')],
   'g8-s23': [mol('Cl₂ — qutbsiz kovalent bog‘', 'cl2')],
   'g8-s24': [mol('HCl — qutbli kovalent bog‘', 'hcl')],
+  'g8-s27': [mol('Xlorid kislota — HCl ning suvdagi eritmasi; molekula qutbli', 'hcl')],
   'g8-s28': [mol('F₂, Br₂, I₂ bog‘ uzunliklari', 'f2', 'br2', 'i2')],
   'g8-s29': [mol('H₂O va H₂S burchaklari farqi', 'h2o', 'h2s', 'o2')],
   'g8-s30': [mol('H₂S — burchakli molekula', 'h2s')],
@@ -30,10 +31,13 @@ export const visuals: Record<string, Visual[]> = {
   'g8-s37': [mol('NH₃ piramida va NH₄⁺ tetraedr', 'nh3', 'nh4')],
   'g8-s38': [mol('NO₂ — burchakli, toq elektronli molekula', 'no2')],
   'g8-s39': [flow('Ammiakdan nitrat kislota olish bosqichlari', NITRIC_ACID), mol('HNO₃ — yassi molekula', 'hno3')],
+  'g9-s11': [mol('Karbonat-ion yassi, uchala C–O bog‘ teng (delokallashgan)', 'co3', 'co2')],
+  'g9-s13': [mol('Kremnezyom va silikatlarning qurilish bloki — SiO₄ tetraedri', 'sio4')],
   'g9-s16': [mol('Metall panjaralar: qotishmalarda boshqa atomlar shu panjaraga kiradi', 'cu_fcc', 'fe_bcc')],
   'g9-s17': [mol('Metall kristall panjaralari: Cu (YMK) va α-Fe (HMK)', 'cu_fcc', 'fe_bcc')],
   'g9-s18': [flow('Temir elektrokimyoviy korroziyasining bosqichlari', RUSTING)],
   'g9-s22': [flow('Solve (ammiakli) usulida soda olish', SOLVAY)],
+  'g9-s24': [flow('Vaqtinchalik va doimiy qattiqlikni yo‘qotish', WATER_SOFTENING)],
   'g9-s25': [
     { kind: 'electrolysis', purpose: 'Al₂O₃ suyuqlanmasi elektrolizi (Holl–Eru)', spec: {
       title: 'Al₂O₃ ning kriolitdagi suyuqlanmasi elektrolizi', cation: 'Al^3+', anion: 'O^2-',
@@ -43,6 +47,8 @@ export const visuals: Record<string, Visual[]> = {
   ],
   'g9-s27': [flow('Al(OH)₃ ning kislota va ishqorda erishi', AMPHOTERIC_AL)],
   'g9-s32': [flow('Cr(+3) va Cr(+6) birikmalari ranglari, xromat ⇄ dixromat', CHROMIUM_COLOURS)],
+  'g9-s33': [flow('KMnO₄: muhitga qarab Mn²⁺, MnO₂ yoki MnO₄²⁻', PERMANGANATE_MEDIA)],
+  'g9-s35': [flow('Fe²⁺/Fe³⁺ sifat reaksiyalari', IRON_TESTS)],
   'g9-s36': [flow('Domna pechi zonalari va qarshi oqim', BLAST_FURNACE)],
   'g8-s40': [mol('Oq fosfor P₄ — kuchlangan tetraedr', 'p4')],
   'g9-s8': [mol('Olmos va grafit: bir element — ikki panjara', 'diamond', 'graphite')],
