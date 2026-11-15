@@ -15,7 +15,7 @@ PHASE: 4 Graphics — MOSTLY DONE
 DONE: reusable 3D MoleculeScene (Three.js/R3F/Drei, lazy, demand frameloop, toggle-to-rotate, WebGL fallback), 22 tested models on 18 lessons;
   2D electrolysis; ProcessFlow (contact process, HNO₃, rusting, Solvay, blast furnace); rate + equilibrium explorers (logic unit-tested)
   + Al₂O₃ electrolysis, Cu/Fe cells, Al(OH)₃, Cr, Mn, Fe tests, softening, CO₃²⁻, SiO₄⁴⁻ → 35/53 lessons with a visual
-NEXT: real-iPhone checklist run; teacher review of agent-written lessons; per-figure audit for the 18 table-only lessons
+NEXT: run docs/QA_IPHONE.md on a real iPhone 11; teacher review of agent-written lessons; per-figure audit for the 18 table-only lessons
 ```
 
 ```
