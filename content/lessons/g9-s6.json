@@ -1,0 +1,488 @@
+{
+  "id": "g9-s6",
+  "status": "seed-verified",
+  "pages": [
+    29,
+    30,
+    31
+  ],
+  "summary": "Elektrolit eritmalarida ion almashinish reaksiyasi ionlar birikib cho‘kma, gaz yoki kuchsiz elektrolit (masalan, suv) hosil qilsagina oxirigacha boradi. Tenglama molekulyar, to‘liq ionli va qisqa ionli shaklda yoziladi.",
+  "keyConcepts": [
+    "Reaksiya oxirigacha boradi, agar mahsulotlardan biri: (1) erimaydigan cho‘kma, (2) gaz, (3) kuchsiz elektrolit (suv, {H2CO3}, {NH3·H2O}, kuchsiz kislota).",
+    "Ionli tenglamada faqat kuchli, eruvchan elektrolitlar ionlarga ajratib yoziladi; cho‘kma, gaz, kuchsiz elektrolit va oksidlar molekulyar formulada qoladi.",
+    "Ikki tomonda bir xil takrorlanuvchi ionlar («tomoshabin ionlar») qisqartirilib qisqa ionli tenglama olinadi.",
+    "Neytrallanish reaksiyasining mohiyati hamma kuchli kislota + kuchli asos juftlari uchun bir xil: {H^+} + {OH^-} → {H2O}.",
+    "Ionlarni aniqlash: har bir ionga xos reaktiv va kuzatiladigan belgi (cho‘kma rangi, gaz hidi, alanga rangi) bor."
+  ],
+  "tables": [
+    {
+      "id": "conditions",
+      "title": "Reaksiya oxirigacha borish shartlari",
+      "columns": [
+        {
+          "key": "cond",
+          "label": "Shart"
+        },
+        {
+          "key": "mol",
+          "label": "Molekulyar tenglama",
+          "reaction": true
+        },
+        {
+          "key": "short",
+          "label": "Qisqa ionli tenglama",
+          "reaction": true
+        }
+      ],
+      "rows": [
+        {
+          "id": "neut",
+          "cells": {
+            "cond": "Kuchsiz elektrolit — suv (neytrallanish)",
+            "mol": "neut",
+            "short": "neutS"
+          },
+          "detail": {
+            "concept": "Kislota {H^+} berib, ishqor {OH^-} berib suv hosil qiladi; tomoshabin ionlar ({K^+}, {Cl^-}) qisqartiriladi. Lakmus qizildan binafshaga o‘tadi.",
+            "reactionIds": [
+              "neut",
+              "neutS"
+            ],
+            "observation": "Lakmusli kislota eritmasiga ishqor tomizilsa, rang qizildan binafshaga o‘tadi.",
+            "pages": [
+              29,
+              30
+            ]
+          }
+        },
+        {
+          "id": "baso4",
+          "cells": {
+            "cond": "Cho‘kma: oq {BaSO4}",
+            "mol": "baso4",
+            "short": "baso4S"
+          },
+          "detail": {
+            "concept": "To‘liq ionli yozuv: {Ba^2+} + 2{Cl^-} + 2{Na^+} + {SO4^2-} → 2{Na^+} + 2{Cl^-} + {BaSO4}↓. Tomoshabin ionlar: {Na^+}, {Cl^-}.",
+            "reactionIds": [
+              "baso4",
+              "baso4S"
+            ],
+            "examTip": "{Ba(NO3)2} + {K2SO4} reaksiyasining qisqa ionli tenglamasi ham xuddi shunday: {Ba^2+} + {SO4^2-} → {BaSO4}↓.",
+            "pages": [
+              30
+            ]
+          }
+        },
+        {
+          "id": "agcl",
+          "cells": {
+            "cond": "Cho‘kma: oq-pag‘a {AgCl}",
+            "mol": "agcl",
+            "short": "agclS"
+          }
+        },
+        {
+          "id": "cuoh",
+          "cells": {
+            "cond": "Cho‘kma: ko‘k {Cu(OH)2}",
+            "mol": "cuoh",
+            "short": "cuohS"
+          }
+        },
+        {
+          "id": "h2s",
+          "cells": {
+            "cond": "Gaz: {H2S} (o‘tkir hidli)",
+            "mol": "h2s",
+            "short": "h2sS"
+          },
+          "detail": {
+            "concept": "Kuchli kislota kuchsiz kislota tuzidan kuchsiz kislotani siqib chiqaradi; {H2S} gaz holida ajraladi.",
+            "reactionIds": [
+              "h2s",
+              "h2sS"
+            ],
+            "pages": [
+              30
+            ]
+          }
+        },
+        {
+          "id": "co2",
+          "cells": {
+            "cond": "Gaz: {CO2} (kuchsiz {H2CO3} parchalanadi)",
+            "mol": "co2",
+            "short": "co2S"
+          },
+          "detail": {
+            "concept": "Karbonatga kislota ta’sir etsa avval kuchsiz {H2CO3} hosil bo‘ladi, u darhol {H2O} va {CO2} ga parchalanadi. Ohakli suvni loyqalatadi.",
+            "reactionIds": [
+              "co2",
+              "co2S"
+            ],
+            "pages": [
+              31
+            ]
+          }
+        },
+        {
+          "id": "nh3",
+          "cells": {
+            "cond": "Gaz: {NH3} (ammiak hidi, qizdirilganda)",
+            "mol": "nh3",
+            "short": "nh3S"
+          },
+          "detail": {
+            "concept": "Ammoniy tuzi ishqor bilan reaksiyaga kirishsa, ammiak ajraladi. Qisqa ionli tenglamasi neytrallanishnikiga o‘xshab suv hosil qiladi, lekin {NH3} ham chiqadi.",
+            "reactionIds": [
+              "nh3",
+              "nh3S"
+            ],
+            "observation": "O‘tkir ammiak hidi; hid namlangan lakmus qog‘ozini ko‘kartiradi.",
+            "pages": [
+              30,
+              31
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "qualitative",
+      "title": "Ionlarni aniqlash (sifat reaksiyalari)",
+      "columns": [
+        {
+          "key": "ion",
+          "label": "Aniqlanadigan ion"
+        },
+        {
+          "key": "reagent",
+          "label": "Reaktiv"
+        },
+        {
+          "key": "sign",
+          "label": "Belgi"
+        },
+        {
+          "key": "eq",
+          "label": "Qisqa ionli tenglama",
+          "reaction": true
+        }
+      ],
+      "rows": [
+        {
+          "id": "ba",
+          "cells": {
+            "ion": "{Ba^2+}",
+            "reagent": "{SO4^2-}",
+            "sign": "oq cho‘kma",
+            "eq": "baso4S"
+          }
+        },
+        {
+          "id": "cl",
+          "cells": {
+            "ion": "{Cl^-}",
+            "reagent": "{Ag^+}",
+            "sign": "oq-pag‘a cho‘kma, vaqt o‘tishi bilan qorayadi",
+            "eq": "agclS"
+          }
+        },
+        {
+          "id": "i",
+          "cells": {
+            "ion": "{I^-}",
+            "reagent": "{Ag^+}",
+            "sign": "sariq cho‘kma",
+            "eq": "agiS"
+          }
+        },
+        {
+          "id": "cu",
+          "cells": {
+            "ion": "{Cu^2+}",
+            "reagent": "{OH^-}",
+            "sign": "ko‘k cho‘kma",
+            "eq": "cuohS"
+          }
+        },
+        {
+          "id": "fe3",
+          "cells": {
+            "ion": "{Fe^3+}",
+            "reagent": "{OH^-}",
+            "sign": "qo‘ng‘ir cho‘kma",
+            "eq": "fe3S"
+          }
+        },
+        {
+          "id": "fe2",
+          "cells": {
+            "ion": "{Fe^2+}",
+            "reagent": "{OH^-}",
+            "sign": "och yashil cho‘kma, havoda qo‘ng‘irlashadi",
+            "eq": "fe2S"
+          }
+        },
+        {
+          "id": "al",
+          "cells": {
+            "ion": "{Al^3+}",
+            "reagent": "{OH^-}",
+            "sign": "oq cho‘kma; ortiqcha {OH^-} da eriydi",
+            "eq": "alS"
+          },
+          "detail": {
+            "concept": "Aluminiy gidroksid amfoter: ishqorning mo‘l miqdorida eriydi.",
+            "reactionIds": [
+              "alS",
+              "alEx"
+            ],
+            "pages": [
+              31
+            ]
+          }
+        },
+        {
+          "id": "nh4",
+          "cells": {
+            "ion": "{NH4^+}",
+            "reagent": "{OH^-} (qizdirish)",
+            "sign": "ammiak hidi",
+            "eq": "nh3S"
+          }
+        },
+        {
+          "id": "co3",
+          "cells": {
+            "ion": "{CO3^2-}",
+            "reagent": "{H^+}",
+            "sign": "{CO2} ajraladi, ohakli suv loyqalanadi",
+            "eq": "co2S"
+          }
+        },
+        {
+          "id": "s",
+          "cells": {
+            "ion": "{S^2-}",
+            "reagent": "{Pb^2+}",
+            "sign": "qora cho‘kma {PbS}",
+            "eq": "pbsS"
+          }
+        }
+      ]
+    },
+    {
+      "id": "algorithm",
+      "title": "Ionli tenglamani yozish tartibi",
+      "columns": [
+        {
+          "key": "step",
+          "label": "Qadam"
+        },
+        {
+          "key": "rule",
+          "label": "Qoida"
+        },
+        {
+          "key": "ex",
+          "label": "Misol: {BaCl2} + {Na2SO4}"
+        }
+      ],
+      "rows": [
+        {
+          "id": "s1",
+          "cells": {
+            "step": "1",
+            "rule": "Molekulyar tenglamani tuzib, koeffitsiyentlarni qo‘ying",
+            "ex": "{BaCl2} + {Na2SO4} → 2{NaCl} + {BaSO4}↓"
+          }
+        },
+        {
+          "id": "s2",
+          "cells": {
+            "step": "2",
+            "rule": "Kuchli eruvchan elektrolitlarni ionlarga yozing; cho‘kma, gaz, kuchsiz elektrolit molekula holida qoladi",
+            "ex": "{Ba^2+} + 2{Cl^-} + 2{Na^+} + {SO4^2-} → 2{Na^+} + 2{Cl^-} + {BaSO4}↓"
+          }
+        },
+        {
+          "id": "s3",
+          "cells": {
+            "step": "3",
+            "rule": "Ikki tomonda bir xil ionlarni qisqartiring",
+            "ex": "qisqaradi: 2{Na^+}, 2{Cl^-}"
+          }
+        },
+        {
+          "id": "s4",
+          "cells": {
+            "step": "4",
+            "rule": "Atomlar va zaryad saqlanishini tekshiring",
+            "ex": "{Ba^2+} + {SO4^2-} → {BaSO4}↓: zaryad 0 = 0"
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {
+    "neut": {
+      "equation": "HCl + KOH → KCl + H2O"
+    },
+    "neutS": {
+      "equation": "H^+ + OH^- → H2O"
+    },
+    "baso4": {
+      "equation": "BaCl2 + Na2SO4 → 2NaCl + BaSO4↓",
+      "observation": "Oq cho‘kma tushadi (kislotada ham erimaydi)"
+    },
+    "baso4S": {
+      "equation": "Ba^2+ + SO4^2- → BaSO4↓"
+    },
+    "agcl": {
+      "equation": "AgNO3 + KCl → AgCl↓ + KNO3",
+      "observation": "Oq-pag‘a cho‘kma"
+    },
+    "agclS": {
+      "equation": "Ag^+ + Cl^- → AgCl↓"
+    },
+    "agiS": {
+      "equation": "Ag^+ + I^- → AgI↓"
+    },
+    "cuoh": {
+      "equation": "CuSO4 + 2NaOH → Cu(OH)2↓ + Na2SO4",
+      "observation": "Ko‘k cho‘kma"
+    },
+    "cuohS": {
+      "equation": "Cu^2+ + 2OH^- → Cu(OH)2↓"
+    },
+    "fe3S": {
+      "equation": "Fe^3+ + 3OH^- → Fe(OH)3↓"
+    },
+    "fe2S": {
+      "equation": "Fe^2+ + 2OH^- → Fe(OH)2↓"
+    },
+    "alS": {
+      "equation": "Al^3+ + 3OH^- → Al(OH)3↓"
+    },
+    "alEx": {
+      "equation": "Al(OH)3 + OH^- → [Al(OH)4]^-",
+      "conditions": "ishqor mo‘l"
+    },
+    "h2s": {
+      "equation": "Na2S + 2HCl → 2NaCl + H2S↑",
+      "observation": "O‘tkir «chirigan tuxum» hidi"
+    },
+    "h2sS": {
+      "equation": "S^2- + 2H^+ → H2S↑"
+    },
+    "co2": {
+      "equation": "Na2CO3 + 2HCl → 2NaCl + H2O + CO2↑",
+      "observation": "Gaz pufakchalari ajraladi"
+    },
+    "co2S": {
+      "equation": "CO3^2- + 2H^+ → H2O + CO2↑"
+    },
+    "nh3": {
+      "equation": "NH4Cl + NaOH → NaCl + NH3↑ + H2O",
+      "conditions": "qizdirish"
+    },
+    "nh3S": {
+      "equation": "NH4^+ + OH^- → NH3↑ + H2O"
+    },
+    "pbsS": {
+      "equation": "Pb^2+ + S^2- → PbS↓"
+    }
+  },
+  "clarifications": [
+    {
+      "text": "Darslikning 30-betida {H2S} «suvda erimaydigan gaz» deyilgan. {H2S} suvda oz bo‘lsa-da eriydi; kuchli kislota ta’sirida u eritmadan gaz holida chiqib ketadi, shuning uchun reaksiya oxirigacha boradi.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslikning 31-betidagi 7-jadvalda {NH4^+} ionini aniqlash uchun qizdirish shart: sovuqda kuchsiz {NH3·H2O} hosil bo‘lib, hid sezilarsiz bo‘lishi mumkin.",
+      "source": "additionalVerifiedSource"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g9-s6-q1",
+      "type": "Y1",
+      "skill": "qisqa ionli tenglama",
+      "difficulty": 1,
+      "stem": "{Ba(NO3)2} va {K2SO4} eritmalari aralashtirilganda qaysi qisqa ionli tenglama to‘g‘ri?",
+      "choices": [
+        "{K^+} + {NO3^-} → {KNO3}",
+        "{Ba^2+} + {SO4^2-} → {BaSO4}↓",
+        "{Ba(NO3)2} + {SO4^2-} → {BaSO4}↓ + 2{NO3^-}",
+        "reaksiya bormaydi"
+      ],
+      "answer": 1,
+      "solution": "Cho‘kma — {BaSO4}; {K^+} va {NO3^-} tomoshabin ionlar. Qisqa tenglamada faqat {Ba^2+} va {SO4^2-}. {Ba(NO3)2} kuchli elektrolit, shuning uchun ionlarga ajratib yoziladi."
+    },
+    {
+      "id": "g9-s6-q2",
+      "type": "O1",
+      "skill": "cho‘kma massasi",
+      "difficulty": 2,
+      "stem": "Tarkibida 11,7 g {NaCl} bo‘lgan eritmaga ortiqcha {AgNO3} eritmasi qo‘shildi. Hosil bo‘lgan {AgCl} cho‘kmasining massasini (g) hisoblang.",
+      "answer": 28.7,
+      "tolerance": 0.1,
+      "unit": "g",
+      "solution": "{NaCl} + {AgNO3} → {AgCl}↓ + {NaNO3}. n({NaCl}) = 11,7 / 58,5 = 0,2 mol; n({AgCl}) = 0,2 mol; M({AgCl}) = 143,5 g/mol; m = 0,2 · 143,5 = 28,7 g."
+    },
+    {
+      "id": "g9-s6-q3",
+      "type": "Y2",
+      "skill": "ionlarni aniqlash",
+      "difficulty": 2,
+      "stem": "Ionni uni aniqlashda kuzatiladigan belgi bilan moslashtiring.",
+      "left": [
+        "{Cu^2+}",
+        "{Ba^2+}",
+        "{Cl^-}",
+        "{Fe^3+}"
+      ],
+      "right": [
+        "{Ag^+} bilan oq-pag‘a cho‘kma",
+        "{OH^-} bilan qo‘ng‘ir cho‘kma",
+        "{OH^-} bilan ko‘k cho‘kma",
+        "{SO4^2-} bilan oq cho‘kma"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "solution": "{Cu^2+} + 2{OH^-} → {Cu(OH)2}↓ (ko‘k); {Ba^2+} + {SO4^2-} → {BaSO4}↓ (oq); {Ag^+} + {Cl^-} → {AgCl}↓ (oq-pag‘a); {Fe^3+} + 3{OH^-} → {Fe(OH)3}↓ (qo‘ng‘ir)."
+    },
+    {
+      "id": "g9-s6-q4",
+      "type": "Y1",
+      "skill": "reaksiya oxirigacha borishi",
+      "difficulty": 2,
+      "stem": "Quyidagi eritma juftlaridan qaysi biri o‘zaro oxirigacha boruvchi reaksiyaga kirishmaydi?",
+      "choices": [
+        "{NaCl} va {KNO3}",
+        "{Na2CO3} va {HCl}",
+        "{CuSO4} va {NaOH}",
+        "{K2S} va {H2SO4}"
+      ],
+      "answer": 0,
+      "solution": "Natriy xlorid va kaliy nitrat aralashganda cho‘kma, gaz yoki kuchsiz elektrolit hosil bo‘lmaydi: barcha ionlar eritmada qoladi. Boshqa juftlarda mos ravishda {CO2}, {Cu(OH)2}↓, {H2S}↑ hosil bo‘ladi."
+    },
+    {
+      "id": "g9-s6-q5",
+      "type": "O1",
+      "skill": "gaz hajmi",
+      "difficulty": 2,
+      "stem": "16,8 g {NaHCO3} ortiqcha xlorid kislota eritmasi bilan reaksiyaga kirishdi ({NaHCO3} + {HCl} → {NaCl} + {H2O} + {CO2}). Ajralgan gazning hajmini (n.sh., l) toping.",
+      "answer": 4.48,
+      "tolerance": 0.02,
+      "unit": "l",
+      "solution": "M({NaHCO3}) = 23 + 1 + 12 + 48 = 84 g/mol; n = 16,8 / 84 = 0,2 mol; n({CO2}) = 0,2 mol; V = 0,2 · 22,4 = 4,48 l."
+    }
+  ]
+}

@@ -24,7 +24,10 @@ checks schema, page ranges, reaction atom/charge balance and question keys.
 Safari → Ulashish → Bosh ekranga qo‘shish. After the first online load every lesson, search and practice works offline.
 Updates are checked on launch/foreground/reconnect and applied only after “Yangilash”.
 
-## Deployment
-Not deployed. Private access control is not implemented yet — see `docs/KNOWN_ISSUES.md`. `vercel.json` holds SPA rewrites and security headers.
+## Deployment (Vercel)
+- `middleware.ts` protects every request (HTML, JS, lesson chunks, icons, service worker) with a password + signed HttpOnly cookie.
+- Set `ACCESS_PASSWORD` (long random string) in Vercel → Project → Settings → Environment Variables (Production + Preview). Without it the site returns 503 (fails closed).
+- Pushing to `main` on GitHub triggers a production deploy. `vercel.json` holds SPA rewrites and security headers (CSP, noindex).
+- Offline privacy trade-off: once a device has logged in and cached the app, the content stays readable on that device.
 
 Docs: `docs/PROGRESS.md`, `docs/DECISIONS.md`, `docs/SOURCE_MAP.md`, `docs/EXAM_BLUEPRINT.md`, `docs/VISUAL_COVERAGE.md`, `docs/KNOWN_ISSUES.md`.

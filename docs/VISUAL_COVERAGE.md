@@ -1,6 +1,6 @@
 # Visual coverage plan
 
-Status: **not started** (Phase 3). No 3D/animation code exists yet; Three.js is not installed. Rows below are the
+Status: **started** — G9 §19 electrolysis scenes (CuCl₂, NaCl) are built and balance-tested (`src/features/visuals/registry.ts`). Three.js is not installed. Rows below are the
 planned high-value scenes for the seeded lessons only; the full 85-section audit of textbook figures is pending.
 
 | sectionId | Concept | Why it helps | Type | Chemistry to verify | Fallback |

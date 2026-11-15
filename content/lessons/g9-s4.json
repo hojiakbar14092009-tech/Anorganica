@@ -1,0 +1,414 @@
+{
+  "id": "g9-s4",
+  "status": "seed-verified",
+  "pages": [
+    24,
+    25
+  ],
+  "summary": "Dissotsiatsiya nuqtayi nazaridan: kislota — kation sifatida faqat {H^+} beradi; asos (ishqor) — anion sifatida faqat {OH^-}; tuz — metall (yoki {NH4^+}) kationi va kislota qoldig‘i anionini hosil qiladi. Ko‘p negizli kislotalar va nordon tuzlar bosqichli dissotsiatsiyalanadi.",
+  "keyConcepts": [
+    "Kislotalarning umumiy xossalari ({H^+} ioni), ishqorlarning umumiy xossalari ({OH^-} ioni) dissotsiatsiyadan kelib chiqadi; tuzlar uchun umumiy ion yo‘q.",
+    "Ko‘p negizli kislotalar bosqichli dissotsiatsiyalanadi: har bosqichda bitta {H^+} ajraladi, keyingi bosqichlar ancha kuchsizroq.",
+    "Nordon tuz ({NaHSO4}, {NaHCO3}) avval metall kationi va nordon qoldiq anioniga ajraladi, so‘ng nordon qoldiq yana {H^+} berishi mumkin.",
+    "Dissotsiatsiya tenglamasida atomlar va zaryad saqlanishi shart: ion oldidagi koeffitsiyent formuladagi indeksga teng.",
+    "Eritmada {H^+} aslida {H3O^+} (gidroksoniy) holida bo‘ladi; yozuvni soddalashtirish uchun {H^+} deb yoziladi."
+  ],
+  "tables": [
+    {
+      "id": "acids",
+      "title": "Kislotalarning dissotsiatsiyasi",
+      "columns": [
+        {
+          "key": "acid",
+          "label": "Kislota"
+        },
+        {
+          "key": "step",
+          "label": "Bosqich"
+        },
+        {
+          "key": "eq",
+          "label": "Dissotsiatsiya tenglamasi",
+          "reaction": true
+        },
+        {
+          "key": "note",
+          "label": "Izoh"
+        }
+      ],
+      "rows": [
+        {
+          "id": "hno3",
+          "cells": {
+            "acid": "{HNO3}",
+            "step": "bir negizli",
+            "eq": "hno3",
+            "note": "kuchli kislota"
+          }
+        },
+        {
+          "id": "hbr",
+          "cells": {
+            "acid": "{HBr}",
+            "step": "bir negizli",
+            "eq": "hbr",
+            "note": "kuchli kislota"
+          }
+        },
+        {
+          "id": "h2so4a",
+          "cells": {
+            "acid": "{H2SO4}",
+            "step": "1-bosqich",
+            "eq": "h2so4a",
+            "note": "amalda to‘liq"
+          },
+          "detail": {
+            "concept": "Sulfat kislotaning ikkinchi bosqichi ({HSO4^-}) to‘liq emas: gidrosulfat-ion o‘rtacha kuchli kislota, shuning uchun muvozanat ⇄ bilan yoziladi.",
+            "reactionIds": [
+              "h2so4a",
+              "h2so4b"
+            ],
+            "pages": [
+              24
+            ]
+          }
+        },
+        {
+          "id": "h2so4b",
+          "cells": {
+            "acid": "{H2SO4}",
+            "step": "2-bosqich",
+            "eq": "h2so4b",
+            "note": "qisman"
+          }
+        },
+        {
+          "id": "h3po4a",
+          "cells": {
+            "acid": "{H3PO4}",
+            "step": "1-bosqich",
+            "eq": "h3po4a",
+            "note": "asosiy bosqich"
+          },
+          "detail": {
+            "concept": "Uch negizli kislota uch bosqichda dissotsiatsiyalanadi; har keyingi bosqich oldingisidan ancha kuchsiz. Eritmada asosan {H3PO4}, {H2PO4^-} va oz miqdorda {HPO4^2-} bo‘ladi.",
+            "reactionIds": [
+              "h3po4a",
+              "h3po4b",
+              "h3po4c"
+            ],
+            "examTip": "Bosqichli dissotsiatsiya tenglamalarini alohida yozing, ularni qo‘shib yuborib {PO4^3-} hosil qilmang.",
+            "pages": [
+              24
+            ]
+          }
+        },
+        {
+          "id": "h3po4b",
+          "cells": {
+            "acid": "{H3PO4}",
+            "step": "2-bosqich",
+            "eq": "h3po4b",
+            "note": "kuchsizroq"
+          }
+        },
+        {
+          "id": "h3po4c",
+          "cells": {
+            "acid": "{H3PO4}",
+            "step": "3-bosqich",
+            "eq": "h3po4c",
+            "note": "juda kuchsiz"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bases",
+      "title": "Asoslarning dissotsiatsiyasi",
+      "columns": [
+        {
+          "key": "base",
+          "label": "Asos"
+        },
+        {
+          "key": "eq",
+          "label": "Dissotsiatsiya tenglamasi",
+          "reaction": true
+        },
+        {
+          "key": "note",
+          "label": "Izoh"
+        }
+      ],
+      "rows": [
+        {
+          "id": "naoh",
+          "cells": {
+            "base": "{NaOH}",
+            "eq": "naoh",
+            "note": "ishqor"
+          }
+        },
+        {
+          "id": "caoh2",
+          "cells": {
+            "base": "{Ca(OH)2}",
+            "eq": "caoh2",
+            "note": "ishqor; ikki gidroksid-ion"
+          },
+          "detail": {
+            "concept": "Ishqorning umumiy xossalari (indikator rangi, kislota va kislotali oksid bilan reaksiya) {OH^-} ioni bilan bog‘liq.",
+            "pages": [
+              25
+            ]
+          }
+        },
+        {
+          "id": "baoh2",
+          "cells": {
+            "base": "{Ba(OH)2}",
+            "eq": "baoh2",
+            "note": "ishqor"
+          }
+        },
+        {
+          "id": "nh3",
+          "cells": {
+            "base": "{NH3·H2O} («ammoniy gidroksid»)",
+            "eq": "nh3",
+            "note": "kuchsiz asos; kation — {NH4^+}"
+          }
+        }
+      ]
+    },
+    {
+      "id": "salts",
+      "title": "Tuzlarning dissotsiatsiyasi",
+      "columns": [
+        {
+          "key": "salt",
+          "label": "Tuz"
+        },
+        {
+          "key": "kind",
+          "label": "Turi"
+        },
+        {
+          "key": "eq",
+          "label": "Dissotsiatsiya tenglamasi",
+          "reaction": true
+        }
+      ],
+      "rows": [
+        {
+          "id": "k2so4",
+          "cells": {
+            "salt": "{K2SO4}",
+            "kind": "o‘rta tuz",
+            "eq": "k2so4"
+          }
+        },
+        {
+          "id": "al2so43",
+          "cells": {
+            "salt": "{Al2(SO4)3}",
+            "kind": "o‘rta tuz",
+            "eq": "al2so43"
+          }
+        },
+        {
+          "id": "nh42so4",
+          "cells": {
+            "salt": "{(NH4)2SO4}",
+            "kind": "ammoniy tuzi",
+            "eq": "nh42so4"
+          }
+        },
+        {
+          "id": "nahso4",
+          "cells": {
+            "salt": "{NaHSO4}",
+            "kind": "nordon tuz (1-bosqich)",
+            "eq": "nahso4"
+          },
+          "detail": {
+            "concept": "Nordon tuz eritmasida kation sifatida metall ioni bilan birga {H^+} ham paydo bo‘ladi, shuning uchun {NaHSO4} eritmasi kislotali muhitga ega.",
+            "reactionIds": [
+              "nahso4",
+              "hso4"
+            ],
+            "pages": [
+              25
+            ]
+          }
+        },
+        {
+          "id": "hso4",
+          "cells": {
+            "salt": "{NaHSO4}",
+            "kind": "nordon qoldiq (2-bosqich)",
+            "eq": "hso4"
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {
+    "hno3": {
+      "equation": "HNO3 → H^+ + NO3^-"
+    },
+    "hbr": {
+      "equation": "HBr → H^+ + Br^-"
+    },
+    "h2so4a": {
+      "equation": "H2SO4 → H^+ + HSO4^-"
+    },
+    "h2so4b": {
+      "equation": "HSO4^- ⇄ H^+ + SO4^2-"
+    },
+    "h3po4a": {
+      "equation": "H3PO4 ⇄ H^+ + H2PO4^-"
+    },
+    "h3po4b": {
+      "equation": "H2PO4^- ⇄ H^+ + HPO4^2-"
+    },
+    "h3po4c": {
+      "equation": "HPO4^2- ⇄ H^+ + PO4^3-"
+    },
+    "naoh": {
+      "equation": "NaOH → Na^+ + OH^-"
+    },
+    "caoh2": {
+      "equation": "Ca(OH)2 → Ca^2+ + 2OH^-"
+    },
+    "baoh2": {
+      "equation": "Ba(OH)2 → Ba^2+ + 2OH^-"
+    },
+    "nh3": {
+      "equation": "NH3·H2O ⇄ NH4^+ + OH^-"
+    },
+    "k2so4": {
+      "equation": "K2SO4 → 2K^+ + SO4^2-"
+    },
+    "al2so43": {
+      "equation": "Al2(SO4)3 → 2Al^3+ + 3SO4^2-"
+    },
+    "nh42so4": {
+      "equation": "(NH4)2SO4 → 2NH4^+ + SO4^2-"
+    },
+    "nahso4": {
+      "equation": "NaHSO4 → Na^+ + HSO4^-"
+    },
+    "hso4": {
+      "equation": "HSO4^- ⇄ H^+ + SO4^2-"
+    }
+  },
+  "clarifications": [
+    {
+      "text": "Darslikning 24-betida sulfat kislotaning ikkinchi bosqichi ({HSO4^-} → {H^+} + {SO4^2-}) bir tomonlama strelka bilan yozilgan. Aslida {HSO4^-} o‘rtacha kuchli kislota (K ≈ 10⁻²): bu bosqich qisman boradi, shuning uchun muvozanat belgisi ⇄ qo‘llanadi.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslikning 24–25-betlaridagi «faqat {H^+} hosil qiladi» ta’rifi suvli eritmalar uchun to‘g‘ri; {H^+} ioni suvda gidroksoniy {H3O^+} holida bo‘ladi.",
+      "source": "additionalVerifiedSource"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g9-s4-q1",
+      "type": "Y1",
+      "skill": "bosqichli dissotsiatsiya",
+      "difficulty": 2,
+      "stem": "Ortofosfat kislotaning ikkinchi bosqichida qaysi anion hosil bo‘ladi?",
+      "choices": [
+        "{H2PO4^-}",
+        "{HPO4^2-}",
+        "{PO4^3-}",
+        "{P^5+}"
+      ],
+      "answer": 1,
+      "solution": "1-bosqich: {H3PO4} ⇄ {H^+} + {H2PO4^-}; 2-bosqich: {H2PO4^-} ⇄ {H^+} + {HPO4^2-}; 3-bosqich: {HPO4^2-} ⇄ {H^+} + {PO4^3-}."
+    },
+    {
+      "id": "g9-s4-q2",
+      "type": "O1",
+      "skill": "ionlar miqdori",
+      "difficulty": 2,
+      "stem": "0,2 mol {(NH4)3PO4} suvda to‘la dissotsiatsiyalandi. Eritmadagi barcha ionlarning umumiy miqdorini (mol) toping.",
+      "answer": 0.8,
+      "tolerance": 0.01,
+      "unit": "mol",
+      "solution": "{(NH4)3PO4} → 3{NH4^+} + {PO4^3-}: bir formula birligidan 4 ta ion. n(ionlar) = 4 · 0,2 = 0,8 mol.",
+      "mistakes": "Faqat kationlarni (0,6 mol) yoki faqat formula birliklari sonini hisoblash."
+    },
+    {
+      "id": "g9-s4-q3",
+      "type": "Y2",
+      "skill": "dissotsiatsiya tenglamalari",
+      "difficulty": 2,
+      "stem": "Elektrolit va uning dissotsiatsiyasidan hosil bo‘ladigan ionlarni moslashtiring.",
+      "left": [
+        "{Ca(OH)2}",
+        "{NaHCO3}",
+        "{Al2(SO4)3}",
+        "{H2SO4} (1-bosqich)"
+      ],
+      "right": [
+        "{Na^+} + {HCO3^-}",
+        "{Ca^2+} + 2{OH^-}",
+        "{H^+} + {HSO4^-}",
+        "2{Al^3+} + 3{SO4^2-}"
+      ],
+      "answer": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "solution": "Nordon tuz {NaHCO3} → {Na^+} + {HCO3^-}; {Al2(SO4)3} → 2{Al^3+} + 3{SO4^2-}; sulfat kislotaning 1-bosqichida {H^+} va {HSO4^-} hosil bo‘ladi."
+    },
+    {
+      "id": "g9-s4-q4",
+      "type": "Y1",
+      "skill": "asos ta’rifi",
+      "difficulty": 1,
+      "stem": "Quyidagi moddalardan qaysi biri dissotsiatsiyalanganda anion sifatida faqat gidroksid-ion hosil qiladi?",
+      "choices": [
+        "{NaHSO4}",
+        "{KOH}",
+        "{CH3COOH}",
+        "{NH4Cl}"
+      ],
+      "answer": 1,
+      "solution": "{KOH} → {K^+} + {OH^-}: anion faqat {OH^-} — bu asos. {NaHSO4} va {CH3COOH} {H^+} beradi; {NH4Cl} — tuz."
+    },
+    {
+      "id": "g9-s4-q5",
+      "type": "O1",
+      "skill": "ion konsentratsiyasi",
+      "difficulty": 2,
+      "stem": "0,5 mol/l {BaCl2} eritmasida (to‘la dissotsiatsiya deb hisoblang) xlorid-ionlarning konsentratsiyasi qancha?",
+      "answer": 1,
+      "tolerance": 0.01,
+      "unit": "mol/l",
+      "solution": "{BaCl2} → {Ba^2+} + 2{Cl^-}: c({Cl^-}) = 2 · 0,5 = 1,0 mol/l."
+    },
+    {
+      "id": "g9-s4-q6",
+      "type": "Y1",
+      "skill": "nordon tuz",
+      "difficulty": 2,
+      "stem": "{NaHSO4} suvdagi eritmasining muhiti qanday?",
+      "choices": [
+        "kislotali",
+        "ishqoriy",
+        "neytral",
+        "indikatorsiz aniqlab bo‘lmaydi"
+      ],
+      "answer": 0,
+      "solution": "{NaHSO4} → {Na^+} + {HSO4^-}; {HSO4^-} ⇄ {H^+} + {SO4^2-}. Eritmada {H^+} ortiqcha — muhit kislotali."
+    }
+  ]
+}

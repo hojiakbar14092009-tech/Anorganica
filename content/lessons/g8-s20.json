@@ -294,6 +294,38 @@
       ],
       "answer": 0,
       "solution": "Mn⁺⁴ → Mn⁺² (2 ē oladi): {MnO2} — oksidlovchi; Cl⁻ → Cl₂⁰ — qaytaruvchi."
+    },
+    {
+      "id": "g8-s20-q90",
+      "type": "O2",
+      "skill": "elektron balans + stexiometriya",
+      "difficulty": 3,
+      "stem": "Kaliy permanganat bilan konsentrlangan xlorid kislota reaksiyasi tenglamasini elektron balans usulida tenglang va 3,16 g {KMnO4} dan n.sh.da necha litr xlor olinishini hisoblang.",
+      "steps": [
+        "Oksidlanish darajalarini qo‘ying va o‘zgaradigan atomlarni toping.",
+        "Elektron balans tuzing va koeffitsiyentlarni toping.",
+        "Tenglamani to‘liq tenglang (K, H, O ni tekshiring).",
+        "KMnO₄ miqdorini va Cl₂ hajmini hisoblang."
+      ],
+      "rubric": [
+        {
+          "criterion": "Mn⁺⁷ + 5ē → Mn⁺² (×2); 2Cl⁻ − 2ē → Cl₂⁰ (×5) to‘g‘ri yozilgan",
+          "points": 8
+        },
+        {
+          "criterion": "2KMnO₄ + 16HCl → 2KCl + 2MnCl₂ + 5Cl₂ + 8H₂O to‘liq tenglangan",
+          "points": 7
+        },
+        {
+          "criterion": "n(KMnO₄) = 3,16/158 = 0,02 mol; n(Cl₂) = 0,05 mol",
+          "points": 6
+        },
+        {
+          "criterion": "V(Cl₂) = 0,05 · 22,4 = 1,12 l, birliklar bilan",
+          "points": 4
+        }
+      ],
+      "solution": "2KMnO₄ + 16HCl → 2KCl + 2MnCl₂ + 5Cl₂ + 8H₂O. n(KMnO₄) = 3,16 / 158 = 0,02 mol; n(Cl₂) = 0,02 · 5/2 = 0,05 mol; V = 1,12 l."
     }
   ]
 }

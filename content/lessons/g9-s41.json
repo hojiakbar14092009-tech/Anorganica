@@ -1,0 +1,381 @@
+{
+  "id": "g9-s41",
+  "status": "seed-verified",
+  "pages": [
+    189,
+    190,
+    191
+  ],
+  "summary": "Har bir kimyoviy ishlab chiqarish bir necha reaksiyaga asoslangan. Kimyoviy kinetika (tezlik, uni belgilovchi omillar) va kimyoviy muvozanat (siljitish usullari) jarayonning optimal sharoitini — haroratni, bosimni, katalizatorni — tanlash uchun kerak.",
+  "keyConcepts": [
+    "Kimyoviy texnologiya — kam xomashyo va energiya sarflab sifatli mahsulot olish usullarini o‘rganadi; uning nazariy asosi kimyoviy kinetika va muvozanatdir.",
+    "Qaytmas reaksiyalar ({S}, {FeS2}, ko‘mir yonishi) oxirigacha boradi; qaytar reaksiyalarda ({N2} + 3{H2} ⇄ 2{NH3}, 2{SO2} + {O2} ⇄ 2{SO3}) muvozanat holati tanlanadi.",
+    "Haroratning ortishi tezlikni oshiradi: v₂/v₁ = γ^(Δt/10) (γ — harorat koeffitsiyenti); ekzotermik qaytar reaksiyada haroratni ortishi muvozanatni chapga (reagentlar tomonga) siljitadi — shuning uchun kompromiss harorat tanlanadi.",
+    "Katalizator tezlikni oshiradi, lekin muvozanat holatini siljitmaydi; bosim gaz molekulalari soni kamayadigan tomonga ta’sir qiladi.",
+    "O‘zbekistonda kimyo fani va sanoati toza suv, oziq-ovqat, dori, qurilish materiallari va boshqa ehtiyojlarni ta’minlashda ishtirok etadi (190–191-betlar)."
+  ],
+  "tables": [
+    {
+      "id": "processes",
+      "title": "Sanoat jarayonlarining kimyoviy asosi",
+      "columns": [
+        {
+          "key": "proc",
+          "label": "Jarayon"
+        },
+        {
+          "key": "eq",
+          "label": "Reaksiya",
+          "reaction": true
+        },
+        {
+          "key": "type",
+          "label": "Turi"
+        },
+        {
+          "key": "cond",
+          "label": "Sanoat sharoiti"
+        }
+      ],
+      "rows": [
+        {
+          "id": "s",
+          "cells": {
+            "proc": "Oltingugurtning yonishi ({H2SO4} ishlab chiqarish)",
+            "eq": "sBurn",
+            "type": "qaytmas, ekzotermik",
+            "cond": "havo oqimida yoqish"
+          }
+        },
+        {
+          "id": "fes2",
+          "cells": {
+            "proc": "Kolchedanni kuydirish",
+            "eq": "pyrite",
+            "type": "qaytmas, ekzotermik",
+            "cond": "maydalangan ruda, «qaynar qatlam» pechi"
+          },
+          "detail": {
+            "concept": "Qattiq xomashyoni maydalash sirt yuzasini oshiradi — reaksiya tezligi ortadi.",
+            "pages": [
+              189
+            ]
+          }
+        },
+        {
+          "id": "so3",
+          "cells": {
+            "proc": "{SO2} ni oksidlash",
+            "eq": "so3",
+            "type": "qaytar, ekzotermik",
+            "cond": "{V2O5} katalizator, ≈ 400–500 °C"
+          },
+          "detail": {
+            "concept": "Past harorat muvozanatni {SO3} tomon siljitadi, lekin tezlikni kamaytiradi; katalizator ishlay oladigan o‘rtacha harorat tanlanadi.",
+            "reactionIds": [
+              "so3"
+            ],
+            "examTip": "Ekzotermik reaksiyada muvozanat uchun past harorat, tezlik uchun yuqori harorat qulay — kompromiss.",
+            "pages": [
+              189
+            ]
+          }
+        },
+        {
+          "id": "nh3",
+          "cells": {
+            "proc": "Ammiak sintezi",
+            "eq": "nh3",
+            "type": "qaytar, ekzotermik",
+            "cond": "temir katalizator, ≈ 400–500 °C, yuqori bosim"
+          },
+          "detail": {
+            "concept": "Gaz molekulalari soni kamayadi (4 → 2), shuning uchun bosimni oshirish muvozanatni {NH3} tomon siljitadi. Hosil bo‘lgan ammiak sovitib ajratib turiladi, reaksiyaga kirishmagan {N2} va {H2} qaytariladi.",
+            "reactionIds": [
+              "nh3"
+            ],
+            "pages": [
+              189
+            ]
+          }
+        },
+        {
+          "id": "nox",
+          "cells": {
+            "proc": "Ammiakni oksidlash ({HNO3} olishning birinchi bosqichi)",
+            "eq": "nox",
+            "type": "amalda qaytmas, ekzotermik",
+            "cond": "Pt-Rh katalizator, ≈ 800–900 °C"
+          }
+        }
+      ]
+    },
+    {
+      "id": "factors",
+      "title": "Tezlik va muvozanatga ta’sir etuvchi omillar",
+      "columns": [
+        {
+          "key": "factor",
+          "label": "Omil"
+        },
+        {
+          "key": "rate",
+          "label": "Tezlikka ta’siri"
+        },
+        {
+          "key": "eqm",
+          "label": "Muvozanatga ta’siri"
+        },
+        {
+          "key": "ex",
+          "label": "Sanoatda"
+        }
+      ],
+      "rows": [
+        {
+          "id": "temp",
+          "cells": {
+            "factor": "Haroratni oshirish",
+            "rate": "ortadi (v₂/v₁ = γ^(Δt/10))",
+            "eqm": "endotermik tomonga siljiydi",
+            "ex": "tezlik va muvozanat orasida kelishuv"
+          }
+        },
+        {
+          "id": "pres",
+          "cells": {
+            "factor": "Bosimni oshirish (gazlar)",
+            "rate": "ortadi",
+            "eqm": "gaz molekulalari soni kam tomonga",
+            "ex": "{NH3} sintezida yuqori bosim"
+          }
+        },
+        {
+          "id": "conc",
+          "cells": {
+            "factor": "Reagent konsentratsiyasini oshirish",
+            "rate": "ortadi",
+            "eqm": "mahsulotlar tomonga",
+            "ex": "mahsulotni ajratib turish muvozanatni o‘ngga suradi"
+          }
+        },
+        {
+          "id": "cat",
+          "cells": {
+            "factor": "Katalizator",
+            "rate": "ortadi",
+            "eqm": "siljitmaydi (to‘g‘ri va teskari reaksiyani baravar tezlashtiradi)",
+            "ex": "{V2O5}, {Fe}, {Pt}"
+          }
+        },
+        {
+          "id": "surf",
+          "cells": {
+            "factor": "Qattiq moddani maydalash",
+            "rate": "ortadi",
+            "eqm": "ta’sir qilmaydi",
+            "ex": "kolchedanni kuydirish"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gamma",
+      "title": "Harorat koeffitsiyenti: tezlik necha marta ortadi",
+      "columns": [
+        {
+          "key": "dt",
+          "label": "Haroratning ortishi, °C"
+        },
+        {
+          "key": "g2",
+          "label": "γ = 2 bo‘lsa"
+        },
+        {
+          "key": "g3",
+          "label": "γ = 3 bo‘lsa"
+        }
+      ],
+      "rows": [
+        {
+          "id": "d10",
+          "cells": {
+            "dt": "10",
+            "g2": "2 marta",
+            "g3": "3 marta"
+          }
+        },
+        {
+          "id": "d20",
+          "cells": {
+            "dt": "20",
+            "g2": "4 marta",
+            "g3": "9 marta"
+          }
+        },
+        {
+          "id": "d30",
+          "cells": {
+            "dt": "30",
+            "g2": "8 marta",
+            "g3": "27 marta"
+          },
+          "detail": {
+            "concept": "Formula: v₂/v₁ = γ^(Δt/10). Harorat 10 °C ko‘tarilsa tezlik γ marta ortadi; 30 °C da γ³ marta.",
+            "examTip": "Reaksiya vaqti tezlikka teskari proporsional: tezlik 8 marta ortsa, vaqt 8 marta kamayadi.",
+            "pages": [
+              191
+            ]
+          }
+        },
+        {
+          "id": "d40",
+          "cells": {
+            "dt": "40",
+            "g2": "16 marta",
+            "g3": "81 marta"
+          }
+        },
+        {
+          "id": "d50",
+          "cells": {
+            "dt": "50",
+            "g2": "32 marta",
+            "g3": "243 marta"
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {
+    "sBurn": {
+      "equation": "S + O2 → SO2",
+      "conditions": "yoqish"
+    },
+    "pyrite": {
+      "equation": "4FeS2 + 11O2 → 2Fe2O3 + 8SO2",
+      "conditions": "kuydirish, yuqori harorat"
+    },
+    "so3": {
+      "equation": "2SO2 + O2 ⇄ 2SO3",
+      "conditions": "V₂O₅, ≈ 400–500 °C",
+      "note": "ekzotermik"
+    },
+    "nh3": {
+      "equation": "N2 + 3H2 ⇄ 2NH3",
+      "conditions": "Fe katalizator, ≈ 400–500 °C, yuqori bosim",
+      "note": "ekzotermik"
+    },
+    "nox": {
+      "equation": "4NH3 + 5O2 → 4NO + 6H2O",
+      "conditions": "Pt-Rh katalizator, ≈ 800–900 °C",
+      "note": "ekzotermik"
+    }
+  },
+  "clarifications": [
+    {
+      "text": "Darslikning 189-betida ammiakni oksidlash qaytar reaksiyalar qatoriga kiritilgan. Pt-katalizatorli 4{NH3} + 5{O2} → 4{NO} + 6{H2O} reaksiyasi sanoat sharoitida (≈ 800 °C) amalda oxirigacha boradi, ya’ni qaytmas deb qaraladi; qaytar sanoat jarayonlariga ammiak sintezi va 2{SO2} + {O2} ⇄ 2{SO3} misol bo‘ladi.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslikning 191-betidagi 5-mashqda ({C2H4} + 3{O2} → 2{CO2} + 2{H2O}) «kislorod konsentratsiyasi 3 marta ortsa tezlik 3³ = 27 marta ortadi» degan xulosa stexiometrik koeffitsiyentlar tezlik tenglamasidagi darajalarga teng bo‘lgandagina (elementar reaksiyada) to‘g‘ri; murakkab yonish jarayonida daraja tajribada aniqlanadi. 4-mashqdagi «hajm 3 marta oshirilsa» ibora ham noaniq: hajm oshsa konsentratsiya kamayadi (kamaysa — oshadi).",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslikning 191-betidagi 3- va 2-mashqlarda aniq javoblar butun son emas: 1200 = γ⁵ → γ ≈ 4,1 (taxminan 4); 3ⁿ = 100 uchun Δt = 10 · lg100 / lg3 ≈ 42 °C.",
+      "source": "additionalVerifiedSource"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g9-s41-q1",
+      "type": "O1",
+      "skill": "harorat koeffitsiyenti",
+      "difficulty": 2,
+      "stem": "Reaksiyaning harorat koeffitsiyenti 2 ga teng. Harorat 20 °C dan 60 °C gacha ko‘tarilsa, tezlik necha marta ortadi?",
+      "answer": 16,
+      "tolerance": 0.1,
+      "solution": "Δt = 40 °C → v₂/v₁ = 2^(40/10) = 2⁴ = 16 marta.",
+      "mistakes": "Δt/10 o‘rniga Δt ni daraja qilib olish."
+    },
+    {
+      "id": "g9-s41-q2",
+      "type": "O1",
+      "skill": "harorat koeffitsiyenti",
+      "difficulty": 2,
+      "stem": "Harorat koeffitsiyenti 3 bo‘lgan reaksiya tezligi 81 marta ortishi uchun haroratni necha °C ga ko‘tarish kerak?",
+      "answer": 40,
+      "tolerance": 0.5,
+      "unit": "°C",
+      "solution": "3^(Δt/10) = 81 = 3⁴ → Δt/10 = 4 → Δt = 40 °C."
+    },
+    {
+      "id": "g9-s41-q3",
+      "type": "Y1",
+      "skill": "muvozanatni siljitish",
+      "difficulty": 2,
+      "stem": "2{SO2} + {O2} ⇄ 2{SO3} + Q (ekzotermik). Qaysi o‘zgarish muvozanatni {SO3} hosil bo‘lish tomon siljitadi?",
+      "choices": [
+        "haroratni pasaytirish",
+        "katalizator {V2O5} qo‘shish",
+        "bosimni kamaytirish",
+        "{O2} ni tizimdan chiqarib tashlash"
+      ],
+      "answer": 0,
+      "solution": "Ekzotermik reaksiyada sovitish muvozanatni o‘ngga suradi; katalizator muvozanatni siljitmaydi; bosim kamaysa yoki {O2} chiqarib tashlansa, muvozanat chap tomonga siljiydi. Amalda tezlik uchun ≈ 450 °C tanlanadi."
+    },
+    {
+      "id": "g9-s41-q4",
+      "type": "Y2",
+      "skill": "sanoat katalizatorlari",
+      "difficulty": 2,
+      "stem": "Sanoat reaksiyasini uning asosiy sharoiti bilan moslashtiring.",
+      "left": [
+        "2{SO2} + {O2} ⇄ 2{SO3}",
+        "{N2} + 3{H2} ⇄ 2{NH3}",
+        "4{NH3} + 5{O2} → 4{NO} + 6{H2O}",
+        "4{FeS2} + 11{O2} → 2{Fe2O3} + 8{SO2}"
+      ],
+      "right": [
+        "Pt-Rh to‘r, ≈ 800 °C",
+        "qaynar qatlam pechi, katalizator kerak emas",
+        "{V2O5}, ≈ 450 °C",
+        "temir katalizator, yuqori bosim"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "solution": "Kontakt usulda {V2O5}; ammiak sintezida temir va yuqori bosim; ammiak oksidlanishida platina-rodiy; kolchedanni kuydirish — qattiq moddaning havo bilan yonishi."
+    },
+    {
+      "id": "g9-s41-q5",
+      "type": "O1",
+      "skill": "muvozanat hisobi",
+      "difficulty": 2,
+      "stem": "1 mol {N2} va 3 mol {H2} aralashmasida {N2} ning 30 % i reaksiyaga kirishdi. Hosil bo‘lgan ammiak miqdorini (mol) toping.",
+      "answer": 0.6,
+      "tolerance": 0.01,
+      "unit": "mol",
+      "solution": "n({N2}, reaksiyaga kirishgan) = 0,3 mol; {N2} + 3{H2} → 2{NH3}: n({NH3}) = 2 · 0,3 = 0,6 mol.",
+      "mistakes": "Ammiakni 1 : 1 nisbatda (0,3 mol) hisoblash."
+    },
+    {
+      "id": "g9-s41-q6",
+      "type": "Y1",
+      "skill": "katalizator",
+      "difficulty": 1,
+      "stem": "Katalizator qaytar reaksiyada nimani o‘zgartiradi?",
+      "choices": [
+        "to‘g‘ri va teskari reaksiya tezligini baravar oshiradi, muvozanatni siljitmaydi",
+        "muvozanatni mahsulotlar tomon siljitadi",
+        "reaksiya issiqligini oshiradi",
+        "reaksiya unumini oshiradi"
+      ],
+      "answer": 0,
+      "solution": "Katalizator faollanish energiyasini pasaytirib muvozanatga tezroq erishtiradi, ammo muvozanat konstantasini o‘zgartirmaydi."
+    }
+  ]
+}

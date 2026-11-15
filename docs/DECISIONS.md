@@ -15,4 +15,6 @@
 | 11 | Local state in localStorage, zod-validated, JSON export/import | Few KB; synchronous; corrupt data falls back to defaults |
 | 12 | `registerType: 'prompt'` + update checks on foreground/reconnect | Never reloads under a student; iOS gives no background-update guarantees |
 | 13 | No full 43-task exam simulation | Textbooks lack organic chemistry/analysis; spec §3.4 |
-| 14 | Private access: not yet implemented; candidate = Vercel Deployment Protection or an Edge Middleware cookie gate | Needs the user's Vercel plan check (Phase 5) |
+| 14 | Private access = Vercel Routing Middleware (`middleware.ts`): password from `ACCESS_PASSWORD` env, HMAC-signed HttpOnly cookie (180 days), every path gated, fails closed | Hobby plan's Vercel Authentication does not protect the production domain; middleware does, at no cost |
+| 15 | Lessons for §§1–20, 40–44 (G8) and all G9 except §19 authored by parallel sub-agents with the same brief, then gated by the same validators | Throughput; correctness still enforced by schema + balance tests |
+| 16 | Visuals: 2D SVG scenes registered in `src/features/visuals/registry.ts`, equations balance-tested; Three.js not added yet | Lightest correct option first; 3D only where it adds learning value |

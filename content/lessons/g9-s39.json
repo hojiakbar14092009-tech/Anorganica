@@ -1,0 +1,430 @@
+{
+  "id": "g9-s39",
+  "status": "seed-verified",
+  "pages": [
+    180,
+    181,
+    182,
+    183,
+    184,
+    185
+  ],
+  "summary": "Atmosfera chang, tutun va zaharli gazlar ({SO2}, {NO2}, {CO}, {H2S}…) bilan, gidrosfera esa oqova suvlar bilan ifloslanadi. Himoya: changni tutish (ho‘llash, elektrofiltr), gazlarni tozalash, oqova suvni koagulyatsiya va dezinfeksiya bilan tozalash, chiqindilardan foydali mahsulot olish.",
+  "keyConcepts": [
+    "Atmosfera ifloslanishi: tabiiy; yoqilg‘i yonishi (sanoat, transport, isitish); chiqindilarni, jumladan polimerlarni yoqish.",
+    "Changni kamaytirish: ho‘llash («ho‘l usulda ruda qazish»), elektrofiltrlar va adsorbentlar.",
+    "Kislotali yomg‘ir: {SO2} va azot oksidlari suv bilan kislotalar hosil qiladi ({H2SO3}, {H2SO4}, {HNO3}).",
+    "Oqova suvni tozalash: filtrlash → ohak ({CaO}) bilan ishqoriy muhit → {Al2(SO4)3} qo‘shib {Al(OH)3} cho‘kmasi (u aralashmalarni o‘zi bilan cho‘ktiradi) → xlorli ohak bilan dezinfeksiya.",
+    "Pestitsidlar sekin parchalanadi va oziq-ovqat zanjiri orqali to‘planadi: ularni ehtiyotkorlik bilan ishlatish yoki biologik usullar bilan almashtirish kerak."
+  ],
+  "tables": [
+    {
+      "id": "pollutants",
+      "title": "Atmosferani ifloslantiruvchilar",
+      "columns": [
+        {
+          "key": "sub",
+          "label": "Modda"
+        },
+        {
+          "key": "src",
+          "label": "Asosiy manba"
+        },
+        {
+          "key": "eq",
+          "label": "Hosil bo‘lish tenglamasi",
+          "reaction": true
+        },
+        {
+          "key": "harm",
+          "label": "Zarari"
+        }
+      ],
+      "rows": [
+        {
+          "id": "so2",
+          "cells": {
+            "sub": "{SO2}",
+            "src": "oltingugurtli ko‘mir, neft, sulfid rudalarini kuydirish",
+            "eq": "sBurn",
+            "harm": "nafas yo‘llarini tirnaydi, kislotali yomg‘ir hosil qiladi"
+          }
+        },
+        {
+          "id": "co",
+          "cells": {
+            "sub": "{CO}",
+            "src": "yoqilg‘ining chala yonishi",
+            "eq": "cBurn",
+            "harm": "qon gemoglobini bilan birikib zaharlaydi"
+          }
+        },
+        {
+          "id": "no",
+          "cells": {
+            "sub": "{NO}, {NO2}",
+            "src": "yuqori haroratli dvigatel va pechlar",
+            "eq": "noForm",
+            "harm": "nafas yo‘llarini yallig‘lantiradi, kislotali yomg‘ir"
+          },
+          "detail": {
+            "concept": "Yuqori haroratda havo azoti kislorod bilan birikadi; {NO} havoda tezda {NO2} ga oksidlanadi.",
+            "reactionIds": [
+              "noForm",
+              "no2Form"
+            ],
+            "pages": [
+              181,
+              182
+            ]
+          }
+        },
+        {
+          "id": "h2s",
+          "cells": {
+            "sub": "{H2S}",
+            "src": "kimyo korxonalari, tabiiy gaz",
+            "eq": "h2sBurn",
+            "harm": "zaharli; yonganda {SO2} hosil qiladi"
+          }
+        },
+        {
+          "id": "dust",
+          "cells": {
+            "sub": "Chang (aerozollar)",
+            "src": "shaxta va ruda konlari, ruda boyitish",
+            "eq": "",
+            "harm": "salomatlikka zarar, o‘simliklar o‘sishini qiyinlashtiradi, xomashyo isrof bo‘ladi"
+          },
+          "detail": {
+            "concept": "Darslikka ko‘ra ko‘mir shaxtalarida chang miqdori 500–3000 mg/m³ ga yetadi (180–181-betlar). Tutib qolish: ho‘llash, elektrofiltr, adsorbent.",
+            "pages": [
+              180,
+              181
+            ]
+          }
+        },
+        {
+          "id": "poly",
+          "cells": {
+            "sub": "{CO}, {HCl}, {HCN} va boshqalar",
+            "src": "polimer chiqindilarini yoqish",
+            "eq": "",
+            "harm": "zaharli gazlar; polimer chiqindisini yoqmasdan qayta ishlash kerak"
+          }
+        }
+      ]
+    },
+    {
+      "id": "acid-rain",
+      "title": "Kislotali yomg‘ir va chiqindi gazlarni tozalash",
+      "columns": [
+        {
+          "key": "what",
+          "label": "Jarayon"
+        },
+        {
+          "key": "eq",
+          "label": "Tenglama",
+          "reaction": true
+        },
+        {
+          "key": "note",
+          "label": "Izoh"
+        }
+      ],
+      "rows": [
+        {
+          "id": "h2so3",
+          "cells": {
+            "what": "{SO2} suvda eriydi",
+            "eq": "so2h2o",
+            "note": "kuchsiz sulfit kislota"
+          }
+        },
+        {
+          "id": "so3",
+          "cells": {
+            "what": "{SO2} ning oksidlanishi",
+            "eq": "so2ox",
+            "note": "atmosferada oksidlovchilar va katalizator ishtirokida (umumiy tenglama)"
+          }
+        },
+        {
+          "id": "h2so4",
+          "cells": {
+            "what": "{SO3} suv bilan",
+            "eq": "so3h2o",
+            "note": "sulfat kislota — kislotali yomg‘ir tarkibida"
+          }
+        },
+        {
+          "id": "hno3",
+          "cells": {
+            "what": "{NO2} suv va kislorod bilan",
+            "eq": "no2h2o",
+            "note": "nitrat kislota"
+          },
+          "detail": {
+            "concept": "Kislotali yomg‘ir tuproq, suv havzalari va binolarga zarar yetkazadi. Oldini olish: yoqilg‘ini oltingugurtdan tozalash, chiqindi gazlarni tozalash, toza energiya manbalari.",
+            "pages": [
+              185
+            ]
+          }
+        },
+        {
+          "id": "scrub",
+          "cells": {
+            "what": "Chiqindi gazdan {SO2} ni ohak bilan tutish",
+            "eq": "scrub",
+            "note": "sanoatda gazni tozalash usuli"
+          }
+        },
+        {
+          "id": "scrub2",
+          "cells": {
+            "what": "Hosil bo‘lgan sulfitni oksidlash",
+            "eq": "scrub2",
+            "note": "gips {CaSO4} olinadi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "title": "Oqova suvni tozalash bosqichlari",
+      "columns": [
+        {
+          "key": "step",
+          "label": "Bosqich"
+        },
+        {
+          "key": "what",
+          "label": "Nima qilinadi"
+        },
+        {
+          "key": "eq",
+          "label": "Tenglama",
+          "reaction": true
+        }
+      ],
+      "rows": [
+        {
+          "id": "filter",
+          "cells": {
+            "step": "1. Filtrlash",
+            "what": "qo‘pol aralashmalar ajratiladi",
+            "eq": ""
+          }
+        },
+        {
+          "id": "lime",
+          "cells": {
+            "step": "2. Ishqoriy muhit",
+            "what": "so‘ndirilmagan ohak {CaO} qo‘shiladi (suvda {Ca(OH)2} hosil qiladi)",
+            "eq": "lime"
+          }
+        },
+        {
+          "id": "coag",
+          "cells": {
+            "step": "3. Koagulyatsiya",
+            "what": "{Al2(SO4)3} qo‘shiladi: hosil bo‘lgan {Al(OH)3} cho‘kmasi qum va aralashmalarni o‘zi bilan cho‘ktiradi",
+            "eq": "coag"
+          },
+          "detail": {
+            "concept": "Qisqa ionli yozuv: {Al^3+} + 3{OH^-} → {Al(OH)3}↓. Jelatinsimon cho‘kma mayda zarrachalarni yopishtirib, tindirishni tezlatadi.",
+            "reactionIds": [
+              "coag",
+              "coagS"
+            ],
+            "observation": "Loyqa suvda oq pag‘asimon cho‘kma hosil bo‘lib, asta cho‘kadi.",
+            "pages": [
+              182
+            ]
+          }
+        },
+        {
+          "id": "disinf",
+          "cells": {
+            "step": "4. Dezinfeksiya",
+            "what": "tingan suvga xlorli ohak qo‘shilib, mikroblar yo‘qotiladi",
+            "eq": ""
+          },
+          "detail": {
+            "concept": "Darslikka ko‘ra O‘zbekistonda oqova suvlarni tozalash uchun 600 dan ortiq inshoot ishlaydi (182-bet).",
+            "pages": [
+              182
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {
+    "sBurn": {
+      "equation": "S + O2 → SO2"
+    },
+    "cBurn": {
+      "equation": "2C + O2 → 2CO",
+      "conditions": "kislorod yetishmaganda"
+    },
+    "noForm": {
+      "equation": "N2 + O2 ⇄ 2NO",
+      "conditions": "yuqori harorat (dvigatel, pech)"
+    },
+    "no2Form": {
+      "equation": "2NO + O2 → 2NO2",
+      "observation": "Rangsiz {NO} havoda qo‘ng‘ir {NO2} ga aylanadi"
+    },
+    "h2sBurn": {
+      "equation": "2H2S + 3O2 → 2SO2 + 2H2O"
+    },
+    "so2h2o": {
+      "equation": "SO2 + H2O ⇄ H2SO3"
+    },
+    "so2ox": {
+      "equation": "2SO2 + O2 ⇄ 2SO3",
+      "conditions": "atmosferada katalizator/oksidlovchilar ishtirokida"
+    },
+    "so3h2o": {
+      "equation": "SO3 + H2O → H2SO4"
+    },
+    "no2h2o": {
+      "equation": "4NO2 + O2 + 2H2O → 4HNO3"
+    },
+    "scrub": {
+      "equation": "SO2 + Ca(OH)2 → CaSO3 + H2O"
+    },
+    "scrub2": {
+      "equation": "2CaSO3 + O2 → 2CaSO4"
+    },
+    "lime": {
+      "equation": "CaO + H2O → Ca(OH)2"
+    },
+    "coag": {
+      "equation": "Al2(SO4)3 + 3Ca(OH)2 → 2Al(OH)3↓ + 3CaSO4",
+      "observation": "Oq jelatinsimon {Al(OH)3} cho‘kmasi"
+    },
+    "coagS": {
+      "equation": "Al^3+ + 3OH^- → Al(OH)3↓"
+    }
+  },
+  "clarifications": [
+    {
+      "text": "Darslikning 183-betida «akaritsid — kapalaklarga qarshi» deyilgan. Akaritsidlar kanalarga (o‘rgimchakkanalar, oqadilar) qarshi vositalardir; kapalak hamda boshqa hasharotlarga qarshi insektitsidlar ishlatiladi.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslikning 184-betida «dezinfeksiya — omborxonalardagi zararli hasharotlarni yo‘qotish» deyilgan. Hasharotlarni yo‘qotish — dezinseksiya; dezinfeksiya esa mikroblarni (bakteriya, virus) yo‘q qilishdir.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslikning 181–182-betlarida polimerlar yoqilganda «{Cl2}, {F2}» ham hosil bo‘lishi mumkinligi aytilgan. Yonish muhitida erkin ftor mavjud bo‘la olmaydi; xlorli polimerlar (polivinilxlorid) yonganda asosan {HCl}, ftorlilar yonganda {HF}, azotli polimerlar yonganda {HCN} va {NOx}, shuningdek {CO} hosil bo‘ladi.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslikning 182-betidagi «XXI asrning birinchi yarmida atmosferaga 3 milliard tonna chang…» ma’lumoti vaqt jihatidan noaniq (XXI asrning birinchi yarmi hali tugamagan) va manbasi ko‘rsatilmagan; shu sababli bu raqamlar darsda ishlatilmaydi.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslikda keltirilgan «ichish uchun yaroqli suv ≈ 1 %» (182-bet) taxminiy qiymat: Yerdagi suvning katta qismi sho‘r okeanlarda, chuchuk suvning ham ko‘p qismi muzliklarda; odamlar foydalana oladigan ulush juda kichik.",
+      "source": "additionalVerifiedSource"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g9-s39-q1",
+      "type": "Y1",
+      "skill": "kislotali yomg‘ir",
+      "difficulty": 1,
+      "stem": "Kislotali yomg‘ir hosil bo‘lishiga asosan qaysi gazlar sabab bo‘ladi?",
+      "choices": [
+        "{SO2} va {NO2}",
+        "{O2} va {N2}",
+        "{He} va {Ar}",
+        "{H2} va {He}"
+      ],
+      "answer": 0,
+      "solution": "{SO2} suv va kislorod bilan sulfat kislota, {NO2} nitrat kislota hosil qiladi; ular yomg‘ir suvini kislotalashtiradi."
+    },
+    {
+      "id": "g9-s39-q2",
+      "type": "O1",
+      "skill": "ifloslantiruvchi miqdori",
+      "difficulty": 2,
+      "stem": "Tarkibida 1,6 % oltingugurt bo‘lgan 5 t ko‘mir to‘la yondi ({S} + {O2} → {SO2}). Hosil bo‘lgan {SO2} massasini (kg) hisoblang.",
+      "answer": 160,
+      "tolerance": 0.5,
+      "unit": "kg",
+      "solution": "m(S) = 5000 · 0,016 = 80 kg; n(S) = 80 / 32 = 2,5 kmol; n({SO2}) = 2,5 kmol; M({SO2}) = 64 → m = 2,5 · 64 = 160 kg (massa S ning ikki baravari: 64/32 = 2)."
+    },
+    {
+      "id": "g9-s39-q3",
+      "type": "O1",
+      "skill": "gazni tozalash",
+      "difficulty": 2,
+      "stem": "Chiqindi gazdagi 6,4 g {SO2} ortiqcha ohak suti ({Ca(OH)2}) bilan to‘la tutildi ({SO2} + {Ca(OH)2} → {CaSO3} + {H2O}). Hosil bo‘lgan {CaSO3} massasini (g) toping.",
+      "answer": 12,
+      "tolerance": 0.1,
+      "unit": "g",
+      "solution": "n({SO2}) = 6,4 / 64 = 0,1 mol; n({CaSO3}) = 0,1 mol; M({CaSO3}) = 40 + 32 + 48 = 120 g/mol; m = 0,1 · 120 = 12 g."
+    },
+    {
+      "id": "g9-s39-q4",
+      "type": "Y2",
+      "skill": "pestitsidlar",
+      "difficulty": 2,
+      "stem": "Pestitsid turini u qarshi qo‘llanadigan ob’ekt bilan moslashtiring.",
+      "left": [
+        "Fungitsid",
+        "Gerbitsid",
+        "Insektitsid",
+        "Akaritsid"
+      ],
+      "right": [
+        "hasharotlarga qarshi",
+        "kanalarga qarshi",
+        "zamburug‘larga qarshi",
+        "begona o‘tlarga qarshi"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "solution": "Fungitsid — zamburug‘, gerbitsid — begona o‘t, insektitsid — hasharot, akaritsid — kana (darslikdagi «kapalak» noaniqligi tuzatilgan)."
+    },
+    {
+      "id": "g9-s39-q5",
+      "type": "Y1",
+      "skill": "suvni tozalash",
+      "difficulty": 2,
+      "stem": "Oqova suvni tozalashda hosil bo‘lgan {Al(OH)3} cho‘kmasining vazifasi nima?",
+      "choices": [
+        "Qum va mayda aralashmalarni o‘zi bilan birga cho‘ktiradi",
+        "Mikroblarni o‘ldiradi",
+        "Suvni yumshatadi",
+        "Suvni kislotali qiladi"
+      ],
+      "answer": 0,
+      "solution": "Jelatinsimon {Al(OH)3} mayda zarrachalarni yopishtirib cho‘ktiradi (koagulyatsiya); mikroblar esa xlorli ohak bilan yo‘qotiladi."
+    },
+    {
+      "id": "g9-s39-q6",
+      "type": "Y1",
+      "skill": "changni tutish",
+      "difficulty": 1,
+      "stem": "Quyidagi usullardan qaysi biri havoga ko‘tarilayotgan changni tutib qolish uchun ishlatiladi?",
+      "choices": [
+        "elektrofiltr va ho‘llash",
+        "changli jinslarni yoqish",
+        "ventilyatsiya orqali changni tashqariga chiqarish",
+        "changni suvsiz maydalash"
+      ],
+      "answer": 0,
+      "solution": "Darslikda changni tutish uchun ho‘llash, elektrofiltr va adsorbentlar tavsiya etilgan; ventilyatsiya changni atmosferaga chiqarib yuboradi."
+    }
+  ]
+}

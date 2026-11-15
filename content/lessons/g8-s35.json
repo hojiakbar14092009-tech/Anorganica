@@ -1,7 +1,13 @@
 {
   "id": "g8-s35",
   "status": "seed-verified",
-  "pages": [147, 148, 149, 150, 151],
+  "pages": [
+    147,
+    148,
+    149,
+    150,
+    151
+  ],
   "summary": "Sulfat kislota kontakt usulida olinadi: pirit (yoki S, H₂S) kuydirilib {SO2} olinadi → gaz tozalanib quritiladi → {V2O5} katalizatorida {SO3} ga oksidlanadi → {SO3} 98 % li {H2SO4} ga yuttirilib oleum hosil qilinadi.",
   "keyConcepts": [
     "Xomashyo: sof oltingugurt, pirit (temir kolchedani) {FeS2}, rangli metall sulfidlari (CuS, ZnS, PbS), {H2S}.",
@@ -14,49 +20,214 @@
       "id": "stages",
       "title": "Kontakt usuli bosqichlari",
       "columns": [
-        { "key": "stage", "label": "Bosqich, qurilma" },
-        { "key": "eq", "label": "Reaksiya", "reaction": true },
-        { "key": "cond", "label": "Sharoit va tamoyil" }
+        {
+          "key": "stage",
+          "label": "Bosqich, qurilma"
+        },
+        {
+          "key": "eq",
+          "label": "Reaksiya",
+          "reaction": true
+        },
+        {
+          "key": "cond",
+          "label": "Sharoit va tamoyil"
+        }
       ],
       "rows": [
-        { "id": "roast", "cells": { "stage": "1. Kuydirish pechi", "eq": "roast", "cond": "qaynovchi qatlam, qarshi oqim, mayda pirit, havo/kislorod mo‘l" },
-          "detail": { "concept": "Tezlikni oshirish omillari amalda: O₂ konsentratsiyasi ↑ va qattiq modda sirti ↑ (§33). Chiqindi — kuyundi ({Fe2O3}) metallurgiyada ishlatiladi.", "reactionIds": ["roast", "sulfur"], "pages": [147, 148] } },
-        { "id": "clean", "cells": { "stage": "2. Siklon, elektrofiltr, quritish minorasi", "eq": "", "cond": "chang va suv bug‘idan tozalash; quritgich — konts. H₂SO₄" } },
-        { "id": "contact", "cells": { "stage": "3. Issiqlik almashtirgich + kontakt apparati", "eq": "contact", "cond": "V₂O₅, 400–450 °C, ekzotermik, qaytar" },
-          "detail": { "concept": "Reaksiya ekzotermik: past haroratda SO₃ unumi yuqori (400 °C da ≈99 %, 600 °C da ≈73 %), lekin tezlik kichik. Shuning uchun murosaviy 400–450 °C va katalizator tanlanadi; ajralgan issiqlik kirayotgan gazni isitishga sarflanadi.", "reactionIds": ["contact"], "examTip": "Katalizator unumni oshirmaydi — muvozanatga tezroq erishtiradi (§34).", "pages": [148, 149] } },
-        { "id": "absorb", "cells": { "stage": "4. Yuttirish minorasi", "eq": "oleum", "cond": "SO₃ ni 98 % li H₂SO₄ ga yuttirish → oleum" },
-          "detail": { "concept": "Oleum keyin kerakli konsentratsiyagacha suyultiriladi: H₂SO₄·nSO₃ + nH₂O → (n+1)H₂SO₄.", "reactionIds": ["hydrate", "oleum"], "pages": [149] } }
+        {
+          "id": "roast",
+          "cells": {
+            "stage": "1. Kuydirish pechi",
+            "eq": "roast",
+            "cond": "qaynovchi qatlam, qarshi oqim, mayda pirit, havo/kislorod mo‘l"
+          },
+          "detail": {
+            "concept": "Tezlikni oshirish omillari amalda: O₂ konsentratsiyasi ↑ va qattiq modda sirti ↑ (§33). Chiqindi — kuyundi ({Fe2O3}) metallurgiyada ishlatiladi.",
+            "reactionIds": [
+              "roast",
+              "sulfur"
+            ],
+            "pages": [
+              147,
+              148
+            ]
+          }
+        },
+        {
+          "id": "clean",
+          "cells": {
+            "stage": "2. Siklon, elektrofiltr, quritish minorasi",
+            "eq": "",
+            "cond": "chang va suv bug‘idan tozalash; quritgich — konts. H₂SO₄"
+          }
+        },
+        {
+          "id": "contact",
+          "cells": {
+            "stage": "3. Issiqlik almashtirgich + kontakt apparati",
+            "eq": "contact",
+            "cond": "V₂O₅, 400–450 °C, ekzotermik, qaytar"
+          },
+          "detail": {
+            "concept": "Reaksiya ekzotermik: past haroratda SO₃ unumi yuqori (400 °C da ≈99 %, 600 °C da ≈73 %), lekin tezlik kichik. Shuning uchun murosaviy 400–450 °C va katalizator tanlanadi; ajralgan issiqlik kirayotgan gazni isitishga sarflanadi.",
+            "reactionIds": [
+              "contact"
+            ],
+            "examTip": "Katalizator unumni oshirmaydi — muvozanatga tezroq erishtiradi (§34).",
+            "pages": [
+              148,
+              149
+            ]
+          }
+        },
+        {
+          "id": "absorb",
+          "cells": {
+            "stage": "4. Yuttirish minorasi",
+            "eq": "oleum",
+            "cond": "SO₃ ni 98 % li H₂SO₄ ga yuttirish → oleum"
+          },
+          "detail": {
+            "concept": "Oleum keyin kerakli konsentratsiyagacha suyultiriladi: H₂SO₄·nSO₃ + nH₂O → (n+1)H₂SO₄.",
+            "reactionIds": [
+              "hydrate",
+              "oleum"
+            ],
+            "pages": [
+              149
+            ]
+          }
+        }
       ]
     }
   ],
   "reactions": {
-    "roast": { "equation": "4FeS2 + 11O2 → 2Fe2O3 + 8SO2", "conditions": "kuydirish" },
-    "sulfur": { "equation": "S + O2 → SO2" },
-    "h2s": { "equation": "2H2S + 3O2 → 2SO2 + 2H2O" },
-    "cu2s": { "equation": "Cu2S + 2O2 → 2CuO + SO2" },
-    "contact": { "equation": "2SO2 + O2 ⇄ 2SO3", "conditions": "V₂O₅, 400–450 °C, +Q" },
-    "hydrate": { "equation": "SO3 + H2O → H2SO4" },
-    "oleum": { "equation": "H2SO4 + SO3 → H2SO4·SO3", "conditions": "98 % H₂SO₄ da" }
+    "roast": {
+      "equation": "4FeS2 + 11O2 → 2Fe2O3 + 8SO2",
+      "conditions": "kuydirish"
+    },
+    "sulfur": {
+      "equation": "S + O2 → SO2"
+    },
+    "h2s": {
+      "equation": "2H2S + 3O2 → 2SO2 + 2H2O"
+    },
+    "cu2s": {
+      "equation": "Cu2S + 2O2 → 2CuO + SO2"
+    },
+    "contact": {
+      "equation": "2SO2 + O2 ⇄ 2SO3",
+      "conditions": "V₂O₅, 400–450 °C, +Q"
+    },
+    "hydrate": {
+      "equation": "SO3 + H2O → H2SO4"
+    },
+    "oleum": {
+      "equation": "H2SO4 + SO3 → H2SO4·SO3",
+      "conditions": "98 % H₂SO₄ da"
+    }
   },
   "questions": [
-    { "id": "g8-s35-q1", "type": "O1", "skill": "sanoat hisoblari", "difficulty": 3,
+    {
+      "id": "g8-s35-q1",
+      "type": "O1",
+      "skill": "sanoat hisoblari",
+      "difficulty": 3,
       "stem": "240 kg piritdan (FeS₂) nazariy jihatdan necha kg 100 % li sulfat kislota olish mumkin?",
-      "answer": 392, "tolerance": 0.5, "unit": "kg",
+      "answer": 392,
+      "tolerance": 0.5,
+      "unit": "kg",
       "solution": "FeS₂ → 2SO₂ → 2SO₃ → 2H₂SO₄. n(FeS₂) = 240 / 120 = 2 kmol; n(H₂SO₄) = 4 kmol; m = 4 · 98 = 392 kg.",
-      "mistakes": "Bitta FeS₂ dan bitta H₂SO₄ olish (196 kg) — piritda 2 ta S atomi bor." },
-    { "id": "g8-s35-q2", "type": "Y1", "skill": "texnologiya tamoyillari", "difficulty": 2,
+      "mistakes": "Bitta FeS₂ dan bitta H₂SO₄ olish (196 kg) — piritda 2 ta S atomi bor."
+    },
+    {
+      "id": "g8-s35-q2",
+      "type": "Y1",
+      "skill": "texnologiya tamoyillari",
+      "difficulty": 2,
       "stem": "Nima uchun SO₃ suvga emas, konsentrlangan sulfat kislotaga yuttiriladi?",
-      "choices": ["SO₃ suvda erimaydi", "suv bilan qiyin kondensatlanadigan kislota tumani hosil bo‘ladi", "suv katalizatorni zaharlaydi", "reaksiya endotermik"], "answer": 1,
-      "solution": "SO₃ + H₂O reaksiyasi juda ekzotermik; mayda H₂SO₄ tomchilaridan iborat tuman hosil bo‘lib, uni ushlab qolish qiyin." },
-    { "id": "g8-s35-q3", "type": "Y1", "skill": "muvozanat", "difficulty": 2,
+      "choices": [
+        "SO₃ suvda erimaydi",
+        "suv bilan qiyin kondensatlanadigan kislota tumani hosil bo‘ladi",
+        "suv katalizatorni zaharlaydi",
+        "reaksiya endotermik"
+      ],
+      "answer": 1,
+      "solution": "SO₃ + H₂O reaksiyasi juda ekzotermik; mayda H₂SO₄ tomchilaridan iborat tuman hosil bo‘lib, uni ushlab qolish qiyin."
+    },
+    {
+      "id": "g8-s35-q3",
+      "type": "Y1",
+      "skill": "muvozanat",
+      "difficulty": 2,
       "stem": "Kontakt apparatida harorat nima uchun 600 °C emas, 400–450 °C atrofida ushlab turiladi?",
-      "choices": ["katalizator 600 °C da eriydi", "to‘g‘ri reaksiya ekzotermik — yuqori haroratda SO₃ unumi kamayadi", "SO₂ 600 °C da parchalanadi", "bosim kamayadi"], "answer": 1,
-      "solution": "Le Shatelye prinsipi: ekzotermik reaksiyada harorat oshsa muvozanat chapga siljiydi (600 °C da unum ≈73 %). Juda past haroratda esa tezlik kichik — murosaviy harorat tanlanadi." },
-    { "id": "g8-s35-q4", "type": "Y2", "skill": "texnologiya bosqichlari", "difficulty": 1,
+      "choices": [
+        "katalizator 600 °C da eriydi",
+        "to‘g‘ri reaksiya ekzotermik — yuqori haroratda SO₃ unumi kamayadi",
+        "SO₂ 600 °C da parchalanadi",
+        "bosim kamayadi"
+      ],
+      "answer": 1,
+      "solution": "Le Shatelye prinsipi: ekzotermik reaksiyada harorat oshsa muvozanat chapga siljiydi (600 °C da unum ≈73 %). Juda past haroratda esa tezlik kichik — murosaviy harorat tanlanadi."
+    },
+    {
+      "id": "g8-s35-q4",
+      "type": "Y2",
+      "skill": "texnologiya bosqichlari",
+      "difficulty": 1,
       "stem": "Qurilmani unda boradigan jarayon bilan moslashtiring.",
-      "left": ["kuydirish pechi", "quritish minorasi", "kontakt apparati", "yuttirish minorasi"],
-      "right": ["SO₂ ning SO₃ ga oksidlanishi", "oleum hosil bo‘lishi", "pirit oksidlanib SO₂ hosil bo‘lishi", "gazning suv bug‘idan tozalanishi"],
-      "answer": [2, 3, 0, 1],
-      "solution": "Pech — FeS₂ → SO₂; quritish — konts. H₂SO₄ namlikni yutadi; kontakt — 2SO₂ + O₂ ⇄ 2SO₃; yuttirish — SO₃ + H₂SO₄ → oleum." }
+      "left": [
+        "kuydirish pechi",
+        "quritish minorasi",
+        "kontakt apparati",
+        "yuttirish minorasi"
+      ],
+      "right": [
+        "SO₂ ning SO₃ ga oksidlanishi",
+        "oleum hosil bo‘lishi",
+        "pirit oksidlanib SO₂ hosil bo‘lishi",
+        "gazning suv bug‘idan tozalanishi"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "solution": "Pech — FeS₂ → SO₂; quritish — konts. H₂SO₄ namlikni yutadi; kontakt — 2SO₂ + O₂ ⇄ 2SO₃; yuttirish — SO₃ + H₂SO₄ → oleum."
+    },
+    {
+      "id": "g8-s35-q90",
+      "type": "O2",
+      "skill": "sanoat hisoblari",
+      "difficulty": 3,
+      "stem": "Tarkibida 80 % {FeS2} bo‘lgan 1,5 t piritdan kontakt usulida 96 % li sulfat kislotaning qancha massasi olinadi? Umumiy unum 90 %.",
+      "steps": [
+        "Toza FeS₂ massasini toping.",
+        "Sxema bo‘yicha FeS₂ → 2H₂SO₄ nisbatini asoslang.",
+        "Nazariy H₂SO₄ massasini, so‘ng unumni hisobga oling.",
+        "96 % li eritma massasini toping."
+      ],
+      "rubric": [
+        {
+          "criterion": "m(FeS₂) = 1,5 · 0,8 = 1,2 t",
+          "points": 5
+        },
+        {
+          "criterion": "FeS₂ → 2SO₂ → 2SO₃ → 2H₂SO₄ (1 : 2) to‘g‘ri asoslangan",
+          "points": 7
+        },
+        {
+          "criterion": "n(FeS₂) = 10 kmol; m(H₂SO₄) nazariy = 1,96 t; amaliy = 1,764 t",
+          "points": 8
+        },
+        {
+          "criterion": "m(eritma) = 1,764 / 0,96 = 1,8375 t ≈ 1,84 t",
+          "points": 5
+        }
+      ],
+      "solution": "m(FeS₂) = 1,2 t = 1200 kg → n = 10 kmol → n(H₂SO₄) = 20 kmol → 1960 kg nazariy; 90 % unum: 1764 kg; 96 % li eritma: 1764 / 0,96 = 1837,5 kg ≈ 1,84 t."
+    }
   ]
 }
