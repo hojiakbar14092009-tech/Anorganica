@@ -1,0 +1,79 @@
+{
+  "id": "g8-s31",
+  "status": "seed-verified",
+  "pages": [136, 137, 138],
+  "summary": "Oltingugurtning ikki muhim oksidi: {SO2} (+4) — o‘tkir hidli zaharli gaz, ham oksidlovchi, ham qaytaruvchi; {SO3} (+6) — 45 °C da qaynaydigan suyuqlik (17 °C da kristallanadi), suv bilan sulfat kislota, sulfat kislotada eriganda oleum hosil qiladi.",
+  "keyConcepts": [
+    "{SO2} sanoatda sulfidlarni (pirit, rux aldamasi) havoda kuydirib, laboratoriyada sulfitlarga kislota ta’sir ettirib olinadi.",
+    "{SO2} — kislotali oksid: suv bilan beqaror sulfit kislota, ishqorlar bilan sulfitlar hosil qiladi; 1 hajm suvda ≈36 hajm eriydi.",
+    "{SO2} oraliq oksidlanish darajasida: {O2} bilan (katalizator) qaytaruvchi, {H2S} bilan oksidlovchi.",
+    "Oleum — {SO3} ning konsentrlangan {H2SO4} dagi eritmasi ({H2SO4}·n{SO3})."
+  ],
+  "tables": [
+    {
+      "id": "compare",
+      "title": "SO₂ va SO₃ taqqoslash",
+      "columns": [
+        { "key": "k", "label": "Belgi" },
+        { "key": "so2", "label": "SO₂" },
+        { "key": "so3", "label": "SO₃" }
+      ],
+      "rows": [
+        { "id": "ox", "cells": { "k": "S oksidlanish darajasi", "so2": "+4", "so3": "+6" } },
+        { "id": "state", "cells": { "k": "Holati (xona harorati)", "so2": "rangsiz, o‘tkir hidli gaz (−10 °C da suyuqlanadi)", "so3": "rangsiz suyuqlik, Tqayn = 45 °C, 17 °C da oq kristall" } },
+        { "id": "acid", "cells": { "k": "Suv bilan", "so2": "{H2SO3} (kuchsiz, beqaror)", "so3": "{H2SO4} (kuchli), ko‘p issiqlik" } },
+        { "id": "redox", "cells": { "k": "Redoks xossasi", "so2": "oksidlovchi ham, qaytaruvchi ham", "so3": "faqat oksidlovchi" },
+          "detail": { "concept": "+4 — oraliq daraja: elektron berib +6 ga (qaytaruvchi) ham, olib 0 ga (oksidlovchi) ham o‘ta oladi. +6 — eng yuqori daraja, faqat qaytarila oladi.", "reactionIds": ["toSO3", "h2s"], "examTip": "Oraliq oksidlanish darajasidagi moddalar (SO₂, NO₂, H₂O₂) ikki xil xossa ko‘rsatadi.", "pages": [137] } },
+        { "id": "use", "cells": { "k": "Ishlatilishi", "so2": "bo‘yoqlarni rangsizlantirish, mikroblarni o‘ldirish (quritilgan meva), neftni tozalash", "so3": "sulfat kislota ishlab chiqarish" } }
+      ]
+    },
+    {
+      "id": "reactions",
+      "title": "Olinishi va xossalari",
+      "columns": [
+        { "key": "what", "label": "Jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "lab", "cells": { "what": "SO₂ — laboratoriya", "eq": "lab" } },
+        { "id": "pyrite", "cells": { "what": "SO₂ — pirit kuydirish", "eq": "pyrite" } },
+        { "id": "zns", "cells": { "what": "SO₂ — rux aldamasi kuydirish", "eq": "zns" } },
+        { "id": "water", "cells": { "what": "SO₂ + suv", "eq": "water" } },
+        { "id": "naoh", "cells": { "what": "SO₂ + ishqor", "eq": "naoh" } },
+        { "id": "cao", "cells": { "what": "SO₂ + asosli oksid", "eq": "cao" } },
+        { "id": "toSO3", "cells": { "what": "SO₂ → SO₃ (katalizator)", "eq": "toSO3" } },
+        { "id": "h2s", "cells": { "what": "SO₂ + H₂S", "eq": "h2s" } },
+        { "id": "so3w", "cells": { "what": "SO₃ + suv", "eq": "so3w" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "lab": { "equation": "Na2SO3 + H2SO4 → Na2SO4 + H2O + SO2↑" },
+    "pyrite": { "equation": "4FeS2 + 11O2 → 2Fe2O3 + 8SO2", "conditions": "kuydirish" },
+    "zns": { "equation": "2ZnS + 3O2 → 2ZnO + 2SO2", "conditions": "kuydirish" },
+    "water": { "equation": "SO2 + H2O ⇄ H2SO3" },
+    "naoh": { "equation": "2NaOH + SO2 → Na2SO3 + H2O" },
+    "cao": { "equation": "CaO + SO2 → CaSO3" },
+    "toSO3": { "equation": "2SO2 + O2 ⇄ 2SO3", "conditions": "katalizator (V₂O₅), t°" },
+    "h2s": { "equation": "2H2S + SO2 → 3S + 2H2O" },
+    "so3w": { "equation": "SO3 + H2O → H2SO4", "conditions": "ko‘p issiqlik ajraladi" }
+  },
+  "questions": [
+    { "id": "g8-s31-q1", "type": "O1", "skill": "nisbiy zichlik", "difficulty": 2,
+      "stem": "Tarkibida 50 % oltingugurt va 50 % kislorod bo‘lgan oksidning havoga nisbatan zichligini toping (0,01 aniqlikda).",
+      "answer": 2.21, "tolerance": 0.01,
+      "solution": "S : O = 50/32 : 50/16 = 1,5625 : 3,125 = 1 : 2 → SO₂, M = 64 g/mol. D = 64 / 29 = 2,207 ≈ 2,21." },
+    { "id": "g8-s31-q2", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "12 g piritni ({FeS2}) to‘liq kuydirganda n.sh.da necha litr oltingugurt(IV) oksid hosil bo‘ladi?",
+      "answer": 4.48, "tolerance": 0.01, "unit": "l",
+      "solution": "4FeS₂ + 11O₂ → 2Fe₂O₃ + 8SO₂. n(FeS₂) = 12 / 120 = 0,1 mol; n(SO₂) = 0,2 mol; V = 4,48 l." },
+    { "id": "g8-s31-q3", "type": "Y1", "skill": "oksidlovchi/qaytaruvchi", "difficulty": 2,
+      "stem": "2H₂S + SO₂ → 3S + 2H₂O reaksiyasida oltingugurt(IV) oksid qanday vazifani bajaradi?",
+      "choices": ["qaytaruvchi", "oksidlovchi", "katalizator", "oksidlanish darajasi o‘zgarmaydi"], "answer": 1,
+      "solution": "S⁺⁴ + 4ē → S⁰ — SO₂ elektron qabul qiladi, demak oksidlovchi." },
+    { "id": "g8-s31-q4", "type": "Y1", "skill": "kislotali oksidlar", "difficulty": 1,
+      "stem": "Oltingugurt(IV) oksid mo‘l natriy gidroksid eritmasi bilan reaksiyaga kirishganda qaysi tuz hosil bo‘ladi?",
+      "choices": ["{Na2SO4}", "{Na2SO3}", "{Na2S}", "{NaHSO4}"], "answer": 1,
+      "solution": "SO₂ (+4) sulfit kislotaga mos keladi: 2NaOH + SO₂ → Na₂SO₃ + H₂O. Sulfat (+6) hosil bo‘lmaydi." }
+  ]
+}

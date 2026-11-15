@@ -2,7 +2,7 @@ import { Fragment, type ReactNode } from 'react';
 
 // Tokenizer for chemistry notation: subscripts after element/bracket, "^2-" charges,
 // orbital occupancy "3p5" as superscript. Coefficients (digits at term start) stay normal.
-const TOKEN = /([1-7][spdf])(\d{1,2})|\^(\d*[+-])|([A-Za-z)\]])(\d+)/g;
+const TOKEN = /([1-7n][spdf])(\d{1,2})|\^(\d*[+-])|([A-Za-z)\]])(\d+)/g;
 
 export function Formula({ children }: { children: string }) {
   const out: ReactNode[] = [];

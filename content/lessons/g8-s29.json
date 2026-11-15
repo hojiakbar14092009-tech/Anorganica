@@ -1,0 +1,82 @@
+{
+  "id": "g8-s29",
+  "status": "seed-verified",
+  "pages": [130, 131, 132, 133],
+  "summary": "VI A guruh (xalkogenlar): O, S, Se, Te, Po; tashqi qavat {ns2 np4}. Ikki elektron qabul qilib −2 holatga o‘tadi; S, Se, Te bundan tashqari +4 va +6 ni namoyon qiladi, kislorod esa yo‘q (faqat {OF2} da +2, {H2O2} da −1).",
+  "keyConcepts": [
+    "Kislorod 2-davrda — tashqi qavatda faqat 4 ta orbital, shuning uchun u oltingugurt kabi +4, +6 holatlarni hosil qilmaydi.",
+    "Oltingugurt tabiatda erkin holda ham, sulfidlar (pirit {FeS2}, rux aldamasi ZnS, qo‘rg‘oshin yaltirog‘i PbS) va sulfatlar (gips {CaSO4·2H2O}) holida ham uchraydi.",
+    "Allotropiyasi: rombik {S8} (barqaror, sariq), monoklinik {S8}, plastik oltingugurt (zanjirli, cho‘ziluvchan).",
+    "Oltingugurt kukuni suvda ho‘llanmaydi va qalqib yuradi — rudalarni flotatsiya usulida boyitish shunga asoslangan."
+  ],
+  "tables": [
+    {
+      "id": "elements",
+      "title": "Kislorod guruhchasi elementlari",
+      "columns": [
+        { "key": "el", "label": "Element" },
+        { "key": "e", "label": "Elektron qavatlar" },
+        { "key": "ox", "label": "Oksidlanish darajalari" },
+        { "key": "ex", "label": "Birikmalar" }
+      ],
+      "rows": [
+        { "id": "o", "cells": { "el": "O (Z = 8)", "e": "2, 6", "ox": "−2 (−1, +2)", "ex": "{H2O}, {H2O2}, {OF2}" } },
+        { "id": "s", "cells": { "el": "S (Z = 16)", "e": "2, 8, 6", "ox": "−2, +4, +6", "ex": "{H2S}, {SO2}, {SO3}" },
+          "detail": { "concept": "Darslikda +4 va +6 holatlar elektronlarning bo‘sh 3d-orbitallarga «qo‘zg‘alishi» bilan tushuntiriladi. Bu — maktab uchun soddalashtirilgan model.", "pages": [131] } },
+        { "id": "se", "cells": { "el": "Se (Z = 34)", "e": "2, 8, 18, 6", "ox": "−2, +4, +6", "ex": "{H2Se}, {SeO2}, {SeO3}" } },
+        { "id": "te", "cells": { "el": "Te (Z = 52)", "e": "2, 8, 18, 18, 6", "ox": "−2, +4, +6", "ex": "{H2Te}, {TeO2}, {TeO3}" } },
+        { "id": "po", "cells": { "el": "Po (Z = 84)", "e": "…, 6", "ox": "—", "ex": "radioaktiv; radiokimyoda o‘rganiladi" } }
+      ]
+    },
+    {
+      "id": "sulfur",
+      "title": "Oltingugurtning kimyoviy xossalari",
+      "columns": [
+        { "key": "with", "label": "Nima bilan" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "role", "label": "S ning roli" }
+      ],
+      "rows": [
+        { "id": "h2", "cells": { "with": "Vodorod", "eq": "h2", "role": "oksidlovchi (0 → −2)" } },
+        { "id": "na", "cells": { "with": "Natriy", "eq": "na", "role": "oksidlovchi" } },
+        { "id": "al", "cells": { "with": "Aluminiy", "eq": "al", "role": "oksidlovchi" } },
+        { "id": "fe", "cells": { "with": "Temir", "eq": "fe", "role": "oksidlovchi" },
+          "detail": { "concept": "Oltingugurt kuchsiz oksidlovchi: temir bilan FeS (Fe⁺²) hosil bo‘ladi — xlordagidek Fe⁺³ emas.", "reactionIds": ["fe"], "examTip": "Fe + S → FeS; 2Fe + 3Cl₂ → 2FeCl₃.", "pages": [133] } },
+        { "id": "o2", "cells": { "with": "Kislorod", "eq": "o2", "role": "qaytaruvchi (0 → +4)" },
+          "detail": { "concept": "Oltingugurt havoda ko‘kish alanga bilan yonadi; o‘tkir hidli {SO2} hosil bo‘ladi.", "observation": "Ko‘kish alanga, o‘tkir hid", "reactionIds": ["o2"], "pages": [133] } },
+        { "id": "cl2", "cells": { "with": "Xlor", "eq": "cl2", "role": "qaytaruvchi (0 → +1)" } },
+        { "id": "f2", "cells": { "with": "Ftor", "eq": "f2", "role": "qaytaruvchi (0 → +6)" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "h2": { "equation": "H2 + S → H2S", "conditions": "t°" },
+    "na": { "equation": "2Na + S → Na2S" },
+    "al": { "equation": "2Al + 3S → Al2S3", "conditions": "t°" },
+    "fe": { "equation": "Fe + S → FeS", "conditions": "t°" },
+    "o2": { "equation": "S + O2 → SO2", "conditions": "yonish" },
+    "cl2": { "equation": "2S + Cl2 → S2Cl2" },
+    "f2": { "equation": "S + 3F2 → SF6" }
+  },
+  "clarifications": [
+    { "text": "S, Se, Te ning +4/+6 holatlarini d-orbitallarga qo‘zg‘alish bilan tushuntirish soddalashtirilgan modeldir; zamonaviy kvant-kimyoviy hisoblashlar d-orbitallarning hissasi kichik ekanini ko‘rsatadi. Imtihonda darslik modeli qo‘llaniladi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g8-s29-q1", "type": "Y1", "skill": "oksidlanish darajasi", "difficulty": 1,
+      "stem": "Qaysi birikmada kislorodning oksidlanish darajasi musbat?",
+      "choices": ["{H2O2}", "{OF2}", "{Na2O}", "{SO3}"], "answer": 1,
+      "solution": "Ftor kisloroddan elektromanfiyroq, shuning uchun OF₂ da kislorod +2." },
+    { "id": "g8-s29-q2", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "11,2 g temir kukuni mo‘l oltingugurt bilan qizdirilganda necha gramm temir(II) sulfid hosil bo‘ladi?",
+      "answer": 17.6, "tolerance": 0.05, "unit": "g",
+      "solution": "Fe + S → FeS. n(Fe) = 11,2 / 56 = 0,2 mol; M(FeS) = 88 g/mol; m = 0,2 · 88 = 17,6 g." },
+    { "id": "g8-s29-q3", "type": "Y1", "skill": "oksidlovchi/qaytaruvchi", "difficulty": 2,
+      "stem": "Qaysi reaksiyada oltingugurt qaytaruvchi vazifasini bajaradi?",
+      "choices": ["Fe + S → FeS", "{H2} + S → {H2S}", "S + {O2} → {SO2}", "2Na + S → {Na2S}"], "answer": 2,
+      "solution": "Kislorod bilan S elektron beradi (0 → +4), demak qaytaruvchi. Qolganlarida S elektron qabul qiladi (0 → −2)." },
+    { "id": "g8-s29-q4", "type": "Y1", "skill": "atom tuzilishi", "difficulty": 1,
+      "stem": "Kislorod guruhchasi elementlarining tashqi elektron qavati tuzilishi qaysi?",
+      "choices": ["{ns2 np2}", "{ns2 np4}", "{ns2 np6}", "{ns1}"], "answer": 1,
+      "solution": "VI A guruh: tashqi qavatda 6 ta elektron — ns² np⁴." }
+  ]
+}

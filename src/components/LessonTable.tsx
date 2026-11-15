@@ -31,7 +31,8 @@ export function LessonTable({ table, lesson }: { table: T; lesson: Lesson }) {
                 <tr key={row.id} className={d ? 'has-detail' : undefined} data-open={expanded || undefined}>
                   {cols.map((c, i) => {
                     const v = row.cells[c.key] ?? '';
-                    const content = c.reaction ? <ReactionLine r={lesson.reactions[v]!} /> : <Rich text={v} />;
+                    const r = c.reaction && v ? lesson.reactions[v] : undefined;
+                    const content = r ? <ReactionLine r={r} /> : <Rich text={c.reaction ? '—' : v} />;
                     if (i === 0 && d)
                       return (
                         <th key={c.key} scope="row">

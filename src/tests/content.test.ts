@@ -44,7 +44,10 @@ describe('lessons', () => {
     for (const p of l.pages) expect(p >= sec.pdfPage - 1 && p <= end, `page ${p}`).toBe(true);
     for (const [rid, r] of Object.entries(l.reactions)) expect(checkBalance(r.equation), `${id}/${rid}: ${r.equation}`).toEqual([]);
     for (const t of l.tables) for (const row of t.rows) {
-      for (const c of t.columns.filter((c) => c.reaction)) expect(l.reactions[row.cells[c.key] ?? ''], `${t.id}/${row.id}`).toBeDefined();
+      for (const c of t.columns.filter((c) => c.reaction)) {
+        const rid = row.cells[c.key] ?? '';
+        if (rid) expect(l.reactions[rid], `${t.id}/${row.id}`).toBeDefined(); // '' = deliberately no reaction (physical step)
+      }
       for (const rid of row.detail?.reactionIds ?? []) expect(l.reactions[rid], rid).toBeDefined();
     }
     if (l.status === 'seed-verified') expect(l.questions.length).toBeGreaterThanOrEqual(4);

@@ -1,0 +1,79 @@
+{
+  "id": "g8-s34",
+  "status": "seed-verified",
+  "pages": [144, 145, 146, 147],
+  "summary": "Qaytar reaksiyada to‘g‘ri va teskari jarayonlar bir vaqtda boradi; ularning tezliklari tenglashgan holat — kimyoviy muvozanat (dinamik: reaksiyalar to‘xtamaydi). Muvozanat konsentratsiya, bosim va harorat o‘zgarganda siljiydi (Le Shatelye prinsipi); katalizator siljitmaydi.",
+  "keyConcepts": [
+    "Qaytmas reaksiyalar: cho‘kma, gaz yoki kam dissotsilanadigan modda (suv) hosil bo‘lib, tizimdan chiqib ketadi.",
+    "Moddaning konsentratsiyasi oshirilsa, muvozanat shu modda sarflanadigan tomonga siljiydi.",
+    "Bosim oshirilsa — gaz molekulalari (hajm) kamroq tomonga siljiydi.",
+    "Harorat oshirilsa — endotermik (issiqlik yutuvchi) tomonga, pasaytirilsa — ekzotermik tomonga siljiydi."
+  ],
+  "tables": [
+    {
+      "id": "shift",
+      "title": "Muvozanatning siljishi: 2SO₂ + O₂ ⇄ 2SO₃ + Q",
+      "columns": [
+        { "key": "change", "label": "O‘zgarish" },
+        { "key": "dir", "label": "Siljish" },
+        { "key": "why", "label": "Sabab" }
+      ],
+      "rows": [
+        { "id": "p", "cells": { "change": "Bosim ↑", "dir": "→ (SO₃ tomonga)", "why": "chapda 3 hajm gaz, o‘ngda 2 hajm" },
+          "detail": { "concept": "Gazlar hajmi (n.sh.): 2·22,4 + 22,4 = 67,2 l → 44,8 l. Bosim oshirilsa, tizim hajm kamayadigan tomonga siljiydi.", "reactionIds": ["so3"], "pages": [146] } },
+        { "id": "t", "cells": { "change": "Harorat ↑", "dir": "← (SO₂ tomonga)", "why": "to‘g‘ri reaksiya ekzotermik" } },
+        { "id": "c", "cells": { "change": "[O₂] ↑", "dir": "→", "why": "qo‘shilgan modda sarflanadi" } },
+        { "id": "remove", "cells": { "change": "SO₃ ajratib olinadi", "dir": "→", "why": "mahsulot kamaysa, u hosil bo‘ladigan tomonga" } },
+        { "id": "cat", "cells": { "change": "Katalizator (V₂O₅)", "dir": "siljimaydi", "why": "ikki tomon tezligini teng oshiradi; muvozanat tezroq qaror topadi" } }
+      ]
+    },
+    {
+      "id": "examples",
+      "title": "Qaytar va qaytmas reaksiyalar",
+      "columns": [
+        { "key": "type", "label": "Turi" },
+        { "key": "eq", "label": "Misol", "reaction": true },
+        { "key": "why", "label": "Belgisi" }
+      ],
+      "rows": [
+        { "id": "agcl", "cells": { "type": "Qaytmas", "eq": "agcl", "why": "cho‘kma" } },
+        { "id": "co2", "cells": { "type": "Qaytmas", "eq": "caco3", "why": "gaz chiqib ketadi" } },
+        { "id": "neutral", "cells": { "type": "Qaytmas", "eq": "neutral", "why": "suv hosil bo‘ladi" } },
+        { "id": "h2so3", "cells": { "type": "Qaytar", "eq": "h2so3", "why": "sulfit kislota yana SO₂ va suvga parchalanadi" } },
+        { "id": "co", "cells": { "type": "Qaytar", "eq": "co", "why": "[CO₂] ↑ → o‘ngga; [CO] ↑ → chapga" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "so3": { "equation": "2SO2 + O2 ⇄ 2SO3", "conditions": "ekzotermik (+Q)" },
+    "agcl": { "equation": "NaCl + AgNO3 → AgCl↓ + NaNO3" },
+    "caco3": { "equation": "CaCO3 + 2HCl → CaCl2 + CO2↑ + H2O" },
+    "neutral": { "equation": "NaOH + HNO3 → NaNO3 + H2O" },
+    "h2so3": { "equation": "SO2 + H2O ⇄ H2SO3" },
+    "co": { "equation": "CO2 + H2 ⇄ H2O + CO" }
+  },
+  "clarifications": [
+    { "text": "Darslikda «harorat ko‘tarilsa teskari reaksiya tezlashadi, pasaysa to‘g‘ri reaksiya tezlashadi» deyilgan. Aniqroq: harorat ko‘tarilganda ikkala reaksiya ham tezlashadi, ammo endotermik (teskari) reaksiya ko‘proq tezlashgani uchun muvozanat chapga siljiydi.", "source": "additionalVerifiedSource" },
+    { "text": "Ohaktoshning parchalanishi (CaCO₃ ⇄ CaO + CO₂) yopiq idishda qaytar; ochiq idishda CO₂ chiqib ketgani uchun oxirigacha boradi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g8-s34-q1", "type": "Y1", "skill": "muvozanat siljishi", "difficulty": 2,
+      "stem": "N₂ + 3H₂ ⇄ 2NH₃ + Q tizimida muvozanatni ammiak hosil bo‘lishi tomonga siljitish uchun nima qilish kerak?",
+      "choices": ["haroratni oshirish", "bosimni oshirish", "bosimni kamaytirish", "katalizator qo‘shish"], "answer": 1,
+      "solution": "Chapda 4 hajm gaz, o‘ngda 2 hajm — bosim oshirilsa muvozanat o‘ngga siljiydi. Reaksiya ekzotermik, shuning uchun haroratni oshirish chapga siljitadi; katalizator siljitmaydi." },
+    { "id": "g8-s34-q2", "type": "Y2", "skill": "muvozanat siljishi", "difficulty": 2,
+      "stem": "2SO₂ + O₂ ⇄ 2SO₃ + Q tizimidagi o‘zgarishni muvozanat siljishi bilan moslashtiring.",
+      "left": ["haroratni oshirish", "bosimni oshirish", "katalizator qo‘shish", "SO₃ ni ajratib olish"],
+      "right": ["o‘ngga", "siljimaydi", "chapga", "o‘ngga (mahsulot kamaygani uchun)"],
+      "answer": [2, 0, 1, 3],
+      "solution": "Ekzotermik reaksiya: T↑ → chapga; p↑ → kam hajmli tomon (o‘ng); katalizator → siljimaydi; mahsulotni olib tashlash → o‘ngga." },
+    { "id": "g8-s34-q3", "type": "Y1", "skill": "qaytar/qaytmas", "difficulty": 1,
+      "stem": "Qaysi reaksiya amalda oxirigacha (qaytmas) boradi?",
+      "choices": ["SO₂ + H₂O ⇄ H₂SO₃", "N₂ + 3H₂ ⇄ 2NH₃", "NaCl + AgNO₃ → AgCl↓ + NaNO₃", "2SO₂ + O₂ ⇄ 2SO₃"], "answer": 2,
+      "solution": "AgCl cho‘kmaga tushib, tizimdan chiqadi — reaksiya oxirigacha boradi." },
+    { "id": "g8-s34-q4", "type": "Y1", "skill": "muvozanat ta’rifi", "difficulty": 1,
+      "stem": "Kimyoviy muvozanat holatida nima teng bo‘ladi?",
+      "choices": ["moddalar konsentratsiyalari", "to‘g‘ri va teskari reaksiya tezliklari", "reaksiyaga kirishgan va hosil bo‘lgan moddalar massalari", "molekulalar soni har ikki tomonda"], "answer": 1,
+      "solution": "Muvozanatda v(to‘g‘ri) = v(teskari); konsentratsiyalar o‘zgarmas, lekin odatda bir-biriga teng emas." }
+  ]
+}

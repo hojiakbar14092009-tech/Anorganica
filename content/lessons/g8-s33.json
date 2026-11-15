@@ -1,0 +1,59 @@
+{
+  "id": "g8-s33",
+  "status": "seed-verified",
+  "pages": [141, 142, 143, 144],
+  "summary": "Reaksiya tezligi — moddalar konsentratsiyasining vaqt birligidagi o‘zgarishi: v = Δc / Δt (mol/(l·s)). Tezlik moddalar tabiati, konsentratsiya, harorat, qattiq modda sirti va katalizatorga bog‘liq.",
+  "keyConcepts": [
+    "Massalar ta’siri qonuni (A + B → mahsulot uchun): v = k·[A]·[B]; konsentratsiya ortsa — to‘qnashuvlar soni ortadi.",
+    "Vant-Goff qoidasi: harorat har 10 °C ga oshganda tezlik γ = 2–4 marta ortadi: v₂ = v₁·γ^((t₂−t₁)/10).",
+    "Qattiq modda maydalansa, reaksiyaga kirishadigan sirt kattalashadi va tezlik ortadi.",
+    "Katalizator reaksiyani tezlashtiradi va o‘zi sarflanmaydi ({MnO2} — {H2O2} parchalanishida, {V2O5} — {SO2} oksidlanishida); ingibitor — sekinlashtiradi."
+  ],
+  "tables": [
+    {
+      "id": "factors",
+      "title": "Reaksiya tezligiga ta’sir etuvchi omillar",
+      "columns": [
+        { "key": "f", "label": "Omil" },
+        { "key": "effect", "label": "Ta’siri" },
+        { "key": "ex", "label": "Misol" }
+      ],
+      "rows": [
+        { "id": "nature", "cells": { "f": "Moddalar tabiati", "effect": "faolroq modda tezroq reaksiyaga kirishadi", "ex": "K suv bilan Na ga nisbatan tezroq (vodorod alangalanadi)" },
+          "detail": { "concept": "Ishqoriy metallar faolligi guruh bo‘ylab pastga ortadi.", "reactionIds": ["k", "na"], "pages": [143] } },
+        { "id": "conc", "cells": { "f": "Konsentratsiya", "effect": "ortsa — tezlik ortadi", "ex": "S havoda sekin, sof kislorodda yorqin alanga bilan tez yonadi" },
+          "detail": { "concept": "Havoda kislorodning hajmiy ulushi ≈21 %; sof kislorodda sirtga uriladigan O₂ molekulalari ~5 marta ko‘p.", "examTip": "A + B uchun v = k[A][B]: [A] 3 marta oshsa, tezlik 3 marta oshadi; 2A + B uchun [A] ikki marta oshsa, tezlik 4 marta.", "pages": [142, 143] } },
+        { "id": "temp", "cells": { "f": "Harorat", "effect": "har 10 °C da 2–4 marta", "ex": "γ = 2, Δt = 40 °C → 2⁴ = 16 marta" },
+          "detail": { "concept": "Harorat ortganda molekulalar tezroq harakatlanadi va faol (yetarli energiyali) molekulalar ulushi keskin ortadi.", "pages": [143] } },
+        { "id": "surface", "cells": { "f": "Sirt yuzasi", "effect": "maydalash tezlikni oshiradi", "ex": "temir kukuni oltingugurt bilan tezroq reaksiyaga kirishadi" } },
+        { "id": "cat", "cells": { "f": "Katalizator", "effect": "tezlashtiradi, o‘zi o‘zgarmaydi", "ex": "{MnO2} ishtirokida {H2O2} tez parchalanadi" },
+          "detail": { "concept": "Katalizator reaksiya yo‘lini o‘zgartirib, faollanish energiyasini kamaytiradi.", "reactionIds": ["h2o2"], "observation": "Kuchli gaz ajralishi; cho‘g‘langan cho‘p alangalanadi", "pages": [144] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "k": { "equation": "2K + 2H2O → 2KOH + H2↑", "observation": "Juda tez, vodorod yonib ketadi" },
+    "na": { "equation": "2Na + 2H2O → 2NaOH + H2↑" },
+    "h2o2": { "equation": "2H2O2 → 2H2O + O2↑", "conditions": "MnO₂ (katalizator)" },
+    "fes": { "equation": "Fe + S → FeS", "conditions": "t°" }
+  },
+  "questions": [
+    { "id": "g8-s33-q1", "type": "O1", "skill": "reaksiya tezligi", "difficulty": 1,
+      "stem": "Moddaning konsentratsiyasi 20 s davomida 0,8 mol/l dan 0,2 mol/l gacha kamaydi. O‘rtacha reaksiya tezligini (mol/(l·s)) toping.",
+      "answer": 0.03, "tolerance": 0.0001, "unit": "mol/(l·s)",
+      "solution": "v = Δc / Δt = (0,8 − 0,2) / 20 = 0,03 mol/(l·s)." },
+    { "id": "g8-s33-q2", "type": "O1", "skill": "Vant-Goff qoidasi", "difficulty": 2,
+      "stem": "Tezlikning harorat koeffitsiyenti 3 ga teng. Harorat 20 °C dan 50 °C gacha ko‘tarilsa, reaksiya tezligi necha marta ortadi?",
+      "answer": 27, "tolerance": 0,
+      "solution": "v₂/v₁ = γ^(Δt/10) = 3^(30/10) = 3³ = 27." },
+    { "id": "g8-s33-q3", "type": "O1", "skill": "massalar ta’siri qonuni", "difficulty": 2,
+      "stem": "2NO + O₂ → 2NO₂ reaksiyasi uchun v = k[NO]²[O₂]. NO konsentratsiyasi 3 marta oshirilsa, tezlik necha marta ortadi?",
+      "answer": 9, "tolerance": 0,
+      "solution": "v ~ [NO]²: 3² = 9 marta.",
+      "mistakes": "Koeffitsiyentni darajaga ko‘tarishni unutish (javob 3 deb olish)." },
+    { "id": "g8-s33-q4", "type": "Y1", "skill": "katalizator", "difficulty": 1,
+      "stem": "Katalizator haqida qaysi fikr to‘g‘ri?",
+      "choices": ["reaksiyada to‘liq sarflanadi", "reaksiyani tezlashtiradi va o‘zi o‘zgarmay qoladi", "reaksiya mahsulotini o‘zgartiradi", "faqat haroratni oshiradi"], "answer": 1,
+      "solution": "Katalizator reaksiya tezligini oshiradi, reaksiya oxirida kimyoviy jihatdan o‘zgarmay qoladi." }
+  ]
+}

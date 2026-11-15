@@ -1,0 +1,65 @@
+{
+  "id": "g8-s30",
+  "status": "seed-verified",
+  "pages": [134, 135, 136],
+  "summary": "Vodorod sulfid {H2S} (H–S–H) — rangsiz, palag‘da tuxum hidli, juda zaharli, yonuvchi gaz; suvdagi eritmasi — kuchsiz sulfid kislota. Oltingugurt −2 holatda bo‘lgani uchun kuchli qaytaruvchi.",
+  "keyConcepts": [
+    "Olinishi: sulfidlarga kislota ta’sir ettirib ({FeS} + 2HCl) yoki suyuqlantirilgan oltingugurtga vodorod o‘tkazib (200–350 °C).",
+    "Yonishi kislorod miqdoriga bog‘liq: mo‘l {O2} — {SO2}; kam {O2} — erkin S.",
+    "Kislotalarning umumiy xossalari: ishqorlar, asosli oksidlar bilan sulfidlar hosil qiladi; {CuCl2} bilan qora CuS cho‘kmasi.",
+    "Sulfid-ionga sifat reaksiyasi: {Pb^2+} bilan qora PbS cho‘kmasi."
+  ],
+  "tables": [
+    {
+      "id": "props",
+      "title": "Vodorod sulfidning xossalari",
+      "columns": [
+        { "key": "what", "label": "Jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Muhim" }
+      ],
+      "rows": [
+        { "id": "lab", "cells": { "what": "Olinishi (laboratoriya)", "eq": "lab", "note": "sulfid + kislota" } },
+        { "id": "full", "cells": { "what": "To‘liq yonish", "eq": "full", "note": "kislorod mo‘l: S⁻² → S⁺⁴" } },
+        { "id": "part", "cells": { "what": "Chala yonish", "eq": "part", "note": "kislorod kam: S⁻² → S⁰" } },
+        { "id": "cl2", "cells": { "what": "Xlor bilan", "eq": "cl2", "note": "qaytaruvchi; sariq S ajraladi" } },
+        { "id": "fecl3", "cells": { "what": "Temir(III) xlorid bilan", "eq": "fecl3", "note": "Fe⁺³ → Fe⁺²; eritma loyqalanadi" },
+          "detail": { "concept": "H₂S kuchli qaytaruvchi: Fe³⁺ ni Fe²⁺ gacha qaytaradi, o‘zi S⁰ gacha oksidlanadi. Elektron balans: S⁻² − 2ē → S⁰ (×1); Fe⁺³ + 1ē → Fe⁺² (×2).", "reactionIds": ["fecl3"], "pages": [135] } },
+        { "id": "koh", "cells": { "what": "Ishqor bilan", "eq": "koh", "note": "kislota xossasi" } },
+        { "id": "cucl2", "cells": { "what": "Mis(II) xlorid bilan", "eq": "cucl2", "note": "qora CuS — kislotalarda erimaydi" } },
+        { "id": "pb", "cells": { "what": "Sifat reaksiyasi", "eq": "pb", "note": "qora PbS cho‘kmasi" },
+          "detail": { "concept": "Har qanday eruvchan sulfid ham shu natijani beradi; ionli ko‘rinish: Pb²⁺ + S²⁻ → PbS↓.", "reactionIds": ["pb", "pbIon"], "observation": "Qora cho‘kma", "pages": [135] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "lab": { "equation": "FeS + 2HCl → FeCl2 + H2S↑", "safety": "H₂S juda zaharli — faqat virtual namoyish." },
+    "synth": { "equation": "H2 + S → H2S", "conditions": "200–350 °C" },
+    "full": { "equation": "2H2S + 3O2 → 2SO2 + 2H2O" },
+    "part": { "equation": "2H2S + O2 → 2S + 2H2O" },
+    "cl2": { "equation": "H2S + Cl2 → 2HCl + S↓" },
+    "fecl3": { "equation": "2FeCl3 + H2S → 2FeCl2 + 2HCl + S↓" },
+    "koh": { "equation": "H2S + 2KOH → K2S + 2H2O" },
+    "cucl2": { "equation": "CuCl2 + H2S → CuS↓ + 2HCl", "observation": "Qora cho‘kma" },
+    "pb": { "equation": "H2S + Pb(NO3)2 → PbS↓ + 2HNO3" },
+    "pbIon": { "equation": "Pb^2+ + S^2- → PbS↓" }
+  },
+  "questions": [
+    { "id": "g8-s30-q1", "type": "O1", "skill": "gaz zichligi", "difficulty": 1,
+      "stem": "Vodorod sulfidning havoga nisbatan zichligini hisoblang (0,01 aniqlikda).",
+      "answer": 1.17, "tolerance": 0.01,
+      "solution": "D = M(H₂S) / 29 = 34 / 29 = 1,172 ≈ 1,17." },
+    { "id": "g8-s30-q2", "type": "Y1", "skill": "sifat reaksiyasi", "difficulty": 1,
+      "stem": "Eritmada sulfid-ion borligini qaysi reaktiv bilan aniqlash mumkin?",
+      "choices": ["{AgNO3} (oq cho‘kma)", "{Pb(NO3)2} (qora cho‘kma)", "{BaCl2} (oq cho‘kma)", "fenolftalein"], "answer": 1,
+      "solution": "Pb²⁺ + S²⁻ → PbS↓ — qora cho‘kma." },
+    { "id": "g8-s30-q3", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "6,72 l (n.sh.) vodorod sulfid kislorodda to‘liq yonganda necha litr (n.sh.) oltingugurt(IV) oksid hosil bo‘ladi?",
+      "answer": 6.72, "tolerance": 0.01, "unit": "l",
+      "solution": "2H₂S + 3O₂ → 2SO₂ + 2H₂O: H₂S va SO₂ hajmlari 1 : 1. V(SO₂) = 6,72 l." },
+    { "id": "g8-s30-q4", "type": "Y1", "skill": "oksidlovchi/qaytaruvchi", "difficulty": 2,
+      "stem": "2FeCl₃ + H₂S → 2FeCl₂ + 2HCl + S reaksiyasida qaytaruvchi qaysi?",
+      "choices": ["{FeCl3}", "{H2S}", "HCl", "{FeCl2}"], "answer": 1,
+      "solution": "S⁻² → S⁰ (elektron beradi) — H₂S qaytaruvchi; Fe⁺³ → Fe⁺² — FeCl₃ oksidlovchi." }
+  ]
+}
