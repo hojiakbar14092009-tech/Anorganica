@@ -1,0 +1,118 @@
+{
+  "id": "g9-s10",
+  "status": "seed-verified",
+  "pages": [51, 52, 53],
+  "summary": "Uglerodning ikki oksidi: {CO} (is gazi) — befarq oksid, o‘ta zaharli qaytaruvchi; {CO2} (karbonat angidrid) — kislotali oksid, yonishni qo‘llab-quvvatlamaydi, ohakli suvni loyqalatadi.",
+  "keyConcepts": [
+    "{CO} — rangsiz, hidsiz, o‘ta zaharli gaz, befarq oksid; gemoglobin bilan kislorodga qaraganda mustahkamroq birikib, qonning kislorod tashishini buzadi.",
+    "{CO} — qaytaruvchi: moviy alanga bilan yonadi va yuqori haroratda metall oksidlaridan metallarni ajratadi.",
+    "{CO2} — kislotali oksid: suv, ishqor va asosli oksidlar bilan reaksiyaga kirishadi; havodan og‘ir (nisbiy zichlik ≈ 1,52).",
+    "{CO2} ning sifat reaksiyasi — ohakli suv {Ca(OH)2} ning loyqalanishi; {CO2} mo‘l bo‘lsa, cho‘kma {Ca(HCO3)2} ga aylanib yana eriydi.",
+    "Quruq muz — qattiq {CO2}; erimasdan bevosita bug‘lanadi va sovitish uchun ishlatiladi."
+  ],
+  "tables": [
+    {
+      "id": "compare",
+      "title": "{CO} va {CO2} taqqoslash",
+      "columns": [
+        { "key": "prop", "label": "Xossa" },
+        { "key": "co", "label": "{CO} (is gazi)" },
+        { "key": "co2", "label": "{CO2} (karbonat angidrid)" }
+      ],
+      "rows": [
+        { "id": "type", "cells": { "prop": "Oksid turi", "co": "befarq (tuz hosil qilmaydi)", "co2": "kislotali oksid" } },
+        { "id": "tox", "cells": { "prop": "Zaharliligi", "co": "o‘ta zaharli", "co2": "zaharli emas (yuqori konsentratsiyada bo‘g‘adi)" },
+          "detail": { "concept": "{CO} gemoglobin bilan karboksigemoglobin hosil qiladi; hujayralar kislorod ololmay qoladi. {CO2} esa havoni siqib chiqargani uchun yopiq pastlikda xavfli (nafas ololmaslik).", "examTip": "Is gazi — {CO}, karbonat angidrid — {CO2}. Ikkalasini aralashtirmang.", "pages": [51, 52] } },
+        { "id": "dens", "cells": { "prop": "Havoga nisbatan zichligi", "co": "28/29 ≈ 0,97 (havoga yaqin, bir oz yengil)", "co2": "44/29 ≈ 1,52 (havodan og‘ir)" } },
+        { "id": "water", "cells": { "prop": "Suvda eruvchanligi", "co": "kam eriydi", "co2": "eriydi, kuchsiz {H2CO3} hosil qiladi" } },
+        { "id": "use", "cells": { "prop": "Ishlatilishi", "co": "qaytaruvchi, sun’iy yoqilg‘i tarkibi, organik sintez", "co2": "soda va gazlangan ichimliklar, o‘t o‘chirish, quruq muz" } }
+      ]
+    },
+    {
+      "id": "co",
+      "title": "Uglerod (II) oksidning reaksiyalari",
+      "columns": [
+        { "key": "with", "label": "Nima bilan" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "make", "cells": { "with": "Hosil bo‘lishi ({CO2} + qizigan ko‘mir)", "eq": "make", "note": "kislorod yetishmaganda ham hosil bo‘ladi" } },
+        { "id": "burn", "cells": { "with": "Kislorod (yonish)", "eq": "burn", "note": "moviy alanga" },
+          "detail": { "concept": "{CO} yonganda {CO2} hosil bo‘ladi, ko‘p issiqlik ajraladi — sun’iy gaz yoqilg‘isi tarkibiga kiradi.", "reactionIds": ["burn"], "observation": "Moviy alanga", "pages": [51] } },
+        { "id": "feo", "cells": { "with": "Temir (II) oksid", "eq": "feo", "note": "qaytarilish, 300–1500 °C" } },
+        { "id": "fe2o3", "cells": { "with": "Temir (III) oksid (domna jarayoni)", "eq": "fe2o3", "note": "cho‘yan olishda asosiy qaytaruvchi" },
+          "detail": { "concept": "Domna pechida temir oksidlari asosan {CO} bilan qaytariladi. Mol nisbati: 3 mol {CO} → 2 mol {Fe}.", "reactionIds": ["feo", "fe2o3", "sno2"], "pages": [51] } },
+        { "id": "sno2", "cells": { "with": "Qalay (IV) oksid", "eq": "sno2", "note": "qaytarilish" } },
+        { "id": "phosgene", "cells": { "with": "Xlor (faollashtirilgan ko‘mir katalizatori)", "eq": "cocl2", "note": "fosgen — kuchli zaharli gaz" } }
+      ]
+    },
+    {
+      "id": "co2",
+      "title": "Uglerod (IV) oksidning olinishi va xossalari",
+      "columns": [
+        { "key": "what", "label": "Jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "lab", "cells": { "what": "Laboratoriyada olish", "eq": "lab", "note": "marmar/ohaktosh + {HCl}" },
+          "detail": { "concept": "Karbonatga kuchli kislota ta’sir etganda beqaror {H2CO3} hosil bo‘ladi va u darhol {CO2} va suvga parchalanadi.", "reactionIds": ["lab"], "observation": "Gaz pufakchalari ajraladi", "pages": [52] } },
+        { "id": "ind", "cells": { "what": "Sanoatda olish (ohaktoshni kuydirish)", "eq": "ind", "note": "≈ 900–1200 °C" } },
+        { "id": "h2o", "cells": { "what": "Suv bilan", "eq": "h2o", "note": "{H2CO3} beqaror, qaytar reaksiya" } },
+        { "id": "naoh", "cells": { "what": "{NaOH} (mo‘l ishqorda)", "eq": "naoh1", "note": "o‘rta tuz" } },
+        { "id": "naoh2", "cells": { "what": "{NaOH} (ishqor kam, {CO2} mo‘l)", "eq": "naoh2", "note": "nordon tuz" } },
+        { "id": "cao", "cells": { "what": "Asosli oksid ({CaO})", "eq": "cao", "note": "tuz hosil bo‘ladi" } },
+        { "id": "qual", "cells": { "what": "Sifat reaksiyasi — ohakli suv", "eq": "qual", "note": "oq cho‘kma" },
+          "detail": { "concept": "Ohakli suv loyqalanadi. Mo‘l {CO2} da cho‘kma yana erib ketadi ({CaCO3 + CO2 + H2O → Ca(HCO3)2}).", "reactionIds": ["qual", "excess"], "observation": "Tiniq eritma loyqalanadi, mo‘l {CO2} da yana tiniqlashadi", "examTip": "{CO2} bilan {CO} ni ajratish: ohakli suv faqat {CO2} da loyqalanadi.", "pages": [52] } },
+        { "id": "excess", "cells": { "what": "Mo‘l {CO2} da cho‘kmaning erishi", "eq": "excess", "note": "eruvchan {Ca(HCO3)2}" } },
+        { "id": "mg", "cells": { "what": "Yonayotgan magniy", "eq": "mg", "note": "{CO2} ba’zi kuchli qaytaruvchilarni o‘chirmaydi" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "make": { "equation": "CO2 + C → 2CO", "conditions": "cho‘g‘lanma ko‘mir, yuqori harorat", "safety": "{CO} o‘ta zaharli — faqat virtual namoyish." },
+    "burn": { "equation": "2CO + O2 → 2CO2", "conditions": "yonish", "observation": "Moviy alanga" },
+    "feo": { "equation": "FeO + CO → Fe + CO2↑", "conditions": "qizdirish" },
+    "fe2o3": { "equation": "Fe2O3 + 3CO → 2Fe + 3CO2↑", "conditions": "yuqori harorat (domna)" },
+    "sno2": { "equation": "SnO2 + 2CO → Sn + 2CO2↑", "conditions": "qizdirish" },
+    "cocl2": { "equation": "CO + Cl2 → COCl2", "conditions": "faollashtirilgan ko‘mir katalizatori", "safety": "Fosgen — o‘ta zaharli bo‘g‘uvchi gaz — faqat virtual namoyish." },
+    "lab": { "equation": "CaCO3 + 2HCl → CaCl2 + H2O + CO2↑", "observation": "Gaz pufakchalari ajraladi" },
+    "ind": { "equation": "CaCO3 → CaO + CO2↑", "conditions": "kuydirish, 900–1200 °C" },
+    "h2o": { "equation": "CO2 + H2O ⇄ H2CO3", "conditions": "qaytar jarayon" },
+    "naoh1": { "equation": "2NaOH + CO2 → Na2CO3 + H2O" },
+    "naoh2": { "equation": "NaOH + CO2 → NaHCO3" },
+    "cao": { "equation": "CaO + CO2 → CaCO3" },
+    "qual": { "equation": "Ca(OH)2 + CO2 → CaCO3↓ + H2O", "observation": "Ohakli suv loyqalanadi" },
+    "excess": { "equation": "CaCO3 + CO2 + H2O → Ca(HCO3)2", "observation": "Cho‘kma erib ketadi" },
+    "mg": { "equation": "2Mg + CO2 → 2MgO + C", "conditions": "yonayotgan magniy", "observation": "Oq {MgO} va qora uglerod ajraladi" }
+  },
+  "clarifications": [
+    { "text": "52-betda {CO2 + H2O = H2CO3} teng ishorasi bilan yozilgan; aslida bu qaytar jarayon: erigan {CO2} ning faqat kichik qismi {H2CO3} ga aylanadi ({⇄}).", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s10-q1", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "Temir (III) oksid is gazi bilan {Fe2O3 + 3CO → 2Fe + 3CO2} tenglamasi bo‘yicha qaytarilganda 33,6 l (n.sh.) is gazi sarflandi. Necha gramm temir hosil bo‘ladi?",
+      "answer": 56, "tolerance": 0.1, "unit": "g",
+      "solution": "n(CO) = 33,6 / 22,4 = 1,5 mol. {CO : Fe = 3 : 2}, demak n(Fe) = 1,5 · 2 / 3 = 1 mol; m(Fe) = 1 · 56 = 56 g.",
+      "mistakes": "Mol nisbatini 1 : 1 deb olish — 84 g chiqib qoladi." },
+    { "id": "g9-s10-q2", "type": "Y1", "skill": "CO2 sifat reaksiyasi", "difficulty": 1,
+      "stem": "Rangsiz gaz ohakli suvdan o‘tkazilganda suv loyqalandi. Bu qaysi gaz?",
+      "choices": ["{CO}", "{O2}", "{CO2}", "{H2}"], "answer": 2,
+      "solution": "{Ca(OH)2 + CO2 → CaCO3↓ + H2O}: erimaydigan {CaCO3} loyqa hosil qiladi. {CO} kislotali oksid emas, ohakli suv bilan reaksiyaga kirishmaydi." },
+    { "id": "g9-s10-q3", "type": "Y2", "skill": "CO va CO2 xossalari", "difficulty": 2,
+      "stem": "Modda yoki atamani mos tavsif bilan moslashtiring.",
+      "left": ["{CO}", "{CO2}", "Quruq muz", "{COCl2}"],
+      "right": ["Qattiq {CO2}; sovitish uchun ishlatiladi", "{CO} va {Cl2} dan hosil bo‘ladigan zaharli gaz", "Gemoglobin bilan mustahkam birikuvchi is gazi", "Ohakli suvni loyqalantiradi"],
+      "answer": [2, 3, 0, 1],
+      "solution": "{CO} — is gazi, gemoglobin bilan mustahkam birikadi. {CO2} — ohakli suvni loyqalantiradi. Quruq muz — qattiq {CO2}. {COCl2} — fosgen, {CO + Cl2} dan hosil bo‘ladi." },
+    { "id": "g9-s10-q4", "type": "Y1", "skill": "CO2 ning ishlatilishi", "difficulty": 1,
+      "stem": "Karbonat angidrid yong‘inni o‘chirishda nima uchun qo‘llanadi?",
+      "choices": ["U yonuvchan gaz bo‘lgani uchun", "Havodan og‘ir va yonishni qo‘llab-quvvatlamaydi, olovni havo kislorodidan ajratadi", "U suvda yaxshi erib ketgani uchun", "U kislorod ajratgani uchun"], "answer": 1,
+      "solution": "{CO2} yonmaydi va yonishga yordam bermaydi, zichligi havodan katta — olov ustida qatlam hosil qilib, kislorod kirishini to‘sadi." },
+    { "id": "g9-s10-q5", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "25 g toza kalsiy karbonatga mo‘l xlorid kislota ta’sir ettirilganda n.sh. da necha litr karbonat angidrid ajraladi?",
+      "answer": 5.6, "tolerance": 0.02, "unit": "l",
+      "solution": "{CaCO3 + 2HCl → CaCl2 + H2O + CO2}. M(CaCO3) = 100 g/mol; n = 25 / 100 = 0,25 mol; {CaCO3 : CO2 = 1 : 1}; V = 0,25 · 22,4 = 5,6 l." }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "g9-s8",
+  "status": "seed-verified",
+  "pages": [42, 43, 44, 45, 46],
+  "summary": "Uglerod guruhi ({C}, {Si}, {Ge}, {Sn}, {Pb}) — IV A guruh p-elementlari; tashqi qavati {ns2 np2}, valentligi II va IV, oksidlanish darajalari −4 dan +4 gacha. Uglerod olmos, grafit, karbin va fulleren allotroplarini hosil qiladi.",
+  "keyConcepts": [
+    "Guruhdagi atomlarning tashqi qavatida 4 ta elektron bor ({ns2 np2}); yuqori oksidlanish darajasi +4 ({CO2}, {SiO2}), quyisi −4 ({CH4}, {Mg2Si}).",
+    "Yuqoridan pastga atom radiusi ortadi, metallik xossalari kuchayadi: {C} va {Si} — metallmas, {Ge} — yarimmetall, {Sn} va {Pb} — metall.",
+    "{CH4} va {SiH4} molekulalari qutbsiz (C–H va Si–H bog‘lari kam qutbli) — ular kislota ham, asos ham xossasini ko‘rsatmaydi.",
+    "Allotropiya: bir element turli tuzilishdagi oddiy moddalar hosil qiladi — olmos, grafit, karbin, fulleren; farq kristall panjara tuzilishidan.",
+    "Uglerod tabiatda erkin holda (olmos, grafit) va birikmalarda (karbonatlar, {CO2}, ko‘mir, neft, tabiiy gaz) uchraydi; fotosintez va nafas olish orqali doimiy aylanib turadi."
+  ],
+  "tables": [
+    {
+      "id": "elements",
+      "title": "Uglerod guruhi elementlari",
+      "columns": [
+        { "key": "el", "label": "Element" },
+        { "key": "conf", "label": "Elektron konfiguratsiya" },
+        { "key": "en", "label": "Nisbiy elektromanfiylik" },
+        { "key": "r", "label": "Atom radiusi, nm" },
+        { "key": "char", "label": "Xarakteri" }
+      ],
+      "rows": [
+        { "id": "c", "cells": { "el": "{C} uglerod (Z = 6)", "conf": "[He] {2s2 2p2}", "en": "2,55", "r": "0,077", "char": "metallmas" },
+          "detail": { "concept": "Uglerod 2-davrda joylashgan; tashqi qavatida 4 ta elektron. Birikmalarda valentligi IV; {CO} da II. Oksidlanish darajalari: −4 ({CH4}), +2 ({CO}), +4 ({CO2}).", "examTip": "Uglerod eng kichik radiusli va eng elektromanfiy; shuning uchun faqat unda o‘z-o‘zidan uzun zanjirlar (organik kimyo) va ko‘p allotroplar hosil bo‘ladi.", "pages": [43] } },
+        { "id": "si", "cells": { "el": "{Si} kremniy (Z = 14)", "conf": "[Ne] {3s2 3p2}", "en": "1,90", "r": "0,134", "char": "metallmas (yarimo‘tkazgich)" },
+          "detail": { "concept": "Kremniyning atom radiusi kattaroq, shuning uchun uglerodga nisbatan metallmaslik xossalari kuchsizroq. Yuqori oksidi {SiO2}, vodorodli birikmasi {SiH4} (silan).", "pages": [43] } },
+        { "id": "ge", "cells": { "el": "{Ge} germaniy (Z = 32)", "conf": "[Ar] {3d10 4s2 4p2}", "en": "2,01", "r": "0,139", "char": "yarimmetall" } },
+        { "id": "sn", "cells": { "el": "{Sn} qalay (Z = 50)", "conf": "[Kr] {4d10 5s2 5p2}", "en": "1,96", "r": "0,158", "char": "metall" },
+          "detail": { "concept": "Qalay va qo‘rg‘oshin metall xossasini ko‘rsatadi; ularda +2 oksidlanish darajasi (masalan {SnCl2}, {PbO}) +4 ga nisbatan barqarorroq.", "pages": [43] } },
+        { "id": "pb", "cells": { "el": "{Pb} qo‘rg‘oshin (Z = 82)", "conf": "[Xe] {4f14 5d10 6s2 6p2}", "en": "2,33", "r": "0,175", "char": "metall" } }
+      ]
+    },
+    {
+      "id": "allotropes",
+      "title": "Uglerodning allotropik shakllari",
+      "columns": [
+        { "key": "al", "label": "Allotrop" },
+        { "key": "str", "label": "Tuzilishi" },
+        { "key": "prop", "label": "Xossalari" },
+        { "key": "use", "label": "Ishlatilishi" }
+      ],
+      "rows": [
+        { "id": "diamond", "cells": { "al": "Olmos", "str": "Har bir atom 4 ta atom bilan tetraedr yo‘nalishida qutbsiz kovalent bog‘lagan; atom kristall panjara", "prop": "Tabiatdagi eng qattiq modda, tiniq, rangsiz; issiqlikni yaxshi o‘tkazadi, elektr tokini deyarli o‘tkazmaydi; {ρ ≈ 3,5 g/cm3}", "use": "Brilliant (zargarlik); texnik olmos — burg‘ulash, shisha kesish, jilolash" },
+          "detail": { "concept": "Olmos va grafit tarkibi bir xil (faqat uglerod), lekin panjara tuzilishi har xil, shuning uchun fizik xossalari keskin farq qiladi.", "examTip": "«Nima uchun olmos va grafit farq qiladi?» — atomlar fazoviy joylashishi (kristall panjara) turlicha.", "pages": [44, 45] } },
+        { "id": "graphite", "cells": { "al": "Grafit", "str": "Atomlar qatlamlar hosil qiladi; qatlam ichida bog‘ mustahkam, qatlamlar orasida kuchsiz", "prop": "Yumshoq, qora, metallsimon yaltiroq; elektr tokini o‘tkazadi; ishqalanganda qatlamlar ajraladi", "use": "Qalam, elektrodlar, quruq moylash vositasi" },
+          "detail": { "concept": "Ko‘mir, koks, qurum — grafitga yaqin mayda kristalli shakllar (amorf ko‘rinadigan uglerod).", "pages": [45] } },
+        { "id": "carbyne", "cells": { "al": "Karbin", "str": "Chiziqli zanjir: poliin {–C≡C–C≡C–} yoki polien {=C=C=C=}", "prop": "Qora kukun, kimyoviy inert, yarimo‘tkazgich; qattiqligi grafitdan yuqori, olmosdan past", "use": "Maxsus materiallar (tadqiq qilinadi)" } },
+        { "id": "fullerene", "cells": { "al": "Fulleren", "str": "Yopiq sharsimon molekula; eng barqari {C60}: 12 beshburchak va 20 oltiburchak (futbol to‘pi shakli)", "prop": "Qora kristall, 1980-yillarda kashf etilgan", "use": "Nanotexnologiya, tibbiyot va materialshunoslikda o‘rganiladi" } }
+      ]
+    },
+    {
+      "id": "cycle",
+      "title": "Uglerodning tabiatda aylanishi",
+      "columns": [
+        { "key": "step", "label": "Jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "res", "label": "Natija" }
+      ],
+      "rows": [
+        { "id": "photo", "cells": { "step": "Fotosintez (yashil o‘simliklar)", "eq": "photo", "res": "{CO2} o‘zlashtiriladi, glyukoza va kislorod hosil bo‘ladi" },
+          "detail": { "concept": "O‘simliklar havodagi {CO2} ni yorug‘lik energiyasi hisobiga organik moddalarga (glyukoza, kraxmal, sellyuloza) aylantiradi.", "reactionIds": ["photo"], "pages": [46] } },
+        { "id": "resp", "cells": { "step": "Nafas olish, oksidlanish", "eq": "resp", "res": "{CO2} atmosferaga qaytadi" } },
+        { "id": "weather", "cells": { "step": "Tog‘ jinslarining nurashi", "eq": "weather", "res": "{CO2} jinslar tarkibida karbonat sifatida bog‘lanadi" } },
+        { "id": "burn", "cells": { "step": "Ko‘mir, neft, gaz yonishi; vulqonlar", "eq": "", "res": "{CO2} atmosferaga qo‘shiladi" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "photo": { "equation": "6CO2 + 6H2O → C6H12O6 + 6O2", "conditions": "yorug‘lik, xlorofill", "observation": "Yashil o‘simlik barglarida kislorod ajraladi" },
+    "resp": { "equation": "C6H12O6 + 6O2 → 6CO2 + 6H2O", "conditions": "tirik hujayralarda (nafas olish)" },
+    "weather": { "equation": "CaSiO3 + CO2 → CaCO3 + SiO2", "conditions": "tabiiy nurash (soddalashtirilgan sxema)" }
+  },
+  "clarifications": [
+    { "text": "46-betda fulleren «80 dan ortiq uglerod atomli» deb ta’riflangan. Eng barqar va eng ko‘p tarqalgan fulleren {C60} bo‘lib, uning 60 atomi 12 beshburchak va 20 oltiburchakdan iborat qirqilgan ikosaedr hosil qiladi ({C70} va boshqalar ham ma’lum).", "source": "additionalVerifiedSource" },
+    { "text": "Karbin darslikda «sun’iy» deyilgan; u tabiiy minerallarda (masalan, meteorit krater jinslarida) ham topilgan, ammo maktab kursida sun’iy olinadigan allotrop sifatida o‘rganiladi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s8-q1", "type": "Y1", "skill": "guruh elementlari tuzilishi", "difficulty": 1,
+      "stem": "Uglerod guruhi elementlari atomlarining tashqi energetik pog‘onasi qanday elektron konfiguratsiyaga ega?",
+      "choices": ["{ns2 np1}", "{ns2 np2}", "{ns2 np3}", "{ns1}"], "answer": 1,
+      "solution": "IV A guruh p-elementlarida tashqi qavatda 4 ta elektron bor: 2 ta s va 2 ta p elektron, ya’ni {ns2 np2}. Misol: {C} — {2s2 2p2}, {Si} — {3s2 3p2}.",
+      "mistakes": "{ns2 np3} — V A guruh (azot guruhi) konfiguratsiyasi." },
+    { "id": "g9-s8-q2", "type": "O1", "skill": "vodorodli birikma bo‘yicha element", "difficulty": 2,
+      "stem": "Uglerod guruhi elementining {EH4} tarkibli uchuvchan vodorodli birikmasining geliyga nisbatan zichligi 4 ga teng. Elementning nisbiy atom massasini toping.",
+      "answer": 12, "tolerance": 0,
+      "solution": "M(EH4) = D(He) · M(He) = 4 · 4 = 16 g/mol. Ar(E) = 16 − 4 · 1 = 12. Bu uglerod, birikma — {CH4}.",
+      "mistakes": "Vodorod atomlari massasini (4 ta H) ayirishni unutish — javob 16 chiqib qoladi." },
+    { "id": "g9-s8-q3", "type": "Y2", "skill": "allotroplar", "difficulty": 2,
+      "stem": "Uglerodning allotropik shaklini uning asosiy xususiyati bilan moslashtiring.",
+      "left": ["Olmos", "Grafit", "Karbin", "{C60} fulleren"],
+      "right": ["Atomlari chiziqli zanjir hosil qiladi", "Tabiatdagi eng qattiq modda", "Yopiq sharsimon molekula", "Elektr tokini o‘tkazuvchi yumshoq qatlamli modda"],
+      "answer": [1, 3, 0, 2],
+      "solution": "Olmos — tetraedrik atom panjara, eng qattiq. Grafit — qatlamli, yumshoq, tok o‘tkazadi. Karbin — chiziqli zanjir. Fulleren {C60} — yopiq sharsimon molekula." },
+    { "id": "g9-s8-q4", "type": "Y1", "skill": "oksidlanish darajasi", "difficulty": 1,
+      "stem": "Quyidagi birikmalarning qaysi birida uglerodning oksidlanish darajasi −4 ga teng?",
+      "choices": ["{CO2}", "{CO}", "{CH4}", "{CaCO3}"], "answer": 2,
+      "solution": "{CH4} da vodorod +1, shuning uchun uglerod −4. {CO2} da +4, {CO} da +2, {CaCO3} da +4." },
+    { "id": "g9-s8-q5", "type": "Y1", "skill": "guruh tarkibi", "difficulty": 1,
+      "stem": "Quyidagi elementlarning qaysi biri uglerod guruhiga kirmaydi?",
+      "choices": ["{Ge}", "{Sn}", "{Pb}", "{P}"], "answer": 3,
+      "solution": "Fosfor {P} — V A guruh (azot guruhi) elementi. Germaniy, qalay va qo‘rg‘oshin IV A guruhga, uglerod va kremniy bilan bir qatorga kiradi." }
+  ]
+}

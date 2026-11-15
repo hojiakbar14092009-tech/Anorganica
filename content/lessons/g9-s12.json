@@ -1,0 +1,97 @@
+{
+  "id": "g9-s12",
+  "status": "seed-verified",
+  "pages": [61, 62],
+  "summary": "Kremniy — 3-davr, IV A guruh p-elementi ({1s2 2s2 2p6 3s2 3p2}). Yer qobig‘ida kisloroddan keyin ikkinchi o‘rinda (27,6 %), tabiatda faqat birikmalar holida uchraydi; {SiO2} ni qaytarish yo‘li bilan olinadi, yarimo‘tkazgich va qotishmalarda ishlatiladi.",
+  "keyConcepts": [
+    "Kremniy atomi: Z = 14, tashqi qavatda 4 elektron ({3s2 3p2}); valentligi IV; oksidlanish darajalari −4 ({Mg2Si}, {SiH4}) va +4 ({SiO2}).",
+    "Uglerodga nisbatan radiusi katta, shuning uchun metallmaslik xossasi kuchsizroq; elektromanfiyligi 1,90 (uglerodniki 2,55).",
+    "Tabiatda: kvars, qum, dala shpati, kaolin, gil, granit — barchasi kremniy birikmalari; erkin holda uchramaydi.",
+    "Olinishi: {SiO2} ni {Mg}, {Al} yoki {C} bilan qaytarish.",
+    "Ishlatilishi: elektrotexnik va kislotaga chidamli po‘latlar, yarimo‘tkazgichlar (quyosh batareyalari, elektron sxemalar), karborund, keramika."
+  ],
+  "tables": [
+    {
+      "id": "compare",
+      "title": "Uglerod va kremniyning atom tuzilishi: o‘xshashlik va farq",
+      "columns": [
+        { "key": "prop", "label": "Xususiyat" },
+        { "key": "c", "label": "{C}" },
+        { "key": "si", "label": "{Si}" }
+      ],
+      "rows": [
+        { "id": "period", "cells": { "prop": "Davr, guruh", "c": "2-davr, IV A", "si": "3-davr, IV A" } },
+        { "id": "conf", "cells": { "prop": "Elektron konfiguratsiya", "c": "{1s2 2s2 2p2}, qavatlar 2; 4", "si": "{1s2 2s2 2p6 3s2 3p2}, qavatlar 2; 8; 4" },
+          "detail": { "concept": "Ikkalasining tashqi qavatida ham 4 ta elektron ({ns2 np2}) — shu sababli o‘xshash valentlik va oksidlanish darajalari ({−4}, {+4}).", "examTip": "O‘xshashlik: tashqi qavat va valentlik; farq: qavatlar soni va radius ({0,077} va {0,134 nm}).", "pages": [61] } },
+        { "id": "en", "cells": { "prop": "Elektromanfiylik", "c": "2,55", "si": "1,90" } },
+        { "id": "hyd", "cells": { "prop": "Vodorodli birikma", "c": "{CH4} (metan) — barqaror", "si": "{SiH4} (silan) — havoda o‘z-o‘zidan yonadi" } },
+        { "id": "ox", "cells": { "prop": "Yuqori oksid", "c": "{CO2} — gaz, molekulyar", "si": "{SiO2} — qattiq, atom kristall panjarali" } }
+      ]
+    },
+    {
+      "id": "prep",
+      "title": "Kremniy olish",
+      "columns": [
+        { "key": "red", "label": "Qaytaruvchi" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "cond", "label": "Sharoit va izoh" }
+      ],
+      "rows": [
+        { "id": "mg", "cells": { "red": "Magniy", "eq": "mg", "cond": "qizdirish; Mg ortiqcha bo‘lsa {Mg2Si} ham hosil bo‘ladi" },
+          "detail": { "concept": "Magniy bilan qaytarishda amorf kremniy ajraladi. Mg mo‘l olinsa, hosil bo‘lgan kremniy magniy bilan birikib silitsid {Mg2Si} beradi.", "reactionIds": ["mg", "mg2si"], "pages": [62] } },
+        { "id": "al", "cells": { "red": "Aluminiy", "eq": "al", "cond": "qizdirish (alyuminotermiya)" } },
+        { "id": "c", "cells": { "red": "Uglerod (koks)", "eq": "c", "cond": "elektr pechi, 1500–1750 °C" },
+          "detail": { "concept": "Sanoatda kremniy kvars qumi va koksdan elektr pechida olinadi; yarimo‘tkazgich uchun keyin qo‘shimcha tozalanadi.", "reactionIds": ["c"], "pages": [62] } },
+        { "id": "mg2si", "cells": { "red": "Ortiqcha magniy bilan (qo‘shimcha jarayon)", "eq": "mg2si", "cond": "silitsid hosil bo‘ladi" } }
+      ]
+    },
+    {
+      "id": "use",
+      "title": "Kremniy va uning qotishmalarining ishlatilishi",
+      "columns": [
+        { "key": "mat", "label": "Material" },
+        { "key": "prop", "label": "Asosiy xossa" },
+        { "key": "use", "label": "Qayerda ishlatiladi" }
+      ],
+      "rows": [
+        { "id": "elec", "cells": { "mat": "≈ 4 % {Si} li po‘lat", "prop": "oson magnitlanadi", "use": "transformator, dvigatel, generator" } },
+        { "id": "acid", "cells": { "mat": "≥ 16 % {Si} li po‘lat", "prop": "kislotaga chidamli", "use": "kimyo sanoati apparatlari" } },
+        { "id": "semi", "cells": { "mat": "Toza kristall kremniy", "prop": "yarimo‘tkazgich", "use": "quyosh batareyalari, radio va elektron sxemalar" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "mg": { "equation": "SiO2 + 2Mg → 2MgO + Si", "conditions": "qizdirish" },
+    "al": { "equation": "3SiO2 + 4Al → 2Al2O3 + 3Si", "conditions": "qizdirish" },
+    "c": { "equation": "SiO2 + 2C → Si + 2CO↑", "conditions": "elektr pechi, 1500–1750 °C", "safety": "Reaksiyada zaharli {CO} ajraladi — faqat virtual namoyish." },
+    "mg2si": { "equation": "Si + 2Mg → Mg2Si", "conditions": "qizdirish, Mg ortiqcha" }
+  },
+  "clarifications": [
+    { "text": "62-betdagi {SiO2 + 2Mg = 2MgO + Si} reaksiyasi ortiqcha magniy bo‘lmagan sharoit uchun yozilgan. Mg ortiqcha olinsa, hosil bo‘lgan kremniy {Mg2Si} ga o‘tadi, kislota ta’sirida esa silan ajraladi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s12-q1", "type": "Y1", "skill": "elektron konfiguratsiya", "difficulty": 1,
+      "stem": "Kremniy atomining elektron konfiguratsiyasi qaysi qatorda to‘g‘ri berilgan?",
+      "choices": ["{1s2 2s2 2p6 3s2 3p4}", "{1s2 2s2 2p6 3s2 3p2}", "{1s2 2s2 2p2}", "{1s2 2s2 2p6 3s1}"], "answer": 1,
+      "solution": "Z = 14: {1s2 2s2 2p6 3s2 3p2}. Tashqi qavatda 4 ta elektron — IV A guruh, 3-davr. {3p4} — oltingugurt, {2p2} — uglerod, {3s1} — natriy." },
+    { "id": "g9-s12-q2", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "120 g toza kvars qumi ({SiO2}) elektr pechida ko‘mir bilan to‘liq qaytarilganda necha gramm kremniy hosil bo‘ladi? ({SiO2 + 2C → Si + 2CO})",
+      "answer": 56, "tolerance": 0.1, "unit": "g",
+      "solution": "M(SiO2) = 28 + 32 = 60 g/mol; n = 120 / 60 = 2 mol. {SiO2 : Si = 1 : 1}, demak n(Si) = 2 mol; m = 2 · 28 = 56 g.",
+      "mistakes": "Kremniy massasini {SiO2} massasiga teng deb olish." },
+    { "id": "g9-s12-q3", "type": "Y2", "skill": "kremniy materiallarining ishlatilishi", "difficulty": 2,
+      "stem": "Kremniyli materialni qo‘llanish sohasi bilan moslashtiring.",
+      "left": ["≈ 4 % {Si} li po‘lat", "≥ 16 % {Si} li po‘lat", "Toza kristall kremniy", "Karborund {SiC}"],
+      "right": ["Quyosh batareyalari va yarimo‘tkazgichlar", "Kimyo sanoatida kislotaga chidamli apparatlar", "Silliqlash va pardozlash toshlari", "Transformator, generator, dvigatel"],
+      "answer": [3, 1, 0, 2],
+      "solution": "Oz kremniyli po‘lat osonlik bilan magnitlanadi — elektrotexnika. Ko‘p kremniyli po‘lat kislotaga chidamli. Toza kristall kremniy yarimo‘tkazgich. Karborund juda qattiq — abraziv." },
+    { "id": "g9-s12-q4", "type": "Y1", "skill": "tarqalganligi", "difficulty": 1,
+      "stem": "Yer qobig‘ida tarqalganligi bo‘yicha kisloroddan keyin ikkinchi o‘rinda turuvchi element qaysi?",
+      "choices": ["{Al}", "{Fe}", "{C}", "{Si}"], "answer": 3,
+      "solution": "Yer qobig‘ida kremniyning massa ulushi ≈ 27,6 %, u kisloroddan keyin ikkinchi o‘rinda. Aluminiy uchinchi." },
+    { "id": "g9-s12-q5", "type": "O1", "skill": "massa ulushi", "difficulty": 1,
+      "stem": "Kvars ({SiO2}) tarkibida kremniyning massa ulushi necha foiz?",
+      "answer": 46.7, "tolerance": 0.1, "unit": "%",
+      "solution": "M(SiO2) = 28 + 2 · 16 = 60; w(Si) = 28 / 60 · 100 % ≈ 46,7 %." }
+  ]
+}

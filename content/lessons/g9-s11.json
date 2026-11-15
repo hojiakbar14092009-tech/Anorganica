@@ -1,0 +1,129 @@
+{
+  "id": "g9-s11",
+  "status": "seed-verified",
+  "pages": [53, 54, 55, 56, 58, 59, 60],
+  "summary": "{H2CO3} — beqaror, kuchsiz ikki negizli kislota; uning tuzlari karbonatlar va gidrokarbonatlar kuchli kislotalar ta’sirida {CO2} ajratadi, qizdirilganda parchalanadi. Eng muhimlari: {CaCO3}, {Na2CO3}, {NaHCO3}.",
+  "keyConcepts": [
+    "{H2CO3} faqat suvli eritmada mavjud; ikki bosqichda dissotsiyalanadi: {H2CO3 ⇄ H^+ + HCO3^-}, {HCO3^- ⇄ H^+ + CO3^2-}.",
+    "Karbonatlarga sifat reaksiyasi — kuchli kislota: gaz pufakchalari ({CO2}) ajraladi; qisqa ionli tenglama {CO3^2- + 2H^+ → CO2↑ + H2O}.",
+    "Eruvchanlik: ishqoriy metallar (va ammoniy) karbonatlari hamda barcha gidrokarbonatlar suvda eriydi, qolgan karbonatlar erimaydi.",
+    "Qizdirilganda: {CaCO3} → {CaO} + {CO2}; gidrokarbonatlar → karbonat + {CO2} + {H2O}; {Na2CO3} va {K2CO3} qizdirilganda barqaror.",
+    "Tabiatdagi karst: {CaCO3 + CO2 + H2O ⇄ Ca(HCO3)2} — g‘orlar, stalaktit va stalagmitlarning hosil bo‘lishi.",
+    "{Na2CO3} — kir soda (kristall holda {Na2CO3·10H2O}), {NaHCO3} — ichimlik sodasi, {CaCO3} — ohaktosh, bo‘r, marmar."
+  ],
+  "tables": [
+    {
+      "id": "props",
+      "title": "Karbonat kislota va uning tuzlarining kimyoviy xossalari",
+      "columns": [
+        { "key": "prop", "label": "Xossa" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh va sharoit" }
+      ],
+      "rows": [
+        { "id": "diss1", "cells": { "prop": "{H2CO3} ning 1-bosqich dissotsiatsiyasi", "eq": "diss1", "note": "kuchsiz kislota, qaytar" } },
+        { "id": "diss2", "cells": { "prop": "{HCO3^-} ning 2-bosqich dissotsiatsiyasi", "eq": "diss2", "note": "juda kuchsiz" } },
+        { "id": "acid", "cells": { "prop": "Karbonat + kuchli kislota", "eq": "acid", "note": "gaz ajraladi" },
+          "detail": { "concept": "Kuchli kislota karbonatdan kuchsiz {H2CO3} ni siqib chiqaradi; u parchalanib {CO2} va {H2O} beradi. Shu sababli karbonatlar kislotali muhitni neytrallaydi (tuproqqa ohaktosh solish).", "reactionIds": ["acid", "ion1"], "observation": "Gaz pufakchalari — qaynash", "examTip": "Karbonat va gidrokarbonatlarni boshqa tuzlardan farqlash: kislota qo‘shib {CO2} ajralishini kuzatish, so‘ng gazni ohakli suvga o‘tkazish.", "pages": [54] } },
+        { "id": "ion1", "cells": { "prop": "Karbonat-ion + {H^+} (qisqa ionli)", "eq": "ion1", "note": "barcha eruvchi va erimaydigan karbonatlar uchun" } },
+        { "id": "ion2", "cells": { "prop": "Gidrokarbonat-ion + {H^+}", "eq": "ion2", "note": "gidrokarbonatlar kislotada ham {CO2} beradi" } },
+        { "id": "bicarb", "cells": { "prop": "{Ca(HCO3)2} + kislota", "eq": "bicarbacid", "note": "ikki mol {CO2}" } },
+        { "id": "thermal1", "cells": { "prop": "Karbonatning parchalanishi", "eq": "caco3", "note": "900–1200 °C; {CO2} chiqarib turilsa oxirigacha boradi" },
+          "detail": { "concept": "Ishqoriy metallar ({Na}, {K}) karbonatlaridan tashqari ko‘pchilik karbonatlar qizdirilganda oksid va {CO2} ga parchalanadi. Ohaktoshni kuydirish — so‘ndirilmagan ohak olishning sanoat usuli.", "reactionIds": ["caco3"], "pages": [54, 55] } },
+        { "id": "thermal2", "cells": { "prop": "Gidrokarbonatning parchalanishi", "eq": "nahco3", "note": "≈ 100–200 °C" } },
+        { "id": "karst", "cells": { "prop": "Ohaktosh + {CO2} + suv (karst)", "eq": "karst", "note": "tabiatda ikki yo‘nalishda ham boradi" },
+          "detail": { "concept": "Yomg‘ir suvidagi {CO2} ohaktoshni eruvchan {Ca(HCO3)2} ga aylantiradi (g‘orlar hosil bo‘ladi). Bug‘lanish yoki qizish natijasida reaksiya teskari yo‘nalishda borib, {CaCO3} qayta ajraladi — stalaktit va stalagmit.", "reactionIds": ["karst", "reverse"], "pages": [55] } },
+        { "id": "reverse", "cells": { "prop": "{Ca(HCO3)2} ning parchalanishi", "eq": "reverse", "note": "stalaktit, stalagmit hosil bo‘lishi" } },
+        { "id": "soda", "cells": { "prop": "{Na2CO3} → {NaHCO3}", "eq": "soda", "note": "ichimlik sodasi olinishi" } },
+        { "id": "hydrolysis", "cells": { "prop": "{Na2CO3} gidrolizi", "eq": "hydrol", "note": "eritma ishqoriy ({pH > 7})" } },
+        { "id": "prep", "cells": { "prop": "Erimaydigan karbonat olish (almashinish)", "eq": "prep", "note": "ikki eruvchan tuzdan" } }
+      ]
+    },
+    {
+      "id": "salts",
+      "title": "Eng muhim karbonatlar",
+      "columns": [
+        { "key": "name", "label": "Modda" },
+        { "key": "f", "label": "Formula" },
+        { "key": "nat", "label": "Nomlari / tabiiy shakllari" },
+        { "key": "use", "label": "Ishlatilishi" }
+      ],
+      "rows": [
+        { "id": "caco3", "cells": { "name": "Kalsiy karbonat", "f": "{CaCO3}", "nat": "ohaktosh, bo‘r, marmar, kalsit", "use": "qurilish materiallari, sement, so‘ndirilgan ohak, shisha; tuproq kislotaliligini kamaytirish" } },
+        { "id": "na2co3", "cells": { "name": "Natriy karbonat", "f": "{Na2CO3} ({Na2CO3·10H2O} — kristall soda)", "nat": "kir soda, kalsinatsiyalangan soda", "use": "shisha, sovun, qog‘oz, to‘qimachilik, neft sanoati, maishiy tozalash" } },
+        { "id": "nahco3", "cells": { "name": "Natriy gidrokarbonat", "f": "{NaHCO3}", "nat": "ichimlik sodasi", "use": "tibbiyot, non (xamir yumshatish), o‘t o‘chirish zaryadi" } },
+        { "id": "dolomite", "cells": { "name": "Dolomit", "f": "{CaCO3·MgCO3}", "nat": "tabiiy mineral", "use": "qurilish, metallurgiya" } },
+        { "id": "k2co3", "cells": { "name": "Kaliy karbonat", "f": "{K2CO3}", "nat": "potash", "use": "shisha (qiyin suyuqlanuvchi), sovun" } }
+      ]
+    },
+    {
+      "id": "chain",
+      "title": "Zanjir: {CaCO3 → CO2 → Na2CO3 → NaHCO3 → NaCl}",
+      "columns": [
+        { "key": "step", "label": "Bosqich" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "s1", "cells": { "step": "{CaCO3} → {CO2}", "eq": "acidCa", "note": "kislota ta’sirida" } },
+        { "id": "s2", "cells": { "step": "{CO2} → {Na2CO3}", "eq": "naoh1", "note": "mo‘l ishqorda" } },
+        { "id": "s3", "cells": { "step": "{Na2CO3} → {NaHCO3}", "eq": "soda", "note": "{CO2} va suv bilan" } },
+        { "id": "s4", "cells": { "step": "{NaHCO3} → {NaCl}", "eq": "nacl", "note": "xlorid kislota bilan" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "diss1": { "equation": "H2CO3 ⇄ H^+ + HCO3^-", "conditions": "suvli eritma" },
+    "diss2": { "equation": "HCO3^- ⇄ H^+ + CO3^2-", "conditions": "suvli eritma" },
+    "acid": { "equation": "Na2CO3 + 2HCl → 2NaCl + CO2↑ + H2O", "observation": "Gaz pufakchalari ajraladi" },
+    "ion1": { "equation": "CO3^2- + 2H^+ → CO2↑ + H2O" },
+    "ion2": { "equation": "HCO3^- + H^+ → CO2↑ + H2O" },
+    "bicarbacid": { "equation": "Ca(HCO3)2 + 2HCl → CaCl2 + 2CO2↑ + 2H2O", "observation": "Gaz pufakchalari ajraladi" },
+    "caco3": { "equation": "CaCO3 → CaO + CO2↑", "conditions": "900–1200 °C" },
+    "nahco3": { "equation": "2NaHCO3 → Na2CO3 + CO2↑ + H2O", "conditions": "qizdirish" },
+    "karst": { "equation": "CaCO3 + CO2 + H2O ⇄ Ca(HCO3)2", "conditions": "tabiiy suvlar", "note": "O‘ng tomonga — g‘orlar hosil bo‘lishi (erish), chapga — cho‘kma ajralishi." },
+    "reverse": { "equation": "Ca(HCO3)2 → CaCO3↓ + CO2↑ + H2O", "conditions": "qizdirish yoki bug‘lanish" },
+    "soda": { "equation": "Na2CO3 + CO2 + H2O → 2NaHCO3" },
+    "hydrol": { "equation": "CO3^2- + H2O ⇄ HCO3^- + OH^-", "conditions": "suvli eritma" },
+    "prep": { "equation": "Na2CO3 + CaCl2 → CaCO3↓ + 2NaCl", "observation": "Oq cho‘kma tushadi" },
+    "acidCa": { "equation": "CaCO3 + 2HCl → CaCl2 + CO2↑ + H2O" },
+    "naoh1": { "equation": "CO2 + 2NaOH → Na2CO3 + H2O" },
+    "nacl": { "equation": "NaHCO3 + HCl → NaCl + CO2↑ + H2O" }
+  },
+  "clarifications": [
+    { "text": "59-betdagi 2-misolda yechim jarayonida «2,74 %» yozilgan, javobda esa «2,47 %». To‘g‘risi: 26,5 / 1074,3 · 100 % ≈ 2,47 %; «2,74 %» — raqamlar o‘rni almashgan bosma xato.", "source": "additionalVerifiedSource" },
+    { "text": "58-betda «CaCO2» yozilgan — bosma xato, to‘g‘risi {CaCO3}.", "source": "additionalVerifiedSource" },
+    { "text": "54-betdagi «ishqoriy metallar karbonatlaridan tashqari barcha karbonatlar parchalanadi» ifodasi aniqlashtirilishi kerak: {Na2CO3} va {K2CO3} qizdirilganda barqaror, {Li2CO3} esa parchalanadi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s11-q1", "type": "Y1", "skill": "karbonatlarning termik barqarorligi", "difficulty": 1,
+      "stem": "Quyidagi tuzlarning qaysi biri odatdagi qizdirishda ({CO2} ajratib) parchalanmaydi?",
+      "choices": ["{CaCO3}", "{MgCO3}", "{Na2CO3}", "{CuCO3}"], "answer": 2,
+      "solution": "Natriy va kaliy karbonatlari termik barqaror; {CaCO3 → CaO + CO2}, {MgCO3 → MgO + CO2}, {CuCO3 → CuO + CO2} parchalanadi." },
+    { "id": "g9-s11-q2", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "16,8 g natriy gidrokarbonat to‘liq qizdirilganda ({2NaHCO3 → Na2CO3 + CO2 + H2O}) n.sh. da necha litr karbonat angidrid ajraladi?",
+      "answer": 2.24, "tolerance": 0.02, "unit": "l",
+      "solution": "M(NaHCO3) = 23 + 1 + 12 + 48 = 84 g/mol; n = 16,8 / 84 = 0,2 mol. {NaHCO3 : CO2 = 2 : 1}, demak n(CO2) = 0,1 mol; V = 0,1 · 22,4 = 2,24 l.",
+      "mistakes": "2 : 1 nisbatni hisobga olmay 4,48 l deb javob berish." },
+    { "id": "g9-s11-q3", "type": "O1", "skill": "aralashmali masala", "difficulty": 2,
+      "stem": "Tarkibida 90 % {CaCO3} bo‘lgan 200 g ohaktosh ortiqcha xlorid kislota bilan ta’sirlashdi. Ajralgan {CO2} ning hajmini (n.sh.) toping.",
+      "answer": 40.32, "tolerance": 0.05, "unit": "l",
+      "solution": "m(CaCO3) = 200 · 0,9 = 180 g; n = 180 / 100 = 1,8 mol. {CaCO3 + 2HCl → CaCl2 + CO2 + H2O}: n(CO2) = 1,8 mol; V = 1,8 · 22,4 = 40,32 l.",
+      "mistakes": "Aralashma massasini (200 g) sof modda deb olish — 44,8 l chiqib qoladi." },
+    { "id": "g9-s11-q4", "type": "Y2", "skill": "karbonatlar reaksiyalari", "difficulty": 2,
+      "stem": "Karbonat yoki gidrokarbonat bilan sharoitni hosil bo‘ladigan mahsulotlar bilan moslashtiring.",
+      "left": ["{Na2CO3} + {HCl}", "{CaCO3}, 900–1200 °C", "{Ca(HCO3)2}, qizdirish", "{Na2CO3} + {CO2} + {H2O}"],
+      "right": ["{CaO} + {CO2}", "{CaCO3} + {CO2} + {H2O}", "{NaHCO3}", "{NaCl} + {CO2} + {H2O}"],
+      "answer": [3, 0, 1, 2],
+      "solution": "Karbonat + kuchli kislota → tuz + {CO2} + {H2O}. {CaCO3} qizdirilsa {CaO + CO2}. {Ca(HCO3)2} qizdirilsa {CaCO3↓ + CO2 + H2O}. {Na2CO3 + CO2 + H2O → 2NaHCO3}." },
+    { "id": "g9-s11-q5", "type": "Y1", "skill": "karbonatlarni aniqlash", "difficulty": 1,
+      "stem": "Qattiq oq kukun tarkibida karbonat borligini aniqlash uchun eng mos reagent qaysi?",
+      "choices": ["{NaOH} eritmasi", "Distillangan suv", "Xlorid kislota eritmasi", "Fenolftalein"], "answer": 2,
+      "solution": "Kuchli kislota ta’sirida karbonat {CO2} ajratadi (gaz pufakchalari); gazni ohakli suvga o‘tkazib, loyqalanish bilan tasdiqlash mumkin." },
+    { "id": "g9-s11-q6", "type": "O1", "skill": "moddaning tozaligi", "difficulty": 3,
+      "stem": "10 g ohaktosh namunasi to‘liq kuydirilganda 3,52 g karbonat angidrid ajraldi. Namunada kalsiy karbonatning massa ulushi necha foiz? (Boshqa qo‘shimchalar parchalanmaydi.)",
+      "answer": 80, "tolerance": 0.2, "unit": "%",
+      "solution": "{CaCO3 → CaO + CO2}; n(CO2) = 3,52 / 44 = 0,08 mol; n(CaCO3) = 0,08 mol; m(CaCO3) = 0,08 · 100 = 8 g; w = 8 / 10 · 100 % = 80 %.",
+      "mistakes": "{CO2} massasini {CaCO3} massasi deb olish." }
+  ]
+}

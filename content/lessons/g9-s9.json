@@ -1,0 +1,103 @@
+{
+  "id": "g9-s9",
+  "status": "seed-verified",
+  "pages": [48, 49, 50],
+  "summary": "Uglerod odatdagi haroratda kam faol, qizdirilganda esa kislorod, ftor, oltingugurt, metallar bilan birikadi va kuchli qaytaruvchi sifatida metall oksidlaridan metallarni ajratadi. Faollashtirilgan ko‘mir yuqori adsorbsion qobiliyatga ega.",
+  "keyConcepts": [
+    "Fizik xossalari: hidsiz, ta’msiz, qiyin suyuqlanadigan, oddiy erituvchilarda erimaydi; olmosning suyuqlanish harorati ≈ 3550 °C.",
+    "Kimyoviy xossalari: yetarli kislorodda {CO2}, yetishmasa {CO} hosil bo‘ladi; qizdirilgan ko‘mir {CO2} ni {CO} gacha qaytaradi.",
+    "Metallar bilan karbidlar hosil qiladi; ba’zilari suv yoki kislota bilan gidrolizlanib uglevodorod beradi: {CaC2} → asetilen, {Al4C3} → metan.",
+    "Uglerod — kuchli qaytaruvchi: {CuO}, {Fe2O3}, {FeO} dan metallarni qaytaradi; konsentrlangan {H2SO4} bilan oksidlanadi.",
+    "Adsorbsiya — moddaning sirtga yutilishi; faollashtirilgan ko‘mir (o‘ta qizigan bug‘ bilan ishlangan) protivogaz va tozalashda ishlatiladi (N. D. Zelinskiy)."
+  ],
+  "tables": [
+    {
+      "id": "chem",
+      "title": "Uglerodning kimyoviy xossalari",
+      "columns": [
+        { "key": "with", "label": "Nima bilan" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Sharoit va izoh" }
+      ],
+      "rows": [
+        { "id": "o2full", "cells": { "with": "Mo‘l kislorod", "eq": "co2", "note": "to‘liq yonish, issiqlik ajraladi" },
+          "detail": { "concept": "Uglerodning kislorod bilan reaksiyasi ekzotermik. Havo yetishmasa, is gazi {CO} hosil bo‘ladi — yopiq xonada ko‘mir yoqish xavfli.", "reactionIds": ["co2", "co"], "pages": [49] } },
+        { "id": "o2part", "cells": { "with": "Kam kislorod", "eq": "co", "note": "chala yonish, zaharli {CO}" } },
+        { "id": "boud", "cells": { "with": "{CO2} (ortiqcha ko‘mir bilan)", "eq": "boud", "note": "cho‘g‘lanma ko‘mir; endotermik" },
+          "detail": { "concept": "Bu reaksiya uglerod (IV) oksidni uglerod (II) oksidga aylantiradi; yuqori haroratda muvozanat o‘ngga siljiydi.", "reactionIds": ["boud"], "pages": [49] } },
+        { "id": "f2", "cells": { "with": "Ftor", "eq": "cf4", "note": "boshqa galogenlar bevosita reaksiyaga kirishmaydi" } },
+        { "id": "s", "cells": { "with": "Oltingugurt", "eq": "cs2", "note": "900–1000 °C" } },
+        { "id": "al", "cells": { "with": "Aluminiy", "eq": "al4c3", "note": "yuqori harorat; karbid hosil bo‘ladi" } },
+        { "id": "cao", "cells": { "with": "{CaO} (elektr pechida)", "eq": "cac2", "note": "kalsiy karbid olinishi; ≈ 2000 °C" },
+          "detail": { "concept": "Kalsiy karbid suv bilan asetilen beradi — payvandlash va organik sintezda ishlatiladi. Alyuminiy karbid kislotada metan ajratadi.", "reactionIds": ["cac2", "cac2h2o", "al4c3hcl"], "observation": "{CaC2} ga suv tomizilsa, gaz ajraladi va eritma ohakli suvga aylanadi", "pages": [49] } },
+        { "id": "cac2h2o", "cells": { "with": "{CaC2} + suv (karbid gidrolizi)", "eq": "cac2h2o", "note": "asetilen {C2H2}" } },
+        { "id": "al4c3hcl", "cells": { "with": "{Al4C3} + xlorid kislota", "eq": "al4c3hcl", "note": "metan {CH4}" } },
+        { "id": "sio2", "cells": { "with": "{SiO2} (elektr pechi)", "eq": "sic", "note": "karborund — juda qattiq, chidamli" } },
+        { "id": "cuo", "cells": { "with": "Mis (II) oksid", "eq": "cuo", "note": "qora kukun qizil mis ga aylanadi" },
+          "detail": { "concept": "Uglerod qaytaruvchi: o‘zi oksidlanib {CO2} (yoki {CO}) ga o‘tadi, metall oksidi esa metallgacha qaytariladi. Metallurgiyaning asosiy usullaridan biri.", "reactionIds": ["cuo", "fe2o3"], "observation": "Qora {CuO} → qizil metall mis", "examTip": "Metall oksidi + C → metall + {CO2} (ortiqcha oksidda) yoki {CO} (ortiqcha ko‘mirda).", "pages": [50] } },
+        { "id": "fe2o3", "cells": { "with": "Temir (III) oksid", "eq": "fe2o3", "note": "temir olish" } },
+        { "id": "h2so4", "cells": { "with": "Konsentrlangan {H2SO4}", "eq": "h2so4", "note": "qizdirilganda; oksidlovchi — kislota" } }
+      ]
+    },
+    {
+      "id": "adsorption",
+      "title": "Adsorbsiya tushunchalari",
+      "columns": [
+        { "key": "term", "label": "Tushuncha" },
+        { "key": "mean", "label": "Ma’nosi" },
+        { "key": "ex", "label": "Misol" }
+      ],
+      "rows": [
+        { "id": "ads", "cells": { "term": "Adsorbsiya", "mean": "Moddaning (gaz, erigan zarra) qattiq yoki suyuq jism sirtiga yutilishi", "ex": "Ko‘mir sirtiga zaharli gazlar yutilishi" },
+          "detail": { "concept": "Adsorbsiya qobiliyati sirt yuzasiga bog‘liq: g‘ovak jism qanchalik katta sirtga ega bo‘lsa, shuncha ko‘p modda yutadi.", "examTip": "Adsorbent — yutuvchi modda; adsorbtiv — yutiladigan modda.", "pages": [48] } },
+        { "id": "act", "cells": { "term": "Faollashtirilgan ko‘mir", "mean": "O‘ta qizigan suv bug‘i bilan ishlanib, g‘ovaklari tozalangan va yutish sirti orttirilgan ko‘mir", "ex": "Protivogaz, suv va oziq-ovqat (yog‘-moy) tozalash, tibbiyotda zaharlanishda" } },
+        { "id": "zel", "cells": { "term": "Zelinskiy protivogazi", "mean": "N. D. Zelinskiy birinchi jahon urushida faollashtirilgan ko‘mir asosida yaratgan himoya vositasi", "ex": "Zaharli gazlardan himoya" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "co2": { "equation": "C + O2 → CO2", "conditions": "yonish" },
+    "co": { "equation": "2C + O2 → 2CO", "conditions": "kislorod yetishmaganda", "safety": "{CO} (is gazi) o‘ta zaharli — faqat virtual namoyish." },
+    "boud": { "equation": "CO2 + C → 2CO", "conditions": "yuqori harorat, cho‘g‘lanma ko‘mir", "safety": "{CO} o‘ta zaharli — faqat virtual namoyish." },
+    "cf4": { "equation": "C + 2F2 → CF4", "conditions": "qizdirilganda", "safety": "Ftor o‘ta agressiv, zaharli gaz — faqat virtual namoyish." },
+    "cs2": { "equation": "C + 2S → CS2", "conditions": "900–1000 °C", "safety": "{CS2} zaharli va o‘ta yonuvchan — faqat virtual namoyish." },
+    "al4c3": { "equation": "4Al + 3C → Al4C3", "conditions": "yuqori harorat" },
+    "cac2": { "equation": "CaO + 3C → CaC2 + CO↑", "conditions": "elektr pechi, ≈ 2000 °C", "safety": "Reaksiyada zaharli {CO} ajraladi — faqat virtual namoyish." },
+    "cac2h2o": { "equation": "CaC2 + 2H2O → Ca(OH)2 + C2H2↑", "observation": "Rangsiz yonuvchan gaz — asetilen ajraladi" },
+    "al4c3hcl": { "equation": "Al4C3 + 12HCl → 4AlCl3 + 3CH4↑", "observation": "Metan gazi ajraladi" },
+    "sic": { "equation": "SiO2 + 3C → SiC + 2CO↑", "conditions": "elektr pechi, yuqori harorat", "safety": "Reaksiyada zaharli {CO} ajraladi — faqat virtual namoyish." },
+    "cuo": { "equation": "2CuO + C → 2Cu + CO2↑", "conditions": "qizdirish", "observation": "Qora kukun qizil mis cho‘kmasiga aylanadi" },
+    "fe2o3": { "equation": "2Fe2O3 + 3C → 4Fe + 3CO2↑", "conditions": "yuqori harorat" },
+    "h2so4": { "equation": "C + 2H2SO4 → CO2↑ + 2SO2↑ + 2H2O", "conditions": "konsentrlangan kislota, qizdirish", "safety": "{SO2} zaharli gaz — faqat virtual namoyish." }
+  },
+  "clarifications": [
+    { "text": "49-betda {C + O2 → CO2 + 412 kJ} yozilgan. Grafitning yonish issiqligi aniqrog‘i ≈ 393,5 kJ/mol (olmosniki ≈ 395,4 kJ/mol); 412 kJ qiymatiga ishonmang, hisoblashda faqat topshiriq berilgan sonni ishlating.", "source": "additionalVerifiedSource" },
+    { "text": "48-betda «uglerod barcha allotropik shaklida erituvchilarda erimaydi» deyilgan: odatdagi erituvchilarda to‘g‘ri, lekin fulleren organik erituvchilarda (masalan, toluolda) eriydi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s9-q1", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "40 g mis (II) oksid ko‘mir bilan {2CuO + C → 2Cu + CO2} reaksiyasi bo‘yicha to‘liq qaytarildi. Necha gramm mis hosil bo‘ladi?",
+      "answer": 32, "tolerance": 0.05, "unit": "g",
+      "solution": "M(CuO) = 64 + 16 = 80 g/mol; n(CuO) = 40 / 80 = 0,5 mol. Tenglamada {CuO : Cu = 2 : 2}, demak n(Cu) = 0,5 mol; m(Cu) = 0,5 · 64 = 32 g.",
+      "mistakes": "Mis massasini oksid massasi bilan aralashtirish yoki ko‘mir moliga ({0,25 mol}) bog‘lab ketish." },
+    { "id": "g9-s9-q2", "type": "Y1", "skill": "uglerodning reaksiyalari", "difficulty": 1,
+      "stem": "Quyidagi galogenlarning qaysi biri bevosita uglerod bilan reaksiyaga kirishadi?",
+      "choices": ["{Cl2}", "{F2}", "{Br2}", "{I2}"], "answer": 1,
+      "solution": "Faqat ftor uglerod bilan bevosita birikadi: {C + 2F2 → CF4}. Xlor, brom, yod bilan to‘g‘ridan-to‘g‘ri reaksiya bormaydi." },
+    { "id": "g9-s9-q3", "type": "Y2", "skill": "karbidlar va ularning gidrolizi", "difficulty": 2,
+      "stem": "Reaksiya uchun olingan moddalarni asosiy mahsulot bilan moslashtiring.",
+      "left": ["{CaC2} + {H2O}", "{Al4C3} + {HCl}", "{SiO2} + {C} (elektr pechi)", "{C} + konsentrlangan {H2SO4}"],
+      "right": ["{CH4} (metan) va {AlCl3}", "{CO2} va {SO2}", "{C2H2} (asetilen) va {Ca(OH)2}", "{SiC} va {CO}"],
+      "answer": [2, 0, 3, 1],
+      "solution": "{CaC2 + 2H2O → Ca(OH)2 + C2H2}; {Al4C3 + 12HCl → 4AlCl3 + 3CH4}; {SiO2 + 3C → SiC + 2CO}; {C + 2H2SO4 → CO2 + 2SO2 + 2H2O}." },
+    { "id": "g9-s9-q4", "type": "Y1", "skill": "adsorbsiya", "difficulty": 1,
+      "stem": "Faollashtirilgan ko‘mirdan protivogazda foydalanish qaysi xossasiga asoslangan?",
+      "choices": ["Yaxshi yonishiga", "Elektr tokini o‘tkazishiga", "Zaharli moddalarni sirtiga yutishiga (adsorbsiya)", "Suvda erishiga"], "answer": 2,
+      "solution": "Ko‘mir g‘ovak, sirt yuzasi katta; bug‘ bilan ishlashda yutish sirti ortadi. Zaharli gaz zarralari ko‘mir sirtiga yutiladi — bu adsorbsiya." },
+    { "id": "g9-s9-q5", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "Kislorod yetishmaganda 2,4 g uglerod to‘liq {CO} ga aylandi ({2C + O2 → 2CO}). Hosil bo‘lgan is gazining hajmini (n.sh.) toping.",
+      "answer": 4.48, "tolerance": 0.02, "unit": "l",
+      "solution": "n(C) = 2,4 / 12 = 0,2 mol. Tenglamada {C : CO = 2 : 2}, demak n(CO) = 0,2 mol. V = 0,2 · 22,4 = 4,48 l.",
+      "mistakes": "{CO2} hosil bo‘ladi deb hisoblash; bu holda {C : CO2 = 1 : 1} va hajm boshqacha bo‘lardi." }
+  ]
+}

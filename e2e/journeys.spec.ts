@@ -70,3 +70,15 @@ test('offline after priming: cold reload of a lesson works', async ({ page, cont
   await expect(page.getByText('Katod (−): qaytarilish')).toBeVisible();
   await expect(page.getByText(/Oflayn rejim/)).toBeVisible();
 });
+
+test('timed drill shows a timer and 10 questions; electrolysis visual has controls', async ({ page }) => {
+  await page.goto('/mashq');
+  await page.getByRole('button', { name: /Vaqtli mashq/ }).click();
+  await expect(page.getByRole('timer')).toContainText(/Qoldi: 1[45]:/);
+  await expect(page.locator('.question')).toHaveCount(10);
+  await page.goto('/dars/g9-s19');
+  const fig = page.locator('figure.visual').first();
+  await expect(fig.getByRole('img')).toBeVisible();
+  await fig.getByRole('button', { name: 'Boshlash' }).click();
+  await expect(fig.getByRole('button', { name: 'Pauza' })).toHaveAttribute('aria-pressed', 'true');
+});

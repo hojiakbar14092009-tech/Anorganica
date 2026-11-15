@@ -1,0 +1,105 @@
+{
+  "id": "g9-s14",
+  "status": "seed-verified",
+  "pages": [66, 67, 68, 69],
+  "summary": "Silikat sanoati tabiiy silikatlar va kremnezemdan shisha, sement, beton, temir-beton, keramika va chinni ishlab chiqaradi. Oddiy shisha soda, ohaktosh va qumni suyuqlantirib olinadi; sement ohaktosh va gilni pishirib (klinker) olinadi.",
+  "keyConcepts": [
+    "Oddiy shisha ≈ {Na2O·CaO·6SiO2}: {Na2CO3} va {CaCO3} kvars qumi bilan suyuqlantirilganda {CO2} ajraladi, silikatlar hosil bo‘ladi.",
+    "Shisha aniq suyuqlanish haroratiga ega emas: sovutilganda asta qovushqoqligi ortib qotadi — shu sababli har xil shakl berish mumkin.",
+    "Tarkibi o‘zgartirilsa xossalari o‘zgaradi: soda o‘rniga potash — qiyin suyuqlanuvchi shisha; potash + {PbO} — xrustal; metall oksidlari — rangli shishalar.",
+    "Sement: ohaktosh, bo‘r, gil aralashmasi aylanuvchi pechda yuqori haroratda pishirilib klinker olinadi, klinkerni maydalab sement tayyorlanadi; suv bilan aralashtirilganda qotadi, hatto suv ostida ham.",
+    "Beton = sement + qum + shag‘al + suv; temir-beton = beton + po‘lat armatura.",
+    "Keramika gildan tayyorlanadi: xomashyo → loy massasi → qoliplash → quritish → kuydirish; sirt glazur bilan qoplanadi."
+  ],
+  "tables": [
+    {
+      "id": "glass",
+      "title": "Shisha ishlab chiqarish",
+      "columns": [
+        { "key": "stage", "label": "Tur / bosqich" },
+        { "key": "raw", "label": "Xomashyo" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "prop", "label": "Xossasi va ishlatilishi" }
+      ],
+      "rows": [
+        { "id": "soda", "cells": { "stage": "Oddiy shisha: soda qismi", "raw": "{Na2CO3} + qum {SiO2}", "eq": "soda", "prop": "{Na2SiO3} hosil bo‘ladi" },
+          "detail": { "concept": "Shisha — natriy va kalsiy silikatlarning kremniy (IV)-oksid bilan qotishmasi; taxminan {Na2O·CaO·6SiO2}.", "reactionIds": ["soda", "lime"], "pages": [66] } },
+        { "id": "lime", "cells": { "stage": "Oddiy shisha: ohaktosh qismi", "raw": "{CaCO3} + qum {SiO2}", "eq": "lime", "prop": "{CaSiO3} hosil bo‘ladi; deraza va idish shishasi" } },
+        { "id": "potash", "cells": { "stage": "Qiyin suyuqlanuvchi shisha", "raw": "{K2CO3} (potash) + {CaCO3} + {SiO2}", "eq": "potash", "prop": "kimyoviy idishlar" } },
+        { "id": "crystal", "cells": { "stage": "Xrustal (billur)", "raw": "potash + {PbO} + {SiO2}", "eq": "", "prop": "og‘ir, nurni kuchli sindiradi" } },
+        { "id": "fiber", "cells": { "stage": "Shisha tola", "raw": "suyuq shisha massasi", "eq": "", "prop": "issiqlik va elektr izolyatsiyasi, kislotaga chidamli material" } }
+      ]
+    },
+    {
+      "id": "colors",
+      "title": "Rangli shishalar",
+      "columns": [
+        { "key": "add", "label": "Qo‘shimcha" },
+        { "key": "color", "label": "Shisha rangi" }
+      ],
+      "rows": [
+        { "id": "co", "cells": { "add": "{CoO} kobalt (II) oksid", "color": "ko‘k" } },
+        { "id": "cr", "cells": { "add": "{Cr2O3} xrom (III) oksid", "color": "yashil" } },
+        { "id": "fe", "cells": { "add": "{FeO} temir (II) oksid", "color": "to‘q yashil" } },
+        { "id": "cu", "cells": { "add": "{Cu2O} mis (I) oksid", "color": "qizil" } },
+        { "id": "au", "cells": { "add": "oltin (mayda zarralar)", "color": "rubin (qizil nurni o‘tkazadi)" } }
+      ]
+    },
+    {
+      "id": "binders",
+      "title": "Bog‘lovchi materiallar va keramika",
+      "columns": [
+        { "key": "mat", "label": "Material" },
+        { "key": "raw", "label": "Xomashyo / tarkibi" },
+        { "key": "eq", "label": "Asosiy reaksiya", "reaction": true },
+        { "key": "use", "label": "Olinishi va ishlatilishi" }
+      ],
+      "rows": [
+        { "id": "cement", "cells": { "mat": "Sement", "raw": "ohaktosh yoki bo‘r + giltuproq (gil)", "eq": "decarb", "use": "aylanuvchi pechda pishirilib klinker, so‘ng kukun; yerusti va suvosti inshootlari bog‘lovchisi" },
+          "detail": { "concept": "Pechda xomashyodan suv va {CO2} chiqib ketadi, kalsiy silikatlar ({Ca3SiO5}, {Ca2SiO4}) hosil bo‘ladi. Klinker maydalansa — sement; suv bilan qotuvchi xamir beradi.", "reactionIds": ["decarb", "alite", "belite"], "examTip": "Sement pishirish harorati ≈ 1450 °C (darslikda «450 °C» — xato).", "pages": [67] } },
+        { "id": "alite", "cells": { "mat": "Klinker: alit", "raw": "{CaO} + {SiO2}", "eq": "alite", "use": "klinkerdagi qotuvchi asosiy faza" } },
+        { "id": "belite", "cells": { "mat": "Klinker: belit", "raw": "{CaO} + {SiO2}", "eq": "belite", "use": "sekin qotuvchi faza" } },
+        { "id": "concrete", "cells": { "mat": "Beton", "raw": "sement + qum + shag‘al + suv", "eq": "", "use": "poydevor, yo‘l, bino konstruksiyalari" } },
+        { "id": "rc", "cells": { "mat": "Temir-beton", "raw": "beton + po‘lat armatura (karkas)", "eq": "", "use": "ko‘p qavatli binolar, ko‘priklar; betondan farqi — armatura bardosh beradi" },
+          "detail": { "concept": "Beton siqilishga chidamli, cho‘zilishga zaif; po‘lat armatura cho‘zilishga chidamlilikni oshiradi.", "pages": [67] } },
+        { "id": "ceramics", "cells": { "mat": "Keramika (sopol, fayans, chinni, g‘isht)", "raw": "gil, kaolin, qum, bo‘r, dolomit", "eq": "", "use": "xomashyo → loy → qoliplash → quritish → kuydirish; maishiy buyumlar, kafel, izolyator" },
+          "detail": { "concept": "Kuydirishda buyum yuzasi glazur bilan qoplanadi — sirt silliq, suv o‘tkazmaydigan shishasimon qatlam bo‘ladi.", "pages": [67, 68] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "soda": { "equation": "Na2CO3 + SiO2 → Na2SiO3 + CO2↑", "conditions": "suyuqlantirish" },
+    "lime": { "equation": "CaCO3 + SiO2 → CaSiO3 + CO2↑", "conditions": "suyuqlantirish" },
+    "potash": { "equation": "K2CO3 + SiO2 → K2SiO3 + CO2↑", "conditions": "suyuqlantirish" },
+    "decarb": { "equation": "CaCO3 → CaO + CO2↑", "conditions": "aylanuvchi pech, yuqori harorat" },
+    "alite": { "equation": "3CaO + SiO2 → Ca3SiO5", "conditions": "≈ 1450 °C (klinker hosil bo‘lishi)" },
+    "belite": { "equation": "2CaO + SiO2 → Ca2SiO4", "conditions": "≈ 1450 °C (klinker hosil bo‘lishi)" }
+  },
+  "clarifications": [
+    { "text": "67-betda sement uchun pechdagi harorat «450 °C gacha» deb yozilgan. Aslida klinker ≈ 1450 °C da pishiriladi; 450 °C da {CaCO3} parchalanmaydi. «450» — «1450» o‘rniga bosma xato.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s14-q1", "type": "Y1", "skill": "shisha tarkibi", "difficulty": 1,
+      "stem": "Oddiy oyna shishasining taxminiy tarkibi qaysi formula bilan ifodalanadi?",
+      "choices": ["{Na2O·CaO·6SiO2}", "{K2O·PbO·6SiO2}", "{CaO·Al2O3·2SiO2}", "{Na2O·SiO2}"], "answer": 0,
+      "solution": "Oddiy shisha natriy va kalsiy silikatlarning {SiO2} bilan qotishmasi: {Na2O·CaO·6SiO2}. {K2O·PbO·6SiO2} — xrustal tipidagi tarkib." },
+    { "id": "g9-s14-q2", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "53 g soda ({Na2CO3}) mo‘l kvars qumi bilan suyuqlantirilganda ({Na2CO3 + SiO2 → Na2SiO3 + CO2}) n.sh. da necha litr {CO2} ajraladi?",
+      "answer": 11.2, "tolerance": 0.05, "unit": "l",
+      "solution": "M(Na2CO3) = 2·23 + 12 + 48 = 106 g/mol; n = 53 / 106 = 0,5 mol; {Na2CO3 : CO2 = 1 : 1}; V = 0,5 · 22,4 = 11,2 l." },
+    { "id": "g9-s14-q3", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "Sement ishlab chiqarishda 200 g toza kalsiy karbonat to‘liq parchalandi ({CaCO3 → CaO + CO2}). Hosil bo‘lgan kalsiy oksid massasi necha gramm?",
+      "answer": 112, "tolerance": 0.1, "unit": "g",
+      "solution": "n(CaCO3) = 200 / 100 = 2 mol; n(CaO) = 2 mol; M(CaO) = 56 g/mol; m = 2 · 56 = 112 g. (Tekshiruv: 200 − 88 ({CO2}) = 112 g.)" },
+    { "id": "g9-s14-q4", "type": "Y2", "skill": "silikat materiallari", "difficulty": 2,
+      "stem": "Xomashyo yoki qo‘shimchani hosil bo‘ladigan material bilan moslashtiring.",
+      "left": ["{Na2CO3}, {CaCO3} va {SiO2}", "Ohaktosh, bo‘r va giltuproq", "Gil, kaolin, qum", "{CoO} qo‘shilgan shisha"],
+      "right": ["Sement", "Ko‘k rangli shisha", "Oddiy oyna shishasi", "Keramika (sopol)"],
+      "answer": [2, 0, 3, 1],
+      "solution": "Soda, ohaktosh va qum — oddiy shisha. Ohaktosh, bo‘r va gil pishirilib sement beradi. Gil, kaolin va qum — keramika. {CoO} shishaga ko‘k rang beradi." },
+    { "id": "g9-s14-q5", "type": "Y1", "skill": "temir-beton", "difficulty": 1,
+      "stem": "Temir-beton oddiy betondan nimasi bilan farq qiladi?",
+      "choices": ["Tarkibida sement yo‘q", "Ichiga po‘lat armatura (karkas) joylangan", "Suv bilan aralashtirilmaydi", "U shishadan tayyorlanadi"], "answer": 1,
+      "solution": "Temir-beton — beton ichiga po‘lat armatura joylangan material; armatura cho‘zilishga chidamlilikni oshiradi." }
+  ]
+}

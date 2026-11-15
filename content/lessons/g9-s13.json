@@ -1,0 +1,126 @@
+{
+  "id": "g9-s13",
+  "status": "seed-verified",
+  "pages": [63, 64, 65],
+  "summary": "Kremniy kristall holda metallsimon yaltiroq, yuqori haroratda faol: kislorod, galogenlar, uglerod, metallar bilan birikadi, ishqorda eriydi. {SiO2} — kislotali oksid (atom panjara), {H2SiO3} — kuchsiz, erimaydigan kislota, uning tuzlari — silikatlar.",
+  "keyConcepts": [
+    "Kremniy kislotalar bilan odatda reaksiyaga kirishmaydi (HF va {HF + HNO3} aralashmasidan tashqari), lekin ishqor eritmasida eriydi: {Si + 2NaOH + H2O → Na2SiO3 + 2H2}.",
+    "Metallar bilan silitsidlar hosil qiladi; silitsid kislotada parchalanib silan {SiH4} beradi — kuchli qaytaruvchi, havoda o‘z-o‘zidan alangalanuvchi gaz.",
+    "{SiO2} suvda erimaydi, faqat {HF} bilan reaksiyaga kirishadi; ishqor, asosli oksid yoki karbonat bilan suyuqlantirilganda silikat hosil qiladi.",
+    "{H2SiO3} karbonat kislotadan kuchsiz: {CO2} silikat eritmasidan gelsimon {H2SiO3} cho‘kmasini ajratadi.",
+    "Faqat {Na2SiO3} va {K2SiO3} suvda eriydi; ularning eritmasi — suyuq shisha."
+  ],
+  "tables": [
+    {
+      "id": "si",
+      "title": "Kremniyning kimyoviy xossalari",
+      "columns": [
+        { "key": "with", "label": "Nima bilan" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Sharoit va izoh" }
+      ],
+      "rows": [
+        { "id": "o2", "cells": { "with": "Kislorod", "eq": "o2", "note": "kuchli qizdirish" } },
+        { "id": "cl2", "cells": { "with": "Xlor", "eq": "cl2", "note": "qizdirish; {SiCl4} suvda gidrolizlanadi" } },
+        { "id": "c", "cells": { "with": "Uglerod", "eq": "c", "note": "yuqori harorat; karborund" },
+          "detail": { "concept": "Karborund {SiC} juda qattiq, kimyoviy barqaror — silliqlash va pardozlash toshlari.", "reactionIds": ["c"], "pages": [63] } },
+        { "id": "mg", "cells": { "with": "Magniy (silitsid)", "eq": "mg", "note": "qizdirish" } },
+        { "id": "silane", "cells": { "with": "{Mg2Si} + kislota", "eq": "silane", "note": "silan hosil bo‘ladi" },
+          "detail": { "concept": "Silan {SiH4} — rangsiz gaz, kuchli qaytaruvchi, havoda o‘z-o‘zidan alangalanadi. Umumiy formula {SinH2n+2}; silanlar alkanlarga nisbatan ancha faol (Si–H, Si–Si bog‘lari kuchsiz).", "reactionIds": ["silane", "burn"], "observation": "Silan havoda portlab yonadi", "pages": [63, 64] } },
+        { "id": "burn", "cells": { "with": "Silanning yonishi", "eq": "burn", "note": "havoda o‘z-o‘zidan; ko‘p issiqlik" } },
+        { "id": "naoh", "cells": { "with": "Ishqor eritmasi", "eq": "naoh", "note": "{H2} ajraladi" },
+          "detail": { "concept": "Kremniy kislotalarda erimaydi, lekin ishqorda eriydi, chunki hosil bo‘ladigan silikat eruvchan.", "reactionIds": ["naoh", "naohion"], "observation": "Gaz pufakchalari — vodorod", "pages": [64] } },
+        { "id": "naohion", "cells": { "with": "Ishqor (qisqa ionli tenglama)", "eq": "naohion", "note": "{SiO3^2-} hosil bo‘ladi" } },
+        { "id": "sicl4", "cells": { "with": "{SiCl4} gidrolizi", "eq": "sicl4", "note": "oq tutun — {HCl}" } }
+      ]
+    },
+    {
+      "id": "sio2",
+      "title": "Kremniy (IV) oksid {SiO2}",
+      "columns": [
+        { "key": "with", "label": "Nima bilan" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Sharoit va izoh" }
+      ],
+      "rows": [
+        { "id": "naoh", "cells": { "with": "Ishqor", "eq": "sio2naoh", "note": "suyuqlantirilganda" },
+          "detail": { "concept": "{SiO2} kislotali oksid, lekin suv bilan reaksiyaga kirishmaydi (kremniy kislota bilvosita olinadi). Silikatlar ishqor, asosli oksid, karbonat bilan suyuqlantirib olinadi.", "reactionIds": ["sio2naoh", "sio2na2co3", "sio2cao"], "examTip": "{SiO2} + suv → reaksiya bormaydi; {SiO2} + {HF} → {SiF4}.", "pages": [64] } },
+        { "id": "na2co3", "cells": { "with": "Soda ({Na2CO3})", "eq": "sio2na2co3", "note": "suyuqlantirish; shisha ishlab chiqarish asosi" } },
+        { "id": "cao", "cells": { "with": "Asosli oksid ({CaO})", "eq": "sio2cao", "note": "suyuqlantirish" } },
+        { "id": "hf", "cells": { "with": "Ftorid kislota ({HF})", "eq": "sio2hf", "note": "shisha emirilishi (oyna o‘yish)" },
+          "detail": { "concept": "{HF} — {SiO2} bilan reaksiyaga kirishadigan yagona kislota; shuning uchun ftorid kislotani shisha idishda saqlab bo‘lmaydi.", "reactionIds": ["sio2hf"], "pages": [64] } }
+      ]
+    },
+    {
+      "id": "h2sio3",
+      "title": "Metakremniy kislota va silikatlar",
+      "columns": [
+        { "key": "what", "label": "Jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "co2", "cells": { "what": "Silikat + {CO2} + {H2O}", "eq": "co2", "note": "{H2SiO3} {H2CO3} dan kuchsiz" },
+          "detail": { "concept": "Kuchliroq kislota tuzidan kuchsiz kislotani siqib chiqaradi. {H2SiO3} suvda erimaydi, gelsimon cho‘kma beradi.", "reactionIds": ["co2", "hcl"], "observation": "Tiniq eritmada gelsimon oq cho‘kma paydo bo‘ladi", "pages": [65] } },
+        { "id": "hcl", "cells": { "what": "Silikat + kuchli kislota", "eq": "hcl", "note": "kremniy kislotani olish usuli" } },
+        { "id": "naoh2", "cells": { "what": "{H2SiO3} + ishqor", "eq": "naoh2", "note": "kislotaning ishqorda erishi" } },
+        { "id": "heat", "cells": { "what": "{H2SiO3} ni qizdirish", "eq": "heat", "note": "oson parchalanadi" } },
+        { "id": "hydrol", "cells": { "what": "Silikatning gidrolizi", "eq": "hydrol", "note": "eritma ishqoriy" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "o2": { "equation": "Si + O2 → SiO2", "conditions": "kuchli qizdirish" },
+    "cl2": { "equation": "Si + 2Cl2 → SiCl4", "conditions": "qizdirish", "safety": "Xlor zaharli gaz, {SiCl4} namlikda {HCl} tutuni beradi — faqat virtual namoyish." },
+    "c": { "equation": "Si + C → SiC", "conditions": "yuqori harorat" },
+    "mg": { "equation": "Si + 2Mg → Mg2Si", "conditions": "qizdirish" },
+    "silane": { "equation": "Mg2Si + 4HCl → 2MgCl2 + SiH4↑", "safety": "Silan havoda o‘z-o‘zidan alangalanadi — faqat virtual namoyish." },
+    "burn": { "equation": "SiH4 + 2O2 → SiO2 + 2H2O", "observation": "O‘z-o‘zidan alangalanish, oq {SiO2} tutuni", "safety": "Silan portlovchi — faqat virtual namoyish." },
+    "naoh": { "equation": "Si + 2NaOH + H2O → Na2SiO3 + 2H2↑", "conditions": "ishqor eritmasi, qizdirish" },
+    "naohion": { "equation": "Si + 2OH^- + H2O → SiO3^2- + 2H2↑", "conditions": "qisqartirilgan ionli tenglama" },
+    "sicl4": { "equation": "SiCl4 + 2H2O → SiO2 + 4HCl", "conditions": "gidroliz", "safety": "{HCl} tutuni tirnash qiladi — faqat virtual namoyish." },
+    "sio2naoh": { "equation": "SiO2 + 2NaOH → Na2SiO3 + H2O", "conditions": "suyuqlantirish" },
+    "sio2na2co3": { "equation": "SiO2 + Na2CO3 → Na2SiO3 + CO2↑", "conditions": "suyuqlantirish" },
+    "sio2cao": { "equation": "SiO2 + CaO → CaSiO3", "conditions": "suyuqlantirish" },
+    "sio2hf": { "equation": "SiO2 + 4HF → SiF4↑ + 2H2O", "safety": "{HF} juda zaharli va teriga o‘tadi — faqat virtual namoyish." },
+    "co2": { "equation": "Na2SiO3 + CO2 + H2O → Na2CO3 + H2SiO3↓", "observation": "Gelsimon oq cho‘kma" },
+    "hcl": { "equation": "Na2SiO3 + 2HCl → 2NaCl + H2SiO3↓", "observation": "Gelsimon cho‘kma" },
+    "naoh2": { "equation": "H2SiO3 + 2NaOH → Na2SiO3 + 2H2O" },
+    "heat": { "equation": "H2SiO3 → SiO2 + H2O", "conditions": "qizdirish" },
+    "hydrol": { "equation": "SiO3^2- + H2O ⇄ HSiO3^- + OH^-", "conditions": "silikat eritmasi, muhit ishqoriy" }
+  },
+  "clarifications": [
+    { "text": "64-betdagi qisqartirilgan ionli tenglamada «SiCO3^2-» yozilgan — bosma xato; to‘g‘risi {Si + 2OH^- + H2O → SiO3^2- + 2H2↑}.", "source": "additionalVerifiedSource" },
+    { "text": "64-betda kvarsning suyuqlanish harorati «1500 °C atrofida» deyilgan; ma’lumotnomalarda kristobalit/kvars uchun ≈ 1700–1720 °C keltiriladi (kvars oynasi 1000 °C dan yuqori haroratga ham chidaydi).", "source": "additionalVerifiedSource" },
+    { "text": "Kremniy «kislotalar bilan ta’sirlashmaydi» degani oddiy kislotalarga ({HCl}, {H2SO4}) tegishli; {HF} va {HF + HNO3} aralashmasida kremniy eriydi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s13-q1", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "7,6 g magniy silitsid ({Mg2Si}) mo‘l xlorid kislota bilan reaksiyaga kirishganda n.sh. da necha litr silan ajraladi?",
+      "answer": 2.24, "tolerance": 0.02, "unit": "l",
+      "solution": "{Mg2Si + 4HCl → 2MgCl2 + SiH4}. M(Mg2Si) = 2·24 + 28 = 76 g/mol; n = 7,6 / 76 = 0,1 mol; n(SiH4) = 0,1 mol; V = 0,1 · 22,4 = 2,24 l." },
+    { "id": "g9-s13-q2", "type": "Y1", "skill": "SiO2 xossalari", "difficulty": 1,
+      "stem": "Quyidagi kislotalarning qaysi biri {SiO2} bilan reaksiyaga kirishadi?",
+      "choices": ["{HCl}", "{H2SO4}", "{HNO3}", "{HF}"], "answer": 3,
+      "solution": "Faqat ftorid kislota: {SiO2 + 4HF → SiF4↑ + 2H2O}. Boshqa kislotalar kvarsga ta’sir qilmaydi." },
+    { "id": "g9-s13-q3", "type": "Y2", "skill": "kremniy birikmalari xossalari", "difficulty": 2,
+      "stem": "Kremniy birikmasini unga xos belgi bilan moslashtiring.",
+      "left": ["{Na2SiO3} eritmasi", "{H2SiO3}", "{SiO2}", "{SiH4}"],
+      "right": ["Havoda o‘z-o‘zidan alangalanuvchi gaz", "Atom panjarali, suvda erimaydigan qattiq modda", "Gelsimon, suvda erimaydigan cho‘kma", "Suyuq shisha deb ataladi"],
+      "answer": [3, 2, 1, 0],
+      "solution": "Eruvchan {Na2SiO3} eritmasi — suyuq shisha. {H2SiO3} — gelsimon cho‘kma. {SiO2} — atom kristall panjarali. {SiH4} — silan, havoda alangalanadi." },
+    { "id": "g9-s13-q4", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "2,8 g kremniy mo‘l natriy gidroksid eritmasi bilan ({Si + 2NaOH + H2O → Na2SiO3 + 2H2}) reaksiyaga kirishdi. Ajralgan vodorod hajmi (n.sh.) qancha?",
+      "answer": 4.48, "tolerance": 0.02, "unit": "l",
+      "solution": "n(Si) = 2,8 / 28 = 0,1 mol. {Si : H2 = 1 : 2}, demak n(H2) = 0,2 mol; V = 0,2 · 22,4 = 4,48 l.",
+      "mistakes": "{Si : H2 = 1 : 1} deb olish — 2,24 l chiqib qoladi." },
+    { "id": "g9-s13-q5", "type": "Y1", "skill": "kislotalar kuchi", "difficulty": 1,
+      "stem": "Natriy silikat eritmasidan karbonat angidrid o‘tkazilganda nima kuzatiladi?",
+      "choices": ["Hech narsa o‘zgarmaydi", "Gelsimon cho‘kma ajraladi", "Qizil gaz ajraladi", "Eritma sariq rangga kiradi"], "answer": 1,
+      "solution": "{Na2SiO3 + CO2 + H2O → Na2CO3 + H2SiO3↓}: {H2CO3} kuchliroq kislota va {H2SiO3} ni siqib chiqaradi; {H2SiO3} gelsimon cho‘kma beradi." },
+    { "id": "g9-s13-q6", "type": "O1", "skill": "stexiometriya", "difficulty": 3,
+      "stem": "12,2 g natriy silikat eritmasiga mo‘l xlorid kislota qo‘shildi. Hosil bo‘lgan {H2SiO3} cho‘kmasining massasini toping.",
+      "answer": 7.8, "tolerance": 0.05, "unit": "g",
+      "solution": "{Na2SiO3 + 2HCl → 2NaCl + H2SiO3↓}. M(Na2SiO3) = 46 + 28 + 48 = 122; n = 12,2 / 122 = 0,1 mol. M(H2SiO3) = 2 + 28 + 48 = 78; m = 0,1 · 78 = 7,8 g." }
+  ]
+}
