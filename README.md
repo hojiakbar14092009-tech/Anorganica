@@ -25,6 +25,7 @@ Safari → Ulashish → Bosh ekranga qo‘shish. After the first online load eve
 Updates are checked on launch/foreground/reconnect and applied only after “Yangilash”.
 
 ## Deployment (Vercel)
+- Live: https://anorganica.vercel.app (password-protected). Smoke test: `ACCESS_PASSWORD=… node scripts/smoke-prod.mjs https://anorganica.vercel.app`.
 - `middleware.ts` protects every request (HTML, JS, lesson chunks, icons, service worker) with a password + signed HttpOnly cookie.
 - Set `ACCESS_PASSWORD` (long random string) in Vercel → Project → Settings → Environment Variables (Production + Preview). Without it the site returns 503 (fails closed).
 - Pushing to `main` on GitHub triggers a production deploy. `vercel.json` holds SPA rewrites and security headers (CSP, noindex).

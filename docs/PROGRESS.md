@@ -27,10 +27,15 @@ NEXT: more O2 tasks; exam-skill tags beyond per-lesson skills
 ```
 
 ```
-PHASE: 5 — Hardening/deploy — IN PROGRESS
-IMPLEMENTED: middleware.ts access gate (+ unit tests), credentialed manifest, vercel.json CSP/noindex
-CHECKS (2026-11-15): typecheck ✓ lint ✓ vitest 113/113 ✓ build ✓ Playwright WebKit iPhone11 6/6 ✓ desktop Edge 6/6 ✓
-NEXT: verify deployed gate with anonymous curl (401 on /, /assets/*, /sw.js); real iPhone check
+PHASE: 5 — Hardening/deploy — DEPLOYED
+IMPLEMENTED: middleware.ts access gate (Node runtime, + unit tests), credentialed manifest, vercel.json CSP/noindex
+DEPLOY: Vercel project "anorganica" (Hobby) linked to github.com/hojiakbar14092009-tech/Anorganica — every push to main deploys production.
+  URL: https://anorganica.vercel.app  · ACCESS_PASSWORD set (sensitive) for production+preview; local copy only in .env.local (gitignored)
+  Vercel Authentication limited to preview deployments so invited students can reach production through the password gate.
+CHECKS (2026-11-15): typecheck ✓ lint ✓ vitest 113/113 ✓ build ✓ e2e WebKit iPhone11 6/6 ✓ desktop Edge 6/6 ✓
+  Production curl: anonymous 401 on /, /dars/*, /assets/*, /sw.js, manifest, icons; wrong password 401; right password 303 + HttpOnly cookie; with cookie 200
+  Production WebKit smoke (scripts/smoke-prod.mjs): login → lesson → offline lesson ✓, 0 console errors after login
+NEXT: real iPhone 11 Safari install check; Phase 3 visuals; expert content review
 ```
 
 ## How to author/fix a lesson
