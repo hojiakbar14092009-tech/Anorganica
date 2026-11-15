@@ -1,0 +1,119 @@
+{
+  "id": "g8-s43",
+  "status": "seed-verified",
+  "pages": [189, 190, 191, 192],
+  "summary": "Eng muhim mineral o‘g‘itlar: azotli (selitralar, ammoniy tuzlari, karbamid), fosforli (fosforit va suyak talqoni, oddiy va qo‘sh superfosfat, pretsipitat, ammofos) va kaliyli (silvinit, kainit, {KCl}, {KNO3}, yog‘och kuli). Fosforli o‘g‘itlarning eruvchanligi tuproq muhitiga mos tanlanadi; superfosfatlar kislotalar yordamida {Ca3(PO4)2} ni suvda eruvchan {Ca(H2PO4)2} ga aylantirib olinadi.",
+  "keyConcepts": [
+    "Azotli o‘g‘it ozuqa elementi — N ning massa ulushi; fosforlida — {P2O5}, kaliylida — {K2O}.",
+    "Oddiy superfosfat: {Ca3(PO4)2} + 2{H2SO4} → {Ca(H2PO4)2} + 2{CaSO4}; tarkibida gips balast bor, {P2O5} 14–20 %.",
+    "Qo‘sh superfosfat: {Ca3(PO4)2} + 4{H3PO4} → 3{Ca(H2PO4)2}; gips yo‘q, shuning uchun konsentrlangan ({P2O5} 40–50 %).",
+    "Suvda erimaydigan o‘g‘itlar (fosforit va suyak talqoni) faqat kislotali tuproqda ishlaydi; suvda eriydiganlari (superfosfatlar, ammofos) har qanday tuproqda.",
+    "Silvinit va kainitdagi xlor ioni ba’zi o‘simliklarga zararli, shuning uchun me’yordan ortiq berilmaydi."
+  ],
+  "tables": [
+    {
+      "id": "phosphorus",
+      "title": "Fosforli o‘g‘itlar",
+      "columns": [
+        { "key": "name", "label": "O‘g‘it" },
+        { "key": "f", "label": "Asosiy modda" },
+        { "key": "eq", "label": "Olinishi", "reaction": true },
+        { "key": "note", "label": "Xossa / qo‘llanishi" }
+      ],
+      "rows": [
+        { "id": "flour", "cells": { "name": "Fosforit talqoni", "f": "{Ca3(PO4)2}", "eq": "", "note": "suvda juda oz eriydi; eng arzon; kislotali tuproqlarga" } },
+        { "id": "ss", "cells": { "name": "Oddiy superfosfat", "f": "{Ca(H2PO4)2} + {CaSO4} (gips)", "eq": "ss", "note": "suvda eriydi (gips qisman); {P2O5} 14–20 %; har qanday tuproqqa" },
+          "detail": { "concept": "Fosforit yoki apatitga sulfat kislota ta’sir ettirilganda erimaydigan fosfat suvda eruvchan digidrofosfatga aylanadi, gips esa aralashma bo‘lib qoladi.", "reactionIds": ["ss"], "examTip": "Oddiy superfosfat = {Ca(H2PO4)2} + {CaSO4}; qo‘shida {CaSO4} yo‘q.", "pages": [190] } },
+        { "id": "ds", "cells": { "name": "Qo‘sh superfosfat", "f": "{Ca(H2PO4)2}", "eq": "ds", "note": "suvda yaxshi eriydi; {P2O5} 40–50 %, konsentrlangan" },
+          "detail": { "concept": "Reaksiyada fosfat kislota ishlatilgani uchun gips hosil bo‘lmaydi — o‘g‘itda foydali modda ulushi ikki baravar yuqori.", "reactionIds": ["ds"], "pages": [191] } },
+        { "id": "prec", "cells": { "name": "Pretsipitat", "f": "{CaHPO4}", "eq": "prec", "note": "suvda oz eriydi; {P2O5} 30–35 %" } },
+        { "id": "prec2", "cells": { "name": "Pretsipitat (ohaktoshdan)", "f": "{CaHPO4}", "eq": "prec2", "note": "{CO2} ajraladi" } },
+        { "id": "bone", "cells": { "name": "Suyak talqoni", "f": "{Ca3(PO4)2}", "eq": "", "note": "suvda erimaydi; kislotali tuproqlarga" } },
+        { "id": "ammofos", "cells": { "name": "Ammofos", "f": "{NH4H2PO4} va {(NH4)2HPO4} aralashmasi", "eq": "amm1", "note": "kompleks (N + P), suvda yaxshi eriydi; eng ko‘p ishlatiladigan fosforli o‘g‘it" } },
+        { "id": "ammofos2", "cells": { "name": "Ammofos (gidrofosfat komponenti)", "f": "{(NH4)2HPO4}", "eq": "amm2", "note": "ammiak ikki mol" } }
+      ]
+    },
+    {
+      "id": "nk",
+      "title": "Azotli va kaliyli o‘g‘itlar",
+      "columns": [
+        { "key": "name", "label": "O‘g‘it" },
+        { "key": "f", "label": "Formula" },
+        { "key": "eq", "label": "Olinishi", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "chile", "cells": { "name": "Natriyli (Chili) selitra", "f": "{NaNO3}", "eq": "", "note": "yirik tabiiy zaxira Chilida; N ≈ 16,5 % (sof)" } },
+        { "id": "amnit", "cells": { "name": "Ammiakli selitra", "f": "{NH4NO3}", "eq": "amnit", "note": "N = 28/80 = 35 %; ammiak va nitrat kislotadan (Farg‘onaazot)" },
+          "detail": { "concept": "Ammiakni nitrat kislota bilan neytrallash: hajmiy hisoblashda {NH3} 1 mol = 22,4 l (n.sh.), {NH4NO3} ning molyar massasi 80 g/mol.", "reactionIds": ["amnit"], "examTip": "1 mol {NH4NO3} ← 1 mol {NH3} + 1 mol {HNO3}.", "pages": [189, 193] } },
+        { "id": "urea", "cells": { "name": "Karbamid (mochevina)", "f": "{CO(NH2)2}", "eq": "urea", "note": "w(N) ≈ 46,7 %" } },
+        { "id": "sylv", "cells": { "name": "Silvinit", "f": "{KCl·NaCl}", "eq": "", "note": "{KCl} va {NaCl} eruvchanligi farqidan foydalanib boyitiladi" } },
+        { "id": "kainite", "cells": { "name": "Kainit", "f": "{MgSO4·KCl·3H2O}", "eq": "", "note": "tozalanmagan o‘g‘it; xlor ioni zararli bo‘lishi mumkin" } },
+        { "id": "kclf", "cells": { "name": "Kaliy xlorid", "f": "{KCl}", "eq": "", "note": "{K2O} 52–60 %" } },
+        { "id": "ash", "cells": { "name": "Yog‘och kuli", "f": "{K2CO3} (potash)", "eq": "", "note": "o‘simlik yonishidan qolgan kaliyli o‘g‘it" } }
+      ]
+    },
+    {
+      "id": "calcs",
+      "title": "Ozuqa elementi bo‘yicha hisoblar",
+      "columns": [
+        { "key": "q", "label": "Masala" },
+        { "key": "how", "label": "Yo‘l" },
+        { "key": "res", "label": "Natija" }
+      ],
+      "rows": [
+        { "id": "nano3-calc", "cells": { "q": "{NaNO3} da N ning massa ulushi", "how": "14/85", "res": "16,5 %" } },
+        { "id": "p2o5-calc", "cells": { "q": "1 t {P2O5} tarkibli ozuqa — qancha {Ca(H2PO4)2} da", "how": "x = 234/142 ≈ 1,648 t; 40 % li o‘g‘itda 1,648/0,4 ≈ 4,12 t", "res": "≈ 4,12 t" },
+          "detail": { "concept": "1 mol {Ca(H2PO4)2} (234 g) tarkibida 1 mol {P2O5} (142 g) ga ekvivalent fosfor bor; so‘ng o‘g‘itdagi tuz ulushiga bo‘linadi.", "pages": [191] } },
+        { "id": "k2o-calc", "cells": { "q": "750 kg {KCl} dagi {K2O} massasi", "how": "750·94/149", "res": "≈ 473,2 kg" },
+          "detail": { "concept": "2{KCl} ↔ {K2O}: 149 g {KCl} dan 94 g {K2O} ozuqa hisoblanadi.", "pages": [192] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "ss": { "equation": "Ca3(PO4)2 + 2H2SO4 → Ca(H2PO4)2 + 2CaSO4", "conditions": "fosforit yoki apatit + sulfat kislota" },
+    "ds": { "equation": "Ca3(PO4)2 + 4H3PO4 → 3Ca(H2PO4)2", "conditions": "fosfat kislota ta’sirida" },
+    "prec": { "equation": "Ca(OH)2 + H3PO4 → CaHPO4 + 2H2O", "note": "Pretsipitat kristallgidrat {CaHPO4·2H2O} shaklida ham chiqadi." },
+    "prec2": { "equation": "CaCO3 + H3PO4 → CaHPO4 + CO2↑ + H2O" },
+    "amm1": { "equation": "NH3 + H3PO4 → NH4H2PO4" },
+    "amm2": { "equation": "2NH3 + H3PO4 → (NH4)2HPO4" },
+    "amnit": { "equation": "NH3 + HNO3 → NH4NO3" },
+    "urea": { "equation": "2NH3 + CO2 → CO(NH2)2 + H2O", "conditions": "yuqori bosim va harorat" }
+  },
+  "clarifications": [
+    { "text": "190-betdagi misolda natriy nitratdagi azot ulushi 14/85·100 = 16,47 % ≈ 16,5 % bo‘ladi; darslikda 16,4 % yozilgan (yaxlitlash xatosi).", "source": "additionalVerifiedSource" },
+    { "text": "191-betdagi misolda 234/142 = 1,648 t va 1,648/0,4 ≈ 4,12 t; 192-betdagi misolda 750·94/149 = 473,2 kg. Darslikdagi 1,647 t, 4,117 t va 473,3 kg yaxlitlash noaniqliklari bo‘lib, mohiyatni o‘zgartirmaydi.", "source": "additionalVerifiedSource" },
+    { "text": "Darslikda qo‘sh superfosfat {Ca(H2PO4)2·2H2O} deb yozilgan; odatda uning kristallgidrati {Ca(H2PO4)2·H2O} (bir molekula suv) ko‘rinishida beriladi. Hisoblarda suvsiz {Ca(H2PO4)2} ishlatilgan.", "source": "additionalVerifiedSource" },
+    { "text": "190-betda fosforit talqoni «kislotali muhitdagi tuproqlarga» solinadi, shuningdek «bo‘z va torfli tuproqlarda» ishlatiladi deyilgan. Torfli tuproqlar kislotali, bo‘z tuproqlar esa odatda neytral-ishqoriy (ohakli), shuning uchun fosforit talqoni asosan kislotali tuproqlarda samarali; bo‘z tuproqlarga suvda eruvchan superfosfatlar mosroq.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g8-s43-q1", "type": "O1", "skill": "ozuqa elementi", "difficulty": 2,
+      "stem": "Sof {Ca(H2PO4)2} da {P2O5} ning massa ulushi necha foiz? (o‘ndan birgacha)",
+      "answer": 60.7, "tolerance": 0.1, "unit": "%",
+      "solution": "M(Ca(H₂PO₄)₂) = 40 + 2·(2 + 31 + 64) = 40 + 194 = 234 g/mol. Bir mol tuz bir mol P₂O₅ ga ekvivalent (M = 142). w = 142/234 = 0,6068 ≈ 60,7 %.",
+      "mistakes": "Fosforning o‘zini hisoblash (62/234 = 26,5 %) — o‘g‘itlarda ozuqa miqdori {P2O5} hisobida beriladi." },
+    { "id": "g8-s43-q2", "type": "O1", "skill": "ozuqa elementi", "difficulty": 2,
+      "stem": "5 tonna ammiakli selitra ({NH4NO3}) tarkibida necha tonna azot bor?",
+      "answer": 1.75, "tolerance": 0.01, "unit": "t",
+      "solution": "M(NH₄NO₃) = 14 + 4 + 14 + 48 = 80 g/mol; azot 2·14 = 28. w(N) = 28/80 = 0,35. m(N) = 5·0,35 = 1,75 t." },
+    { "id": "g8-s43-q3", "type": "O1", "skill": "gaz hajmi", "difficulty": 3,
+      "stem": "160 kg ammiakli selitra {NH4NO3} olish uchun ({NH3} + {HNO3} → {NH4NO3}) n.sh.da necha kubometr ammiak kerak?",
+      "answer": 44.8, "tolerance": 0.1, "unit": "m³",
+      "solution": "M(NH₄NO₃) = 80 kg/kmol; n = 160/80 = 2 kmol. Tenglamada 1 : 1, demak n(NH₃) = 2 kmol. V = 2·22,4 = 44,8 m³ (1 kmol gaz n.sh.da 22,4 m³).",
+      "mistakes": "Kilogramm va gramm birliklarini aralashtirish: 160 kg = 160 000 g, 2000 mol = 2 kmol." },
+    { "id": "g8-s43-q4", "type": "Y1", "skill": "fosforli o‘g‘itlar", "difficulty": 2,
+      "stem": "Qo‘sh superfosfat oddiy superfosfatdan nima uchun konsentrlangan hisoblanadi?",
+      "choices": ["Unda azot ham bor", "Undagi gips ({CaSO4}) balasti yo‘q, shuning uchun {P2O5} ulushi yuqori", "U suvda erimaydi", "U sulfat kislotadan olinadi"], "answer": 1,
+      "solution": "Qo‘sh superfosfat fosfat kislota bilan olinadi: {Ca3(PO4)2} + 4{H3PO4} → 3{Ca(H2PO4)2}. {CaSO4} hosil bo‘lmaydi, shuning uchun {P2O5} 40–50 % (oddiyda 14–20 %)." },
+    { "id": "g8-s43-q5", "type": "Y2", "skill": "o‘g‘itning olinishi", "difficulty": 2,
+      "stem": "Fosforli o‘g‘itni uni olishda ishlatiladigan reagentlar bilan moslashtiring.",
+      "left": ["oddiy superfosfat", "qo‘sh superfosfat", "pretsipitat (ohaktoshdan)", "ammofos"],
+      "right": ["{CaCO3} + {H3PO4}", "{NH3} + {H3PO4}", "{Ca3(PO4)2} + {H2SO4}", "{Ca3(PO4)2} + {H3PO4}"],
+      "answer": [2, 3, 0, 1],
+      "solution": "Oddiy superfosfat: fosforit + {H2SO4}. Qo‘sh: fosforit + {H3PO4}. Pretsipitat: {CaCO3} (yoki {Ca(OH)2}) + {H3PO4}. Ammofos: ammiak + fosfat kislota." },
+    { "id": "g8-s43-q6", "type": "O1", "skill": "ozuqa elementi", "difficulty": 2,
+      "stem": "298 kg toza {KCl} tarkibidagi ozuqa elementi ({K2O} hisobida) necha kilogramm?",
+      "answer": 188, "tolerance": 0.5, "unit": "kg",
+      "solution": "M(KCl) = 39 + 35,5 = 74,5 g/mol; n(KCl) = 298/74,5 = 4 kmol. 2KCl ↔ K₂O, demak n(K₂O) = 2 kmol, M(K₂O) = 94 kg/kmol, m = 2·94 = 188 kg." }
+  ]
+}

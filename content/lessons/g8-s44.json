@@ -1,0 +1,281 @@
+{
+  "id": "g8-s44",
+  "status": "seed-verified",
+  "pages": [
+    193,
+    194,
+    195,
+    196
+  ],
+  "summary": "Biogen elementlar — tirik organizmlar tarkibiga kiruvchi va hayot uchun zarur elementlar. Makrobiogen elementlar (H, O, C, N, Ca va boshqalar) ko‘p miqdorda, mikrobiogen elementlar (Fe, Mn, Co, Cu, Mo, Zn, F, Br, I, B) 0,01 % dan kam miqdorda uchraydi, lekin fermentlar, vitaminlar va oqsillar hosil bo‘lishida muhim rol o‘ynaydi.",
+  "keyConcepts": [
+    "Yer po‘stlog‘ining ≈98 % i sakkiz element (O, Si, Al, Fe, Ca, Na, K, Mg) dan iborat; hayotning asosi esa uglerod.",
+    "Inson tanasining ≈99,4 % i H, O, C, N, Ca (va boshqa makroelementlar) dan iborat; ular makrobiogen elementlar.",
+    "Mikrobiogen elementlar (mikroelementlar) tirik organizmda 0,01 % dan kam: Fe, Mn, Co, Cu, Mo, Zn, F, Br, I, B.",
+    "Organizmdagi kalsiyning ≈99 % i suyakda, ≈1 % i qon va limfada; suyak {Ca5(PO4)3OH}, tish emali {Ca5(PO4)3F}.",
+    "Mikroelement yetishmasligi o‘simlikda hosildorlikni, hayvon va odamda kasalliklarni keltirib chiqaradi."
+  ],
+  "tables": [
+    {
+      "id": "groups",
+      "title": "Biogen elementlar guruhlari",
+      "columns": [
+        {
+          "key": "group",
+          "label": "Guruh"
+        },
+        {
+          "key": "content",
+          "label": "Miqdori"
+        },
+        {
+          "key": "els",
+          "label": "Elementlar"
+        }
+      ],
+      "rows": [
+        {
+          "id": "macro",
+          "cells": {
+            "group": "Makrobiogen elementlar",
+            "content": "ko‘p (odam tanasining ≈99,4 % i)",
+            "els": "H, O, C, N, Ca"
+          },
+          "detail": {
+            "concept": "Bu elementlar organik moddalar, suv va suyak mineral qismining asosini tashkil qiladi. Uglerod hayotning asosiy elementi hisoblanadi.",
+            "pages": [
+              193
+            ]
+          }
+        },
+        {
+          "id": "micro",
+          "cells": {
+            "group": "Mikrobiogen elementlar",
+            "content": "< 0,01 %",
+            "els": "Fe, Mn, Co, Cu, Mo, Zn, F, Br, I, B"
+          },
+          "detail": {
+            "concept": "Oz miqdorda bo‘lsa-da, ular qand moddalari, kraxmal, oqsillar, nuklein kislotalar, vitaminlar va fermentlar hosil bo‘lishiga yordam beradi hamda o‘simlikni qurg‘oqchilik, sovuq va kasalliklarga chidamli qiladi.",
+            "examTip": "Mikrobiogen = mikroelement (miqdori < 0,01 %), ammo hayot uchun o‘ta zarur.",
+            "pages": [
+              193,
+              194
+            ]
+          }
+        },
+        {
+          "id": "crust",
+          "cells": {
+            "group": "Yer po‘stlog‘i (taqqoslash)",
+            "content": "≈98 %",
+            "els": "O, Si, Al, Fe, Ca, Na, K, Mg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "roles",
+      "title": "Elementlarning biologik roli",
+      "columns": [
+        {
+          "key": "el",
+          "label": "Element"
+        },
+        {
+          "key": "role",
+          "label": "Asosiy roli"
+        },
+        {
+          "key": "eq",
+          "label": "Kimyoviy bog‘lanish",
+          "reaction": true
+        }
+      ],
+      "rows": [
+        {
+          "id": "ca",
+          "cells": {
+            "el": "Kalsiy (Ca)",
+            "role": "suyak va tishning asosi; 99 % suyakda, ≈1 % qon va limfada; yetishmasligi kasalliklarga olib keladi",
+            "eq": ""
+          },
+          "detail": {
+            "concept": "Tibbiyotda kalsiy xlorid va kalsiy glyukonat asosidagi dorilar ishlatiladi.",
+            "pages": [
+              194
+            ]
+          }
+        },
+        {
+          "id": "f",
+          "cells": {
+            "el": "Ftor (F)",
+            "role": "suyak va tish to‘qimasining hosil bo‘lishi va o‘sishi; tish emali {Ca5(PO4)3F}",
+            "eq": "fluor"
+          },
+          "detail": {
+            "concept": "Ftor miqdori kamaysa tishlar nuray boshlaydi. Fluorid-ion suyak va emal mineralidagi gidroksid-ionni almashtirib, gidroksiapatitni ftorapatitga aylantiradi.",
+            "reactionIds": [
+              "fluor"
+            ],
+            "pages": [
+              180,
+              196
+            ]
+          }
+        },
+        {
+          "id": "i",
+          "cells": {
+            "el": "Yod (I)",
+            "role": "organizmning normal o‘sishi va jinsiy yetilishi uchun zarur",
+            "eq": ""
+          }
+        },
+        {
+          "id": "co",
+          "cells": {
+            "el": "Kobalt (Co)",
+            "role": "qon hosil bo‘lishi, DNK va aminokislotalar almashinuvi; o‘simliklarda, masalan, uzumda qand ko‘payishiga yordam beradi",
+            "eq": ""
+          }
+        },
+        {
+          "id": "cu",
+          "cells": {
+            "el": "Mis (Cu)",
+            "role": "teri pigmentatsiyasi, temirning o‘zlashtirilishi; qumloq va botqoq yerlarda don hosildorligini oshiradi",
+            "eq": ""
+          }
+        },
+        {
+          "id": "zn",
+          "cells": {
+            "el": "Rux (Zn)",
+            "role": "oqsillarning o‘zlashtirilishi va CO₂ almashinuvi; yetishmasa g‘alladoshlar va sitrus mevalar kasallanadi",
+            "eq": ""
+          }
+        },
+        {
+          "id": "mo",
+          "cells": {
+            "el": "Molibden (Mo)",
+            "role": "o‘simlikda azotning o‘zlashtirilishi va oksidlanish-qaytarilish jarayonlari; dukkaklilar va qandlavlagi hosildorligini oshiradi",
+            "eq": ""
+          }
+        },
+        {
+          "id": "mn",
+          "cells": {
+            "el": "Marganes (Mn)",
+            "role": "oksidlanish-qaytarilish jarayonlari, C vitamini hosil bo‘lishi; bug‘doy va qandlavlagi hosildorligini oshiradi",
+            "eq": ""
+          }
+        },
+        {
+          "id": "b",
+          "cells": {
+            "el": "Bor (B)",
+            "role": "no‘xat, loviya, beda, qandlavlagi, kanop va poliz ekinlari hosildorligini oshiradi",
+            "eq": ""
+          }
+        }
+      ]
+    }
+  ],
+  "reactions": {
+    "fluor": {
+      "equation": "Ca5(PO4)3OH + F^- → Ca5(PO4)3F + OH^-",
+      "note": "Ion almashinuvi: gidroksiapatit (suyak, emal) → ftorapatit (kariesga chidamliroq)."
+    }
+  },
+  "clarifications": [
+    {
+      "text": "193-betda Yer po‘stlog‘ining 98 % ini tashkil etuvchi sakkizta element ro‘yxatida «Mn» (marganes) yozilgan. To‘g‘risi — magniy (Mg): O, Si, Al, Fe, Ca, Na, K, Mg. Marganesning po‘stloqdagi ulushi ≈0,1 % ga yaqin.",
+      "source": "additionalVerifiedSource"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g8-s44-q1",
+      "type": "Y1",
+      "skill": "elementlar tasnifi",
+      "difficulty": 1,
+      "stem": "Quyidagi elementlardan qaysi biri mikrobiogen element hisoblanadi?",
+      "choices": [
+        "{C}",
+        "{Ca}",
+        "{Zn}",
+        "{N}"
+      ],
+      "answer": 2,
+      "solution": "Mikrobiogen elementlar: Fe, Mn, Co, Cu, Mo, Zn, F, Br, I, B. C, Ca, N — makrobiogen."
+    },
+    {
+      "id": "g8-s44-q2",
+      "type": "O1",
+      "skill": "foiz hisobi",
+      "difficulty": 2,
+      "stem": "Odam tanasida 1,2 kg kalsiy bor deb faraz qilsak, uning ≈99 % i suyakda joylashgan. Qon va limfadagi kalsiyning massasi taxminan necha gramm?",
+      "answer": 12,
+      "tolerance": 0.1,
+      "unit": "g",
+      "solution": "Suyakda bo‘lmagan ulush 100 − 99 = 1 %. 1,2 kg = 1200 g; 1200·0,01 = 12 g.",
+      "mistakes": "Kilogrammni grammga o‘tkazishni unutish (0,012 g chiqadi)."
+    },
+    {
+      "id": "g8-s44-q3",
+      "type": "Y2",
+      "skill": "elementning roli",
+      "difficulty": 2,
+      "stem": "Elementni uning biologik roli bilan moslashtiring.",
+      "left": [
+        "{Ca}",
+        "{F}",
+        "{Mo}",
+        "{Cu}"
+      ],
+      "right": [
+        "tish emali {Ca5(PO4)3F} tarkibiga kiradi",
+        "suyak va tishning asosiy mineral komponenti",
+        "o‘simlikda azotning o‘zlashtirilishida ishtirok etadi",
+        "teri pigmentatsiyasi va temirning o‘zlashtirilishi"
+      ],
+      "answer": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "solution": "Ca — suyak va tish asosi; F — emaldagi ftorapatit; Mo — o‘simlikda azot almashinuvi; Cu — pigmentatsiya va temirni o‘zlashtirish."
+    },
+    {
+      "id": "g8-s44-q4",
+      "type": "O1",
+      "skill": "massa ulushi",
+      "difficulty": 2,
+      "stem": "Ftorapatit {Ca5(PO4)3F} tarkibida kalsiyning massa ulushi necha foiz? (o‘ndan birgacha)",
+      "answer": 39.7,
+      "tolerance": 0.1,
+      "unit": "%",
+      "solution": "M(Ca₅(PO₄)₃F) = 5·40 + 3·31 + 12·16 + 19 = 200 + 93 + 192 + 19 = 504 g/mol. w(Ca) = 200/504 = 0,3968 ≈ 39,7 %.",
+      "mistakes": "Ftor ulushini unutish yoki kislorodni 3·4 = 12 atom o‘rniga 4 atom deb hisoblash."
+    },
+    {
+      "id": "g8-s44-q5",
+      "type": "Y1",
+      "skill": "geokimyo",
+      "difficulty": 2,
+      "stem": "Yer po‘stlog‘ining taxminan 98 % ini tashkil etuvchi sakkiz element (O, Si, Al, Fe, Ca, Na, K, …) ning sakkizinchisi qaysi?",
+      "choices": [
+        "Mn",
+        "Mg",
+        "P",
+        "C"
+      ],
+      "answer": 1,
+      "solution": "Sakkizinchi element — magniy (Mg). Marganes po‘stloqda ancha oz uchraydi; fosfor va uglerod ham 98 % ga kiruvchi sakkizlikda emas."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "g8-s40",
+  "status": "seed-verified",
+  "pages": [174, 175, 176],
+  "summary": "Fosfor {P} — V A guruh elementi, tashqi qavati {3s2 3p3}. Oksidlanish darajalari −3, 0, +3, +5; tabiatda faqat +5 holatda, asosan fosforit va apatit ({Ca3(PO4)2}) ko‘rinishida uchraydi. Erkin fosforning allotropik shakllari (oq, qizil, qora) tuzilishi va xossalari bilan keskin farq qiladi.",
+  "keyConcepts": [
+    "Qo‘zg‘algan holatda {3s1 3p3 3d1}: 5 ta toq elektron, shuning uchun fosfor III va V valentli bo‘ladi.",
+    "Olinishi: fosforit + {SiO2} + koks, elektr pechida havosiz muhitda; bug‘ suv ostida kondensatlanib oq fosfor ({P4}) beradi.",
+    "Oq fosfor — molekulali panjarali ({P4}), zaharli, {CS2} da eriydi, qorong‘ida nur chiqaradi; qizil fosfor — zaharsiz, suvda ham {CS2} da ham erimaydi.",
+    "Fosfor metallar bilan reaksiyada oksidlovchi (fosfidlar, {P^3-}), kislorod, xlor, oltingugurt bilan qaytaruvchi (+3, +5)."
+  ],
+  "tables": [
+    {
+      "id": "allotropes",
+      "title": "Fosforning allotropik shakllari",
+      "columns": [
+        { "key": "form", "label": "Shakl" },
+        { "key": "struct", "label": "Tuzilishi" },
+        { "key": "prop", "label": "Asosiy xossalari" },
+        { "key": "tox", "label": "Zaharliligi" }
+      ],
+      "rows": [
+        { "id": "white", "cells": { "form": "Oq fosfor", "struct": "{P4} molekulalari (molekulali panjara)", "prop": "rangsiz kristall, sarimsoq hidli, t(suyuq.) = 44 °C, ρ = 1,8 g/sm³, {CS2} da yaxshi eriydi, qorong‘ida nur chiqaradi", "tox": "kuchli zaharli" },
+          "detail": { "concept": "Oq fosfor havoda o‘z-o‘zidan yonib ketishi mumkin, shuning uchun suv ostida saqlanadi. Yorug‘lik yoki qizdirish ta’sirida sekin qizil fosforga aylanadi.", "reactionIds": ["wr"], "examTip": "Oq fosforning faolligi va zaharliligi molekulali ({P4}) tuzilishi bilan bog‘liq.", "pages": [175, 176] } },
+        { "id": "red", "cells": { "form": "Qizil fosfor", "struct": "polimer (atomli) tuzilish, {Pn}", "prop": "to‘q qizil kukun, hidsiz, ρ ≈ 2 g/sm³, suvda va {CS2} da erimaydi, suyuqlanmasdan bug‘lanadi", "tox": "zaharsiz" },
+          "detail": { "concept": "Qizil fosforni havosiz joyda qizdirib bug‘latsak va bug‘ni sovitsak, oq fosfor hosil bo‘ladi. Gugurt ishlab chiqarishda asosiy xomashyo.", "pages": [176] } },
+        { "id": "black", "cells": { "form": "Qora fosfor", "struct": "qatlamli polimer tuzilish", "prop": "eng barqaror shakl; yuqori bosim ostida oq fosfordan olinadi (P. Bridjmen, 1934)", "tox": "kam faol" } }
+      ]
+    },
+    {
+      "id": "prep-props",
+      "title": "Olinishi va kimyoviy xossalari",
+      "columns": [
+        { "key": "what", "label": "Jarayon / modda" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Muhim" }
+      ],
+      "rows": [
+        { "id": "prod", "cells": { "what": "Sanoatda olinishi", "eq": "prod", "note": "fosfor +5 → 0 (qaytariladi), uglerod 0 → +2 (oksidlanadi)" },
+          "detail": { "concept": "Fosforit koks bilan qaytariladi, {SiO2} esa kalsiyni {CaSiO3} shlak sifatida bog‘laydi. Fosfor bug‘i suv ostida kondensatlanadi — oq fosfor hosil bo‘ladi.", "reactionIds": ["prod"], "pages": [175] } },
+        { "id": "o2", "cells": { "what": "Kislorod bilan (mo‘l)", "eq": "o2", "note": "oq, gigroskopik {P2O5}" } },
+        { "id": "cl2", "cells": { "what": "Xlor bilan", "eq": "cl2", "note": "fosfor qaytaruvchi, +3" } },
+        { "id": "s", "cells": { "what": "Oltingugurt bilan", "eq": "s", "note": "fosfor qaytaruvchi, +3" } },
+        { "id": "ca", "cells": { "what": "Kalsiy bilan", "eq": "ca", "note": "fosfor oksidlovchi, −3 (fosfid)" },
+          "detail": { "concept": "Metallar bilan fosfor oksidlovchi: fosfor atomi 3 ta elektron biriktirib −3 ga o‘tadi. Hosil bo‘lgan fosfidlar suv bilan fosfin {PH3} ajratadi.", "reactionIds": ["ca", "ph3"], "pages": [176] } },
+        { "id": "ph3", "cells": { "what": "Kalsiy fosfidning gidrolizi (fosfin olish)", "eq": "ph3", "note": "{PH3} — zaharli gaz, beqaror" } },
+        { "id": "match", "cells": { "what": "Gugurtning yonishi: {P} + {KClO3}", "eq": "match", "note": "qaytaruvchi — {P}, oksidlovchi — {KClO3} (xlor +5)" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "wr": { "equation": "P4 → 4P", "conditions": "oq fosfor → qizil fosfor: yorug‘lik yoki qizdirish, havosiz muhit", "note": "Allotropik o‘zgarish: P4 molekulasi polimer {Pn} zanjiriga aylanadi; yozuvda atom hisobi ko‘rsatilgan." },
+    "prod": { "equation": "Ca3(PO4)2 + 5C + 3SiO2 → 3CaSiO3 + 2P + 5CO↑", "conditions": "elektr pech, havosiz muhit, yuqori harorat", "safety": "Fosfor bug‘i zaharli va yonuvchan — faqat virtual namoyish." },
+    "o2": { "equation": "4P + 5O2 → 2P2O5", "conditions": "kislorod mo‘l, yonish", "safety": "Oq fosfor havoda o‘z-o‘zidan alangalanadi, zaharli — faqat virtual namoyish." },
+    "cl2": { "equation": "2P + 3Cl2 → 2PCl3" },
+    "s": { "equation": "2P + 3S → P2S3", "conditions": "qizdirish" },
+    "ca": { "equation": "3Ca + 2P → Ca3P2", "conditions": "qizdirish" },
+    "ph3": { "equation": "Ca3P2 + 6H2O → 3Ca(OH)2 + 2PH3↑", "safety": "Fosfin o‘ta zaharli — faqat virtual namoyish." },
+    "match": { "equation": "6P + 5KClO3 → 5KCl + 3P2O5", "conditions": "ishqalanish" }
+  },
+  "clarifications": [
+    { "text": "Darslikda (176-bet) fosfin oddiy moddalardan «2P + 3H2 = 2PH3» reaksiya bilan olinadi deyilgan. Aslida fosfor vodorod bilan bevosita deyarli birikmaydi; fosfin metall fosfidlarni suv yoki kislota bilan gidrolizlab olinadi: {Ca3P2} + 6{H2O} → 3{Ca(OH)2} + 2{PH3}↑. Shuning uchun jadvalda aynan shu reaksiya keltirilgan.", "source": "additionalVerifiedSource" },
+    { "text": "Darslikdagi rasmda qora fosfor «P4» deb belgilangan. Qora fosfor molekulali emas, qatlamli polimer tuzilishga ega; {P4} molekulalaridan faqat oq fosfor (va uning bug‘i) iborat. Qizil fosforni «atomli panjara» deyish ham soddalashtirish: u ham polimer ({Pn}) tuzilishli.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g8-s40-q1", "type": "Y1", "skill": "oksidlanish darajasi", "difficulty": 1,
+      "stem": "Quyidagi birikmalarning qaysi birida fosforning oksidlanish darajasi +3 ga teng?",
+      "choices": ["{Ca3P2}", "{PCl3}", "{P2O5}", "{H3PO4}"], "answer": 1,
+      "solution": "{Ca3P2} da P = −3 (Ca +2: 3·2 = 6, 6/2 = 3). {PCl3} da Cl −1, demak P = +3. {P2O5} va {H3PO4} da P = +5.",
+      "mistakes": "{PCl3} bilan {PCl5} ni aralashtirmang: birinchisida +3, ikkinchisida +5." },
+    { "id": "g8-s40-q2", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "31 g fosfor yetarli miqdordagi kislorodda to‘liq yondirilganda necha gramm {P2O5} hosil bo‘ladi?",
+      "answer": 71, "tolerance": 0.1, "unit": "g",
+      "solution": "4P + 5O₂ → 2P₂O₅. n(P) = 31/31 = 1 mol. Tenglamadan n(P₂O₅) = 1·2/4 = 0,5 mol. M(P₂O₅) = 2·31 + 5·16 = 142 g/mol. m = 0,5·142 = 71 g.",
+      "mistakes": "Mol nisbatini (4 : 2) unutib, 1 mol {P2O5} deb olish — 142 g chiqadi." },
+    { "id": "g8-s40-q3", "type": "Y2", "skill": "allotropiya", "difficulty": 2,
+      "stem": "Fosfor bilan bog‘liq tushunchalarni mos xossa yoki jarayon bilan moslashtiring.",
+      "left": ["Oq fosfor", "Qizil fosfor", "{Ca3(PO4)2} + {SiO2} + koks, elektr pechi", "{P} + {KClO3}"],
+      "right": ["gugurt cho‘pi yonishidagi oksidlanish-qaytarilish", "{CS2} da eriydi, zaharli, qorong‘ida nur chiqaradi", "fosfor bug‘ini kondensatlash orqali oq fosfor olinadi", "{CS2} da erimaydi, zaharsiz"],
+      "answer": [1, 3, 2, 0],
+      "solution": "Oq fosfor molekulali ({P4}): {CS2} da eriydi, zaharli, shu’lalanadi. Qizil fosfor polimer: erimaydi, zaharsiz. Elektr pechida fosforit koks bilan qaytarilib fosfor bug‘i beradi. {P} + {KClO3} gugurt yonishining asosi." },
+    { "id": "g8-s40-q4", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "62 g kalsiy ortofosfatdan elektr pechida (fosforit + {SiO2} + koks) nazariy jihatdan necha gramm fosfor olish mumkin?",
+      "answer": 12.4, "tolerance": 0.05, "unit": "g",
+      "solution": "Ca₃(PO₄)₂ + 5C + 3SiO₂ → 3CaSiO₃ + 2P + 5CO. M(Ca₃(PO₄)₂) = 3·40 + 2·31 + 8·16 = 310 g/mol. n = 62/310 = 0,2 mol. n(P) = 2·0,2 = 0,4 mol. m(P) = 0,4·31 = 12,4 g.",
+      "mistakes": "Fosforning mol sonini koeffitsiyent 2 ga ko‘paytirishni unutish (6,2 g chiqadi)." },
+    { "id": "g8-s40-q5", "type": "Y1", "skill": "xavfsizlik va saqlash", "difficulty": 1,
+      "stem": "Nima uchun oq fosfor laboratoriyada odatda suv ostida saqlanadi?",
+      "choices": ["Suv bilan reaksiyaga kirishib barqarorlashadi", "Havo kislorodi bilan o‘z-o‘zidan yonib ketmasligi uchun", "Suvda yaxshi erib, eritma hosil qilgani uchun", "Qizil fosforga aylanishi uchun"], "answer": 1,
+      "solution": "Oq fosfor faol, havoda past haroratda ham oksidlanib alangalanishi mumkin. U suvda erimaydi, shuning uchun suv qatlami uni kisloroddan ajratadi." }
+  ]
+}

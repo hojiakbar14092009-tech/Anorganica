@@ -1,0 +1,111 @@
+{
+  "id": "g8-s42",
+  "status": "seed-verified",
+  "pages": [185, 186, 187, 188],
+  "summary": "Mineral o‘g‘itlar — tuproq eritmasida o‘simlik o‘zlashtiradigan ionlarga ({NH4^+}, {NO3^-}, {H2PO4^-}, {K^+}) ajraladigan moddalar. Eng muhim ozuqa elementlari — azot, fosfor va kaliy. O‘g‘itlar tarkibidagi ozuqa elementlari soniga ko‘ra oddiy va kompleks turlarga bo‘linadi; ozuqa miqdori N, {P2O5} va {K2O} bo‘yicha ifodalanadi.",
+  "keyConcepts": [
+    "Makroelementlar: C, O, H, N, P, S, Mg, K, Ca; mikroelementlar: Fe, Mn, B, Cu, Zn, Mo, Co. N, P, K — eng ko‘p kerak bo‘ladigan uch asosiy ozuqa elementi.",
+    "Oddiy o‘g‘itda bitta ozuqa elementi, kompleks (murakkab) o‘g‘itda ikki yoki uch element bo‘ladi.",
+    "Ozuqa miqdori: azotli o‘g‘itlarda N, fosforlilarda {P2O5}, kaliylilarda {K2O} ning massa ulushi bilan ifodalanadi.",
+    "O‘g‘itni ortiqcha berish zararli: ortiqcha nitrat va boshqa ionlar o‘simlikda to‘planadi, mahsulot iste’molga yaroqsiz bo‘lib qoladi."
+  ],
+  "tables": [
+    {
+      "id": "elements",
+      "title": "Asosiy ozuqa elementlari va ularning vazifasi",
+      "columns": [
+        { "key": "el", "label": "Element" },
+        { "key": "role", "label": "O‘simlikdagi vazifasi" },
+        { "key": "lack", "label": "Yetishmasa" }
+      ],
+      "rows": [
+        { "id": "n", "cells": { "el": "Azot (N)", "role": "oqsil, xlorofill va nuklein kislotalar tarkibiga kiradi; o‘sishni tezlashtiradi", "lack": "o‘sish sekinlashadi, barglar och-yashil, keyin sarg‘ayadi; fotosintez va hosildorlik kamayadi" },
+          "detail": { "concept": "O‘simlik azotni bog‘langan holda ({NH4^+}, {NO3^-}) o‘zlashtiradi; havo azotini bevosita o‘zlashtira olmaydi (faqat azot bog‘lovchi bakteriyalar yordamida).", "examTip": "Sarg‘ayish va sekin o‘sish — azot yetishmasligining asosiy belgisi.", "pages": [185] } },
+        { "id": "p", "cells": { "el": "Fosfor (P)", "role": "oksidlanish-qaytarilish jarayonlarida ishtirok etuvchi moddalar tarkibida; o‘sish va rivojlanish uchun zarur", "lack": "rivojlanish va hosil pishishi sekinlashadi" } },
+        { "id": "k", "cells": { "el": "Kaliy (K)", "role": "fotosintezni va uglevodlar to‘planishini tezlashtiradi (lavlagida shakar, kartoshkada kraxmal, g‘o‘zada sellyuloza), poyani mustahkamlaydi", "lack": "hosil sifati va poya mustahkamligi pasayadi" } },
+        { "id": "micro", "cells": { "el": "Mikroelementlar (Fe, Mn, Cu, Zn, Mo, B, Co)", "role": "oz miqdorda kerak; fermentlar, fotosintez va oksidlanish-qaytarilish jarayonlarida ishtirok etadi", "lack": "kasalliklarga chidamlilik va hosildorlik kamayadi" } }
+      ]
+    },
+    {
+      "id": "classification",
+      "title": "Mineral o‘g‘itlar sinflanishi (24-jadval asosida)",
+      "columns": [
+        { "key": "name", "label": "O‘g‘it" },
+        { "key": "f", "label": "Formula" },
+        { "key": "kind", "label": "Turi" },
+        { "key": "pct", "label": "Ozuqa miqdori, %" }
+      ],
+      "rows": [
+        { "id": "nano3", "cells": { "name": "Natriy nitrat (natriyli selitra)", "f": "{NaNO3}", "kind": "azotli (oddiy)", "pct": "15–16 (N)" } },
+        { "id": "nh4no3", "cells": { "name": "Ammoniy nitrat (ammiakli selitra)", "f": "{NH4NO3}", "kind": "azotli (oddiy)", "pct": "30–35 (N)" } },
+        { "id": "sulfate", "cells": { "name": "Ammoniy sulfat", "f": "{(NH4)2SO4}", "kind": "azotli (oddiy)", "pct": "20–21 (N)" } },
+        { "id": "urea", "cells": { "name": "Karbamid (mochevina)", "f": "{CO(NH2)2}", "kind": "azotli (oddiy)", "pct": "46 (N) — eng yuqori" } },
+        { "id": "ss", "cells": { "name": "Qo‘sh superfosfat", "f": "{Ca(H2PO4)2}", "kind": "fosforli (oddiy)", "pct": "40 ({P2O5})" } },
+        { "id": "kcl", "cells": { "name": "Kaliy xlorid", "f": "{KCl}", "kind": "kaliyli (oddiy)", "pct": "52–60 ({K2O})" } },
+        { "id": "knO3", "cells": { "name": "Kaliy nitrat (kaliyli selitra)", "f": "{KNO3}", "kind": "kompleks (N va K)", "pct": "12–13 (N) va {K2O}" },
+          "detail": { "concept": "Kaliy nitratda ikki ozuqa elementi (N va K) bor, shuning uchun u kompleks o‘g‘itdir. Darslik 24-jadvalda uni azotli guruhga kiritgan, 187-betdagi ta’rifda esa kompleks deb keltirgan.", "examTip": "Oddiy/kompleks ekanini ozuqa elementlari soni belgilaydi, jadvaldagi guruh emas.", "pages": [187, 188] } },
+        { "id": "nh4h2po4", "cells": { "name": "Ammoniy digidrofosfat", "f": "{NH4H2PO4}", "kind": "kompleks (N va P)", "pct": "N va {P2O5}" } }
+      ]
+    },
+    {
+      "id": "calc",
+      "title": "Ozuqa miqdorini hisoblash",
+      "columns": [
+        { "key": "fert", "label": "O‘g‘it" },
+        { "key": "calc", "label": "Hisob" },
+        { "key": "res", "label": "Natija" },
+        { "key": "eq", "label": "Olinishi", "reaction": true }
+      ],
+      "rows": [
+        { "id": "c-nh4no3", "cells": { "fert": "{NH4NO3}", "calc": "w(N) = 28/80", "res": "35 %", "eq": "nh4no3" } },
+        { "id": "c-urea", "cells": { "fert": "{CO(NH2)2}", "calc": "w(N) = 28/60", "res": "46,7 %", "eq": "urea" },
+          "detail": { "concept": "Mochevina (karbamid) ammiak va uglerod(IV) oksiddan yuqori bosim va haroratda sintez qilinadi; azot massa ulushi bo‘yicha eng boy oddiy o‘g‘it.", "reactionIds": ["urea"], "pages": [187, 188] } },
+        { "id": "c-sulfate", "cells": { "fert": "{(NH4)2SO4}", "calc": "w(N) = 28/132", "res": "21,2 %", "eq": "sulfate" } },
+        { "id": "c-ss", "cells": { "fert": "{Ca(H2PO4)2}", "calc": "w({P2O5}) = 142/234", "res": "60,7 % (sof modda)", "eq": "" } },
+        { "id": "c-kcl", "cells": { "fert": "{KCl}", "calc": "w({K2O}) = 94/149 (2{KCl} → {K2O})", "res": "63,1 % (sof modda)", "eq": "" },
+          "detail": { "concept": "{K2O} ga o‘tkazishda 2 mol {KCl} (2·74,5 = 149 g) 1 mol {K2O} (94 g) ga ekvivalent hisoblanadi. Sanoat o‘g‘itida aralashmalar bo‘lgani uchun amaldagi qiymat past (52–60 %).", "pages": [188] } },
+        { "id": "c-lime", "cells": { "fert": "{(NH4)2SO4} + ohak", "calc": "ammiak ajralib chiqadi", "res": "azot yo‘qoladi", "eq": "lime" },
+          "detail": { "concept": "Ammoniyli o‘g‘itlarni ohakli (ishqoriy) tuproqqa solish mumkin emas: ishqor ta’sirida {NH3} gazi ajralib chiqib, azot atmosferaga ketadi.", "reactionIds": ["lime"], "observation": "O‘tkir hidli ammiak ajraladi", "pages": [188] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "nh4no3": { "equation": "NH3 + HNO3 → NH4NO3" },
+    "urea": { "equation": "2NH3 + CO2 → CO(NH2)2 + H2O", "conditions": "yuqori bosim va harorat" },
+    "sulfate": { "equation": "2NH3 + H2SO4 → (NH4)2SO4" },
+    "lime": { "equation": "(NH4)2SO4 + Ca(OH)2 → CaSO4 + 2NH3↑ + 2H2O", "conditions": "qizdirish yoki ishqoriy muhit", "safety": "Ammiak o‘tkir hidli, ko‘zni va nafas yo‘llarini ta’sirlaydi — faqat virtual namoyish." }
+  },
+  "clarifications": [
+    { "text": "Darslikda kaliy nitrat {KNO3} 24-jadvalda azotli o‘g‘itlar qatoriga kiritilgan, lekin 187-betdagi ta’rifga ko‘ra tarkibida ikki ozuqa elementi (N va K) bo‘lgani uchun u kompleks o‘g‘itdir. Bu yerda kompleks sifatida berilgan.", "source": "additionalVerifiedSource" },
+    { "text": "Ozuqa miqdori (% N, % {P2O5}, % {K2O}) sof moddaning massa ulushi emas, qabul qilingan shartli ifoda: fosfor va kaliy o‘g‘itlarda ular oksid shaklida hisoblanadi. Jadvaldagi oraliq qiymatlar (masalan, {KCl} uchun 52–60 %) sanoat mahsuloti aralashmalarini hisobga oladi, sof {KCl} da {K2O} ≈ 63,1 %.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g8-s42-q1", "type": "Y1", "skill": "o‘g‘it turlari", "difficulty": 1,
+      "stem": "Quyidagi o‘g‘itlardan qaysi biri kompleks o‘g‘it hisoblanadi?",
+      "choices": ["{NaNO3}", "{KCl}", "{NH4H2PO4}", "{CO(NH2)2}"], "answer": 2,
+      "solution": "{NH4H2PO4} tarkibida ikki ozuqa elementi bor: azot ({NH4^+}) va fosfor ({H2PO4^-}). Qolganlarida bittadan: {NaNO3} — N, {KCl} — K, {CO(NH2)2} — N." },
+    { "id": "g8-s42-q2", "type": "O1", "skill": "massa ulushi", "difficulty": 2,
+      "stem": "Ammoniy sulfat {(NH4)2SO4} tarkibidagi azotning massa ulushi necha foiz? (o‘ndan birgacha yaxlitlang)",
+      "answer": 21.2, "tolerance": 0.1, "unit": "%",
+      "solution": "M((NH₄)₂SO₄) = 2·(14 + 4) + 32 + 64 = 132 g/mol. Azot: 2·14 = 28. w(N) = 28/132 = 0,2121 ≈ 21,2 %.",
+      "mistakes": "Formulada ikkita {NH4} borligini unutib, 14/118 deb hisoblash." },
+    { "id": "g8-s42-q3", "type": "Y2", "skill": "o‘g‘it va ozuqa elementi", "difficulty": 2,
+      "stem": "O‘g‘itni uning turi bilan moslashtiring.",
+      "left": ["{KCl}", "{CO(NH2)2}", "{Ca(H2PO4)2}", "{KNO3}"],
+      "right": ["fosforli o‘g‘it", "kaliyli o‘g‘it", "azotga eng boy oddiy o‘g‘it (≈46 %)", "kompleks o‘g‘it (N va K)"],
+      "answer": [1, 2, 0, 3],
+      "solution": "{KCl} — kaliyli ({K2O} hisobida). Karbamid — azotli, w(N) ≈ 46,7 %. {Ca(H2PO4)2} — fosforli ({P2O5} hisobida). {KNO3} da N va K bor — kompleks." },
+    { "id": "g8-s42-q4", "type": "O1", "skill": "massa ulushi", "difficulty": 2,
+      "stem": "100 kg toza karbamid {CO(NH2)2} tarkibida necha kilogramm azot bor?",
+      "answer": 46.7, "tolerance": 0.1, "unit": "kg",
+      "solution": "M(CO(NH₂)₂) = 12 + 16 + 2·(14 + 2) = 60 g/mol; azot 2·14 = 28. m(N) = 100·28/60 = 46,67 ≈ 46,7 kg." },
+    { "id": "g8-s42-q5", "type": "Y1", "skill": "agrokimyo", "difficulty": 1,
+      "stem": "Nima uchun ammoniy sulfatni so‘ndirilgan ohak bilan aralashtirib yoki ohakli tuproqqa solish tavsiya etilmaydi?",
+      "choices": ["Hosil bo‘lgan gips tuproqni qotiradi", "Ammiak ajralib chiqib, azot yo‘qoladi", "Fosfor cho‘kmaga tushadi", "Kaliy ionlari bog‘lanib qoladi"], "answer": 1,
+      "solution": "(NH₄)₂SO₄ + Ca(OH)₂ → CaSO₄ + 2NH₃↑ + 2H₂O: ishqoriy muhitda ammoniy ioni ammiakka aylanib, atmosferaga uchib ketadi — o‘simlik uchun kerakli azot yo‘qoladi." },
+    { "id": "g8-s42-q6", "type": "Y1", "skill": "ozuqa elementlari roli", "difficulty": 1,
+      "stem": "O‘simlik o‘sishdan orqada qolib, barglari och-yashil va sarg‘ayib bormoqda. Qaysi element yetishmasligi eng ehtimoliy?",
+      "choices": ["Kaliy", "Azot", "Kremniy", "Natriy"], "answer": 1,
+      "solution": "Azot yetishmasa o‘sish sekinlashadi, barglar och-yashil, keyin sarg‘ayadi va fotosintez susayadi." }
+  ]
+}

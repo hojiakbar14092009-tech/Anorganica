@@ -1,0 +1,130 @@
+{
+  "id": "g8-s41",
+  "status": "seed-verified",
+  "pages": [177, 178, 179, 180, 184],
+  "summary": "Fosfor(V) oksidi {P2O5} (formulasi {P4O10}) — oq, gigroskopik kukun; suv bilan metafosfat {HPO3}, qaynoq suv bilan ortofosfat kislota {H3PO4} beradi. {H3PO4} — uch negizli, o‘rtacha kuchli kislota; uch bosqichda dissotsiatsiyalanib uch qator tuz (digidrofosfat, gidrofosfat, fosfat) hosil qiladi. Fosfat-ionga sifat reaksiyasi — {Ag^+} bilan sariq {Ag3PO4} cho‘kmasi.",
+  "keyConcepts": [
+    "{P2O5} + {H2O} (sovuq) → {HPO3}; {P2O5} + 3{H2O} (qaynoq) → 2{H3PO4}; qizdirilsa {H3PO4} → {H4P2O7} (pirofosfat) → {P2O5}.",
+    "Laboratoriyada {H3PO4}: fosfatga konsentrlangan {H2SO4} ta’sir ettirib qizdirish; sanoatda {P} → {P2O5} → {H3PO4}.",
+    "Bosqichli dissotsiatsiya: {H3PO4} → {H2PO4^-} → {HPO4^2-} → {PO4^3-}; mos ravishda uch qator tuz.",
+    "Eruvchanlik: barcha digidrofosfatlar eriydi; gidrofosfat va fosfatlardan faqat ishqoriy metall va ammoniy tuzlari eriydi, {Ca3(PO4)2} erimaydi, lekin kuchli kislotada eriydi.",
+    "Biologik rol: suyak ({Ca5(PO4)3OH}), tish emali ({Ca5(PO4)3F}), ATF, nuklein kislotalar; odamda ≈1,5 kg fosfor, kunlik sarf ≈1–1,6 g."
+  ],
+  "tables": [
+    {
+      "id": "oxide-acid",
+      "title": "Fosfor(V) oksidi va ortofosfat kislotaning olinishi",
+      "columns": [
+        { "key": "step", "label": "Jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "cond", "label": "Sharoit / izoh" }
+      ],
+      "rows": [
+        { "id": "burn", "cells": { "step": "Fosforni yoqish", "eq": "burn", "cond": "kislorod mo‘l; hosil bo‘lgan {P2O5} gigroskopik" } },
+        { "id": "cold", "cells": { "step": "{P2O5} + sovuq suv", "eq": "cold", "cond": "metafosfat kislota" } },
+        { "id": "hot", "cells": { "step": "{P2O5} + qaynoq suv", "eq": "hot", "cond": "ortofosfat kislota" },
+          "detail": { "concept": "Ortofosfat kislotani ikki yo‘l bilan olish mumkin: oksidni qaynoq suvda eritish yoki avval metafosfat kislota hosil qilib, uni suv bilan reaksiyaga kiritish.", "reactionIds": ["hot", "meta"], "pages": [177, 178] } },
+        { "id": "meta", "cells": { "step": "{HPO3} + suv", "eq": "meta", "cond": "qizdirish" } },
+        { "id": "pyro", "cells": { "step": "{H3PO4} ni ohista qizdirish", "eq": "pyro", "cond": "pirofosfat kislota; ko‘proq qizdirilsa yana {P2O5} gacha parchalanadi" } },
+        { "id": "lab", "cells": { "step": "Laboratoriya usuli", "eq": "lab", "cond": "konsentrlangan {H2SO4}, qizdirish; {CaSO4} cho‘kmasi ajraladi" },
+          "detail": { "concept": "Kuchliroq sulfat kislota fosfat tuzidan kuchsizroq fosfat kislotani siqib chiqaradi; {CaSO4} esa suvda kam eriydigan cho‘kma sifatida ajraladi.", "reactionIds": ["lab"], "pages": [178] } },
+        { "id": "koh", "cells": { "step": "{P2O5} + ishqor (mo‘l)", "eq": "koh", "cond": "kislotali oksid → tuz + suv" },
+          "detail": { "concept": "{P2O5} ning 1 moli mo‘l ishqorning 6 moli bilan reaksiyaga kirishib 2 mol o‘rta tuz va 3 mol suv beradi. Ishqor kam bo‘lsa gidro- yoki digidrofosfat hosil bo‘ladi.", "reactionIds": ["koh"], "examTip": "{P2O5} + 6{KOH}: suv koeffitsiyenti 3 (vodorod va kislorod hisobini tekshiring).", "pages": [184] } }
+      ]
+    },
+    {
+      "id": "h3po4",
+      "title": "Ortofosfat kislota: dissotsiatsiya va reaksiyalar",
+      "columns": [
+        { "key": "what", "label": "Jarayon / reagent" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Muhim" }
+      ],
+      "rows": [
+        { "id": "d1", "cells": { "what": "1-bosqich", "eq": "d1", "note": "digidrofosfat ioni" },
+          "detail": { "concept": "Fosfat kislota uch negizli, ammo har bir keyingi bosqich oldingisidan ancha kuchsiz boradi. Shuning uchun ionlar aralashmasida eng ko‘p {H2PO4^-}, eng kam {PO4^3-} bo‘ladi.", "reactionIds": ["d1", "d2", "d3"], "pages": [178] } },
+        { "id": "d2", "cells": { "what": "2-bosqich", "eq": "d2", "note": "gidrofosfat ioni" } },
+        { "id": "d3", "cells": { "what": "3-bosqich", "eq": "d3", "note": "ortofosfat ioni" } },
+        { "id": "cao", "cells": { "what": "Asosli oksid ({CaO})", "eq": "cao", "note": "tuz + suv" } },
+        { "id": "naoh", "cells": { "what": "Ishqor ({NaOH}, 3 mol)", "eq": "naoh", "note": "o‘rta tuz" },
+          "detail": { "concept": "Ishqor miqdoriga qarab: 1 mol {NaOH} → {NaH2PO4}, 2 mol → {Na2HPO4}, 3 mol → {Na3PO4}.", "reactionIds": ["naoh1", "naoh2", "naoh"], "pages": [178, 179] } },
+        { "id": "naoh1", "cells": { "what": "Ishqor ({NaOH}, 1 mol)", "eq": "naoh1", "note": "digidrofosfat" } },
+        { "id": "naoh2", "cells": { "what": "Ishqor ({NaOH}, 2 mol)", "eq": "naoh2", "note": "gidrofosfat" } },
+        { "id": "na2co3", "cells": { "what": "Karbonat ({Na2CO3})", "eq": "na2co3", "note": "{CO2}↑ ajraladi" } },
+        { "id": "nh3", "cells": { "what": "Ammiak", "eq": "nh3", "note": "ammoniy fosfat (mo‘l ammiakda)" } },
+        { "id": "ag", "cells": { "what": "{AgNO3} — fosfat-ionga sifat reaksiyasi", "eq": "ag", "note": "sariq {Ag3PO4} cho‘kmasi" },
+          "detail": { "concept": "Ionli ko‘rinishi: 3{Ag^+} + {PO4^3-} → {Ag3PO4}↓. Sariq cho‘kma nitrat kislotada eriydi; oq {AgCl} esa {HNO3} da erimaydi — shu bilan xlorid-ionidan farqlanadi.", "reactionIds": ["ag", "agIon"], "observation": "Sariq cho‘kma hosil bo‘ladi", "examTip": "Fosfat — sariq {Ag3PO4}, xlorid — oq {AgCl}, sulfat uchun esa {Ba^2+} ishlatiladi.", "pages": [179] } },
+        { "id": "hno3", "cells": { "what": "{Ca3(PO4)2} + {HNO3}", "eq": "hno3", "note": "erimaydigan fosfat kuchli kislotada eriydi, suvda eriydigan {Ca(H2PO4)2} hosil bo‘ladi" } }
+      ]
+    },
+    {
+      "id": "salts",
+      "title": "Ortofosfat kislota tuzlari va ularning eruvchanligi",
+      "columns": [
+        { "key": "type", "label": "Tuz turi" },
+        { "key": "na", "label": "Na (I valentli) tuzi" },
+        { "key": "ca", "label": "Ca (II valentli) tuzi" },
+        { "key": "sol", "label": "Suvda eruvchanligi" }
+      ],
+      "rows": [
+        { "id": "dihydro", "cells": { "type": "Digidrofosfat", "na": "{NaH2PO4}", "ca": "{Ca(H2PO4)2}", "sol": "hammasi eriydi" } },
+        { "id": "hydro", "cells": { "type": "Gidrofosfat", "na": "{Na2HPO4}", "ca": "{CaHPO4}", "sol": "{Na^+}, {K^+}, {NH4^+} tuzlari eriydi; qolganlari erimaydi" } },
+        { "id": "phosphate", "cells": { "type": "Ortofosfat (o‘rta tuz)", "na": "{Na3PO4}", "ca": "{Ca3(PO4)2}", "sol": "{Na^+}, {K^+}, {NH4^+} tuzlari eriydi; qolganlari erimaydi" },
+          "detail": { "concept": "Umumiy formulalar (M — metall): bir valentli — {M3PO4}, {MH2PO4}, {M2HPO4}; ikki valentli — {M3(PO4)2}, {M(H2PO4)2}, {MHPO4}; uch valentli — {MPO4}, {M(H2PO4)3}, {M2(HPO4)3}. Ammoniy ioni ham metall o‘rnida bo‘ladi: {(NH4)3PO4}, {(NH4)2HPO4}, {NH4H2PO4}.", "examTip": "Tuz formulasini yozishda ionlar zaryadi yig‘indisi nolga teng bo‘lishi kerak: {Ca^2+} va {PO4^3-} → {Ca3(PO4)2}.", "pages": [179, 180] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "burn": { "equation": "4P + 5O2 → 2P2O5", "conditions": "kislorod mo‘l", "safety": "Fosfor yonishi, zaharli tutun — faqat virtual namoyish." },
+    "cold": { "equation": "P2O5 + H2O → 2HPO3", "conditions": "sovuq suv" },
+    "hot": { "equation": "P2O5 + 3H2O → 2H3PO4", "conditions": "qaynoq suv, qizdirish" },
+    "meta": { "equation": "HPO3 + H2O → H3PO4", "conditions": "qizdirish" },
+    "pyro": { "equation": "2H3PO4 → H4P2O7 + H2O", "conditions": "ohista qizdirish" },
+    "lab": { "equation": "Ca3(PO4)2 + 3H2SO4 → 3CaSO4↓ + 2H3PO4", "conditions": "konsentrlangan H2SO4, qizdirish", "safety": "Konsentrlangan sulfat kislota kuydiradi — faqat virtual namoyish." },
+    "koh": { "equation": "P2O5 + 6KOH → 2K3PO4 + 3H2O" },
+    "d1": { "equation": "H3PO4 ⇄ H^+ + H2PO4^-" },
+    "d2": { "equation": "H2PO4^- ⇄ H^+ + HPO4^2-" },
+    "d3": { "equation": "HPO4^2- ⇄ H^+ + PO4^3-" },
+    "cao": { "equation": "3CaO + 2H3PO4 → Ca3(PO4)2↓ + 3H2O" },
+    "naoh": { "equation": "3NaOH + H3PO4 → Na3PO4 + 3H2O" },
+    "naoh1": { "equation": "NaOH + H3PO4 → NaH2PO4 + H2O" },
+    "naoh2": { "equation": "2NaOH + H3PO4 → Na2HPO4 + 2H2O" },
+    "na2co3": { "equation": "3Na2CO3 + 2H3PO4 → 2Na3PO4 + 3CO2↑ + 3H2O" },
+    "nh3": { "equation": "3NH3 + H3PO4 → (NH4)3PO4", "conditions": "ammiak mo‘l" },
+    "ag": { "equation": "3AgNO3 + H3PO4 → Ag3PO4↓ + 3HNO3", "observation": "Sariq cho‘kma" },
+    "agIon": { "equation": "3Ag^+ + PO4^3- → Ag3PO4↓" },
+    "hno3": { "equation": "Ca3(PO4)2 + 4HNO3 → Ca(H2PO4)2 + 2Ca(NO3)2" }
+  },
+  "clarifications": [
+    { "text": "Darslikda (179-bet) «digidrofosfatlar suvda eriydi, qolgan fosfatlar erimaydi» deyilgan. Aniqroq: faqat ishqoriy metallar ({Na^+}, {K^+}) va ammoniy ({NH4^+}) ning gidrofosfat va ortofosfatlari suvda eriydi; boshqa metallarning (jumladan {Ca^2+}, {Mg^2+}, {Ag^+}) gidrofosfat va ortofosfatlari erimaydi.", "source": "additionalVerifiedSource" },
+    { "text": "180-betdagi «ammoniy fosfitlar suvda eriydi» jumlasida «fosfit» so‘zi xato; fosfit — {H3PO3} ning tuzi. Bu yerda ammoniy fosfatlar nazarda tutilgan.", "source": "additionalVerifiedSource" },
+    { "text": "184-betdagi misolda «{P2O5} + 6{KOH} = 2{K3PO4} + {H2O}» tenglamasi tenglanmagan. To‘g‘risi: {P2O5} + 6{KOH} → 2{K3PO4} + 3{H2O}. Natija (0,05 mol oksiddan 0,1 mol {K3PO4}) o‘zgarmaydi.", "source": "additionalVerifiedSource" },
+    { "text": "Fosfat kislotaning metallar bilan reaksiyasi (masalan, natriy bilan, 179-bet) amalda keng qo‘llanmaydi: ko‘pchilik metallarning fosfatlari erimaydi va metall sirtini qoplab reaksiyani sekinlashtiradi; natriy esa avvalo suv bilan reaksiyaga kirishadi. Shu sababli jadvalda asosli oksid, ishqor, karbonat va ammiak bilan reaksiyalar keltirilgan.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g8-s41-q1", "type": "Y1", "skill": "ionlar nomi", "difficulty": 1,
+      "stem": "Quyidagi ionlardan qaysi biri digidrofosfat ionidir?",
+      "choices": ["{PO4^3-}", "{HPO4^2-}", "{H2PO4^-}", "{PO3^-}"], "answer": 2,
+      "solution": "{H2PO4^-} — ikkita vodorodi saqlangan anion (digidrofosfat). {HPO4^2-} — gidrofosfat, {PO4^3-} — ortofosfat." },
+    { "id": "g8-s41-q2", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "14,2 g fosfor(V) oksid mo‘l miqdordagi kaliy gidroksid eritmasida eritildi. Hosil bo‘lgan {K3PO4} ning massasi necha gramm?",
+      "answer": 42.4, "tolerance": 0.1, "unit": "g",
+      "solution": "P₂O₅ + 6KOH → 2K₃PO₄ + 3H₂O. M(P₂O₅) = 142 g/mol, n = 14,2/142 = 0,1 mol. n(K₃PO₄) = 2·0,1 = 0,2 mol. M(K₃PO₄) = 3·39 + 31 + 64 = 212 g/mol. m = 0,2·212 = 42,4 g.",
+      "mistakes": "Mol nisbatini 1 : 1 deb olish (21,2 g chiqadi) — tenglamada 1 mol {P2O5} dan 2 mol tuz hosil bo‘ladi." },
+    { "id": "g8-s41-q3", "type": "Y2", "skill": "sifat reaksiyalari", "difficulty": 2,
+      "stem": "Eritmalar aralashtirilganda kuzatiladigan natijani moslashtiring.",
+      "left": ["{AgNO3} + {H3PO4}", "{BaCl2} + {H2SO4}", "{AgNO3} + {HCl}", "1 mol {NaOH} + 1 mol {H3PO4}"],
+      "right": ["oq cho‘kma {AgCl}, {HNO3} da erimaydi", "sariq cho‘kma {Ag3PO4}, {HNO3} da eriydi", "oq cho‘kma {BaSO4}", "cho‘kma yo‘q, {NaH2PO4} hosil bo‘ladi"],
+      "answer": [1, 2, 0, 3],
+      "solution": "Fosfat-ion {Ag^+} bilan sariq {Ag3PO4}, xlorid-ion oq {AgCl}, sulfat-ion {Ba^2+} bilan oq {BaSO4} beradi. 1 : 1 nisbatda faqat bitta proton neytrallanadi: {NaH2PO4}, u suvda eriydi." },
+    { "id": "g8-s41-q4", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "49 g ortofosfat kislota olish uchun mo‘l sulfat kislota bilan necha gramm kalsiy ortofosfat kerak?",
+      "answer": 77.5, "tolerance": 0.1, "unit": "g",
+      "solution": "Ca₃(PO₄)₂ + 3H₂SO₄ → 3CaSO₄ + 2H₃PO₄. M(H₃PO₄) = 3 + 31 + 64 = 98 g/mol; n = 49/98 = 0,5 mol. n(Ca₃(PO₄)₂) = 0,5/2 = 0,25 mol. M(Ca₃(PO₄)₂) = 310 g/mol; m = 0,25·310 = 77,5 g.",
+      "mistakes": "{H3PO4} mol sonini kalsiy fosfatnikiga teng olish (155 g chiqadi); koeffitsiyent 2 ga bo‘lish kerak." },
+    { "id": "g8-s41-q5", "type": "Y1", "skill": "fosfor oksidi", "difficulty": 1,
+      "stem": "Fosfor(V) oksidni sovuq suvda eritganda asosan qaysi kislota hosil bo‘ladi?",
+      "choices": ["{H3PO4}", "{HPO3}", "{H4P2O7}", "{H3PO3}"], "answer": 1,
+      "solution": "{P2O5} + {H2O} → 2{HPO3} (metafosfat kislota). Ortofosfat kislota {H3PO4} qaynoq suv bilan yoki {HPO3} ni suv bilan qizdirishdan hosil bo‘ladi." }
+  ]
+}

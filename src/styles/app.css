@@ -194,3 +194,24 @@ legend { font-weight: 650; padding: 0 6px; }
 
 [data-reduce-motion="true"] *, [data-reduce-motion="true"] *::before { animation: none !important; transition: none !important; }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+.drill-bar { position: sticky; top: calc(52px + env(safe-area-inset-top)); z-index: 5; background: var(--bg); padding: 8px 0; font-variant-numeric: tabular-nums; font-weight: 600; }
+
+/* Visuals (schematic 2D) */
+.visual { margin: 20px 0; padding: 12px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.visual svg { width: 100%; height: auto; display: block; max-width: 480px; margin: 8px auto; }
+.cell .vessel { fill: none; stroke: var(--muted); stroke-width: 2; }
+.cell .liquid { fill: var(--accent); opacity: 0.08; }
+.cell .electrode { fill: var(--muted); }
+.cell .lbl { fill: var(--text); font-size: 12px; font-weight: 600; }
+.cell .ion circle { stroke-width: 1.5; }
+.cell .ion text { font-size: 12px; font-weight: 700; fill: var(--text); }
+.cell .cat circle, .dot.cat { fill: var(--surface); stroke: var(--formula); }
+.cell .an circle, .dot.an { fill: var(--surface); stroke: var(--warn); stroke-dasharray: 3 2; }
+.cell .ion { animation: drift 3.2s ease-in forwards; animation-play-state: paused; }
+.cell[data-playing="true"] .ion { animation-play-state: running; }
+@keyframes drift { 80% { translate: var(--dx) 0; opacity: 1; } 100% { translate: var(--dx) 0; opacity: 0; } }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; border: 2px solid; vertical-align: -1px; }
+.half { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 12px 0 0; }
+.half dt { color: var(--muted); font-size: 0.875rem; }
+.half dd { margin: 0; }
