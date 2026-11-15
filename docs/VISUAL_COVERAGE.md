@@ -1,10 +1,20 @@
 # Visual coverage plan
 
-Status: **started** — G9 §19 electrolysis scenes (CuCl₂, NaCl) are built and balance-tested (`src/features/visuals/registry.ts`). Three.js is not installed. Rows below are the
-planned high-value scenes for the seeded lessons only; the full 85-section audit of textbook figures is pending.
+Source of truth: `src/features/visuals/registry.ts` (lesson → visuals, each with a purpose) and `molecules.ts` (geometry data).
+Tests: `src/tests/molecules.test.ts` (formula ↔ atoms, connectivity, bond lengths, H–O–H 104.5°, H–S–H 92.1°, H–N–H 106.7°, CH₄ 109.47°, P–P 2.21 Å, graphite C–C 1.42 Å), `src/tests/visuals.test.ts` (allowed lesson IDs, balanced electrode equations).
 
-| sectionId | Concept | Why it helps | Type | Chemistry to verify | Fallback |
-|---|---|---|---|---|---|
-| g8-s23 | Fig. 15 lab Cl₂ generation; Fig. 16 Cl₂ + Na/Sb/Fe/Cu | Shows apparatus + observations | animated2D | MnO₂ + 4HCl balanced; FeCl₃ brown smoke | table row + equation |
-| g8-s32 | Dilution “acid into water”; BaSO₄ precipitate | Safety + qualitative test | animated2D | white precipitate, insoluble in HNO₃ | text |
-| g9-s19 | Electrolysis cell CuSO₄ / NaCl | Ion migration, electrode half-reactions | animated2D (SVG) | 2e⁻ per Cu, 4e⁻ per O₂ | cathode/anode tables |
+| Lesson | Visual | Type | Status |
+|---|---|---|---|
+| g8-s21 | N₂, O₂, Cl₂ (bond order) | 3D | tested |
+| g8-s22 | F₂, Cl₂, Br₂, I₂ (bond length trend 1.42→2.67 Å) | 3D | tested |
+| g8-s23 / s24 / s28 | Cl₂ / HCl / F₂, Br₂, I₂ | 3D | tested |
+| g8-s29 / s30 | H₂O vs H₂S angle, O₂ / H₂S | 3D | tested |
+| g8-s31 / s35 | SO₂, SO₃ | 3D | tested |
+| g8-s32 | H₂SO₄ (S=O 1.42, S–OH 1.57 Å; H orientation approximate) | 3D | tested |
+| g8-s36 / s37 / s38 / s39 / s40 | N₂ / NH₃, NH₄⁺ / NO₂ / HNO₃ / P₄ | 3D | tested |
+| g9-s8, s9 | diamond cell fragment, graphite two layers | 3D | tested |
+| g9-s10 | CO, CO₂, CH₄ | 3D | tested |
+| g9-s19 | CuCl₂ and NaCl electrolysis cells | 2D SVG animation | tested |
+| others | tables + equations only (figure audit pending) | — | pending |
+
+All models are labelled “sxematik model”; text facts (lengths/angles) are always visible as the fallback.

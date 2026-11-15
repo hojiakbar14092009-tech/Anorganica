@@ -1,7 +1,12 @@
 {
   "id": "g9-s36",
   "status": "seed-verified",
-  "pages": [165, 166, 167, 168],
+  "pages": [
+    165,
+    166,
+    167,
+    168
+  ],
   "summary": "Cho‘yan — temirning uglerodli qotishmasi (taxminan 2,14 dan 4,5 % gacha {C}), domna pechida temir rudasi, koks va flusdan olinadi. Koks issiqlik beradi va {CO} hosil qiladi; {CO} temir oksidlarini bosqichma-bosqich qaytaradi; flus qo‘shimchalarni shlakka o‘tkazadi. O‘zbekistonda qora metallurgiya Bekobod metallurgiya zavodida joylashgan.",
   "keyConcepts": [
     "Xomashyo: temir rudasi ({Fe2O3}, {Fe3O4}, {FeO}), koks va flus (ohaktosh {CaCO3}, qum {SiO2}); pastdagi furmalardan qizdirilgan havo (ko‘pincha kislorod bilan boyitilgan) purkaladi.",
@@ -15,93 +20,375 @@
       "id": "furnace",
       "title": "Domna pechidagi jarayonlar (yuqoridan pastga)",
       "columns": [
-        { "key": "zone", "label": "Zona / bosqich" },
-        { "key": "eq", "label": "Reaksiya", "reaction": true },
-        { "key": "t", "label": "Harorat" }
+        {
+          "key": "zone",
+          "label": "Zona / bosqich"
+        },
+        {
+          "key": "eq",
+          "label": "Reaksiya",
+          "reaction": true
+        },
+        {
+          "key": "t",
+          "label": "Harorat"
+        }
       ],
       "rows": [
-        { "id": "dry", "cells": { "zone": "Yuqori: gidratni suvsizlantirish", "eq": "dry", "t": "500–700 °C" } },
-        { "id": "r1", "cells": { "zone": "{Fe2O3} → {Fe3O4}", "eq": "r1", "t": "450–500 °C" },
-          "detail": { "concept": "Qaytarilish bosqichma-bosqich boradi: oksidlanish darajasi +3 → +8/3 → +2 → 0. Har bosqichda {CO} oksidlanib {CO2} ga o‘tadi.", "reactionIds": ["r1", "r2", "r3", "sum"], "examTip": "Domnada asosiy qaytaruvchi — {CO}, koks esa {CO} manbai.", "pages": [166] } },
-        { "id": "r2", "cells": { "zone": "{Fe3O4} → {FeO}", "eq": "r2", "t": "500–700 °C" } },
-        { "id": "r3", "cells": { "zone": "{FeO} → {Fe}", "eq": "r3", "t": "700–800 °C" } },
-        { "id": "flux", "cells": { "zone": "Flusning parchalanishi", "eq": "flux", "t": "yuqori harorat" } },
-        { "id": "slag", "cells": { "zone": "Shlak hosil bo‘lishi", "eq": "slag", "t": "yuqori harorat" },
-          "detail": { "concept": "Qum ({SiO2}) — kislotali qo‘shimcha; {CaO} bilan oson suyuqlanuvchi {CaSiO3} hosil qiladi. Shlak gornda cho‘yan ustida alohida qatlam bo‘lib turadi.", "reactionIds": ["flux", "slag"], "pages": [166, 167] } },
-        { "id": "burn", "cells": { "zone": "Pastki: koks yonishi (furma)", "eq": "burn", "t": "eng yuqori" } },
-        { "id": "co", "cells": { "zone": "{CO} hosil bo‘lishi", "eq": "co", "t": "yuqori harorat" } },
-        { "id": "sum", "cells": { "zone": "Umumiy qaytarilish", "eq": "sum", "t": "—" } }
+        {
+          "id": "dry",
+          "cells": {
+            "zone": "Yuqori: gidratni suvsizlantirish",
+            "eq": "dry",
+            "t": "500–700 °C"
+          }
+        },
+        {
+          "id": "r1",
+          "cells": {
+            "zone": "{Fe2O3} → {Fe3O4}",
+            "eq": "r1",
+            "t": "450–500 °C"
+          },
+          "detail": {
+            "concept": "Qaytarilish bosqichma-bosqich boradi: oksidlanish darajasi +3 → +8/3 → +2 → 0. Har bosqichda {CO} oksidlanib {CO2} ga o‘tadi.",
+            "reactionIds": [
+              "r1",
+              "r2",
+              "r3",
+              "sum"
+            ],
+            "examTip": "Domnada asosiy qaytaruvchi — {CO}, koks esa {CO} manbai.",
+            "pages": [
+              166
+            ]
+          }
+        },
+        {
+          "id": "r2",
+          "cells": {
+            "zone": "{Fe3O4} → {FeO}",
+            "eq": "r2",
+            "t": "500–700 °C"
+          }
+        },
+        {
+          "id": "r3",
+          "cells": {
+            "zone": "{FeO} → {Fe}",
+            "eq": "r3",
+            "t": "700–800 °C"
+          }
+        },
+        {
+          "id": "flux",
+          "cells": {
+            "zone": "Flusning parchalanishi",
+            "eq": "flux",
+            "t": "yuqori harorat"
+          }
+        },
+        {
+          "id": "slag",
+          "cells": {
+            "zone": "Shlak hosil bo‘lishi",
+            "eq": "slag",
+            "t": "yuqori harorat"
+          },
+          "detail": {
+            "concept": "Qum ({SiO2}) — kislotali qo‘shimcha; {CaO} bilan oson suyuqlanuvchi {CaSiO3} hosil qiladi. Shlak gornda cho‘yan ustida alohida qatlam bo‘lib turadi.",
+            "reactionIds": [
+              "flux",
+              "slag"
+            ],
+            "pages": [
+              166,
+              167
+            ]
+          }
+        },
+        {
+          "id": "burn",
+          "cells": {
+            "zone": "Pastki: koks yonishi (furma)",
+            "eq": "burn",
+            "t": "eng yuqori"
+          }
+        },
+        {
+          "id": "co",
+          "cells": {
+            "zone": "{CO} hosil bo‘lishi",
+            "eq": "co",
+            "t": "yuqori harorat"
+          }
+        },
+        {
+          "id": "sum",
+          "cells": {
+            "zone": "Umumiy qaytarilish",
+            "eq": "sum",
+            "t": "—"
+          }
+        }
       ]
     },
     {
       "id": "gas",
       "title": "Tabiiy gaz qo‘shilganda",
       "columns": [
-        { "key": "step", "label": "Bosqich" },
-        { "key": "eq", "label": "Reaksiya", "reaction": true },
-        { "key": "res", "label": "Natija" }
+        {
+          "key": "step",
+          "label": "Bosqich"
+        },
+        {
+          "key": "eq",
+          "label": "Reaksiya",
+          "reaction": true
+        },
+        {
+          "key": "res",
+          "label": "Natija"
+        }
       ],
       "rows": [
-        { "id": "ch4", "cells": { "step": "Metanning yonishi", "eq": "ch4", "res": "{CO2} va suv bug‘i" } },
-        { "id": "h2o", "cells": { "step": "Suv bug‘i + cho‘g‘langan ko‘mir", "eq": "h2o", "res": "{H2} va {CO} — qo‘shimcha qaytaruvchilar; koks sarfi 10–20 % kamayadi" } }
+        {
+          "id": "ch4",
+          "cells": {
+            "step": "Metanning yonishi",
+            "eq": "ch4",
+            "res": "{CO2} va suv bug‘i"
+          }
+        },
+        {
+          "id": "h2o",
+          "cells": {
+            "step": "Suv bug‘i + cho‘g‘langan ko‘mir",
+            "eq": "h2o",
+            "res": "{H2} va {CO} — qo‘shimcha qaytaruvchilar; koks sarfi 10–20 % kamayadi"
+          }
+        }
       ]
     },
     {
       "id": "alloys",
       "title": "Cho‘yan turlari va po‘lat",
       "columns": [
-        { "key": "kind", "label": "Qotishma" },
-        { "key": "c", "label": "Uglerod" },
-        { "key": "form", "label": "Uglerodning shakli / rangi" },
-        { "key": "use", "label": "Ishlatilishi" }
+        {
+          "key": "kind",
+          "label": "Qotishma"
+        },
+        {
+          "key": "c",
+          "label": "Uglerod"
+        },
+        {
+          "key": "form",
+          "label": "Uglerodning shakli / rangi"
+        },
+        {
+          "key": "use",
+          "label": "Ishlatilishi"
+        }
       ],
       "rows": [
-        { "id": "cast", "cells": { "kind": "Quyma cho‘yan", "c": "2–4,5 %", "form": "grafit; kulrang", "use": "quvurlar, panjaralar, mashina qismlari, kimyoviy uskunalar" } },
-        { "id": "white", "cells": { "kind": "To‘yingan (oq) cho‘yan", "c": "2–4,5 %", "form": "temir karbid {Fe3C}; oq", "use": "po‘lat olish uchun xomashyo" } },
-        { "id": "steel", "cells": { "kind": "Po‘lat", "c": "< 2,14 %", "form": "temir va uglerod qotishmasi", "use": "mustahkam, bolg‘alanuvchan konstruksiya materiali" } }
+        {
+          "id": "cast",
+          "cells": {
+            "kind": "Quyma cho‘yan",
+            "c": "2–4,5 %",
+            "form": "grafit; kulrang",
+            "use": "quvurlar, panjaralar, mashina qismlari, kimyoviy uskunalar"
+          }
+        },
+        {
+          "id": "white",
+          "cells": {
+            "kind": "To‘yingan (oq) cho‘yan",
+            "c": "2–4,5 %",
+            "form": "temir karbid {Fe3C}; oq",
+            "use": "po‘lat olish uchun xomashyo"
+          }
+        },
+        {
+          "id": "steel",
+          "cells": {
+            "kind": "Po‘lat",
+            "c": "< 2,14 %",
+            "form": "temir va uglerod qotishmasi",
+            "use": "mustahkam, bolg‘alanuvchan konstruksiya materiali"
+          }
+        }
       ]
     }
   ],
   "reactions": {
-    "dry": { "equation": "Fe2O3·H2O → Fe2O3 + H2O↑", "conditions": "500–700 °C" },
-    "r1": { "equation": "3Fe2O3 + CO → 2Fe3O4 + CO2↑", "conditions": "450–500 °C" },
-    "r2": { "equation": "Fe3O4 + CO → 3FeO + CO2↑", "conditions": "500–700 °C" },
-    "r3": { "equation": "FeO + CO → Fe + CO2↑", "conditions": "700–800 °C" },
-    "flux": { "equation": "CaCO3 → CaO + CO2↑", "conditions": "yuqori harorat" },
-    "slag": { "equation": "CaO + SiO2 → CaSiO3", "conditions": "yuqori harorat" },
-    "burn": { "equation": "C + O2 → CO2↑", "conditions": "koks yonishi, havo purkalganda" },
-    "co": { "equation": "CO2 + C → 2CO", "conditions": "yuqori harorat" },
-    "sum": { "equation": "Fe2O3 + 3CO → 2Fe + 3CO2↑", "conditions": "umumiy tenglama" },
-    "ch4": { "equation": "CH4 + 2O2 → CO2↑ + 2H2O", "conditions": "domnaga purkalganda" },
-    "h2o": { "equation": "H2O + C → H2↑ + CO↑", "conditions": "cho‘g‘langan ko‘mir" }
+    "dry": {
+      "equation": "Fe2O3·H2O → Fe2O3 + H2O↑",
+      "conditions": "500–700 °C"
+    },
+    "r1": {
+      "equation": "3Fe2O3 + CO → 2Fe3O4 + CO2↑",
+      "conditions": "450–500 °C"
+    },
+    "r2": {
+      "equation": "Fe3O4 + CO → 3FeO + CO2↑",
+      "conditions": "500–700 °C"
+    },
+    "r3": {
+      "equation": "FeO + CO → Fe + CO2↑",
+      "conditions": "700–800 °C"
+    },
+    "flux": {
+      "equation": "CaCO3 → CaO + CO2↑",
+      "conditions": "yuqori harorat"
+    },
+    "slag": {
+      "equation": "CaO + SiO2 → CaSiO3",
+      "conditions": "yuqori harorat"
+    },
+    "burn": {
+      "equation": "C + O2 → CO2↑",
+      "conditions": "koks yonishi, havo purkalganda"
+    },
+    "co": {
+      "equation": "CO2 + C → 2CO",
+      "conditions": "yuqori harorat"
+    },
+    "sum": {
+      "equation": "Fe2O3 + 3CO → 2Fe + 3CO2↑",
+      "conditions": "umumiy tenglama"
+    },
+    "ch4": {
+      "equation": "CH4 + 2O2 → CO2↑ + 2H2O",
+      "conditions": "domnaga purkalganda"
+    },
+    "h2o": {
+      "equation": "H2O + C → H2↑ + CO↑",
+      "conditions": "cho‘g‘langan ko‘mir"
+    }
   },
   "clarifications": [
-    { "text": "165-betda cho‘yan «2,14 % dan ko‘p» uglerod tutadi deyilgan, 167–168-betlarda esa «2–4,5 %» yozilgan; chegara taxminan 2,14 % (ba’zi manbalarda 2 %): shundan kam uglerodli qotishma po‘lat, ko‘pi cho‘yan.", "source": "additionalVerifiedSource" },
-    { "text": "166-betdagi qaytarilish haroratlari taxminiy; amalda zonalar bir-birini qoplaydi, shuning uchun jadvalda ular qo‘llanma sifatida berilgan.", "source": "additionalVerifiedSource" }
+    {
+      "text": "165-betda cho‘yan «2,14 % dan ko‘p» uglerod tutadi deyilgan, 167–168-betlarda esa «2–4,5 %» yozilgan; chegara taxminan 2,14 % (ba’zi manbalarda 2 %): shundan kam uglerodli qotishma po‘lat, ko‘pi cho‘yan.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "166-betdagi qaytarilish haroratlari taxminiy; amalda zonalar bir-birini qoplaydi, shuning uchun jadvalda ular qo‘llanma sifatida berilgan.",
+      "source": "additionalVerifiedSource"
+    }
   ],
   "questions": [
-    { "id": "g9-s36-q1", "type": "Y1", "skill": "domna jarayoni", "difficulty": 1,
+    {
+      "id": "g9-s36-q1",
+      "type": "Y1",
+      "skill": "domna jarayoni",
+      "difficulty": 1,
       "stem": "Domna pechida temir oksidlarini bevosita qaytaruvchi asosiy modda qaysi?",
-      "choices": ["is gazi {CO}", "kislorod {O2}", "ohaktosh {CaCO3}", "qum {SiO2}"], "answer": 0,
-      "solution": "Koks yonib {CO2} hosil qiladi, u yana koks bilan {CO} ga aylanadi; {CO} oksidlarni {Fe} gacha qaytaradi: FeO + CO → Fe + CO₂." },
-    { "id": "g9-s36-q2", "type": "O1", "skill": "ruda hisobi", "difficulty": 2,
+      "choices": [
+        "is gazi {CO}",
+        "kislorod {O2}",
+        "ohaktosh {CaCO3}",
+        "qum {SiO2}"
+      ],
+      "answer": 0,
+      "solution": "Koks yonib {CO2} hosil qiladi, u yana koks bilan {CO} ga aylanadi; {CO} oksidlarni {Fe} gacha qaytaradi: FeO + CO → Fe + CO₂."
+    },
+    {
+      "id": "g9-s36-q2",
+      "type": "O1",
+      "skill": "ruda hisobi",
+      "difficulty": 2,
       "stem": "Tarkibida 80 % {Fe2O3} bo‘lgan 1 t (1000 kg) rudadan {Fe2O3} + 3CO → 2Fe + 3CO2 reaksiyasi bo‘yicha nazariy necha kg temir olinadi?",
-      "answer": 560, "tolerance": 0.5, "unit": "kg",
+      "answer": 560,
+      "tolerance": 0.5,
+      "unit": "kg",
       "solution": "m(Fe₂O₃) = 1000 · 0,8 = 800 kg; M = 160 kg/kmol, n = 5 kmol. n(Fe) = 2 · 5 = 10 kmol; m(Fe) = 10 · 56 = 560 kg.",
-      "mistakes": "Aralashmalarni hisobga olmay butun 1000 kg ni oksid deb olish." },
-    { "id": "g9-s36-q3", "type": "O1", "skill": "gaz hajmi hisobi", "difficulty": 2,
+      "mistakes": "Aralashmalarni hisobga olmay butun 1000 kg ni oksid deb olish."
+    },
+    {
+      "id": "g9-s36-q3",
+      "type": "O1",
+      "skill": "gaz hajmi hisobi",
+      "difficulty": 2,
       "stem": "160 g {Fe2O3} ni temirgacha qaytarish uchun n.sh.da necha litr {CO} kerak?",
-      "answer": 67.2, "tolerance": 0.1, "unit": "l",
-      "solution": "Fe₂O₃ + 3CO → 2Fe + 3CO₂. n(Fe₂O₃) = 160 / 160 = 1 mol; n(CO) = 3 mol; V = 3 · 22,4 = 67,2 l." },
-    { "id": "g9-s36-q4", "type": "Y2", "skill": "domna xomashyolari", "difficulty": 2,
+      "answer": 67.2,
+      "tolerance": 0.1,
+      "unit": "l",
+      "solution": "Fe₂O₃ + 3CO → 2Fe + 3CO₂. n(Fe₂O₃) = 160 / 160 = 1 mol; n(CO) = 3 mol; V = 3 · 22,4 = 67,2 l."
+    },
+    {
+      "id": "g9-s36-q4",
+      "type": "Y2",
+      "skill": "domna xomashyolari",
+      "difficulty": 2,
       "stem": "Domna pechidagi moddaning vazifasini moslashtiring.",
-      "left": ["koks {C}", "flus {CaCO3}", "{CO}", "{CaSiO3}"],
-      "right": ["shlakning asosiy qismi", "yonib issiqlik beradi va {CO} manbai bo‘ladi", "temir oksidlarini qaytaradi", "{CaO} ga parchalanib qo‘shimchalarni shlakka bog‘laydi"],
-      "answer": [1, 3, 2, 0],
-      "solution": "Koks — issiqlik va {CO} manbai; flus — {CaO} manbai, qum bilan shlak hosil qiladi; {CO} — qaytaruvchi; {CaSiO3} — shlakning asosiy qismi." },
-    { "id": "g9-s36-q5", "type": "Y1", "skill": "cho‘yan va po‘lat", "difficulty": 1,
+      "left": [
+        "koks {C}",
+        "flus {CaCO3}",
+        "{CO}",
+        "{CaSiO3}"
+      ],
+      "right": [
+        "shlakning asosiy qismi",
+        "yonib issiqlik beradi va {CO} manbai bo‘ladi",
+        "temir oksidlarini qaytaradi",
+        "{CaO} ga parchalanib qo‘shimchalarni shlakka bog‘laydi"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "solution": "Koks — issiqlik va {CO} manbai; flus — {CaO} manbai, qum bilan shlak hosil qiladi; {CO} — qaytaruvchi; {CaSiO3} — shlakning asosiy qismi."
+    },
+    {
+      "id": "g9-s36-q5",
+      "type": "Y1",
+      "skill": "cho‘yan va po‘lat",
+      "difficulty": 1,
       "stem": "Cho‘yan po‘latdan nimasi bilan farq qiladi?",
-      "choices": ["uglerod miqdori ko‘p (≈ 2,14 % dan ortiq)", "uglerod miqdori kam (< 0,1 %)", "tarkibida temir yo‘q", "faqat kulrang bo‘ladi"], "answer": 0,
-      "solution": "Cho‘yan tarkibida uglerod 2,14 % dan ko‘p (2–4,5 %), shuning uchun qattiq, mo‘rt va bolg‘alanmaydi; po‘latda uglerod 2,14 % dan kam." }
+      "choices": [
+        "uglerod miqdori ko‘p (≈ 2,14 % dan ortiq)",
+        "uglerod miqdori kam (< 0,1 %)",
+        "tarkibida temir yo‘q",
+        "faqat kulrang bo‘ladi"
+      ],
+      "answer": 0,
+      "solution": "Cho‘yan tarkibida uglerod 2,14 % dan ko‘p (2–4,5 %), shuning uchun qattiq, mo‘rt va bolg‘alanmaydi; po‘latda uglerod 2,14 % dan kam."
+    },
+    {
+      "id": "g9-s36-q90",
+      "type": "O2",
+      "skill": "metallurgiya hisoblari",
+      "difficulty": 3,
+      "stem": "Tarkibida 80 % {Fe2O3} bo‘lgan 1 t gematit uglerod(II) oksid bilan to‘liq qaytarilganda nazariy jihatdan necha kg temir olinadi va necha m³ (n.sh.) CO sarflanadi?",
+      "steps": [
+        "Ruda tarkibidagi Fe₂O₃ massasini toping.",
+        "Qaytarilish tenglamasini yozing.",
+        "Fe₂O₃ miqdoridan Fe va CO miqdorini toping.",
+        "Massa va hajmni birliklari bilan hisoblang."
+      ],
+      "rubric": [
+        {
+          "criterion": "m(Fe₂O₃) = 1000 · 0,8 = 800 kg; n = 800 / 160 = 5 kmol",
+          "points": 6
+        },
+        {
+          "criterion": "Fe₂O₃ + 3CO → 2Fe + 3CO₂",
+          "points": 6
+        },
+        {
+          "criterion": "n(Fe) = 10 kmol → m(Fe) = 560 kg",
+          "points": 7
+        },
+        {
+          "criterion": "n(CO) = 15 kmol → V = 15 · 22,4 = 336 m³",
+          "points": 6
+        }
+      ],
+      "solution": "m(Fe₂O₃) = 800 kg = 5 kmol. Fe₂O₃ + 3CO → 2Fe + 3CO₂: Fe — 10 kmol = 560 kg; CO — 15 kmol · 22,4 m³/kmol = 336 m³."
+    }
   ]
 }

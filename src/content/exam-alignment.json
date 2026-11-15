@@ -1,0 +1,1073 @@
+{
+ "source": "https://www.uzbmb.uz/upload/file/pdf/mtt/spetsifikatsiya/Kimyo-MS2025.pdf",
+ "checked": "2026-11-15",
+ "scope": "53 lessons only (G8 §21–44, G9 §8–36)",
+ "domain": "inorganic + general chemistry topics present in these lessons",
+ "lessons": {
+  "g8-s21": {
+   "skills": [
+    "davriy qonuniyat",
+    "umumiy formulalar",
+    "bog‘ turi",
+    "massa ulushi"
+   ],
+   "questionIds": [
+    "g8-s21-q1",
+    "g8-s21-q2",
+    "g8-s21-q3",
+    "g8-s21-q4"
+   ],
+   "types": {
+    "Y1": 2,
+    "Y2": 1,
+    "O1": 1
+   }
+  },
+  "g8-s22": {
+   "skills": [
+    "galogenlar faolligi",
+    "stexiometriya",
+    "atom tuzilishi",
+    "fizik xossalar"
+   ],
+   "questionIds": [
+    "g8-s22-q1",
+    "g8-s22-q2",
+    "g8-s22-q3",
+    "g8-s22-q4"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 1,
+    "Y2": 1
+   }
+  },
+  "g8-s23": {
+   "skills": [
+    "reaksiya mahsuloti",
+    "gaz zichligi",
+    "oksidlanish-qaytarilish",
+    "stexiometriya",
+    "oksidlanish darajasi"
+   ],
+   "questionIds": [
+    "g8-s23-q1",
+    "g8-s23-q2",
+    "g8-s23-q3",
+    "g8-s23-q4",
+    "g8-s23-q5"
+   ],
+   "types": {
+    "Y1": 3,
+    "O1": 2
+   }
+  },
+  "g8-s24": {
+   "skills": [
+    "stexiometriya",
+    "bog‘ turi",
+    "olinish sharoiti",
+    "gaz zichligi"
+   ],
+   "questionIds": [
+    "g8-s24-q1",
+    "g8-s24-q2",
+    "g8-s24-q3",
+    "g8-s24-q4"
+   ],
+   "types": {
+    "O1": 2,
+    "Y1": 2
+   }
+  },
+  "g8-s25": {
+   "skills": [
+    "molyar hajm",
+    "nisbiy zichlik",
+    "Avogadro qonuni",
+    "zarrachalar soni",
+    "gaz zichligi"
+   ],
+   "questionIds": [
+    "g8-s25-q1",
+    "g8-s25-q2",
+    "g8-s25-q3",
+    "g8-s25-q4",
+    "g8-s25-q5"
+   ],
+   "types": {
+    "O1": 4,
+    "Y1": 1
+   }
+  },
+  "g8-s26": {
+   "skills": [
+    "ekvivalent massa",
+    "ekvivalentlar qonuni"
+   ],
+   "questionIds": [
+    "g8-s26-q1",
+    "g8-s26-q2",
+    "g8-s26-q3",
+    "g8-s26-q4"
+   ],
+   "types": {
+    "O1": 3,
+    "Y1": 1
+   }
+  },
+  "g8-s27": {
+   "skills": [
+    "sifat reaksiyasi",
+    "stexiometriya",
+    "konsentratsiya",
+    "reaksiya mahsuloti",
+    "oksidlanish darajasi"
+   ],
+   "questionIds": [
+    "g8-s27-q1",
+    "g8-s27-q2",
+    "g8-s27-q3",
+    "g8-s27-q4",
+    "g8-s27-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g8-s28": {
+   "skills": [
+    "sifat reaksiyalari",
+    "galogenlar faolligi",
+    "stexiometriya",
+    "fizik xossalar"
+   ],
+   "questionIds": [
+    "g8-s28-q1",
+    "g8-s28-q2",
+    "g8-s28-q3",
+    "g8-s28-q4"
+   ],
+   "types": {
+    "Y2": 1,
+    "Y1": 2,
+    "O1": 1
+   }
+  },
+  "g8-s29": {
+   "skills": [
+    "oksidlanish darajasi",
+    "stexiometriya",
+    "oksidlovchi/qaytaruvchi",
+    "atom tuzilishi"
+   ],
+   "questionIds": [
+    "g8-s29-q1",
+    "g8-s29-q2",
+    "g8-s29-q3",
+    "g8-s29-q4"
+   ],
+   "types": {
+    "Y1": 3,
+    "O1": 1
+   }
+  },
+  "g8-s30": {
+   "skills": [
+    "gaz zichligi",
+    "sifat reaksiyasi",
+    "stexiometriya",
+    "oksidlovchi/qaytaruvchi"
+   ],
+   "questionIds": [
+    "g8-s30-q1",
+    "g8-s30-q2",
+    "g8-s30-q3",
+    "g8-s30-q4"
+   ],
+   "types": {
+    "O1": 2,
+    "Y1": 2
+   }
+  },
+  "g8-s31": {
+   "skills": [
+    "nisbiy zichlik",
+    "stexiometriya",
+    "oksidlovchi/qaytaruvchi",
+    "kislotali oksidlar"
+   ],
+   "questionIds": [
+    "g8-s31-q1",
+    "g8-s31-q2",
+    "g8-s31-q3",
+    "g8-s31-q4"
+   ],
+   "types": {
+    "O1": 2,
+    "Y1": 2
+   }
+  },
+  "g8-s32": {
+   "skills": [
+    "metall + kislota",
+    "reaksiya mahsulotlari",
+    "stexiometriya",
+    "xavfsizlik",
+    "oksidlanish-qaytarilish"
+   ],
+   "questionIds": [
+    "g8-s32-q1",
+    "g8-s32-q2",
+    "g8-s32-q3",
+    "g8-s32-q4",
+    "g8-s32-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "Y2": 1,
+    "O1": 2
+   }
+  },
+  "g8-s33": {
+   "skills": [
+    "reaksiya tezligi",
+    "Vant-Goff qoidasi",
+    "massalar ta’siri qonuni",
+    "katalizator"
+   ],
+   "questionIds": [
+    "g8-s33-q1",
+    "g8-s33-q2",
+    "g8-s33-q3",
+    "g8-s33-q4"
+   ],
+   "types": {
+    "O1": 3,
+    "Y1": 1
+   }
+  },
+  "g8-s34": {
+   "skills": [
+    "muvozanat siljishi",
+    "qaytar/qaytmas",
+    "muvozanat ta’rifi"
+   ],
+   "questionIds": [
+    "g8-s34-q1",
+    "g8-s34-q2",
+    "g8-s34-q3",
+    "g8-s34-q4"
+   ],
+   "types": {
+    "Y1": 3,
+    "Y2": 1
+   }
+  },
+  "g8-s35": {
+   "skills": [
+    "sanoat hisoblari",
+    "texnologiya tamoyillari",
+    "muvozanat",
+    "texnologiya bosqichlari"
+   ],
+   "questionIds": [
+    "g8-s35-q1",
+    "g8-s35-q2",
+    "g8-s35-q3",
+    "g8-s35-q4",
+    "g8-s35-q90"
+   ],
+   "types": {
+    "O1": 1,
+    "Y1": 2,
+    "Y2": 1,
+    "O2": 1
+   }
+  },
+  "g8-s36": {
+   "skills": [
+    "molekula tuzilishi",
+    "gaz zichligi",
+    "stexiometriya",
+    "olinish usullari"
+   ],
+   "questionIds": [
+    "g8-s36-q1",
+    "g8-s36-q2",
+    "g8-s36-q3",
+    "g8-s36-q4"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2
+   }
+  },
+  "g8-s37": {
+   "skills": [
+    "gaz hajmlari",
+    "sifat reaksiyasi",
+    "oksidlanish darajasi",
+    "stexiometriya"
+   ],
+   "questionIds": [
+    "g8-s37-q1",
+    "g8-s37-q2",
+    "g8-s37-q3",
+    "g8-s37-q4"
+   ],
+   "types": {
+    "O1": 2,
+    "Y1": 2
+   }
+  },
+  "g8-s38": {
+   "skills": [
+    "oksidlar sinflanishi",
+    "nisbiy zichlik",
+    "oksidlanish darajasi",
+    "stexiometriya"
+   ],
+   "questionIds": [
+    "g8-s38-q1",
+    "g8-s38-q2",
+    "g8-s38-q3",
+    "g8-s38-q4"
+   ],
+   "types": {
+    "Y1": 1,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g8-s39": {
+   "skills": [
+    "nitrat kislota + metall",
+    "nitratlar parchalanishi",
+    "elektron balans"
+   ],
+   "questionIds": [
+    "g8-s39-q1",
+    "g8-s39-q2",
+    "g8-s39-q3",
+    "g8-s39-q4"
+   ],
+   "types": {
+    "Y1": 1,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g8-s40": {
+   "skills": [
+    "oksidlanish darajasi",
+    "stexiometriya",
+    "allotropiya",
+    "xavfsizlik va saqlash"
+   ],
+   "questionIds": [
+    "g8-s40-q1",
+    "g8-s40-q2",
+    "g8-s40-q3",
+    "g8-s40-q4",
+    "g8-s40-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g8-s41": {
+   "skills": [
+    "ionlar nomi",
+    "stexiometriya",
+    "sifat reaksiyalari",
+    "fosfor oksidi"
+   ],
+   "questionIds": [
+    "g8-s41-q1",
+    "g8-s41-q2",
+    "g8-s41-q3",
+    "g8-s41-q4",
+    "g8-s41-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g8-s42": {
+   "skills": [
+    "o‘g‘it turlari",
+    "massa ulushi",
+    "o‘g‘it va ozuqa elementi",
+    "agrokimyo",
+    "ozuqa elementlari roli"
+   ],
+   "questionIds": [
+    "g8-s42-q1",
+    "g8-s42-q2",
+    "g8-s42-q3",
+    "g8-s42-q4",
+    "g8-s42-q5",
+    "g8-s42-q6"
+   ],
+   "types": {
+    "Y1": 3,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g8-s43": {
+   "skills": [
+    "ozuqa elementi",
+    "gaz hajmi",
+    "fosforli o‘g‘itlar",
+    "o‘g‘itning olinishi"
+   ],
+   "questionIds": [
+    "g8-s43-q1",
+    "g8-s43-q2",
+    "g8-s43-q3",
+    "g8-s43-q4",
+    "g8-s43-q5",
+    "g8-s43-q6"
+   ],
+   "types": {
+    "O1": 4,
+    "Y1": 1,
+    "Y2": 1
+   }
+  },
+  "g8-s44": {
+   "skills": [
+    "elementlar tasnifi",
+    "foiz hisobi",
+    "elementning roli",
+    "massa ulushi",
+    "geokimyo"
+   ],
+   "questionIds": [
+    "g8-s44-q1",
+    "g8-s44-q2",
+    "g8-s44-q3",
+    "g8-s44-q4",
+    "g8-s44-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s8": {
+   "skills": [
+    "guruh elementlari tuzilishi",
+    "vodorodli birikma bo‘yicha element",
+    "allotroplar",
+    "oksidlanish darajasi",
+    "guruh tarkibi"
+   ],
+   "questionIds": [
+    "g9-s8-q1",
+    "g9-s8-q2",
+    "g9-s8-q3",
+    "g9-s8-q4",
+    "g9-s8-q5"
+   ],
+   "types": {
+    "Y1": 3,
+    "O1": 1,
+    "Y2": 1
+   }
+  },
+  "g9-s9": {
+   "skills": [
+    "stexiometriya",
+    "uglerodning reaksiyalari",
+    "karbidlar va ularning gidrolizi",
+    "adsorbsiya"
+   ],
+   "questionIds": [
+    "g9-s9-q1",
+    "g9-s9-q2",
+    "g9-s9-q3",
+    "g9-s9-q4",
+    "g9-s9-q5"
+   ],
+   "types": {
+    "O1": 2,
+    "Y1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s10": {
+   "skills": [
+    "stexiometriya",
+    "CO2 sifat reaksiyasi",
+    "CO va CO2 xossalari",
+    "CO2 ning ishlatilishi"
+   ],
+   "questionIds": [
+    "g9-s10-q1",
+    "g9-s10-q2",
+    "g9-s10-q3",
+    "g9-s10-q4",
+    "g9-s10-q5"
+   ],
+   "types": {
+    "O1": 2,
+    "Y1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s11": {
+   "skills": [
+    "karbonatlarning termik barqarorligi",
+    "stexiometriya",
+    "aralashmali masala",
+    "karbonatlar reaksiyalari",
+    "karbonatlarni aniqlash",
+    "moddaning tozaligi"
+   ],
+   "questionIds": [
+    "g9-s11-q1",
+    "g9-s11-q2",
+    "g9-s11-q3",
+    "g9-s11-q4",
+    "g9-s11-q5",
+    "g9-s11-q6"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 3,
+    "Y2": 1
+   }
+  },
+  "g9-s12": {
+   "skills": [
+    "elektron konfiguratsiya",
+    "stexiometriya",
+    "kremniy materiallarining ishlatilishi",
+    "tarqalganligi",
+    "massa ulushi"
+   ],
+   "questionIds": [
+    "g9-s12-q1",
+    "g9-s12-q2",
+    "g9-s12-q3",
+    "g9-s12-q4",
+    "g9-s12-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s13": {
+   "skills": [
+    "stexiometriya",
+    "SiO2 xossalari",
+    "kremniy birikmalari xossalari",
+    "kislotalar kuchi"
+   ],
+   "questionIds": [
+    "g9-s13-q1",
+    "g9-s13-q2",
+    "g9-s13-q3",
+    "g9-s13-q4",
+    "g9-s13-q5",
+    "g9-s13-q6"
+   ],
+   "types": {
+    "O1": 3,
+    "Y1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s14": {
+   "skills": [
+    "shisha tarkibi",
+    "stexiometriya",
+    "silikat materiallari",
+    "temir-beton"
+   ],
+   "questionIds": [
+    "g9-s14-q1",
+    "g9-s14-q2",
+    "g9-s14-q3",
+    "g9-s14-q4",
+    "g9-s14-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s15": {
+   "skills": [
+    "metallarning tabiatda uchrashi",
+    "elektrometallurgiya",
+    "metall olish usullari",
+    "metallurgiya hisoblari",
+    "gidrometallurgiya hisoblari"
+   ],
+   "questionIds": [
+    "g9-s15-q1",
+    "g9-s15-q2",
+    "g9-s15-q3",
+    "g9-s15-q4",
+    "g9-s15-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "Y2": 1,
+    "O1": 2
+   }
+  },
+  "g9-s16": {
+   "skills": [
+    "qotishma xossalari",
+    "qotishmalar va ishlatilishi",
+    "qotishma formulasi",
+    "qotishma tarkibini aniqlash"
+   ],
+   "questionIds": [
+    "g9-s16-q1",
+    "g9-s16-q2",
+    "g9-s16-q3",
+    "g9-s16-q4"
+   ],
+   "types": {
+    "Y1": 2,
+    "Y2": 1,
+    "O1": 1
+   }
+  },
+  "g9-s17": {
+   "skills": [
+    "kuchlanishlar qatori",
+    "metall + kislota hisobi",
+    "metall + tuz hisobi",
+    "metallarning fizik xossalari",
+    "metall bog‘"
+   ],
+   "questionIds": [
+    "g9-s17-q1",
+    "g9-s17-q2",
+    "g9-s17-q3",
+    "g9-s17-q4",
+    "g9-s17-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s18": {
+   "skills": [
+    "elektrokimyoviy himoya",
+    "himoya usullari",
+    "zanglash hisoblari",
+    "korroziya turlari",
+    "aluminiy pardasi"
+   ],
+   "questionIds": [
+    "g9-s18-q1",
+    "g9-s18-q2",
+    "g9-s18-q3",
+    "g9-s18-q4",
+    "g9-s18-q5"
+   ],
+   "types": {
+    "Y1": 3,
+    "Y2": 1,
+    "O1": 1
+   }
+  },
+  "g9-s19": {
+   "skills": [
+    "elektroliz mahsulotlari",
+    "elektroliz hisoblari",
+    "anod jarayonlari",
+    "elektroliz mohiyati"
+   ],
+   "questionIds": [
+    "g9-s19-q1",
+    "g9-s19-q2",
+    "g9-s19-q3",
+    "g9-s19-q4",
+    "g9-s19-q5",
+    "g9-s19-q90"
+   ],
+   "types": {
+    "Y1": 3,
+    "O1": 1,
+    "Y2": 1,
+    "O2": 1
+   }
+  },
+  "g9-s20": {
+   "skills": [
+    "guruh qonuniyatlari",
+    "kislorod bilan mahsulotlar",
+    "ishqoriy metall + suv hisobi",
+    "ishqoriy metall xossalari"
+   ],
+   "questionIds": [
+    "g9-s20-q1",
+    "g9-s20-q2",
+    "g9-s20-q3",
+    "g9-s20-q4"
+   ],
+   "types": {
+    "Y1": 2,
+    "Y2": 1,
+    "O1": 1
+   }
+  },
+  "g9-s21": {
+   "skills": [
+    "eritma konsentratsiyasi",
+    "natriy xossalari",
+    "natriy va kaliy birikmalari",
+    "peroksid hisobi",
+    "sifat reaksiyalari"
+   ],
+   "questionIds": [
+    "g9-s21-q1",
+    "g9-s21-q2",
+    "g9-s21-q3",
+    "g9-s21-q4",
+    "g9-s21-q5"
+   ],
+   "types": {
+    "O1": 2,
+    "Y1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s22": {
+   "skills": [
+    "Solve usuli",
+    "soda hisoblari",
+    "soda ishlab chiqarish reaksiyalari",
+    "xomashyo sarfi",
+    "soda turlari"
+   ],
+   "questionIds": [
+    "g9-s22-q1",
+    "g9-s22-q2",
+    "g9-s22-q3",
+    "g9-s22-q4",
+    "g9-s22-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s23": {
+   "skills": [
+    "kalsiy birikmalari",
+    "ohakli suv hisobi",
+    "tabiiy birikmalar",
+    "ohaktosh kuydirish hisobi",
+    "magniy xossalari"
+   ],
+   "questionIds": [
+    "g9-s23-q1",
+    "g9-s23-q2",
+    "g9-s23-q3",
+    "g9-s23-q4",
+    "g9-s23-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s24": {
+   "skills": [
+    "qattiqlik turlari",
+    "qaynatish hisobi",
+    "ohak bilan yumshatish",
+    "yumshatish reaksiyalari",
+    "yumshatish usullari"
+   ],
+   "questionIds": [
+    "g9-s24-q1",
+    "g9-s24-q2",
+    "g9-s24-q3",
+    "g9-s24-q4",
+    "g9-s24-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s25": {
+   "skills": [
+    "aluminiy olinishi",
+    "elektroliz hisobi",
+    "minerallar tarkibi",
+    "massa ulushi",
+    "elektroliz jarayoni"
+   ],
+   "questionIds": [
+    "g9-s25-q1",
+    "g9-s25-q2",
+    "g9-s25-q3",
+    "g9-s25-q4",
+    "g9-s25-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s26": {
+   "skills": [
+    "gaz hajmi hisobi",
+    "aluminotermiya hisobi",
+    "passivlanish",
+    "aluminiy reaksiyalari",
+    "qotishma tarkibi"
+   ],
+   "questionIds": [
+    "g9-s26-q1",
+    "g9-s26-q2",
+    "g9-s26-q3",
+    "g9-s26-q4",
+    "g9-s26-q5"
+   ],
+   "types": {
+    "O1": 3,
+    "Y1": 1,
+    "Y2": 1
+   }
+  },
+  "g9-s27": {
+   "skills": [
+    "amfoter gidroksid",
+    "cho‘kma massasi",
+    "amfoter gidroksid xossalari",
+    "termik parchalanish",
+    "kristallgidrat tarkibi"
+   ],
+   "questionIds": [
+    "g9-s27-q1",
+    "g9-s27-q2",
+    "g9-s27-q3",
+    "g9-s27-q4",
+    "g9-s27-q5"
+   ],
+   "types": {
+    "Y1": 1,
+    "O1": 3,
+    "Y2": 1
+   }
+  },
+  "g9-s28": {
+   "skills": [
+    "mis birikmalari rangi",
+    "kristallgidrat hisobi",
+    "gaz hajmi hisobi"
+   ],
+   "questionIds": [
+    "g9-s28-q1",
+    "g9-s28-q2",
+    "g9-s28-q3",
+    "g9-s28-q4",
+    "g9-s28-q5"
+   ],
+   "types": {
+    "Y1": 1,
+    "O1": 3,
+    "Y2": 1
+   }
+  },
+  "g9-s29": {
+   "skills": [
+    "cho‘kma massasi",
+    "zar suvi",
+    "proba hisobi",
+    "galogenidlarning rangi",
+    "sianlash hisobi"
+   ],
+   "questionIds": [
+    "g9-s29-q1",
+    "g9-s29-q2",
+    "g9-s29-q3",
+    "g9-s29-q4",
+    "g9-s29-q5"
+   ],
+   "types": {
+    "O1": 3,
+    "Y1": 1,
+    "Y2": 1
+   }
+  },
+  "g9-s30": {
+   "skills": [
+    "gaz hajmi hisobi",
+    "kuydirish hisobi",
+    "tabiiy birikmalar",
+    "amfoterlik",
+    "simob xavfsizligi"
+   ],
+   "questionIds": [
+    "g9-s30-q1",
+    "g9-s30-q2",
+    "g9-s30-q3",
+    "g9-s30-q4",
+    "g9-s30-q5"
+   ],
+   "types": {
+    "O1": 2,
+    "Y2": 1,
+    "Y1": 2
+   }
+  },
+  "g9-s31": {
+   "skills": [
+    "elektron konfiguratsiya",
+    "aluminotermiya hisobi",
+    "gaz hajmi hisobi",
+    "passivlanish",
+    "qotishma tarkibi"
+   ],
+   "questionIds": [
+    "g9-s31-q1",
+    "g9-s31-q2",
+    "g9-s31-q3",
+    "g9-s31-q4",
+    "g9-s31-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 3
+   }
+  },
+  "g9-s32": {
+   "skills": [
+    "xromat va dixromat",
+    "termik parchalanish hisobi",
+    "oksidlovchi-qaytaruvchi hisobi",
+    "oksid xarakteri",
+    "sifat reaksiyasi"
+   ],
+   "questionIds": [
+    "g9-s32-q1",
+    "g9-s32-q2",
+    "g9-s32-q3",
+    "g9-s32-q4",
+    "g9-s32-q5"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1
+   }
+  },
+  "g9-s33": {
+   "skills": [
+    "KMnO4 qaytarilishi",
+    "muhit va mahsulot",
+    "kislorod olish hisobi",
+    "xlor olish hisobi",
+    "massa ulushi"
+   ],
+   "questionIds": [
+    "g9-s33-q1",
+    "g9-s33-q2",
+    "g9-s33-q3",
+    "g9-s33-q4",
+    "g9-s33-q5"
+   ],
+   "types": {
+    "Y1": 1,
+    "Y2": 1,
+    "O1": 3
+   }
+  },
+  "g9-s34": {
+   "skills": [
+    "gaz hajmi hisobi",
+    "siqib chiqarish hisobi",
+    "passivlanish",
+    "massa ulushi",
+    "minerallar tarkibi"
+   ],
+   "questionIds": [
+    "g9-s34-q1",
+    "g9-s34-q2",
+    "g9-s34-q3",
+    "g9-s34-q4",
+    "g9-s34-q5"
+   ],
+   "types": {
+    "O1": 3,
+    "Y1": 1,
+    "Y2": 1
+   }
+  },
+  "g9-s35": {
+   "skills": [
+    "sifat reaksiyasi",
+    "temir ionlari reaksiyalari",
+    "cho‘kma massasi",
+    "termik parchalanish",
+    "oksidlanish-qaytarilish hisobi"
+   ],
+   "questionIds": [
+    "g9-s35-q1",
+    "g9-s35-q2",
+    "g9-s35-q3",
+    "g9-s35-q4",
+    "g9-s35-q5"
+   ],
+   "types": {
+    "Y1": 1,
+    "Y2": 1,
+    "O1": 3
+   }
+  },
+  "g9-s36": {
+   "skills": [
+    "domna jarayoni",
+    "ruda hisobi",
+    "gaz hajmi hisobi",
+    "domna xomashyolari",
+    "cho‘yan va po‘lat",
+    "metallurgiya hisoblari"
+   ],
+   "questionIds": [
+    "g9-s36-q1",
+    "g9-s36-q2",
+    "g9-s36-q3",
+    "g9-s36-q4",
+    "g9-s36-q5",
+    "g9-s36-q90"
+   ],
+   "types": {
+    "Y1": 2,
+    "O1": 2,
+    "Y2": 1,
+    "O2": 1
+   }
+  }
+ }
+}

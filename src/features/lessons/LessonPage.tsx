@@ -7,6 +7,7 @@ import type { Lesson } from '../../lib/schema';
 import { update, useAppState, visitLesson } from '../../lib/storage';
 import { QuestionCard } from '../practice/QuestionCard';
 import { ElectrolysisCell } from '../visuals/ElectrolysisCell';
+import { MoleculeCard } from '../visuals/MoleculeCard';
 import { visuals } from '../visuals/registry';
 
 type Load = { id: string; lesson: Lesson | null } | { id: string; error: true };
@@ -68,7 +69,7 @@ function LessonBody({ lesson }: { lesson: Lesson }) {
     <>
       <p className="summary"><Rich text={lesson.summary} /></p>
       {lesson.tables.map((t) => <LessonTable key={t.id} table={t} lesson={lesson} />)}
-      {visuals[lesson.id]?.map((v, i) => <ElectrolysisCell key={i} spec={v.spec} />)}
+      {visuals[lesson.id]?.map((v, i) => (v.kind === 'electrolysis' ? <ElectrolysisCell key={i} spec={v.spec} /> : <MoleculeCard key={i} ids={v.ids} />))}
       <details className="more">
         <summary>Batafsil: asosiy tushunchalar</summary>
         <ul>{lesson.keyConcepts.map((k, i) => <li key={i}><Rich text={k} /></li>)}</ul>

@@ -4,8 +4,17 @@ import { loadLesson, sections } from '../../lib/content';
 import type { Question } from '../../lib/schema';
 import { useAppState } from '../../lib/storage';
 import { QuestionCard } from './QuestionCard';
+import { buildSession, EXAM_QUOTA, hasEnough, type Quota } from './session';
 
 type Item = { q: Question; lessonId: string };
+type Drill = { title: string; items: Item[]; start: number; end: number; finished: boolean };
+const QUICK: Quota = { Y1: 4, Y2: 1, O1: 3 };
+
+function makeDrill(title: string, pool: Item[], quota: Quota, minutes: number): Drill | null {
+  const list = buildSession(pool, quota);
+  const t = Date.now();
+  return list && { title, items: list, start: t, end: t + minutes * 60_000, finished: false };
+}
 const TYPES = ['Y1', 'Y2', 'O1', 'O2'] as const;
 
 export function PracticePage() {
@@ -14,7 +23,7 @@ export function PracticePage() {
   const [type, setType] = useState<'all' | Question['type']>('all');
   const [onlyWrong, setOnlyWrong] = useState(false);
   const [limit, setLimit] = useState(20);
-  const [drill, setDrill] = useState<{ items: Item[]; start: number; end: number } | null>(null);
+  const [drill, setDrill] = useState<Drill | null>(null);
   const [now, setNow] = useState(() => Date.now());
   const { answers } = useAppState();
 
@@ -34,29 +43,27 @@ export function PracticePage() {
   // Only count answers to questions that still exist (older versions had out-of-scope lessons).
   const attempted = (items ?? []).flatMap(({ q }) => (answers[q.id] ? [answers[q.id]!] : []));
 
-  const startDrill = () => {
-    // Fisher–Yates on objective questions only; O2 needs self-assessment, not a timer.
-    const pool = (shown ?? []).filter(({ q }) => q.type !== 'O2');
-    for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j]!, pool[i]!]; }
-    const t = Date.now();
-    setNow(t);
-    setDrill({ items: pool.slice(0, 10), start: t, end: t + 15 * 60_000 });
-  };
+  const open = (d: Drill | null) => { if (d) { setNow(d.start); setDrill(d); } };
 
   if (drill) {
     const left = Math.max(0, drill.end - now);
-    const done = drill.items.filter(({ q }) => (answers[q.id]?.at ?? 0) >= drill.start);
-    const over = left === 0 || done.length === drill.items.length;
+    const objective = drill.items.filter(({ q }) => q.type !== 'O2'); // O2 is self-assessed, never auto-scored
+    const done = objective.filter(({ q }) => (answers[q.id]?.at ?? 0) >= drill.start);
+    const correct = done.filter(({ q }) => answers[q.id]?.correct).length;
+    const over = drill.finished || left === 0 || (objective.length === drill.items.length && done.length === objective.length);
     return (
       <main className="page practice-page">
-        <h1>Vaqtli mashq</h1>
+        <h1>{drill.title}</h1>
         <p className="drill-bar" role="timer" aria-live="off">
           {over ? 'Yakunlandi' : `Qoldi: ${Math.floor(left / 60000)}:${String(Math.floor(left / 1000) % 60).padStart(2, '0')}`} ·
-          {' '}javob berilgan {done.length}/{drill.items.length} · to‘g‘ri {done.filter(({ q }) => answers[q.id]?.correct).length}
+          {' '}javob berilgan {done.length}/{objective.length} · to‘g‘ri {correct}
         </p>
-        {over && <p role="status">Natija: {done.filter(({ q }) => answers[q.id]?.correct).length} / {drill.items.length} (xom ball, rasmiy emas).</p>}
+        {over && <p role="status">Natija: {correct} / {objective.length} test topshirig‘i (xom ball, rasmiy emas){objective.length < drill.items.length ? '; yozma ishlar mezon bo‘yicha o‘zingiz baholanadi' : ''}.</p>}
         {!over && drill.items.map(({ q }, i) => <QuestionCard key={q.id} q={q} index={i} />)}
-        <button className="btn ghost" onClick={() => setDrill(null)}>Mashqlar ro‘yxatiga qaytish</button>
+        <div className="row">
+          {!over && <button className="btn" onClick={() => setDrill({ ...drill, finished: true })}>Yakunlash</button>}
+          <button className="btn ghost" onClick={() => setDrill(null)}>Mashqlar ro‘yxatiga qaytish</button>
+        </div>
       </main>
     );
   }
@@ -78,7 +85,10 @@ export function PracticePage() {
           <option value="all">Barcha turlar</option>{TYPES.map((t) => <option key={t}>{t}</option>)}
         </select>
         <label className="toggle"><input type="checkbox" checked={onlyWrong} onChange={(e) => setOnlyWrong(e.target.checked)} /> <span>Faqat xatolar</span></label>
-        <button className="btn" disabled={!shown?.length} onClick={startDrill}>Vaqtli mashq: 10 savol, 15 daqiqa</button>
+        <button className="btn" disabled={!shown || !hasEnough(shown, QUICK)} onClick={() => open(makeDrill('Vaqtli mashq', shown!, QUICK, 15))}>Vaqtli mashq: 8 savol, 15 daqiqa</button>
+        <button className="btn ghost" disabled={!items || !hasEnough(items, EXAM_QUOTA)} onClick={() => open(makeDrill('43 topshiriqli mashq (53 mavzu)', items!, EXAM_QUOTA, 180))}>
+          43 topshiriq · 180 daqiqa
+        </button>
       </div>
 
       {!items && <div className="skeleton" aria-busy="true" aria-label="Yuklanmoqda"><div /><div /></div>}

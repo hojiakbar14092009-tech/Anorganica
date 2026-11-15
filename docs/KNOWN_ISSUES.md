@@ -1,12 +1,10 @@
 # Known issues and limitations (facts only)
 
-- Content: 85/85 sections have lesson content (status seed-verified = schema + chemistry validators pass, author-checked against the PDF pages). No native-speaker or subject-teacher review yet; 143 textbook clarifications should get an expert spot-check (highest risk: G8 §43 soil pH note, G9 §7 hydrolysis, G9 §24 softening).
-- Questions: 435 original (Y1 180, O1 178, Y2 74, O2 3). O1 answers are hand-derived and not re-computed by code. O2 is self-assessed with a rubric, never auto-graded.
-- Some table-row `detail.pages` may cite pages slightly outside the lesson's own range (only lesson-level pages are validated).
-- Visuals: only 2 schematic electrolysis scenes (G9 §19). No Three.js/3D yet; the other high-value scenes in docs/VISUAL_COVERAGE.md are not built.
-- Lab works (G8 p.200+, G9 pp.192–) are not indexed as virtual demonstrations.
-- Access gate has no rate limiting; security relies on a long random password. Offline content on an authorized device is readable by anyone with that device. An expired session cannot be renewed offline; the service worker keeps serving cached content.
-- Main JS bundle ≈ 126 KB gzip; total precache ≈ 1 MB (99 entries). Not measured on a real iPhone.
-- `npm audit`: moderate/low advisories in dev-only lint tooling; not shipped.
-- No real iPhone 11 was available: mobile results come from Playwright WebKit (iPhone 11 emulation) on Windows — not Safari on iOS. Desktop e2e uses the installed Edge channel.
-- iOS storage eviction behaviour for the installed PWA is untested.
+- Content: 53/53 lessons (schema + chemistry validators pass, author-checked against PDF pages). G8 §40–44 and all G9 lessons except §19 were drafted by sub-agents under the same rules; no subject-teacher or native-speaker review yet.
+- Questions: 255 original (Y1 100, Y2 42, O1 110, O2 3). O1 answers are hand-derived, not recomputed by code. O2 is self-assessed with a rubric, never auto-graded. Only 3 O2 tasks exist, exactly the 43-task session minimum.
+- Visuals: 18 lessons have tested 3D molecule/lattice models; G9 §19 has the 2D electrolysis scene. Not built yet: corrosion, contact process / Solvay / blast-furnace flow animations, rate/equilibrium animation, metallic lattices.
+- The 3D engine (≈250 KB gz) is cached on first use only; offline without prior use, lessons show the text facts instead of the model.
+- Stacked phone tables use `display:block`; VoiceOver may announce them as plain text rather than a table (visual labels are present).
+- No physical iPhone 11 test: mobile results come from Playwright WebKit (iPhone 11 emulation) on Windows. iOS storage eviction and Home Screen install flow are untested on device.
+- Not private: no login by design (docs/DEPLOYMENT.md).
+- `npm audit`: advisories only in dev-only lint tooling.

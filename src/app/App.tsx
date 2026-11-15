@@ -1,5 +1,5 @@
 import { useEffect, useState, useSyncExternalStore } from 'react';
-import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Link, NavLink, Route, Routes, useLocation } from 'react-router-dom';
 import { useRegisterSW } from 'virtual:pwa-register/react';
 import { Home } from '../features/lessons/Home';
 import { LessonPage } from '../features/lessons/LessonPage';
@@ -71,10 +71,13 @@ function UpdateBanner() {
       addEventListener('online', check);
     },
   });
+  const { pathname } = useLocation();
+  // Safe boundary: the home screen has no open answer, timer or lesson position to lose.
+  useEffect(() => { if (needRefresh && pathname === '/') void updateServiceWorker(true); }, [needRefresh, pathname, updateServiceWorker]);
   if (!needRefresh) return null;
   return (
     <div className="update" role="status">
-      <span>Yangi versiya tayyor</span>
+      <span>Yangi versiya tayyor —</span>
       <button className="btn" onClick={() => updateServiceWorker(true)}>Yangilash</button>
     </div>
   );

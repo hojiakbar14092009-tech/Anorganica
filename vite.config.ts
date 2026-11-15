@@ -26,6 +26,9 @@ export default defineConfig({
       workbox: {
         // All lesson JSON chunks are small JS chunks → precached, so every lesson works offline after first load.
         globPatterns: ['**/*.{js,css,html,svg,png,webmanifest}'],
+        // The 3D engine (~250 KB gz) is not precached: it is cached on first use, bounded, and lessons fall back to text facts offline.
+        globIgnores: ['**/MoleculeScene-*.js'],
+        runtimeCaching: [{ urlPattern: /\/assets\/MoleculeScene-.*\.js$/, handler: 'CacheFirst', options: { cacheName: 'scenes', expiration: { maxEntries: 3 } } }],
         navigateFallback: '/index.html',
         cleanupOutdatedCaches: true,
       },

@@ -1,44 +1,33 @@
-# Progress (resume here)
+# Progress (resume here) — spec: Anorganica_Claude_Code_Master_Prompt_53_Mavzu_Loginsiz.md
 
 ```
-PHASE: 0 — Inspect and map — DONE
-CONTENT: 85/85 sections mapped (44 + 41), auto-verified; printed page = PDF index; G8 TOC §§6–13 mismatch documented
-```
-
-```
-PHASE: 1 — Mobile foundation — DONE
+PHASE: 0–1 Audit, scope allowlist, source map — DONE
+SCOPE: 8-sinf 24/24; 9-sinf 29/29; total 53/53 (src/content/allowed-lessons.json → content/manifest.json, docs/SOURCE_MAP.md)
+AUTH: removed (middleware, gate tests, env example, @vercel/functions); no-login verified by e2e on fresh browser profile
 ```
 
 ```
-PHASE: 2 — All textbook lessons — DONE (pending expert review, see KNOWN_ISSUES)
-CONTENT: 85/85 lessons; 435 questions (Y1 180, O1 178, Y2 74, O2 3); 665 reactions, all atom/charge-balanced; 143 textbook clarifications
+PHASE: 2–3 App + 53 lessons — DONE (expert review pending, KNOWN_ISSUES)
 ```
 
 ```
-PHASE: 3 — Visual engine — STARTED
-IMPLEMENTED: src/features/visuals (ElectrolysisCell SVG, play/pause/reset, reduced-motion safe), registry with balance tests
-CONTENT: 2 verified scenes (G9 §19). NEXT: NaCl lattice, molecular geometry, contact process / blast furnace flows, precipitation
+PHASE: 4 Graphics — PARTIAL
+DONE: reusable 3D MoleculeScene (Three.js/R3F/Drei, lazy, demand frameloop, toggle-to-rotate, WebGL fallback), 22 tested models on 18 lessons; 2D electrolysis
+NEXT: process-flow animations (contact process g8-s35, Solvay g9-s22, blast furnace g9-s36), corrosion g9-s18, rate/equilibrium g8-s33/34
 ```
 
 ```
-PHASE: 4 — Certificate practice — MOSTLY DONE
-IMPLEMENTED: filters, error review, timed drill (10 q / 15 min), paging, O2 rubric self-check, non-official labelling
-NEXT: more O2 tasks; exam-skill tags beyond per-lesson skills
+PHASE: 5 Practice — DONE
+DONE: 255 questions; filters, error review, 8-question quick drill, 43-task session (32/3/5/3, 180 min, scope-labelled), O2 rubric; exam-alignment.json + docs/EXAM_ALIGNMENT.md
 ```
 
 ```
-PHASE: 5 — Hardening/deploy — DEPLOYED
-IMPLEMENTED: middleware.ts access gate (Node runtime, + unit tests), credentialed manifest, vercel.json CSP/noindex
-DEPLOY: Vercel project "anorganica" (Hobby) linked to github.com/hojiakbar14092009-tech/Anorganica — every push to main deploys production.
-  URL: https://anorganica.vercel.app  · ACCESS_PASSWORD set (sensitive) for production+preview; local copy only in .env.local (gitignored)
-  Vercel Authentication limited to preview deployments so invited students can reach production through the password gate.
-CHECKS (2026-11-15): typecheck ✓ lint ✓ vitest 113/113 ✓ build ✓ e2e WebKit iPhone11 6/6 ✓ desktop Edge 6/6 ✓
-  Production curl: anonymous 401 on /, /dars/*, /assets/*, /sw.js, manifest, icons; wrong password 401; right password 303 + HttpOnly cookie; with cookie 200
-  Production WebKit smoke (scripts/smoke-prod.mjs): login → lesson → offline lesson ✓, 0 console errors after login
-NEXT: real iPhone 11 Safari install check; Phase 3 visuals; expert content review
+PHASE: 6 Offline/updates/polish — DONE
+DONE: 53 lessons precached; 3D runtime-cached; auto-update at home (safe boundary) + banner elsewhere; phone card tables
 ```
 
-## How to author/fix a lesson
-1. Pages from docs/SOURCE_MAP.md; text from `reference/text/g{8,9}.json` (regenerate with `npm run source-map`).
-2. Edit `content/lessons/g{grade}-s{n}.json` (structure: g8-s32.json). Textbook errors → `clarifications`.
-3. `npm run validate:content`.
+```
+PHASE: 7 Tests/handoff — DONE for this milestone
+TESTS (2026-11-15): typecheck ✓, lint ✓, vitest ✓, build ✓, Playwright WebKit iPhone 11 + desktop Edge 16/16 ✓ (incl. offline 53 lessons, no-login, excluded §§ 404)
+DEPLOY: docs/DEPLOYMENT.md; push to main auto-deploys https://anorganica.vercel.app
+```

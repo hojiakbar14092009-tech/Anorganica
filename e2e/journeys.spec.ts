@@ -59,7 +59,36 @@ test('settings: dark theme + warmth change colours, layout has no horizontal ove
   }
 });
 
+test('no login: home and a deep link open directly; scope is exactly 24 + 29', async ({ browser }) => {
+  const page = await (await browser.newContext()).newPage(); // fresh profile, nothing stored
+  await page.goto('/dars/g8-s23');
+  await expect(page.getByRole('heading', { level: 1, name: 'Xlor' })).toBeVisible();
+  await expect(page.locator('input[type=password]')).toHaveCount(0);
+  await page.goto('/');
+  await expect(page.getByRole('searchbox')).toBeVisible();
+  await expect(page.getByRole('tab', { name: /8-sinf \(24 mavzu\)/ })).toBeVisible();
+  await expect(page.getByRole('tab', { name: /9-sinf \(29 mavzu\)/ })).toBeVisible();
+  await expect(page.locator('nav.chapters a')).toHaveCount(24);
+  await page.getByRole('tab', { name: /9-sinf/ }).click();
+  await expect(page.locator('nav.chapters a')).toHaveCount(29);
+  for (const excluded of ['/dars/g8-s5', '/dars/g9-s3', '/dars/g9-s37']) {
+    await page.goto(excluded);
+    await expect(page.getByRole('heading', { name: 'Bo‘lim topilmadi' })).toBeVisible();
+  }
+});
+
+test('3D model loads on demand with a text fallback always visible', async ({ page }) => {
+  await page.goto('/dars/g8-s37');
+  const fig = page.locator('figure.molecule');
+  await expect(fig.getByText('∠H–N–H: 106,7°')).toBeVisible();
+  await fig.getByRole('button', { name: '3D modelni ochish' }).click();
+  await expect(fig.locator('canvas')).toBeVisible({ timeout: 20000 });
+  await fig.getByRole('button', { name: /NH₄|NH4/ }).click();
+  await expect(fig.getByText('∠ 109,5°')).toBeVisible();
+});
+
 test('offline after priming: cold reload of a lesson works', async ({ page, context }) => {
+  test.setTimeout(120_000); // visits all 53 lessons offline
   await page.goto('/');
   await page.evaluate(async () => { await navigator.serviceWorker.ready; });
   await page.reload(); // page now controlled by SW
@@ -69,13 +98,22 @@ test('offline after priming: cold reload of a lesson works', async ({ page, cont
   await expect(page.getByRole('heading', { level: 1, name: /Elektroliz/ })).toBeVisible();
   await expect(page.getByText('Katod (−): qaytarilish')).toBeVisible();
   await expect(page.getByText(/Oflayn rejim/)).toBeVisible();
+  // every one of the 53 lessons is available offline
+  for (const id of [...Array.from({ length: 24 }, (_, i) => `g8-s${21 + i}`), ...Array.from({ length: 29 }, (_, i) => `g9-s${8 + i}`)]) {
+    await page.goto(`/dars/${id}`);
+    await expect(page.locator('table').first(), id).toBeVisible();
+  }
 });
 
 test('timed drill shows a timer and 10 questions; electrolysis visual has controls', async ({ page }) => {
   await page.goto('/mashq');
   await page.getByRole('button', { name: /Vaqtli mashq/ }).click();
   await expect(page.getByRole('timer')).toContainText(/Qoldi: 1[45]:/);
-  await expect(page.locator('.question')).toHaveCount(10);
+  await expect(page.locator('.question')).toHaveCount(8);
+  await page.getByRole('button', { name: 'Mashqlar ro‘yxatiga qaytish' }).click();
+  await page.getByRole('button', { name: /43 topshiriq/ }).click();
+  await expect(page.locator('.question')).toHaveCount(43);
+  await expect(page.locator('.question').last()).toContainText('O2');
   await page.goto('/dars/g9-s19');
   const fig = page.locator('figure.visual').first();
   await expect(fig.getByRole('img')).toBeVisible();

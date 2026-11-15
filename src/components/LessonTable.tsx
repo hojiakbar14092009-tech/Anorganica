@@ -19,7 +19,8 @@ export function LessonTable({ table, lesson }: { table: T; lesson: Lesson }) {
     <section className="table-block" aria-labelledby={titleId}>
       <h2 id={titleId}>{table.title}</h2>
       <div className="table-scroll" tabIndex={0} role="region" aria-label={`${table.title} jadvali`}>
-        <table>
+        {/* 4+ columns become labelled cards on phone widths (see .stack in app.css) */}
+        <table className={cols.length >= 4 ? 'stack' : undefined}>
           <thead>
             <tr>{cols.map((c) => <th key={c.key} scope="col">{c.label}</th>)}</tr>
           </thead>
@@ -41,7 +42,7 @@ export function LessonTable({ table, lesson }: { table: T; lesson: Lesson }) {
                           </button>
                         </th>
                       );
-                    return i === 0 ? <th key={c.key} scope="row">{content}</th> : <td key={c.key}>{content}</td>;
+                    return i === 0 ? <th key={c.key} scope="row">{content}</th> : <td key={c.key} data-label={c.label}>{content}</td>;
                   })}
                 </tr>,
                 expanded && d && (

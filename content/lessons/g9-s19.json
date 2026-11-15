@@ -1,7 +1,13 @@
 {
   "id": "g9-s19",
   "status": "seed-verified",
-  "pages": [85, 86, 87, 88, 89],
+  "pages": [
+    85,
+    86,
+    87,
+    88,
+    89
+  ],
   "summary": "Elektroliz — elektrolit eritmasi yoki suyuqlanmasidan doimiy tok o‘tganda boradigan oksidlanish-qaytarilish jarayoni: katodda (−) qaytarilish, anodda (+) oksidlanish.",
   "keyConcepts": [
     "Katodda nima qaytarilishi metallning kuchlanishlar qatoridagi o‘rniga bog‘liq: Al gacha — suv, Mn…Pb — metall va qisman vodorod, H dan keyin — faqat metall.",
@@ -14,97 +20,397 @@
       "id": "cathode",
       "title": "Katod (−): qaytarilish",
       "columns": [
-        { "key": "group", "label": "Metall o‘rni" },
-        { "key": "ex", "label": "Misollar" },
-        { "key": "eq", "label": "Katod jarayoni", "reaction": true }
+        {
+          "key": "group",
+          "label": "Metall o‘rni"
+        },
+        {
+          "key": "ex",
+          "label": "Misollar"
+        },
+        {
+          "key": "eq",
+          "label": "Katod jarayoni",
+          "reaction": true
+        }
       ],
       "rows": [
-        { "id": "active", "cells": { "group": "Li … Al (faol)", "ex": "Li, K, Ba, Ca, Na, Mg, Al", "eq": "cWater" },
-          "detail": { "concept": "Bu metallar ionlari suvdagi eritmada qaytarilmaydi; katodda vodorod ajralib, eritmada {OH^-} to‘planadi (ishqor hosil bo‘ladi).", "reactionIds": ["cWater"], "pages": [88] } },
-        { "id": "middle", "cells": { "group": "Mn … Pb (o‘rtacha)", "ex": "Mn, Zn, Cr, Fe, Ni, Pb", "eq": "cZn" },
-          "detail": { "concept": "Asosan metall ajraladi, bir vaqtning o‘zida qisman vodorod ham ajralishi mumkin.", "reactionIds": ["cZn"], "pages": [88] } },
-        { "id": "noble", "cells": { "group": "H dan keyin (kam faol)", "ex": "Cu, Ag, Hg, Pt, Au", "eq": "cCu" } }
+        {
+          "id": "active",
+          "cells": {
+            "group": "Li … Al (faol)",
+            "ex": "Li, K, Ba, Ca, Na, Mg, Al",
+            "eq": "cWater"
+          },
+          "detail": {
+            "concept": "Bu metallar ionlari suvdagi eritmada qaytarilmaydi; katodda vodorod ajralib, eritmada {OH^-} to‘planadi (ishqor hosil bo‘ladi).",
+            "reactionIds": [
+              "cWater"
+            ],
+            "pages": [
+              88
+            ]
+          }
+        },
+        {
+          "id": "middle",
+          "cells": {
+            "group": "Mn … Pb (o‘rtacha)",
+            "ex": "Mn, Zn, Cr, Fe, Ni, Pb",
+            "eq": "cZn"
+          },
+          "detail": {
+            "concept": "Asosan metall ajraladi, bir vaqtning o‘zida qisman vodorod ham ajralishi mumkin.",
+            "reactionIds": [
+              "cZn"
+            ],
+            "pages": [
+              88
+            ]
+          }
+        },
+        {
+          "id": "noble",
+          "cells": {
+            "group": "H dan keyin (kam faol)",
+            "ex": "Cu, Ag, Hg, Pt, Au",
+            "eq": "cCu"
+          }
+        }
       ]
     },
     {
       "id": "anode",
       "title": "Anod (+): oksidlanish",
       "columns": [
-        { "key": "kind", "label": "Anod / anion" },
-        { "key": "eq", "label": "Anod jarayoni", "reaction": true },
-        { "key": "prod", "label": "Mahsulot" }
+        {
+          "key": "kind",
+          "label": "Anod / anion"
+        },
+        {
+          "key": "eq",
+          "label": "Anod jarayoni",
+          "reaction": true
+        },
+        {
+          "key": "prod",
+          "label": "Mahsulot"
+        }
       ],
       "rows": [
-        { "id": "cl", "cells": { "kind": "Inert; {Cl^-}, {Br^-}, {I^-}", "eq": "aCl", "prod": "galogen: {Cl2}, {Br2}, {I2}" } },
-        { "id": "s", "cells": { "kind": "Inert; {S^2-}", "eq": "aS", "prod": "oltingugurt" } },
-        { "id": "oxy", "cells": { "kind": "Inert; {SO4^2-}, {NO3^-}, {PO4^3-}, {F^-}", "eq": "aWater", "prod": "{O2}, eritmada {H^+} to‘planadi" },
-          "detail": { "concept": "Kislorodli anionlar zaryadsizlanmaydi, suv molekulalari oksidlanadi. Darslikda bu jarayon {OH^-} orqali yozilgan (4OH⁻ − 4ē → 2H₂O + O₂) — ishqoriy eritma uchun to‘g‘ri; neytral va kislotali eritmada suv yozuvi aniqroq.", "reactionIds": ["aWater", "aOH"], "pages": [87, 89] } },
-        { "id": "soluble", "cells": { "kind": "Eruvchan anod (Cu, Ni, Ag, Zn)", "eq": "aCu", "prod": "anod metali eritmaga o‘tadi" },
-          "detail": { "concept": "{CuCl2} eritmasini mis anod bilan elektroliz qilganda anodda xlor ajralmaydi — misning o‘zi eriydi, katodda toza mis o‘tiradi. Bu misni elektrolitik tozalash asosidir.", "reactionIds": ["aCu"], "pages": [86, 87] } }
+        {
+          "id": "cl",
+          "cells": {
+            "kind": "Inert; {Cl^-}, {Br^-}, {I^-}",
+            "eq": "aCl",
+            "prod": "galogen: {Cl2}, {Br2}, {I2}"
+          }
+        },
+        {
+          "id": "s",
+          "cells": {
+            "kind": "Inert; {S^2-}",
+            "eq": "aS",
+            "prod": "oltingugurt"
+          }
+        },
+        {
+          "id": "oxy",
+          "cells": {
+            "kind": "Inert; {SO4^2-}, {NO3^-}, {PO4^3-}, {F^-}",
+            "eq": "aWater",
+            "prod": "{O2}, eritmada {H^+} to‘planadi"
+          },
+          "detail": {
+            "concept": "Kislorodli anionlar zaryadsizlanmaydi, suv molekulalari oksidlanadi. Darslikda bu jarayon {OH^-} orqali yozilgan (4OH⁻ − 4ē → 2H₂O + O₂) — ishqoriy eritma uchun to‘g‘ri; neytral va kislotali eritmada suv yozuvi aniqroq.",
+            "reactionIds": [
+              "aWater",
+              "aOH"
+            ],
+            "pages": [
+              87,
+              89
+            ]
+          }
+        },
+        {
+          "id": "soluble",
+          "cells": {
+            "kind": "Eruvchan anod (Cu, Ni, Ag, Zn)",
+            "eq": "aCu",
+            "prod": "anod metali eritmaga o‘tadi"
+          },
+          "detail": {
+            "concept": "{CuCl2} eritmasini mis anod bilan elektroliz qilganda anodda xlor ajralmaydi — misning o‘zi eriydi, katodda toza mis o‘tiradi. Bu misni elektrolitik tozalash asosidir.",
+            "reactionIds": [
+              "aCu"
+            ],
+            "pages": [
+              86,
+              87
+            ]
+          }
+        }
       ]
     },
     {
       "id": "examples",
       "title": "Elektroliz misollari (inert elektrodlar)",
       "columns": [
-        { "key": "what", "label": "Elektrolit" },
-        { "key": "eq", "label": "Umumiy tenglama", "reaction": true },
-        { "key": "res", "label": "Katod / anod / eritmada" }
+        {
+          "key": "what",
+          "label": "Elektrolit"
+        },
+        {
+          "key": "eq",
+          "label": "Umumiy tenglama",
+          "reaction": true
+        },
+        {
+          "key": "res",
+          "label": "Katod / anod / eritmada"
+        }
       ],
       "rows": [
-        { "id": "cucl2", "cells": { "what": "{CuCl2} eritmasi", "eq": "eCuCl2", "res": "Cu / {Cl2} / —" } },
-        { "id": "nacl", "cells": { "what": "{NaCl} eritmasi", "eq": "eNaCl", "res": "{H2} / {Cl2} / {NaOH}" },
-          "detail": { "concept": "Osh tuzi eritmasidan bir jarayonda uch xil xomashyo olinadi: vodorod, xlor va o‘yuvchi natriy.", "reactionIds": ["eNaCl"], "examTip": "NaCl eritmasi → H₂ (katod), Cl₂ (anod), NaOH (eritma); NaCl suyuqlanmasi → Na va Cl₂.", "pages": [85, 86] } },
-        { "id": "cuso4", "cells": { "what": "{CuSO4} eritmasi", "eq": "eCuSO4", "res": "Cu / {O2} / {H2SO4}" } },
-        { "id": "na2so4", "cells": { "what": "{Na2SO4} eritmasi", "eq": "eWater", "res": "{H2} / {O2} / tuz konsentratsiyasi ortadi" } },
-        { "id": "cacl2", "cells": { "what": "{CaCl2} eritmasi", "eq": "eCaCl2", "res": "{H2} / {Cl2} / {Ca(OH)2}" } },
-        { "id": "melt", "cells": { "what": "{NaCl} suyuqlanmasi", "eq": "eMelt", "res": "Na / {Cl2} / —" } }
+        {
+          "id": "cucl2",
+          "cells": {
+            "what": "{CuCl2} eritmasi",
+            "eq": "eCuCl2",
+            "res": "Cu / {Cl2} / —"
+          }
+        },
+        {
+          "id": "nacl",
+          "cells": {
+            "what": "{NaCl} eritmasi",
+            "eq": "eNaCl",
+            "res": "{H2} / {Cl2} / {NaOH}"
+          },
+          "detail": {
+            "concept": "Osh tuzi eritmasidan bir jarayonda uch xil xomashyo olinadi: vodorod, xlor va o‘yuvchi natriy.",
+            "reactionIds": [
+              "eNaCl"
+            ],
+            "examTip": "NaCl eritmasi → H₂ (katod), Cl₂ (anod), NaOH (eritma); NaCl suyuqlanmasi → Na va Cl₂.",
+            "pages": [
+              85,
+              86
+            ]
+          }
+        },
+        {
+          "id": "cuso4",
+          "cells": {
+            "what": "{CuSO4} eritmasi",
+            "eq": "eCuSO4",
+            "res": "Cu / {O2} / {H2SO4}"
+          }
+        },
+        {
+          "id": "na2so4",
+          "cells": {
+            "what": "{Na2SO4} eritmasi",
+            "eq": "eWater",
+            "res": "{H2} / {O2} / tuz konsentratsiyasi ortadi"
+          }
+        },
+        {
+          "id": "cacl2",
+          "cells": {
+            "what": "{CaCl2} eritmasi",
+            "eq": "eCaCl2",
+            "res": "{H2} / {Cl2} / {Ca(OH)2}"
+          }
+        },
+        {
+          "id": "melt",
+          "cells": {
+            "what": "{NaCl} suyuqlanmasi",
+            "eq": "eMelt",
+            "res": "Na / {Cl2} / —"
+          }
+        }
       ]
     }
   ],
   "reactions": {
-    "cWater": { "equation": "2H2O + 2e^- → H2↑ + 2OH^-" },
-    "cZn": { "equation": "Zn^2+ + 2e^- → Zn" },
-    "cCu": { "equation": "Cu^2+ + 2e^- → Cu" },
-    "aCl": { "equation": "2Cl^- → Cl2↑ + 2e^-" },
-    "aS": { "equation": "S^2- → S + 2e^-" },
-    "aWater": { "equation": "2H2O → O2↑ + 4H^+ + 4e^-" },
-    "aOH": { "equation": "4OH^- → 2H2O + O2↑ + 4e^-", "conditions": "ishqoriy muhit" },
-    "aCu": { "equation": "Cu → Cu^2+ + 2e^-" },
-    "eCuCl2": { "equation": "CuCl2 → Cu + Cl2↑", "conditions": "elektroliz" },
-    "eNaCl": { "equation": "2NaCl + 2H2O → 2NaOH + H2↑ + Cl2↑", "conditions": "elektroliz" },
-    "eCuSO4": { "equation": "2CuSO4 + 2H2O → 2Cu + O2↑ + 2H2SO4", "conditions": "elektroliz", "observation": "Katodda qizil mis qatlami, anodda gaz pufakchalari; ko‘k rang susayadi" },
-    "eWater": { "equation": "2H2O → 2H2↑ + O2↑", "conditions": "elektroliz, Na₂SO₄ eritmasi" },
-    "eCaCl2": { "equation": "CaCl2 + 2H2O → Ca(OH)2 + H2↑ + Cl2↑", "conditions": "elektroliz" },
-    "eMelt": { "equation": "2NaCl → 2Na + Cl2↑", "conditions": "suyuqlanma, elektroliz" }
+    "cWater": {
+      "equation": "2H2O + 2e^- → H2↑ + 2OH^-"
+    },
+    "cZn": {
+      "equation": "Zn^2+ + 2e^- → Zn"
+    },
+    "cCu": {
+      "equation": "Cu^2+ + 2e^- → Cu"
+    },
+    "aCl": {
+      "equation": "2Cl^- → Cl2↑ + 2e^-"
+    },
+    "aS": {
+      "equation": "S^2- → S + 2e^-"
+    },
+    "aWater": {
+      "equation": "2H2O → O2↑ + 4H^+ + 4e^-"
+    },
+    "aOH": {
+      "equation": "4OH^- → 2H2O + O2↑ + 4e^-",
+      "conditions": "ishqoriy muhit"
+    },
+    "aCu": {
+      "equation": "Cu → Cu^2+ + 2e^-"
+    },
+    "eCuCl2": {
+      "equation": "CuCl2 → Cu + Cl2↑",
+      "conditions": "elektroliz"
+    },
+    "eNaCl": {
+      "equation": "2NaCl + 2H2O → 2NaOH + H2↑ + Cl2↑",
+      "conditions": "elektroliz"
+    },
+    "eCuSO4": {
+      "equation": "2CuSO4 + 2H2O → 2Cu + O2↑ + 2H2SO4",
+      "conditions": "elektroliz",
+      "observation": "Katodda qizil mis qatlami, anodda gaz pufakchalari; ko‘k rang susayadi"
+    },
+    "eWater": {
+      "equation": "2H2O → 2H2↑ + O2↑",
+      "conditions": "elektroliz, Na₂SO₄ eritmasi"
+    },
+    "eCaCl2": {
+      "equation": "CaCl2 + 2H2O → Ca(OH)2 + H2↑ + Cl2↑",
+      "conditions": "elektroliz"
+    },
+    "eMelt": {
+      "equation": "2NaCl → 2Na + Cl2↑",
+      "conditions": "suyuqlanma, elektroliz"
+    }
   },
   "clarifications": [
-    { "text": "Darslikdagi «−0,41 ev/atom» qiymati aslida voltlarda ifodalanadigan potensial: neytral suvning qaytarilish potensiali ≈ −0,41 V.", "source": "additionalVerifiedSource" },
-    { "text": "Darslikning 87-betidagi «2H⁺ + 2ē → H⁺» yozuvi bosma xato; to‘g‘risi: 2H⁺ + 2ē → H₂.", "source": "additionalVerifiedSource" }
+    {
+      "text": "Darslikdagi «−0,41 ev/atom» qiymati aslida voltlarda ifodalanadigan potensial: neytral suvning qaytarilish potensiali ≈ −0,41 V.",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslikning 87-betidagi «2H⁺ + 2ē → H⁺» yozuvi bosma xato; to‘g‘risi: 2H⁺ + 2ē → H₂.",
+      "source": "additionalVerifiedSource"
+    }
   ],
   "questions": [
-    { "id": "g9-s19-q1", "type": "Y1", "skill": "elektroliz mahsulotlari", "difficulty": 1,
+    {
+      "id": "g9-s19-q1",
+      "type": "Y1",
+      "skill": "elektroliz mahsulotlari",
+      "difficulty": 1,
       "stem": "{Na2SO4} eritmasi inert elektrodlar bilan elektroliz qilinganda katodda nima ajraladi?",
-      "choices": ["Na", "{H2}", "{O2}", "{SO2}"], "answer": 1,
-      "solution": "Natriy — faol metall (Al gacha), uning ioni suvda qaytarilmaydi; katodda suv qaytariladi: 2H₂O + 2ē → H₂ + 2OH⁻." },
-    { "id": "g9-s19-q2", "type": "O1", "skill": "elektroliz hisoblari", "difficulty": 2,
+      "choices": [
+        "Na",
+        "{H2}",
+        "{O2}",
+        "{SO2}"
+      ],
+      "answer": 1,
+      "solution": "Natriy — faol metall (Al gacha), uning ioni suvda qaytarilmaydi; katodda suv qaytariladi: 2H₂O + 2ē → H₂ + 2OH⁻."
+    },
+    {
+      "id": "g9-s19-q2",
+      "type": "O1",
+      "skill": "elektroliz hisoblari",
+      "difficulty": 2,
       "stem": "{CuSO4} eritmasi inert elektrodlar bilan elektroliz qilinganda katodda 6,4 g mis ajraldi. Anodda necha litr (n.sh.) kislorod ajralgan?",
-      "answer": 1.12, "tolerance": 0.01, "unit": "l",
+      "answer": 1.12,
+      "tolerance": 0.01,
+      "unit": "l",
       "solution": "2CuSO₄ + 2H₂O → 2Cu + O₂ + 2H₂SO₄. n(Cu) = 6,4 / 64 = 0,1 mol; n(O₂) = 0,1 / 2 = 0,05 mol; V = 0,05 · 22,4 = 1,12 l.",
-      "mistakes": "Cu va O₂ ni 1:1 nisbatda olish. Elektronlar soni teng: 2 mol Cu (4ē) ↔ 1 mol O₂ (4ē)." },
-    { "id": "g9-s19-q3", "type": "Y2", "skill": "anod jarayonlari", "difficulty": 2,
+      "mistakes": "Cu va O₂ ni 1:1 nisbatda olish. Elektronlar soni teng: 2 mol Cu (4ē) ↔ 1 mol O₂ (4ē)."
+    },
+    {
+      "id": "g9-s19-q3",
+      "type": "Y2",
+      "skill": "anod jarayonlari",
+      "difficulty": 2,
       "stem": "Tuz eritmasini (inert elektrodlar) anodda ajraladigan mahsulot bilan moslashtiring.",
-      "left": ["{CuCl2}", "{CuSO4}", "KBr", "{Na2S}"],
-      "right": ["{O2}", "S", "{Cl2}", "{Br2}"],
-      "answer": [2, 0, 3, 1],
-      "solution": "Kislorodsiz anionlar oksidlanadi: Cl⁻ → Cl₂, Br⁻ → Br₂, S²⁻ → S. Sulfat-ion oksidlanmaydi — suv oksidlanib O₂ ajraladi." },
-    { "id": "g9-s19-q4", "type": "Y1", "skill": "elektroliz mahsulotlari", "difficulty": 1,
+      "left": [
+        "{CuCl2}",
+        "{CuSO4}",
+        "KBr",
+        "{Na2S}"
+      ],
+      "right": [
+        "{O2}",
+        "S",
+        "{Cl2}",
+        "{Br2}"
+      ],
+      "answer": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "solution": "Kislorodsiz anionlar oksidlanadi: Cl⁻ → Cl₂, Br⁻ → Br₂, S²⁻ → S. Sulfat-ion oksidlanmaydi — suv oksidlanib O₂ ajraladi."
+    },
+    {
+      "id": "g9-s19-q4",
+      "type": "Y1",
+      "skill": "elektroliz mahsulotlari",
+      "difficulty": 1,
       "stem": "Osh tuzi eritmasi elektrolizida katod atrofidagi eritmada qaysi modda to‘planadi?",
-      "choices": ["HCl", "{NaOH}", "Na", "{NaClO3}"], "answer": 1,
-      "solution": "Katodda suv qaytarilib OH⁻ ionlari hosil bo‘ladi; ular Na⁺ ionlari bilan birga NaOH eritmasini tashkil qiladi." },
-    { "id": "g9-s19-q5", "type": "Y1", "skill": "elektroliz mohiyati", "difficulty": 1,
+      "choices": [
+        "HCl",
+        "{NaOH}",
+        "Na",
+        "{NaClO3}"
+      ],
+      "answer": 1,
+      "solution": "Katodda suv qaytarilib OH⁻ ionlari hosil bo‘ladi; ular Na⁺ ionlari bilan birga NaOH eritmasini tashkil qiladi."
+    },
+    {
+      "id": "g9-s19-q5",
+      "type": "Y1",
+      "skill": "elektroliz mohiyati",
+      "difficulty": 1,
       "stem": "Elektroliz paytida anodda qanday jarayon boradi?",
-      "choices": ["qaytarilish", "oksidlanish", "neytrallanish", "gidroliz"], "answer": 1,
-      "solution": "Anod — musbat elektrod; anionlar (yoki suv, yoki anod metali) unga elektron beradi, ya’ni oksidlanadi." }
+      "choices": [
+        "qaytarilish",
+        "oksidlanish",
+        "neytrallanish",
+        "gidroliz"
+      ],
+      "answer": 1,
+      "solution": "Anod — musbat elektrod; anionlar (yoki suv, yoki anod metali) unga elektron beradi, ya’ni oksidlanadi."
+    },
+    {
+      "id": "g9-s19-q90",
+      "type": "O2",
+      "skill": "elektroliz hisoblari",
+      "difficulty": 3,
+      "stem": "{CuSO4} eritmasi inert elektrodlar bilan elektroliz qilinganda katodda 12,8 g mis ajraldi. Elektrod jarayonlarini yozing, anodda ajralgan gaz hajmini (n.sh.) va eritmada hosil bo‘lgan kislota massasini toping.",
+      "steps": [
+        "Katod va anod jarayonlarini yozing.",
+        "Umumiy tenglamani tuzing.",
+        "Mis miqdoridan gaz va kislota miqdorini toping.",
+        "Hajm va massani birliklari bilan hisoblang."
+      ],
+      "rubric": [
+        {
+          "criterion": "Katod: Cu²⁺ + 2ē → Cu; anod: 2H₂O → O₂ + 4H⁺ + 4ē",
+          "points": 7
+        },
+        {
+          "criterion": "2CuSO₄ + 2H₂O → 2Cu + O₂ + 2H₂SO₄",
+          "points": 6
+        },
+        {
+          "criterion": "n(Cu) = 0,2 mol → n(O₂) = 0,1 mol; n(H₂SO₄) = 0,2 mol",
+          "points": 6
+        },
+        {
+          "criterion": "V(O₂) = 2,24 l; m(H₂SO₄) = 19,6 g",
+          "points": 6
+        }
+      ],
+      "solution": "n(Cu) = 12,8 / 64 = 0,2 mol. 2CuSO₄ + 2H₂O → 2Cu + O₂ + 2H₂SO₄: n(O₂) = 0,1 mol → 2,24 l; n(H₂SO₄) = 0,2 mol → 0,2 · 98 = 19,6 g."
+    }
   ]
 }

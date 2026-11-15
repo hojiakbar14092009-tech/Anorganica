@@ -1,6 +1,6 @@
 # Anorganica
 
-Private, offline-capable PWA chemistry atlas for Uzbek grades 8–9 (textbooks: Asqarov, G‘opirov, To‘xtaboyev, *Kimyo 8* / *Kimyo 9*, 2019).
+Offline-capable PWA chemistry atlas: exactly 53 lessons — grade 8 §21–44 and grade 9 §8–36 (textbooks: Asqarov, G‘opirov, To‘xtaboyev, *Kimyo 8* / *Kimyo 9*, 2019).
 
 ## Setup (Windows / VS Code)
 ```
@@ -9,12 +9,12 @@ npm run dev          # http://localhost:5173
 npm run build        # content gate + typecheck + production build
 npm run preview      # serves dist on :4173 (service worker active)
 npm run typecheck && npm run lint && npm run test
-npx playwright install chromium webkit && npm run e2e
+npx playwright install webkit && npm run test:e2e
 ```
 
 ## Source PDFs (never deployed)
 Put `reference/kimyo-8-2019.pdf` and `reference/kimyo-9-2019.pdf` in place (gitignored), then `npm run source-map`
-to regenerate `content/manifest.json` and `docs/SOURCE_MAP.md`.
+to regenerate (scope comes from `src/content/allowed-lessons.json`) `content/manifest.json` and `docs/SOURCE_MAP.md`.
 
 ## Content
 One JSON per § in `content/lessons/`. Formulas `{H2SO4}`, ions `SO4^2-`, electrons `e^-`. `npm run validate:content`
@@ -25,10 +25,6 @@ Safari → Ulashish → Bosh ekranga qo‘shish. After the first online load eve
 Updates are checked on launch/foreground/reconnect and applied only after “Yangilash”.
 
 ## Deployment (Vercel)
-- Live: https://anorganica.vercel.app (password-protected). Smoke test: `ACCESS_PASSWORD=… node scripts/smoke-prod.mjs https://anorganica.vercel.app`.
-- `middleware.ts` protects every request (HTML, JS, lesson chunks, icons, service worker) with a password + signed HttpOnly cookie.
-- Set `ACCESS_PASSWORD` (long random string) in Vercel → Project → Settings → Environment Variables (Production + Preview). Without it the site returns 503 (fails closed).
-- Pushing to `main` on GitHub triggers a production deploy. `vercel.json` holds SPA rewrites and security headers (CSP, noindex).
-- Offline privacy trade-off: once a device has logged in and cached the app, the content stays readable on that device.
+No login of any kind. Push to `main` deploys https://anorganica.vercel.app. Details and the privacy trade-off: `docs/DEPLOYMENT.md`.
 
-Docs: `docs/PROGRESS.md`, `docs/DECISIONS.md`, `docs/SOURCE_MAP.md`, `docs/EXAM_BLUEPRINT.md`, `docs/VISUAL_COVERAGE.md`, `docs/KNOWN_ISSUES.md`.
+Docs: `docs/PROGRESS.md`, `docs/DECISIONS.md`, `docs/SOURCE_MAP.md`, `docs/EXAM_ALIGNMENT.md`, `docs/DEPLOYMENT.md`, `docs/VISUAL_COVERAGE.md`, `docs/KNOWN_ISSUES.md`.
