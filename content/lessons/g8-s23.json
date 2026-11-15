@@ -1,0 +1,110 @@
+{
+  "id": "g8-s23",
+  "status": "seed-verified",
+  "pages": [96, 97, 98, 99],
+  "summary": "Xlor — 3-davr VIIA guruh metallmasi; Cl₂ molekulasi qutbsiz kovalent. Sarg‘ish-yashil, zaharli gaz, kuchli oksidlovchi; suv va ishqorlarda bir vaqtda oksidlovchi ham, qaytaruvchi ham bo‘ladi.",
+  "keyConcepts": [
+    "Elektron tuzilishi: 2ē, 8ē, 7ē — {1s2 2s2 2p6 3s2 3p5}; tashqi qavatga 1 ta elektron yetishmaydi.",
+    "Tabiatda faqat birikmalar holida: galit {NaCl}, silvin {KCl}, silvinit {KCl·NaCl}, karnallit {KCl·MgCl2·6H2O}.",
+    "Sanoatda — osh tuzi eritmasini elektroliz qilib, laboratoriyada — {MnO2} yoki {KMnO4} ga konsentrlangan {HCl} ta’sir ettirib olinadi.",
+    "Metallarni yuqori oksidlanish darajasigacha oksidlaydi: temir bilan {FeCl3} hosil bo‘ladi, {FeCl2} emas."
+  ],
+  "tables": [
+    {
+      "id": "props",
+      "title": "Xlor: asosiy ma’lumotlar",
+      "columns": [
+        { "key": "k", "label": "Ko‘rsatkich" },
+        { "key": "v", "label": "Qiymat / xossa" }
+      ],
+      "rows": [
+        { "id": "pos", "cells": { "k": "Davriy sistemadagi o‘rni", "v": "3-davr, VII guruh bosh guruhchasi, Z = 17, Ar = 35,5" } },
+        { "id": "mol", "cells": { "k": "Molekula", "v": "{Cl2}, Cl–Cl, qutbsiz kovalent bog‘" } },
+        { "id": "phys", "cells": { "k": "Fizik xossalari", "v": "Sarg‘ish-yashil, o‘tkir hidli, bo‘g‘uvchi, zaharli gaz; havodan ≈2,5 marta og‘ir" },
+          "detail": { "concept": "Havoga nisbatan zichlik: D = M({Cl2}) / M(havo) = 71 / 29 ≈ 2,45. Shuning uchun xlor pastqam joylarda to‘planadi.", "examTip": "Gaz zichligi masalalarida havoning o‘rtacha molyar massasi 29 g/mol olinadi.", "pages": [97] } },
+        { "id": "sol", "cells": { "k": "Suvda eruvchanligi", "v": "20 °C da 1 hajm suvda ≈2 hajm xlor eriydi → «xlorli suv»" },
+          "detail": { "concept": "Eritilgan xlorning bir qismi suv bilan qaytar reaksiyaga kirishadi.", "reactionIds": ["water"], "pages": [97, 98] } },
+        { "id": "ox", "cells": { "k": "Oksidlanish darajalari", "v": "−1, 0, +1, +3, +5, +7" },
+          "detail": { "concept": "Birikmalarda: {HCl} (−1), {HClO} (+1), {KClO3} (+5), {HClO4} (+7).", "pages": [98, 99] } }
+      ]
+    },
+    {
+      "id": "reactions",
+      "title": "Kimyoviy xossalari",
+      "columns": [
+        { "key": "with", "label": "Nima bilan" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "cond", "label": "Sharoit" },
+        { "key": "role", "label": "Xlorning roli" }
+      ],
+      "rows": [
+        { "id": "na", "cells": { "with": "Natriy", "eq": "na", "cond": "qizdirilgan Na", "role": "oksidlovchi" },
+          "detail": { "concept": "Na⁰ − 1ē → Na⁺ (oksidlanadi); Cl₂⁰ + 2ē → 2Cl⁻ (qaytariladi). Natriy yonib, oq tutun — {NaCl} kristallari hosil bo‘ladi.", "reactionIds": ["na"], "pages": [97, 98] } },
+        { "id": "fe", "cells": { "with": "Temir", "eq": "fe", "cond": "qizdirish", "role": "oksidlovchi" },
+          "detail": { "concept": "Xlor kuchli oksidlovchi bo‘lgani uchun temirni +3 gacha oksidlaydi.", "reactionIds": ["fe"], "examTip": "Fe + HCl → FeCl₂, lekin Fe + Cl₂ → FeCl₃ — tez-tez uchraydigan tuzoq.", "pages": [98] } },
+        { "id": "cu", "cells": { "with": "Mis", "eq": "cu", "cond": "qizdirish", "role": "oksidlovchi" } },
+        { "id": "h2", "cells": { "with": "Vodorod", "eq": "h2", "cond": "yorug‘lik yoki qizdirish", "role": "oksidlovchi" } },
+        { "id": "ki", "cells": { "with": "Kaliy yodid", "eq": "ki", "cond": "eritmada", "role": "oksidlovchi" },
+          "detail": { "concept": "Faolroq galogen kamroq faol galogenni tuzidan siqib chiqaradi: Cl₂ > Br₂ > I₂.", "observation": "Eritma qo‘ng‘ir-sariq tusga kiradi (yod ajraladi).", "reactionIds": ["ki"], "pages": [96, 99] } },
+        { "id": "water", "cells": { "with": "Suv", "eq": "water", "cond": "oddiy sharoit, qaytar", "role": "oksidlovchi ham, qaytaruvchi ham" },
+          "detail": { "concept": "Disproporsiyalanish: bir Cl atomi 0 → −1, ikkinchisi 0 → +1. Gipoxlorit kislota {HClO} oqartiruvchi va zararsizlantiruvchi ta’sirga ega.", "reactionIds": ["water"], "pages": [98] } },
+        { "id": "koh-cold", "cells": { "with": "Sovuq KOH", "eq": "kohCold", "cond": "sovuq eritma", "role": "disproporsiyalanadi" } },
+        { "id": "koh-hot", "cells": { "with": "Qaynoq KOH", "eq": "kohHot", "cond": "qizdirish (> 50 °C)", "role": "disproporsiyalanadi" },
+          "detail": { "concept": "Kaliy xloridda Cl −1, Bertole tuzi {KClO3} da +5. Elektron balans: Cl⁰ + 1ē → Cl⁻ | ×5; Cl⁰ − 5ē → Cl⁺⁵ | ×1.", "reactionIds": ["kohHot"], "pages": [98, 99] } }
+      ]
+    },
+    {
+      "id": "obtain",
+      "title": "Olinishi",
+      "columns": [
+        { "key": "where", "label": "Usul" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "lab1", "cells": { "where": "Laboratoriya: MnO₂ + konts. HCl", "eq": "labMnO2" } },
+        { "id": "lab2", "cells": { "where": "Laboratoriya: KMnO₄ + konts. HCl", "eq": "labKMnO4" } },
+        { "id": "ind", "cells": { "where": "Sanoat: NaCl eritmasi elektrolizi", "eq": "electrolysis" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "na": { "equation": "2Na + Cl2 → 2NaCl", "conditions": "qizdirilgan natriy" },
+    "fe": { "equation": "2Fe + 3Cl2 → 2FeCl3", "conditions": "t°", "observation": "Qo‘ng‘ir tutun (FeCl₃)" },
+    "cu": { "equation": "Cu + Cl2 → CuCl2", "conditions": "t°" },
+    "h2": { "equation": "H2 + Cl2 → 2HCl", "conditions": "hν yoki t°", "safety": "Yorug‘likda aralashma portlashi mumkin — faqat virtual namoyish." },
+    "ki": { "equation": "Cl2 + 2KI → 2KCl + I2", "observation": "Eritma qo‘ng‘ir-sariq tusga kiradi" },
+    "water": { "equation": "Cl2 + H2O ⇄ HCl + HClO", "note": "Darslikda bir tomonlama strelka bilan yozilgan; aslida reaksiya qaytar." },
+    "kohCold": { "equation": "Cl2 + 2KOH → KCl + KClO + H2O", "conditions": "sovuq" },
+    "kohHot": { "equation": "3Cl2 + 6KOH → KClO3 + 5KCl + 3H2O", "conditions": "t° > 50 °C" },
+    "labMnO2": { "equation": "MnO2 + 4HCl → MnCl2 + Cl2↑ + 2H2O", "conditions": "konts. HCl, qizdirish", "safety": "Xlor zaharli — faqat mo‘rili shkafda, o‘qituvchi nazoratida." },
+    "labKMnO4": { "equation": "2KMnO4 + 16HCl → 2KCl + 2MnCl2 + 5Cl2↑ + 8H2O", "conditions": "konts. HCl" },
+    "electrolysis": { "equation": "2NaCl + 2H2O → 2NaOH + H2↑ + Cl2↑", "conditions": "elektr toki (elektroliz)", "observation": "Anodda Cl₂, katodda H₂ ajraladi" }
+  },
+  "clarifications": [
+    { "text": "Xlorning suv bilan reaksiyasi qaytar (⇄): eritmada Cl₂, HCl va HClO birga mavjud bo‘ladi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g8-s23-q1", "type": "Y1", "skill": "reaksiya mahsuloti", "difficulty": 1,
+      "stem": "Temir xlor bilan qizdirilganda qaysi modda hosil bo‘ladi?",
+      "choices": ["{FeCl2}", "{FeCl3}", "{Fe2O3}", "{FeCl2} va {H2}"], "answer": 1,
+      "solution": "Xlor kuchli oksidlovchi, temirni +3 oksidlanish darajasigacha oksidlaydi: 2Fe + 3Cl₂ → 2FeCl₃.",
+      "mistakes": "FeCl₂ — temir xlorid kislota bilan reaksiyaga kirishganda hosil bo‘ladi." },
+    { "id": "g8-s23-q2", "type": "O1", "skill": "gaz zichligi", "difficulty": 1,
+      "stem": "Xlorning havoga nisbatan zichligini hisoblang (M(havo) = 29 g/mol). Javobni 0,01 aniqlikda yozing.",
+      "answer": 2.45, "tolerance": 0.01,
+      "solution": "D = M(Cl₂) / M(havo) = 71 / 29 = 2,448… ≈ 2,45." },
+    { "id": "g8-s23-q3", "type": "Y1", "skill": "oksidlanish-qaytarilish", "difficulty": 2,
+      "stem": "Cl₂ + H₂O ⇄ HCl + HClO reaksiyasida xlor qanday vazifani bajaradi?",
+      "choices": ["faqat oksidlovchi", "faqat qaytaruvchi", "ham oksidlovchi, ham qaytaruvchi", "oksidlanish darajasi o‘zgarmaydi"], "answer": 2,
+      "solution": "Bir Cl atomi 0 → −1 (qaytariladi, oksidlovchi), ikkinchisi 0 → +1 (oksidlanadi, qaytaruvchi). Bu disproporsiyalanish." },
+    { "id": "g8-s23-q4", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "8,7 g marganes(IV) oksid mo‘l konsentrlangan xlorid kislota bilan reaksiyaga kirishganda necha litr (n.sh.) xlor ajraladi?",
+      "answer": 2.24, "tolerance": 0.01, "unit": "l",
+      "solution": "MnO₂ + 4HCl → MnCl₂ + Cl₂ + 2H₂O. M(MnO₂) = 87 g/mol; n = 8,7 / 87 = 0,1 mol; n(Cl₂) = 0,1 mol; V = 0,1 · 22,4 = 2,24 l.",
+      "mistakes": "HCl koeffitsiyenti (4) bo‘yicha hisoblash — xlor miqdori MnO₂ bilan 1:1 nisbatda." },
+    { "id": "g8-s23-q5", "type": "Y1", "skill": "oksidlanish darajasi", "difficulty": 1,
+      "stem": "Bertole tuzi {KClO3} da xlorning oksidlanish darajasi nechaga teng?",
+      "choices": ["−1", "+3", "+5", "+7"], "answer": 2,
+      "solution": "(+1) + x + 3·(−2) = 0 ⇒ x = +5." }
+  ]
+}

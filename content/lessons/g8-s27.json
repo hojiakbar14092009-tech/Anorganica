@@ -1,0 +1,100 @@
+{
+  "id": "g8-s27",
+  "status": "seed-verified",
+  "pages": [116, 117, 118, 119],
+  "summary": "Xlorid kislota — vodorod xloridning suvdagi eritmasi. Konsentrlangani (≈37 %, ρ ≈ 1,19 g/cm³) nam havoda «tutaydi». Kislotalarning umumiy xossalaridan tashqari, Cl⁻ ioni kumush nitrat bilan oq cho‘kma beradi va kuchli oksidlovchilar ta’sirida xlorgacha oksidlanadi.",
+  "keyConcepts": [
+    "Sanoatda: vodorod xlorda yondiriladi ({H2} + {Cl2} → 2HCl), hosil bo‘lgan gaz suvda eritiladi.",
+    "Indikatorlar: lakmus — qizil, metil zarg‘aldog‘i — qizil, fenolftalein — rangsiz.",
+    "Temir xlorid kislotada {FeCl2} hosil qiladi (H⁺ kuchsiz oksidlovchi), xlor bilan esa {FeCl3}.",
+    "Xlorid-ionga sifat reaksiyasi: {Ag^+} + {Cl^-} → AgCl↓ (oq, ivir-ivir, suvda va {HNO3} da erimaydi)."
+  ],
+  "tables": [
+    {
+      "id": "props",
+      "title": "Kimyoviy xossalari",
+      "columns": [
+        { "key": "with", "label": "Nima bilan" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "type", "label": "Xossa turi" }
+      ],
+      "rows": [
+        { "id": "zn", "cells": { "with": "Rux", "eq": "zn", "type": "metall (H gacha) → tuz + {H2}" } },
+        { "id": "fe", "cells": { "with": "Temir", "eq": "fe", "type": "metall → {FeCl2}" },
+          "detail": { "concept": "H⁺ ionlari temirni faqat +2 gacha oksidlay oladi. Cu, Ag, Au xlorid kislota bilan reaksiyaga kirishmaydi.", "reactionIds": ["fe"], "examTip": "Fe + 2HCl → FeCl₂ + H₂, lekin 2Fe + 3Cl₂ → 2FeCl₃ (§23).", "pages": [116] } },
+        { "id": "cao", "cells": { "with": "Kalsiy oksid", "eq": "cao", "type": "asosli oksid → tuz + suv" } },
+        { "id": "zno", "cells": { "with": "Rux oksid", "eq": "zno", "type": "amfoter oksid → tuz + suv" } },
+        { "id": "cuoh", "cells": { "with": "Mis(II) gidroksid", "eq": "cuoh", "type": "asos → tuz + suv" },
+          "detail": { "concept": "Ko‘k cho‘kma eriydi, eritma ko‘k-yashil tusga kiradi.", "reactionIds": ["cuoh"], "pages": [117] } },
+        { "id": "caco3", "cells": { "with": "Kalsiy karbonat", "eq": "caco3", "type": "kuchsiz kislota tuzi → {CO2}↑" },
+          "detail": { "concept": "Hosil bo‘ladigan karbonat kislota beqaror va darhol {CO2} va {H2O} ga parchalanadi — shuning uchun «qaynash» (gaz pufakchalari) kuzatiladi.", "reactionIds": ["caco3"], "observation": "Gaz pufakchalari ajraladi", "pages": [117] } },
+        { "id": "ag", "cells": { "with": "Kumush nitrat", "eq": "ag", "type": "Cl⁻ ga sifat reaksiyasi" },
+          "detail": { "concept": "Har qanday eruvchan xlorid ham shu cho‘kmani beradi; ionli tenglama bitta.", "reactionIds": ["ag", "agNa", "agIon"], "observation": "Oq ivir-ivir cho‘kma", "pages": [117, 119] } },
+        { "id": "kmno4", "cells": { "with": "Kaliy permanganat", "eq": "kmno4", "type": "Cl⁻ qaytaruvchi → {Cl2}" },
+          "detail": { "concept": "Mn⁺⁷ + 5ē → Mn⁺² (×2); 2Cl⁻ − 2ē → Cl₂⁰ (×5). 16 HCl dan faqat 10 tasi oksidlanadi, qolgan 6 tasi tuzlar hosil qilishga ketadi.", "reactionIds": ["kmno4"], "pages": [117] } }
+      ]
+    },
+    {
+      "id": "oxy",
+      "title": "Xlorning kislorodli birikmalari",
+      "columns": [
+        { "key": "f", "label": "Kislota" },
+        { "key": "name", "label": "Nomi" },
+        { "key": "ox", "label": "Cl oksidlanish darajasi" },
+        { "key": "note", "label": "Muhim" }
+      ],
+      "rows": [
+        { "id": "hclo", "cells": { "f": "{HClO}", "name": "gipoxlorit", "ox": "+1", "note": "juda kuchsiz, beqaror, kuchli oksidlovchi; tuzlari — gipoxloritlar ({NaClO}, {KClO})" } },
+        { "id": "hclo2", "cells": { "f": "{HClO2}", "name": "xlorit", "ox": "+3", "note": "faqat suyultirilgan eritmada mavjud" } },
+        { "id": "hclo3", "cells": { "f": "{HClO3}", "name": "xlorat", "ox": "+5", "note": "faqat eritmada; tuzi — Bertole tuzi {KClO3}" } },
+        { "id": "hclo4", "cells": { "f": "{HClO4}", "name": "perxlorat", "ox": "+7", "note": "eng kuchli kislotalardan biri" } },
+        { "id": "bleach", "cells": { "f": "{CaOCl2}", "name": "xlorli ohak", "ox": "+1 va −1", "note": "aralash tuz {CaCl2}·{Ca(ClO)2}; oqartiruvchi, dezinfeksiya" },
+          "detail": { "concept": "So‘ndirilgan ohakka xlor ta’sir ettirib olinadi.", "reactionIds": ["bleach"], "pages": [119] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "zn": { "equation": "Zn + 2HCl → ZnCl2 + H2↑" },
+    "fe": { "equation": "Fe + 2HCl → FeCl2 + H2↑" },
+    "cao": { "equation": "CaO + 2HCl → CaCl2 + H2O" },
+    "zno": { "equation": "ZnO + 2HCl → ZnCl2 + H2O" },
+    "cuoh": { "equation": "Cu(OH)2 + 2HCl → CuCl2 + 2H2O" },
+    "caco3": { "equation": "CaCO3 + 2HCl → CaCl2 + H2O + CO2↑" },
+    "ag": { "equation": "AgNO3 + HCl → AgCl↓ + HNO3" },
+    "agNa": { "equation": "NaCl + AgNO3 → AgCl↓ + NaNO3" },
+    "agIon": { "equation": "Ag^+ + Cl^- → AgCl↓" },
+    "kmno4": { "equation": "2KMnO4 + 16HCl → 2KCl + 2MnCl2 + 5Cl2↑ + 8H2O", "conditions": "konsentrlangan HCl", "safety": "Xlor ajraladi — faqat virtual namoyish." },
+    "bleach": { "equation": "2Ca(OH)2 + 2Cl2 → Ca(ClO)2 + CaCl2 + 2H2O" },
+    "hcloDecomp": { "equation": "2HClO → 2HCl + O2↑", "conditions": "yorug‘lik" }
+  },
+  "clarifications": [
+    { "text": "Darslikning 119-betida xlorli ohak olinishi 2Ca(OH)₂ + 2Cl₂ = Ca(OCl)₂ + CaCl₂ + H₂O deb yozilgan — kislorod va vodorod bo‘yicha tenglanmagan. To‘g‘risi: 2Ca(OH)₂ + 2Cl₂ → Ca(ClO)₂ + CaCl₂ + 2H₂O.", "source": "additionalVerifiedSource" },
+    { "text": "HClO parchalanishi darslikda «HClO = HCl + O» (atomar kislorod) ko‘rinishida berilgan; molekulyar tenglama: 2HClO → 2HCl + O₂ (yorug‘likda).", "source": "additionalVerifiedSource" },
+    { "text": "Darslikda HgCl₂ erimaydigan xloridlar qatorida keltirilgan. Aslida HgCl₂ suvda eriydi; erimaydigani — Hg₂Cl₂ (kalomel). PbCl₂ sovuq suvda kam eriydi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g8-s27-q1", "type": "Y1", "skill": "sifat reaksiyasi", "difficulty": 1,
+      "stem": "Eritmada xlorid-ion borligini qaysi reaktiv yordamida aniqlash mumkin?",
+      "choices": ["{BaCl2}", "{AgNO3}", "fenolftalein", "{NaOH}"], "answer": 1,
+      "solution": "Ag⁺ + Cl⁻ → AgCl↓ — suvda va nitrat kislotada erimaydigan oq cho‘kma." },
+    { "id": "g8-s27-q2", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "stem": "10 g kalsiy karbonat mo‘l xlorid kislotada to‘liq eriganda necha litr (n.sh.) gaz ajraladi?",
+      "answer": 2.24, "tolerance": 0.01, "unit": "l",
+      "solution": "CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. M(CaCO₃) = 100 g/mol; n = 0,1 mol = n(CO₂); V = 0,1 · 22,4 = 2,24 l." },
+    { "id": "g8-s27-q3", "type": "O1", "skill": "konsentratsiya", "difficulty": 2,
+      "stem": "Zichligi 1,19 g/ml bo‘lgan 37 % li xlorid kislotaning 100 ml hajmida necha gramm vodorod xlorid bor? Javobni 0,1 aniqlikda yozing.",
+      "answer": 44.0, "tolerance": 0.05, "unit": "g",
+      "solution": "m(eritma) = 100 · 1,19 = 119 g; m(HCl) = 119 · 0,37 = 44,03 g ≈ 44,0 g.",
+      "mistakes": "Hajmni massa deb olish (100 · 0,37 = 37 g)." },
+    { "id": "g8-s27-q4", "type": "Y1", "skill": "reaksiya mahsuloti", "difficulty": 1,
+      "stem": "Temir xlorid kislota bilan reaksiyaga kirishganda qaysi tuz hosil bo‘ladi?",
+      "choices": ["{FeCl3}", "{FeCl2}", "{Fe2O3}", "tuz hosil bo‘lmaydi"], "answer": 1,
+      "solution": "Fe + 2HCl → FeCl₂ + H₂. Vodorod ionlari temirni faqat +2 gacha oksidlaydi." },
+    { "id": "g8-s27-q5", "type": "Y2", "skill": "oksidlanish darajasi", "difficulty": 2,
+      "stem": "Moddani undagi xlorning oksidlanish darajasi bilan moslashtiring.",
+      "left": ["{HClO}", "{KClO3}", "{HClO4}", "{HCl}"],
+      "right": ["+7", "−1", "+1", "+5"],
+      "answer": [2, 3, 0, 1],
+      "solution": "HClO: +1; KClO₃: +5; HClO₄: +7; HCl: −1 (H = +1, O = −2, K = +1, molekula neytral)." }
+  ]
+}

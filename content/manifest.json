@@ -1,0 +1,1809 @@
+{
+ "generated": "2026-11-15",
+ "pdfs": {
+  "8": {
+   "file": "reference/kimyo-8-2019.pdf",
+   "pages": 208,
+   "sha256": "a37b19b2e01d3716ce5d4f279049571e0933612e8344a9ada7670f364be4e75b",
+   "cite": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+  },
+  "9": {
+   "file": "reference/kimyo-9-2019.pdf",
+   "pages": 208,
+   "sha256": "283f7c45abaf91eaa86dafb88922bac80fa1f71d79deb51f96b025d3e47bc06c",
+   "cite": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+  }
+ },
+ "chapters": [
+  {
+   "id": "g8-c1",
+   "grade": 8,
+   "roman": "I",
+   "title": "7-sinf kursining asosiy tushunchalarini takrorlash",
+   "sections": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "g8-c2",
+   "grade": 8,
+   "roman": "II",
+   "title": "Davriy qonun va elementlar davriy sistemasi. Atom tuzilishi",
+   "sections": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "id": "g8-c3",
+   "grade": 8,
+   "roman": "III",
+   "title": "Kimyoviy bog‘lanishlar",
+   "sections": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "id": "g8-c4",
+   "grade": 8,
+   "roman": "IV",
+   "title": "Metallmaslar",
+   "sections": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+   ]
+  },
+  {
+   "id": "g8-c5",
+   "grade": 8,
+   "roman": "V",
+   "title": "Oltinchi guruh bosh guruhchasi elementlari",
+   "sections": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ]
+  },
+  {
+   "id": "g8-c6",
+   "grade": 8,
+   "roman": "VI",
+   "title": "Azot guruhchasi",
+   "sections": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+   ]
+  },
+  {
+   "id": "g9-c1",
+   "grade": 9,
+   "roman": "I",
+   "title": "8-sinf kimyo kursining eng muhim mavzularini takrorlash",
+   "sections": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "g9-c2",
+   "grade": 9,
+   "roman": "II",
+   "title": "Elektrolitik dissotsiatsiyalanish nazariyasi",
+   "sections": [
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "g9-c3",
+   "grade": 9,
+   "roman": "III",
+   "title": "Metallmaslar. Uglerod guruhi",
+   "sections": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ]
+  },
+  {
+   "id": "g9-c4",
+   "grade": 9,
+   "roman": "IV",
+   "title": "Metallar",
+   "sections": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+   ]
+  },
+  {
+   "id": "g9-c5",
+   "grade": 9,
+   "roman": "V",
+   "title": "Noorganik kimyodan olgan bilimlarni umumlashtirish",
+   "sections": [
+    38,
+    39,
+    40,
+    41
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "g8-s1",
+   "grade": 8,
+   "section": 1,
+   "chapterId": "g8-c1",
+   "title": "Dastlabki kimyoviy tushuncha va qonunlar",
+   "pdfPage": 5,
+   "printedPage": 5,
+   "printedPageVerified": false,
+   "tocPage": 5,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 9
+  },
+  {
+   "id": "g8-s2",
+   "grade": 8,
+   "section": 2,
+   "chapterId": "g8-c1",
+   "title": "Noorganik birikmalarning asosiy sinflari",
+   "pdfPage": 10,
+   "printedPage": 10,
+   "printedPageVerified": true,
+   "tocPage": 10,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 16
+  },
+  {
+   "id": "g8-s3",
+   "grade": 8,
+   "section": 3,
+   "chapterId": "g8-c2",
+   "title": "Kimyoviy elementlarning dastlabki toifalanishi",
+   "pdfPage": 17,
+   "printedPage": 17,
+   "printedPageVerified": false,
+   "tocPage": 17,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 20
+  },
+  {
+   "id": "g8-s4",
+   "grade": 8,
+   "section": 4,
+   "chapterId": "g8-c2",
+   "title": "Kimyoviy elementlarning tabiiy oilalari",
+   "pdfPage": 21,
+   "printedPage": 21,
+   "printedPageVerified": true,
+   "tocPage": 21,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 24
+  },
+  {
+   "id": "g8-s5",
+   "grade": 8,
+   "section": 5,
+   "chapterId": "g8-c2",
+   "title": "Kimyoviy elementlarning davriy qonuni",
+   "pdfPage": 25,
+   "printedPage": 25,
+   "printedPageVerified": true,
+   "tocPage": 25,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 30
+  },
+  {
+   "id": "g8-s6",
+   "grade": 8,
+   "section": 6,
+   "chapterId": "g8-c2",
+   "title": "Kimyoviy elementlar davriy sistemasi",
+   "pdfPage": 31,
+   "printedPage": 31,
+   "printedPageVerified": true,
+   "tocPage": 30,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 33
+  },
+  {
+   "id": "g8-s7",
+   "grade": 8,
+   "section": 7,
+   "chapterId": "g8-c2",
+   "title": "Atom yadrosi tarkibi",
+   "pdfPage": 34,
+   "printedPage": 34,
+   "printedPageVerified": true,
+   "tocPage": 32,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 36
+  },
+  {
+   "id": "g8-s8",
+   "grade": 8,
+   "section": 8,
+   "chapterId": "g8-c2",
+   "title": "Izotoplar. Izobarlar",
+   "pdfPage": 37,
+   "printedPage": 37,
+   "printedPageVerified": true,
+   "tocPage": 36,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 40
+  },
+  {
+   "id": "g8-s9",
+   "grade": 8,
+   "section": 9,
+   "chapterId": "g8-c2",
+   "title": "Atom elektron qavatlarining tuzilishi",
+   "pdfPage": 41,
+   "printedPage": 41,
+   "printedPageVerified": true,
+   "tocPage": 39,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 43
+  },
+  {
+   "id": "g8-s10",
+   "grade": 8,
+   "section": 10,
+   "chapterId": "g8-c2",
+   "title": "Energetik pog‘onachalar",
+   "pdfPage": 44,
+   "printedPage": 44,
+   "printedPageVerified": true,
+   "tocPage": 42,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 47
+  },
+  {
+   "id": "g8-s11",
+   "grade": 8,
+   "section": 11,
+   "chapterId": "g8-c2",
+   "title": "Kichik davr elementlarining atom tuzilishi",
+   "pdfPage": 48,
+   "printedPage": 48,
+   "printedPageVerified": true,
+   "tocPage": 46,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 50
+  },
+  {
+   "id": "g8-s12",
+   "grade": 8,
+   "section": 12,
+   "chapterId": "g8-c2",
+   "title": "Katta davr elementlarining atom tuzilishi",
+   "pdfPage": 51,
+   "printedPage": 51,
+   "printedPageVerified": true,
+   "tocPage": 49,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 52
+  },
+  {
+   "id": "g8-s13",
+   "grade": 8,
+   "section": 13,
+   "chapterId": "g8-c2",
+   "title": "Elementlarning davriy sistemadagi o‘rni va atom tuzilishiga qarab tavsiflash. Davriy qonunning ahamiyati",
+   "pdfPage": 53,
+   "printedPage": 53,
+   "printedPageVerified": true,
+   "tocPage": 51,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 63
+  },
+  {
+   "id": "g8-s14",
+   "grade": 8,
+   "section": 14,
+   "chapterId": "g8-c3",
+   "title": "Kimyoviy elementlarning nisbiy elektromanfiyligi",
+   "pdfPage": 64,
+   "printedPage": 64,
+   "printedPageVerified": true,
+   "tocPage": 64,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 65
+  },
+  {
+   "id": "g8-s15",
+   "grade": 8,
+   "section": 15,
+   "chapterId": "g8-c3",
+   "title": "Kimyoviy bog‘lanish turlari. Qutbli va qutbsiz kovalent bog‘lanish",
+   "pdfPage": 66,
+   "printedPage": 66,
+   "printedPageVerified": true,
+   "tocPage": 66,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 70
+  },
+  {
+   "id": "g8-s16",
+   "grade": 8,
+   "section": 16,
+   "chapterId": "g8-c3",
+   "title": "Ionli bog‘lanish",
+   "pdfPage": 71,
+   "printedPage": 71,
+   "printedPageVerified": true,
+   "tocPage": 71,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 73
+  },
+  {
+   "id": "g8-s17",
+   "grade": 8,
+   "section": 17,
+   "chapterId": "g8-c3",
+   "title": "Kristall panjaralar",
+   "pdfPage": 74,
+   "printedPage": 74,
+   "printedPageVerified": true,
+   "tocPage": 74,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 75
+  },
+  {
+   "id": "g8-s18",
+   "grade": 8,
+   "section": 18,
+   "chapterId": "g8-c3",
+   "title": "Elementlarning oksidlanish darajasi",
+   "pdfPage": 76,
+   "printedPage": 76,
+   "printedPageVerified": true,
+   "tocPage": 76,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 79
+  },
+  {
+   "id": "g8-s19",
+   "grade": 8,
+   "section": 19,
+   "chapterId": "g8-c3",
+   "title": "Oksidlanish-qaytarilish reaksiyalari",
+   "pdfPage": 80,
+   "printedPage": 80,
+   "printedPageVerified": true,
+   "tocPage": 80,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 82
+  },
+  {
+   "id": "g8-s20",
+   "grade": 8,
+   "section": 20,
+   "chapterId": "g8-c3",
+   "title": "Oksidlanish-qaytarilish reaksiyalari tenglamalarini tuzish",
+   "pdfPage": 83,
+   "printedPage": 83,
+   "printedPageVerified": true,
+   "tocPage": 83,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 88
+  },
+  {
+   "id": "g8-s21",
+   "grade": 8,
+   "section": 21,
+   "chapterId": "g8-c4",
+   "title": "Metallmaslarning umumiy xossalari",
+   "pdfPage": 89,
+   "printedPage": 89,
+   "printedPageVerified": false,
+   "tocPage": 89,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 91
+  },
+  {
+   "id": "g8-s22",
+   "grade": 8,
+   "section": 22,
+   "chapterId": "g8-c4",
+   "title": "Galogenlarning davriy sistemadagi o‘rni. Atom tuzilishi",
+   "pdfPage": 92,
+   "printedPage": 92,
+   "printedPageVerified": true,
+   "tocPage": 92,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 95
+  },
+  {
+   "id": "g8-s23",
+   "grade": 8,
+   "section": 23,
+   "chapterId": "g8-c4",
+   "title": "Xlor",
+   "pdfPage": 96,
+   "printedPage": 96,
+   "printedPageVerified": true,
+   "tocPage": 96,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 99
+  },
+  {
+   "id": "g8-s24",
+   "grade": 8,
+   "section": 24,
+   "chapterId": "g8-c4",
+   "title": "Vodorod xlorid",
+   "pdfPage": 100,
+   "printedPage": 100,
+   "printedPageVerified": true,
+   "tocPage": 100,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 102
+  },
+  {
+   "id": "g8-s25",
+   "grade": 8,
+   "section": 25,
+   "chapterId": "g8-c4",
+   "title": "Avogadro qonuni. Molyar hajm",
+   "pdfPage": 103,
+   "printedPage": 103,
+   "printedPageVerified": true,
+   "tocPage": 103,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 110
+  },
+  {
+   "id": "g8-s26",
+   "grade": 8,
+   "section": 26,
+   "chapterId": "g8-c4",
+   "title": "Ekvivalent qonuni",
+   "pdfPage": 111,
+   "printedPage": 111,
+   "printedPageVerified": true,
+   "tocPage": 111,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 115
+  },
+  {
+   "id": "g8-s27",
+   "grade": 8,
+   "section": 27,
+   "chapterId": "g8-c4",
+   "title": "Xlorid kislota",
+   "pdfPage": 116,
+   "printedPage": 116,
+   "printedPageVerified": true,
+   "tocPage": 116,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 120
+  },
+  {
+   "id": "g8-s28",
+   "grade": 8,
+   "section": 28,
+   "chapterId": "g8-c4",
+   "title": "Ftor, brom, yod",
+   "pdfPage": 121,
+   "printedPage": 121,
+   "printedPageVerified": true,
+   "tocPage": 121,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 129
+  },
+  {
+   "id": "g8-s29",
+   "grade": 8,
+   "section": 29,
+   "chapterId": "g8-c5",
+   "title": "Kislorod guruhchasi elementlari",
+   "pdfPage": 130,
+   "printedPage": 130,
+   "printedPageVerified": false,
+   "tocPage": 130,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 133
+  },
+  {
+   "id": "g8-s30",
+   "grade": 8,
+   "section": 30,
+   "chapterId": "g8-c5",
+   "title": "Oltingugurtning vodorodli birikmalari",
+   "pdfPage": 134,
+   "printedPage": 134,
+   "printedPageVerified": true,
+   "tocPage": 134,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 135
+  },
+  {
+   "id": "g8-s31",
+   "grade": 8,
+   "section": 31,
+   "chapterId": "g8-c5",
+   "title": "Oltingugurtning kislorodli birikmalari",
+   "pdfPage": 136,
+   "printedPage": 136,
+   "printedPageVerified": true,
+   "tocPage": 136,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 137
+  },
+  {
+   "id": "g8-s32",
+   "grade": 8,
+   "section": 32,
+   "chapterId": "g8-c5",
+   "title": "Sulfat kislota",
+   "pdfPage": 138,
+   "printedPage": 138,
+   "printedPageVerified": true,
+   "tocPage": 138,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 140
+  },
+  {
+   "id": "g8-s33",
+   "grade": 8,
+   "section": 33,
+   "chapterId": "g8-c5",
+   "title": "Kimyoviy reaksiyalarning tezligi",
+   "pdfPage": 141,
+   "printedPage": 141,
+   "printedPageVerified": true,
+   "tocPage": 141,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 143
+  },
+  {
+   "id": "g8-s34",
+   "grade": 8,
+   "section": 34,
+   "chapterId": "g8-c5",
+   "title": "Kimyoviy muvozanat",
+   "pdfPage": 144,
+   "printedPage": 144,
+   "printedPageVerified": true,
+   "tocPage": 144,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 146
+  },
+  {
+   "id": "g8-s35",
+   "grade": 8,
+   "section": 35,
+   "chapterId": "g8-c5",
+   "title": "Sanoatda sulfat kislota ishlab chiqarish",
+   "pdfPage": 147,
+   "printedPage": 147,
+   "printedPageVerified": true,
+   "tocPage": 147,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 156
+  },
+  {
+   "id": "g8-s36",
+   "grade": 8,
+   "section": 36,
+   "chapterId": "g8-c6",
+   "title": "Azot",
+   "pdfPage": 157,
+   "printedPage": 157,
+   "printedPageVerified": true,
+   "tocPage": 157,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 158
+  },
+  {
+   "id": "g8-s37",
+   "grade": 8,
+   "section": 37,
+   "chapterId": "g8-c6",
+   "title": "Azotning vodorodli birikmalari",
+   "pdfPage": 159,
+   "printedPage": 159,
+   "printedPageVerified": true,
+   "tocPage": 159,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 163
+  },
+  {
+   "id": "g8-s38",
+   "grade": 8,
+   "section": 38,
+   "chapterId": "g8-c6",
+   "title": "Azotning kislorodli birikmalari",
+   "pdfPage": 164,
+   "printedPage": 164,
+   "printedPageVerified": true,
+   "tocPage": 164,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 164
+  },
+  {
+   "id": "g8-s39",
+   "grade": 8,
+   "section": 39,
+   "chapterId": "g8-c6",
+   "title": "Nitrat kislota",
+   "pdfPage": 165,
+   "printedPage": 165,
+   "printedPageVerified": true,
+   "tocPage": 165,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 173
+  },
+  {
+   "id": "g8-s40",
+   "grade": 8,
+   "section": 40,
+   "chapterId": "g8-c6",
+   "title": "Fosfor",
+   "pdfPage": 174,
+   "printedPage": 174,
+   "printedPageVerified": true,
+   "tocPage": 174,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 176
+  },
+  {
+   "id": "g8-s41",
+   "grade": 8,
+   "section": 41,
+   "chapterId": "g8-c6",
+   "title": "Fosforning kislorodli birikmalari",
+   "pdfPage": 177,
+   "printedPage": 177,
+   "printedPageVerified": true,
+   "tocPage": 177,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 184
+  },
+  {
+   "id": "g8-s42",
+   "grade": 8,
+   "section": 42,
+   "chapterId": "g8-c6",
+   "title": "Mineral o‘g‘itlar",
+   "pdfPage": 185,
+   "printedPage": 185,
+   "printedPageVerified": true,
+   "tocPage": 185,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 188
+  },
+  {
+   "id": "g8-s43",
+   "grade": 8,
+   "section": 43,
+   "chapterId": "g8-c6",
+   "title": "Eng muhim asosiy mineral o‘g‘itlar",
+   "pdfPage": 189,
+   "printedPage": 189,
+   "printedPageVerified": true,
+   "tocPage": 189,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": 192
+  },
+  {
+   "id": "g8-s44",
+   "grade": 8,
+   "section": 44,
+   "chapterId": "g8-c6",
+   "title": "Biogen elementlar va ularning tirik organizmlardagi ahamiyati",
+   "pdfPage": 193,
+   "printedPage": 193,
+   "printedPageVerified": true,
+   "tocPage": 193,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019"
+   },
+   "endPage": null
+  },
+  {
+   "id": "g9-s1",
+   "grade": 9,
+   "section": 1,
+   "chapterId": "g9-c1",
+   "title": "Elementlar davriy sistemasi va davriy qonuni",
+   "pdfPage": 5,
+   "printedPage": 5,
+   "printedPageVerified": true,
+   "tocPage": 5,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 15
+  },
+  {
+   "id": "g9-s2",
+   "grade": 9,
+   "section": 2,
+   "chapterId": "g9-c1",
+   "title": "Kimyoviy bog‘lanishning turlari: kovalent (qutbsiz va qutbli), ionli, metall bog‘lanishlar",
+   "pdfPage": 16,
+   "printedPage": 16,
+   "printedPageVerified": true,
+   "tocPage": 16,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 19
+  },
+  {
+   "id": "g9-s3",
+   "grade": 9,
+   "section": 3,
+   "chapterId": "g9-c2",
+   "title": "Elektrolitlar va noelektrolitlar",
+   "pdfPage": 20,
+   "printedPage": 20,
+   "printedPageVerified": true,
+   "tocPage": 20,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 23
+  },
+  {
+   "id": "g9-s4",
+   "grade": 9,
+   "section": 4,
+   "chapterId": "g9-c2",
+   "title": "Kislota, ishqor va tuzlarning dissotsiatsiyalanishi",
+   "pdfPage": 24,
+   "printedPage": 24,
+   "printedPageVerified": true,
+   "tocPage": 24,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 25
+  },
+  {
+   "id": "g9-s5",
+   "grade": 9,
+   "section": 5,
+   "chapterId": "g9-c2",
+   "title": "Kuchli va kuchsiz elektrolitlar. Dissotsiatsiyalanish darajasi",
+   "pdfPage": 26,
+   "printedPage": 26,
+   "printedPageVerified": true,
+   "tocPage": 26,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 28
+  },
+  {
+   "id": "g9-s6",
+   "grade": 9,
+   "section": 6,
+   "chapterId": "g9-c2",
+   "title": "Ion almashinish reaksiyalari",
+   "pdfPage": 29,
+   "printedPage": 29,
+   "printedPageVerified": true,
+   "tocPage": 29,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 31
+  },
+  {
+   "id": "g9-s7",
+   "grade": 9,
+   "section": 7,
+   "chapterId": "g9-c2",
+   "title": "Tuzlarning gidrolizi",
+   "pdfPage": 32,
+   "printedPage": 32,
+   "printedPageVerified": true,
+   "tocPage": 32,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 41
+  },
+  {
+   "id": "g9-s8",
+   "grade": 9,
+   "section": 8,
+   "chapterId": "g9-c3",
+   "title": "Uglerod guruhidagi elementlarning umumiy tavsifi",
+   "pdfPage": 42,
+   "printedPage": 42,
+   "printedPageVerified": true,
+   "tocPage": 42,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 46
+  },
+  {
+   "id": "g9-s9",
+   "grade": 9,
+   "section": 9,
+   "chapterId": "g9-c3",
+   "title": "Uglerodning fizik va kimyoviy xossalari",
+   "pdfPage": 47,
+   "printedPage": 47,
+   "printedPageVerified": true,
+   "tocPage": 47,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 49
+  },
+  {
+   "id": "g9-s10",
+   "grade": 9,
+   "section": 10,
+   "chapterId": "g9-c3",
+   "title": "Uglerodning eng muhim birikmalari",
+   "pdfPage": 50,
+   "printedPage": 50,
+   "printedPageVerified": true,
+   "tocPage": 50,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 52
+  },
+  {
+   "id": "g9-s11",
+   "grade": 9,
+   "section": 11,
+   "chapterId": "g9-c3",
+   "title": "Karbonat kislota va karbonatlarning xossalari",
+   "pdfPage": 53,
+   "printedPage": 53,
+   "printedPageVerified": true,
+   "tocPage": 53,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 60
+  },
+  {
+   "id": "g9-s12",
+   "grade": 9,
+   "section": 12,
+   "chapterId": "g9-c3",
+   "title": "Kremniy. Kremniyning davriy sistemadagi o‘rni va atom tuzilishi",
+   "pdfPage": 61,
+   "printedPage": 61,
+   "printedPageVerified": true,
+   "tocPage": 61,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 62
+  },
+  {
+   "id": "g9-s13",
+   "grade": 9,
+   "section": 13,
+   "chapterId": "g9-c3",
+   "title": "Kremniyning xossalari. Muhim birikmalari",
+   "pdfPage": 63,
+   "printedPage": 63,
+   "printedPageVerified": true,
+   "tocPage": 63,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 65
+  },
+  {
+   "id": "g9-s14",
+   "grade": 9,
+   "section": 14,
+   "chapterId": "g9-c3",
+   "title": "Silikat sanoati",
+   "pdfPage": 66,
+   "printedPage": 66,
+   "printedPageVerified": true,
+   "tocPage": 66,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 70
+  },
+  {
+   "id": "g9-s15",
+   "grade": 9,
+   "section": 15,
+   "chapterId": "g9-c4",
+   "title": "Metallarning tabiatda tarqalishi, olinishi va ishlatilishi",
+   "pdfPage": 71,
+   "printedPage": 71,
+   "printedPageVerified": true,
+   "tocPage": 71,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 73
+  },
+  {
+   "id": "g9-s16",
+   "grade": 9,
+   "section": 16,
+   "chapterId": "g9-c4",
+   "title": "Qotishmalar",
+   "pdfPage": 74,
+   "printedPage": 74,
+   "printedPageVerified": true,
+   "tocPage": 74,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 76
+  },
+  {
+   "id": "g9-s17",
+   "grade": 9,
+   "section": 17,
+   "chapterId": "g9-c4",
+   "title": "Metallarning fizik va kimyoviy xossalari",
+   "pdfPage": 77,
+   "printedPage": 77,
+   "printedPageVerified": true,
+   "tocPage": 77,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 79
+  },
+  {
+   "id": "g9-s18",
+   "grade": 9,
+   "section": 18,
+   "chapterId": "g9-c4",
+   "title": "Metallar korroziyasi",
+   "pdfPage": 80,
+   "printedPage": 80,
+   "printedPageVerified": true,
+   "tocPage": 80,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 84
+  },
+  {
+   "id": "g9-s19",
+   "grade": 9,
+   "section": 19,
+   "chapterId": "g9-c4",
+   "title": "Elektroliz va uning amaliy ahamiyati",
+   "pdfPage": 85,
+   "printedPage": 85,
+   "printedPageVerified": true,
+   "tocPage": 85,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 96
+  },
+  {
+   "id": "g9-s20",
+   "grade": 9,
+   "section": 20,
+   "chapterId": "g9-c4",
+   "title": "Ishqoriy metallar",
+   "pdfPage": 97,
+   "printedPage": 97,
+   "printedPageVerified": true,
+   "tocPage": 97,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 99
+  },
+  {
+   "id": "g9-s21",
+   "grade": 9,
+   "section": 21,
+   "chapterId": "g9-c4",
+   "title": "Natriy va kaliyning xossalari va eng muhim birikmalari",
+   "pdfPage": 100,
+   "printedPage": 100,
+   "printedPageVerified": true,
+   "tocPage": 100,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 104
+  },
+  {
+   "id": "g9-s22",
+   "grade": 9,
+   "section": 22,
+   "chapterId": "g9-c4",
+   "title": "Soda ishlab chiqarish",
+   "pdfPage": 105,
+   "printedPage": 105,
+   "printedPageVerified": true,
+   "tocPage": 105,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 108
+  },
+  {
+   "id": "g9-s23",
+   "grade": 9,
+   "section": 23,
+   "chapterId": "g9-c4",
+   "title": "Kalsiy va magniy",
+   "pdfPage": 109,
+   "printedPage": 109,
+   "printedPageVerified": true,
+   "tocPage": 109,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 116
+  },
+  {
+   "id": "g9-s24",
+   "grade": 9,
+   "section": 24,
+   "chapterId": "g9-c4",
+   "title": "Suvning qattiqligi va uni yumshatish usullari",
+   "pdfPage": 117,
+   "printedPage": 117,
+   "printedPageVerified": true,
+   "tocPage": 117,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 120
+  },
+  {
+   "id": "g9-s25",
+   "grade": 9,
+   "section": 25,
+   "chapterId": "g9-c4",
+   "title": "Aluminiy",
+   "pdfPage": 121,
+   "printedPage": 121,
+   "printedPageVerified": true,
+   "tocPage": 121,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 123
+  },
+  {
+   "id": "g9-s26",
+   "grade": 9,
+   "section": 26,
+   "chapterId": "g9-c4",
+   "title": "Aluminiy xossalari",
+   "pdfPage": 124,
+   "printedPage": 124,
+   "printedPageVerified": true,
+   "tocPage": 124,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 128
+  },
+  {
+   "id": "g9-s27",
+   "grade": 9,
+   "section": 27,
+   "chapterId": "g9-c4",
+   "title": "Aluminiy birikmalari. Ishlatilishi",
+   "pdfPage": 129,
+   "printedPage": 129,
+   "printedPageVerified": true,
+   "tocPage": 129,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 130
+  },
+  {
+   "id": "g9-s28",
+   "grade": 9,
+   "section": 28,
+   "chapterId": "g9-c4",
+   "title": "I guruh yonaki guruhcha metallarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari. Mis",
+   "pdfPage": 131,
+   "printedPage": 131,
+   "printedPageVerified": true,
+   "tocPage": 131,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 136
+  },
+  {
+   "id": "g9-s29",
+   "grade": 9,
+   "section": 29,
+   "chapterId": "g9-c4",
+   "title": "Kumush va oltin. Xossalari. Ishlatilishi",
+   "pdfPage": 137,
+   "printedPage": 137,
+   "printedPageVerified": true,
+   "tocPage": 137,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 138
+  },
+  {
+   "id": "g9-s30",
+   "grade": 9,
+   "section": 30,
+   "chapterId": "g9-c4",
+   "title": "II guruh yonaki guruhcha elementlarining davriy jadvaldagi o‘rni. Atom tuzilishi. Xossalari",
+   "pdfPage": 139,
+   "printedPage": 139,
+   "printedPageVerified": true,
+   "tocPage": 139,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 144
+  },
+  {
+   "id": "g9-s31",
+   "grade": 9,
+   "section": 31,
+   "chapterId": "g9-c4",
+   "title": "Xrom. Davriy jadvaldagi o‘rni. Atom tuzilishi va ayrim xossalari",
+   "pdfPage": 145,
+   "printedPage": 145,
+   "printedPageVerified": true,
+   "tocPage": 145,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 146
+  },
+  {
+   "id": "g9-s32",
+   "grade": 9,
+   "section": 32,
+   "chapterId": "g9-c4",
+   "title": "Xromning II, III, VI valentli birikmalari va xossalari",
+   "pdfPage": 147,
+   "printedPage": 147,
+   "printedPageVerified": true,
+   "tocPage": 147,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 151
+  },
+  {
+   "id": "g9-s33",
+   "grade": 9,
+   "section": 33,
+   "chapterId": "g9-c4",
+   "title": "Marganes. Davriy jadvaldagi o‘rni. Atom tuzilishi. Ayrim xossalari",
+   "pdfPage": 152,
+   "printedPage": 152,
+   "printedPageVerified": true,
+   "tocPage": 152,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 157
+  },
+  {
+   "id": "g9-s34",
+   "grade": 9,
+   "section": 34,
+   "chapterId": "g9-c4",
+   "title": "Temir",
+   "pdfPage": 158,
+   "printedPage": 158,
+   "printedPageVerified": true,
+   "tocPage": 158,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 161
+  },
+  {
+   "id": "g9-s35",
+   "grade": 9,
+   "section": 35,
+   "chapterId": "g9-c4",
+   "title": "Temirning eng muhim birikmalari. Ishlatilishi",
+   "pdfPage": 162,
+   "printedPage": 162,
+   "printedPageVerified": true,
+   "tocPage": 162,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 164
+  },
+  {
+   "id": "g9-s36",
+   "grade": 9,
+   "section": 36,
+   "chapterId": "g9-c4",
+   "title": "O‘zbekistonda metallurgiya. Cho‘yan ishlab chiqarish",
+   "pdfPage": 165,
+   "printedPage": 165,
+   "printedPageVerified": true,
+   "tocPage": 165,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 167
+  },
+  {
+   "id": "g9-s37",
+   "grade": 9,
+   "section": 37,
+   "chapterId": "g9-c4",
+   "title": "Po‘lat ishlab chiqarish",
+   "pdfPage": 168,
+   "printedPage": 168,
+   "printedPageVerified": true,
+   "tocPage": 168,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 176
+  },
+  {
+   "id": "g9-s38",
+   "grade": 9,
+   "section": 38,
+   "chapterId": "g9-c5",
+   "title": "Kimyoviy ishlab chiqarish istiqbollari",
+   "pdfPage": 177,
+   "printedPage": 177,
+   "printedPageVerified": true,
+   "tocPage": 177,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 179
+  },
+  {
+   "id": "g9-s39",
+   "grade": 9,
+   "section": 39,
+   "chapterId": "g9-c5",
+   "title": "Atmosfera va gidrosferani muhofaza qilish",
+   "pdfPage": 180,
+   "printedPage": 180,
+   "printedPageVerified": true,
+   "tocPage": 180,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 184
+  },
+  {
+   "id": "g9-s40",
+   "grade": 9,
+   "section": 40,
+   "chapterId": "g9-c5",
+   "title": "Davriy qonun va elementlar davriy sistemasining ahamiyati",
+   "pdfPage": 185,
+   "printedPage": 185,
+   "printedPageVerified": true,
+   "tocPage": 185,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": 188
+  },
+  {
+   "id": "g9-s41",
+   "grade": 9,
+   "section": 41,
+   "chapterId": "g9-c5",
+   "title": "Kimyoviy reaksiyalarning kimyoviy ishlab chiqarishdagi ahamiyati",
+   "pdfPage": 189,
+   "printedPage": 189,
+   "printedPageVerified": true,
+   "tocPage": 189,
+   "method": "heading",
+   "titleMatched": true,
+   "verification": "auto-verified",
+   "source": {
+    "kind": "textbook2019",
+    "citation": "I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019"
+   },
+   "endPage": null
+  }
+ ]
+}

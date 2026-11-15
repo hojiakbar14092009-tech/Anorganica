@@ -1,0 +1,102 @@
+// Builds content/manifest.json + docs/SOURCE_MAP.md from content/inventory.json and the two local reference PDFs.
+// Also caches per-page text in reference/text/g{8,9}.json (gitignored) for targeted lesson authoring.
+// Run: node scripts/build-source-map.mjs
+import * as mupdf from 'mupdf';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+
+const inv = JSON.parse(readFileSync('content/inventory.json', 'utf8'));
+const BOOKS = {
+  8: { file: 'reference/kimyo-8-2019.pdf', cite: 'I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 8. Toshkent, 2019' },
+  9: { file: 'reference/kimyo-9-2019.pdf', cite: 'I. R. Asqarov, K. G‘opirov, N. X. To‘xtaboyev. Kimyo 9. Toshkent, 2019' },
+};
+// 'å' is a font-encoding artifact for 'e' in the Grade 9 PDF (e.g. §39 "Atmosfåra").
+const norm = (s) => s.toLowerCase().replace(/å/g, 'e').normalize('NFKD').replace(/[‘’`ʻʼ'´­-]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+
+const sections = [];
+const pdfMeta = {};
+mkdirSync('reference/text', { recursive: true });
+
+for (const grade of [8, 9]) {
+  const { file, cite } = BOOKS[grade];
+  if (!existsSync(file)) throw new Error(`Missing source PDF: ${file}`);
+  const buf = readFileSync(file);
+  const doc = mupdf.Document.openDocument(buf, 'application/pdf');
+  const n = doc.countPages();
+  const pages = Array.from({ length: n }, (_, i) => doc.loadPage(i).toStructuredText().asText());
+  writeFileSync(`reference/text/g${grade}.json`, JSON.stringify(pages));
+  pdfMeta[grade] = { file, pages: n, sha256: createHash('sha256').update(buf).digest('hex'), cite };
+
+  // Printed page number appears as a standalone line near the top or bottom of body pages.
+  const printedOf = (i) => {
+    const lines = pages[i].split('\n').map((l) => l.trim()).filter(Boolean);
+    const edge = [...lines.slice(0, 3), ...lines.slice(-3)];
+    return edge.find((l) => /^\d{1,3}$/.test(l) && Number(l) === i + 1) ? i + 1 : null;
+  };
+
+  // Heading search: "21-§." / "21- §." at line start, first occurrence in body (TOC pages excluded).
+  const tocStart = pages.findIndex((p, i) => i > n - 8 && /MUNDARIJA/i.test(p));
+  const headingPage = {};
+  for (let i = 0; i < tocStart; i++) {
+    for (const m of pages[i].matchAll(/^\s*(\d{1,2})[\s­]*-\s*§\.?/gm)) {
+      const s = Number(m[1]);
+      if (!(s in headingPage)) headingPage[s] = i;
+    }
+  }
+  // TOC page per § (cross-check only; Grade 8 TOC is known to be off for §§6–13).
+  const toc = pages.slice(tocStart, tocStart + 3).join('\n');
+  const tocPage = {};
+  for (const m of toc.matchAll(/(\d{1,2})[\s­-]*§\.([\s\S]*?)(\d{1,3})\s*(?:\n|$)/g)) tocPage[Number(m[1])] = Number(m[3]);
+
+  for (const ch of inv.chapters.filter((c) => c.grade === grade)) {
+    for (const s of ch.sections) {
+      const title = inv.titles[grade][s];
+      let idx = headingPage[s];
+      let method = 'heading';
+      if (idx === undefined && tocPage[s]) {
+        // Fallback: look for the title words near the TOC page.
+        const key = norm(title).split(' ').slice(0, 3).join(' ');
+        for (const d of [0, 1, -1, 2, -2]) {
+          const j = tocPage[s] - 1 + d;
+          if (pages[j] && norm(pages[j]).includes(key)) { idx = j; method = 'toc+title'; break; }
+        }
+      }
+      if (idx === undefined) throw new Error(`Cannot locate grade ${grade} §${s}`);
+      const titleFound = norm(pages[idx]).includes(norm(title).split(' ').slice(0, 2).join(' '));
+      sections.push({
+        id: `g${grade}-s${s}`, grade, section: s, chapterId: ch.id, title,
+        pdfPage: idx + 1, printedPage: printedOf(idx) ?? idx + 1,
+        printedPageVerified: printedOf(idx) !== null, tocPage: tocPage[s] ?? null, method,
+        titleMatched: titleFound,
+        verification: titleFound ? 'auto-verified' : 'needs-visual-check',
+        source: { kind: 'textbook2019', citation: cite },
+      });
+    }
+  }
+}
+
+// End page = next section's start − 1 within the same grade (last section ends before lab pages; recorded as null).
+for (const s of sections) {
+  const next = sections.find((x) => x.grade === s.grade && x.section === s.section + 1);
+  s.endPage = next ? Math.max(s.pdfPage, next.pdfPage - (next.pdfPage > s.pdfPage ? 1 : 0)) : null;
+}
+
+const ids = new Set(sections.map((s) => s.id));
+const c8 = sections.filter((s) => s.grade === 8).length, c9 = sections.filter((s) => s.grade === 9).length;
+if (c8 !== 44 || c9 !== 41 || ids.size !== 85) throw new Error(`Inventory mismatch: g8=${c8} g9=${c9} unique=${ids.size}`);
+
+writeFileSync('content/manifest.json', JSON.stringify({ generated: new Date().toISOString().slice(0, 10), pdfs: pdfMeta, chapters: inv.chapters, sections }, null, 1));
+
+const rows = sections.map((s) => `| ${s.grade} | §${s.section} | ${s.title} | ${s.printedPage}${s.printedPageVerified ? '' : '*'} | ${s.pdfPage} | ${s.tocPage ?? '—'}${s.tocPage && s.tocPage !== s.printedPage ? ' ⚠' : ''} | ${s.method} | ${s.verification} |`);
+writeFileSync('docs/SOURCE_MAP.md', `# Source map (generated by scripts/build-source-map.mjs — do not edit)
+
+Sources (local only, never deployed): ${Object.values(pdfMeta).map((p) => `\`${p.file}\` — ${p.cite}, ${p.pages} PDF pages, sha256 \`${p.sha256.slice(0, 16)}…\``).join('; ')}.
+
+Printed page = PDF page index for both books (checked: every body page whose header/footer number is extractable matches its index; chapter-opener pages have no printed number, marked *).
+⚠ = the book's own table of contents disagrees with the page where the § heading actually starts (Grade 8 §§6–13). The heading page is used.
+
+| Grade | § | Title | Printed page | PDF page | TOC page | Method | Status |
+|---|---|---|---|---|---|---|---|
+${rows.join('\n')}
+`);
+console.log(`OK: ${c8} + ${c9} sections; needs-visual-check: ${sections.filter((s) => s.verification !== 'auto-verified').map((s) => s.id).join(', ') || 'none'}`);
