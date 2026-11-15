@@ -1,0 +1,96 @@
+{
+  "id": "g9-s26",
+  "status": "seed-verified",
+  "pages": [124, 125, 126, 127, 128],
+  "summary": "Aluminiy — yengil, kumushsimon, elektr va issiqlikni yaxshi o‘tkazuvchi metall (ρ = 2,70 g/cm³, suyuqlanish 660 °C). Yuzasidagi mustahkam {Al2O3} pardasi uni himoya qiladi; parda yo‘qolsa, faol metall sifatida suv, kislota va ishqor bilan reaksiyaga kirishadi.",
+  "keyConcepts": [
+    "Havoda {Al2O3} pardasi hosil bo‘ladi, shu sababli aluminiy buyumlar suv va havoda barqaror; konsentrlangan {HNO3} bilan oddiy haroratda passivlanadi.",
+    "Aluminiy amfoter xossali: kislotalar bilan ham, ishqorlar bilan ham vodorod ajratadi — ishqor eritmasida kompleks tuz {Na[Al(OH)4]} hosil bo‘ladi.",
+    "Aluminotermiya — metall oksidlarini aluminiy bilan qaytarib metall olish (Cr, Mn, Fe, Ti…); termit — {Al} va {Fe3O4} aralashmasi.",
+    "Qizdirilganda aluminiy galogenlar, oltingugurt, azot, uglerod bilan reaksiyaga kirishadi."
+  ],
+  "tables": [
+    {
+      "id": "reactions",
+      "title": "Aluminiyning kimyoviy xossalari",
+      "columns": [
+        { "key": "with", "label": "Reagent" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "o2", "cells": { "with": "Kislorod", "eq": "o2", "note": "yupqa mustahkam oksid parda hosil bo‘ladi" },
+          "detail": { "concept": "Oksid parda metallni suv va kislorod ta’siridan himoya qiladi. Parda amalgama yoki ishqor bilan olib tashlansa, aluminiy suv bilan ham reaksiyaga kirishadi.", "pages": [124, 125] } },
+        { "id": "h2o", "cells": { "with": "Suv (parda olib tashlanganda)", "eq": "h2o", "note": "oksid pardasiz aluminiy suvdan vodorodni siqib chiqaradi" } },
+        { "id": "cl2", "cells": { "with": "Xlor", "eq": "cl2", "note": "qizdirilganda" } },
+        { "id": "s", "cells": { "with": "Oltingugurt", "eq": "s", "note": "qizdirilganda; aluminiy sulfid" } },
+        { "id": "n2", "cells": { "with": "Azot", "eq": "n2", "note": "yuqori haroratda; aluminiy nitrid" } },
+        { "id": "c", "cells": { "with": "Uglerod", "eq": "c", "note": "yuqori haroratda; aluminiy karbid" } },
+        { "id": "hcl", "cells": { "with": "Xlorid kislota", "eq": "hcl", "note": "vodoroddan oldin turadi, {H2} siqib chiqaradi" } },
+        { "id": "hno3c", "cells": { "with": "Konsentrlangan {HNO3} (oddiy harorat)", "eq": "", "note": "reaksiya yo‘q — passivlanadi; shu sababli kislotani aluminiy idishda tashiydilar" } },
+        { "id": "hno3d", "cells": { "with": "Suyultirilgan {HNO3}", "eq": "hno3d", "note": "{NO} ajraladi (juda suyultirilganda {NH4NO3} ham hosil bo‘ladi)" } },
+        { "id": "naoh", "cells": { "with": "{NaOH} eritmasi", "eq": "naoh", "note": "kompleks tuz — natriy tetragidroksoaluminat" },
+          "detail": { "concept": "Ishqor avval oksid pardani eritadi, keyin aluminiy suvdan vodorodni siqib chiqaradi; hosil bo‘lgan {Al(OH)3} ishqorda eriydi.", "reactionIds": ["naoh"], "examTip": "Al + ishqor eritmasi → kompleks tuz + {H2}; suvsiz qotishmada {NaAlO2} hosil bo‘ladi.", "pages": [125] } }
+      ]
+    },
+    {
+      "id": "alumothermy",
+      "title": "Aluminotermiya",
+      "columns": [
+        { "key": "ox", "label": "Oksid" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "res", "label": "Mahsulot / izoh" }
+      ],
+      "rows": [
+        { "id": "fe3o4", "cells": { "ox": "{Fe3O4} (termit)", "eq": "thermite", "res": "suyuq temir va {Al2O3}; juda katta issiqlik ajraladi — payvandlashda ishlatiladi" },
+          "detail": { "concept": "Termit — aluminiy kukuni va temir kuyindisi aralashmasi. Reaksiya o‘z-o‘zidan davom etib, juda yuqori haroratgacha qizdiradi.", "reactionIds": ["thermite"], "observation": "Cho‘g‘lanib turgan sim tekkizilganda shiddatli yonish, suyuq temir hosil bo‘lishi", "pages": [125, 126] } },
+        { "id": "cr2o3", "cells": { "ox": "{Cr2O3}", "eq": "cr", "res": "xrom olinadi" } },
+        { "id": "mn3o4", "cells": { "ox": "{Mn3O4}", "eq": "mn", "res": "marganes olinadi" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "o2": { "equation": "4Al + 3O2 → 2Al2O3" },
+    "h2o": { "equation": "2Al + 6H2O → 2Al(OH)3 + 3H2↑", "conditions": "oksid pardasiz" },
+    "cl2": { "equation": "2Al + 3Cl2 → 2AlCl3", "conditions": "qizdirish" },
+    "s": { "equation": "2Al + 3S → Al2S3", "conditions": "qizdirish" },
+    "n2": { "equation": "2Al + N2 → 2AlN", "conditions": "yuqori harorat" },
+    "c": { "equation": "4Al + 3C → Al4C3", "conditions": "yuqori harorat" },
+    "hcl": { "equation": "2Al + 6HCl → 2AlCl3 + 3H2↑" },
+    "hno3d": { "equation": "Al + 4HNO3 → Al(NO3)3 + NO↑ + 2H2O", "conditions": "suyultirilgan kislota" },
+    "naoh": { "equation": "2Al + 2NaOH + 6H2O → 2Na[Al(OH)4] + 3H2↑", "observation": "Vodorod pufakchalari ajraladi, aluminiy erib ketadi" },
+    "thermite": { "equation": "8Al + 3Fe3O4 → 4Al2O3 + 9Fe", "conditions": "alanga yoki cho‘g‘langan sim bilan ishga tushiriladi", "safety": "Juda yuqori harorat va suyuq temir — xavfli, faqat virtual namoyish." },
+    "cr": { "equation": "Cr2O3 + 2Al → Al2O3 + 2Cr", "conditions": "qizdirish" },
+    "mn": { "equation": "3Mn3O4 + 8Al → 9Mn + 4Al2O3", "conditions": "qizdirish" }
+  },
+  "clarifications": [
+    { "text": "127-betdagi 2-misolning 1-bosqichida tenglama «2Al + 2NaOH + 6H2O = 2Na[Al(OH)4] + H2» deb yozilgan; to‘g‘risi — vodorod koeffitsiyenti 3: 2Al + 2NaOH + 6H₂O → 2Na[Al(OH)₄] + 3H₂.", "source": "additionalVerifiedSource" },
+    { "text": "125-betda «aluminiy qizdirilganda xlorid kislota bilan reaksiyaga kirishadi» deyilgan; oksid parda erib ketgach reaksiya oddiy haroratda ham boradi, qizdirish uni tezlashtiradi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s26-q1", "type": "O1", "skill": "gaz hajmi hisobi", "difficulty": 2,
+      "stem": "8,1 g aluminiyga ortiqcha xlorid kislota ta’sir ettirilganda n.sh.da necha litr vodorod ajraladi?",
+      "answer": 10.08, "tolerance": 0.02, "unit": "l",
+      "solution": "2Al + 6HCl → 2AlCl₃ + 3H₂. n(Al) = 8,1 / 27 = 0,3 mol; n(H₂) = 0,3 · 3/2 = 0,45 mol; V = 0,45 · 22,4 = 10,08 l.",
+      "mistakes": "Vodorodni aluminiy bilan 1:1 olish; nisbat 2 : 3." },
+    { "id": "g9-s26-q2", "type": "O1", "skill": "aluminotermiya hisobi", "difficulty": 2,
+      "stem": "{Cr2O3} + 2Al → Al2O3 + 2Cr reaksiyasi bo‘yicha 15,2 g xrom(III) oksidni qaytarish uchun necha gramm aluminiy kerak?",
+      "answer": 5.4, "tolerance": 0.05, "unit": "g",
+      "solution": "M(Cr₂O₃) = 2·52 + 48 = 152. n(Cr₂O₃) = 15,2 / 152 = 0,1 mol; n(Al) = 2 · 0,1 = 0,2 mol; m(Al) = 0,2 · 27 = 5,4 g." },
+    { "id": "g9-s26-q3", "type": "Y1", "skill": "passivlanish", "difficulty": 1,
+      "stem": "Quyidagi kislotalardan qaysi birini oddiy haroratda aluminiy idishda saqlash mumkin?",
+      "choices": ["konsentrlangan {HNO3}", "xlorid kislota", "suyultirilgan {H2SO4}", "{HF} eritmasi"], "answer": 0,
+      "solution": "Konsentrlangan nitrat kislota aluminiy yuzasidagi oksid pardani mustahkamlaydi (passivlash), shuning uchun metall erimaydi." },
+    { "id": "g9-s26-q4", "type": "Y2", "skill": "aluminiy reaksiyalari", "difficulty": 2,
+      "stem": "Aluminiy reagent bilan reaksiya mahsulotini moslashtiring.",
+      "left": ["{Cl2} (qizdirilganda)", "{N2} (yuqori harorat)", "{C} (yuqori harorat)", "{NaOH} eritmasi"],
+      "right": ["{Al4C3}", "{AlCl3}", "{AlN}", "{Na[Al(OH)4]} va {H2}"],
+      "answer": [1, 2, 0, 3],
+      "solution": "2Al + 3Cl₂ → 2AlCl₃; 2Al + N₂ → 2AlN; 4Al + 3C → Al₄C₃; ishqor eritmasida kompleks tuz va vodorod hosil bo‘ladi." },
+    { "id": "g9-s26-q5", "type": "O1", "skill": "qotishma tarkibi", "difficulty": 3,
+      "stem": "Aluminiy va mis qotishmasining 20 g miqdoriga ortiqcha xlorid kislota ta’sir ettirilganda 11,2 l (n.sh.) vodorod ajraldi. Qotishmada aluminiyning massa ulushi necha foiz?",
+      "answer": 45, "tolerance": 0.2, "unit": "%",
+      "solution": "Mis xlorid kislota bilan reaksiyaga kirishmaydi. n(H₂) = 11,2 / 22,4 = 0,5 mol; n(Al) = 0,5 · 2/3 = 1/3 mol; m(Al) = 27/3 = 9 g; w = 9 / 20 = 0,45 → 45 %.",
+      "mistakes": "Misni ham vodorod ajratadi deb hisoblash — mis kuchlanishlar qatorida vodoroddan keyin turadi." }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "g9-s28",
+  "status": "seed-verified",
+  "pages": [131, 132, 133, 134, 135, 136],
+  "summary": "I B guruh (mis guruhchasi): Cu, Ag, Au — {(n−1)d10 ns1} konfiguratsiyali, faollik qatorida vodoroddan keyin turadigan, plastik va elektr o‘tkazuvchan metallar. Mis +1 va +2 hosil qiladi; eng muhim birikmalari {CuO}, {Cu(OH)2}, {CuSO4}.",
+  "keyConcepts": [
+    "Cu: [Ar] {3d10 4s1} (4-davr), Ag: [Kr] {4d10 5s1}, Au: [Xe] {4f14 5d10 6s1}; elektr o‘tkazuvchanlik Ag > Cu > Au; kimyoviy faollik Cu dan Au ga kamayadi.",
+    "Mis vodoroddan keyin turadi: suv, {HCl} va suyultirilgan {H2SO4} dan vodorodni siqib chiqarmaydi; oksidlovchi kislotalar ({HNO3}, konsentrlangan {H2SO4}) bilan reaksiyaga kirishadi.",
+    "Nam havoda mis asta-sekin yashil malaxit qatlami {(CuOH)2CO3} bilan qoplanadi.",
+    "Mis (II) birikmalari: {CuO} — qora asosli oksid, {Cu(OH)2} — havorang cho‘kma, {CuSO4} — oq kukun, {CuSO4·5H2O} (mis kuporosi) — ko‘k kristall.",
+    "O‘zbekistonda mis rudasi Olmaliqdagi Qalmoqqir konida qazib olinib, Olmaliq kon-metallurgiya kombinatida qayta ishlanadi."
+  ],
+  "tables": [
+    {
+      "id": "group",
+      "title": "I B guruh metallari: solishtirish",
+      "columns": [
+        { "key": "el", "label": "Element" },
+        { "key": "conf", "label": "Valent konfiguratsiya" },
+        { "key": "dens", "label": "Zichlik, g/cm³" },
+        { "key": "mp", "label": "Suyuqlanish, °C" },
+        { "key": "nat", "label": "Tabiatda" }
+      ],
+      "rows": [
+        { "id": "cu", "cells": { "el": "Mis {Cu} (29)", "conf": "{3d10 4s1}", "dens": "8,96", "mp": "1083", "nat": "{Cu2O} kuprit, {Cu2S} mis yaltirog‘i, {CuFeS2} mis kolchedani, {(CuOH)2CO3} malaxit; ba’zan tug‘ma" },
+          "detail": { "concept": "Mis atomida 4s dan 3d ga bitta elektron o‘tgan ({3d10 4s1}) — to‘lgan d-pog‘ona barqarorroq.", "pages": [132, 133] } },
+        { "id": "ag", "cells": { "el": "Kumush {Ag} (47)", "conf": "{4d10 5s1}", "dens": "10,5", "mp": "960,5", "nat": "{Ag2S} argentit; yombi holida" } },
+        { "id": "au", "cells": { "el": "Oltin {Au} (79)", "conf": "{4f14 5d10 6s1}", "dens": "19,3", "mp": "1063", "nat": "asosan tug‘ma (sof) holda" } }
+      ]
+    },
+    {
+      "id": "cu-chem",
+      "title": "Misning olinishi va kimyoviy xossalari",
+      "columns": [
+        { "key": "what", "label": "Reagent / jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "roast", "cells": { "what": "{Cu2S} kuydirish", "eq": "roast", "note": "mis olishning 1-bosqichi; {SO2} — sulfat kislota uchun xomashyo" } },
+        { "id": "red", "cells": { "what": "{Cu2O} + {Cu2S}", "eq": "red", "note": "qora (chala) mis; keyin elektrolitik tozalash" },
+          "detail": { "concept": "Chala mis tarkibida Ni, Ag, Au aralashmalari bor; toza mis anod eritilib, katodda cho‘ktirib olinadi (§19).", "pages": [133, 134] } },
+        { "id": "o2", "cells": { "what": "Kislorod (qizdirilganda)", "eq": "o2", "note": "qora {CuO}; oddiy sharoitda mis oksidlanmaydi" } },
+        { "id": "cl2", "cells": { "what": "Xlor", "eq": "cl2", "note": "qizdirilganda" } },
+        { "id": "s", "cells": { "what": "Oltingugurt", "eq": "s", "note": "qizdirilganda; mis(I) sulfid" } },
+        { "id": "malachite", "cells": { "what": "Nam havo ({O2}, {H2O}, {CO2})", "eq": "mal", "note": "yashil patina — malaxit" } },
+        { "id": "hcl", "cells": { "what": "{HCl}, suyultirilgan {H2SO4}", "eq": "", "note": "reaksiya yo‘q (vodoroddan keyin turadi)" } },
+        { "id": "h2so4", "cells": { "what": "Konsentrlangan {H2SO4}", "eq": "h2so4", "note": "{SO2} ajraladi, vodorod emas" },
+          "detail": { "concept": "Cu⁰ − 2ē → Cu²⁺; S⁺⁶ + 2ē → S⁺⁴. Eritma ko‘k rangga kiradi ({Cu^2+}).", "reactionIds": ["h2so4"], "observation": "Rangsiz o‘tkir hidli gaz, ko‘k eritma", "pages": [134] } },
+        { "id": "hno3c", "cells": { "what": "Konsentrlangan {HNO3}", "eq": "hno3c", "note": "qo‘ng‘ir {NO2}" } },
+        { "id": "hno3d", "cells": { "what": "Suyultirilgan {HNO3}", "eq": "hno3d", "note": "rangsiz {NO} (havoda qo‘ng‘irlashadi)" } },
+        { "id": "ag", "cells": { "what": "{AgNO3} eritmasi", "eq": "ag", "note": "faolroq metall kumushni siqib chiqaradi" } }
+      ]
+    },
+    {
+      "id": "cu2",
+      "title": "Mis (II) birikmalari",
+      "columns": [
+        { "key": "sub", "label": "Birikma" },
+        { "key": "type", "label": "Xossa turi" },
+        { "key": "col", "label": "Rangi" },
+        { "key": "eq", "label": "Muhim reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "cuo", "cells": { "sub": "{CuO}", "type": "asosli oksid", "col": "qora", "eq": "cuoH2" },
+          "detail": { "concept": "Suvda erimaydi; kislotalarda eriydi, vodorod va {CO} bilan mis metalligacha qaytariladi.", "reactionIds": ["cuoH2", "cuoAc"], "pages": [135] } },
+        { "id": "cuoh", "cells": { "sub": "{Cu(OH)2}", "type": "asos (suvda erimaydi)", "col": "havorang (zangori ko‘k) cho‘kma", "eq": "ppt" },
+          "detail": { "concept": "Mis (II) tuzi eritmasiga ishqor ta’sir ettirib olinadi; qizdirilganda qora {CuO} ga aylanadi.", "reactionIds": ["ppt", "heat"], "observation": "Havorang cho‘kma, qizdirilganda qoraya boradi", "pages": [135] } },
+        { "id": "cuso4", "cells": { "sub": "{CuSO4} (suvsiz)", "type": "tuz", "col": "oq kukun", "eq": "" } },
+        { "id": "vit", "cells": { "sub": "{CuSO4·5H2O} (mis kuporosi)", "type": "kristallgidrat", "col": "ko‘k kristall", "eq": "" },
+          "detail": { "concept": "Suvsiz {CuSO4} suv bilan ko‘karadi — suvni aniqlash uchun ishlatiladi. Pestitsid sifatida (ohak bilan aralashmasi) va mikroo‘g‘it sifatida qo‘llanadi.", "pages": [135, 136] } },
+        { "id": "cucl2", "cells": { "sub": "{CuCl2·2H2O}", "type": "tuz", "col": "yashil", "eq": "" } },
+        { "id": "cuno3", "cells": { "sub": "{Cu(NO3)2·3H2O}", "type": "tuz", "col": "ko‘k", "eq": "" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "roast": { "equation": "2Cu2S + 3O2 → 2Cu2O + 2SO2↑", "conditions": "kuydirish" },
+    "red": { "equation": "2Cu2O + Cu2S → 6Cu + SO2↑", "conditions": "yuqori harorat" },
+    "o2": { "equation": "2Cu + O2 → 2CuO", "conditions": "qizdirish", "observation": "Qizil mis yuzasi qorayadi" },
+    "cl2": { "equation": "Cu + Cl2 → CuCl2", "conditions": "qizdirish" },
+    "s": { "equation": "2Cu + S → Cu2S", "conditions": "qizdirish" },
+    "mal": { "equation": "2Cu + O2 + H2O + CO2 → (CuOH)2CO3", "observation": "Mis sirtida yashil qatlam" },
+    "h2so4": { "equation": "Cu + 2H2SO4 → CuSO4 + SO2↑ + 2H2O", "conditions": "konsentrlangan, qizdirish" },
+    "hno3c": { "equation": "Cu + 4HNO3 → Cu(NO3)2 + 2NO2↑ + 2H2O", "conditions": "konsentrlangan", "observation": "Qo‘ng‘ir gaz, ko‘k eritma" },
+    "hno3d": { "equation": "3Cu + 8HNO3 → 3Cu(NO3)2 + 2NO↑ + 4H2O", "conditions": "suyultirilgan" },
+    "ag": { "equation": "Cu + 2AgNO3 → Cu(NO3)2 + 2Ag↓", "observation": "Mis sirtida kumush qatlami, eritma ko‘karadi" },
+    "cuoH2": { "equation": "CuO + H2 → Cu + H2O", "conditions": "qizdirish" },
+    "cuoAc": { "equation": "CuO + H2SO4 → CuSO4 + H2O" },
+    "ppt": { "equation": "Cu^2+ + 2OH^- → Cu(OH)2↓", "observation": "Havorang cho‘kma" },
+    "heat": { "equation": "Cu(OH)2 → CuO + H2O", "conditions": "qizdirish" }
+  },
+  "clarifications": [
+    { "text": "134-betda «Cu + S → CuS» yozilgan; qizdirilganda mis oltingugurt bilan asosan mis(I) sulfid hosil qiladi: 2Cu + S → Cu₂S.", "source": "additionalVerifiedSource" },
+    { "text": "132-betdagi O‘zbekistonning mis va oltin zaxiralari bo‘yicha jahondagi o‘rinlari vaqt o‘tishi bilan o‘zgaradi, shuning uchun darsda keltirilmadi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s28-q1", "type": "Y1", "skill": "mis birikmalari rangi", "difficulty": 1,
+      "stem": "{CuSO4} eritmasiga {NaOH} eritmasi qo‘shilganda qanday cho‘kma hosil bo‘ladi?",
+      "choices": ["havorang {Cu(OH)2}", "qora {CuO}", "oq {Cu(OH)2}", "qizil {Cu}"], "answer": 0,
+      "solution": "Cu²⁺ + 2OH⁻ → Cu(OH)₂↓ — havorang cho‘kma. Qora {CuO} faqat qizdirilganda hosil bo‘ladi." },
+    { "id": "g9-s28-q2", "type": "O1", "skill": "kristallgidrat hisobi", "difficulty": 2,
+      "stem": "25 g mis kuporosi {CuSO4·5H2O} tarkibida necha gramm suvsiz {CuSO4} bor?",
+      "answer": 16, "tolerance": 0.05, "unit": "g",
+      "solution": "M(CuSO₄·5H₂O) = 64 + 32 + 64 + 90 = 250; n = 25 / 250 = 0,1 mol. M(CuSO₄) = 160; m = 0,1 · 160 = 16 g." },
+    { "id": "g9-s28-q3", "type": "O1", "skill": "gaz hajmi hisobi", "difficulty": 2,
+      "stem": "6,4 g mis konsentrlangan sulfat kislota bilan qizdirilganda n.sh.da necha litr {SO2} ajraladi?",
+      "answer": 2.24, "tolerance": 0.01, "unit": "l",
+      "solution": "Cu + 2H₂SO₄ → CuSO₄ + SO₂ + 2H₂O. n(Cu) = 6,4 / 64 = 0,1 mol; n(SO₂) = 0,1 mol; V = 0,1 · 22,4 = 2,24 l." },
+    { "id": "g9-s28-q4", "type": "Y2", "skill": "mis birikmalari rangi", "difficulty": 1,
+      "stem": "Mis birikmasini uning rangi/holati bilan moslashtiring.",
+      "left": ["{CuO}", "suvsiz {CuSO4}", "{CuSO4·5H2O}", "{Cu(OH)2}"],
+      "right": ["oq kukun", "havorang cho‘kma", "qora kukun", "ko‘k kristall"],
+      "answer": [2, 0, 3, 1],
+      "solution": "{CuO} — qora; suvsiz {CuSO4} — oq; mis kuporosi — ko‘k kristall; {Cu(OH)2} — havorang cho‘kma." },
+    { "id": "g9-s28-q5", "type": "O1", "skill": "gaz hajmi hisobi", "difficulty": 2,
+      "stem": "19,2 g mis suyultirilgan nitrat kislotada to‘liq eritilganda n.sh.da necha litr {NO} ajraladi?",
+      "answer": 4.48, "tolerance": 0.02, "unit": "l",
+      "solution": "3Cu + 8HNO₃ → 3Cu(NO₃)₂ + 2NO + 4H₂O. n(Cu) = 19,2 / 64 = 0,3 mol; n(NO) = 0,3 · 2/3 = 0,2 mol; V = 0,2 · 22,4 = 4,48 l.",
+      "mistakes": "{NO2} ning koeffitsiyentini ishlatish: suyultirilgan kislotada {NO}, konsentrlangan kislotada {NO2} hosil bo‘ladi." }
+  ]
+}

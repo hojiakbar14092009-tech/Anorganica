@@ -1,0 +1,109 @@
+{
+  "id": "g9-s32",
+  "status": "seed-verified",
+  "pages": [147, 148, 149, 150, 151, 152],
+  "summary": "Xrom +2, +3, +6 oksidlanish darajalarida barqaror birikmalar beradi: {CrO} — asosli, {Cr2O3} — amfoter, {CrO3} — kislotali. Oksidlanish darajasi ortishi bilan oksidlovchilik kuchayadi: {Cr^2+} — qaytaruvchi, {Cr^3+} — ham, {Cr(VI)} — kuchli oksidlovchi.",
+  "keyConcepts": [
+    "Cr(II) birikmalari beqaror, havoda oson {Cr(III)} ga oksidlanadi; Cr(III) — barqaror, amfoter; Cr(VI) — kislotali oksid va kuchli oksidlovchi xromatlar/dixromatlar.",
+    "Xromat {CrO4^2-} — sariq, dixromat {Cr2O7^2-} — zarg‘aldoq; muhitga bog‘liq muvozanat: kislotali muhitda dixromat, ishqoriy muhitda xromat.",
+    "Kislotali muhitda dixromat {Cr2O7^2-} → {Cr^3+} (yashil/binafsha) ga qaytariladi: {Cr2O7^2-} + 14{H^+} + 6{e^-} → 2{Cr^3+} + 7{H2O}.",
+    "{Ba^2+} bilan xromat-ion sariq {BaCrO4} cho‘kmasini beradi.",
+    "Cr(VI) birikmalari zaharli va kanserogen — ular bilan ishlashda himoya zarur."
+  ],
+  "tables": [
+    {
+      "id": "compounds",
+      "title": "Xrom birikmalari",
+      "columns": [
+        { "key": "sub", "label": "Birikma" },
+        { "key": "ox", "label": "O.d." },
+        { "key": "type", "label": "Xossa turi" },
+        { "key": "col", "label": "Rangi" },
+        { "key": "eq", "label": "Muhim reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "croh2", "cells": { "sub": "{Cr(OH)2}", "ox": "+2", "type": "asosli", "col": "sariq cho‘kma", "eq": "croh2" },
+          "detail": { "concept": "Cr(II) tuzi eritmasiga ishqor qo‘shib olinadi; beqaror, havoda {Cr(OH)3} ga o‘tadi.", "reactionIds": ["croh2", "air"], "pages": [147, 148] } },
+        { "id": "air", "cells": { "sub": "{Cr(OH)2} havoda", "ox": "+2 → +3", "type": "qaytaruvchi", "col": "sariqdan kul-yashilga", "eq": "air" } },
+        { "id": "cr2o3", "cells": { "sub": "{Cr2O3}", "ox": "+3", "type": "amfoter", "col": "yashil kukun", "eq": "cr2o3Ac" },
+          "detail": { "concept": "Kislotada eriydi, ishqor bilan qotishtirilganda xromit ({NaCrO2}) hosil qiladi.", "reactionIds": ["cr2o3Ac", "cr2o3Base"], "pages": [148] } },
+        { "id": "cr2o3b", "cells": { "sub": "{Cr2O3} + {NaOH} (qotishma)", "ox": "+3", "type": "amfoter", "col": "yashil kukun", "eq": "cr2o3Base" } },
+        { "id": "croh3", "cells": { "sub": "{Cr(OH)3}", "ox": "+3", "type": "amfoter", "col": "kul-yashil cho‘kma", "eq": "croh3" },
+          "detail": { "concept": "Cr(III) tuzi + ishqor: kul-yashil cho‘kma. Kislota va ortiqcha ishqorda eriydi.", "reactionIds": ["croh3", "croh3Ac", "croh3Base"], "observation": "Kul-yashil cho‘kma; ortiqcha ishqorda yashil kompleks eritma", "pages": [148] } },
+        { "id": "croh3ac", "cells": { "sub": "{Cr(OH)3} + {HCl}", "ox": "+3", "type": "amfoter (asosli xossa)", "col": "cho‘kma eriydi", "eq": "croh3Ac" } },
+        { "id": "croh3base", "cells": { "sub": "{Cr(OH)3} + ortiqcha {NaOH}", "ox": "+3", "type": "amfoter (kislotali xossa)", "col": "yashil eritma", "eq": "croh3Base" } },
+        { "id": "cro3", "cells": { "sub": "{CrO3}", "ox": "+6", "type": "kislotali", "col": "to‘q qizil kristall", "eq": "cro3" },
+          "detail": { "concept": "Kuchli oksidlovchi; ishqor bilan xromat, suv bilan {H2CrO4} / {H2Cr2O7} hosil qiladi.", "reactionIds": ["cro3", "cro3Dec"], "pages": [148, 149] } },
+        { "id": "cro3dec", "cells": { "sub": "{CrO3} qizdirilganda", "ox": "+6 → +3", "type": "oksidlovchi", "col": "yashil {Cr2O3} qoladi", "eq": "cro3Dec" } },
+        { "id": "chromate", "cells": { "sub": "{K2CrO4} (xromat)", "ox": "+6", "type": "tuz", "col": "sariq", "eq": "baCrO4" },
+          "detail": { "concept": "Xromat-ion bariy kationi bilan sariq cho‘kma beradi.", "reactionIds": ["baCrO4"], "observation": "Sariq {BaCrO4} cho‘kmasi", "pages": [149, 152] } },
+        { "id": "dichromate", "cells": { "sub": "{K2Cr2O7} (dixromat)", "ox": "+6", "type": "kuchli oksidlovchi tuz", "col": "zarg‘aldoq (to‘q sariq)", "eq": "equil" },
+          "detail": { "concept": "Kislota qo‘shilganda sariq xromat zarg‘aldoq dixromatga o‘tadi; ishqor qo‘shilsa teskari.", "reactionIds": ["equil"], "observation": "Muhit o‘zgarganda sariq ⇄ zarg‘aldoq rang", "examTip": "{H^+} → dixromat (zarg‘aldoq); {OH^-} → xromat (sariq).", "pages": [149] } }
+      ]
+    },
+    {
+      "id": "redox",
+      "title": "Dixromatning oksidlovchilik reaksiyalari (kislotali muhit)",
+      "columns": [
+        { "key": "red", "label": "Qaytaruvchi" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "obs", "label": "Kuzatish / izoh" }
+      ],
+      "rows": [
+        { "id": "half", "cells": { "red": "Yarim reaksiya", "eq": "half", "obs": "{Cr(VI)} → {Cr(III)}: 6 elektron qabul qilinadi (har bir {Cr} 3 ta)" } },
+        { "id": "fe", "cells": { "red": "{FeSO4}", "eq": "fe", "obs": "zarg‘aldoq eritma yashilga o‘tadi; {Fe^2+} → {Fe^3+}" } },
+        { "id": "ki", "cells": { "red": "{KI}", "eq": "ki", "obs": "yod ajraladi; eritma qo‘ng‘ir tusga kiradi" } },
+        { "id": "so3", "cells": { "red": "{Na2SO3}", "eq": "so3", "obs": "sulfit sulfatga oksidlanadi, eritma yashil" } },
+        { "id": "volcano", "cells": { "red": "ammoniy dixromat (termik)", "eq": "volcano", "obs": "«sun’iy vulqon»: ichki oksidlanish-qaytarilish, yashil {Cr2O3} qoladi" },
+          "detail": { "concept": "Ammoniy dixromatda {N^-3} qaytaruvchi, {Cr^+6} oksidlovchi; bir molekula ichida reaksiya boradi.", "reactionIds": ["volcano"], "pages": [148, 150] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "croh2": { "equation": "CrCl2 + 2NaOH → Cr(OH)2↓ + 2NaCl", "observation": "Sariq cho‘kma" },
+    "air": { "equation": "4Cr(OH)2 + O2 + 2H2O → 4Cr(OH)3", "conditions": "havo kislorodi" },
+    "cr2o3Ac": { "equation": "Cr2O3 + 6HNO3 → 2Cr(NO3)3 + 3H2O" },
+    "cr2o3Base": { "equation": "Cr2O3 + 2NaOH → 2NaCrO2 + H2O", "conditions": "qotishtirish" },
+    "croh3": { "equation": "Cr^3+ + 3OH^- → Cr(OH)3↓", "observation": "Kul-yashil cho‘kma" },
+    "croh3Ac": { "equation": "Cr(OH)3 + 3HCl → CrCl3 + 3H2O" },
+    "croh3Base": { "equation": "Cr(OH)3 + 3NaOH → Na3[Cr(OH)6]", "observation": "Cho‘kma erib, yashil eritma hosil qiladi" },
+    "cro3": { "equation": "CrO3 + 2NaOH → Na2CrO4 + H2O" },
+    "cro3Dec": { "equation": "4CrO3 → 2Cr2O3 + 3O2↑", "conditions": "qizdirish" },
+    "baCrO4": { "equation": "Ba^2+ + CrO4^2- → BaCrO4↓", "observation": "Sariq cho‘kma" },
+    "equil": { "equation": "2CrO4^2- + 2H^+ ⇄ Cr2O7^2- + H2O", "observation": "Kislotada sariq → zarg‘aldoq, ishqorda teskari" },
+    "half": { "equation": "Cr2O7^2- + 14H^+ + 6e^- → 2Cr^3+ + 7H2O" },
+    "fe": { "equation": "6FeSO4 + K2Cr2O7 + 7H2SO4 → 3Fe2(SO4)3 + Cr2(SO4)3 + K2SO4 + 7H2O", "observation": "Eritma zarg‘aldoqdan yashilga o‘tadi" },
+    "ki": { "equation": "K2Cr2O7 + 6KI + 7H2SO4 → 4K2SO4 + Cr2(SO4)3 + 3I2 + 7H2O", "observation": "Yod ajraladi" },
+    "so3": { "equation": "3Na2SO3 + K2Cr2O7 + 4H2SO4 → 3Na2SO4 + K2SO4 + Cr2(SO4)3 + 4H2O" },
+    "volcano": { "equation": "(NH4)2Cr2O7 → Cr2O3 + N2↑ + 4H2O", "conditions": "qizdirish", "safety": "Cr(VI) birikmasi zaharli va kanserogen — faqat virtual namoyish." }
+  },
+  "clarifications": [
+    { "text": "151-betdagi elektron balansda «Cr⁶⁺ − 3ē → Cr³⁺» yozilgan; Cr(VI) elektron qabul qilib qaytariladi: Cr⁶⁺ + 3ē → Cr³⁺ (dixromatdagi ikki xrom uchun jami 6 ē).", "source": "additionalVerifiedSource" },
+    { "text": "147-betdagi «2Cr + O2 → 2CrO» yozuvi amaliy usul emas: xrom qizdirilganda {Cr2O3} hosil qiladi; {CrO} beqaror va oddiy yo‘l bilan olinmaydi, shu sababli darsga kiritilmadi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s32-q1", "type": "Y1", "skill": "xromat va dixromat", "difficulty": 1,
+      "stem": "Sariq {K2CrO4} eritmasiga sulfat kislota qo‘shilsa, eritma rangi qanday o‘zgaradi?",
+      "choices": ["sariqdan zarg‘aldoqqa", "sariqdan ko‘kka", "rangsizlanadi", "o‘zgarmaydi"], "answer": 0,
+      "solution": "{H^+} ta’sirida 2CrO₄²⁻ + 2H⁺ ⇄ Cr₂O₇²⁻ + H₂O muvozanati o‘ngga siljiydi: sariq xromat zarg‘aldoq dixromatga o‘tadi." },
+    { "id": "g9-s32-q2", "type": "O1", "skill": "termik parchalanish hisobi", "difficulty": 2,
+      "stem": "25,2 g ammoniy dixromat {(NH4)2Cr2O7} parchalanganda necha gramm {Cr2O3} qoladi?",
+      "answer": 15.2, "tolerance": 0.05, "unit": "g",
+      "solution": "(NH₄)₂Cr₂O₇ → Cr₂O₃ + N₂ + 4H₂O. M = 2·18 + 2·52 + 7·16 = 252; n = 25,2 / 252 = 0,1 mol; m(Cr₂O₃) = 0,1 · 152 = 15,2 g." },
+    { "id": "g9-s32-q3", "type": "O1", "skill": "oksidlovchi-qaytaruvchi hisobi", "difficulty": 3,
+      "stem": "Sulfat kislotali muhitda 14,7 g {K2Cr2O7} ortiqcha {KI} bilan reaksiyaga kirishsa, necha gramm yod ajraladi?",
+      "answer": 38.1, "tolerance": 0.1, "unit": "g",
+      "solution": "K₂Cr₂O₇ + 6KI + 7H₂SO₄ → 4K₂SO₄ + Cr₂(SO₄)₃ + 3I₂ + 7H₂O. M(K₂Cr₂O₇) = 294; n = 14,7 / 294 = 0,05 mol; n(I₂) = 0,15 mol; M(I₂) = 254; m = 0,15 · 254 = 38,1 g.",
+      "mistakes": "Yodni 1 : 1 nisbatda olish; dixromatga 3 mol {I2} to‘g‘ri keladi." },
+    { "id": "g9-s32-q4", "type": "Y2", "skill": "oksid xarakteri", "difficulty": 1,
+      "stem": "Xrom oksidini xarakteri bilan moslashtiring.",
+      "left": ["{CrO}", "{Cr2O3}", "{CrO3}"],
+      "right": ["kislotali", "asosli", "amfoter"],
+      "answer": [1, 2, 0],
+      "solution": "Oksidlanish darajasi ortishi bilan asosli xossa kuchsizlanadi: {CrO} (+2) — asosli, {Cr2O3} (+3) — amfoter, {CrO3} (+6) — kislotali." },
+    { "id": "g9-s32-q5", "type": "Y1", "skill": "sifat reaksiyasi", "difficulty": 1,
+      "stem": "{Na2CrO4} eritmasiga {BaCl2} eritmasi qo‘shilganda qanday cho‘kma hosil bo‘ladi?",
+      "choices": ["sariq {BaCrO4}", "oq {BaSO4}", "yashil {Cr(OH)3}", "qizil {CrO3}"], "answer": 0,
+      "solution": "Ba²⁺ + CrO₄²⁻ → BaCrO₄↓ — sariq cho‘kma." }
+  ]
+}

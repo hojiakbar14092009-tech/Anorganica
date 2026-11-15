@@ -1,0 +1,120 @@
+{
+  "id": "g9-s33",
+  "status": "seed-verified",
+  "pages": [152, 153, 154, 155, 156, 157],
+  "summary": "Marganes — VII B guruh d-elementi ({3d5 4s2}), barqaror oksidlanish darajalari +2, +4, +7. Oksidlanish darajasi ortishi bilan oksidlari asosli ({MnO}) dan amfoter ({MnO2}) orqali kislotali ({Mn2O7}) ga o‘tadi. {KMnO4} — kuchli oksidlovchi; uning qaytarilish mahsuloti muhitga bog‘liq.",
+  "keyConcepts": [
+    "Mn: 4-davr, VII B guruh, Z = 25, [Ar] {3d5 4s2}; yer po‘stlog‘ida 0,1 %; rudalari — piroluzit {MnO2}, gausmanit {Mn3O4}, braunit {Mn2O3}.",
+    "Olinishi: oksidni kremniy yoki aluminiy bilan qaytarish; {MnSO4} eritmasi elektrolizi.",
+    "Suyultirilgan kislotalardan vodorod ajratadi; konsentrlangan {H2SO4} va {HNO3} bilan vodorod emas, {SO2} va {NO2} hosil qiladi.",
+    "{KMnO4} kislotali muhitda {Mn^2+} (rangsiz/och pushti), neytral muhitda {MnO2} (qo‘ng‘ir cho‘kma), kuchli ishqoriy muhitda {MnO4^2-} (yashil) gacha qaytariladi.",
+    "Qizdirilganda {KMnO4} parchalanadi — laboratoriyada kislorod olish usuli."
+  ],
+  "tables": [
+    {
+      "id": "oxides",
+      "title": "Marganes oksidlari",
+      "columns": [
+        { "key": "ox", "label": "Oksid" },
+        { "key": "od", "label": "O.d." },
+        { "key": "type", "label": "Xossa turi" },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "mno", "cells": { "ox": "{MnO}", "od": "+2", "type": "asosli", "note": "tuzlari {Mn^2+} — qaytaruvchilik kuchsiz" } },
+        { "id": "mn2o3", "cells": { "ox": "{Mn2O3}", "od": "+3", "type": "asosli", "note": "metall sirtidagi himoya parda; braunit" } },
+        { "id": "mno2", "cells": { "ox": "{MnO2}", "od": "+4", "type": "amfoter", "note": "piroluzit; kuchli oksidlovchi, katalizator" },
+          "detail": { "concept": "{MnO2} xlorid kislota bilan xlor hosil qiladi (laboratoriya usuli) va kislorod olishda katalizator vazifasini bajaradi.", "reactionIds": ["mno2Hcl"], "pages": [154, 158] } },
+        { "id": "mn2o7", "cells": { "ox": "{Mn2O7}", "od": "+7", "type": "kislotali", "note": "yog‘simon suyuqlik; beqaror, qizdirilganda parchalanadi" },
+          "detail": { "concept": "{KMnO4} ga konsentrlangan sulfat kislota ta’sir ettirib olinadi; {HMnO4} — kuchli, beqaror kislota.", "reactionIds": ["mn2o7", "mn2o7Dec"], "pages": [154, 155] } },
+        { "id": "mn3o4", "cells": { "ox": "{Mn3O4}", "od": "+2 va +3", "type": "aralash ({MnO·Mn2O3})", "note": "gausmanit" } }
+      ]
+    },
+    {
+      "id": "mn-chem",
+      "title": "Marganesning olinishi va xossalari",
+      "columns": [
+        { "key": "what", "label": "Reagent / jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "si", "cells": { "what": "{Mn3O4} + {Si}", "eq": "mnSi", "note": "elektr pechida" } },
+        { "id": "al", "cells": { "what": "{Mn3O4} + {Al}", "eq": "mnAl", "note": "aluminotermiya" } },
+        { "id": "o2", "cells": { "what": "{Mn} + {O2}", "eq": "mnO2", "note": "qizdirilganda; harorat o‘zgarsa boshqa oksidlar ham hosil bo‘ladi" } },
+        { "id": "h2o", "cells": { "what": "{Mn} + {H2O}", "eq": "mnH2O", "note": "qizdirilganda" } },
+        { "id": "hcl", "cells": { "what": "{Mn} + {HCl}", "eq": "mnHcl", "note": "vodorod ajraladi" } },
+        { "id": "h2so4", "cells": { "what": "{Mn} + konsentrlangan {H2SO4}", "eq": "mnH2so4", "note": "{SO2}, vodorod emas" } },
+        { "id": "hno3", "cells": { "what": "{Mn} + konsentrlangan {HNO3}", "eq": "mnHno3", "note": "qo‘ng‘ir {NO2}" } }
+      ]
+    },
+    {
+      "id": "kmno4",
+      "title": "{KMnO4} ning muhitga bog‘liq qaytarilishi",
+      "columns": [
+        { "key": "env", "label": "Muhit" },
+        { "key": "prod", "label": "Mahsulot (rangi)" },
+        { "key": "half", "label": "Yarim reaksiya", "reaction": true },
+        { "key": "eq", "label": "Misol", "reaction": true }
+      ],
+      "rows": [
+        { "id": "acid", "cells": { "env": "kislotali", "prod": "{Mn^2+} (rangsiz, och pushti)", "half": "halfAcid", "eq": "kcl" },
+          "detail": { "concept": "Kislotali muhitda binafsha eritma rangsizlanadi; {Mn^+7} → {Mn^+2} (5 ē).", "reactionIds": ["halfAcid", "kcl"], "observation": "Binafsha rang yo‘qoladi, xlor ajraladi", "examTip": "Kislotali → {Mn^2+}; neytral → {MnO2}↓; ishqoriy → {MnO4^2-} (yashil).", "pages": [155] } },
+        { "id": "neutral", "cells": { "env": "neytral", "prod": "{MnO2} (qo‘ng‘ir cho‘kma)", "half": "halfNeutral", "eq": "kNeutral" },
+          "detail": { "concept": "Neytral muhitda {Mn^+7} → {Mn^+4} (3 ē).", "reactionIds": ["halfNeutral", "kNeutral"], "observation": "Qo‘ng‘ir cho‘kma", "pages": [155] } },
+        { "id": "base", "cells": { "env": "kuchli ishqoriy", "prod": "{MnO4^2-} (yashil)", "half": "halfBase", "eq": "kBase" },
+          "detail": { "concept": "Ishqoriy muhitda {Mn^+7} → {Mn^+6} (1 ē).", "reactionIds": ["halfBase", "kBase"], "observation": "Binafsha eritma yashilga o‘tadi", "pages": [155] } },
+        { "id": "heat", "cells": { "env": "qizdirish (quruq)", "prod": "{K2MnO4} + {MnO2} + {O2}", "half": "", "eq": "kHeat" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "mno2Hcl": { "equation": "MnO2 + 4HCl → MnCl2 + Cl2↑ + 2H2O", "conditions": "qizdirish" },
+    "mn2o7": { "equation": "2KMnO4 + H2SO4 → Mn2O7 + K2SO4 + H2O", "conditions": "konsentrlangan H2SO4", "safety": "Mn₂O₇ portlovchi, beqaror — faqat virtual namoyish." },
+    "mn2o7Dec": { "equation": "2Mn2O7 → 4MnO2 + 3O2↑", "conditions": "qizdirish", "safety": "Portlash xavfi — faqat virtual namoyish." },
+    "mnSi": { "equation": "Mn3O4 + 2Si → 3Mn + 2SiO2", "conditions": "elektr pechi" },
+    "mnAl": { "equation": "3Mn3O4 + 8Al → 9Mn + 4Al2O3", "conditions": "aluminotermiya" },
+    "mnO2": { "equation": "4Mn + 3O2 → 2Mn2O3", "conditions": "qizdirish" },
+    "mnH2O": { "equation": "Mn + 2H2O → Mn(OH)2 + H2↑", "conditions": "qizdirish" },
+    "mnHcl": { "equation": "Mn + 2HCl → MnCl2 + H2↑" },
+    "mnH2so4": { "equation": "Mn + 2H2SO4 → MnSO4 + SO2↑ + 2H2O", "conditions": "konsentrlangan" },
+    "mnHno3": { "equation": "Mn + 4HNO3 → Mn(NO3)2 + 2NO2↑ + 2H2O", "conditions": "konsentrlangan" },
+    "halfAcid": { "equation": "MnO4^- + 8H^+ + 5e^- → Mn^2+ + 4H2O" },
+    "kcl": { "equation": "2KMnO4 + 10KCl + 8H2SO4 → 6K2SO4 + 2MnSO4 + 5Cl2↑ + 8H2O", "safety": "Xlor zaharli gaz — faqat virtual namoyish." },
+    "halfNeutral": { "equation": "MnO4^- + 2H2O + 3e^- → MnO2↓ + 4OH^-" },
+    "kNeutral": { "equation": "2KMnO4 + 3K2SO3 + H2O → 2MnO2↓ + 3K2SO4 + 2KOH" },
+    "halfBase": { "equation": "MnO4^- + e^- → MnO4^2-" },
+    "kBase": { "equation": "2KMnO4 + K2SO3 + 2KOH → K2SO4 + 2K2MnO4 + H2O" },
+    "kHeat": { "equation": "2KMnO4 → K2MnO4 + MnO2 + O2↑", "conditions": "qizdirish" }
+  },
+  "clarifications": [
+    { "text": "155-betda {KMnO4} «to‘q qizil» kristall deyilgan; u qora-binafsha kristall, eritmasi esa binafsha rangda.", "source": "additionalVerifiedSource" },
+    { "text": "156-betdagi 1-misolda marganesning oksidlanish darajasi «+4 dan +7 ga» deb yozilgan, mahsulot {K2MnO4} da esa Mn +6 (elektron balansdagi «+4 → +6, −2ē» to‘g‘ri). {K2MnO4} — {H2MnO4} (marganat kislota) tuzi, {HMnO4} (permanganat) emas. Tenglama: MnO₂ + 2KOH + KNO₃ → K₂MnO₄ + KNO₂ + H₂O.", "source": "additionalVerifiedSource" },
+    { "text": "156-betdagi 2-misol shartida «{K2MnO4}ning oksidlovchilik xossasi» yozilgan; tenglamalardan ko‘rinib turibdiki, bu {KMnO4} (permanganat) bo‘lishi kerak.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s33-q1", "type": "Y1", "skill": "KMnO4 qaytarilishi", "difficulty": 2,
+      "stem": "{KMnO4} kislotali muhitda qanday ionga qaytariladi?",
+      "choices": ["{Mn^2+}", "{MnO2}", "{MnO4^2-}", "{Mn^3+}"], "answer": 0,
+      "solution": "Kislotali muhitda MnO₄⁻ + 8H⁺ + 5ē → Mn²⁺ + 4H₂O; binafsha rang yo‘qoladi." },
+    { "id": "g9-s33-q2", "type": "Y2", "skill": "muhit va mahsulot", "difficulty": 2,
+      "stem": "{KMnO4} qaytarilish mahsulotini muhit bilan moslashtiring.",
+      "left": ["kislotali muhit", "neytral muhit", "kuchli ishqoriy muhit"],
+      "right": ["{MnO2}", "{Mn^2+}", "{MnO4^2-}"],
+      "answer": [1, 0, 2],
+      "solution": "Kislotali — {Mn^2+}; neytral — qo‘ng‘ir {MnO2} cho‘kmasi; kuchli ishqoriy — yashil {MnO4^2-}." },
+    { "id": "g9-s33-q3", "type": "O1", "skill": "kislorod olish hisobi", "difficulty": 2,
+      "stem": "31,6 g {KMnO4} qizdirib parchalanganda n.sh.da necha litr kislorod ajraladi?",
+      "answer": 2.24, "tolerance": 0.01, "unit": "l",
+      "solution": "2KMnO₄ → K₂MnO₄ + MnO₂ + O₂. M(KMnO₄) = 158; n = 31,6 / 158 = 0,2 mol; n(O₂) = 0,1 mol; V = 2,24 l." },
+    { "id": "g9-s33-q4", "type": "O1", "skill": "xlor olish hisobi", "difficulty": 2,
+      "stem": "15,8 g {KMnO4} ga ortiqcha konsentrlangan xlorid kislota ta’sir ettirilganda n.sh.da necha litr xlor ajraladi? (2KMnO4 + 16HCl → 2KCl + 2MnCl2 + 5Cl2 + 8H2O)",
+      "answer": 5.6, "tolerance": 0.02, "unit": "l",
+      "solution": "n(KMnO₄) = 15,8 / 158 = 0,1 mol; n(Cl₂) = 0,1 · 5/2 = 0,25 mol; V = 0,25 · 22,4 = 5,6 l.",
+      "mistakes": "Elektron balans: Mn⁺⁷ 5 ē oladi, 2Cl⁻ 2 ē beradi — 2 : 5 nisbat." },
+    { "id": "g9-s33-q5", "type": "O1", "skill": "massa ulushi", "difficulty": 1,
+      "stem": "Piroluzit {MnO2} tarkibida marganesning massa ulushi necha foiz?",
+      "answer": 63.22, "tolerance": 0.05, "unit": "%",
+      "solution": "M(MnO₂) = 55 + 32 = 87. w(Mn) = 55 / 87 = 0,6322 → 63,22 %." }
+  ]
+}

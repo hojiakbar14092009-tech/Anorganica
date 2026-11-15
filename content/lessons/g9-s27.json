@@ -1,0 +1,94 @@
+{
+  "id": "g9-s27",
+  "status": "seed-verified",
+  "pages": [129, 130, 131],
+  "summary": "{Al2O3} va {Al(OH)3} — amfoter birikmalar: kislotalar bilan tuz va suv, ishqorlar bilan aluminatlar hosil qiladi. Aluminiy qotishmalari yengil va korroziyaga chidamli bo‘lgani uchun aviatsiya, qurilish va elektrotexnikada keng ishlatiladi.",
+  "keyConcepts": [
+    "{Al2O3} — oq, o‘ta qiyin suyuqlanuvchi amfoter oksid; {Al(OH)3} — suvda erimaydigan oq, quyqasimon cho‘kma, qizdirilganda {Al2O3} va suvga parchalanadi.",
+    "{Al(OH)3} tuz eritmasiga ishqor qo‘shib olinadi; ishqor ortiqcha bo‘lsa cho‘kma erib, {Na[Al(OH)4]} hosil qiladi — bu {AlCl3} va {NaOH} eritmalarini ajratish usulidir.",
+    "Suvli eritmada kompleks anion {[Al(OH)4]^-}, suvsiz qotishmada metaaluminat ({NaAlO2}) hosil bo‘ladi.",
+    "Qimmatbaho toshlar: rubin — korund + {Cr^3+}, sapfir — korund + {Fe}, {Ti} ionlari; duraluminiy — {Al} + {Cu}, {Mg}, {Mn} qotishmasi, po‘latdek mustahkam, lekin 3 marta yengil."
+  ],
+  "tables": [
+    {
+      "id": "compounds",
+      "title": "Aluminiy oksidi va gidroksidi",
+      "columns": [
+        { "key": "sub", "label": "Birikma" },
+        { "key": "ox", "label": "O.d." },
+        { "key": "type", "label": "Xossa turi" },
+        { "key": "col", "label": "Rangi / holati" },
+        { "key": "eq", "label": "Muhim reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "oxAcid", "cells": { "sub": "{Al2O3} + kislota", "ox": "+3", "type": "amfoter (asosli xossa)", "col": "oq kukun", "eq": "oxA" },
+          "detail": { "concept": "Asosli oksid kabi kislotada eriydi: tuz va suv hosil bo‘ladi.", "reactionIds": ["oxA"], "pages": [129] } },
+        { "id": "oxBase", "cells": { "sub": "{Al2O3} + ishqor eritmasi", "ox": "+3", "type": "amfoter (kislotali xossa)", "col": "oq kukun", "eq": "oxB" },
+          "detail": { "concept": "Suvli ishqorda kompleks tuz, suvsiz ishqor bilan qotishtirilganda aluminat hosil bo‘ladi.", "reactionIds": ["oxB", "fuse"], "examTip": "Suvli eritma → {Na[Al(OH)4]}; qotishma → {NaAlO2}.", "pages": [129, 130] } },
+        { "id": "ppt", "cells": { "sub": "{Al(OH)3} olinishi", "ox": "+3", "type": "amfoter", "col": "oq quyqasimon cho‘kma", "eq": "ppt" },
+          "detail": { "concept": "{Al^3+} ioniga ishqor ta’sir ettirilganda oq cho‘kma tushadi.", "reactionIds": ["ppt"], "observation": "Oq quyqasimon cho‘kma", "pages": [130] } },
+        { "id": "hAcid", "cells": { "sub": "{Al(OH)3} + kislota", "ox": "+3", "type": "amfoter (asosli xossa)", "col": "cho‘kma eriydi", "eq": "hAc" } },
+        { "id": "hBase", "cells": { "sub": "{Al(OH)3} + ortiqcha ishqor", "ox": "+3", "type": "amfoter (kislotali xossa)", "col": "cho‘kma eriydi", "eq": "hBase" },
+          "detail": { "concept": "Ortiqcha ishqorda cho‘kma erib, rangsiz kompleks eritma hosil bo‘ladi. Shu sababli {AlCl3} ga {NaOH} ni oz-ozdan qo‘shganda avval cho‘kma tushadi, keyin eriydi.", "reactionIds": ["hBase"], "observation": "Avval oq cho‘kma, ishqor ortiqcha bo‘lganda cho‘kma erib ketadi", "examTip": "Reaktivsiz aniqlash: {AlCl3} ni {NaOH} ga quysangiz cho‘kma darrov erib ketadi; {NaOH} ni {AlCl3} ga quysangiz cho‘kma turib qoladi.", "pages": [130, 131] } },
+        { "id": "heat", "cells": { "sub": "{Al(OH)3} qizdirilganda", "ox": "+3", "type": "amfoter", "col": "{Al2O3} qoladi", "eq": "heat" } },
+        { "id": "fuse2", "cells": { "sub": "{Al(OH)3} + {KOH} (qotishma)", "ox": "+3", "type": "amfoter", "col": "aluminat", "eq": "fuse2" } }
+      ]
+    },
+    {
+      "id": "uses",
+      "title": "Ishlatilishi va muhim birikmalar",
+      "columns": [
+        { "key": "what", "label": "Modda" },
+        { "key": "comp", "label": "Tarkibi" },
+        { "key": "use", "label": "Ishlatilishi" }
+      ],
+      "rows": [
+        { "id": "dural", "cells": { "what": "Duraluminiy", "comp": "95 % {Al}, 4 % {Cu}, 0,5 % {Mg}, 0,5 % {Mn}", "use": "aviatsiya, raketa, kemasozlik, qurilish; po‘latdek mustahkam, 3 marta yengil" } },
+        { "id": "alum", "cells": { "what": "Achchiqtosh", "comp": "{KAl(SO4)2·12H2O}", "use": "gazlamalarni bo‘yash, tibbiyot, oshlash" } },
+        { "id": "sulfate", "cells": { "what": "Aluminiy sulfat", "comp": "{Al2(SO4)3}", "use": "qog‘oz va yelim ishlab chiqarish" } },
+        { "id": "chloride", "cells": { "what": "Suvsiz aluminiy xlorid", "comp": "{AlCl3}", "use": "organik sintezda katalizator" } },
+        { "id": "ruby", "cells": { "what": "Rubin / sapfir", "comp": "{Al2O3} + qo‘shimcha ionlar", "use": "zargarlik buyumlari, sun’iy kristallar" },
+          "detail": { "concept": "Qizil rubin — korundga oz miqdorda {Cr^3+} aralashgan; ko‘k sapfir — temir va titan ionlari bor korund.", "pages": [131] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "oxA": { "equation": "Al2O3 + 6HCl → 2AlCl3 + 3H2O" },
+    "oxB": { "equation": "Al2O3 + 2NaOH + 3H2O → 2Na[Al(OH)4]", "conditions": "suvli eritma" },
+    "fuse": { "equation": "Al2O3 + 2NaOH → 2NaAlO2 + H2O", "conditions": "qotishtirish" },
+    "ppt": { "equation": "Al^3+ + 3OH^- → Al(OH)3↓", "observation": "Oq quyqasimon cho‘kma" },
+    "hAc": { "equation": "Al(OH)3 + 3HCl → AlCl3 + 3H2O" },
+    "hBase": { "equation": "Al(OH)3 + NaOH → Na[Al(OH)4]", "observation": "Cho‘kma erib ketadi" },
+    "heat": { "equation": "2Al(OH)3 → Al2O3 + 3H2O", "conditions": "qizdirish" },
+    "fuse2": { "equation": "Al(OH)3 + KOH → KAlO2 + 2H2O", "conditions": "qotishtirish" }
+  },
+  "clarifications": [
+    { "text": "130-betdagi «Al(OH)3 + 2KOH = KAlO2 + 2H2O» tenglamasi tenglashmagan: bir mol {Al(OH)3} ga bir mol {KOH} to‘g‘ri keladi — Al(OH)₃ + KOH → KAlO₂ + 2H₂O (qotishtirishda), suvli eritmada esa K[Al(OH)₄] hosil bo‘ladi.", "source": "additionalVerifiedSource" },
+    { "text": "131-betda binafsha ametist korundga marganes ioni aralashganidan hosil bo‘ladi deyilgan; ametist aslida kvars ({SiO2}) ning binafsha navi, korund emas. Korund navlari: rubin (qizil) va sapfir (ko‘k va boshqa ranglar).", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s27-q1", "type": "Y1", "skill": "amfoter gidroksid", "difficulty": 2,
+      "stem": "{AlCl3} eritmasiga {NaOH} eritmasi tomchilab, so‘ng ortiqcha miqdorda qo‘shilganda nima kuzatiladi?",
+      "choices": ["avval oq cho‘kma tushadi, keyin u erib ketadi", "darrov yashil cho‘kma tushadi va erimaydi", "gaz ajraladi va eritma ko‘k bo‘ladi", "o‘zgarish bo‘lmaydi"], "answer": 0,
+      "solution": "Avval Al³⁺ + 3OH⁻ → Al(OH)₃↓. Ortiqcha ishqorda amfoter {Al(OH)3} eriydi: Al(OH)₃ + NaOH → Na[Al(OH)₄]." },
+    { "id": "g9-s27-q2", "type": "O1", "skill": "cho‘kma massasi", "difficulty": 2,
+      "stem": "26,7 g {AlCl3} eritmasiga uni to‘liq cho‘kmaga o‘tkazishga yetarli (aniq 3 ekvivalent) {NaOH} qo‘shildi. Necha gramm {Al(OH)3} cho‘kadi?",
+      "answer": 15.6, "tolerance": 0.05, "unit": "g",
+      "solution": "AlCl₃ + 3NaOH → Al(OH)₃↓ + 3NaCl. M(AlCl₃) = 27 + 106,5 = 133,5; n = 26,7 / 133,5 = 0,2 mol. M(Al(OH)₃) = 78; m = 0,2 · 78 = 15,6 g.",
+      "mistakes": "Ishqorni ortiqcha olish — u cho‘kmani eritib yuboradi." },
+    { "id": "g9-s27-q3", "type": "Y2", "skill": "amfoter gidroksid xossalari", "difficulty": 2,
+      "stem": "{Al(OH)3} ga ta’sir etuvchi omilni hosil bo‘ladigan mahsulot bilan moslashtiring.",
+      "left": ["xlorid kislota", "ortiqcha {NaOH} eritmasi", "qizdirish"],
+      "right": ["{Na[Al(OH)4]}", "{Al2O3} va {H2O}", "{AlCl3} va {H2O}"],
+      "answer": [2, 0, 1],
+      "solution": "Kislota bilan tuz va suv, ishqor eritmasi bilan kompleks tuz, qizdirilganda oksid va suv hosil bo‘ladi." },
+    { "id": "g9-s27-q4", "type": "O1", "skill": "termik parchalanish", "difficulty": 2,
+      "stem": "39 g {Al(OH)3} to‘liq qizdirib parchalansa, necha gramm {Al2O3} qoladi?",
+      "answer": 25.5, "tolerance": 0.05, "unit": "g",
+      "solution": "2Al(OH)₃ → Al₂O₃ + 3H₂O. n(Al(OH)₃) = 39 / 78 = 0,5 mol; n(Al₂O₃) = 0,25 mol; M(Al₂O₃) = 102; m = 0,25 · 102 = 25,5 g." },
+    { "id": "g9-s27-q5", "type": "O1", "skill": "kristallgidrat tarkibi", "difficulty": 2,
+      "stem": "Achchiqtosh {KAl(SO4)2·12H2O} tarkibida kristallizatsion suvning massa ulushi necha foiz?",
+      "answer": 45.57, "tolerance": 0.05, "unit": "%",
+      "solution": "M = 39 + 27 + 2·96 + 12·18 = 39 + 27 + 192 + 216 = 474. w(H₂O) = 216 / 474 = 0,4557 → 45,57 %." }
+  ]
+}

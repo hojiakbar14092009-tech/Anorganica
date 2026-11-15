@@ -1,0 +1,100 @@
+{
+  "id": "g9-s34",
+  "status": "seed-verified",
+  "pages": [158, 159, 160, 161],
+  "summary": "Temir — VIII B guruh d-elementi ({3d6 4s2}), +2 va +3 oksidlanish darajalarini namoyon qiladi. Yer qobig‘ida aluminiydan keyin eng ko‘p tarqalgan metall (≈4,2 %). Magnit xossali, bolg‘alanuvchan; faollik qatorida vodoroddan oldin turadi.",
+  "keyConcepts": [
+    "Fe: 4-davr, VIII B guruh, Z = 26, [Ar] {3d6 4s2}; birikmalarida +2 ({4s^2} elektronlari) va +3 ({3d} dan yana bitta elektron).",
+    "Temir kislorodda yonganda {Fe3O4} (temir kuyindisi) hosil bo‘ladi; xlor bilan {FeCl3} (+3), oltingugurt bilan {FeS} (+2).",
+    "Suyultirilgan kislotalardan vodorod ajratib {Fe(II)} tuzlarini beradi; konsentrlangan {H2SO4} va {HNO3} oddiy haroratda temirni passivlaydi.",
+    "Temir o‘zidan keyingi metallarni tuz eritmasidan siqib chiqaradi: {Fe} + {CuSO4} → {FeSO4} + {Cu}.",
+    "Nam havoda temir zanglaydi: zang — gidratlangan temir(III) oksid (qo‘ng‘ir-qizg‘ish); g‘ovak zang metallni himoya qilmaydi."
+  ],
+  "tables": [
+    {
+      "id": "minerals",
+      "title": "Temirning tabiiy birikmalari",
+      "columns": [
+        { "key": "name", "label": "Mineral" },
+        { "key": "f", "label": "Formulasi" },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "magnetite", "cells": { "name": "Magnetit (magnit temirtosh)", "f": "{Fe3O4}", "note": "tarkibida eng ko‘p temir (≈72 %)" } },
+        { "id": "hematite", "cells": { "name": "Gematit (qizil temirtosh)", "f": "{Fe2O3}", "note": "domna uchun asosiy ruda" } },
+        { "id": "limonite", "cells": { "name": "Limonit (qo‘ng‘ir temirtosh)", "f": "{Fe2O3·nH2O}", "note": "gidratlangan oksid" } },
+        { "id": "siderite", "cells": { "name": "Siderit (temir shpati)", "f": "{FeCO3}", "note": "karbonatli ruda" } },
+        { "id": "pyrite", "cells": { "name": "Pirit (temir kolchedani)", "f": "{FeS2}", "note": "sulfat kislota uchun xomashyo" } }
+      ]
+    },
+    {
+      "id": "fe-chem",
+      "title": "Temirning olinishi va kimyoviy xossalari",
+      "columns": [
+        { "key": "what", "label": "Reagent / jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "co", "cells": { "what": "{Fe2O3} + {CO}", "eq": "co", "note": "olinishi (oksidni qaytarish)" } },
+        { "id": "h2red", "cells": { "what": "{FeO} + {H2}", "eq": "h2red", "note": "olinishi" } },
+        { "id": "alumo", "cells": { "what": "{Fe3O4} + {Al}", "eq": "alumo", "note": "aluminotermiya" } },
+        { "id": "o2", "cells": { "what": "{O2} (yonish)", "eq": "o2", "note": "temir kuyindisi {Fe3O4}" } },
+        { "id": "cl2", "cells": { "what": "{Cl2}", "eq": "cl2", "note": "kuchli oksidlovchi — +3" } },
+        { "id": "s", "cells": { "what": "{S}", "eq": "s", "note": "kuchsiz oksidlovchi — +2" },
+          "detail": { "concept": "Kuchli oksidlovchilar ({Cl2}) temirni +3 gacha, kuchsizlari ({S}, {H^+}, {Cu^2+}) +2 gacha oksidlaydi.", "reactionIds": ["cl2", "s"], "examTip": "Fe + Cl₂ → FeCl₃, lekin Fe + HCl → FeCl₂.", "pages": [160, 161] } },
+        { "id": "steam", "cells": { "what": "Qizigan suv bug‘i", "eq": "steam", "note": "qaytar reaksiya" } },
+        { "id": "rust", "cells": { "what": "Nam havo", "eq": "rust", "note": "korroziya: zang" },
+          "detail": { "concept": "Darslikda zang {Fe(OH)3} deb yozilgan; amalda u gidratlangan {Fe2O3·nH2O} (qisman {FeO(OH)}) — soddalashtirilgan tenglama.", "reactionIds": ["rust"], "pages": [160, 161] } },
+        { "id": "hcl", "cells": { "what": "{HCl} / suyultirilgan {H2SO4}", "eq": "hcl", "note": "{Fe^2+} tuzi + {H2}" } },
+        { "id": "hno3c", "cells": { "what": "Konsentrlangan {HNO3}, {H2SO4} (sovuq)", "eq": "", "note": "passivlanadi — shu sababli temir sisternalarda tashiladi" } },
+        { "id": "hno3d", "cells": { "what": "Suyultirilgan {HNO3} (isitilgan)", "eq": "hno3d", "note": "{Fe^3+} va {NO}" } },
+        { "id": "cuso4", "cells": { "what": "{CuSO4} eritmasi", "eq": "cuso4", "note": "temir sirtida qizil mis o‘tiradi" },
+          "detail": { "concept": "Faolroq metall o‘zidan keyingi metallni tuz eritmasidan siqib chiqaradi; eritma ko‘kdan och yashilga o‘tadi.", "reactionIds": ["cuso4"], "observation": "Temir sirtida qizil mis qatlami, eritma rangi ko‘kdan och yashilga o‘zgaradi", "pages": [161] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "co": { "equation": "Fe2O3 + 3CO → 2Fe + 3CO2↑", "conditions": "yuqori harorat" },
+    "h2red": { "equation": "FeO + H2 → Fe + H2O", "conditions": "qizdirish" },
+    "alumo": { "equation": "3Fe3O4 + 8Al → 9Fe + 4Al2O3", "conditions": "aluminotermiya", "safety": "Juda yuqori harorat — faqat virtual namoyish." },
+    "o2": { "equation": "3Fe + 2O2 → Fe3O4", "conditions": "kislorodda yonish" },
+    "cl2": { "equation": "2Fe + 3Cl2 → 2FeCl3", "conditions": "qizdirish" },
+    "s": { "equation": "Fe + S → FeS", "conditions": "qizdirish" },
+    "steam": { "equation": "3Fe + 4H2O ⇄ Fe3O4 + 4H2", "conditions": "qizigan temir, suv bug‘i" },
+    "rust": { "equation": "4Fe + 6H2O + 3O2 → 4Fe(OH)3", "observation": "Qo‘ng‘ir-qizg‘ish zang qatlami" },
+    "hcl": { "equation": "Fe + 2HCl → FeCl2 + H2↑" },
+    "hno3d": { "equation": "Fe + 4HNO3 → Fe(NO3)3 + NO↑ + 2H2O", "conditions": "suyultirilgan, isitilgan" },
+    "cuso4": { "equation": "Fe + CuSO4 → FeSO4 + Cu↓", "observation": "Qizil mis cho‘kadi" }
+  },
+  "clarifications": [
+    { "text": "159-betdagi jadvalda temirning standart elektrod potensiali «0,44 V» deb ko‘rsatilgan; Fe²⁺/Fe uchun to‘g‘ri qiymat −0,44 V (manfiy, temir vodoroddan oldin turadi).", "source": "additionalVerifiedSource" },
+    { "text": "159-betda limonit formulasi «FeO2·nH2O» va «HFeO2·nH2O» deb bosilgan (xato); to‘g‘risi {Fe2O3·nH2O} (masalan, 2Fe₂O₃·3H₂O).", "source": "additionalVerifiedSource" },
+    { "text": "160–161-betlardagi «2Fe + N2 → 2FeN» va «5Fe + 12HNO3 → 5Fe(NO3)2 + N2 + 6H2O» (juda suyultirilgan) yozuvlari amaliy jihatdan aniq emas, shu sababli darsga kiritilmadi; juda suyultirilgan kislotada asosiy mahsulot odatda {NH4NO3}.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s34-q1", "type": "O1", "skill": "gaz hajmi hisobi", "difficulty": 2,
+      "stem": "8,4 g temir ortiqcha suyultirilgan sulfat kislota bilan reaksiyaga kirishganda n.sh.da necha litr vodorod ajraladi?",
+      "answer": 3.36, "tolerance": 0.02, "unit": "l",
+      "solution": "Fe + H₂SO₄ → FeSO₄ + H₂. n(Fe) = 8,4 / 56 = 0,15 mol; n(H₂) = 0,15 mol; V = 0,15 · 22,4 = 3,36 l." },
+    { "id": "g9-s34-q2", "type": "O1", "skill": "siqib chiqarish hisobi", "difficulty": 2,
+      "stem": "Temir plastinka {CuSO4} eritmasiga tushirildi. 5,6 g temir erib ketganda plastinka massasi necha grammga ortadi?",
+      "answer": 0.8, "tolerance": 0.01, "unit": "g",
+      "solution": "Fe + CuSO₄ → FeSO₄ + Cu. n(Fe) = 5,6 / 56 = 0,1 mol, shuncha mis o‘tiradi: m(Cu) = 0,1 · 64 = 6,4 g. Massa o‘zgarishi: 6,4 − 5,6 = +0,8 g.",
+      "mistakes": "Faqat o‘tirgan mis massasini (6,4 g) berish; plastinkadan erigan temir massasi ham hisobga olinadi." },
+    { "id": "g9-s34-q3", "type": "Y1", "skill": "passivlanish", "difficulty": 1,
+      "stem": "Quyidagi kislotalardan qaysi birini oddiy haroratda temir idishlarda saqlash mumkin?",
+      "choices": ["konsentrlangan {H2SO4}", "xlorid kislota", "suyultirilgan {H2SO4}", "sirka kislota eritmasi"], "answer": 0,
+      "solution": "Konsentrlangan sulfat (va nitrat) kislota temirni passivlaydi — yuzada himoya pardasi hosil bo‘ladi. Xlorid va suyultirilgan sulfat kislota temirni eritadi." },
+    { "id": "g9-s34-q4", "type": "O1", "skill": "massa ulushi", "difficulty": 2,
+      "stem": "Magnetit {Fe3O4} tarkibida temirning massa ulushi necha foiz?",
+      "answer": 72.41, "tolerance": 0.05, "unit": "%",
+      "solution": "M(Fe₃O₄) = 3·56 + 4·16 = 168 + 64 = 232. w(Fe) = 168 / 232 = 0,7241 → 72,41 %." },
+    { "id": "g9-s34-q5", "type": "Y2", "skill": "minerallar tarkibi", "difficulty": 1,
+      "stem": "Temir mineralini uning formulasi bilan moslashtiring.",
+      "left": ["magnetit", "gematit", "siderit", "pirit"],
+      "right": ["{FeCO3}", "{Fe3O4}", "{FeS2}", "{Fe2O3}"],
+      "answer": [1, 3, 0, 2],
+      "solution": "Magnetit — {Fe3O4}; gematit — {Fe2O3}; siderit — {FeCO3}; pirit — {FeS2}." }
+  ]
+}

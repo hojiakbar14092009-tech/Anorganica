@@ -1,0 +1,83 @@
+{
+  "id": "g9-s31",
+  "status": "seed-verified",
+  "pages": [145, 146],
+  "summary": "Xrom — VI B guruh d-elementi, valent konfiguratsiyasi {3d5 4s1} (4s dan 3d ga bitta elektron o‘tgan). Kumushsimon, qattiq, korroziyaga chidamli metall; barqaror oksidlanish darajalari +2, +3, +6. Sirtidagi oksid parda uni kimyoviy jihatdan barqaror qiladi.",
+  "keyConcepts": [
+    "Cr: 4-davr, VI B guruh, Z = 24; elektron qavatlar 2; 8; 13; 1; konfiguratsiya [Ar] {3d5 4s1} (yarim to‘lgan d-pog‘ona barqaror).",
+    "Asosiy ruda — xromit {FeO·Cr2O3} ({FeCr2O4}); toza xrom aluminotermiya bilan olinadi, xromit koks bilan qaytarilsa {Cr} + {Fe} aralashmasi (ferroxrom) hosil bo‘ladi.",
+    "Konsentrlangan {HNO3} xromni passivlaydi; suyultirilgan {HCl}, {H2SO4} bilan qizdirilganda vodorod ajraladi.",
+    "Ishlatilishi: xromlash (zanglashdan himoya), legirlangan po‘lat — 12 % dan ortiq {Cr} bo‘lsa po‘lat zanglamaydi."
+  ],
+  "tables": [
+    {
+      "id": "cr-chem",
+      "title": "Xromning olinishi va kimyoviy xossalari",
+      "columns": [
+        { "key": "what", "label": "Reagent / jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "alumo", "cells": { "what": "{Cr2O3} + {Al} (aluminotermiya)", "eq": "alumo", "note": "toza xrom olinadi" } },
+        { "id": "chromite", "cells": { "what": "Xromit + koks", "eq": "chromite", "note": "{Cr} va {Fe} qotishmasi" } },
+        { "id": "o2", "cells": { "what": "Kislorod (yuqori harorat)", "eq": "o2", "note": "yashil {Cr2O3}" } },
+        { "id": "cl2", "cells": { "what": "Xlor", "eq": "cl2", "note": "qizdirilganda" } },
+        { "id": "s", "cells": { "what": "Oltingugurt", "eq": "s", "note": "qizdirilganda" } },
+        { "id": "h2o", "cells": { "what": "Suv bug‘i (qizdirilgan xrom)", "eq": "h2o", "note": "vodorod ajraladi" } },
+        { "id": "hcl", "cells": { "what": "Suyultirilgan {HCl}", "eq": "hcl", "note": "{Cr^2+} (havosiz sharoitda ko‘k eritma); havoda tez {Cr^3+} ga oksidlanadi" },
+          "detail": { "concept": "Oksid parda tufayli xrom kislotalar bilan qiyin reaksiyaga kirishadi; qizdirish kerak. Hosil bo‘ladigan {CrCl2} havo kislorodi ta’sirida {CrCl3} ga aylanadi.", "reactionIds": ["hcl"], "pages": [146] } },
+        { "id": "h2so4", "cells": { "what": "Suyultirilgan {H2SO4} (qizdirish)", "eq": "h2so4", "note": "xrom(III) sulfat" } },
+        { "id": "hno3", "cells": { "what": "Konsentrlangan {HNO3}", "eq": "", "note": "reaksiya yo‘q — passivlanadi" } }
+      ]
+    },
+    {
+      "id": "uses",
+      "title": "Xromning ishlatilishi",
+      "columns": [
+        { "key": "area", "label": "Soha" },
+        { "key": "why", "label": "Sababi" }
+      ],
+      "rows": [
+        { "id": "plating", "cells": { "area": "Xromlash", "why": "korroziyaga chidamli oksid parda; buyum sirti himoyalanadi" } },
+        { "id": "steel", "cells": { "area": "Legirlangan po‘lat", "why": "12 % Cr li po‘lat zanglamaydi; tibbiy asboblar" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "alumo": { "equation": "Cr2O3 + 2Al → Al2O3 + 2Cr", "conditions": "aluminotermiya, qizdirish" },
+    "chromite": { "equation": "FeCr2O4 + 4C → Fe + 2Cr + 4CO↑", "conditions": "yuqori harorat" },
+    "o2": { "equation": "4Cr + 3O2 → 2Cr2O3", "conditions": "yuqori harorat, maydalangan xrom" },
+    "cl2": { "equation": "2Cr + 3Cl2 → 2CrCl3", "conditions": "qizdirish" },
+    "s": { "equation": "2Cr + 3S → Cr2S3", "conditions": "qizdirish" },
+    "h2o": { "equation": "2Cr + 3H2O → Cr2O3 + 3H2↑", "conditions": "qizdirilgan xrom, suv bug‘i" },
+    "hcl": { "equation": "Cr + 2HCl → CrCl2 + H2↑", "conditions": "suyultirilgan, qizdirish" },
+    "h2so4": { "equation": "2Cr + 3H2SO4 → Cr2(SO4)3 + 3H2↑", "conditions": "suyultirilgan, qizdirish" }
+  },
+  "clarifications": [
+    { "text": "145–146-betlarda «Cr + 2HCl → CrCl2 + H2» yozilgan va ortiqcha kislotada {CrCl3} hosil bo‘ladi deyilgan; aslida avval {CrCl2} (ko‘k) hosil bo‘ladi, u havo kislorodida tezda {Cr^3+} ga o‘tadi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s31-q1", "type": "Y1", "skill": "elektron konfiguratsiya", "difficulty": 1,
+      "stem": "Xrom atomining valent elektron konfiguratsiyasi qaysi?",
+      "choices": ["{3d5 4s1}", "{3d4 4s2}", "{3d6 4s0}", "{3d3 4s2}"], "answer": 0,
+      "solution": "Yarim to‘lgan d-pog‘ona barqaror bo‘lgani uchun 4s dan bitta elektron 3d ga o‘tadi: [Ar] 3d⁵4s¹." },
+    { "id": "g9-s31-q2", "type": "O1", "skill": "aluminotermiya hisobi", "difficulty": 2,
+      "stem": "30,4 g {Cr2O3} aluminotermiya yo‘li bilan to‘liq qaytarilsa, necha gramm xrom hosil bo‘ladi?",
+      "answer": 20.8, "tolerance": 0.05, "unit": "g",
+      "solution": "Cr₂O₃ + 2Al → Al₂O₃ + 2Cr. M(Cr₂O₃) = 152; n = 30,4 / 152 = 0,2 mol; n(Cr) = 0,4 mol; m = 0,4 · 52 = 20,8 g.",
+      "mistakes": "Oksiddagi xrom atomlari sonini (2) unutish." },
+    { "id": "g9-s31-q3", "type": "O1", "skill": "gaz hajmi hisobi", "difficulty": 2,
+      "stem": "10,4 g xrom suyultirilgan sulfat kislota bilan qizdirilganda ({Cr2(SO4)3} hosil bo‘ladi) n.sh.da necha litr vodorod ajraladi?",
+      "answer": 6.72, "tolerance": 0.02, "unit": "l",
+      "solution": "2Cr + 3H₂SO₄ → Cr₂(SO₄)₃ + 3H₂. n(Cr) = 10,4 / 52 = 0,2 mol; n(H₂) = 0,2 · 3/2 = 0,3 mol; V = 0,3 · 22,4 = 6,72 l." },
+    { "id": "g9-s31-q4", "type": "Y1", "skill": "passivlanish", "difficulty": 1,
+      "stem": "Xrom konsentrlangan nitrat kislotada nima uchun erimaydi?",
+      "choices": ["yuzasida zich oksid parda hosil bo‘ladi (passivlanadi)", "xrom vodoroddan keyin turadi", "xrom nitrat kislota bilan gaz hosil qilmaydi", "kislota xromni oksidlay olmaydi, chunki u kuchsiz"], "answer": 0,
+      "solution": "Konsentrlangan {HNO3} xrom yuzasida zich himoya pardasi hosil qiladi; metall passivlanadi. Xrom faollik qatorida vodoroddan oldin turadi." },
+    { "id": "g9-s31-q5", "type": "O1", "skill": "qotishma tarkibi", "difficulty": 1,
+      "stem": "Tarkibida 12 % xrom bo‘lgan zanglamaydigan po‘latning 500 kg massasida necha kg xrom bor?",
+      "answer": 60, "tolerance": 0.1, "unit": "kg",
+      "solution": "m(Cr) = 500 · 0,12 = 60 kg." }
+  ]
+}

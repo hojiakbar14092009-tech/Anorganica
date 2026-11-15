@@ -1,0 +1,124 @@
+{
+  "id": "g9-s30",
+  "status": "seed-verified",
+  "pages": [139, 140, 141, 142, 143, 144],
+  "summary": "II B guruh (Zn, Cd, Hg): tashqi qavatda 2 ta s-elektron ({(n−1)d10 ns2}), asosan +2. Rux amfoter metall; kadmiy gidroksidi asosli; simob — oddiy sharoitda suyuq, o‘ta zaharli, vodoroddan keyin turadigan metall.",
+  "keyConcepts": [
+    "Zn, Cd, Hg — qaytaruvchilar, qaytaruvchilik Zn dan Hg ga kamayadi (simob faollik qatorida vodoroddan keyin turadi).",
+    "Rux sanoatda aldamasini kuydirib, hosil bo‘lgan {ZnO} ni ko‘mir yoki {CO} bilan qaytarib olinadi.",
+    "Zn, {ZnO}, {Zn(OH)2} amfoter: kislotalar bilan tuz, ishqorlar bilan kompleks sinkat ({Na2[Zn(OH)4]}) hosil qiladi; {Cd(OH)2} asosli, {Hg(OH)2} beqaror va {HgO} ga parchalanadi.",
+    "Rux nitrat kislota bilan vodorod emas, kislota konsentratsiyasiga qarab {NO2}, {NO}, {N2O} yoki {NH4NO3} hosil qiladi.",
+    "Simob bug‘lari va uning birikmalari o‘ta zaharli."
+  ],
+  "tables": [
+    {
+      "id": "group",
+      "title": "II B guruh elementlari",
+      "columns": [
+        { "key": "el", "label": "Element" },
+        { "key": "conf", "label": "Konfiguratsiya" },
+        { "key": "mp", "label": "Suyuqlanish, °C" },
+        { "key": "dens", "label": "Zichlik, g/cm³" },
+        { "key": "min", "label": "Mineral" }
+      ],
+      "rows": [
+        { "id": "zn", "cells": { "el": "Rux {Zn} (30), 4-davr", "conf": "[Ar] {3d10 4s2}", "mp": "419,5", "dens": "7,13", "min": "{ZnS} rux aldamasi, {ZnCO3} rux shpati" } },
+        { "id": "cd", "cells": { "el": "Kadmiy {Cd} (48), 5-davr", "conf": "[Kr] {4d10 5s2}", "mp": "321", "dens": "8,65", "min": "{CdS} grinokit; mis rudalari bilan birga" } },
+        { "id": "hg", "cells": { "el": "Simob {Hg} (80), 6-davr", "conf": "[Xe] {4f14 5d10 6s2}", "mp": "−38,89", "dens": "13,546", "min": "{HgS} kinovar" },
+          "detail": { "concept": "Simob — yagona suyuq metall; bug‘lari zaharli. Simob birikmalari ham, bug‘i ham xavfli.", "pages": [140, 143] } }
+      ]
+    },
+    {
+      "id": "zn-chem",
+      "title": "Rux va uning birikmalari",
+      "columns": [
+        { "key": "what", "label": "Reagent / jarayon" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "roast", "cells": { "what": "{ZnS} kuydirish", "eq": "roast", "note": "rux olishning 1-bosqichi" } },
+        { "id": "redC", "cells": { "what": "{ZnO} + ko‘mir", "eq": "redC", "note": "qaytarilish" } },
+        { "id": "redCO", "cells": { "what": "{ZnO} + is gazi", "eq": "redCO", "note": "qaytarilish" } },
+        { "id": "hcl", "cells": { "what": "{Zn} + {HCl}", "eq": "hcl", "note": "vodorod ajraladi" } },
+        { "id": "h2so4", "cells": { "what": "{Zn} + konsentrlangan {H2SO4}", "eq": "h2so4", "note": "{SO2} ajraladi (yanada suyultirilganda {S}, {H2S})" } },
+        { "id": "hno3d", "cells": { "what": "{Zn} + suyultirilgan {HNO3}", "eq": "hno3d", "note": "{NO}; juda suyultirilganda {N2O} yoki {NH4NO3}" },
+          "detail": { "concept": "Rux nitrat kislotadan vodorod ajratmaydi. Konsentrlangan kislotada asosiy gaz — {NO2}.", "reactionIds": ["hno3d", "hno3c"], "pages": [141, 142] } },
+        { "id": "hno3c", "cells": { "what": "{Zn} + konsentrlangan {HNO3}", "eq": "hno3c", "note": "qo‘ng‘ir {NO2}" } },
+        { "id": "naoh", "cells": { "what": "{Zn} + {NaOH} eritmasi", "eq": "naoh", "note": "amfoter metall; kompleks sinkat" },
+          "detail": { "concept": "Amfoterlik isboti: rux ham kislota, ham ishqor bilan vodorod ajratadi.", "reactionIds": ["naoh", "hcl"], "pages": [142] } },
+        { "id": "znoAc", "cells": { "what": "{ZnO} + kislota", "eq": "znoAc", "note": "asosli xossa" } },
+        { "id": "znoBase", "cells": { "what": "{ZnO} + ishqor eritmasi", "eq": "znoBase", "note": "kislotali xossa" } },
+        { "id": "ppt", "cells": { "what": "{Zn^2+} + ishqor", "eq": "ppt", "note": "oq amfoter cho‘kma" } },
+        { "id": "znohBase", "cells": { "what": "{Zn(OH)2} + ortiqcha ishqor", "eq": "znohBase", "note": "cho‘kma erib ketadi" } },
+        { "id": "znohAc", "cells": { "what": "{Zn(OH)2} + sulfat kislota", "eq": "znohAc", "note": "rux kuporosi {ZnSO4·7H2O} hosil bo‘ladi" } }
+      ]
+    },
+    {
+      "id": "cd-hg",
+      "title": "Kadmiy va simob birikmalari",
+      "columns": [
+        { "key": "what", "label": "Reaksiya sharoiti" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "cdoh", "cells": { "what": "{Cd^2+} + ishqor", "eq": "cdoh", "note": "oq {Cd(OH)2}; asosli xossali, ishqorda erimaydi" } },
+        { "id": "hgo", "cells": { "what": "{Hg(NO3)2} + {NaOH}", "eq": "hgoPpt", "note": "{Hg(OH)2} beqaror, darrov {HgO} (sariq cho‘kma) hosil bo‘ladi" } },
+        { "id": "hgO2", "cells": { "what": "{Hg} + {O2} (≈350 °C)", "eq": "hgO2", "note": "qizil {HgO}; qizdirilganda parchalanadi" },
+          "detail": { "concept": "Simob kislorod bilan qaynash haroratiga yaqin haroratda reaksiyaga kirishadi; {HgO} yanada qizdirilganda yana simob va kislorodga ajraladi.", "reactionIds": ["hgO2", "hgoDec"], "pages": [143] } },
+        { "id": "hgoDec", "cells": { "what": "{HgO} qizdirilganda", "eq": "hgoDec", "note": "simob va kislorod" } },
+        { "id": "hgHno3", "cells": { "what": "{Hg} + konsentrlangan {HNO3}", "eq": "hgHno3", "note": "qo‘ng‘ir {NO2}, simob(II) nitrat" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "roast": { "equation": "2ZnS + 3O2 → 2ZnO + 2SO2↑", "conditions": "kuydirish" },
+    "redC": { "equation": "ZnO + C → Zn + CO↑", "conditions": "yuqori harorat" },
+    "redCO": { "equation": "ZnO + CO → Zn + CO2↑", "conditions": "yuqori harorat" },
+    "hcl": { "equation": "Zn + 2HCl → ZnCl2 + H2↑" },
+    "h2so4": { "equation": "Zn + 2H2SO4 → ZnSO4 + SO2↑ + 2H2O", "conditions": "konsentrlangan" },
+    "hno3d": { "equation": "3Zn + 8HNO3 → 3Zn(NO3)2 + 2NO↑ + 4H2O", "conditions": "suyultirilgan" },
+    "hno3c": { "equation": "Zn + 4HNO3 → Zn(NO3)2 + 2NO2↑ + 2H2O", "conditions": "konsentrlangan" },
+    "naoh": { "equation": "Zn + 2NaOH + 2H2O → Na2[Zn(OH)4] + H2↑" },
+    "znoAc": { "equation": "ZnO + H2SO4 → ZnSO4 + H2O" },
+    "znoBase": { "equation": "ZnO + 2KOH + H2O → K2[Zn(OH)4]" },
+    "ppt": { "equation": "Zn^2+ + 2OH^- → Zn(OH)2↓", "observation": "Oq cho‘kma" },
+    "znohBase": { "equation": "Zn(OH)2 + 2NaOH → Na2[Zn(OH)4]", "observation": "Cho‘kma erib ketadi" },
+    "znohAc": { "equation": "Zn(OH)2 + H2SO4 → ZnSO4 + 2H2O" },
+    "cdoh": { "equation": "Cd^2+ + 2OH^- → Cd(OH)2↓" },
+    "hgoPpt": { "equation": "Hg(NO3)2 + 2NaOH → HgO↓ + 2NaNO3 + H2O", "observation": "Sariq HgO cho‘kmasi", "safety": "Simob birikmalari o‘ta zaharli — faqat virtual namoyish." },
+    "hgO2": { "equation": "2Hg + O2 → 2HgO", "conditions": "≈350 °C", "safety": "Simob bug‘i o‘ta zaharli — faqat virtual namoyish." },
+    "hgoDec": { "equation": "2HgO → 2Hg + O2↑", "conditions": "qizdirish", "safety": "Simob bug‘i o‘ta zaharli — faqat virtual namoyish." },
+    "hgHno3": { "equation": "Hg + 4HNO3 → Hg(NO3)2 + 2NO2↑ + 2H2O", "conditions": "konsentrlangan", "safety": "Simob va uning tuzlari o‘ta zaharli — faqat virtual namoyish." }
+  },
+  "clarifications": [
+    { "text": "140-betda «rux guruhchasida tartib raqami ortishi bilan metallik xossasi kuchayadi» deyilgan; bu 139-betdagi «qaytaruvchilik ruxdan simobga kamayadi» bilan ziddir. To‘g‘risi: Zn → Cd → Hg qatorida faollik (qaytaruvchilik) kamayadi, simob faollik qatorida vodoroddan keyin turadi.", "source": "additionalVerifiedSource" },
+    { "text": "141-betda {3Zn + 8HNO3 → 3Zn(NO3)2 + 2NO + 4H2O} tenglamasi «konsentrlangan» deb belgilangan; bu suyultirilgan kislota uchun. Konsentrlangan {HNO3} bilan: Zn + 4HNO₃ → Zn(NO₃)₂ + 2NO₂ + 2H₂O.", "source": "additionalVerifiedSource" },
+    { "text": "143-betda {Hg + 4HNO3 → Hg(NO3)2 + 2NO2 + 2H2O} «suyultirilgan» kislota bilan yozilgan; {NO2} ajralishi konsentrlangan kislotaga xos (suyultirilgan sovuq kislotada asosan {Hg2(NO3)2} hosil bo‘ladi). Shuningdek {Hg2O} (qora) barqaror birikma sifatida tan olinmagan, shu sababli darsga kiritilmadi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s30-q1", "type": "O1", "skill": "gaz hajmi hisobi", "difficulty": 2,
+      "stem": "13 g rux ortiqcha {NaOH} eritmasi bilan reaksiyaga kirishganda n.sh.da necha litr vodorod ajraladi?",
+      "answer": 4.48, "tolerance": 0.02, "unit": "l",
+      "solution": "Zn + 2NaOH + 2H₂O → Na₂[Zn(OH)₄] + H₂. n(Zn) = 13 / 65 = 0,2 mol; n(H₂) = 0,2 mol; V = 0,2 · 22,4 = 4,48 l." },
+    { "id": "g9-s30-q2", "type": "O1", "skill": "kuydirish hisobi", "difficulty": 2,
+      "stem": "48,5 g {ZnS} to‘liq kuydirilganda necha gramm {ZnO} hosil bo‘ladi?",
+      "answer": 40.5, "tolerance": 0.05, "unit": "g",
+      "solution": "2ZnS + 3O₂ → 2ZnO + 2SO₂. M(ZnS) = 97; n = 48,5 / 97 = 0,5 mol; n(ZnO) = 0,5 mol; M(ZnO) = 81; m = 0,5 · 81 = 40,5 g." },
+    { "id": "g9-s30-q3", "type": "Y2", "skill": "tabiiy birikmalar", "difficulty": 1,
+      "stem": "Tabiiy birikma formulasini uning nomi bilan moslashtiring.",
+      "left": ["{ZnS}", "{HgS}", "{CdS}", "{ZnCO3}"],
+      "right": ["kinovar", "grinokit", "rux shpati", "rux aldamasi"],
+      "answer": [3, 0, 1, 2],
+      "solution": "{ZnS} — rux aldamasi; {HgS} — kinovar; {CdS} — grinokit; {ZnCO3} — rux shpati." },
+    { "id": "g9-s30-q4", "type": "Y1", "skill": "amfoterlik", "difficulty": 2,
+      "stem": "Quyidagi gidroksidlardan qaysi biri amfoter xossaga ega?",
+      "choices": ["{Zn(OH)2}", "{Cd(OH)2}", "{Ca(OH)2}", "{Cu(OH)2}"], "answer": 0,
+      "solution": "{Zn(OH)2} kislotalar va ishqorlar bilan reaksiyaga kirishadi. {Cd(OH)2} asosan asosli, {Ca(OH)2} kuchli asos." },
+    { "id": "g9-s30-q5", "type": "Y1", "skill": "simob xavfsizligi", "difficulty": 1,
+      "stem": "Simob bilan ishlash qoidasi haqida qaysi gap to‘g‘ri?",
+      "choices": ["Bug‘lari o‘ta zaharli, shuning uchun to‘kilgan simob darhol yig‘ib olinadi va xona shamollatiladi", "Simob zararsiz, uni yalang qo‘l bilan terish mumkin", "Simob suvda yaxshi eriydi", "Simob nitrat kislotada erimaydi"], "answer": 0,
+      "solution": "Simob bug‘lari va birikmalari kuchli zaharli; ular bilan faqat himoya choralarini ko‘rib ishlanadi. Simob nitrat kislotada eriydi." }
+  ]
+}

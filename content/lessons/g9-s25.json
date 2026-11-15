@@ -1,0 +1,84 @@
+{
+  "id": "g9-s25",
+  "status": "seed-verified",
+  "pages": [121, 122, 123, 124],
+  "summary": "Aluminiy — III A guruhning p-elementi ({3s2 3p1}), barcha barqaror birikmalarida +3. Tabiatda eng ko‘p tarqalgan metall, erkin holda uchramaydi; sanoatda {Al2O3} ning kriolitdagi suyuqlanmasi elektrolizidan olinadi.",
+  "keyConcepts": [
+    "Davriy jadvalda: 3-davr, III A guruh, tartib raqami 13; elektron qavatlari 2; 8; 3, valent konfiguratsiya {3s2 3p1}; oksidlanish darajasi faqat +3.",
+    "Yer qobig‘ida massa bo‘yicha taxminan 7,1 %; asosiy qismi alumosilikatlar (dala shpati, slyuda) va ularning nurashidan hosil bo‘lgan gillar (kaolin) shaklida.",
+    "Sanoat usuli — elektroliz: erituvchi kriolit {Na3AlF6}, harorat taxminan 800–1000 °C; katodda {Al} ajraladi, ko‘mir anodda kislorod ajraladi va anod yonib yemiriladi.",
+    "Aluminiy olish juda ko‘p elektr energiya talab qiladi (1 t uchun 13–17 ming kVt·soat), shuning uchun korxonalar elektr energiyasi arzon joylarda quriladi."
+  ],
+  "tables": [
+    {
+      "id": "minerals",
+      "title": "Aluminiyning tabiiy birikmalari",
+      "columns": [
+        { "key": "name", "label": "Mineral / tog‘ jinsi" },
+        { "key": "f", "label": "Tarkibi" },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "corundum", "cells": { "name": "Korund", "f": "{Al2O3}", "note": "juda qattiq; rubin va sapfir — qo‘shimchali korund" } },
+        { "id": "bauxite", "cells": { "name": "Boksit", "f": "{Al2O3·nH2O}", "note": "aluminiy olishning asosiy xomashyosi; qo‘shimcha — temir, kremniy oksidlari" },
+          "detail": { "concept": "Boksit tozalanib sof {Al2O3} (glinozem) olinadi, keyin u elektrolizga beriladi.", "pages": [122] } },
+        { "id": "kaolin", "cells": { "name": "Kaolin (oq gil)", "f": "{Al2O3·2SiO2·2H2O}", "note": "dala shpati nurashidan hosil bo‘ladi" } },
+        { "id": "feldspar", "cells": { "name": "Dala shpati", "f": "{K2O·Al2O3·6SiO2}", "note": "alumosilikat; Yer qobig‘ida eng ko‘p tarqalgan minerallardan" } },
+        { "id": "nepheline", "cells": { "name": "Nefelin", "f": "{(Na,K)2O·Al2O3·2SiO2}", "note": "aluminiy olinadigan xomashyolardan" } },
+        { "id": "cryolite", "cells": { "name": "Kriolit", "f": "{Na3AlF6}", "note": "elektrolizda {Al2O3} ni eritadigan suyuqlanma" } }
+      ]
+    },
+    {
+      "id": "electrolysis",
+      "title": "Sanoatda olinishi: {Al2O3} suyuqlanmasi elektrolizi",
+      "columns": [
+        { "key": "where", "label": "Qayerda" },
+        { "key": "eq", "label": "Jarayon", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "cathode", "cells": { "where": "Katod (−): ko‘mir bilan qoplangan po‘lat vanna", "eq": "cat", "note": "suyuq aluminiy vanna tubida to‘planadi, vakuum yordamida olinadi" } },
+        { "id": "anode", "cells": { "where": "Anod (+): ko‘mir plastinkalar", "eq": "an", "note": "kislorod ionlari oksidlanadi" } },
+        { "id": "burn", "cells": { "where": "Anod yonishi", "eq": "burn", "note": "ko‘mir anod yemiriladi, shuning uchun vaqti-vaqti bilan almashtiriladi" },
+          "detail": { "concept": "Ajralayotgan kislorod ko‘mir anod bilan reaksiyaga kirishadi, shu sababli anod sarflanadi. Darslikda mahsulot {CO} deb yozilgan; amalda asosan {CO2} (qisman {CO}) hosil bo‘ladi.", "reactionIds": ["burn"], "pages": [123] } },
+        { "id": "total", "cells": { "where": "Umumiy tenglama", "eq": "total", "note": "kriolit erituvchi, 800–1000 °C" },
+          "detail": { "concept": "Aluminiy faol metall (kuchlanishlar qatorida {Al} gacha), shuning uchun uni eritmadan emas, faqat suvsiz suyuqlanmadan olish mumkin.", "reactionIds": ["total"], "examTip": "Na, Mg, Ca, Al — faqat suyuqlanma elektrolizi bilan olinadi.", "pages": [123, 124] } }
+      ]
+    }
+  ],
+  "reactions": {
+    "cat": { "equation": "Al^3+ + 3e^- → Al", "conditions": "katod, suyuqlanma" },
+    "an": { "equation": "2O^2- → O2↑ + 4e^-", "conditions": "anod" },
+    "burn": { "equation": "C + O2 → CO2↑", "conditions": "yuqori harorat, anod yonishi" },
+    "total": { "equation": "2Al2O3 → 4Al + 3O2↑", "conditions": "kriolitdagi suyuqlanma, elektroliz, 800–1000 °C" }
+  },
+  "clarifications": [
+    { "text": "123-betda aluminiy olish usuli «elektrotermik» deb atalgan; aslida bu elektroliz (Xoll–Eru usuli): oksid suyuqlanmasidan elektr toki o‘tkazilib metall qaytariladi.", "source": "additionalVerifiedSource" },
+    { "text": "123-betda anod yonishi mahsuloti faqat {CO} deb yozilgan; anodda asosan {CO2} (qisman {CO}) hosil bo‘ladi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s25-q1", "type": "Y1", "skill": "aluminiy olinishi", "difficulty": 1,
+      "stem": "Sanoatda aluminiy qanday usul bilan olinadi?",
+      "choices": ["{Al2O3} ning kriolitdagi suyuqlanmasini elektroliz qilib", "{Al2O3} ni ko‘mir bilan qaytarib", "{AlCl3} eritmasini elektroliz qilib", "{Al2O3} ni vodorod bilan qaytarib"], "answer": 0,
+      "solution": "Aluminiy faol metall, ko‘mir bilan qaytarilmaydi, eritma elektrolizida katodda vodorod ajraladi. Shuning uchun {Al2O3} kriolitda eritilib, suyuqlanma elektroliz qilinadi." },
+    { "id": "g9-s25-q2", "type": "O1", "skill": "elektroliz hisobi", "difficulty": 2,
+      "stem": "102 kg sof {Al2O3} ni to‘liq elektroliz qilganda nazariy necha kg aluminiy olinadi?",
+      "answer": 54, "tolerance": 0.1, "unit": "kg",
+      "solution": "2Al₂O₃ → 4Al + 3O₂. M(Al₂O₃) = 2·27 + 3·16 = 102 kg/kmol, shuning uchun 102 kg = 1 kmol. n(Al) = 2·1 = 2 kmol; m(Al) = 2 · 27 = 54 kg.",
+      "mistakes": "Oksiddagi aluminiy sonini (2 atom) hisobga olmaslik: 1 mol {Al2O3} dan 2 mol {Al} chiqadi." },
+    { "id": "g9-s25-q3", "type": "Y2", "skill": "minerallar tarkibi", "difficulty": 1,
+      "stem": "Aluminiy mineralini uning tarkibi bilan moslashtiring.",
+      "left": ["Korund", "Kriolit", "Kaolin", "Dala shpati"],
+      "right": ["{Na3AlF6}", "{K2O·Al2O3·6SiO2}", "{Al2O3}", "{Al2O3·2SiO2·2H2O}"],
+      "answer": [2, 0, 3, 1],
+      "solution": "Korund — {Al2O3}; kriolit — {Na3AlF6}; kaolin — {Al2O3·2SiO2·2H2O}; dala shpati — {K2O·Al2O3·6SiO2}." },
+    { "id": "g9-s25-q4", "type": "O1", "skill": "massa ulushi", "difficulty": 2,
+      "stem": "Kriolit {Na3AlF6} tarkibida aluminiyning massa ulushi necha foiz?",
+      "answer": 12.86, "tolerance": 0.05, "unit": "%",
+      "solution": "M(Na₃AlF₆) = 3·23 + 27 + 6·19 = 69 + 27 + 114 = 210. w(Al) = 27 / 210 = 0,1286 → 12,86 %." },
+    { "id": "g9-s25-q5", "type": "Y1", "skill": "elektroliz jarayoni", "difficulty": 2,
+      "stem": "Aluminiy olinadigan elektrolizyorda ko‘mir anod nima uchun vaqti-vaqti bilan almashtiriladi?",
+      "choices": ["Anodda ajraluvchi kislorod ko‘mir bilan reaksiyaga kirishib uni yemiradi", "Anodda aluminiy cho‘kib qoladi", "Anod kriolitda erib ketadi", "Anodda ftor ajralib, uni qoplaydi"], "answer": 0,
+      "solution": "Anodda {O^2-} ionlari oksidlanib {O2} hosil qiladi; u qizigan ko‘mir bilan {CO2} ({CO}) ga aylanib anodni sarflaydi." }
+  ]
+}

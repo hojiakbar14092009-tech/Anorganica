@@ -1,0 +1,105 @@
+{
+  "id": "g9-s35",
+  "status": "seed-verified",
+  "pages": [162, 163, 164, 165],
+  "summary": "Temir +2 ({FeO}, {Fe(OH)2}, {FeCl2}), +3 ({Fe2O3}, {Fe(OH)3}, {FeCl3}) va aralash ({Fe3O4}) birikmalar hosil qiladi. {Fe^2+} qaytaruvchi, {Fe^3+} oksidlovchi; ular sifat reaksiyalari bilan farqlanadi: {Fe^2+} — {K3[Fe(CN)6]} bilan, {Fe^3+} — {K4[Fe(CN)6]} va rodanid ({SCN^-}) bilan.",
+  "keyConcepts": [
+    "{Fe(OH)2} oq (havoda tez yashil-kulrang tusga kirib, so‘ng qo‘ng‘ir {Fe(OH)3} ga o‘tadi); {Fe(OH)3} — qizil-qo‘ng‘ir cho‘kma.",
+    "{Fe^2+} ning reaktivi — qizil qon tuzi {K3[Fe(CN)6]}: to‘q ko‘k cho‘kma (turnbul ko‘ki).",
+    "{Fe^3+} ning reaktivlari — sariq qon tuzi {K4[Fe(CN)6]}: to‘q ko‘k cho‘kma (berlin lazuri); {KSCN}: qon-qizil {Fe(SCN)3} eritmasi.",
+    "{Fe(II)} → {Fe(III)} oksidlash: {Cl2}, {KMnO4}, {K2Cr2O7} (kislotali muhit); {Fe(III)} → {Fe(II)} qaytarish: temir metalli (2{FeCl3} + {Fe} → 3{FeCl2}).",
+    "Gemoglobinning har bir molekulasida 4 ta {Fe^2+} ioni bor; temir yetishmasa kamqonlik (o‘simliklarda xloroz) kelib chiqadi."
+  ],
+  "tables": [
+    {
+      "id": "compounds",
+      "title": "Temir birikmalari",
+      "columns": [
+        { "key": "sub", "label": "Birikma" },
+        { "key": "ox", "label": "O.d." },
+        { "key": "type", "label": "Xossa turi" },
+        { "key": "col", "label": "Rangi" },
+        { "key": "eq", "label": "Muhim reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "feoh2", "cells": { "sub": "{Fe(OH)2}", "ox": "+2", "type": "asosli", "col": "oq (havoda yashilsimon)", "eq": "feoh2" },
+          "detail": { "concept": "Toza {Fe(OH)2} oq cho‘kma; havo kislorodi ta’sirida tezda yashilsimon-kulrang, so‘ng qo‘ng‘ir {Fe(OH)3} ga aylanadi.", "reactionIds": ["feoh2", "oxid"], "observation": "Oq cho‘kma yashilsimon tusga, keyin qizil-qo‘ng‘irga o‘tadi", "pages": [162, 163] } },
+        { "id": "oxid", "cells": { "sub": "{Fe(OH)2} havoda", "ox": "+2 → +3", "type": "qaytaruvchi", "col": "qizil-qo‘ng‘ir", "eq": "oxid" } },
+        { "id": "feoh3", "cells": { "sub": "{Fe(OH)3}", "ox": "+3", "type": "asosli (kuchsiz amfoter xossa)", "col": "qizil-qo‘ng‘ir cho‘kma", "eq": "feoh3" },
+          "detail": { "concept": "{Fe^3+} ga ishqor ta’sir ettirib olinadi; qizdirilganda {Fe2O3} ga parchalanadi.", "reactionIds": ["feoh3", "fe2o3"], "observation": "Qizil-qo‘ng‘ir cho‘kma", "pages": [163] } },
+        { "id": "fe2o3", "cells": { "sub": "{Fe(OH)3} qizdirilganda", "ox": "+3", "type": "oksid hosil bo‘ladi", "col": "{Fe2O3} qizil-qo‘ng‘ir kukun", "eq": "fe2o3" } },
+        { "id": "fe2o3ac", "cells": { "sub": "{Fe2O3} + {HCl}", "ox": "+3", "type": "asosli oksid", "col": "sariq-qo‘ng‘ir eritma", "eq": "fe2o3Ac" } },
+        { "id": "fecl2", "cells": { "sub": "{FeCl2} olinishi", "ox": "+2", "type": "tuz", "col": "och yashil eritma", "eq": "fecl2" } },
+        { "id": "red", "cells": { "sub": "{FeCl3} + {Fe}", "ox": "+3 → +2", "type": "oksidlovchi", "col": "sariq-qo‘ng‘irdan och yashilga", "eq": "red" } },
+        { "id": "fecl3", "cells": { "sub": "{FeCl3} olinishi", "ox": "+3", "type": "tuz", "col": "sariq-qo‘ng‘ir eritma", "eq": "fecl3" } },
+        { "id": "feso4", "cells": { "sub": "{FeSO4} → {Fe2(SO4)3}", "ox": "+2 → +3", "type": "qaytaruvchi", "col": "och yashil → sariq-qo‘ng‘ir", "eq": "perm" },
+          "detail": { "concept": "Kislotali muhitda {KMnO4} ({Mn^+7} → {Mn^+2}) {Fe^2+} ni {Fe^3+} ga oksidlaydi; binafsha rang yo‘qoladi.", "reactionIds": ["perm"], "observation": "Binafsha eritma rangsizlanadi, eritma sarg‘ayadi", "pages": [161, 162] } }
+      ]
+    },
+    {
+      "id": "qual",
+      "title": "{Fe^2+} va {Fe^3+} ga sifat reaksiyalari",
+      "columns": [
+        { "key": "ion", "label": "Ion" },
+        { "key": "reag", "label": "Reaktiv" },
+        { "key": "obs", "label": "Kuzatish" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true }
+      ],
+      "rows": [
+        { "id": "fe2", "cells": { "ion": "{Fe^2+}", "reag": "{K3[Fe(CN)6]} (qizil qon tuzi)", "obs": "to‘q ko‘k cho‘kma", "eq": "q2" },
+          "detail": { "concept": "Geksatsianoferrat(III) kaliy {Fe^2+} bilan erimaydigan to‘q ko‘k kompleks hosil qiladi (turnbul ko‘ki).", "reactionIds": ["q2"], "observation": "To‘q ko‘k cho‘kma", "examTip": "{Fe^2+} → {K3[Fe(CN)6]}; {Fe^3+} → {K4[Fe(CN)6]} yoki {SCN^-}.", "pages": [162] } },
+        { "id": "fe3a", "cells": { "ion": "{Fe^3+}", "reag": "{K4[Fe(CN)6]} (sariq qon tuzi)", "obs": "to‘q ko‘k cho‘kma", "eq": "q3a" },
+          "detail": { "concept": "Berlin lazuri — erimaydigan to‘q ko‘k cho‘kma; amalda ikkala reaksiyada ham bir xil tarkibli {KFe[Fe(CN)6]} hosil bo‘ladi.", "reactionIds": ["q3a"], "observation": "To‘q ko‘k cho‘kma", "pages": [163] } },
+        { "id": "fe3b", "cells": { "ion": "{Fe^3+}", "reag": "{KSCN} yoki {NH4SCN}", "obs": "qon-qizil eritma", "eq": "q3b" },
+          "detail": { "concept": "Rodanid-ion {Fe^3+} bilan qizil kompleks hosil qiladi; sezgir va tez usul.", "reactionIds": ["q3b"], "observation": "Qon-qizil rang paydo bo‘ladi", "pages": [163] } },
+        { "id": "oh2", "cells": { "ion": "{Fe^2+}", "reag": "{NaOH}", "obs": "oq (yashilsimon) cho‘kma", "eq": "ohFe2" } },
+        { "id": "oh3", "cells": { "ion": "{Fe^3+}", "reag": "{NaOH}", "obs": "qizil-qo‘ng‘ir cho‘kma", "eq": "ohFe3" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "feoh2": { "equation": "Fe^2+ + 2OH^- → Fe(OH)2↓", "observation": "Oq cho‘kma, havoda yashilsimon" },
+    "oxid": { "equation": "4Fe(OH)2 + O2 + 2H2O → 4Fe(OH)3", "observation": "Cho‘kma qizil-qo‘ng‘irga o‘tadi" },
+    "feoh3": { "equation": "Fe^3+ + 3OH^- → Fe(OH)3↓", "observation": "Qizil-qo‘ng‘ir cho‘kma" },
+    "fe2o3": { "equation": "2Fe(OH)3 → Fe2O3 + 3H2O", "conditions": "qizdirish" },
+    "fe2o3Ac": { "equation": "Fe2O3 + 6HCl → 2FeCl3 + 3H2O" },
+    "fecl2": { "equation": "Fe + 2HCl → FeCl2 + H2↑" },
+    "red": { "equation": "2FeCl3 + Fe → 3FeCl2" },
+    "fecl3": { "equation": "2Fe + 3Cl2 → 2FeCl3", "conditions": "qizdirish" },
+    "perm": { "equation": "10FeSO4 + 2KMnO4 + 8H2SO4 → 5Fe2(SO4)3 + K2SO4 + 2MnSO4 + 8H2O", "observation": "Binafsha rang yo‘qoladi" },
+    "q2": { "equation": "FeCl2 + K3[Fe(CN)6] → KFe[Fe(CN)6]↓ + 2KCl", "observation": "To‘q ko‘k cho‘kma" },
+    "q3a": { "equation": "FeCl3 + K4[Fe(CN)6] → KFe[Fe(CN)6]↓ + 3KCl", "observation": "To‘q ko‘k cho‘kma" },
+    "q3b": { "equation": "FeCl3 + 3KSCN → Fe(SCN)3 + 3KCl", "observation": "Qon-qizil eritma" },
+    "ohFe2": { "equation": "FeCl2 + 2NaOH → Fe(OH)2↓ + 2NaCl", "observation": "Oq cho‘kma, havoda yashilsimon tusga kiradi" },
+    "ohFe3": { "equation": "FeCl3 + 3NaOH → Fe(OH)3↓ + 3NaCl", "observation": "Qizil-qo‘ng‘ir cho‘kma" }
+  },
+  "clarifications": [
+    { "text": "163-betda {Fe(OH)2} «och yashil cho‘kma» deb yozilgan; toza {Fe(OH)2} oq, havoda oksidlanib avval yashilsimon-kulrang, so‘ng qo‘ng‘ir {Fe(OH)3} ga o‘tadi.", "source": "additionalVerifiedSource" },
+    { "text": "162–163-betlarda turnbul ko‘ki va berlin lazuri turli moddalar sifatida berilgan, lekin ikkala tenglamada ham mahsulot {KFe[Fe(CN)6]}: bu ikki reaksiya bir xil to‘q ko‘k birikmaga olib keladi.", "source": "additionalVerifiedSource" }
+  ],
+  "questions": [
+    { "id": "g9-s35-q1", "type": "Y1", "skill": "sifat reaksiyasi", "difficulty": 1,
+      "stem": "{Fe^3+} ioni rodanid-ion bilan qanday rang beradi?",
+      "choices": ["qon-qizil", "to‘q ko‘k cho‘kma", "yashil", "rangsiz"], "answer": 0,
+      "solution": "Fe³⁺ + 3SCN⁻ → Fe(SCN)₃ — qon-qizil eritma." },
+    { "id": "g9-s35-q2", "type": "Y2", "skill": "temir ionlari reaksiyalari", "difficulty": 2,
+      "stem": "Ion va reaktivning kuzatiladigan natijasini moslashtiring.",
+      "left": ["{Fe^3+} + {SCN^-}", "{Fe^2+} + {NaOH} (havosiz)", "{Fe^3+} + {NaOH}", "{Fe^2+} + {K3[Fe(CN)6]}"],
+      "right": ["qizil-qo‘ng‘ir cho‘kma", "qon-qizil eritma", "to‘q ko‘k cho‘kma", "oq cho‘kma"],
+      "answer": [1, 3, 0, 2],
+      "solution": "{Fe^3+} + {SCN^-} — qon-qizil eritma; {Fe^2+} + {NaOH} — oq {Fe(OH)2}; {Fe^3+} + {NaOH} — qizil-qo‘ng‘ir {Fe(OH)3}; {Fe^2+} + {K3[Fe(CN)6]} — to‘q ko‘k cho‘kma." },
+    { "id": "g9-s35-q3", "type": "O1", "skill": "cho‘kma massasi", "difficulty": 2,
+      "stem": "32,5 g {FeCl3} eritmasiga ortiqcha {NaOH} eritmasi qo‘shilganda necha gramm {Fe(OH)3} cho‘kadi?",
+      "answer": 21.4, "tolerance": 0.05, "unit": "g",
+      "solution": "FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl. M(FeCl₃) = 56 + 106,5 = 162,5; n = 32,5 / 162,5 = 0,2 mol. M(Fe(OH)₃) = 56 + 51 = 107; m = 0,2 · 107 = 21,4 g." },
+    { "id": "g9-s35-q4", "type": "O1", "skill": "termik parchalanish", "difficulty": 2,
+      "stem": "21,4 g {Fe(OH)3} to‘liq qizdirilganda necha gramm {Fe2O3} hosil bo‘ladi?",
+      "answer": 16, "tolerance": 0.05, "unit": "g",
+      "solution": "2Fe(OH)₃ → Fe₂O₃ + 3H₂O. n(Fe(OH)₃) = 21,4 / 107 = 0,2 mol; n(Fe₂O₃) = 0,1 mol; M = 160; m = 16 g." },
+    { "id": "g9-s35-q5", "type": "O1", "skill": "oksidlanish-qaytarilish hisobi", "difficulty": 3,
+      "stem": "Sulfat kislotali muhitda 15,2 g {FeSO4} ni to‘liq oksidlash uchun necha gramm {KMnO4} kerak? (10FeSO4 + 2KMnO4 + 8H2SO4 → 5Fe2(SO4)3 + K2SO4 + 2MnSO4 + 8H2O)",
+      "answer": 3.16, "tolerance": 0.02, "unit": "g",
+      "solution": "M(FeSO₄) = 152; n = 15,2 / 152 = 0,1 mol. 10 mol FeSO₄ ga 2 mol KMnO₄: n(KMnO₄) = 0,1 · 2/10 = 0,02 mol; m = 0,02 · 158 = 3,16 g.",
+      "mistakes": "Koeffitsiyentlarni 1 : 1 olish; elektron balans bo‘yicha 1 mol {KMnO4} 5 mol {Fe^2+} ni oksidlaydi." }
+  ]
+}

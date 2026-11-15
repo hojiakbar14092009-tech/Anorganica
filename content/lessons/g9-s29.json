@@ -1,0 +1,90 @@
+{
+  "id": "g9-s29",
+  "status": "seed-verified",
+  "pages": [137, 138, 139],
+  "summary": "Kumush — yumshoq, oq, elektr o‘tkazuvchanligi eng yuqori metall; kimyoviy passiv, lekin konsentrlangan {HNO3} da eriydi. Oltin — sariq, juda plastik, tabiatda asosan sof holda uchraydi va faqat zar suvi hamda sianid eritmasida eriydi.",
+  "keyConcepts": [
+    "Kumush tuzlari mikroorganizmlarni o‘ldiradi; {Ag^+} ionli suv uzoq buzilmaydi. {AgNO3} — galogenid ionlariga reaktiv: {AgCl} oq, {AgBr} oqish-sariq, {AgI} sariq cho‘kma.",
+    "{AgBr} yorug‘likda parchalanadi — foto va kinoplyonkalarda ishlatiladi.",
+    "Oltin oddiy kislotalarda erimaydi; zar suvi ({HNO3} : {HCl} = 1 : 3) da kompleks kislota {H[AuCl4]} hosil qilib eriydi.",
+    "Oltinni sianlash usuli: {Au} → {K[Au(CN)2]} kompleksi, so‘ng rux bilan siqib chiqariladi. Sianidlar o‘ta zaharli.",
+    "Proba — buyumdagi oltinning ming ulushdagi miqdori: 583 proba = 58,3 % {Au}."
+  ],
+  "tables": [
+    {
+      "id": "ag-au",
+      "title": "Kumush va oltin reaksiyalari",
+      "columns": [
+        { "key": "what", "label": "Metall / reagent" },
+        { "key": "eq", "label": "Reaksiya", "reaction": true },
+        { "key": "note", "label": "Izoh" }
+      ],
+      "rows": [
+        { "id": "ag-hno3", "cells": { "what": "{Ag} + konsentrlangan {HNO3}", "eq": "agHno3", "note": "{NO2} ajraladi; kumush nitrat — eng muhim birikma" } },
+        { "id": "ag-hno3d", "cells": { "what": "{Ag} + suyultirilgan {HNO3}", "eq": "agHno3d", "note": "{NO} ajraladi" } },
+        { "id": "ag-s", "cells": { "what": "{Ag} + oltingugurt", "eq": "agS", "note": "kumush buyumlar {H2S} ta’sirida ham qorayadi" } },
+        { "id": "cl", "cells": { "what": "{AgNO3} + xlorid-ion", "eq": "agCl", "note": "oq, pishloqsimon cho‘kma" },
+          "detail": { "concept": "Kumush nitrat galogenid-ionlari uchun reaktiv: {Cl^-} — oq, {Br^-} — och sariq, {I^-} — sariq cho‘kma.", "reactionIds": ["agCl", "agBr", "agI"], "observation": "Oq cho‘kma, nitrat kislotada erimaydi", "pages": [138] } },
+        { "id": "br", "cells": { "what": "{AgNO3} + bromid-ion", "eq": "agBr", "note": "och sariq cho‘kma" } },
+        { "id": "i", "cells": { "what": "{AgNO3} + yodid-ion", "eq": "agI", "note": "sariq cho‘kma" } },
+        { "id": "photo", "cells": { "what": "{AgBr} yorug‘likda", "eq": "photo", "note": "foto jarayonning asosi" } },
+        { "id": "cn", "cells": { "what": "{Au} sianlash", "eq": "cn", "note": "kislorod ishtirokida kompleks tuz hosil bo‘ladi" },
+          "detail": { "concept": "Rudadagi oltin sianid eritmasida kompleks anionga o‘tadi; keyin faolroq metall — rux — uni siqib chiqaradi.", "reactionIds": ["cn", "zn"], "pages": [138] } },
+        { "id": "zn", "cells": { "what": "{K[Au(CN)2]} + {Zn}", "eq": "zn", "note": "sof oltin ajraladi" } },
+        { "id": "ar", "cells": { "what": "{Au} + zar suvi", "eq": "ar", "note": "{HNO3} oksidlaydi, {HCl} kompleks hosil qiladi" },
+          "detail": { "concept": "Birinchi bosqich: Au + HNO₃ + 3HCl → AuCl₃ + NO + 2H₂O; ortiqcha {HCl} da AuCl₃ + HCl → H[AuCl₄]. Umumiy tenglama yuqorida.", "reactionIds": ["ar"], "pages": [138, 139] } },
+        { "id": "au-cl2", "cells": { "what": "{Au} + xlor", "eq": "auCl", "note": "taxminan 150 °C da" } }
+      ]
+    },
+    {
+      "id": "compare",
+      "title": "Kumush va oltinning ishlatilishi",
+      "columns": [
+        { "key": "m", "label": "Metall" },
+        { "key": "prop", "label": "Asosiy xossa" },
+        { "key": "use", "label": "Ishlatilishi" }
+      ],
+      "rows": [
+        { "id": "ag", "cells": { "m": "Kumush", "prop": "yumshoq, oq, bolg‘alanuvchan; eng yaxshi elektr o‘tkazgich", "use": "mis/rux bilan qotishmalari (tanga, taqinchoq), ko‘zgu, qoplama, fotomaterial, dori vositalari" } },
+        { "id": "au", "cells": { "m": "Oltin", "prop": "yumshoq, sariq, 1 g dan 3,5 km sim; ρ = 19,3 g/cm³", "use": "kumush/mis bilan qotishmalar — zargarlik, texnika; proba qiymati bilan baholanadi" } }
+      ]
+    }
+  ],
+  "reactions": {
+    "agHno3": { "equation": "Ag + 2HNO3 → AgNO3 + NO2↑ + H2O", "conditions": "konsentrlangan" },
+    "agHno3d": { "equation": "3Ag + 4HNO3 → 3AgNO3 + NO↑ + 2H2O", "conditions": "suyultirilgan" },
+    "agS": { "equation": "2Ag + S → Ag2S", "conditions": "qizdirish" },
+    "agCl": { "equation": "Ag^+ + Cl^- → AgCl↓", "observation": "Oq cho‘kma" },
+    "agBr": { "equation": "Ag^+ + Br^- → AgBr↓", "observation": "Och sariq cho‘kma" },
+    "agI": { "equation": "Ag^+ + I^- → AgI↓", "observation": "Sariq cho‘kma" },
+    "photo": { "equation": "2AgBr → 2Ag + Br2", "conditions": "yorug‘lik" },
+    "cn": { "equation": "4Au + 8KCN + O2 + 2H2O → 4K[Au(CN)2] + 4KOH", "safety": "Sianidlar o‘ta zaharli — faqat virtual namoyish." },
+    "zn": { "equation": "2K[Au(CN)2] + Zn → K2[Zn(CN)4] + 2Au" },
+    "ar": { "equation": "Au + HNO3 + 4HCl → H[AuCl4] + NO↑ + 2H2O", "conditions": "zar suvi: HNO3 : HCl = 1 : 3" },
+    "auCl": { "equation": "2Au + 3Cl2 → 2AuCl3", "conditions": "≈150 °C" }
+  },
+  "questions": [
+    { "id": "g9-s29-q1", "type": "O1", "skill": "cho‘kma massasi", "difficulty": 2,
+      "stem": "34 g {AgNO3} eritmasiga ortiqcha {NaCl} eritmasi qo‘shildi. Necha gramm {AgCl} cho‘kadi?",
+      "answer": 28.7, "tolerance": 0.05, "unit": "g",
+      "solution": "AgNO₃ + NaCl → AgCl↓ + NaNO₃. M(AgNO₃) = 108 + 14 + 48 = 170; n = 34 / 170 = 0,2 mol. M(AgCl) = 143,5; m = 0,2 · 143,5 = 28,7 g." },
+    { "id": "g9-s29-q2", "type": "Y1", "skill": "zar suvi", "difficulty": 1,
+      "stem": "Oltinni eritadigan «zar suvi» qanday aralashma?",
+      "choices": ["{HNO3} va {HCl} (1 : 3)", "{H2SO4} va {HCl}", "{HNO3} va {H2SO4}", "{HCl} va {HF}"], "answer": 0,
+      "solution": "Zar suvi — konsentrlangan nitrat va xlorid kislotalarning 1 : 3 aralashmasi: nitrat kislota oksidlaydi, xlorid kislota {H[AuCl4]} kompleksini hosil qiladi." },
+    { "id": "g9-s29-q3", "type": "O1", "skill": "proba hisobi", "difficulty": 1,
+      "stem": "750 probali oltin zargarlik buyumining massasi 18 g. Unda necha gramm sof oltin bor?",
+      "answer": 13.5, "tolerance": 0.05, "unit": "g",
+      "solution": "750 proba — massa ulushi 750/1000 = 0,75. m(Au) = 18 · 0,75 = 13,5 g." },
+    { "id": "g9-s29-q4", "type": "Y2", "skill": "galogenidlarning rangi", "difficulty": 2,
+      "stem": "Kumush nitrat bilan hosil bo‘ladigan cho‘kmani uning rangi bilan moslashtiring.",
+      "left": ["{AgCl}", "{AgBr}", "{AgI}"],
+      "right": ["sariq", "oq", "och sariq"],
+      "answer": [1, 2, 0],
+      "solution": "{AgCl} — oq; {AgBr} — och sariq; {AgI} — sariq cho‘kma." },
+    { "id": "g9-s29-q5", "type": "O1", "skill": "sianlash hisobi", "difficulty": 3,
+      "stem": "{K[Au(CN)2]} eritmasidan 19,7 g oltinni siqib chiqarish uchun necha gramm rux kerak?",
+      "answer": 3.25, "tolerance": 0.01, "unit": "g",
+      "solution": "2K[Au(CN)₂] + Zn → K₂[Zn(CN)₄] + 2Au. n(Au) = 19,7 / 197 = 0,1 mol; n(Zn) = 0,05 mol; m(Zn) = 0,05 · 65 = 3,25 g." }
+  ]
+}
