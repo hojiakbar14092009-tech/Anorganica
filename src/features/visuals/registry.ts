@@ -1,7 +1,9 @@
 // Visual registry: lessonId → verified schematic scenes. Every equation here is balance-checked in tests/visuals.test.ts.
 import type { ElectrolysisSpec } from './ElectrolysisCell';
 import type { ProcessSpec } from './ProcessFlow';
-import { AMPHOTERIC_AL, BLAST_FURNACE, CHROMIUM_COLOURS, CONTACT_PROCESS, IRON_TESTS, NITRIC_ACID, PERMANGANATE_MEDIA, RUSTING, SOLVAY, WATER_SOFTENING } from './processes';
+import {
+  AMPHOTERIC_AL, BLAST_FURNACE, CHROMIUM_COLOURS, CONTACT_PROCESS, GLASS_CEMENT, IRON_TESTS, METAL_METHODS, NITRIC_ACID, PERMANGANATE_MEDIA, RUSTING, SOLVAY, WATER_SOFTENING,
+} from './processes';
 
 export type Visual =
   | { kind: 'electrolysis'; purpose: string; spec: ElectrolysisSpec }
@@ -33,6 +35,8 @@ export const visuals: Record<string, Visual[]> = {
   'g8-s39': [flow('Ammiakdan nitrat kislota olish bosqichlari', NITRIC_ACID), mol('HNO₃ — yassi molekula', 'hno3')],
   'g9-s11': [mol('Karbonat-ion yassi, uchala C–O bog‘ teng (delokallashgan)', 'co3', 'co2')],
   'g9-s13': [mol('Kremnezyom va silikatlarning qurilish bloki — SiO₄ tetraedri', 'sio4')],
+  'g9-s14': [flow('Shisha va sement ishlab chiqarish reaksiyalari', GLASS_CEMENT)],
+  'g9-s15': [flow('Metall faolligiga qarab olish usullari', METAL_METHODS)],
   'g9-s16': [mol('Metall panjaralar: qotishmalarda boshqa atomlar shu panjaraga kiradi', 'cu_fcc', 'fe_bcc')],
   'g9-s17': [mol('Metall kristall panjaralari: Cu (YMK) va α-Fe (HMK)', 'cu_fcc', 'fe_bcc')],
   'g9-s18': [flow('Temir elektrokimyoviy korroziyasining bosqichlari', RUSTING)],
@@ -51,6 +55,7 @@ export const visuals: Record<string, Visual[]> = {
   'g9-s35': [flow('Fe²⁺/Fe³⁺ sifat reaksiyalari', IRON_TESTS)],
   'g9-s36': [flow('Domna pechi zonalari va qarshi oqim', BLAST_FURNACE)],
   'g8-s40': [mol('Oq fosfor P₄ — kuchlangan tetraedr', 'p4')],
+  'g8-s41': [mol('P₄O₁₀ — P₂O₅ ning haqiqiy molekulasi', 'p4o10')],
   'g9-s8': [mol('Olmos va grafit: bir element — ikki panjara', 'diamond', 'graphite')],
   'g9-s9': [mol('Olmos va grafit xossalari tuzilishdan kelib chiqadi', 'diamond', 'graphite')],
   'g9-s10': [mol('CO, CO₂ va CH₄ molekulalari', 'co', 'co2', 'ch4')],

@@ -55,7 +55,11 @@ describe('lessons', () => {
       }
       for (const rid of row.detail?.reactionIds ?? []) expect(l.reactions[rid], rid).toBeDefined();
     }
+    // Row citations may point to another allowed lesson of the same grade, never to excluded textbook sections.
+    const inScope = (p: number) => manifest.sections.some((x) => x.grade === sec.grade && p >= x.pdfPage - 1 && p <= (x.endPage ?? 208));
+    for (const t of l.tables) for (const row of t.rows) for (const p of row.detail?.pages ?? []) expect(inScope(p), `${t.id}/${row.id} p${p}`).toBe(true);
     if (l.status === 'seed-verified') expect(l.questions.length).toBeGreaterThanOrEqual(4);
+    for (const q of l.questions) if (q.type === 'O2') expect(q.rubric.reduce((s, r) => s + r.points, 0), q.id).toBe(25); // official O2 = 25 points
     for (const q of l.questions) {
       expect(q.id.startsWith(id + '-')).toBe(true);
       if (q.type === 'Y1') expect(q.answer).toBeLessThan(q.choices.length);

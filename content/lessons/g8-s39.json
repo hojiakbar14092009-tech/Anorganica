@@ -1,7 +1,13 @@
 {
   "id": "g8-s39",
   "status": "seed-verified",
-  "pages": [165, 166, 167, 168, 169],
+  "pages": [
+    165,
+    166,
+    167,
+    168,
+    169
+  ],
   "summary": "Nitrat kislota {HNO3} — kuchli bir negizli kislota va kuchli oksidlovchi (N⁺⁵). Metallar bilan vodorod ajratmaydi: konsentratsiya va metall faolligiga qarab {NO2}, NO, {N2O}, {N2} yoki {NH4NO3} hosil bo‘ladi. Yorug‘likda parchalanib, qo‘ng‘ir {NO2} tufayli sarg‘ayadi.",
   "keyConcepts": [
     "Sanoat usuli (ammiakdan): NH₃ → NO → NO₂ → HNO₃.",
@@ -14,89 +20,345 @@
       "id": "obtain",
       "title": "Olinishi",
       "columns": [
-        { "key": "step", "label": "Bosqich" },
-        { "key": "eq", "label": "Reaksiya", "reaction": true }
+        {
+          "key": "step",
+          "label": "Bosqich"
+        },
+        {
+          "key": "eq",
+          "label": "Reaksiya",
+          "reaction": true
+        }
       ],
       "rows": [
-        { "id": "lab", "cells": { "step": "Laboratoriya", "eq": "lab" } },
-        { "id": "s1", "cells": { "step": "Sanoat 1: NH₃ ni katalitik oksidlash", "eq": "s1" } },
-        { "id": "s2", "cells": { "step": "Sanoat 2: NO → NO₂", "eq": "s2" } },
-        { "id": "s3", "cells": { "step": "Sanoat 3: NO₂ ni kislorod ishtirokida suvga yuttirish", "eq": "s3" } }
+        {
+          "id": "lab",
+          "cells": {
+            "step": "Laboratoriya",
+            "eq": "lab"
+          }
+        },
+        {
+          "id": "s1",
+          "cells": {
+            "step": "Sanoat 1: NH₃ ni katalitik oksidlash",
+            "eq": "s1"
+          }
+        },
+        {
+          "id": "s2",
+          "cells": {
+            "step": "Sanoat 2: NO → NO₂",
+            "eq": "s2"
+          }
+        },
+        {
+          "id": "s3",
+          "cells": {
+            "step": "Sanoat 3: NO₂ ni kislorod ishtirokida suvga yuttirish",
+            "eq": "s3"
+          }
+        }
       ]
     },
     {
       "id": "metals",
       "title": "Metallar bilan reaksiyalari",
       "columns": [
-        { "key": "case", "label": "Kislota / metall" },
-        { "key": "eq", "label": "Reaksiya", "reaction": true },
-        { "key": "gas", "label": "Qaytarilish mahsuloti" }
+        {
+          "key": "case",
+          "label": "Kislota / metall"
+        },
+        {
+          "key": "eq",
+          "label": "Reaksiya",
+          "reaction": true
+        },
+        {
+          "key": "gas",
+          "label": "Qaytarilish mahsuloti"
+        }
       ],
       "rows": [
-        { "id": "cuConc", "cells": { "case": "Konts. + Cu", "eq": "cuConc", "gas": "{NO2} (qo‘ng‘ir)" } },
-        { "id": "cuDil", "cells": { "case": "Suyult. + Cu", "eq": "cuDil", "gas": "NO (rangsiz)" },
-          "detail": { "concept": "Elektron balans: Cu⁰ − 2ē → Cu⁺² (×3); N⁺⁵ + 3ē → N⁺² (×2). 8 HNO₃ dan faqat 2 tasi oksidlovchi, 6 tasi tuz hosil qiladi.", "reactionIds": ["cuDil"], "examTip": "HNO₃ + metall → hech qachon H₂ ajralmaydi.", "pages": [167] } },
-        { "id": "pb", "cells": { "case": "Konts. + Pb", "eq": "pb", "gas": "{NO2}" } },
-        { "id": "fe", "cells": { "case": "Juda suyult. + Fe", "eq": "fe", "gas": "{NH4NO3} (N⁻³)" } },
-        { "id": "au", "cells": { "case": "Zar suvi + Au", "eq": "au", "gas": "NO" },
-          "detail": { "concept": "Zar suvida HNO₃ oksidlovchi, Cl⁻ esa oltin ionlarini kompleksga bog‘lab, erishni ta’minlaydi.", "reactionIds": ["au", "pt"], "pages": [167] } }
+        {
+          "id": "cuConc",
+          "cells": {
+            "case": "Konts. + Cu",
+            "eq": "cuConc",
+            "gas": "{NO2} (qo‘ng‘ir)"
+          }
+        },
+        {
+          "id": "cuDil",
+          "cells": {
+            "case": "Suyult. + Cu",
+            "eq": "cuDil",
+            "gas": "NO (rangsiz)"
+          },
+          "detail": {
+            "concept": "Elektron balans: Cu⁰ − 2ē → Cu⁺² (×3); N⁺⁵ + 3ē → N⁺² (×2). 8 HNO₃ dan faqat 2 tasi oksidlovchi, 6 tasi tuz hosil qiladi.",
+            "reactionIds": [
+              "cuDil"
+            ],
+            "examTip": "HNO₃ + metall → hech qachon H₂ ajralmaydi.",
+            "pages": [
+              167
+            ]
+          }
+        },
+        {
+          "id": "pb",
+          "cells": {
+            "case": "Konts. + Pb",
+            "eq": "pb",
+            "gas": "{NO2}"
+          }
+        },
+        {
+          "id": "fe",
+          "cells": {
+            "case": "Juda suyult. + Fe",
+            "eq": "fe",
+            "gas": "{NH4NO3} (N⁻³)"
+          }
+        },
+        {
+          "id": "au",
+          "cells": {
+            "case": "Zar suvi + Au",
+            "eq": "au",
+            "gas": "NO"
+          },
+          "detail": {
+            "concept": "Zar suvida HNO₃ oksidlovchi, Cl⁻ esa oltin ionlarini kompleksga bog‘lab, erishni ta’minlaydi.",
+            "reactionIds": [
+              "au",
+              "pt"
+            ],
+            "pages": [
+              167
+            ]
+          }
+        }
       ]
     },
     {
       "id": "nitrates",
       "title": "Nitratlarning qizdirilganda parchalanishi",
       "columns": [
-        { "key": "group", "label": "Metall o‘rni" },
-        { "key": "eq", "label": "Misol", "reaction": true },
-        { "key": "prod", "label": "Mahsulotlar" }
+        {
+          "key": "group",
+          "label": "Metall o‘rni"
+        },
+        {
+          "key": "eq",
+          "label": "Misol",
+          "reaction": true
+        },
+        {
+          "key": "prod",
+          "label": "Mahsulotlar"
+        }
       ],
       "rows": [
-        { "id": "k", "cells": { "group": "Mg gacha (faol)", "eq": "kno3", "prod": "nitrit + {O2}" } },
-        { "id": "cu", "cells": { "group": "Mg … Cu", "eq": "cuno3", "prod": "metall oksidi + {NO2} + {O2}" } },
-        { "id": "ag", "cells": { "group": "Cu dan keyin", "eq": "agno3", "prod": "metall + {NO2} + {O2}" } },
-        { "id": "nh4", "cells": { "group": "Ammoniy nitrat", "eq": "nh4no3", "prod": "{N2O} + {H2O}" } }
+        {
+          "id": "k",
+          "cells": {
+            "group": "Mg gacha (faol)",
+            "eq": "kno3",
+            "prod": "nitrit + {O2}"
+          }
+        },
+        {
+          "id": "cu",
+          "cells": {
+            "group": "Mg … Cu",
+            "eq": "cuno3",
+            "prod": "metall oksidi + {NO2} + {O2}"
+          }
+        },
+        {
+          "id": "ag",
+          "cells": {
+            "group": "Cu dan keyin",
+            "eq": "agno3",
+            "prod": "metall + {NO2} + {O2}"
+          }
+        },
+        {
+          "id": "nh4",
+          "cells": {
+            "group": "Ammoniy nitrat",
+            "eq": "nh4no3",
+            "prod": "{N2O} + {H2O}"
+          }
+        }
       ]
     }
   ],
   "reactions": {
-    "lab": { "equation": "NaNO3 + H2SO4 → NaHSO4 + HNO3", "conditions": "konts. H₂SO₄, t°" },
-    "s1": { "equation": "4NH3 + 5O2 → 4NO + 6H2O", "conditions": "katalizator, t°" },
-    "s2": { "equation": "2NO + O2 → 2NO2" },
-    "s3": { "equation": "4NO2 + 2H2O + O2 → 4HNO3" },
-    "decomp": { "equation": "4HNO3 → 4NO2↑ + O2↑ + 2H2O", "conditions": "yorug‘lik yoki t°" },
-    "cuConc": { "equation": "Cu + 4HNO3 → Cu(NO3)2 + 2NO2↑ + 2H2O", "safety": "NO₂ zaharli — faqat virtual namoyish." },
-    "cuDil": { "equation": "3Cu + 8HNO3 → 3Cu(NO3)2 + 2NO↑ + 4H2O" },
-    "pb": { "equation": "Pb + 4HNO3 → Pb(NO3)2 + 2NO2↑ + 2H2O" },
-    "fe": { "equation": "4Fe + 10HNO3 → 4Fe(NO3)2 + NH4NO3 + 3H2O", "conditions": "juda suyultirilgan" },
-    "au": { "equation": "Au + HNO3 + 3HCl → AuCl3 + NO↑ + 2H2O", "conditions": "zar suvi" },
-    "pt": { "equation": "3Pt + 4HNO3 + 12HCl → 3PtCl4 + 4NO↑ + 8H2O", "conditions": "zar suvi" },
-    "kno3": { "equation": "2KNO3 → 2KNO2 + O2↑", "conditions": "t°" },
-    "cuno3": { "equation": "2Cu(NO3)2 → 2CuO + 4NO2↑ + O2↑", "conditions": "t°" },
-    "agno3": { "equation": "2AgNO3 → 2Ag + 2NO2↑ + O2↑", "conditions": "t°" },
-    "nh4no3": { "equation": "NH4NO3 → N2O + 2H2O", "conditions": "t°" }
+    "lab": {
+      "equation": "NaNO3 + H2SO4 → NaHSO4 + HNO3",
+      "conditions": "konts. H₂SO₄, t°"
+    },
+    "s1": {
+      "equation": "4NH3 + 5O2 → 4NO + 6H2O",
+      "conditions": "katalizator, t°"
+    },
+    "s2": {
+      "equation": "2NO + O2 → 2NO2"
+    },
+    "s3": {
+      "equation": "4NO2 + 2H2O + O2 → 4HNO3"
+    },
+    "decomp": {
+      "equation": "4HNO3 → 4NO2↑ + O2↑ + 2H2O",
+      "conditions": "yorug‘lik yoki t°"
+    },
+    "cuConc": {
+      "equation": "Cu + 4HNO3 → Cu(NO3)2 + 2NO2↑ + 2H2O",
+      "safety": "NO₂ zaharli — faqat virtual namoyish."
+    },
+    "cuDil": {
+      "equation": "3Cu + 8HNO3 → 3Cu(NO3)2 + 2NO↑ + 4H2O"
+    },
+    "pb": {
+      "equation": "Pb + 4HNO3 → Pb(NO3)2 + 2NO2↑ + 2H2O"
+    },
+    "fe": {
+      "equation": "4Fe + 10HNO3 → 4Fe(NO3)2 + NH4NO3 + 3H2O",
+      "conditions": "juda suyultirilgan"
+    },
+    "au": {
+      "equation": "Au + HNO3 + 3HCl → AuCl3 + NO↑ + 2H2O",
+      "conditions": "zar suvi"
+    },
+    "pt": {
+      "equation": "3Pt + 4HNO3 + 12HCl → 3PtCl4 + 4NO↑ + 8H2O",
+      "conditions": "zar suvi"
+    },
+    "kno3": {
+      "equation": "2KNO3 → 2KNO2 + O2↑",
+      "conditions": "t°"
+    },
+    "cuno3": {
+      "equation": "2Cu(NO3)2 → 2CuO + 4NO2↑ + O2↑",
+      "conditions": "t°"
+    },
+    "agno3": {
+      "equation": "2AgNO3 → 2Ag + 2NO2↑ + O2↑",
+      "conditions": "t°"
+    },
+    "nh4no3": {
+      "equation": "NH4NO3 → N2O + 2H2O",
+      "conditions": "t°"
+    }
   },
   "clarifications": [
-    { "text": "Darslikda ammiakni oksidlash katalizatori sifatida Cr₂O₃ yoki MnO₂ ko‘rsatilgan; zamonaviy sanoatda asosan platina-rodiy to‘ri ishlatiladi (§37 dagi 4NH₃ + 5O₂ → 4NO + 6H₂O, Pt).", "source": "additionalVerifiedSource" },
-    { "text": "Darslikda HNO₃ dagi azot IV valentli, oksidlanish darajasi +5 deb to‘g‘ri ko‘rsatilgan: azotda d-orbitallar yo‘qligi sababli valentlik 4 dan oshmaydi.", "source": "textbook2019" }
+    {
+      "text": "Darslikda ammiakni oksidlash katalizatori sifatida Cr₂O₃ yoki MnO₂ ko‘rsatilgan; zamonaviy sanoatda asosan platina-rodiy to‘ri ishlatiladi (§37 dagi 4NH₃ + 5O₂ → 4NO + 6H₂O, Pt).",
+      "source": "additionalVerifiedSource"
+    },
+    {
+      "text": "Darslikda HNO₃ dagi azot IV valentli, oksidlanish darajasi +5 deb to‘g‘ri ko‘rsatilgan: azotda d-orbitallar yo‘qligi sababli valentlik 4 dan oshmaydi.",
+      "source": "textbook2019"
+    }
   ],
   "questions": [
-    { "id": "g8-s39-q1", "type": "Y1", "skill": "nitrat kislota + metall", "difficulty": 1,
+    {
+      "id": "g8-s39-q1",
+      "type": "Y1",
+      "skill": "nitrat kislota + metall",
+      "difficulty": 1,
       "stem": "Mis konsentrlangan nitrat kislota bilan reaksiyaga kirishganda qaysi gaz ajraladi?",
-      "choices": ["{H2}", "NO", "{NO2}", "{N2}"], "answer": 2,
-      "solution": "Cu + 4HNO₃(konts.) → Cu(NO₃)₂ + 2NO₂ + 2H₂O — qo‘ng‘ir NO₂." },
-    { "id": "g8-s39-q2", "type": "O1", "skill": "nitratlar parchalanishi", "difficulty": 2,
+      "choices": [
+        "{H2}",
+        "NO",
+        "{NO2}",
+        "{N2}"
+      ],
+      "answer": 2,
+      "solution": "Cu + 4HNO₃(konts.) → Cu(NO₃)₂ + 2NO₂ + 2H₂O — qo‘ng‘ir NO₂."
+    },
+    {
+      "id": "g8-s39-q2",
+      "type": "O1",
+      "skill": "nitratlar parchalanishi",
+      "difficulty": 2,
       "stem": "18,8 g mis(II) nitrat to‘liq parchalanganda necha litr (n.sh.) gazlar aralashmasi ajraladi?",
-      "answer": 5.6, "tolerance": 0.01, "unit": "l",
-      "solution": "2Cu(NO₃)₂ → 2CuO + 4NO₂ + O₂. n(Cu(NO₃)₂) = 18,8 / 188 = 0,1 mol; n(NO₂) = 0,2 mol; n(O₂) = 0,05 mol; jami 0,25 mol · 22,4 = 5,6 l." },
-    { "id": "g8-s39-q3", "type": "Y2", "skill": "nitratlar parchalanishi", "difficulty": 2,
+      "answer": 5.6,
+      "tolerance": 0.01,
+      "unit": "l",
+      "solution": "2Cu(NO₃)₂ → 2CuO + 4NO₂ + O₂. n(Cu(NO₃)₂) = 18,8 / 188 = 0,1 mol; n(NO₂) = 0,2 mol; n(O₂) = 0,05 mol; jami 0,25 mol · 22,4 = 5,6 l."
+    },
+    {
+      "id": "g8-s39-q3",
+      "type": "Y2",
+      "skill": "nitratlar parchalanishi",
+      "difficulty": 2,
       "stem": "Nitratni uning qizdirilgandagi qattiq mahsuloti bilan moslashtiring.",
-      "left": ["{KNO3}", "{Cu(NO3)2}", "{AgNO3}", "{NH4NO3}"],
-      "right": ["Ag", "qattiq qoldiq yo‘q", "{KNO2}", "CuO"],
-      "answer": [2, 3, 0, 1],
-      "solution": "KNO₃ → KNO₂ + O₂; Cu(NO₃)₂ → CuO + NO₂ + O₂; AgNO₃ → Ag + NO₂ + O₂; NH₄NO₃ → N₂O + 2H₂O (hammasi gaz/bug‘)." },
-    { "id": "g8-s39-q4", "type": "O1", "skill": "elektron balans", "difficulty": 3,
+      "left": [
+        "{KNO3}",
+        "{Cu(NO3)2}",
+        "{AgNO3}",
+        "{NH4NO3}"
+      ],
+      "right": [
+        "Ag",
+        "qattiq qoldiq yo‘q",
+        "{KNO2}",
+        "CuO"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "solution": "KNO₃ → KNO₂ + O₂; Cu(NO₃)₂ → CuO + NO₂ + O₂; AgNO₃ → Ag + NO₂ + O₂; NH₄NO₃ → N₂O + 2H₂O (hammasi gaz/bug‘)."
+    },
+    {
+      "id": "g8-s39-q4",
+      "type": "O1",
+      "skill": "elektron balans",
+      "difficulty": 3,
       "stem": "3Cu + 8HNO₃ → 3Cu(NO₃)₂ + 2NO + 4H₂O reaksiyasida 0,6 mol mis eriganda necha mol nitrat kislota oksidlovchi sifatida sarflanadi?",
-      "answer": 0.4, "tolerance": 0.001, "unit": "mol",
-      "solution": "3 mol Cu ga 2 mol HNO₃ oksidlovchi (N⁺⁵ → N⁺²). 0,6 mol Cu uchun 0,6 · 2/3 = 0,4 mol." }
+      "answer": 0.4,
+      "tolerance": 0.001,
+      "unit": "mol",
+      "solution": "3 mol Cu ga 2 mol HNO₃ oksidlovchi (N⁺⁵ → N⁺²). 0,6 mol Cu uchun 0,6 · 2/3 = 0,4 mol."
+    },
+    {
+      "id": "g8-s39-q90",
+      "type": "O2",
+      "skill": "aralashma tarkibi",
+      "difficulty": 3,
+      "stem": "Mis va mis(II) oksiddan iborat 20 g aralashma mo‘l konsentrlangan nitrat kislotada eritilganda 4,48 l (n.sh.) qo‘ng‘ir gaz ajraldi. Aralashmadagi misning massa ulushini toping.",
+      "steps": [
+        "Qaysi komponent gaz hosil qilishini aniqlang.",
+        "Ikkala reaksiya tenglamasini yozing.",
+        "Gaz hajmidan mis massasini toping.",
+        "Massa ulushini hisoblang."
+      ],
+      "rubric": [
+        {
+          "criterion": "Gazni faqat Cu beradi; CuO + 2HNO₃ → Cu(NO₃)₂ + H₂O (gaz yo‘q)",
+          "points": 6
+        },
+        {
+          "criterion": "Cu + 4HNO₃ → Cu(NO₃)₂ + 2NO₂ + 2H₂O",
+          "points": 6
+        },
+        {
+          "criterion": "n(NO₂) = 0,2 mol → n(Cu) = 0,1 mol → 6,4 g",
+          "points": 8
+        },
+        {
+          "criterion": "ω(Cu) = 6,4/20 = 32 %",
+          "points": 5
+        }
+      ],
+      "solution": "n(NO₂) = 4,48/22,4 = 0,2 mol; Cu : NO₂ = 1 : 2 ⇒ n(Cu) = 0,1 mol = 6,4 g; ω(Cu) = 6,4 / 20 = 0,32 = 32 %."
+    }
   ]
 }

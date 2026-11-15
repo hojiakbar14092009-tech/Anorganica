@@ -108,3 +108,26 @@ export const WATER_SOFTENING: ProcessSpec = {
   ],
   explanation: 'Qattiqlikni Ca²⁺ va Mg²⁺ ionlari beradi. Vaqtinchalik (gidrokarbonatli) qattiqlik qaynatishda yo‘qoladi; doimiy (sulfat, xloridli) qattiqlik uchun ionlarni cho‘ktirish yoki ion almashinish kerak.',
 };
+
+export const GLASS_CEMENT: ProcessSpec = {
+  title: 'Silikat sanoati: shisha va sement',
+  steps: [
+    { place: 'Shisha pechi, ≈ 1500 °C', name: 'Soda va qum suyuqlantiriladi', equation: 'Na2CO3 + SiO2 → Na2SiO3 + CO2↑', conditions: 'suyuqlantirish', note: 'Oddiy deraza shishasi uchun shixta: qum (SiO₂), soda va ohaktosh.' },
+    { place: 'Shisha pechi', name: 'Ohaktosh ham silikatga o‘tadi', equation: 'CaCO3 + SiO2 → CaSiO3 + CO2↑', conditions: 'suyuqlantirish', note: 'Taxminiy tarkib Na₂O·CaO·6SiO₂; shisha — kristall emas, amorf qotishma.' },
+    { place: 'Sement: aylanuvchi pech', name: 'Ohaktosh parchalanadi', equation: 'CaCO3 → CaO + CO2↑', conditions: 'yuqori harorat', note: 'Xomashyo — ohaktosh va gil (SiO₂, Al₂O₃ manbai).' },
+    { place: 'Sement: pechning issiq zonasi, ≈ 1450 °C', name: 'Klinker minerallari hosil bo‘ladi', equation: '3CaO + SiO2 → Ca3SiO5', conditions: 'shuningdek 2CaO + SiO₂ → Ca₂SiO₄', note: 'Klinker sovutilib, gips qo‘shib maydalanadi — portlandsement.' },
+  ],
+  explanation: 'Har ikki ishlab chiqarishda karbonatlar qum (SiO₂) bilan yuqori haroratda reaksiyaga kirishib, silikatlar va CO₂ hosil qiladi. Shisha suyuq holatdan tez sovitilgani uchun amorf; sement klinkeri esa suv bilan reaksiyaga kirishib qotadi.',
+};
+
+export const METAL_METHODS: ProcessSpec = {
+  title: 'Metallarni olish usullari',
+  steps: [
+    { place: 'Pirometallurgiya', name: 'Oksidni uglerod/CO bilan qaytarish', equation: 'Fe3O4 + 4CO → 3Fe + 4CO2', conditions: 'yuqori harorat', note: 'Temir, rux, qo‘rg‘oshin kabi o‘rtacha faol metallar.' },
+    { place: 'Metallotermiya', name: 'Faolroq metall bilan qaytarish', equation: 'Cr2O3 + 2Al → Al2O3 + 2Cr', conditions: 'aluminotermiya', note: 'Uglerod bilan qaytarib bo‘lmaydigan yoki karbid hosil qiladigan metallar (Cr, Mn) uchun.' },
+    { place: 'Vodorod bilan qaytarish', name: 'Toza, qiyin suyuqlanadigan metallar', equation: 'WO3 + 3H2 → W + 3H2O', conditions: 'yuqori harorat', note: 'Mahsulot uglerod bilan ifloslanmaydi (volfram).' },
+    { place: 'Gidrometallurgiya', name: 'Eritmadan siqib chiqarish', equation: 'CuSO4 + Fe → FeSO4 + Cu', note: 'Ruda kislotada eritiladi, so‘ng faolroq metall bilan kam faol metall ajratiladi.' },
+    { place: 'Elektrometallurgiya', name: 'Suyuqlanma elektrolizi', equation: '2NaCl → 2Na + Cl2', conditions: 'suyuqlanma, elektroliz', note: 'Eng faol metallar (Na, K, Ca, Mg, Al) faqat shu usulda olinadi (§19, §25).' },
+  ],
+  explanation: 'Usul metallning faolligiga bog‘liq: qancha faol bo‘lsa, uni qaytarish shuncha qiyin — eng faollari faqat elektroliz bilan, kam faollari (Cu, Ag, Au) hatto tabiiy holda ham uchraydi.',
+};

@@ -90,6 +90,24 @@ function p4(): Molecule {
   return { id: 'p4', name: 'Oq fosfor molekulasi', formula: 'P4', shape: 'tetraedr (P atomlari uchlarida)', atoms, bonds, facts: ['P–P: 2,21 Å', '∠P–P–P: 60° — kuchlangan halqa, shuning uchun oq fosfor juda faol'] };
 }
 
+/** P4O10 (formula P2O5 is the simplest ratio): P4 tetrahedron with 6 bridging O on the edges and 4 terminal O.
+ *  P–O(bridge) 1.60 Å, P=O 1.43 Å, P–O–P ≈ 124°. Bridging O sits on the edge bisector, solved from |d·n − a·u| = 1.60. */
+function p4o10(): Molecule {
+  const a = 1.6 * Math.sin(rad(62)) * 2 / Math.sqrt(8 / 3); // centre→P distance giving P–O–P = 124°
+  const atoms: Atom[] = TET.map((u) => atom('P', scale(u, a)));
+  const bonds: Bond[] = [];
+  const cosUN = (1 - 1 / 3) / Math.sqrt(4 / 3); // u_i · n for the bisector n of two tetrahedral unit vectors
+  const d = a * cosUN + Math.sqrt((a * cosUN) ** 2 - a * a + 1.6 * 1.6); // outer root
+  for (let i = 0; i < 4; i++) for (let j = i + 1; j < 4; j++) {
+    const n = add(TET[i]!, TET[j]!), len = Math.hypot(...n);
+    atoms.push(atom('O', scale(n, d / len)));
+    bonds.push({ a: i, b: atoms.length - 1, order: 1 }, { a: j, b: atoms.length - 1, order: 1 });
+  }
+  TET.forEach((u, i) => { atoms.push(atom('O', scale(u, a + 1.43))); bonds.push({ a: i, b: atoms.length - 1, order: 2 }); });
+  return { id: 'p4o10', name: 'Fosfor(V) oksid', formula: 'P4O10', shape: 'P₄ tetraedri asosidagi qafas', atoms, bonds,
+    facts: ['P–O–P ko‘prik: 1,60 Å', 'P=O: 1,43 Å', 'Haqiqiy molekula P₄O₁₀; P₂O₅ — eng oddiy formula'] };
+}
+
 /** Diamond fragment: one conventional cubic cell (a = 3.567 Å) with all C–C contacts at 1.545 Å. */
 function diamond(): Molecule {
   const a = 3.567;
@@ -164,7 +182,7 @@ export const MOLECULES: Record<string, Molecule> = Object.fromEntries([
   tetrahedral('ch4', 'Metan', 'CH4', 'C', 'H', 1.09),
   tetrahedral('sio4', 'Silikat-ion (SiO₄ tetraedri)', 'SiO4^4-', 'Si', 'O', 1.62),
   planar('co3', 'Karbonat-ion', 'CO3^2-', 'yassi uchburchak', 'C', 'O', 1.29, 120, 3, 1.5),
-  sulfuricAcid(), nitricAcid(), p4(), diamond(), graphite(),
+  sulfuricAcid(), nitricAcid(), p4(), p4o10(), diamond(), graphite(),
   metalCell('cu_fcc', 'Mis: yoqlari markazlashgan kub panjara', 'Cu', 3.615, 'fcc', ['a = 3,615 Å', 'Eng yaqin qo‘shnilar orasi 2,56 Å, har bir atomning 12 qo‘shnisi bor', 'Qatlamlar oson siljiydi — mis yumshoq va cho‘ziluvchan']),
   metalCell('fe_bcc', 'Temir (α-Fe): hajmi markazlashgan kub panjara', 'Fe', 2.866, 'bcc', ['a = 2,866 Å', 'Eng yaqin qo‘shnilar orasi 2,48 Å, 8 qo‘shni', 'Uglerod atomlari panjara bo‘shliqlariga kirib, po‘lat va cho‘yan xossalarini o‘zgartiradi']),
 ].map((m) => [m.id, m]));

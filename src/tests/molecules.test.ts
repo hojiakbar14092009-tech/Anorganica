@@ -35,6 +35,9 @@ describe('molecule models', () => {
     for (const b of MOLECULES.p4!.bonds) expect(distance(MOLECULES.p4!, b)).toBeCloseTo(2.21, 2);
     expect(MOLECULES.diamond!.bonds.length).toBeGreaterThan(10);
     for (const b of MOLECULES.graphite!.bonds) expect(distance(MOLECULES.graphite!, b)).toBeCloseTo(1.42, 2);
+    const po = MOLECULES.p4o10!;
+    for (const b of po.bonds) expect(distance(po, b)).toBeCloseTo(b.order === 2 ? 1.43 : 1.6, 2);
+    expect(angle(po, 4, 0, 1)).toBeCloseTo(124, 0); // first bridging O between P0 and P1
     expect(MOLECULES.cu_fcc!.atoms).toHaveLength(14); // 8 corners + 6 faces
     expect(MOLECULES.fe_bcc!.atoms).toHaveLength(9); // 8 corners + centre
     for (const b of MOLECULES.fe_bcc!.bonds) expect(distance(MOLECULES.fe_bcc!, b)).toBeCloseTo(2.482, 2);

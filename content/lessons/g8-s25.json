@@ -1,7 +1,16 @@
 {
   "id": "g8-s25",
   "status": "seed-verified",
-  "pages": [103, 104, 105, 106, 107, 108, 109, 110],
+  "pages": [
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110
+  ],
   "summary": "Avogadro qonuni (1811): bir xil harorat va bosimda teng hajmdagi istalgan gazlarda molekulalar soni teng. Natija: har qanday gazning 1 moli normal sharoitda (0 °C, 101,3 kPa) ≈22,4 l egallaydi — bu molyar hajm (Vm).",
   "keyConcepts": [
     "Qonun faqat gazlar uchun: gaz molekulalari orasidagi masofa ularning o‘lchamidan ming marotaba katta, shuning uchun hajm molekula o‘lchamiga bog‘liq emas.",
@@ -14,62 +23,230 @@
       "id": "formulas",
       "title": "Asosiy formulalar",
       "columns": [
-        { "key": "q", "label": "Kattalik" },
-        { "key": "f", "label": "Formula" },
-        { "key": "u", "label": "Birlik / misol" }
+        {
+          "key": "q",
+          "label": "Kattalik"
+        },
+        {
+          "key": "f",
+          "label": "Formula"
+        },
+        {
+          "key": "u",
+          "label": "Birlik / misol"
+        }
       ],
       "rows": [
-        { "id": "vm", "cells": { "q": "Molyar hajm", "f": "Vm = V / n", "u": "22,4 l/mol (n.sh.)" } },
-        { "id": "n", "cells": { "q": "Modda miqdori", "f": "n = V / Vm = m / M = N / NA", "u": "NA = 6,02·10²³ mol⁻¹" },
-          "detail": { "concept": "Bitta n orqali massa, hajm va zarrachalar soni bog‘lanadi: 22 g {CO2} → n = 22/44 = 0,5 mol → V = 11,2 l → N = 3,01·10²³ molekula.", "pages": [105, 106] } },
-        { "id": "v", "cells": { "q": "Gaz hajmi massadan", "f": "V = m · Vm / M", "u": "22 g {CO2} → 11,2 l" } },
-        { "id": "rho", "cells": { "q": "Gaz zichligi (n.sh.)", "f": "ρ = M / Vm", "u": "ρ({O2}) = 32 / 22,4 = 1,43 g/l" } },
-        { "id": "d", "cells": { "q": "Nisbiy zichlik", "f": "D = M₁ / M₂", "u": "D_H₂({O2}) = 32 / 2 = 16" },
-          "detail": { "concept": "Nisbiy zichlik orqali noma’lum gazning molyar massasi topiladi: M = D · M(solishtiriladigan gaz). Havo uchun M = 29 g/mol.", "examTip": "Masalada «vodorodga nisbatan zichligi 22» bo‘lsa → M = 44 g/mol (masalan, CO₂ yoki C₃H₈).", "pages": [106] } }
+        {
+          "id": "vm",
+          "cells": {
+            "q": "Molyar hajm",
+            "f": "Vm = V / n",
+            "u": "22,4 l/mol (n.sh.)"
+          }
+        },
+        {
+          "id": "n",
+          "cells": {
+            "q": "Modda miqdori",
+            "f": "n = V / Vm = m / M = N / NA",
+            "u": "NA = 6,02·10²³ mol⁻¹"
+          },
+          "detail": {
+            "concept": "Bitta n orqali massa, hajm va zarrachalar soni bog‘lanadi: 22 g {CO2} → n = 22/44 = 0,5 mol → V = 11,2 l → N = 3,01·10²³ molekula.",
+            "pages": [
+              105,
+              106
+            ]
+          }
+        },
+        {
+          "id": "v",
+          "cells": {
+            "q": "Gaz hajmi massadan",
+            "f": "V = m · Vm / M",
+            "u": "22 g {CO2} → 11,2 l"
+          }
+        },
+        {
+          "id": "rho",
+          "cells": {
+            "q": "Gaz zichligi (n.sh.)",
+            "f": "ρ = M / Vm",
+            "u": "ρ({O2}) = 32 / 22,4 = 1,43 g/l"
+          }
+        },
+        {
+          "id": "d",
+          "cells": {
+            "q": "Nisbiy zichlik",
+            "f": "D = M₁ / M₂",
+            "u": "D_H₂({O2}) = 32 / 2 = 16"
+          },
+          "detail": {
+            "concept": "Nisbiy zichlik orqali noma’lum gazning molyar massasi topiladi: M = D · M(solishtiriladigan gaz). Havo uchun M = 29 g/mol.",
+            "examTip": "Masalada «vodorodga nisbatan zichligi 22» bo‘lsa → M = 44 g/mol (masalan, CO₂ yoki C₃H₈).",
+            "pages": [
+              106
+            ]
+          }
+        }
       ]
     },
     {
       "id": "gases",
       "title": "Ba’zi gazlar (n.sh.)",
       "columns": [
-        { "key": "g", "label": "Gaz" },
-        { "key": "m", "label": "M, g/mol" },
-        { "key": "rho", "label": "ρ, g/l" },
-        { "key": "vm", "label": "Vm, l/mol" }
+        {
+          "key": "g",
+          "label": "Gaz"
+        },
+        {
+          "key": "m",
+          "label": "M, g/mol"
+        },
+        {
+          "key": "rho",
+          "label": "ρ, g/l"
+        },
+        {
+          "key": "vm",
+          "label": "Vm, l/mol"
+        }
       ],
       "rows": [
-        { "id": "h2", "cells": { "g": "Vodorod {H2}", "m": "2", "rho": "0,09", "vm": "22,4" } },
-        { "id": "o2", "cells": { "g": "Kislorod {O2}", "m": "32", "rho": "1,43", "vm": "22,4" } },
-        { "id": "co", "cells": { "g": "Uglerod(II) oksid CO", "m": "28", "rho": "1,25", "vm": "22,4" } }
+        {
+          "id": "h2",
+          "cells": {
+            "g": "Vodorod {H2}",
+            "m": "2",
+            "rho": "0,09",
+            "vm": "22,4"
+          }
+        },
+        {
+          "id": "o2",
+          "cells": {
+            "g": "Kislorod {O2}",
+            "m": "32",
+            "rho": "1,43",
+            "vm": "22,4"
+          }
+        },
+        {
+          "id": "co",
+          "cells": {
+            "g": "Uglerod(II) oksid CO",
+            "m": "28",
+            "rho": "1,25",
+            "vm": "22,4"
+          }
+        }
       ]
     }
   ],
   "reactions": {
-    "volumes": { "equation": "N2 + 3H2 ⇄ 2NH3", "note": "Hajmlar nisbati 1 : 3 : 2 — koeffitsiyentlar nisbatiga teng (bir xil sharoitda)." }
+    "volumes": {
+      "equation": "N2 + 3H2 ⇄ 2NH3",
+      "note": "Hajmlar nisbati 1 : 3 : 2 — koeffitsiyentlar nisbatiga teng (bir xil sharoitda)."
+    }
   },
   "clarifications": [
-    { "text": "Maktab masalalarida n.sh. = 0 °C va 101,325 kPa, Vm = 22,4 l/mol. IUPAC 1982-yildan beri «standart sharoit» uchun 0 °C va 100 kPa ni tavsiya qiladi (Vm ≈ 22,7 l/mol); imtihon masalalarida shartda berilgan qiymatdan foydalaning.", "source": "additionalVerifiedSource" }
+    {
+      "text": "Maktab masalalarida n.sh. = 0 °C va 101,325 kPa, Vm = 22,4 l/mol. IUPAC 1982-yildan beri «standart sharoit» uchun 0 °C va 100 kPa ni tavsiya qiladi (Vm ≈ 22,7 l/mol); imtihon masalalarida shartda berilgan qiymatdan foydalaning.",
+      "source": "additionalVerifiedSource"
+    }
   ],
   "questions": [
-    { "id": "g8-s25-q1", "type": "O1", "skill": "molyar hajm", "difficulty": 1,
+    {
+      "id": "g8-s25-q1",
+      "type": "O1",
+      "skill": "molyar hajm",
+      "difficulty": 1,
       "stem": "8 g kislorod normal sharoitda necha litr hajmni egallaydi?",
-      "answer": 5.6, "tolerance": 0.01, "unit": "l",
-      "solution": "n = 8 / 32 = 0,25 mol; V = 0,25 · 22,4 = 5,6 l." },
-    { "id": "g8-s25-q2", "type": "O1", "skill": "nisbiy zichlik", "difficulty": 2,
+      "answer": 5.6,
+      "tolerance": 0.01,
+      "unit": "l",
+      "solution": "n = 8 / 32 = 0,25 mol; V = 0,25 · 22,4 = 5,6 l."
+    },
+    {
+      "id": "g8-s25-q2",
+      "type": "O1",
+      "skill": "nisbiy zichlik",
+      "difficulty": 2,
       "stem": "Gazning vodorodga nisbatan zichligi 17 ga teng. Shu gazning 6,8 g miqdori n.sh.da qancha hajmni (l) egallaydi?",
-      "answer": 4.48, "tolerance": 0.01, "unit": "l",
-      "solution": "M = 17 · 2 = 34 g/mol; n = 6,8 / 34 = 0,2 mol; V = 0,2 · 22,4 = 4,48 l." },
-    { "id": "g8-s25-q3", "type": "Y1", "skill": "Avogadro qonuni", "difficulty": 1,
+      "answer": 4.48,
+      "tolerance": 0.01,
+      "unit": "l",
+      "solution": "M = 17 · 2 = 34 g/mol; n = 6,8 / 34 = 0,2 mol; V = 0,2 · 22,4 = 4,48 l."
+    },
+    {
+      "id": "g8-s25-q3",
+      "type": "Y1",
+      "skill": "Avogadro qonuni",
+      "difficulty": 1,
       "stem": "Bir xil sharoitda 1 l vodorod va 1 l xlor haqida qaysi fikr to‘g‘ri?",
-      "choices": ["massalari teng", "molekulalar soni teng", "zichliklari teng", "atomlar soni turlicha"], "answer": 1,
-      "solution": "Avogadro qonuniga ko‘ra teng hajmdagi gazlarda molekulalar soni teng; massalari esa molyar massalari nisbatida (2 : 71) farq qiladi." },
-    { "id": "g8-s25-q4", "type": "O1", "skill": "zarrachalar soni", "difficulty": 2,
+      "choices": [
+        "massalari teng",
+        "molekulalar soni teng",
+        "zichliklari teng",
+        "atomlar soni turlicha"
+      ],
+      "answer": 1,
+      "solution": "Avogadro qonuniga ko‘ra teng hajmdagi gazlarda molekulalar soni teng; massalari esa molyar massalari nisbatida (2 : 71) farq qiladi."
+    },
+    {
+      "id": "g8-s25-q4",
+      "type": "O1",
+      "skill": "zarrachalar soni",
+      "difficulty": 2,
       "stem": "N.sh.da 11,2 l karbonat angidridda nechta molekula bor? Javobni 10²³ ko‘paytuvchisiz yozing (masalan, 1,5 = 1,5·10²³).",
-      "answer": 3.01, "tolerance": 0.01,
-      "solution": "n = 11,2 / 22,4 = 0,5 mol; N = 0,5 · 6,02·10²³ = 3,01·10²³." },
-    { "id": "g8-s25-q5", "type": "O1", "skill": "gaz zichligi", "difficulty": 1,
+      "answer": 3.01,
+      "tolerance": 0.01,
+      "solution": "n = 11,2 / 22,4 = 0,5 mol; N = 0,5 · 6,02·10²³ = 3,01·10²³."
+    },
+    {
+      "id": "g8-s25-q5",
+      "type": "O1",
+      "skill": "gaz zichligi",
+      "difficulty": 1,
       "stem": "Normal sharoitda ammiak {NH3} ning zichligini (g/l) hisoblang. Javobni 0,01 aniqlikda yozing.",
-      "answer": 0.76, "tolerance": 0.005, "unit": "g/l",
-      "solution": "ρ = M / Vm = 17 / 22,4 = 0,759 ≈ 0,76 g/l." }
+      "answer": 0.76,
+      "tolerance": 0.005,
+      "unit": "g/l",
+      "solution": "ρ = M / Vm = 17 / 22,4 = 0,759 ≈ 0,76 g/l."
+    },
+    {
+      "id": "g8-s25-q90",
+      "type": "O2",
+      "skill": "gaz aralashmalari",
+      "difficulty": 3,
+      "stem": "Hajmi 11,2 l (n.sh.) bo‘lgan vodorod va kislorod aralashmasining massasi 8,5 g. Aralashmaning hajmiy tarkibini toping. Aralashma portlatilib, n.sh.ga keltirilgandan keyin qaysi gaz va qancha hajmda qoladi?",
+      "steps": [
+        "Umumiy modda miqdorini toping.",
+        "Ikki noma’lumli tenglamalar tizimini tuzing.",
+        "Hajmiy ulushlarni toping.",
+        "2H₂ + O₂ → 2H₂O bo‘yicha ortib qolgan gazni hisoblang."
+      ],
+      "rubric": [
+        {
+          "criterion": "n = 11,2/22,4 = 0,5 mol; x + y = 0,5; 2x + 32y = 8,5",
+          "points": 7
+        },
+        {
+          "criterion": "x = n(H₂) = 0,25 mol; y = n(O₂) = 0,25 mol → 50 % va 50 %",
+          "points": 8
+        },
+        {
+          "criterion": "2H₂ + O₂ → 2H₂O: 0,25 mol H₂ 0,125 mol O₂ sarflaydi",
+          "points": 5
+        },
+        {
+          "criterion": "Kislorod ortadi: 0,125 mol = 2,8 l (suv n.sh.da suyuq)",
+          "points": 5
+        }
+      ],
+      "solution": "x + y = 0,5; 2x + 32y = 8,5 ⇒ x = y = 0,25 mol (H₂ 50 %, O₂ 50 %). 2H₂ + O₂ → 2H₂O: 0,25 mol H₂ uchun 0,125 mol O₂; 0,125 mol O₂ = 2,8 l ortib qoladi."
+    }
   ]
 }

@@ -1,7 +1,11 @@
 {
   "id": "g8-s32",
   "status": "seed-verified",
-  "pages": [138, 139, 140],
+  "pages": [
+    138,
+    139,
+    140
+  ],
   "summary": "{H2SO4} — og‘ir, moysimon, rangsiz suyuqlik (96 % li eritma ρ = 1,84 g/cm³). Suyultirilgan kislota oddiy kislota xossalarini, konsentrlangani esa kuchli oksidlovchi va suv tortib oluvchi xossalarni namoyon qiladi.",
   "keyConcepts": [
     "Olinish sxemasi: {FeS2} → {SO2} → {SO3} → {H2SO4} (batafsil — §35, kontakt usul).",
@@ -14,80 +18,344 @@
       "id": "dilute-vs-conc",
       "title": "Suyultirilgan va konsentrlangan sulfat kislota",
       "columns": [
-        { "key": "with", "label": "Nima bilan" },
-        { "key": "eq", "label": "Reaksiya", "reaction": true },
-        { "key": "diff", "label": "Muhim farq" }
+        {
+          "key": "with",
+          "label": "Nima bilan"
+        },
+        {
+          "key": "eq",
+          "label": "Reaksiya",
+          "reaction": true
+        },
+        {
+          "key": "diff",
+          "label": "Muhim farq"
+        }
       ],
       "rows": [
-        { "id": "zn", "cells": { "with": "Rux (suyult.)", "eq": "zn", "diff": "H⁺ oksidlovchi → {H2} ajraladi" },
-          "detail": { "concept": "Faollik qatorida vodoroddan oldin turgan metallar suyultirilgan kislotadan vodorodni siqib chiqaradi. Mis, kumush, oltin suyultirilgan {H2SO4} bilan reaksiyaga kirishmaydi.", "reactionIds": ["zn", "al"], "pages": [138, 139] } },
-        { "id": "cuo", "cells": { "with": "Mis(II) oksid", "eq": "cuo", "diff": "asosli oksid → tuz + suv" },
-          "detail": { "concept": "Qora {CuO} kukuni eriydi, eritma ko‘k tusga kiradi ({Cu^2+} ionlari).", "reactionIds": ["cuo"], "observation": "Ko‘k eritma hosil bo‘ladi", "pages": [139] } },
-        { "id": "naoh", "cells": { "with": "Natriy gidroksid", "eq": "naoh", "diff": "neytrallanish" } },
-        { "id": "phosphate", "cells": { "with": "Kalsiy fosfat", "eq": "phosphate", "diff": "kuchsizroq kislotani tuzidan siqib chiqaradi" } },
-        { "id": "cu", "cells": { "with": "Mis (konts.)", "eq": "cu", "diff": "S⁺⁶ oksidlovchi → {SO2}, {H2} emas" },
-          "detail": { "concept": "Cu⁰ − 2ē → Cu⁺² (oksidlanadi); S⁺⁶ + 2ē → S⁺⁴ (qaytariladi). Kislotaning yarmi oksidlovchi, yarmi tuz hosil qilishga sarflanadi.", "reactionIds": ["cu"], "examTip": "Konsentrlangan H₂SO₄ + metall → hech qachon H₂ emas.", "pages": [139] } },
-        { "id": "c", "cells": { "with": "Ko‘mir (konts., qaynatish)", "eq": "c", "diff": "metallmaslarni ham oksidlaydi" } },
-        { "id": "sugar", "cells": { "with": "Shakar (konts.)", "eq": "sugar", "diff": "suv tortib oladi — ko‘mirlanish" },
-          "detail": { "concept": "Konsentrlangan kislota organik moddalardan vodorod va kislorodni suv ko‘rinishida tortib oladi; qora g‘ovak ko‘mir massasi qoladi.", "reactionIds": ["sugar"], "pages": [139, 140] } }
+        {
+          "id": "zn",
+          "cells": {
+            "with": "Rux (suyult.)",
+            "eq": "zn",
+            "diff": "H⁺ oksidlovchi → {H2} ajraladi"
+          },
+          "detail": {
+            "concept": "Faollik qatorida vodoroddan oldin turgan metallar suyultirilgan kislotadan vodorodni siqib chiqaradi. Mis, kumush, oltin suyultirilgan {H2SO4} bilan reaksiyaga kirishmaydi.",
+            "reactionIds": [
+              "zn",
+              "al"
+            ],
+            "pages": [
+              138,
+              139
+            ]
+          }
+        },
+        {
+          "id": "cuo",
+          "cells": {
+            "with": "Mis(II) oksid",
+            "eq": "cuo",
+            "diff": "asosli oksid → tuz + suv"
+          },
+          "detail": {
+            "concept": "Qora {CuO} kukuni eriydi, eritma ko‘k tusga kiradi ({Cu^2+} ionlari).",
+            "reactionIds": [
+              "cuo"
+            ],
+            "observation": "Ko‘k eritma hosil bo‘ladi",
+            "pages": [
+              139
+            ]
+          }
+        },
+        {
+          "id": "naoh",
+          "cells": {
+            "with": "Natriy gidroksid",
+            "eq": "naoh",
+            "diff": "neytrallanish"
+          }
+        },
+        {
+          "id": "phosphate",
+          "cells": {
+            "with": "Kalsiy fosfat",
+            "eq": "phosphate",
+            "diff": "kuchsizroq kislotani tuzidan siqib chiqaradi"
+          }
+        },
+        {
+          "id": "cu",
+          "cells": {
+            "with": "Mis (konts.)",
+            "eq": "cu",
+            "diff": "S⁺⁶ oksidlovchi → {SO2}, {H2} emas"
+          },
+          "detail": {
+            "concept": "Cu⁰ − 2ē → Cu⁺² (oksidlanadi); S⁺⁶ + 2ē → S⁺⁴ (qaytariladi). Kislotaning yarmi oksidlovchi, yarmi tuz hosil qilishga sarflanadi.",
+            "reactionIds": [
+              "cu"
+            ],
+            "examTip": "Konsentrlangan H₂SO₄ + metall → hech qachon H₂ emas.",
+            "pages": [
+              139
+            ]
+          }
+        },
+        {
+          "id": "c",
+          "cells": {
+            "with": "Ko‘mir (konts., qaynatish)",
+            "eq": "c",
+            "diff": "metallmaslarni ham oksidlaydi"
+          }
+        },
+        {
+          "id": "sugar",
+          "cells": {
+            "with": "Shakar (konts.)",
+            "eq": "sugar",
+            "diff": "suv tortib oladi — ko‘mirlanish"
+          },
+          "detail": {
+            "concept": "Konsentrlangan kislota organik moddalardan vodorod va kislorodni suv ko‘rinishida tortib oladi; qora g‘ovak ko‘mir massasi qoladi.",
+            "reactionIds": [
+              "sugar"
+            ],
+            "pages": [
+              139,
+              140
+            ]
+          }
+        }
       ]
     },
     {
       "id": "sulfates",
       "title": "Muhim sulfatlar",
       "columns": [
-        { "key": "name", "label": "Modda" },
-        { "key": "f", "label": "Formula" },
-        { "key": "use", "label": "Ahamiyati" }
+        {
+          "key": "name",
+          "label": "Modda"
+        },
+        {
+          "key": "f",
+          "label": "Formula"
+        },
+        {
+          "key": "use",
+          "label": "Ahamiyati"
+        }
       ],
       "rows": [
-        { "id": "glauber", "cells": { "name": "Glauber tuzi", "f": "{Na2SO4·10H2O}", "use": "shisha, soda ishlab chiqarish (suvsiz {Na2SO4}), tibbiyot" } },
-        { "id": "gypsum", "cells": { "name": "Gips", "f": "{CaSO4·2H2O}", "use": "150–170 °C da qizdirilsa, alebastr ({CaSO4}·½{H2O}) hosil bo‘ladi; qurilish, tibbiy bog‘lamlar" } },
-        { "id": "blue", "cells": { "name": "Mis kuporosi", "f": "{CuSO4·5H2O}", "use": "ko‘k kristallar; suvsiz {CuSO4} — oq kukun" } },
-        { "id": "baso4", "cells": { "name": "Bariy sulfat", "f": "{BaSO4}", "use": "sulfat-ionni aniqlash: oq cho‘kma" },
-          "detail": { "concept": "{BaCl2} eritmasi sulfat kislota ham, eruvchan sulfatlar ham bilan bir xil oq cho‘kma beradi. Ionli ko‘rinishi bitta: Ba²⁺ + SO₄²⁻ → BaSO₄↓.", "reactionIds": ["ba1", "ba2", "baIon"], "observation": "Suvda va HNO₃ da erimaydigan oq cho‘kma", "pages": [140] } }
+        {
+          "id": "glauber",
+          "cells": {
+            "name": "Glauber tuzi",
+            "f": "{Na2SO4·10H2O}",
+            "use": "shisha, soda ishlab chiqarish (suvsiz {Na2SO4}), tibbiyot"
+          }
+        },
+        {
+          "id": "gypsum",
+          "cells": {
+            "name": "Gips",
+            "f": "{CaSO4·2H2O}",
+            "use": "150–170 °C da qizdirilsa, alebastr ({CaSO4}·½{H2O}) hosil bo‘ladi; qurilish, tibbiy bog‘lamlar"
+          }
+        },
+        {
+          "id": "blue",
+          "cells": {
+            "name": "Mis kuporosi",
+            "f": "{CuSO4·5H2O}",
+            "use": "ko‘k kristallar; suvsiz {CuSO4} — oq kukun"
+          }
+        },
+        {
+          "id": "baso4",
+          "cells": {
+            "name": "Bariy sulfat",
+            "f": "{BaSO4}",
+            "use": "sulfat-ionni aniqlash: oq cho‘kma"
+          },
+          "detail": {
+            "concept": "{BaCl2} eritmasi sulfat kislota ham, eruvchan sulfatlar ham bilan bir xil oq cho‘kma beradi. Ionli ko‘rinishi bitta: Ba²⁺ + SO₄²⁻ → BaSO₄↓.",
+            "reactionIds": [
+              "ba1",
+              "ba2",
+              "baIon"
+            ],
+            "observation": "Suvda va HNO₃ da erimaydigan oq cho‘kma",
+            "pages": [
+              140
+            ]
+          }
+        }
       ]
     }
   ],
   "reactions": {
-    "zn": { "equation": "Zn + H2SO4 → ZnSO4 + H2↑", "conditions": "suyultirilgan" },
-    "al": { "equation": "2Al + 3H2SO4 → Al2(SO4)3 + 3H2↑", "conditions": "suyultirilgan" },
-    "cuo": { "equation": "CuO + H2SO4 → CuSO4 + H2O" },
-    "naoh": { "equation": "2NaOH + H2SO4 → Na2SO4 + 2H2O" },
-    "phosphate": { "equation": "Ca3(PO4)2 + 3H2SO4 → 3CaSO4 + 2H3PO4" },
-    "cu": { "equation": "Cu + 2H2SO4 → CuSO4 + SO2↑ + 2H2O", "conditions": "konsentrlangan, qizdirish", "safety": "SO₂ zaharli, konsentrlangan kislota kuydiradi — faqat virtual namoyish." },
-    "c": { "equation": "C + 2H2SO4 → CO2↑ + 2SO2↑ + 2H2O", "conditions": "konsentrlangan, qaynatish" },
-    "sugar": { "equation": "C12H22O11 → 12C + 11H2O", "conditions": "konsentrlangan H₂SO₄ ta’sirida", "observation": "Shakar qorayib, ko‘pchib chiqadi; bug‘ ajraladi" },
-    "ba1": { "equation": "H2SO4 + BaCl2 → BaSO4↓ + 2HCl" },
-    "ba2": { "equation": "Na2SO4 + BaCl2 → BaSO4↓ + 2NaCl" },
-    "baIon": { "equation": "Ba^2+ + SO4^2- → BaSO4↓" }
+    "zn": {
+      "equation": "Zn + H2SO4 → ZnSO4 + H2↑",
+      "conditions": "suyultirilgan"
+    },
+    "al": {
+      "equation": "2Al + 3H2SO4 → Al2(SO4)3 + 3H2↑",
+      "conditions": "suyultirilgan"
+    },
+    "cuo": {
+      "equation": "CuO + H2SO4 → CuSO4 + H2O"
+    },
+    "naoh": {
+      "equation": "2NaOH + H2SO4 → Na2SO4 + 2H2O"
+    },
+    "phosphate": {
+      "equation": "Ca3(PO4)2 + 3H2SO4 → 3CaSO4 + 2H3PO4"
+    },
+    "cu": {
+      "equation": "Cu + 2H2SO4 → CuSO4 + SO2↑ + 2H2O",
+      "conditions": "konsentrlangan, qizdirish",
+      "safety": "SO₂ zaharli, konsentrlangan kislota kuydiradi — faqat virtual namoyish."
+    },
+    "c": {
+      "equation": "C + 2H2SO4 → CO2↑ + 2SO2↑ + 2H2O",
+      "conditions": "konsentrlangan, qaynatish"
+    },
+    "sugar": {
+      "equation": "C12H22O11 → 12C + 11H2O",
+      "conditions": "konsentrlangan H₂SO₄ ta’sirida",
+      "observation": "Shakar qorayib, ko‘pchib chiqadi; bug‘ ajraladi"
+    },
+    "ba1": {
+      "equation": "H2SO4 + BaCl2 → BaSO4↓ + 2HCl"
+    },
+    "ba2": {
+      "equation": "Na2SO4 + BaCl2 → BaSO4↓ + 2NaCl"
+    },
+    "baIon": {
+      "equation": "Ba^2+ + SO4^2- → BaSO4↓"
+    }
   },
   "clarifications": [
-    { "text": "Darslikda konsentrlangan H₂SO₄ kumushga ta’sir etmaydi deyilgan. Aniqroq: oltin va platina bilan reaksiyaga kirishmaydi, kumush esa qizdirilganda reaksiyaga kirishadi (2Ag + 2H₂SO₄ → Ag₂SO₄ + SO₂ + 2H₂O). Temir, aluminiy va xrom sovuq konsentrlangan kislotada passivlanadi, qizdirilganda esa reaksiyaga kirishadi.", "source": "additionalVerifiedSource" }
+    {
+      "text": "Darslikda konsentrlangan H₂SO₄ kumushga ta’sir etmaydi deyilgan. Aniqroq: oltin va platina bilan reaksiyaga kirishmaydi, kumush esa qizdirilganda reaksiyaga kirishadi (2Ag + 2H₂SO₄ → Ag₂SO₄ + SO₂ + 2H₂O). Temir, aluminiy va xrom sovuq konsentrlangan kislotada passivlanadi, qizdirilganda esa reaksiyaga kirishadi.",
+      "source": "additionalVerifiedSource"
+    }
   ],
   "questions": [
-    { "id": "g8-s32-q1", "type": "Y1", "skill": "metall + kislota", "difficulty": 1,
+    {
+      "id": "g8-s32-q1",
+      "type": "Y1",
+      "skill": "metall + kislota",
+      "difficulty": 1,
       "stem": "Qaysi metall suyultirilgan sulfat kislotadan vodorodni siqib chiqaradi?",
-      "choices": ["Cu", "Ag", "Zn", "Au"], "answer": 2,
-      "solution": "Rux faollik qatorida vodoroddan oldin turadi: Zn + H₂SO₄ → ZnSO₄ + H₂↑. Cu, Ag, Au vodoroddan keyin turadi." },
-    { "id": "g8-s32-q2", "type": "Y2", "skill": "reaksiya mahsulotlari", "difficulty": 2,
+      "choices": [
+        "Cu",
+        "Ag",
+        "Zn",
+        "Au"
+      ],
+      "answer": 2,
+      "solution": "Rux faollik qatorida vodoroddan oldin turadi: Zn + H₂SO₄ → ZnSO₄ + H₂↑. Cu, Ag, Au vodoroddan keyin turadi."
+    },
+    {
+      "id": "g8-s32-q2",
+      "type": "Y2",
+      "skill": "reaksiya mahsulotlari",
+      "difficulty": 2,
       "stem": "Reaksiyaga kirishuvchi moddalarni ajraladigan gaz bilan moslashtiring.",
-      "left": ["Zn + suyult. {H2SO4}", "Cu + konts. {H2SO4}", "C + konts. {H2SO4}", "{Na2SO4} + {BaCl2}"],
-      "right": ["{SO2}", "gaz ajralmaydi (oq cho‘kma)", "{H2}", "{CO2} va {SO2}"],
-      "answer": [2, 0, 3, 1],
-      "solution": "Zn + suyult. → H₂; Cu + konts. → SO₂; C + konts. → CO₂ + SO₂; Na₂SO₄ + BaCl₂ → BaSO₄↓ (gaz yo‘q)." },
-    { "id": "g8-s32-q3", "type": "O1", "skill": "stexiometriya", "difficulty": 2,
+      "left": [
+        "Zn + suyult. {H2SO4}",
+        "Cu + konts. {H2SO4}",
+        "C + konts. {H2SO4}",
+        "{Na2SO4} + {BaCl2}"
+      ],
+      "right": [
+        "{SO2}",
+        "gaz ajralmaydi (oq cho‘kma)",
+        "{H2}",
+        "{CO2} va {SO2}"
+      ],
+      "answer": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "solution": "Zn + suyult. → H₂; Cu + konts. → SO₂; C + konts. → CO₂ + SO₂; Na₂SO₄ + BaCl₂ → BaSO₄↓ (gaz yo‘q)."
+    },
+    {
+      "id": "g8-s32-q3",
+      "type": "O1",
+      "skill": "stexiometriya",
+      "difficulty": 2,
       "stem": "0,1 mol sulfat kislota mo‘l bariy xlorid eritmasi bilan reaksiyaga kirishganda necha gramm cho‘kma hosil bo‘ladi?",
-      "answer": 23.3, "tolerance": 0.05, "unit": "g",
+      "answer": 23.3,
+      "tolerance": 0.05,
+      "unit": "g",
       "solution": "H₂SO₄ + BaCl₂ → BaSO₄↓ + 2HCl. n(BaSO₄) = 0,1 mol; M(BaSO₄) = 137 + 32 + 64 = 233 g/mol; m = 23,3 g.",
-      "mistakes": "Cho‘kma — BaSO₄, HCl emas (u eritmada qoladi)." },
-    { "id": "g8-s32-q4", "type": "Y1", "skill": "xavfsizlik", "difficulty": 1,
+      "mistakes": "Cho‘kma — BaSO₄, HCl emas (u eritmada qoladi)."
+    },
+    {
+      "id": "g8-s32-q4",
+      "type": "Y1",
+      "skill": "xavfsizlik",
+      "difficulty": 1,
       "stem": "Konsentrlangan sulfat kislotani suyultirishning to‘g‘ri usuli qaysi?",
-      "choices": ["Suvni kislotaga tez quyish", "Kislotani suvga ingichka oqimda, aralashtirib quyish", "Kislota va suvni bir vaqtda isitish", "Suvni kislotaga tomchilatib quyish"], "answer": 1,
-      "solution": "Eriganda ko‘p issiqlik ajraladi. Og‘ir kislota suv ostiga tushib, issiqlik butun hajmga tarqaladi; suv kislotaga quyilsa, sirtda qaynab sachraydi." },
-    { "id": "g8-s32-q5", "type": "O1", "skill": "oksidlanish-qaytarilish", "difficulty": 2,
+      "choices": [
+        "Suvni kislotaga tez quyish",
+        "Kislotani suvga ingichka oqimda, aralashtirib quyish",
+        "Kislota va suvni bir vaqtda isitish",
+        "Suvni kislotaga tomchilatib quyish"
+      ],
+      "answer": 1,
+      "solution": "Eriganda ko‘p issiqlik ajraladi. Og‘ir kislota suv ostiga tushib, issiqlik butun hajmga tarqaladi; suv kislotaga quyilsa, sirtda qaynab sachraydi."
+    },
+    {
+      "id": "g8-s32-q5",
+      "type": "O1",
+      "skill": "oksidlanish-qaytarilish",
+      "difficulty": 2,
       "stem": "Cu + 2H₂SO₄ → CuSO₄ + SO₂ + 2H₂O reaksiyasida 1 mol mis bilan reaksiyaga kirishgan sulfat kislotaning necha moli oksidlovchi vazifasini bajaradi?",
-      "answer": 1, "tolerance": 0,
-      "solution": "2 mol H₂SO₄ dan faqat 1 moli S⁺⁶ → S⁺⁴ (SO₂) ga qaytariladi; ikkinchisi CuSO₄ tarkibida o‘zgarmay qoladi." }
+      "answer": 1,
+      "tolerance": 0,
+      "solution": "2 mol H₂SO₄ dan faqat 1 moli S⁺⁶ → S⁺⁴ (SO₂) ga qaytariladi; ikkinchisi CuSO₄ tarkibida o‘zgarmay qoladi."
+    },
+    {
+      "id": "g8-s32-q90",
+      "type": "O2",
+      "skill": "nordon tuz hosil bo‘lishi",
+      "difficulty": 3,
+      "stem": "49 g 20 % li sulfat kislota eritmasiga 5,6 g kaliy gidroksid qo‘shildi. Qanday tuz hosil bo‘ladi? Uning massasini toping. Javobni reaksiya tenglamasi bilan asoslang.",
+      "steps": [
+        "Kislota va ishqor miqdorini toping.",
+        "Mol nisbatiga qarab qaysi tuz hosil bo‘lishini aniqlang.",
+        "Tenglamani yozing.",
+        "Tuz massasini hisoblang."
+      ],
+      "rubric": [
+        {
+          "criterion": "m(H₂SO₄) = 49·0,2 = 9,8 g → 0,1 mol; n(KOH) = 5,6/56 = 0,1 mol",
+          "points": 7
+        },
+        {
+          "criterion": "Nisbat 1 : 1 → nordon tuz KHSO₄ (o‘rta tuz uchun 1 : 2 kerak)",
+          "points": 8
+        },
+        {
+          "criterion": "KOH + H₂SO₄ → KHSO₄ + H₂O",
+          "points": 4
+        },
+        {
+          "criterion": "m(KHSO₄) = 0,1·136 = 13,6 g",
+          "points": 6
+        }
+      ],
+      "solution": "n(H₂SO₄) = 0,1 mol, n(KOH) = 0,1 mol — 1 : 1. KOH + H₂SO₄ → KHSO₄ + H₂O; M(KHSO₄) = 39 + 1 + 32 + 64 = 136 g/mol; m = 13,6 g.",
+      "mistakes": "Avtomatik K₂SO₄ yozish: o‘rta tuz faqat KOH : H₂SO₄ = 2 : 1 bo‘lganda hosil bo‘ladi."
+    }
   ]
 }
