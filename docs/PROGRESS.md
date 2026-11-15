@@ -11,9 +11,10 @@ PHASE: 2–3 App + 53 lessons — DONE (expert review pending, KNOWN_ISSUES)
 ```
 
 ```
-PHASE: 4 Graphics — PARTIAL
-DONE: reusable 3D MoleculeScene (Three.js/R3F/Drei, lazy, demand frameloop, toggle-to-rotate, WebGL fallback), 22 tested models on 18 lessons; 2D electrolysis
-NEXT: process-flow animations (contact process g8-s35, Solvay g9-s22, blast furnace g9-s36), corrosion g9-s18, rate/equilibrium g8-s33/34
+PHASE: 4 Graphics — MOSTLY DONE
+DONE: reusable 3D MoleculeScene (Three.js/R3F/Drei, lazy, demand frameloop, toggle-to-rotate, WebGL fallback), 22 tested models on 18 lessons;
+  2D electrolysis; ProcessFlow (contact process, HNO₃, rusting, Solvay, blast furnace); rate + equilibrium explorers (logic unit-tested)
+NEXT: Al electrolysis (g9-s25), metallic lattice/alloys (g9-s16/17), amphoteric Al(OH)₃ (g9-s27), Cr/Mn colour series (g9-s32/33)
 ```
 
 ```

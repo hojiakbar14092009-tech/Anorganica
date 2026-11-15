@@ -120,3 +120,19 @@ test('timed drill shows a timer and 10 questions; electrolysis visual has contro
   await fig.getByRole('button', { name: 'Boshlash' }).click();
   await expect(fig.getByRole('button', { name: 'Pauza' })).toHaveAttribute('aria-pressed', 'true');
 });
+
+test('process flow steps and Le Chatelier explorer give verified results', async ({ page }) => {
+  await page.goto('/dars/g9-s22');
+  const flow = page.locator('figure.process');
+  await flow.getByRole('button', { name: 'Keyingi bosqich' }).click();
+  await expect(flow.locator('[aria-current="step"]')).toContainText('NaHCO₃ cho‘kmaga tushadi');
+  await page.goto('/dars/g8-s34');
+  const eq = page.locator('figure.visual').first();
+  await eq.getByRole('button', { name: 'Bosimni oshirish' }).click();
+  await expect(eq.getByRole('status')).toContainText('o‘ngga');
+  await eq.getByRole('button', { name: 'Katalizator' }).click();
+  await expect(eq.getByRole('status')).toContainText('siljimaydi');
+  await page.goto('/dars/g8-s33');
+  await page.getByLabel(/Harorat o‘zgarishi/).fill('40');
+  await expect(page.getByRole('status').filter({ hasText: 'Tezlik' })).toContainText('16');
+});

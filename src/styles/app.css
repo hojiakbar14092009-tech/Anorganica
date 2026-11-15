@@ -233,3 +233,24 @@ legend { font-weight: 650; padding: 0 6px; }
   table.stack .detail-row td { display: block; }
   table.stack .detail-row td::before { content: none; }
 }
+.flow { list-style: none; margin: 8px 0; padding: 0 0 0 18px; border-left: 3px solid var(--line); counter-reset: st; }
+.flow li { position: relative; margin: 0 0 6px; }
+.flow li::before { counter-increment: st; content: counter(st); position: absolute; left: -31px; top: 10px; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 0.75rem; font-weight: 700; background: var(--surface); border: 2px solid var(--line); color: var(--muted); }
+.flow li[data-state="done"]::before { border-color: var(--accent); color: var(--accent); }
+.flow li[data-state="active"]::before { background: var(--accent); border-color: var(--accent); color: var(--accentText); }
+.flow-step { all: unset; display: grid; gap: 2px; width: 100%; min-height: var(--tap); padding: 6px 10px; border-radius: 8px; cursor: pointer; box-sizing: border-box; }
+.flow-step:focus-visible { outline: 3px solid var(--accent); }
+.flow li[data-state="active"] .flow-step { background: var(--raised); }
+.flow-place { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.flow-name { font-weight: 600; }
+.flow-detail { padding: 4px 10px 8px; animation: fade 0.25s ease both; }
+.flow-detail p { margin: 4px 0; }
+.box { width: 100%; max-width: 420px; display: block; margin: 8px auto; }
+.box rect { fill: var(--surface); stroke: var(--line); }
+.box circle { fill: var(--formula); opacity: 0.85; }
+.jiggle { animation: jiggle 1.6s ease-in-out infinite alternate; transform-box: fill-box; }
+@keyframes jiggle { from { translate: -6px 3px; } to { translate: 6px -3px; } }
+.result { padding: 8px 12px; border-left: 3px solid var(--accent); background: var(--raised); border-radius: 0 8px 8px 0; }
+.eq-line { font-size: 1.1rem; }
+.eq-line[data-shift="right"] .formula { text-decoration: underline 2px var(--accent); text-underline-offset: 6px; }
+.slider select { min-height: var(--tap); border-radius: 8px; border: 1px solid var(--line); background: var(--bg); padding: 0 12px; }

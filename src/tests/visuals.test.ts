@@ -11,7 +11,8 @@ it('every visual targets a real section and shows balanced equations', () => {
     for (const v of list) {
       expect(v.purpose.length).toBeGreaterThan(5);
       if (v.kind === 'electrolysis') for (const eq of [v.spec.cathode, v.spec.anode, v.spec.overall]) expect(checkBalance(eq), eq).toEqual([]);
-      else for (const m of v.ids) expect(MOLECULES[m], `${id}: ${m}`).toBeDefined();
+      else if (v.kind === 'process') for (const st of v.spec.steps) { if (st.equation) expect(checkBalance(st.equation), st.equation).toEqual([]); }
+      else if (v.kind === 'molecule') for (const m of v.ids) expect(MOLECULES[m], `${id}: ${m}`).toBeDefined();
     }
   }
 });

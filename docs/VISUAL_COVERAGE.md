@@ -15,6 +15,13 @@ Tests: `src/tests/molecules.test.ts` (formula ↔ atoms, connectivity, bond leng
 | g9-s8, s9 | diamond cell fragment, graphite two layers | 3D | tested |
 | g9-s10 | CO, CO₂, CH₄ | 3D | tested |
 | g9-s19 | CuCl₂ and NaCl electrolysis cells | 2D SVG animation | tested |
+| g8-s33 | rate explorer: γ^(Δt/10)·[A] with schematic particles | interactive 2D | logic tested |
+| g8-s34 | Le Chatelier explorer (SO₃, NH₃, CO, NO systems) | interactive 2D | logic tested |
+| g8-s35 | contact process flow (pyrite → SO₂ → clean → V₂O₅ → oleum) | step animation | equations tested |
+| g8-s39 | nitric acid from ammonia flow | step animation | equations tested |
+| g9-s18 | iron rusting (anode/cathode/Fe(OH)₂/Fe(OH)₃) | step animation | equations tested |
+| g9-s22 | Solvay process flow incl. NH₃ regeneration | step animation | equations tested |
+| g9-s36 | blast furnace zones top → bottom | step animation | equations tested |
 | others | tables + equations only (figure audit pending) | — | pending |
 
 All models are labelled “sxematik model”; text facts (lengths/angles) are always visible as the fallback.
