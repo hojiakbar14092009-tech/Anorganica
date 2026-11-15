@@ -3,7 +3,7 @@
 // shortcut: no rate limiting (no shared store) — use a long random password; add KV-based throttling if the URL leaks.
 import { next } from '@vercel/functions';
 
-export const config = { runtime: 'edge' };
+export const config = { runtime: 'nodejs' };
 
 const COOKIE = 'ag_session';
 const MAX_AGE = 180 * 24 * 3600; // long-lived so authorized phones keep working offline-first
